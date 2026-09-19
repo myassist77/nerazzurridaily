@@ -1,0 +1,263 @@
+{
+ "n": 17,
+ "date": "2026-09-18",
+ "title": "Stones' left hamstring, and a silent Chivu",
+ "description": "The club names John Stones's injury as a left hamstring strain, Davide Massa referees at the Olimpico, and the women's season gets its dates.",
+ "mast_alt": "Nerazzurri Daily Edition No. 17, Friday, September 18, 2026 — Stones' left hamstring, and a silent Chivu",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Inter have put a name on John Stones' injury: scans on Thursday found <a href=\"https://www.inter.it/it/notizie/condizioni-infortunio-john-stones-settembre-2026\" rel=\"noopener\">a strain in the hamstring of his left thigh</a>, and the club set no return date. Corriere dello Sport expects him back with Hakan Çalhanoğlu <a href=\"https://www.fcinternews.it/rassegna/i-cds-i-stones-benedetta-sosta-inglese-calhanoglu-puntano-tornare-parma-1018693\" rel=\"noopener\">at home to Parma on October 10</a>. That leaves Cristian Chivu without both at the Stadio Olimpico on Saturday, where Davide Massa <a href=\"https://www.legaseriea.it/serie-a/news/le-designazioni-arbitrali-della-5a-giornata\" rel=\"noopener\">has the whistle</a>."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "TODAY",
+     "name": "No match",
+     "venue": null,
+     "line": "ROMA AWAY TOMORROW · 12:00 PM ET · 18:00 CEST"
+    },
+    {
+     "label": "LAST",
+     "name": "Inter 5–3 Udinese",
+     "venue": null,
+     "line": "THURAM 57' · SERIE A · MATCHDAY 4 · SAN SIRO"
+    },
+    {
+     "label": "NEXT",
+     "name": "Roma",
+     "venue": "AWAY",
+     "line": "SAT 12:00 PM ET · 18:00 CEST · MATCHDAY 5"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB · LEAGUE · UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "The club names Stones' injury",
+   "paras": [
+    "John Stones, the defender Inter signed this summer, had clinical and instrumental tests on Thursday morning at the Istituto Humanitas in Rozzano.",
+    "The club's statement runs two lines. “Gli esami hanno evidenziato un risentimento muscolare ai flessori della coscia sinistra” — the tests showed a muscle strain in the hamstring of his left thigh. “Le sue condizioni saranno rivalutate nei prossimi giorni” — he will be looked at again over the coming days.",
+    "Edition No. 15 carried the same injury from Gazzetta dello Sport, Italy's biggest sports daily, with the tests still to come. New today is the club's own wording, and that it sets no date."
+   ],
+   "kicker": "UPDATE · INTER.IT · SEP 17"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Massa referees at the Olimpico",
+   "paras": [
+    "Lega Serie A published the matchday 5 designations on Wednesday. Davide Massa has Roma against Inter, with Mazzoleni on VAR and Di Paolo assisting him. Meli and Berti run the lines and Maresca is fourth official; the league lists all of them by surname only."
+   ],
+   "kicker": "LEGA SERIE A · SEP 16"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "The women's season gets its dates",
+   "paras": [
+    "Inter Women, coached by David Sassarini, open the Serie A Women season at home to Fiorentina on Sunday, September 27 at 7:00 AM ET (13:00 CEST). The Milan derby falls away on November 7 and 8, and at home on March 20 and 21.",
+    "Europe comes first. Inter host BK Häcken in the opening round of the Women's Champions League on Tuesday, September 22 at 12:45 PM ET (18:45 CEST) at the Stadio Brianteo in Monza. Tickets went on sale Thursday, from €10 down to €1 for season-ticket holders, Inter Club members, under-18s and women."
+   ],
+   "kicker": "INTER.IT · SEP 17"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY · NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Corriere dello Sport: both back for Parma",
+   "paras": [
+    "Corriere dello Sport has Stones and Hakan Çalhanoğlu, Inter's deep-lying midfielder, aiming at the same return — Parma, at home, on October 10. The paper has the medical staff being careful with Stones, who has had a run of muscle injuries.",
+    "The international break sits between the two dates, so neither misses another league match.",
+    "Edition No. 15 had Sky Sport Italia aiming Çalhanoğlu at Parma and Gazzetta putting Stones back after the break. New today is one paper putting both on the same date."
+   ],
+   "kicker": "UPDATE · CORRIERE DELLO SPORT VIA FCINTERNEWS · SEP 18"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Jones ahead of Sučić, and a goalkeeper still to pick",
+   "paras": [
+    "Corriere dello Sport puts Curtis Jones, the midfielder Chivu pushed for from January to late August, in front of Petar Sučić for the place Çalhanoğlu leaves. Jones has started once this season, away to Real Madrid, and has yet to start a Serie A match.",
+    "Sky Sport Italia counts three open calls: Jones or Sučić, Provedel or Josep Martínez in goal, Diouf or Luis Henrique on the right. It has Yann Bisseck back in defense, Federico Dimarco back at left-back, and Lautaro Martínez back alongside Marcus Thuram.",
+    "Chivu will not preview any of it. Corriere dello Sport reports that he has skipped the pre-match press conference for the first time this season. Roma's Gian Piero Gasperini speaks at Trigoria at 7:30 AM ET (13:30 CEST)."
+   ],
+   "kicker": "CORRIERE DELLO SPORT · SKY SPORT ITALIA · SEP 18"
+  },
+  {
+   "t": "poll",
+   "lines": [
+    "YESTERDAY · no votes on Wednesday's poll yet — be the first.",
+    "YOUR CALL FOR FRIDAY · Corriere dello Sport has Jones in front. Do you?",
+    "Corriere dello Sport has Curtis Jones ahead of Petar Sučić in midfield. Who would you start at the Olimpico?",
+    "Tap one. No sign-in. Results in tomorrow's edition.",
+    "Curtis Jones — Corriere dello Sport's pick",
+    "Petar Sučić — the other name Sky Sport Italia lists",
+    "Piotr Zieliński — the experienced alternative",
+    "POLL BLOCK — TO BE CREATED IN BEEHIIV"
+   ]
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "SERIE A · MATCHDAY 4 · SAN SIRO"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter 5–3 Udinese",
+   "paras": [
+    "ABANKWAH 9' · EKKELENKAMP 16' · CARLOS AUGUSTO 26' · BARELLA 35' · THURAM 57' · ESPOSITO 67' · BONNY 79' · GUEYE 90+1'",
+    "Scorers and minutes are the club's own match report. The league record is left out today: no standings page would load to check it."
+   ],
+   "kicker": ""
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "SEPTEMBER & INTO OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Roma",
+     "venue": "AWAY",
+     "line2": "SAT, SEP 19 · SERIE A · MATCHDAY 5",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Parma",
+     "venue": "HOME",
+     "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    },
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Shakhtar Donetsk",
+     "venue": "HOME",
+     "line2": "WED, OCT 21 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    }
+   ]
+  },
+  {
+   "t": "note",
+   "html": "Kickoff times are the club's and the league's. US listings come from the published Serie A schedule at World Soccer Talk, which carries no Champions League dates."
+  },
+  {
+   "t": "ask",
+   "html": "Reply to this email with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+  },
+  {
+   "t": "next",
+   "text": "SATURDAY, SEPTEMBER 19 — THE TEAM NEWS FROM THE OLIMPICO"
+  },
+  {
+   "t": "follow",
+   "links": [
+    {
+     "label": "YouTube",
+     "url": "https://www.youtube.com/@nerazzurridaily"
+    },
+    {
+     "label": "TikTok",
+     "url": "https://www.tiktok.com/@nerazzurridaily"
+    }
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "Inter.it",
+     "title": "Stones' Condition",
+     "url": "https://www.inter.it/it/notizie/condizioni-infortunio-john-stones-settembre-2026"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Thursday Training Before Roma",
+     "url": "https://www.inter.it/it/notizie/allenamento-inter-17-settembre-2026"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Roma vs. Inter, Where to Watch",
+     "url": "https://www.inter.it/en/news/roma-inter-where-to-watch-tv-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Serie A Women Calendar",
+     "url": "https://www.inter.it/it/notizie/serie-a-women-2026-27-calendario-inter"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Women's Champions League Tickets",
+     "url": "https://www.inter.it/it/notizie/womens-champions-league-biglietti-inter-hacken"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Champions League Fixtures",
+     "url": "https://www.inter.it/en/news/standings-league-phase-inter-fixtures-champions-league-26-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Inter 5–3 Udinese",
+     "url": "https://www.inter.it/en/news/inter-udinese-serie-a-2026-27"
+    },
+    {
+     "outlet": "Lega Serie A",
+     "title": "Matchday 5 Designations",
+     "url": "https://www.legaseriea.it/serie-a/news/le-designazioni-arbitrali-della-5a-giornata"
+    },
+    {
+     "outlet": "Sky Sport Italia",
+     "title": "Chivu's Selection Doubts",
+     "url": "https://sport.sky.it/calcio/serie-a/2026/09/17/inter-chivu-formazione-roma-news"
+    },
+    {
+     "outlet": "Corriere dello Sport via FCInterNews",
+     "title": "Both Back for Parma",
+     "url": "https://www.fcinternews.it/rassegna/i-cds-i-stones-benedetta-sosta-inglese-calhanoglu-puntano-tornare-parma-1018693"
+    },
+    {
+     "outlet": "Corriere dello Sport via FCInterNews",
+     "title": "Jones Ahead of Sučić",
+     "url": "https://www.fcinternews.it/rassegna/i-cds-i-roma-inter-jones-vantaggio-sucic-chivu-aspetta-che-1018694"
+    },
+    {
+     "outlet": "Corriere dello Sport",
+     "title": "Gasperini Speaks, Chivu Stays Silent",
+     "url": "https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/09/18-151311341/botta_e_risposta_tra_roma_e_inter_gasperini_parla_in_conferenza_chivu_invece_resta_zitto"
+    },
+    {
+     "outlet": "World Soccer Talk",
+     "title": "US TV Schedule",
+     "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+    }
+   ]
+  }
+ ]
+}

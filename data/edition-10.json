@@ -1,0 +1,210 @@
+{
+ "n": 10,
+ "date": "2026-09-11",
+ "title": "Stones in, Dimarco close",
+ "description": "Friday, September 11, 2026: Gazzetta reports John Stones starting at center back against Udinese with Akanji at right back, Sky has Dimarco close to full training, and Inter Women extend Polli and Robustellini to 2029.",
+ "mast_alt": "Nerazzurri Daily Edition No. 10, Friday, September 11, 2026 — Stones in, Dimarco close",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Chivu had the squad <a href=\"https://www.inter.it/en/news/training-inter-10-september-2026\" rel=\"noopener\">back on the field at Appiano Gentile</a> on Thursday morning, three days out from Udinese at San Siro on Monday night. Gazzetta dello Sport reports <a href=\"https://www.fcinternews.it/copertina/i-gds-i-stones-prende-inter-titolare-udinese-cambio-difesa-1018095\" rel=\"noopener\">a rebuilt back line</a> for that match, and Sky Sport has Federico Dimarco, who missed the Bernabéu, close to full training. The club itself has said nothing about Monday's team — but it did <a href=\"https://www.inter.it/en/news/inter-women-renewal-elisa-polli-2029\" rel=\"noopener\">tie two more women's players to 2029</a>."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "TODAY",
+     "name": "No match",
+     "venue": null,
+     "line": "SERIE A · 2ND · 9 POINTS FROM 3"
+    },
+    {
+     "label": "LAST",
+     "name": "Real Madrid 2–1 Inter",
+     "venue": null,
+     "line": "CARLOS AUGUSTO 77' · CHAMPIONS LEAGUE"
+    },
+    {
+     "label": "NEXT",
+     "name": "Udinese",
+     "venue": "HOME",
+     "line": "MON 2:45 PM ET · 20:45 CEST"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB · LEAGUE · UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Two more women's contracts run to 2029",
+   "paras": [
+    "Inter announced on Friday morning that Elisa Polli, the forward born in 2000, will be at the club until June 30, 2029. A day earlier the club extended defender Chiara Robustellini, born in 2003, to the same date.",
+    "The Serie A Women season opens on the weekend of September 26 and 27, at home against Fiorentina."
+   ],
+   "kicker": "INTER.IT · SEP 10-11"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Back on the field at Appiano Gentile",
+   "paras": [
+    "The squad trained on Thursday morning at Appiano Gentile under Chivu and his staff, the first session the club has reported since the Bernabéu. Udinese come to San Siro on Monday, September 14 at 2:45 PM ET (20:45 CEST).",
+    "Inter have published no lineup and no injury list. Everything below about Monday's team is press."
+   ],
+   "kicker": "INTER.IT · SEP 10"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY · NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Gazzetta: Stones in the middle, Akanji to right back",
+   "paras": [
+    "Gazzetta dello Sport reports that John Stones will start at the center of the defense against Udinese on the strength of his second half at the Bernabéu, with Manuel Akanji shifting to right back in place of Yann Bisseck and Alessandro Bastoni on the left.",
+    "The paper's case is the Madrid numbers: 23 completed passes out of 23, one foul, and four aerial duels, more than any other Inter player on the night, two of them won. Inter have conceded five goals in four matches this season."
+   ],
+   "kicker": "GAZZETTA DELLO SPORT VIA FCINTERNEWS · SEP 10"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Sky: Dimarco close, Esposito in line to start",
+   "paras": [
+    "Sky Sport, carried by FCInter1908, reports that Dimarco worked on the field at high intensity on Thursday and should rejoin full group training between Friday and Saturday, which would put him in contention for Monday. He sat out the Real Madrid match.",
+    "The same report has Francesco Pio Esposito back in the starting lineup against Udinese."
+   ],
+   "kicker": "SKY SPORT VIA FCINTER1908 · SEP 10"
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "CHAMPIONS LEAGUE · MATCHDAY 1 · BERNABÉU"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Real Madrid 2-1 Inter",
+   "paras": [
+    "Scorers and minutes are the club's own match report.",
+    "SERIE A FORM W W W · THREE FROM THREE · NINE POINTS · MBAPPÉ 14, VALVERDE 23, CARLOS AUGUSTO 77"
+   ],
+   "kicker": ""
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "SEPTEMBER & INTO OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Udinese",
+     "venue": "HOME",
+     "line2": "MON, SEP 14 · SERIE A · MATCHDAY 4",
+     "line3": "2:45 PM ET · 20:45 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Roma",
+     "venue": "AWAY",
+     "line2": "SAT, SEP 19 · SERIE A · MATCHDAY 5",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Parma",
+     "venue": "HOME",
+     "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    },
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Times are the club's and the league's. US listings come from World Soccer Talk's published Serie A schedule, which does not carry the Champions League."
+  },
+  {
+   "t": "poll",
+   "lines": [
+    "YOUR CALL FOR FRIDAY · Gazzetta has Stones in the middle on Monday. One tap.",
+    "Reply to this email and tell me where you're reading from, and how Inter got you. I read every one. And if you know one Inter fan who'd want this, forward it to them — that's how this grows.",
+    "NEXT EDITION: SATURDAY, SEPTEMBER 12 — WHETHER DIMARCO TRAINS WITH THE GROUP"
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "INTER.IT",
+     "title": "TRAINING",
+     "url": "https://www.inter.it/en/news/training-inter-10-september-2026"
+    },
+    {
+     "outlet": "INTER.IT",
+     "title": "POLLI",
+     "url": "https://www.inter.it/en/news/inter-women-renewal-elisa-polli-2029"
+    },
+    {
+     "outlet": "INTER.IT",
+     "title": "ROBUSTELLINI",
+     "url": "https://www.inter.it/en/news/inter-and-chiara-robustellini-together-until-2029"
+    },
+    {
+     "outlet": "INTER.IT",
+     "title": "WOMEN'S CALENDAR",
+     "url": "https://www.inter.it/en/news/serie-a-women-2026-27-schedule-inter"
+    },
+    {
+     "outlet": "INTER.IT",
+     "title": "FIXTURES",
+     "url": "https://www.inter.it/en/matches"
+    },
+    {
+     "outlet": "INTER.IT",
+     "title": "SERIE A CALENDAR",
+     "url": "https://www.inter.it/en/news/serie-a-2026-27-schedule-inter-matchdays-6-12"
+    },
+    {
+     "outlet": "INTER.IT",
+     "title": "MATCH REPORT",
+     "url": "https://www.inter.it/en/news/real-madrid-inter-champions-league-2026-2027"
+    },
+    {
+     "outlet": "FCINTERNEWS",
+     "title": "GAZZETTA ON STONES",
+     "url": "https://www.fcinternews.it/copertina/i-gds-i-stones-prende-inter-titolare-udinese-cambio-difesa-1018095"
+    },
+    {
+     "outlet": "FCINTER1908",
+     "title": "SKY ON DIMARCO",
+     "url": "https://www.fcinter1908.it/ultimora/inter-novita-dimarco-udinese-stones-esposito/"
+    },
+    {
+     "outlet": "WORLD SOCCER TALK",
+     "title": "US TV SCHEDULE",
+     "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+    }
+   ]
+  }
+ ]
+}

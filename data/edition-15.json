@@ -1,0 +1,246 @@
+{
+ "n": 15,
+ "date": "2026-09-16",
+ "title": "Çalhanoğlu's adductor, and a scan for Stones",
+ "description": "Inter confirm an adductor strain for Hakan Çalhanoğlu, Sky Sport Italia aims him at the Parma match, Gazzetta expects John Stones back after the international break, and Genoa are Inter's Coppa Italia opponents.",
+ "mast_alt": "Nerazzurri Daily Edition No. 15, Wednesday, September 16, 2026 — Çalhanoğlu's adductor, and a scan for Stones",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Inter have put a name on Hakan Çalhanoğlu's injury: scans on Tuesday found <a href=\"https://www.inter.it/en/news/hakan-calhanoglu-injury-update-september-2026\" rel=\"noopener\">an adductor strain in his right thigh</a>. Sky Sport Italia expects the midfielder back <a href=\"https://sport.sky.it/calcio/serie-a/2026/09/15/inter-calhanoglu-stones-infortunio-news\" rel=\"noopener\">only after the international break</a>, and John Stones is scanned today. Inter will also meet <a href=\"https://www.inter.it/en/news/coppa-italia-2026-2027-bracket\" rel=\"noopener\">Genoa in the Coppa Italia round of 16</a>."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "YESTERDAY",
+     "name": "Crotone 0–2 Inter U23",
+     "venue": null,
+     "line": "MANCUSO 67' · LAVELLI 89' · SERIE C"
+    },
+    {
+     "label": "LAST",
+     "name": "Inter 5–3 Udinese",
+     "venue": null,
+     "line": "SERIE A · MATCHDAY 4 · SAN SIRO"
+    },
+    {
+     "label": "NEXT",
+     "name": "Roma",
+     "venue": "AWAY",
+     "line": "SAT 12:00 PM ET · 18:00 CEST"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB · LEAGUE · UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "The club puts a name on Çalhanoğlu's injury",
+   "paras": [
+    "Hakan Çalhanoğlu, Inter's deep-lying midfielder, had scans on Tuesday morning at the Istituto Clinico Humanitas in Rozzano. The club's statement runs three lines. \"Gli esami hanno evidenziato un risentimento muscolare all'adduttore della coscia destra\" — the tests showed a muscle strain in the adductor of his right thigh.",
+    "Inter set no return date and made no mention of Saturday at the Olimpico. He will be reassessed over the coming days."
+   ],
+   "kicker": "INTER.IT · SEP 15"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Genoa come out of the Coppa Italia draw",
+   "paras": [
+    "Genoa beat Südtirol 1–0 at home on Tuesday, a goal in the 87th minute settling it. That sends them into Inter's half of the bracket. Inter hold the trophy and are the competition's top seed, so they enter at the round of 16.",
+    "The tie falls on one of three Wednesdays — December 2, December 16 or January 13. Lega Serie A has fixed neither the date nor the venue.",
+    "ANSA puts the goal in the 43rd minute; Sky Sport Italia's match timeline and the Genoa report both have it in the 87th, and that is the version printed here."
+   ],
+   "kicker": "INTER.IT · SKY SPORT ITALIA · SEP 15"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "The U23s win at Crotone",
+   "paras": [
+    "Inter's under-23 team won 2–0 at Crotone on Tuesday, a first win after two defeats. Crotone played from the 32nd minute with ten men, after a red card for a foul on Matteo Lavelli. Matias Mancuso volleyed in the opener in the 67th minute, Lavelli scored the second in the 89th, and the U23s move to seven points from five matches in Serie C."
+   ],
+   "kicker": "INTER.IT · SEP 15"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY · NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Sky: the Parma match is the target",
+   "paras": [
+    "Sky Sport Italia reports that Inter's medical staff are aiming Çalhanoğlu at the Parma match on October 10. That would rule him out of Saturday at the Olimpico and carry him through the international break. Players are away with their national teams from September 21 to October 6.",
+    "Edition No. 14 carried Sky's report that he was a doubt for Roma. New today is a target date."
+   ],
+   "kicker": "UPDATE · SKY SPORT ITALIA · SEP 15"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Gazzetta: Stones back after the break",
+   "paras": [
+    "Gazzetta dello Sport, Italy's biggest sports daily, has a first return window for John Stones. The paper describes \"un risentimento ai flessori della coscia sinistra\" — a strain in the hamstring of his left thigh — and expects him back after the break. Stones, the defender signed this summer, came off in the 61st minute against Udinese.",
+    "Sky Sport Italia says further scans were set for today, so a firmer answer should arrive within hours.",
+    "Edition No. 14 had Stones as a doubt with tests due. New today is a first expected return window."
+   ],
+   "kicker": "UPDATE · GAZZETTA DELLO SPORT VIA FCINTERNEWS · SEP 15"
+  },
+  {
+   "t": "poll",
+   "lines": [
+    "YESTERDAY · no votes yet — be the first",
+    "YOUR CALL FOR WEDNESDAY · Sky has a date in mind for Çalhanoğlu. Do you?"
+   ]
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "SERIE A · MATCHDAY 4 · SAN SIRO"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter 5–3 Udinese",
+   "paras": [
+    "ABANKWAH 9' · EKKELENKAMP 16' · CARLOS AUGUSTO 26' · BARELLA 35' · THURAM 57' · ESPOSITO 67' · BONNY 79' · GUEYE 90+1'",
+    "Scorers and minutes are the club's own match report."
+   ],
+   "kicker": "SERIE A FORM W W W W · TWELVE POINTS · LEVEL WITH ROMA AT THE TOP"
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "SEPTEMBER & INTO OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Roma",
+     "venue": "AWAY",
+     "line2": "SAT, SEP 19 · SERIE A · MATCHDAY 5",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Parma",
+     "venue": "HOME",
+     "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    },
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Shakhtar Donetsk",
+     "venue": "HOME",
+     "line2": "WED, OCT 21 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    }
+   ]
+  },
+  {
+   "t": "note",
+   "html": "Kickoff times are the club's and the league's. US listings come from the published Serie A schedule at World Soccer Talk. Sports Media Watch has the Parma match a day later, with no time set."
+  },
+  {
+   "t": "ask",
+   "html": "Reply to this email with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+  },
+  {
+   "t": "next",
+   "text": "THURSDAY, SEPTEMBER 17 — WHAT THE SCAN SAYS ABOUT STONES"
+  },
+  {
+   "t": "follow",
+   "links": [
+    {
+     "label": "YouTube",
+     "url": "https://www.youtube.com/@nerazzurridaily"
+    },
+    {
+     "label": "TikTok",
+     "url": "https://www.tiktok.com/@nerazzurridaily"
+    }
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "Inter.it",
+     "title": "Çalhanoğlu Injury Update",
+     "url": "https://www.inter.it/en/news/hakan-calhanoglu-injury-update-september-2026"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Coppa Italia Bracket",
+     "url": "https://www.inter.it/en/news/coppa-italia-2026-2027-bracket"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Crotone 0–2 Inter U23",
+     "url": "https://www.inter.it/it/notizie/crotone-inter-u23-serie-c-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Back to Work Before Roma",
+     "url": "https://www.inter.it/en/news/training-inter-15-september-2026"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Inter 5–3 Udinese",
+     "url": "https://www.inter.it/en/news/inter-udinese-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Champions League Fixtures",
+     "url": "https://www.inter.it/en/news/standings-league-phase-inter-fixtures-champions-league-26-27"
+    },
+    {
+     "outlet": "Sky Sport Italia",
+     "title": "Çalhanoğlu and Stones",
+     "url": "https://sport.sky.it/calcio/serie-a/2026/09/15/inter-calhanoglu-stones-infortunio-news"
+    },
+    {
+     "outlet": "Sky Sport Italia",
+     "title": "Genoa 1–0 Südtirol, Match Timeline",
+     "url": "https://sport.sky.it/calcio/coppa-italia/partite/2026/giornata-3/genoa-sudtirol/risultato-gol"
+    },
+    {
+     "outlet": "Gazzetta via FCInterNews",
+     "title": "Stones After the Break",
+     "url": "https://www.fcinternews.it/copertina/i-gds-i-calhanoglu-fortissimo-rischio-roma-inter-punto-stones-sosta-1018468"
+    },
+    {
+     "outlet": "FCInter1908",
+     "title": "Genoa Reach the Round of 16",
+     "url": "https://www.fcinter1908.it/ultimora/coppa-italia-il-genoa-batte-il-sudtirol-e-vola-agli-ottavi-affrontera-linter/"
+    },
+    {
+     "outlet": "World Soccer Talk",
+     "title": "US TV Schedule",
+     "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,231 @@
+{
+ "n": 12,
+ "date": "2026-09-13",
+ "title": "Dimarco available",
+ "description": "Sky has Federico Dimarco back in full group training and available for Udinese on Monday; Chivu speaks at 8:00 AM ET; Inter Women open in Europe on September 22.",
+ "mast_alt": "Nerazzurri Daily Edition No. 12, Sunday, September 13, 2026 — Dimarco available",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Sky Sport says Federico Dimarco <a href=\"https://www.fcinternews.it/in-primo-piano/inter-udinese-dimarco-appiano-allenamento-gruppo-chivu-1018263\" rel=\"noopener\">trained with the full group on Saturday</a> and is available for Udinese on Monday, though Chivu may still hold him back with Roma away next weekend. Chivu takes questions today at 8:00 AM ET (14:00 CEST), <a href=\"https://www.inter.it/it/notizie/annuncio-conferenza-stampa-Chivu-inter-udinese-2026\" rel=\"noopener\">streamed on the club's own channels</a>. Inter's <a href=\"https://www.inter.it/it/notizie/guida-inter-udinese-serie-a-26-27\" rel=\"noopener\">matchday guide</a> gives Luca Pairetto the whistle at San Siro."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "TODAY",
+     "name": "No match",
+     "venue": null,
+     "line": "CHIVU SPEAKS 8:00 AM ET · 14:00 CEST"
+    },
+    {
+     "label": "LAST",
+     "name": "Real Madrid 2–1 Inter",
+     "venue": null,
+     "line": "CARLOS AUGUSTO 77' · CHAMPIONS LEAGUE"
+    },
+    {
+     "label": "NEXT",
+     "name": "Udinese",
+     "venue": "HOME",
+     "line": "MON 2:45 PM ET · 20:45 CEST"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB · LEAGUE · UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Chivu speaks at 8:00 AM ET, and it is streamed",
+   "paras": [
+    "Inter's own communiqué puts Cristian Chivu's pre-match press conference at 8:00 AM ET (14:00 CEST) today at Appiano Gentile, live on the club's official channels.",
+    "Inter have published no lineup and no injury list. Everything under the red bar is press."
+   ],
+   "kicker": "INTER.IT · SEP 11"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Pairetto referees, and the gates open at 12:45 PM ET",
+   "paras": [
+    "The club's matchday guide names Luca Pairetto for Monday's Serie A matchday 4 at San Siro, with Marini on VAR. Inter say the last tickets are on sale and the gates open at 12:45 PM ET (18:45 CEST), with no season-ticket resale for this one."
+   ],
+   "kicker": "INTER.IT · SEP 13"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter Women's European debut is set for September 22",
+   "paras": [
+    "Inter Women play their first Women's Champions League match on Tuesday, September 22 against BK Häcken of Sweden, 12:45 PM ET (18:45 CEST) at the Stadio Brianteo in Monza. Seats are €10 and €5, with a €1 rate for season-ticket holders, Inter Club members, under-18s and women."
+   ],
+   "kicker": "INTER.IT · SEP 11"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY · NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Sky: Dimarco is back in the group, and available",
+   "paras": [
+    "Sky Sport's Raffaele Caruso reports that Federico Dimarco trained with the full group at Appiano Gentile on Saturday, after the knee sprain that kept him out at the Bernabéu, and is available for Monday. The same report has Chivu weighing whether to use him at all with Roma away on Saturday, and Carlos Augusto keeping the left after his goal in Madrid."
+   ],
+   "kicker": "SKY SPORT VIA FCINTERNEWS · SEP 12"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Ronaldo, from New York: Inter are still the favorites",
+   "paras": [
+    "Speaking to Sky Sport at the US Open, Ronaldo said the Bernabéu defeat was an ordinary result, and that \"L'Inter è ancora favorita per lo scudetto\" — Inter are still the favorites for the title."
+   ],
+   "kicker": "SKY SPORT VIA FCINTER1908 · SEP 12"
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "CHAMPIONS LEAGUE · MATCHDAY 1 · BERNABÉU"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Real Madrid 2–1 Inter",
+   "paras": [
+    "Inter Women lost on Saturday too, 1–0 to Juventus in the Serie A Women's Cup semifinal in Biella, on a Van Diemen own goal at 34.",
+    "Scorers and minutes are the club's own match reports."
+   ],
+   "kicker": "SERIE A FORM W W W · THREE FROM THREE · NINE POINTS"
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "SEPTEMBER & INTO OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Udinese",
+     "venue": "HOME",
+     "line2": "MON, SEP 14 · SERIE A · MATCHDAY 4",
+     "line3": "2:45 PM ET · 20:45 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Roma",
+     "venue": "AWAY",
+     "line2": "SAT, SEP 19 · SERIE A · MATCHDAY 5",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Parma",
+     "venue": "HOME",
+     "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    },
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Times are the club's and the league's. US listings come from the published Serie A schedules at World Soccer Talk and Sports Media Watch, neither of which lists the Champions League dates yet."
+  },
+  {
+   "t": "poll",
+   "lines": [
+    "YOUR CALL FOR SUNDAY · He is fit, and Roma are five days away. One tap.",
+    "Reply to this email and tell me where you're reading from, and how Inter got you. I read every one. And if you know one Inter fan who'd want this, forward it to them — that's how this grows.",
+    "NEXT EDITION: MONDAY, SEPTEMBER 14 — WHAT CHIVU SAID, AND THE TEAM FOR UDINESE"
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "INTER.IT",
+     "title": "PRESS CONFERENCE",
+     "url": "https://www.inter.it/it/notizie/annuncio-conferenza-stampa-Chivu-inter-udinese-2026"
+    },
+    {
+     "outlet": "INTER.IT",
+     "title": "MATCH GUIDE",
+     "url": "https://www.inter.it/it/notizie/guida-inter-udinese-serie-a-26-27"
+    },
+    {
+     "outlet": "INTER.IT",
+     "title": "STADIUM INFO",
+     "url": "https://www.inter.it/it/notizie/info-stadio-biglietti-inter-udinese-serie-a-26-27"
+    },
+    {
+     "outlet": "INTER.IT",
+     "title": "WOMEN IN EUROPE",
+     "url": "https://www.inter.it/it/notizie/womens-champions-league-biglietti-inter-hacken"
+    },
+    {
+     "outlet": "INTER.IT",
+     "title": "SERIE A WOMEN",
+     "url": "https://www.inter.it/it/notizie/serie-a-women-2026-27-calendario-inter"
+    },
+    {
+     "outlet": "INTER.IT",
+     "title": "WOMEN'S CUP",
+     "url": "https://www.inter.it/it/notizie/juventus-inter-women-serie-a-womens-cup-2026-27"
+    },
+    {
+     "outlet": "INTER.IT",
+     "title": "MATCH REPORT",
+     "url": "https://www.inter.it/en/news/real-madrid-inter-champions-league-2026-2027"
+    },
+    {
+     "outlet": "INTER.IT",
+     "title": "SERIE A CALENDAR",
+     "url": "https://www.inter.it/en/news/serie-a-2026-27-schedule-inter-matchdays-6-12"
+    },
+    {
+     "outlet": "INTER.IT",
+     "title": "CHAMPIONS CALENDAR",
+     "url": "https://www.inter.it/en/news/inter-schedule-champions-league-2026-2027"
+    },
+    {
+     "outlet": "FCINTERNEWS",
+     "title": "SKY ON DIMARCO",
+     "url": "https://www.fcinternews.it/in-primo-piano/inter-udinese-dimarco-appiano-allenamento-gruppo-chivu-1018263"
+    },
+    {
+     "outlet": "FCINTER1908",
+     "title": "RONALDO",
+     "url": "https://www.fcinter1908.it/news/interviste/ronaldo-inter-scudetto-real-champions/"
+    },
+    {
+     "outlet": "WORLD SOCCER TALK",
+     "title": "US TV",
+     "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+    },
+    {
+     "outlet": "SPORTS MEDIA WATCH",
+     "title": "US TV",
+     "url": "https://www.sportsmediawatch.com/tv-schedules/club-soccer/serie-a/"
+    }
+   ]
+  }
+ ]
+}

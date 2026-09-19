@@ -1,0 +1,225 @@
+{
+ "n": 14,
+ "date": "2026-09-15",
+ "title": "Inter 5–3 Udinese, from two down",
+ "description": "Inter came from two goals down to beat Udinese 5–3 at San Siro. Chivu took the blame and defended his goalkeeper; Sky has Stones and Çalhanoğlu in doubt for Roma.",
+ "mast_alt": "Nerazzurri Daily Edition No. 14, Tuesday, September 15, 2026 — Inter 5–3 Udinese, from two down",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Inter went two goals down at San Siro inside 16 minutes and <a href=\"https://www.inter.it/en/news/inter-udinese-serie-a-2026-27\" rel=\"noopener\">won 5–3 with five different scorers</a>. Cristian Chivu, Inter's coach, <a href=\"https://www.inter.it/en/news/interview-chivu-inter-udinese-serie-a-26-27\" rel=\"noopener\">took the blame for the flat start</a> and then spent his press conference defending his goalkeeper. Inter go to Roma on Saturday level at the top of Serie A, and Sky Sport Italia expects them to be without two starters."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "YESTERDAY",
+     "name": "Inter 5–3 Udinese",
+     "venue": null,
+     "line": "SERIE A · MATCHDAY 4 · SAN SIRO"
+    },
+    {
+     "label": "LAST IN EUROPE",
+     "name": "Real Madrid 2–1 Inter",
+     "venue": null,
+     "line": "CARLOS AUGUSTO 77' · CHAMPIONS LEAGUE"
+    },
+    {
+     "label": "NEXT",
+     "name": "Roma",
+     "venue": "AWAY",
+     "line": "SAT 12:00 PM ET · 18:00 CEST"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB · LEAGUE · UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Chivu takes the blame, then defends his goalkeeper",
+   "paras": [
+    "Cristian Chivu spoke at San Siro after the match. \"Mi prendo la responsabilità di non aver trasmesso l'energia giusta stasera\" — I take responsibility for not passing on the right energy tonight.",
+    "He then turned to his goalkeeper, Josep Martínez, who has been criticized in the Italian press. \"Lo difenderò fino alla morte\" — I will defend him to the death. He asked reporters to print one line: \"Martinez non sarà mai un problema\" — Martinez will never be a problem."
+   ],
+   "kicker": "SAID · INTER.IT · SKY SPORT ITALIA · SEP 14"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Juventus end the Inter Women cup run",
+   "paras": [
+    "Inter Women lost 1–0 to Juventus in the Serie A Women's Cup semifinal on Saturday in Biella. An own goal from Inter defender Van Diemen, in the 34th minute, settled it. Coach David Sassarini called it a good performance on a difficult field, punished by one incident.",
+    "Next for them is Häcken on September 22, Inter's first match in the UEFA Women's Champions League."
+   ],
+   "kicker": "INTER.IT · SEP 13"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY · NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Sky: Stones and Çalhanoğlu are doubts for Roma",
+   "paras": [
+    "Sky Sport Italia reports that John Stones, the defender signed this summer, came off in the 62nd minute with a problem in his left hamstring. Tests are due within hours. \"Le sensazioni, anche per il modo in cui è uscito, non sono positive\" — the feeling, given the way he came off, is not good.",
+    "Hakan Çalhanoğlu, who missed Monday with adductor fatigue, is described as in serious doubt for the Olimpico. Inter have ruled out neither player."
+   ],
+   "kicker": "SKY SPORT ITALIA VIA FCINTERNEWS · SEP 14"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Sport: Barcelona offered Balde for Dimarco",
+   "paras": [
+    "The Spanish daily Sport reports that Barcelona wanted Federico Dimarco in the summer window. Through sporting director Deco they proposed a swap: Dimarco to Barcelona, Alejandro Balde to Inter, with a cash balance in Inter's favor. Inter refused — \"non c'è mai stata nessuna apertura a questo scenario\" — there was never any opening to that scenario.",
+    "Edition No. 13 carried the push to extend Dimarco to 2030. New today is the offer Inter turned down."
+   ],
+   "kicker": "UPDATE · SPORT VIA FCINTER1908 · SEP 14"
+  },
+  {
+   "t": "poll",
+   "lines": [
+    "YESTERDAY · early — 1 vote so far",
+    "YOUR CALL FOR TUESDAY · Chivu may be without his metronome at the Olimpico."
+   ]
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "SERIE A · MATCHDAY 4 · SAN SIRO"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter 5–3 Udinese",
+   "paras": [
+    "Two goals down inside 16 minutes, and assistant coach Aleksandar Kolarov sent off in the 19th. Five different Inter players scored after that.",
+    "ABANKWAH 9' · EKKELENKAMP 16' · CARLOS AUGUSTO 26' · BARELLA 35' · THURAM 57' · ESPOSITO 67' · BONNY 79' · GUEYE 90+1'",
+    "Scorers and minutes are the club's own match reports."
+   ],
+   "kicker": "SERIE A FORM W W W W · TWELVE POINTS · LEVEL WITH ROMA AT THE TOP"
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "SEPTEMBER & INTO OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Roma",
+     "venue": "AWAY",
+     "line2": "SAT, SEP 19 · SERIE A · MATCHDAY 5",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Parma",
+     "venue": "HOME",
+     "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    },
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    }
+   ]
+  },
+  {
+   "t": "note",
+   "html": "Kickoff times are the club's and the league's. US listings come from the published Serie A schedule at World Soccer Talk, which does not yet carry the Champions League dates."
+  },
+  {
+   "t": "ask",
+   "html": "Reply to this email with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+  },
+  {
+   "t": "next",
+   "text": "WEDNESDAY, SEPTEMBER 16 — WHAT THE TESTS SAY ABOUT STONES"
+  },
+  {
+   "t": "follow",
+   "links": [
+    {
+     "label": "YouTube",
+     "url": "https://www.youtube.com/@nerazzurridaily"
+    },
+    {
+     "label": "TikTok",
+     "url": "https://www.tiktok.com/@nerazzurridaily"
+    }
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "Inter.it",
+     "title": "Inter 5–3 Udinese, Match Report",
+     "url": "https://www.inter.it/en/news/inter-udinese-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Official Lineups",
+     "url": "https://www.inter.it/en/news/team-news-inter-udinese-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Chivu, Post-Match",
+     "url": "https://www.inter.it/en/news/interview-chivu-inter-udinese-serie-a-26-27"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "Chivu Press Conference",
+     "url": "https://www.fcinternews.it/in-primo-piano/chivu-conferenza-1018428"
+    },
+    {
+     "outlet": "Sky via FCInterNews",
+     "title": "Stones and Çalhanoğlu",
+     "url": "https://www.fcinternews.it/focus/problema-muscolare-stones-calhanoglu-i-out-i-i-in-i-roma-1018463"
+    },
+    {
+     "outlet": "Sky Sport Italia",
+     "title": "Çalhanoğlu",
+     "url": "https://sport.sky.it/calcio/serie-a/2026/09/14/calhanoglu-infortunio-inter-news"
+    },
+    {
+     "outlet": "Sport via FCInter1908",
+     "title": "Dimarco and Balde",
+     "url": "https://www.fcinter1908.it/calciomercato/mercato-inter/dimarco-rinnovo-retroscena-proposta-scambio-estiva/"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Juventus 1–0 Inter Women",
+     "url": "https://www.inter.it/it/notizie/juventus-inter-women-serie-a-womens-cup-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Champions League Fixtures",
+     "url": "https://www.inter.it/en/news/standings-league-phase-inter-fixtures-champions-league-26-27"
+    },
+    {
+     "outlet": "World Soccer Talk",
+     "title": "US TV",
+     "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,260 @@
+{
+ "n": 18,
+ "date": "2026-09-19",
+ "title": "Sandro Mazzola dies, aged 83",
+ "description": "Sandro Mazzola has died, aged 83. Inter play Roma at the Olimpico with both clubs level on 12 points, and the club names John Stones's injury.",
+ "mast_alt": "Nerazzurri Daily Edition No. 18, Saturday, September 19, 2026 — Sandro Mazzola dies, aged 83",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Sandro Mazzola, who joined Inter as a boy and never left, <a href=\"https://www.inter.it/en/news/ciao-sandro-an-eternal-inter-icon-remembering-sandro-mazzola\" rel=\"noopener\">died overnight, aged 83</a>. Inter play Roma at the Stadio Olimpico this afternoon, <a href=\"https://www.inter.it/en/news/guide-roma-inter-serie-a-206-27\" rel=\"noopener\">first against first</a>. The club has also <a href=\"https://www.inter.it/en/news/john-stones-injury-update-september-2026\" rel=\"noopener\">named John Stones's injury</a>: a muscle strain in his left thigh."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "TODAY",
+     "name": "Roma",
+     "venue": "AWAY",
+     "line": "12:00 PM ET · 18:00 CEST · SERIE A · MATCHDAY 5"
+    },
+    {
+     "label": "LAST",
+     "name": "Inter 5–3 Udinese",
+     "venue": null,
+     "line": "SERIE A · MATCHDAY 4 · SAN SIRO"
+    },
+    {
+     "label": "NEXT",
+     "name": "Parma",
+     "venue": "HOME",
+     "line": "SAT, OCT 10 · 12:00 PM ET · 18:00 CEST"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB · LEAGUE · UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Sandro Mazzola has died, aged 83",
+   "paras": [
+    "Sandro Mazzola died in the early hours of Saturday morning. He was 83. Inter announced it themselves. The statement names president Giuseppe Marotta, vice-president Javier Zanetti and head coach Cristian Chivu among those who \"mourn with profound sorrow the passing of Sandro Mazzola.\" No cause was given.",
+    "Seventeen seasons, 1960 to 1977: 565 official appearances, 158 goals, four league titles, two European Cups, two Intercontinental Cups. He was Serie A's top scorer in 1965 and second in the 1971 Ballon d'Or.",
+    "Flags are at half mast at the Italian federation's headquarters and at Coverciano, its technical center. A minute's silence will be held at every sporting event in Italy this weekend."
+   ],
+   "kicker": "INTER.IT · SKY SPORT ITALIA · ANSA · SEP 19"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "The club names Stones's injury",
+   "paras": [
+    "John Stones, the defender signed this summer, had tests on Friday at the Istituto Humanitas in Rozzano. \"The tests revealed a muscle strain to the flexor muscles in his left thigh,\" the club wrote. \"His condition will be reassessed over the coming days.\" No return date was set.",
+    "Edition No. 15 carried Gazzetta dello Sport, Italy's biggest sports daily, on a strain in the same thigh. New today is the club's own diagnosis."
+   ],
+   "kicker": "UPDATE · INTER.IT · SEP 18"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Massa takes Roma–Inter, first against first",
+   "paras": [
+    "Davide Massa referees at the Stadio Olimpico this afternoon, with Mazzoleni on VAR. Kickoff is 12:00 PM ET, 18:00 CEST.",
+    "The 187th league meeting between them, the most-played fixture in Serie A. Both arrive with 12 points: Inter have won four out of four, Roma beat Torino 2–0 last time out."
+   ],
+   "kicker": "INTER.IT · SEP 19"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY · NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Sky: three to four weeks for Stones",
+   "paras": [
+    "Sky Sport Italia puts John Stones's recovery at three to four weeks. The target is the Parma match on October 10, the first fixture after the international break.",
+    "Edition No. 15 had him back after the break. New today is a length."
+   ],
+   "kicker": "UPDATE · SKY SPORT ITALIA · SEP 17"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Chivu says nothing, and a call to make at left wing-back",
+   "paras": [
+    "Cristian Chivu, Inter's head coach, held no press conference on the eve of the match. Corriere dello Sport calls it the first one he has skipped this season. Gian Piero Gasperini, Roma's head coach, met reporters as usual. The paper's verdict: \"due strategie diverse\" — two different strategies.",
+    "Sky Sport Italia has Lautaro Martínez, Inter's forward, back in the starting eleven after resting at Udinese. FCInter1908 has the one real argument on the other flank: Federico Dimarco against Carlos Augusto at left wing-back."
+   ],
+   "kicker": "CORRIERE DELLO SPORT · SKY SPORT ITALIA · FCINTER1908 · SEP 18"
+  },
+  {
+   "t": "poll",
+   "lines": [
+    "YESTERDAY · no votes yet — be the first",
+    "YOUR CALL FOR SATURDAY · one shirt, two claims.",
+    "FCInter1908 has Carlos Augusto pushing Federico Dimarco for the left wing-back shirt at the Olimpico. Who would you start?",
+    "Federico Dimarco — the incumbent",
+    "Carlos Augusto — the fresher legs",
+    "Split it — Dimarco first, Carlos Augusto after the hour",
+    "Tap one. No sign-in. Results in tomorrow's edition."
+   ]
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "SERIE A · MATCHDAY 4 · SAN SIRO"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter 5–3 Udinese",
+   "paras": [
+    "ABANKWAH 9' · EKKELENKAMP 16' · CARLOS AUGUSTO 26' · BARELLA 35' · THURAM 57' · ESPOSITO 67' · BONNY 79' · GUEYE 90+1'"
+   ],
+   "kicker": "SERIE A FORM W W W W · TWELVE POINTS · LEVEL WITH ROMA AT THE TOP"
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "OCTOBER & INTO NOVEMBER · EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Parma",
+     "venue": "HOME",
+     "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    },
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Shakhtar Donetsk",
+     "venue": "HOME",
+     "line2": "WED, OCT 21 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    },
+    {
+     "name": "Feyenoord",
+     "venue": "AWAY",
+     "line2": "TUE, NOV 3 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CET · US TV: NOT YET PUBLISHED"
+    }
+   ]
+  },
+  {
+   "t": "note",
+   "html": "Kickoff times are the club's; US listings are World Soccer Talk's. No US listing for the Champions League dates yet."
+  },
+  {
+   "t": "ask",
+   "html": "Reply to this email with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+  },
+  {
+   "t": "next",
+   "text": "SUNDAY, SEPTEMBER 20 — WHAT HAPPENED AT THE OLIMPICO"
+  },
+  {
+   "t": "follow",
+   "links": [
+    {
+     "label": "YouTube",
+     "url": "https://www.youtube.com/@nerazzurridaily"
+    },
+    {
+     "label": "TikTok",
+     "url": "https://www.tiktok.com/@nerazzurridaily"
+    }
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "Inter.it",
+     "title": "Remembering Sandro Mazzola",
+     "url": "https://www.inter.it/en/news/ciao-sandro-an-eternal-inter-icon-remembering-sandro-mazzola"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "John Stones Injury Update",
+     "url": "https://www.inter.it/en/news/john-stones-injury-update-september-2026"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Roma vs. Inter, the Complete Guide",
+     "url": "https://www.inter.it/en/news/guide-roma-inter-serie-a-206-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Inter 5–3 Udinese",
+     "url": "https://www.inter.it/en/news/inter-udinese-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Champions League Fixtures",
+     "url": "https://www.inter.it/en/news/standings-league-phase-inter-fixtures-champions-league-26-27"
+    },
+    {
+     "outlet": "Sky Sport Italia",
+     "title": "Sandro Mazzola, Live Coverage",
+     "url": "https://sport.sky.it/calcio/serie-a/2026/09/19/sandro-mazzola-morto-news-diretta"
+    },
+    {
+     "outlet": "Sky Sport Italia",
+     "title": "Stones and the Recovery Time",
+     "url": "https://sport.sky.it/calcio/serie-a/2026/09/17/stones-infortunio-inter-news"
+    },
+    {
+     "outlet": "Sky Sport Italia",
+     "title": "Roma vs. Inter, the Projected Elevens",
+     "url": "https://sport.sky.it/calcio/serie-a/2026/09/18/roma-inter-probabili-formazioni-5-giornata"
+    },
+    {
+     "outlet": "ANSA",
+     "title": "Addio a Sandro Mazzola",
+     "url": "https://www.ansa.it/sito/notizie/sport/calcio/2026/09/19/addio-a-sandro-mazzola-la-bandiera-dellinter-aveva-83-anni_4e64feca-d64f-4fb1-92e1-065b2d74325f.html"
+    },
+    {
+     "outlet": "Corriere dello Sport",
+     "title": "Flags at Half Mast and a Minute's Silence",
+     "url": "https://www.corrieredellosport.it/news/calcio/2026/09/19-151332349/per_mazzola_bandiere_a_mezz_asta_e_minuto_di_silenzio_malag_ho_un_dolore_profondo"
+    },
+    {
+     "outlet": "Corriere dello Sport",
+     "title": "Gasperini Speaks, Chivu Stays Silent",
+     "url": "https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/09/18-151311341/botta_e_risposta_tra_roma_e_inter_gasperini_parla_in_conferenza_chivu_invece_resta_zitto"
+    },
+    {
+     "outlet": "FCInter1908",
+     "title": "Who Starts at Left Wing-Back",
+     "url": "https://www.fcinter1908.it/ultimora/roma-inter-ultimissime-probabile-formazione-ballottaggio-sorpresa/"
+    },
+    {
+     "outlet": "World Soccer Talk",
+     "title": "US TV Schedule",
+     "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+    }
+   ]
+  }
+ ]
+}

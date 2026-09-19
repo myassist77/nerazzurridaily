@@ -1,0 +1,261 @@
+{
+ "n": 13,
+ "date": "2026-09-14",
+ "title": "Stones in, Dimarco benched",
+ "description": "Chivu confirms Dimarco is available and Spence is not, Sky's projected lineup gives John Stones his first Inter start, and the new third kit plays tonight against Udinese.",
+ "mast_alt": "Nerazzurri Daily Edition No. 13, Monday, September 14, 2026 — Stones in, Dimarco benched",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Inter host Udinese at San Siro tonight at 2:45 PM ET (20:45 CEST). <a href=\"https://www.napolimagazine.com/calcio/articolo/sky-inter-la-probabile-formazione-contro-l-udinese-14-09-2026\" rel=\"noopener\">Sky Sport Italia's projected lineup</a> gives John Stones his first Inter start, with Federico Dimarco on the bench. Cristian Chivu <a href=\"https://www.inter.it/en/news/press-conference-chivu-ahead-of-inter-udinese-26-27\" rel=\"noopener\">confirmed on Sunday</a> that Dimarco is available and Djed Spence is not. The <a href=\"https://www.inter.it/it/notizie/inter-nike-third-kit-stagione-2026-27\" rel=\"noopener\">new third kit</a> plays tonight."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "TODAY",
+     "name": "Udinese",
+     "venue": "HOME",
+     "line": "2:45 PM ET · 20:45 CEST · SAN SIRO"
+    },
+    {
+     "label": "LAST",
+     "name": "Real Madrid 2–1 Inter",
+     "venue": null,
+     "line": "CARLOS AUGUSTO 77' · CHAMPIONS LEAGUE"
+    },
+    {
+     "label": "NEXT",
+     "name": "Roma",
+     "venue": "AWAY",
+     "line": "SAT 12:00 PM ET · 18:00 CEST"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB · LEAGUE · UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Chivu: Dimarco is available, Spence is not",
+   "paras": [
+    "Cristian Chivu took questions on Sunday at Appiano Gentile, Inter's training ground. He was direct: \"Dimarco oggi si è allenato con la squadra ed è a disposizione\" — Dimarco trained with the team today and is available. Spence, he said, is \"ancora nel processo di riatletizzazione\" — still rebuilding his fitness.",
+    "Chivu is also still capping midfielder Hakan Çalhanoğlu near 65 minutes. On Europe he was blunt: \"su 7 ne abbiamo vinta 1\" — we have won one of seven.",
+    "Yesterday this was a Sky Sport Italia report. The coach has now said it on the record."
+   ],
+   "kicker": "UPDATE · SAID · INTER.IT · SEP 13"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "The third kit launches today, and plays tonight",
+   "paras": [
+    "Inter and Nike put the 2026/27 third kit on sale today. It has an Iron Ore base, a black chest band trimmed in Blue Spark, and Speed Yellow on the swoosh and the crest. The collar carries an INTER graphic from the club's 1990s look. The team wears it tonight, and BBVA appears as sleeve partner for the first time."
+   ],
+   "kicker": "INTER.IT · SEP 14"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Casertana beat Inter U23 3–2 at the Breda",
+   "paras": [
+    "Inter's Under-23 side lost in Serie C on Saturday at the Stadio Breda. Henin scored in the 46th minute, then turned the ball into his own net in the 58th. Castelli and Manconi made it 3–1, and Mosconi answered in the 88th. Coach Stefano Vecchi was sent off in the 70th for protesting a video review."
+   ],
+   "kicker": "INTER.IT · SEP 13"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY · NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Sky's eleven: Stones starts, Dimarco waits",
+   "paras": [
+    "Sky Sport Italia's projected lineup is a 3-5-2. Josep Martínez starts in goal, behind Manuel Akanji, John Stones and Alessandro Bastoni. The midfield is Andy Diouf, Nicolò Barella, Piotr Zieliński, Curtis Jones and Carlos Augusto. Francesco Pio Esposito partners captain Lautaro Martínez.",
+    "It would be a first start for Stones, the defender signed this summer. Udinese are thin too, without Piotrowski or Solet."
+   ],
+   "kicker": "SKY SPORT ITALIA · SEP 14"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Gazzetta: Inter want Dimarco signed to 2030",
+   "paras": [
+    "Gazzetta dello Sport, Italy's biggest sports daily, reports that Inter want Federico Dimarco extended at least to 2030. His deal runs to 2027, with a club option for one more year.",
+    "Sporting director Dario Baccin will meet the agent Arturo Canales again, after a first meeting in Madrid. Dimarco earns four million euros net a season (Italian salaries are quoted after tax).",
+    "Edition No. 11 carried the talks opening. New today is the 2030 target."
+   ],
+   "kicker": "UPDATE · GAZZETTA VIA FCINTERNEWS · SEP 12"
+  },
+  {
+   "t": "poll",
+   "lines": [
+    "YESTERDAY · no votes yet — be the first",
+    "YOUR CALL FOR MONDAY · Sky has one answer. You may have another."
+   ]
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "CHAMPIONS LEAGUE · MATCHDAY 1 · BERNABÉU"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Real Madrid 2–1 Inter",
+   "paras": [
+    "Kylian Mbappé and Federico Valverde scored inside 23 minutes, and Carlos Augusto answered late.",
+    "MBAPPÉ 14' · VALVERDE 23' · CARLOS AUGUSTO 77'",
+    "Scorers and minutes are the club's own match reports."
+   ],
+   "kicker": "SERIE A FORM W W W · THREE FROM THREE · NINE POINTS"
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "SEPTEMBER & INTO OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Udinese",
+     "venue": "HOME",
+     "line2": "MON, SEP 14 · SERIE A · MATCHDAY 4",
+     "line3": "2:45 PM ET · 20:45 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Roma",
+     "venue": "AWAY",
+     "line2": "SAT, SEP 19 · SERIE A · MATCHDAY 5",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Parma",
+     "venue": "HOME",
+     "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    },
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    }
+   ]
+  },
+  {
+   "t": "note",
+   "html": "Kickoff times are the club’s and the league’s. US listings come from the published Serie A schedules at World Soccer Talk and Sports Media Watch, neither of which lists the Champions League dates yet."
+  },
+  {
+   "t": "ask",
+   "html": "Reply to this email with one word — which of today’s items should I chase tomorrow? — and tell me where you’re reading from. I read every one."
+  },
+  {
+   "t": "next",
+   "text": "TUESDAY, SEPTEMBER 15 — THE UDINESE RESULT, AND WHAT IT MEANT"
+  },
+  {
+   "t": "follow",
+   "links": [
+    {
+     "label": "YouTube",
+     "url": "https://www.youtube.com/@nerazzurridaily"
+    },
+    {
+     "label": "TikTok",
+     "url": "https://www.tiktok.com/@nerazzurridaily"
+    }
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "Inter.it",
+     "title": "Chivu Press Conference",
+     "url": "https://www.inter.it/en/news/press-conference-chivu-ahead-of-inter-udinese-26-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Chivu, Italian Original",
+     "url": "https://www.inter.it/it/notizie/conferenza-stampa-chivu-vigilia-inter-udinese-26-27"
+    },
+    {
+     "outlet": "Sky Sport Italia",
+     "title": "Press Conference Video",
+     "url": "https://sport.sky.it/calcio/serie-a/2026/09/13/inter-udinese-chivu-conferenza-video"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Third Kit",
+     "url": "https://www.inter.it/it/notizie/inter-nike-third-kit-stagione-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Inter U23 vs Casertana",
+     "url": "https://www.inter.it/it/notizie/inter-u23-casertana-serie-c-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Match Guide",
+     "url": "https://www.inter.it/en/news/guide-inter-udinese-serie-a-26-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Match Report, Real Madrid",
+     "url": "https://www.inter.it/en/news/real-madrid-inter-champions-league-2026-2027"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Serie A Schedule",
+     "url": "https://www.inter.it/en/news/serie-a-2026-27-schedule-inter-matchdays-6-12"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Champions League Fixtures",
+     "url": "https://www.inter.it/en/news/standings-league-phase-inter-fixtures-champions-league-26-27"
+    },
+    {
+     "outlet": "Sky Sport Italia",
+     "title": "Projected Lineup",
+     "url": "https://www.napolimagazine.com/calcio/articolo/sky-inter-la-probabile-formazione-contro-l-udinese-14-09-2026"
+    },
+    {
+     "outlet": "Tutto Udinese",
+     "title": "Udinese Lineup",
+     "url": "https://www.tuttoudinese.it/primo-piano/udinese-probabile-formazione-inter-serie-a-14-settembre-2026-184873"
+    },
+    {
+     "outlet": "Gazzetta via FCInterNews",
+     "title": "Dimarco Renewal",
+     "url": "https://www.fcinternews.it/focus/i-gds-i-dimarco-stringe-rinnovo-2030-incontro-fissato-1018245"
+    },
+    {
+     "outlet": "World Soccer Talk",
+     "title": "US TV",
+     "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+    },
+    {
+     "outlet": "Sports Media Watch",
+     "title": "US TV",
+     "url": "https://www.sportsmediawatch.com/tv-schedules/club-soccer/serie-a/"
+    }
+   ]
+  }
+ ]
+}

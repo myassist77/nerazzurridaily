@@ -1,0 +1,209 @@
+{
+ "n": 11,
+ "date": "2026-09-12",
+ "title": "Dimarco talks open",
+ "description": "Saturday, September 12, 2026: Gazzetta dello Sport reports Inter have opened talks on a contract to 2030 for Federico Dimarco, Chivu's press conference is set for Sunday, and John Stones is in line to start against Udinese.",
+ "mast_alt": "Nerazzurri Daily Edition No. 11, Saturday, September 12, 2026 — Dimarco talks open",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Gazzetta dello Sport reports that Inter have <a href=\"https://www.fcinternews.it/focus/i-gds-i-dimarco-stringe-rinnovo-2030-incontro-fissato-1018245\" rel=\"noopener\">opened talks on a new contract for Federico Dimarco</a> through 2030. Chivu takes questions on Sunday at 8:00 AM ET (14:00 CEST), <a href=\"https://www.linterista.it/primo-piano/inter-udinese-conferenza-stampa-chivu-comunicato-199638\" rel=\"noopener\">a time the club has now set</a>, and the same paper has <a href=\"https://www.fcinter1908.it/partite/probabili-formazioni/inter-udinese-stones-chivu-piano-portiere/\" rel=\"noopener\">John Stones starting on Monday</a> with Josep Martinez keeping the gloves. Inter themselves have published nothing about the team."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "TODAY",
+     "name": "No match",
+     "venue": null,
+     "line": "SERIE A · 9 POINTS FROM 3 · LEVEL AT THE TOP"
+    },
+    {
+     "label": "LAST",
+     "name": "Real Madrid 2–1 Inter",
+     "venue": null,
+     "line": "CARLOS AUGUSTO 77' · CHAMPIONS LEAGUE"
+    },
+    {
+     "label": "NEXT",
+     "name": "Udinese",
+     "venue": "HOME",
+     "line": "MON 2:45 PM ET · 20:45 CEST"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB · LEAGUE · UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Chivu speaks Sunday, and it is streamed",
+   "paras": [
+    "Inter's own communiqué sets Cristian Chivu's pre-match press conference for Sunday, September 13 at 8:00 AM ET (14:00 CEST), at the Inter Training Center in Appiano Gentile. The club says it will be streamed live on its official channels.",
+    "Inter have published no lineup and no injury list. Everything under the red bar is press.",
+    "INTER COMMUNIQUÉ VIA L'INTERISTA · SEP 11"
+   ],
+   "kicker": ""
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Akanji signs off from Manchester City",
+   "paras": [
+    "Manuel Akanji posted a farewell to Manchester City on Instagram late on Friday, thanking the coach, his teammates and the staff for what he called three incredible years. He had trained with the Inter squad at Appiano Gentile that same morning."
+   ],
+   "kicker": "AKANJI ON INSTAGRAM · INTER.IT · SEP 11"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY · NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Gazzetta: talks open on Dimarco to 2030",
+   "paras": [
+    "Gazzetta dello Sport reports that Inter and Federico Dimarco have started negotiating an extension to 2030, with a meeting set between sporting director Dario Baccin and the player's agent, Arturo Canales. His current deal runs to 2027 with a club option for one more year, and the paper puts his salary at about €4 million net a season."
+   ],
+   "kicker": "GAZZETTA DELLO SPORT VIA FCINTERNEWS · SEP 12"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Gazzetta: Stones starts, Martinez keeps the gloves",
+   "paras": [
+    "The same paper has John Stones starting in the middle of the defense against Udinese, with Manuel Akanji back from muscle fatigue. Josep Martinez stays in goal despite the error that led to Madrid's opening goal; Gazzetta writes that Chivu weighed a change to Ivan Provedel and decided against it for now.",
+    "Up front the question is Marcus Thuram, whom the paper puts at 60 to 70 percent, against Pio Esposito. Dimarco has still not rejoined full group training."
+   ],
+   "kicker": "GAZZETTA DELLO SPORT VIA FCINTER1908 · SEP 12"
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "CHAMPIONS LEAGUE · MATCHDAY 1 · BERNABÉU"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Real Madrid 2-1 Inter",
+   "paras": [
+    "Scorers and minutes are the club's own match report.",
+    "SERIE A FORM W W W · THREE FROM THREE · NINE POINTS · MBAPPÉ 14, VALVERDE 23, CARLOS AUGUSTO 77"
+   ],
+   "kicker": ""
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "SEPTEMBER & INTO OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Udinese",
+     "venue": "HOME",
+     "line2": "MON, SEP 14 · SERIE A · MATCHDAY 4",
+     "line3": "2:45 PM ET · 20:45 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Roma",
+     "venue": "AWAY",
+     "line2": "SAT, SEP 19 · SERIE A · MATCHDAY 5",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Parma",
+     "venue": "HOME",
+     "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    },
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Times are the club's and the league's. US listings come from the published Serie A schedules at World Soccer Talk and Sports Media Watch, neither of which carries the Champions League."
+  },
+  {
+   "t": "poll",
+   "lines": [
+    "YOUR CALL FOR SATURDAY · Gazzetta puts Thuram at 60 to 70 percent. One tap.",
+    "Reply to this email and tell me where you're reading from, and how Inter got you. I read every one. And if you know one Inter fan who'd want this, forward it to them — that's how this grows.",
+    "NEXT EDITION: SUNDAY, SEPTEMBER 13 — WHAT CHIVU SAYS ABOUT MONDAY"
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "INTER.IT",
+     "title": "TRAINING",
+     "url": "https://www.inter.it/it/notizie/allenamento-inter-11-settembre-2026"
+    },
+    {
+     "outlet": "INTER.IT",
+     "title": "MATCH REPORT",
+     "url": "https://www.inter.it/en/news/real-madrid-inter-champions-league-2026-2027"
+    },
+    {
+     "outlet": "INTER.IT",
+     "title": "SERIE A CALENDAR",
+     "url": "https://www.inter.it/en/news/serie-a-2026-27-schedule-inter-matchdays-6-12"
+    },
+    {
+     "outlet": "INTER.IT",
+     "title": "CHAMPIONS CALENDAR",
+     "url": "https://www.inter.it/en/news/inter-schedule-champions-league-2026-2027"
+    },
+    {
+     "outlet": "L'INTERISTA",
+     "title": "CLUB COMMUNIQUÉ",
+     "url": "https://www.linterista.it/primo-piano/inter-udinese-conferenza-stampa-chivu-comunicato-199638"
+    },
+    {
+     "outlet": "FCINTERNEWS",
+     "title": "AKANJI",
+     "url": "https://www.fcinternews.it/copertina/akanji-saluta-manchester-city-tre-incredibili-1018235"
+    },
+    {
+     "outlet": "FCINTERNEWS",
+     "title": "GAZZETTA ON DIMARCO",
+     "url": "https://www.fcinternews.it/focus/i-gds-i-dimarco-stringe-rinnovo-2030-incontro-fissato-1018245"
+    },
+    {
+     "outlet": "FCINTER1908",
+     "title": "GAZZETTA ON THE LINEUP",
+     "url": "https://www.fcinter1908.it/partite/probabili-formazioni/inter-udinese-stones-chivu-piano-portiere/"
+    },
+    {
+     "outlet": "WORLD SOCCER TALK",
+     "title": "US TV",
+     "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+    },
+    {
+     "outlet": "SPORTS MEDIA WATCH",
+     "title": "US TV",
+     "url": "https://www.sportsmediawatch.com/tv-schedules/club-soccer/serie-a/"
+    }
+   ]
+  }
+ ]
+}

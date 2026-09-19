@@ -1,0 +1,240 @@
+{
+ "n": 16,
+ "date": "2026-09-17",
+ "title": "Stones scanned this morning",
+ "description": "John Stones goes for scans this morning, a day later than the papers first had it. Inter Women open their Champions League at Monza on Tuesday, and Davide Massa takes Roma–Inter on Saturday.",
+ "mast_alt": "Nerazzurri Daily Edition No. 16, Thursday, September 17, 2026 — Stones scanned today",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "John Stones goes for scans this morning, a day later than the papers first had it. <a href=\"https://www.fcinternews.it/rassegna/i-gds-i-stones-esami-inglese-rischia-mese-stop-1018553\" rel=\"noopener\">Gazzetta dello Sport — Italy's biggest sports daily — fears about a month out</a>. Inter Women <a href=\"https://www.inter.it/it/notizie/womens-champions-league-biglietti-inter-hacken\" rel=\"noopener\">open their Champions League at Monza on Tuesday</a>, and a ticket can cost €1. Davide Massa <a href=\"https://sport.sky.it/calcio/serie-a/2026/09/16/arbitri-serie-a-designazioni-giornata-5\" rel=\"noopener\">takes Roma–Inter</a> on Saturday."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "TODAY",
+     "name": "No match",
+     "venue": null,
+     "line": "SERIE A · JOINT 1ST · 12 POINTS FROM 4"
+    },
+    {
+     "label": "LAST",
+     "name": "Inter 5–3 Udinese",
+     "venue": null,
+     "line": "SERIE A · MATCHDAY 4 · SAN SIRO"
+    },
+    {
+     "label": "NEXT",
+     "name": "Roma",
+     "venue": "AWAY",
+     "line": "SAT 12:00 PM ET · 18:00 CEST"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB · LEAGUE · UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter Women open in Europe, and a ticket can cost €1",
+   "paras": [
+    "Inter Women play their first match in the league phase of the Champions League on Tuesday, against BK Häcken of Sweden, at the Stadio Brianteo in Monza. Kickoff is 12:45 PM ET, 18:45 CEST.",
+    "Seats cost €10 in the Tribuna d'Onore and €5 in the Tribuna Ovest. Season-ticket holders, Inter Club members, under-18s and women pay €1."
+   ],
+   "kicker": "INTER.IT · SEP 17"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Massa takes Roma–Inter",
+   "paras": [
+    "Davide Massa referees Saturday's match at the Stadio Olimpico. Meli and Berti run the lines, Maresca is the fourth official, and Mazzoleni sits on VAR with Di Paolo beside him. The fifth-matchday appointments were made official on Wednesday.",
+    "Lega Serie A's own page would not load this morning. The team above is as Sky Sport Italia and Corriere dello Sport printed it."
+   ],
+   "kicker": "SKY SPORT ITALIA · CORRIERE DELLO SPORT · SEP 16"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Where to watch Roma–Inter",
+   "paras": [
+    "Kickoff at the Stadio Olimpico is 12:00 PM ET, 18:00 CEST, on Saturday. Paramount+ has the match in the United States. In Italy the club says it is on DAZN and nowhere else."
+   ],
+   "kicker": "INTER.IT · WORLD SOCCER TALK · SEP 16"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY · NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Stones is scanned this morning",
+   "paras": [
+    "John Stones has his scans on Thursday morning, not Wednesday. FCInter1908 reports that Inter left it a day on purpose, so the scan would read the damage clearly.",
+    "Gazzetta dello Sport describes a strain in the hamstring of his left thigh and fears about a month out. Either way he misses Saturday, and the international break covers part of it.",
+    "Edition No. 15 had Gazzetta expecting him back after the break. New today is the later scan date and a month as the fear."
+   ],
+   "kicker": "UPDATE · GAZZETTA DELLO SPORT VIA FCINTERNEWS · FCINTER1908 · SEP 16"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Çalhanoğlu's contract is the urgent one",
+   "paras": [
+    "Hakan Çalhanoğlu's deal runs to June 30, 2027. Fabrizio Romano reports that Dario Baccin, Inter's sporting director, will sit down with the midfielder's agent Gordon Stipic shortly, and that the meeting is exploratory rather than a negotiation.",
+    "No figures are attached to it. Inter treat this as the most pressing contract on their desk."
+   ],
+   "kicker": "FABRIZIO ROMANO VIA FCINTERNEWS · SEP 16"
+  },
+  {
+   "t": "poll",
+   "lines": [
+    "YESTERDAY · no votes yet — be the first",
+    "YOUR CALL FOR THURSDAY · one question, three ways out",
+    "Hakan Çalhanoğlu's contract runs out in June 2027, and Inter want to sit down with his agent. What should they do?",
+    "Renew him now — the midfield is built around him",
+    "Renew him short — one year, then look again",
+    "Move him on — take a fee while there is one",
+    "Tap one. No sign-in. Results in tomorrow's edition."
+   ]
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "SERIE A · MATCHDAY 4 · SAN SIRO"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter 5–3 Udinese",
+   "paras": [
+    "ABANKWAH 9' · EKKELENKAMP 16' · CARLOS AUGUSTO 26' · BARELLA 35' · THURAM 57' · ESPOSITO 67' · BONNY 79' · GUEYE 90+1'",
+    "Scorers and minutes are the club's own match report."
+   ],
+   "kicker": "SERIE A FORM W W W W · TWELVE POINTS · LEVEL WITH ROMA AT THE TOP"
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "SEPTEMBER & INTO OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Roma",
+     "venue": "AWAY",
+     "line2": "SAT, SEP 19 · SERIE A · MATCHDAY 5",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Parma",
+     "venue": "HOME",
+     "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    },
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Shakhtar Donetsk",
+     "venue": "HOME",
+     "line2": "WED, OCT 21 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    }
+   ]
+  },
+  {
+   "t": "note",
+   "html": "Kickoff times are the club's. US listings come from the published Serie A schedule at World Soccer Talk. Neither Champions League match has a US listing yet."
+  },
+  {
+   "t": "ask",
+   "html": "Reply with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+  },
+  {
+   "t": "next",
+   "text": "FRIDAY, SEPTEMBER 18 — WHAT THE SCAN SAID ABOUT STONES"
+  },
+  {
+   "t": "follow",
+   "links": [
+    {
+     "label": "YouTube",
+     "url": "https://www.youtube.com/@nerazzurridaily"
+    },
+    {
+     "label": "TikTok",
+     "url": "https://www.tiktok.com/@nerazzurridaily"
+    }
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "Inter.it",
+     "title": "Inter Women vs BK Häcken, Ticket Information",
+     "url": "https://www.inter.it/it/notizie/womens-champions-league-biglietti-inter-hacken"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Roma vs Inter, Where to Watch",
+     "url": "https://www.inter.it/en/news/roma-inter-where-to-watch-tv-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Champions League Fixtures",
+     "url": "https://www.inter.it/en/news/standings-league-phase-inter-fixtures-champions-league-26-27"
+    },
+    {
+     "outlet": "Sky Sport Italia",
+     "title": "Matchday 5 Referee Appointments",
+     "url": "https://sport.sky.it/calcio/serie-a/2026/09/16/arbitri-serie-a-designazioni-giornata-5"
+    },
+    {
+     "outlet": "Corriere dello Sport",
+     "title": "Matchday 5 Referee Appointments",
+     "url": "https://www.corrieredellosport.it/news/calcio/serie-a/2026/09/16-151278693/gli_arbitri_della_quinta_giornata_di_serie_a_massa_dirige_roma-inter_scelto_doveri_per_fiorentina-napoli"
+    },
+    {
+     "outlet": "Gazzetta via FCInterNews",
+     "title": "Stones Risks a Month",
+     "url": "https://www.fcinternews.it/rassegna/i-gds-i-stones-esami-inglese-rischia-mese-stop-1018553"
+    },
+    {
+     "outlet": "FCInter1908",
+     "title": "When Stones Is Scanned",
+     "url": "https://www.fcinter1908.it/news/infortuni/fcin1908-ecco-quando-stones-sottoporra-esami/"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "Çalhanoğlu Renewal, Baccin and Stipic",
+     "url": "https://www.fcinternews.it/in-primo-piano/inter-rinnovo-calhanoglu-questione-urgente-presto-incontro-stipic-baccin-1018608"
+    },
+    {
+     "outlet": "World Soccer Talk",
+     "title": "US TV Schedule",
+     "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+    }
+   ]
+  }
+ ]
+}
