@@ -66,7 +66,7 @@ def brevo_draft(n, subject, preview, html_path, name=None):
     """Create a DRAFT campaign (never scheduled). Returns the campaign id."""
     html = open(html_path, encoding='utf-8').read()
     body = {"name": name or f"Nerazzurri Daily No. {n} — {subject}"[:200], "subject": subject, "previewText": preview,
-            "sender": {"id": brevo_sender_id(), "name": "Nerazzurri Daily", "email": SENDER}, "replyTo": SENDER,
+            "sender": {"name": "Nerazzurri Daily", "email": SENDER}, "replyTo": SENDER,
             "htmlContent": html, "recipients": {"listIds": [brevo_list_id()]}, "mirrorActive": True}
     r, e = proxy_execute(method='POST', endpoint='/emailCampaigns', toolkit='brevo', body=body)
     if e: raise RuntimeError(f'brevo create: {e}')
