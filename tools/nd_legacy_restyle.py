@@ -62,6 +62,10 @@ def restyle(path):
                 first = False; na = s.new_tag('a', href=a['href'], rel='noopener'); na.string = a.get_text(strip=True); q.append(na)
             sign.append(q)
         d.decompose()
+    foot = s.select_one('.foot')
+    if foot and not foot.find('a', href='/subscribe/'):
+        first = foot.find('a'); a = s.new_tag('a', href='/subscribe/'); a.string = 'Subscribe'
+        first.insert_before(a); first.insert_before(' \u00b7 ')
     # canonical/favicon/h1 already present from the audit pass; make sure the foot sits last
     open(path, 'w', encoding='utf-8').write(str(s))
     title = s.title.get_text().split(' — ')[0]

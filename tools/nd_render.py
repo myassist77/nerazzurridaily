@@ -133,7 +133,7 @@ def render_page(d):
     body = (f'<body><div class="sheet">\n<div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a><span class="util">Edition No. {n} · {shortdate(d["date"])} · <a href="/">All editions</a></span></div>'
             f'<h1 class="sr">{esc(title)}</h1><img class="mast" src="/assets/mast/edition-{n:02d}.png" alt="{esc(alt)}">'
             + page_blocks(d) +
-            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="/">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div></body></html>\n')
+            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="/subscribe/">Subscribe</a> &middot; <a href="/">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div></body></html>\n')
     return head + body
 
 # ------------------------------------------------------------------ email (tables + inline styles, 644px)
@@ -195,7 +195,7 @@ def render_email(d, absolute_links=True):
                         + P(links, 13, '#3D465C', 8, 0, MONO, 'normal', '1.8') + '</td></tr>')
         elif t == 'p': R(P(b['html']), '#ffffff', '2px 28px')
     if in_signoff: rows.append('</td></tr>')
-    R(f'<div style="font-family:{MONO};font-size:13px;color:#5A647E;line-height:1.9;">Fan-made. Not affiliated with FC Internazionale Milano.<br><a href="{SITE}/" style="color:#0A2A66;">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" style="color:#0A2A66;">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" style="color:#0A2A66;">TikTok</a></div>', '#DCE3EF', '18px 28px')
+    R(f'<div style="font-family:{MONO};font-size:13px;color:#5A647E;line-height:1.9;">Fan-made. Not affiliated with FC Internazionale Milano.<br><a href="{SITE}/subscribe/" style="color:#0A2A66;">Subscribe</a> &middot; <a href="{SITE}/" style="color:#0A2A66;">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" style="color:#0A2A66;">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" style="color:#0A2A66;">TikTok</a></div>', '#DCE3EF', '18px 28px')
     R(f'<div style="font-family:{MONO};font-size:13px;color:#4A5470;line-height:1.8;text-align:center;">You are receiving this because you subscribed to Nerazzurri Daily.<br><a href="{{{{ unsubscribe }}}}" style="color:#4A5470;text-decoration:underline;">Unsubscribe</a> &middot; <a href="{SITE}/p/edition-{n}/" style="color:#4A5470;text-decoration:underline;">Read online</a></div>', '#DCE3EF', '0 28px 24px')
     return (f'<!doctype html>\n<html lang="en"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n<title>{esc(d["title"])}</title></head>\n'
             f'<body style="margin:0;padding:0;background:#DCE3EF;">\n<div style="display:none;max-height:0;overflow:hidden;opacity:0;">{esc(d["description"])}</div>\n'
@@ -235,11 +235,11 @@ def build_index():
             f'<title>Nerazzurri Daily — every edition</title><link rel="canonical" href="{SITE}/"><link rel="icon" href="/favicon.svg" type="image/svg+xml">'
             f'<meta name="description" content="Inter Milan in English, every morning — sorted into what is confirmed and what is only reported. Every edition of Nerazzurri Daily.">\n'
             f'<meta property="og:title" content="Nerazzurri Daily — every edition"><meta property="og:image" content="{SITE}/assets/mast/edition-{eds[0][0]:02d}.png">\n{FONTS}\n<style>{CSS}</style></head>'
-            f'<body><div class="sheet">\n<div class="top"><a class="wm" href="./">NERAZZURRI <b>DAILY</b></a><span class="util">{len(eds)} editions · since Sep 2, 2026</span></div>'
+            f'<body><div class="sheet">\n<div class="top"><a class="wm" href="./">NERAZZURRI <b>DAILY</b></a><span class="util">{len(eds)} editions · <a href="subscribe/">Subscribe</a></span></div>'
             f'<div class="idx"><h1>Every edition</h1><p class="sub">Inter Milan in English, every morning — sorted into what is confirmed and what is only reported.</p><ul>{lis}</ul></div>'
-            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="./">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div></body></html>\n')
+            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="subscribe/">Subscribe</a> &middot; <a href="./">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div></body></html>\n')
     open('index.html', 'w', encoding='utf-8').write(page)
-    urls = [(f'{SITE}/', eds[0][1])] + [(f'{SITE}/p/edition-{n}/', dt) for n, dt, _ in eds]
+    urls = [(f'{SITE}/', eds[0][1]), (f'{SITE}/subscribe/', eds[0][1])] + [(f'{SITE}/p/edition-{n}/', dt) for n, dt, _ in eds]
     open('sitemap.xml', 'w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(f'  <url><loc>{u}</loc><lastmod>{dt}</lastmod></url>\n' for u, dt in urls) + '</urlset>\n')
     return len(eds)
 
