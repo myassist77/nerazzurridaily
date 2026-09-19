@@ -1,14 +1,14 @@
 """Publish helpers for the Composio REMOTE WORKBENCH (they need its proxy_execute). Load with:
-    exec(open('/home/user/nd/site/tools/nd_publish.py').read())
+    exec(open('/home/user/nd/tools/nd_publish.py').read())
 then:
     sha = gh_commit(['p/edition-19/index.html','assets/mast/edition-19.png','data/edition-19.json','index.html','sitemap.xml'], 'Edition No. 19 — <headline>')
-    cid = brevo_draft(19, subject, preview_text, '/home/user/nd/site/build/email-19.html')
+    cid = brevo_draft(19, subject, preview_text, '/home/user/nd/build/email-19.html')
 Never schedules or sends: brevo_draft creates a DRAFT (no scheduled_at). The owner presses send.
 """
 import base64, json, os, time, requests
 
 REPO = '/repos/myassist77/nerazzurridaily'
-ROOT = '/home/user/nd/site'
+ROOT = os.environ.get('ND_ROOT', '/home/user/nd')   # the checkout the scheduled run makes (Step 0.25); was /home/user/nd/site before Sept 19
 SENDER = 'mail@nerazzurridaily.com'
 LIST_NAME = 'Nerazzurri Daily'
 TRAILER = "\n\nCo-Authored-By: Claude <noreply@anthropic.com>"
