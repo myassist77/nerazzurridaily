@@ -9,6 +9,8 @@ import sys, os, re, json, html, glob, datetime
 SITE = "https://www.nerazzurridaily.com"
 MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"]
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&amp;family=Fragment+Mono&amp;display=swap" rel="stylesheet">'
+BEACON = '<!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{"token": "fd1d42426a934b7e94ed7cfe7afc9ccc"}\'></script><!-- End Cloudflare Web Analytics -->'
+FONTS = FONTS + "\n" + BEACON
 
 CSS = """*{box-sizing:border-box}html{font-size:16px}
 body{margin:0;background:#DCE3EF;font-family:Georgia,'Times New Roman',serif;color:#3D465C}
