@@ -12,6 +12,7 @@ Run from the repo root in the Composio remote sandbox (fresh each morning: `curl
 | `check_beacon.py` | fails if any repo HTML page lacks the Cloudflare Web Analytics beacon (run by `.github/workflows/analytics-beacon.yml` on every push) |
 | `nd_publish.py` | workbench-only: one GitHub commit, one Brevo DRAFT |
 | `nd_social_publish.py` | workbench-only: upload the daily Short to YouTube (unlisted), set its 16:9 thumbnail, post the comment, flip it public; reads/writes `data/social-ed{N}.json` |
+| `social_motion.py` | the motion-short renderer (1080×1920, 30 fps, silent): beats JSON → Playwright frames → ffmpeg MP4 + 9:16/16:9 thumbnails. Canonical copy; the nerazzurri-shorts skill's embedded copy is a fallback |
 | `nd_extract.py` / `nd_legacy_restyle.py` | one-time migration helpers (Sept 19, 2026) |
 
 `build/` is scratch and is never committed. Editions 1–9 predate the JSON schema and live as HTML only (`data/legacy.json` lists them for the index).
