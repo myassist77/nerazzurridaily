@@ -11,6 +11,19 @@ MONTHS = ["January","February","March","April","May","June","July","August","Sep
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&amp;family=Fragment+Mono&amp;display=swap" rel="stylesheet">'
 BEACON = '<!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{"token": "fd1d42426a934b7e94ed7cfe7afc9ccc"}\'></script><!-- End Cloudflare Web Analytics -->'
 FONTS = FONTS + "\n" + BEACON
+BEACON_TOKEN = 'fd1d42426a934b7e94ed7cfe7afc9ccc'
+
+def require_beacon(page, where):
+    """Hard stop: no web page is written without the Cloudflare Web Analytics beacon."""
+    if 'static.cloudflareinsights.com/beacon.min.js' not in page or BEACON_TOKEN not in page:
+        sys.exit(f'nd_render: REFUSING to write {where} — Cloudflare Web Analytics beacon missing')
+    return page
+
+def forbid_beacon(page, where):
+    """Email must never carry the beacon (scripts are stripped by mail clients and hurt deliverability)."""
+    if 'cloudflareinsights' in page:
+        sys.exit(f'nd_render: REFUSING to write {where} — analytics beacon found in the email')
+    return page
 
 CSS = """*{box-sizing:border-box}html{font-size:16px}
 body{margin:0;background:#DCE3EF;font-family:Georgia,'Times New Roman',serif;color:#3D465C}
@@ -240,6 +253,7 @@ def build_index():
             f'<body><div class="sheet">\n<div class="top"><a class="wm" href="./">NERAZZURRI <b>DAILY</b></a><span class="util">{len(eds)} editions · <a href="subscribe/">Subscribe</a></span></div>'
             f'<div class="idx"><h1>Every edition</h1><p class="sub">Inter Milan in English, every morning — sorted into what is confirmed and what is only reported.</p><ul>{lis}</ul></div>'
             '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="subscribe/">Subscribe</a> &middot; <a href="./">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div></body></html>\n')
+    require_beacon(page, 'index.html')  # checked BEFORE open(): open('w') truncates the live file
     open('index.html', 'w', encoding='utf-8').write(page)
     urls = [(f'{SITE}/', eds[0][1]), (f'{SITE}/subscribe/', eds[0][1])] + [(f'{SITE}/p/edition-{n}/', dt) for n, dt, _ in eds]
     open('sitemap.xml', 'w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(f'  <url><loc>{u}</loc><lastmod>{dt}</lastmod></url>\n' for u, dt in urls) + '</urlset>\n')
@@ -253,8 +267,9 @@ if __name__ == '__main__':
         for i, b in enumerate(d['blocks']):
             if b['t'] == 'p' and i and d['blocks'][i-1]['t'] == 'fixtures': b['t'] = 'note'
         os.makedirs(f'p/edition-{n}', exist_ok=True); os.makedirs('build', exist_ok=True)
-        open(f'p/edition-{n}/index.html', 'w', encoding='utf-8').write(render_page(d))
-        open(f'build/email-{n}.html', 'w', encoding='utf-8').write(render_email(d))
+        page = require_beacon(render_page(d), f'p/edition-{n}/index.html'); email = forbid_beacon(render_email(d), f'build/email-{n}.html')  # both checked before any file is opened
+        open(f'p/edition-{n}/index.html', 'w', encoding='utf-8').write(page)
+        open(f'build/email-{n}.html', 'w', encoding='utf-8').write(email)
         open(f'build/edition-{n}.txt', 'w', encoding='utf-8').write(render_text(d))
         assert os.path.exists(f'assets/mast/edition-{n:02d}.png'), f'missing masthead assets/mast/edition-{n:02d}.png'
         print(f'edition {n}: page, build/email-{n}.html, build/edition-{n}.txt')

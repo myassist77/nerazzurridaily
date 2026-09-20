@@ -1,0 +1,13 @@
+name: analytics-beacon
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+jobs:
+  beacon:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Every HTML page carries the Cloudflare Web Analytics beacon
+        run: python3 tools/check_beacon.py
