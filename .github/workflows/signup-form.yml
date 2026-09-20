@@ -1,0 +1,21 @@
+name: signup-form
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  form:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install headless Chromium
+        run: |
+          pip install --quiet playwright
+          python -m playwright install --with-deps chromium
+      - name: The Brevo signup form actually submits
+        run: python tools/check_signup_form.py

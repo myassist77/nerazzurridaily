@@ -16,6 +16,15 @@ BEACON_TOKEN = 'fd1d42426a934b7e94ed7cfe7afc9ccc'
 # --- home-page signup (Brevo embed, same form/list as /subscribe/) -------------
 SIB_CSS = '<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">'
 SIB_ACTION = "https://5d0cb217.sibforms.com/serve/MUIFAJ3SmPYzs20wwcA8qQBVEbp0G5VvIgN2Vat37LHRlACpca9Vyye8H1UlOIx_uslSoenaIDoVoavVqumWN5ySp6nNBq-DU6eZ_b-GF4BCLnW-dfNRrsZDLlRqHHu7NkolBLbASbHXxzLaKILxN5zMN5LSboyFFKbqGquO7wy8x_VHjKdUhyRaNnAJP6Ns4V4TgN1m_EfIIkndsw=="
+SIB_LOADER_SVG = (
+    '<svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" '
+    'viewBox="0 0 512 512" width="16" height="16"><path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 '
+    '30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 '
+    '44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 '
+    '162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/></svg>'
+)
+
+
 CONFIRM_MSG = ("Almost there. Check your inbox for an email from Nerazzurri Daily and tap the confirm link. "
                "Nothing arrives until you do. Not there in a minute? Look in spam or Promotions.")
 
@@ -61,7 +70,7 @@ HOME_FORM = ('<div class="hero"><h1>Inter Milan in English, every morning.</h1>'
              '        <label class="lab" for="EMAIL">Your email</label>\n'
              '        <div class="row">\n'
              '          <div class="entry__field" style="flex:1 1 220px;display:flex"><input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="email" inputmode="email" value="" placeholder="you@example.com" data-required="true" required></div>\n'
-             '          <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">Subscribe</button>\n'
+             '          <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">' + SIB_LOADER_SVG + 'Subscribe</button>\n'
              '        </div></div>\n'
              '        <label class="entry__error entry__error--primary"></label>\n'
              '      </div></div>\n'
@@ -96,6 +105,12 @@ def require_signup_form(page, where):
     '''Hard stop: the home page is not written without a working signup form.'''
     if SIB_ACTION not in page or 'id="sib-form"' not in page or 'sibforms.com/forms/end-form/build/main.js' not in page:
         sys.exit(f'nd_render: REFUSING to write {where} \u2014 the Brevo signup form is missing or incomplete.')
+    # Brevo's main.js calls removeClass() on this loader icon the moment the form is
+    # submitted. Without it the handler throws, no POST is sent, and the form silently
+    # swallows every signup (live on the home page 20 Sep 2026). Never ship the button
+    # without it.
+    if 'sib-hide-loader-icon' not in page:
+        sys.exit(f'nd_render: REFUSING to write {where} \u2014 the Subscribe button is missing the loader icon; Brevo main.js throws on submit and no signup is sent.')
     return page
 
 
