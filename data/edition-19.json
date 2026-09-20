@@ -1,0 +1,241 @@
+{
+ "n": 19,
+ "date": "2026-09-20",
+ "title": "Lautaro scores twice as Inter draw 2\u20132 at the Olimpico",
+ "description": "Manu Kon\u00e9 put Roma two goals up inside 37 minutes; Inter and Roma go into a three-week international break level at the top of Serie A with 13 points each.",
+ "mast_alt": "Nerazzurri Daily Edition No. 19, Sunday, September 20, 2026 \u2014 Lautaro scores twice as Inter draw 2\u20132 at the Olimpico",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Inter captain Lautaro Mart\u00ednez scored twice after halftime to rescue <a href=\"https://www.inter.it/en/news/roma-inter-serie-a-2026-27\" rel=\"noopener\">a 2\u20132 draw at Roma</a>. Manu Kon\u00e9, the Roma midfielder, had scored twice himself inside the first 37 minutes; the point leaves both clubs level at the top with 13 points each. Serie A now breaks for three weeks, and Inter do not play again until <a href=\"https://www.inter.it/en/matches\" rel=\"noopener\">Parma visit San Siro on October 10</a>."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "TODAY",
+     "name": "No match",
+     "venue": null,
+     "line": "INTERNATIONAL\u00a0BREAK \u00b7 JOINT\u00a01ST \u00b7 13\u00a0POINTS\u00a0FROM\u00a05"
+    },
+    {
+     "label": "LAST",
+     "name": "Roma 2\u20132 Inter",
+     "venue": null,
+     "line": "SERIE\u00a0A \u00b7 MATCHDAY\u00a05 \u00b7 OLIMPICO"
+    },
+    {
+     "label": "NEXT",
+     "name": "Parma",
+     "venue": "HOME",
+     "line": "SAT,\u00a0OCT\u00a010 \u00b7 12:00\u00a0PM\u00a0ET \u00b7 18:00\u00a0CEST"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB \u00b7 LEAGUE \u00b7 UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Chivu keeps his halftime message in the dressing room",
+   "paras": [
+    "Cristian Chivu, Inter's head coach, was asked why his team keep falling two goals behind. He said he had already given his answer in private. \u201cI said what I needed to say about the first half at half-time, and that stays between me and my players,\u201d Chivu said.",
+    "He called it a good point against a very strong opponent, in a stadium where it is hard to play. He said the second half brought the right attitude, grit and personality."
+   ],
+   "kicker": "SAID \u00b7 INTER.IT \u00b7 SEP 19"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "A minute's silence at the Olimpico for Sandro Mazzola",
+   "paras": [
+    "Both teams gathered in the center circle before kickoff for a minute's silence in memory of Sandro Mazzola, the Inter forward whose death, aged 83, was announced on Saturday. The club called it \u201csixty seconds to remember an entire lifetime,\u201d and Inter's players wore black armbands.",
+    "Giuseppe Marotta, Inter's president, told the broadcaster DAZN before the match that Mazzola wore the shirt for 17 seasons and helped make Inter great. It is now up to the club \u201cto preserve and pass on the memory of this icon,\u201d Marotta said."
+   ],
+   "kicker": "UPDATE \u00b7 INTER.IT \u00b7 DAZN \u00b7 SEP 19"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Three weeks off before Parma",
+   "paras": [
+    "Serie A now pauses for an international break that runs three weeks. Inter's next match is Parma at San Siro on Saturday, October 10, and the Champions League follows three days later at home to Club Brugge."
+   ],
+   "kicker": "INTER.IT \u00b7 SEP 20"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY \u00b7 NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Corriere dello Sport: the walls shook at halftime",
+   "paras": [
+    "Corriere dello Sport reported that Chivu's halftime talk was loud enough that the dressing-room walls \u201cprobably shook,\u201d an account carried on by the Inter site SpazioInter. None of it is official, and Chivu would only repeat that what he said stays between him and the players."
+   ],
+   "kicker": "CORRIERE DELLO SPORT VIA SPAZIOINTER \u00b7 SEP 20"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Stones and Calhanoglu are aiming to return for Parma",
+   "paras": [
+    "Corriere dello Sport reports that John Stones, the England defender, and Hakan Calhanoglu, Inter's deep-lying midfielder, are both targeting the Parma match on October 10. The paper calls the break a blessing for the two of them.",
+    "Stones has a muscle strain in his left thigh, with no tear found. Calhanoglu has an adductor problem in his right thigh. Sky Sport Italia named the same return date last week."
+   ],
+   "kicker": "UPDATE \u00b7 CORRIERE DELLO SPORT VIA FCINTERNEWS \u00b7 SEP 18"
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "SERIE A \u00b7 MATCHDAY 5 \u00b7 STADIO OLIMPICO"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Roma 2\u20132 Inter",
+   "paras": [
+    "KON\u00c9 6' \u00b7 KON\u00c9 37' \u00b7 LAUTARO MART\u00cdNEZ 46' \u00b7 LAUTARO MART\u00cdNEZ 79'",
+    "Roma were two goals up inside 37 minutes. Lautaro Mart\u00ednez scored within a minute of the restart and leveled in the 79th minute."
+   ],
+   "kicker": "SERIE A FORM W W W W D \u00b7 THIRTEEN POINTS \u00b7 LEVEL WITH ROMA AT THE TOP"
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "OCTOBER AFTER THE BREAK \u00b7 EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Parma",
+     "venue": "HOME",
+     "line2": "SAT,\u00a0OCT\u00a010 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a06",
+     "line3": "12:00\u00a0PM\u00a0ET \u00b7 18:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK"
+    },
+    {
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line2": "TUE,\u00a0OCT\u00a013 \u00b7 CHAMPIONS\u00a0LEAGUE",
+     "line3": "3:00\u00a0PM\u00a0ET \u00b7 21:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0NOT\u00a0YET\u00a0PUBLISHED"
+    },
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT,\u00a0OCT\u00a017 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a07",
+     "line3": "12:00\u00a0PM\u00a0ET \u00b7 18:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK"
+    },
+    {
+     "name": "Shakhtar Donetsk",
+     "venue": "HOME",
+     "line2": "WED,\u00a0OCT\u00a021 \u00b7 CHAMPIONS\u00a0LEAGUE",
+     "line3": "3:00\u00a0PM\u00a0ET \u00b7 21:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0NOT\u00a0YET\u00a0PUBLISHED"
+    },
+    {
+     "name": "Fiorentina",
+     "venue": "HOME",
+     "line2": "SUN,\u00a0OCT\u00a025 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a08",
+     "line3": "7:30\u00a0AM\u00a0ET \u00b7 12:30\u00a0CET \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK"
+    }
+   ]
+  },
+  {
+   "t": "note",
+   "html": "Kickoff times are the club's. US listings come from the published Serie A schedule at World Soccer Talk, which carries no Champions League dates yet. Milan is on CET from October 25."
+  },
+  {
+   "t": "ask",
+   "html": "Reply to this email with one word \u2014 which of today's items should I chase tomorrow? \u2014 and tell me where you're reading from. I read every one."
+  },
+  {
+   "t": "next",
+   "text": "MONDAY, SEPTEMBER 21 \u2014 INTER'S INTERNATIONAL CALL-UPS"
+  },
+  {
+   "t": "follow",
+   "links": [
+    {
+     "label": "YouTube",
+     "url": "https://www.youtube.com/@nerazzurridaily"
+    },
+    {
+     "label": "TikTok",
+     "url": "https://www.tiktok.com/@nerazzurridaily"
+    }
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "Inter.it",
+     "title": "Lautaro scores twice as Inter fight back to draw with Roma",
+     "url": "https://www.inter.it/en/news/roma-inter-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Chivu: \u201cA second half of grit, courage and personality\u201d",
+     "url": "https://www.inter.it/en/news/chivu-interview-post-roma-inter-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "The moving tribute to Sandro Mazzola before Roma vs. Inter",
+     "url": "https://www.inter.it/en/news/the-moving-tribute-to-sandro-mazzola-before-roma-vs-inter"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Marotta: \u201cMazzola is an important part of Inter's legacy\u201d",
+     "url": "https://www.inter.it/en/news/marotta-interview-mazzola-roma-inter-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Inter's 2026/27 fixtures",
+     "url": "https://www.inter.it/en/matches"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Champions League league phase: standings and Inter's fixtures",
+     "url": "https://www.inter.it/en/news/standings-league-phase-inter-fixtures-champions-league-26-27"
+    },
+    {
+     "outlet": "SportMediaset",
+     "title": "Serie A, Roma-Inter 2-2: super Lautaro risponde a un grande Kon\u00e9",
+     "url": "https://www.sportmediaset.mediaset.it/calcio/seriea/serie-a-roma-inter-2-2-super-lautaro-risponde-a-un-grande-kone-pari-show-allolimpico_116781917-202602k.shtml"
+    },
+    {
+     "outlet": "Corriere dello Sport",
+     "title": "Chivu: \u201cCosa ho detto ai giocatori per la rimonta resta tra me e loro\u201d",
+     "url": "https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/09/19-151348975/chivu_cosa_ho_detto_ai_giocatori_per_la_rimonta_resta_tra_me_e_loro_ma_lo_sanno_tutti_"
+    },
+    {
+     "outlet": "SpazioInter",
+     "title": "\u201cI muri hanno tremato\u201d, Chivu furioso nell'intervallo di Roma-Inter",
+     "url": "https://www.spaziointer.it/2026/09/20/i-muri-hanno-trematp-chivu-furioso-nellintervallo-di-roma-inter-spunta-il-retroscena/"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "CdS \u2014 Stones, benedetta sosta: l'inglese e Calhanoglu puntano a tornare col Parma",
+     "url": "https://www.fcinternews.it/rassegna/i-cds-i-stones-benedetta-sosta-inglese-calhanoglu-puntano-tornare-parma-1018693"
+    },
+    {
+     "outlet": "Sky Sport Italia",
+     "title": "Inter injury news: Calhanoglu to miss Roma",
+     "url": "https://sport.sky.it/calcio/serie-a/2026/09/15/inter-calhanoglu-stones-infortunio-news"
+    },
+    {
+     "outlet": "World Soccer Talk",
+     "title": "Serie A TV schedule (US)",
+     "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+    }
+   ]
+  }
+ ]
+}
