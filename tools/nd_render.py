@@ -13,6 +13,92 @@ BEACON = '<!-- Cloudflare Web Analytics --><script type="module" src="https://st
 FONTS = FONTS + "\n" + BEACON
 BEACON_TOKEN = 'fd1d42426a934b7e94ed7cfe7afc9ccc'
 
+# --- home-page signup (Brevo embed, same form/list as /subscribe/) -------------
+SIB_CSS = '<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">'
+SIB_ACTION = "https://5d0cb217.sibforms.com/serve/MUIFAJ3SmPYzs20wwcA8qQBVEbp0G5VvIgN2Vat37LHRlACpca9Vyye8H1UlOIx_uslSoenaIDoVoavVqumWN5ySp6nNBq-DU6eZ_b-GF4BCLnW-dfNRrsZDLlRqHHu7NkolBLbASbHXxzLaKILxN5zMN5LSboyFFKbqGquO7wy8x_VHjKdUhyRaNnAJP6Ns4V4TgN1m_EfIIkndsw=="
+CONFIRM_MSG = ("Almost there. Check your inbox for an email from Nerazzurri Daily and tap the confirm link. "
+               "Nothing arrives until you do. Not there in a minute? Look in spam or Promotions.")
+
+HOME_FORM_CSS = """
+.hero{padding:22px 28px 0}
+.hero h1{font-family:Oswald,sans-serif;font-size:30px;line-height:1.12;color:#0B1020;margin:0 0 8px}
+.hero p{font-size:17px;line-height:1.55;margin:0}
+.formbox{margin:18px 28px 8px;padding:18px 18px 14px;border:1px solid #D8DFEC;background:#fff}
+.formbox .sec{margin:0 0 12px}
+.fine{font-family:'Fragment Mono',monospace;font-size:.82rem;color:#5A647E;line-height:1.6}
+.idx h2{font-family:Oswald,sans-serif;font-size:22px;color:#0B1020;margin:26px 0 10px}
+/* Brevo form, restyled to the house design (ids/classes kept: Brevo's script uses them) */
+.sib-form{text-align:left;background:transparent;padding:0}
+#sib-container{max-width:none;border:0;background:transparent;padding:0;text-align:left}
+#sib-form .lab{display:block;font-family:'Fragment Mono',monospace;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:#5A647E;margin:0 0 6px}
+#sib-form .row{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-start}
+#sib-form .entry__field{margin:0 !important;padding:0 !important}
+#sib-form input.input{flex:1 1 220px;min-width:0;height:46px;box-sizing:border-box;padding:0 12px;border:1px solid #C4CDDE;border-radius:3px;font-family:Georgia,'Times New Roman',serif;font-size:17px;color:#0B1020;background:#fff}
+#sib-form input.input:focus{outline:2px solid #2B5BB8;outline-offset:1px;border-color:#2B5BB8}
+#sib-form input.input::placeholder{color:#8A93A8;font-family:Georgia,serif}
+#sib-form .sib-form-block__button{height:46px;padding:0 20px;border:0;border-radius:3px;background:#2B5BB8;color:#fff;font-family:Oswald,sans-serif;font-weight:700;font-size:17px;letter-spacing:.04em;cursor:pointer}
+#sib-form .sib-form-block__button:hover{background:#234A9A}
+#sib-form .sib-form-block__button:focus-visible{outline:2px solid #0B1020;outline-offset:2px}
+.sib-form-message-panel{font-family:Georgia,serif;font-size:16px;margin:0 0 12px;max-width:none}
+#error-message{color:#661d1d;background:#FBEAE7;border:1px solid #E7B4AE;border-radius:3px}
+#success-message{color:#0B1020;background:#EEF1F6;border:1px solid #2B5BB8;border-radius:3px}
+.entry__error{font-family:'Fragment Mono',monospace;font-size:.82rem;color:#8C4034;margin-top:6px}
+.input--hidden{display:none}
+@media(max-width:520px){.hero{padding-left:16px;padding-right:16px}.formbox{margin-left:16px;margin-right:16px}}
+"""
+
+HOME_FORM = ('<div class="hero"><h1>Inter Milan in English, every morning.</h1>'
+             '<p>One email a day: what the club has confirmed, what the papers are only reporting, and when the next match kicks off \u2014 Eastern time first. Free.</p></div>\n'
+             '<div class="formbox" id="subscribe"><div class="sec"><b>Get it every morning</b></div>\n'
+             '<div class="sib-form"><div id="sib-form-container" class="sib-form-container">\n'
+             '  <div id="error-message" class="sib-form-message-panel"><div class="sib-form-message-panel__text sib-form-message-panel__text--center"><span class="sib-form-message-panel__inner-text">That didn\'t go through. Check the address and try once more.</span></div></div>\n'
+             '  <div></div>\n'
+             '  <div id="success-message" class="sib-form-message-panel"><div class="sib-form-message-panel__text sib-form-message-panel__text--center"><span class="sib-form-message-panel__inner-text">' + CONFIRM_MSG + '</span></div></div>\n'
+             '  <div></div>\n'
+             '  <div id="sib-container" class="sib-container--large sib-container--vertical">\n'
+             '    <form id="sib-form" method="POST" action="' + SIB_ACTION + '" data-type="subscription">\n'
+             '      <div class="sib-input sib-form-block"><div class="form__entry entry_block"><div class="form__label-row">\n'
+             '        <label class="lab" for="EMAIL">Your email</label>\n'
+             '        <div class="row">\n'
+             '          <div class="entry__field" style="flex:1 1 220px;display:flex"><input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="email" inputmode="email" value="" placeholder="you@example.com" data-required="true" required></div>\n'
+             '          <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">Subscribe</button>\n'
+             '        </div></div>\n'
+             '        <label class="entry__error entry__error--primary"></label>\n'
+             '      </div></div>\n'
+             '      <input type="text" name="email_address_check" value="" class="input--hidden" tabindex="-1" autocomplete="off" aria-hidden="true">\n'
+             '      <input type="hidden" name="locale" value="en">\n'
+             '    </form>\n'
+             '  </div>\n'
+             '</div></div>\n'
+             '<p class="fine" style="margin:12px 0 0">Free. One email each morning. Unsubscribe from any of them. Your address is never shared.</p></div>\n')
+
+HOME_FORM_JS = """<script>
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+  window.LOCALE = 'en';
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "That doesn't look like an email address.";
+  window.REQUIRED_ERROR_MESSAGE = "Enter your email address.";
+  window.GENERIC_INVALID_MESSAGE = "That doesn't look right. Check it and try again.";
+  window.INVALID_NUMBER = "That doesn't look right.";
+  window.INVALID_DATE = "Please enter a valid date";
+  window.REQUIRED_MULTISELECT_MESSAGE = 'Please select at least 1 option';
+  window.translation = { common: { selectedList: '{quantity} list selected', selectedLists: '{quantity} lists selected', selectedOption: '{quantity} selected', selectedOptions: '{quantity} selected' } };
+  var AUTOHIDE = Boolean(0);
+</script>
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+<script>
+/* Brevo's script overwrites the success text with a generic line; keep ours, which tells people to confirm. */
+(function(){var M=%s;var p=document.getElementById('success-message');if(!p)return;
+function fix(){var s=p.querySelector('.sib-form-message-panel__inner-text');if(s&&s.textContent!==M){s.textContent=M;}}
+new MutationObserver(fix).observe(p,{childList:true,subtree:true,characterData:true});})();
+</script>""" % json.dumps(CONFIRM_MSG)
+
+def require_signup_form(page, where):
+    '''Hard stop: the home page is not written without a working signup form.'''
+    if SIB_ACTION not in page or 'id="sib-form"' not in page or 'sibforms.com/forms/end-form/build/main.js' not in page:
+        sys.exit(f'nd_render: REFUSING to write {where} \u2014 the Brevo signup form is missing or incomplete.')
+    return page
+
+
 def require_beacon(page, where):
     """Hard stop: no web page is written without the Cloudflare Web Analytics beacon."""
     if 'static.cloudflareinsights.com/beacon.min.js' not in page or BEACON_TOKEN not in page:
@@ -249,11 +335,13 @@ def build_index():
     page = (f'<!doctype html><html lang="en"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n'
             f'<title>Nerazzurri Daily — every edition</title><link rel="canonical" href="{SITE}/"><link rel="icon" href="/favicon.svg" type="image/svg+xml">'
             f'<meta name="description" content="Inter Milan in English, every morning — sorted into what is confirmed and what is only reported. Every edition of Nerazzurri Daily.">\n'
-            f'<meta property="og:title" content="Nerazzurri Daily — every edition"><meta property="og:image" content="{SITE}/assets/mast/edition-{eds[0][0]:02d}.png">\n{FONTS}\n<style>{CSS}</style></head>'
-            f'<body><div class="sheet">\n<div class="top"><a class="wm" href="./">NERAZZURRI <b>DAILY</b></a><span class="util">{len(eds)} editions · <a href="subscribe/">Subscribe</a></span></div>'
-            f'<div class="idx"><h1>Every edition</h1><p class="sub">Inter Milan in English, every morning — sorted into what is confirmed and what is only reported.</p><ul>{lis}</ul></div>'
-            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="subscribe/">Subscribe</a> &middot; <a href="./">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div></body></html>\n')
+            f'<meta property="og:title" content="Nerazzurri Daily — every edition"><meta property="og:image" content="{SITE}/assets/mast/edition-{eds[0][0]:02d}.png">\n{FONTS}\n{SIB_CSS}\n<style>{CSS}{HOME_FORM_CSS}</style></head>'
+            f'<body><div class="sheet">\n<div class="top"><a class="wm" href="./">NERAZZURRI <b>DAILY</b></a><span class="util">{len(eds)} editions · <a href="#subscribe">Subscribe</a></span></div>\n'
+            f'{HOME_FORM}'
+            f'<div class="idx"><h2>Every edition</h2><p class="sub">Every morning since No. 1 — sorted into what is confirmed and what is only reported.</p><ul>{lis}</ul></div>'
+            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="subscribe/">Subscribe</a> &middot; <a href="./">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div>\n' + HOME_FORM_JS + '\n</body></html>\n')
     require_beacon(page, 'index.html')  # checked BEFORE open(): open('w') truncates the live file
+    require_signup_form(page, 'index.html')
     open('index.html', 'w', encoding='utf-8').write(page)
     urls = [(f'{SITE}/', eds[0][1]), (f'{SITE}/subscribe/', eds[0][1])] + [(f'{SITE}/p/edition-{n}/', dt) for n, dt, _ in eds]
     open('sitemap.xml', 'w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(f'  <url><loc>{u}</loc><lastmod>{dt}</lastmod></url>\n' for u, dt in urls) + '</urlset>\n')
