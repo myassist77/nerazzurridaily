@@ -1,0 +1,238 @@
+{
+ "n": 20,
+ "date": "2026-09-21",
+ "title": "Inter Women's Champions League debut is Tuesday",
+ "description": "Inter U23 beat Foggia 3–2 for a second straight win, and thirteen first-team players have left for national duty during the three-week break.",
+ "mast_alt": "Nerazzurri Daily Edition No. 20, Monday, September 21, 2026 — Inter Women's Champions League debut is Tuesday",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Inter Women play in the Champions League for the first time on Tuesday, at home to <a href=\"https://www.inter.it/it/notizie/womens-champions-league-biglietti-inter-hacken\" rel=\"noopener\">BK Häcken of Sweden</a>. Kickoff is 12:45 PM ET, 18:45 CEST, in Monza. Tickets start at one euro. The men are away with ten national teams, and do not play again until <a href=\"https://www.inter.it/en/matches\" rel=\"noopener\">Parma visit San Siro on October 10</a>."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "TODAY",
+     "name": "No match",
+     "venue": null,
+     "line": "INTERNATIONAL BREAK · JOINT 1ST · 13 POINTS FROM 5"
+    },
+    {
+     "label": "LAST",
+     "name": "Roma 2–2 Inter",
+     "venue": null,
+     "line": "SERIE A · MATCHDAY 5 · OLIMPICO"
+    },
+    {
+     "label": "NEXT",
+     "name": "Parma",
+     "venue": "HOME",
+     "line": "SAT, OCT 10 · 12:00 PM ET · 18:00 CEST"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB · LEAGUE · UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter Women open in Europe against BK Häcken",
+   "paras": [
+    "Inter Women have never played in the Champions League before. They qualified by beating Wolfsburg of Germany. They open the new league phase on Tuesday at the Stadio Brianteo in Monza.",
+    "Disney+ carries every match in Europe. In the United States, ESPN's rights cover Spanish-language coverage only, on ESPN Deportes."
+   ],
+   "kicker": "INTER.IT · FIGC · SEP 21"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter U23 come from behind to beat Foggia 3–2",
+   "paras": [
+    "Inter's under-23 team won 3–2 at the Stadio Breda in Sesto San Giovanni on Sunday. They play in Serie C, the Italian third division. Foggia scored inside three minutes.",
+    "Matteo Milani leveled in the 5th minute. Davide Fumagalli put Inter ahead in first-half stoppage time, and Cristiano Avitabile made it 3–1 in the 63rd minute. Foggia pulled one back late. It is a second straight win, and the U23s now have 10 points."
+   ],
+   "kicker": "INTER.IT · SEP 20"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "The club's podcast remembers Sandro Mazzola",
+   "paras": [
+    "Inter published an episode of its Internazionale Morning Club podcast on Monday about Sandro Mazzola, the forward who died on Saturday aged 83. The club titled it “Sandro, forever.”",
+    "Mazzola made 565 appearances for Inter and played for no other club. “Inter gave me something priceless: an opportunity,” he says in the episode."
+   ],
+   "kicker": "SAID · INTER.IT · SEP 21"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY · NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Gazzetta: a week off, then back to work on September 28",
+   "paras": [
+    "Gazzetta dello Sport, Italy's biggest sports daily, reports that Cristian Chivu, Inter's head coach, has given the rest of the squad a week off. They are due back at Appiano Gentile, Inter's training ground, on Monday, September 28.",
+    "Every player left with an individual program. Three are hurt: Hakan Calhanoglu, the midfielder, John Stones, the defender, and Djed Spence, the wing-back. The paper reports optimism that all three will be fit for Parma."
+   ],
+   "kicker": "UPDATE · GAZZETTA DELLO SPORT VIA FCINTERNEWS · SEP 21"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Thirteen Inter players have left for national duty",
+   "paras": [
+    "FC Inter News counts 13 first-team players away with ten national teams. Italy called up the midfielder Nicolò Barella, the defenders Alessandro Bastoni and Federico Dimarco, and the forward Francesco Pio Esposito.",
+    "Lautaro Martínez, Inter's captain, is with Argentina. Their last match is on October 7, three days before Parma."
+   ],
+   "kicker": "FCINTERNEWS · SEP 20"
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "SERIE A · MATCHDAY 5 · STADIO OLIMPICO"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Roma 2–2 Inter",
+   "paras": [
+    "KONÉ 6' · KONÉ 37' · LAUTARO MARTÍNEZ 46' · LAUTARO MARTÍNEZ 79'",
+    "Inter were two goals down inside 37 minutes and drew level through their captain."
+   ],
+   "kicker": "SERIE A FORM W W W W D · THIRTEEN POINTS · LEVEL WITH ROMA AT THE TOP"
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "OCTOBER AFTER THE BREAK · EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Parma",
+     "venue": "HOME",
+     "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+    },
+    {
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    },
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+    },
+    {
+     "name": "Shakhtar Donetsk",
+     "venue": "HOME",
+     "line2": "WED, OCT 21 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    },
+    {
+     "name": "Fiorentina",
+     "venue": "HOME",
+     "line2": "SUN, OCT 25 · SERIE A · MATCHDAY 8",
+     "line3": "7:30 AM ET · 12:30 CET · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+    }
+   ]
+  },
+  {
+   "t": "note",
+   "html": "Kickoff times are the club's; US listings are World Soccer Talk's, which has no Champions League dates for October yet. Milan moves to CET on October 25."
+  },
+  {
+   "t": "ask",
+   "html": "Reply to this email with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+  },
+  {
+   "t": "next",
+   "text": "TUESDAY, SEPTEMBER 22 — INTER WOMEN IN EUROPE"
+  },
+  {
+   "t": "follow",
+   "links": [
+    {
+     "label": "YouTube",
+     "url": "https://www.youtube.com/@nerazzurridaily"
+    },
+    {
+     "label": "TikTok",
+     "url": "https://www.tiktok.com/@nerazzurridaily"
+    }
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "Inter.it",
+     "title": "Women's Champions League, Inter-BK Häcken: ticket information",
+     "url": "https://www.inter.it/it/notizie/womens-champions-league-biglietti-inter-hacken"
+    },
+    {
+     "outlet": "FIGC",
+     "title": "The Women's Champions League league phase calendar",
+     "url": "https://www.figc.it/it/serie-a-women/news/il-calendario-della-league-phase-martedi-22-settembre-aprono-inter-hacken-e-juventus-benfica-mercoledi-23-leuven-roma-wkum92gr"
+    },
+    {
+     "outlet": "ESPN Press Room",
+     "title": "ESPN secures UEFA Women's Champions League media rights",
+     "url": "https://espnpressroom.com/press-release/uefa-womens-cl-global/"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "A second straight win for Inter U23: Foggia beaten 3-2",
+     "url": "https://www.inter.it/it/notizie/inter-u23-foggia-serie-c-2026-27"
+    },
+    {
+     "outlet": "FCInter1908",
+     "title": "Serie C, Inter U23-Foggia 3-2: live report",
+     "url": "https://www.fcinter1908.it/cronaca-live/serie-c-inter-u23-foggia/"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Sandro, forever",
+     "url": "https://www.inter.it/en/news/sandro-mazzola-podcast-internazionale-morning-club"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "Gazzetta: a long break and homework, Chivu's program",
+     "url": "https://www.fcinternews.it/rassegna/i-gds-i-sosta-lunga-compiti-casa-programma-chivu-nerazzurri-1018941"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "The long international break begins: every Inter call-up",
+     "url": "https://www.fcinternews.it/copertina/inizia-i-maxi-pausa-i-nazionali-interisti-convocati-1018902"
+    },
+    {
+     "outlet": "Sky Sport Italia",
+     "title": "Inter-Parma, matchday 6 preview",
+     "url": "https://sport.sky.it/calcio/serie-a/partite/2026/giornata-6/inter-parma"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Inter fixtures",
+     "url": "https://www.inter.it/en/matches"
+    },
+    {
+     "outlet": "World Soccer Talk",
+     "title": "Serie A TV schedule",
+     "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+    }
+   ]
+  }
+ ]
+}
