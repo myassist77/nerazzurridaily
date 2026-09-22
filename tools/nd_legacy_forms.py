@@ -4,7 +4,7 @@ the renderer puts on every JSON edition: the Brevo form under the dek, the closi
 the phone sticky bar, the "Subscribe" top-bar link and the social/Twitter meta.
 
   python3 tools/nd_legacy_forms.py            # every p/edition-N/ without data/edition-N.json
-Idempotent: a page that already carries id="sib-form" is left alone. Run from the repo root.
+Idempotent: the form step skips a page that carries id="sib-form", the nav step one that carries class="pn". Run from the repo root.
 """
 import glob, json, os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
@@ -46,11 +46,27 @@ def inject(path):
     open(path, 'w', encoding='utf-8').write(s)
     return 'done'
 
+def inject_nav(path):
+    """Second, separately idempotent step: prev/next links, the byline, and the CSS/JS they need."""
+    s = open(path, encoding='utf-8').read()
+    if 'class="pn"' in s:
+        return 'already'
+    n = int(re.search(r'edition-(\d+)/', path).group(1))
+    if '.pn{' not in s:   # pages injected before Phase 2 carry the older FORM_CSS
+        s = s.replace('</style>', R.FORM_CSS + '</style>', 1)
+    s = re.sub(r'(<p class="ask">.*?</p>)', lambda m: m.group(1) + f'<p class="byline">{R.esc(R.BYLINE)}</p>', s, count=1, flags=re.S)
+    assert s.count('<div class="ctaband">') == 1, path
+    s = s.replace('<div class="ctaband">', R.prev_next(n) + '<div class="ctaband">', 1)
+    s = s.rstrip()[:-len('</body></html>')] + R.PN_JS + '\n</body></html>\n'
+    R.require_signup_form(s, path); R.require_beacon(s, path)
+    open(path, 'w', encoding='utf-8').write(s)
+    return 'done'
+
 if __name__ == '__main__':
     done = 0
     for p in sorted(glob.glob('p/edition-*/index.html'), key=lambda x: int(re.search(r'edition-(\d+)', x).group(1))):
         n = int(re.search(r'edition-(\d+)', p).group(1))
         if os.path.exists(f'data/edition-{n}.json'):
             continue
-        r = inject(p); print(f'{p}: {r}'); done += r == 'done'
+        r = inject(p); r2 = inject_nav(p); print(f'{p}: form {r}, nav {r2}'); done += 'done' in (r, r2)
     print(f'{done} legacy pages updated')

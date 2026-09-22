@@ -69,7 +69,8 @@ a{color:#0A2A66}
 @media(max-width:520px){.in,.dek,.bar,.top,.foot,.idx,.signoff,.sources{padding-left:16px;padding-right:16px}.sec{margin-left:16px;margin-right:16px}.sources .sec{margin-left:0;margin-right:0}}
 .hero{padding:22px 28px 0}
 .hero h1{font-family:Oswald,sans-serif;font-size:30px;line-height:1.12;color:#0B1020;margin:0 0 8px;text-wrap:balance}
-.hero p{font-size:17px;line-height:1.55;margin:0}
+.hero p,.hero-p{font-size:17px;line-height:1.55;margin:0}
+.hero-h{font-family:Oswald,sans-serif;font-size:28px;line-height:1.12;color:#0B1020;margin:0 0 8px;text-wrap:balance}
 .formbox{margin:18px 28px 8px;padding:18px 18px 14px;border:1px solid #D8DFEC;background:#fff}
 .formbox .sec{margin:0 0 12px}
 .formbox.inline{margin:16px 28px 0;padding:14px 18px 12px;background:#EEF1F6;border-color:#C4CDDE}
@@ -82,6 +83,12 @@ a{color:#0A2A66}
 .ctaband span{font-family:Oswald,sans-serif;font-weight:700;font-size:18px;line-height:1.25}
 .ctaband a{display:inline-block;background:#2B5BB8;color:#fff;font-family:Oswald,sans-serif;font-weight:700;font-size:16px;letter-spacing:.04em;padding:10px 16px;border-radius:3px;text-decoration:none}
 .ctaband a:hover{background:#234A9A}
+.pn{display:flex;justify-content:space-between;gap:12px;margin:22px 28px 0;flex-wrap:wrap}
+.pn a{font-family:Oswald,sans-serif;font-weight:700;font-size:15px;color:#0A2A66;text-decoration:none;line-height:1.3}
+.pn a small{display:block;font-family:'Fragment Mono',monospace;font-size:.82rem;color:#5A647E;font-weight:400;letter-spacing:.04em}
+.pn a.next{text-align:right;margin-left:auto}
+.pn a[hidden]{display:none}
+.signoff .byline{font-family:'Fragment Mono',monospace;font-size:.82rem;color:#5A647E;line-height:1.6;margin:14px 0 0}
 .stick{display:none}
 @media(max-width:700px){
   .stick{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:center;gap:10px;background:#06080F;color:#fff;padding:10px 12px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -6px 18px rgba(6,8,15,.25)}
@@ -108,10 +115,37 @@ a{color:#0A2A66}
 .entry__error{font-family:'Fragment Mono',monospace;font-size:.82rem;color:#8C4034;margin-top:6px}
 .input--hidden{display:none}
 @media(max-width:520px){.hero{padding-left:16px;padding-right:16px}.formbox,.formbox.inline{margin-left:16px;margin-right:16px}.proof{margin-left:16px;margin-right:16px}.ctaband{padding-left:16px;padding-right:16px}}
+
+.hero2{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;padding:22px 28px 0;align-items:start}
+.hero2 .formbox{margin:14px 0 0}
+.hero2 .proof{margin:10px 0 0}
+.card{display:block;text-decoration:none;color:inherit;border:1px solid #C4CDDE;box-shadow:0 10px 24px rgba(11,16,32,.14);background:#fff;margin-top:4px}
+.card img{display:block;width:100%;height:auto;border:0}
+.card .cb{padding:10px 12px 12px}
+.card .eyebrow{font-family:'Fragment Mono',monospace;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:#5A647E;margin:0 0 6px}
+.card .cdek{font-size:15px;line-height:1.5;margin:0 0 10px;color:#3D465C}
+.card .ci{border-left:4px solid #2B5BB8;background:#EEF1F6;padding:6px 8px;margin:6px 0;font-family:Oswald,sans-serif;font-weight:700;font-size:15px;color:#0B1020;line-height:1.3}
+.card .ci.rep{border-left-color:#E7B4AE;background:#FBEAE7}
+.card .ci small{display:block;font-family:'Fragment Mono',monospace;font-size:.82rem;font-weight:700;letter-spacing:.08em;color:#2B5BB8;margin-bottom:2px}
+.card .ci.rep small{color:#8C4034}
+.card .go{display:inline-block;margin-top:10px;font-family:Oswald,sans-serif;font-weight:700;font-size:15px;color:#0A2A66}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:26px 28px 0}
+.three div{border-top:3px solid #2B5BB8;background:#EEF1F6;padding:10px 12px;font-size:15px;line-height:1.5}
+.three div.r{border-top-color:#E7B4AE;background:#FBEAE7}
+.three b{display:block;font-family:Oswald,sans-serif;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:#0B1020;margin-bottom:2px}
+.who{display:flex;gap:14px;align-items:flex-start;margin:22px 28px 0;padding:14px 16px;border:1px solid #D8DFEC}
+.who .mk{flex:0 0 44px;height:44px;border-radius:50%;background:#06080F;color:#8FB2F0;font-family:Oswald,sans-serif;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:15px;letter-spacing:.04em}
+.who b{display:block;font-family:Oswald,sans-serif;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:#0B1020;margin-bottom:4px}
+.who p{margin:0;font-size:16px;line-height:1.55}
+.idx.compact li{padding:9px 0}
+.idx.compact .t{font-size:1rem;margin-top:1px}
+.idx.compact .d{font-size:.78rem}
+.ctaband.end{margin-top:26px}
+@media(max-width:600px){.hero2{grid-template-columns:1fr;gap:16px}.three{grid-template-columns:1fr}}
+@media(max-width:520px){.hero2{padding-left:16px;padding-right:16px}.three,.who{margin-left:16px;margin-right:16px}}
 </style></head><body><div class="sheet">
 <div class="top"><a class="wm" href="./">NERAZZURRI <b>DAILY</b></a><span class="util">21 editions · <a href="#subscribe">Subscribe</a></span></div>
-<div class="hero"><h1>Inter Milan in English, every morning, in 90 seconds.</h1><p>What the club has confirmed, what the papers are only reporting — kept apart, with the source and date on every item. Kickoffs in Eastern time first.</p></div>
-<div class="formbox" id="subscribe"><div class="sec"><b>Get it every morning</b></div>
+<div class="hero2"><div><h1 class="hero-h">Inter Milan in English, every morning, in 90 seconds.</h1><p class="hero-p">What the club has confirmed, what the papers are only reporting — kept apart, with the source and date on every item. Kickoffs in Eastern time first.</p><div class="formbox" id="subscribe"><div class="sec"><b>Get it every morning</b></div>
 <div class="sib-form"><div id="sib-form-container" class="sib-form-container">
   <div id="error-message" class="sib-form-message-panel"><div class="sib-form-message-panel__text sib-form-message-panel__text--center"><span class="sib-form-message-panel__inner-text">That didn't go through. Check the address and try once more.</span></div></div>
   <div></div>
@@ -134,7 +168,11 @@ a{color:#0A2A66}
 </div></div>
 <p class="fine" style="margin:10px 0 0">Free · one email a morning · unsubscribe any time</p></div>
 <p class="proof">21 editions · every morning since Sep 2, 2026 · built from Gazzetta dello Sport, Corriere dello Sport, Sky Sport Italia and Inter.it</p>
-<div class="idx"><h2>Every edition</h2><p class="sub">Every morning since No. 1 — sorted into what is confirmed and what is only reported.</p><ul><li><span class="d">No. 21 &middot; Tuesday, September 22, 2026</span><a class="t" href="p/edition-21/">Milan says goodbye to Mazzola, and Inter Women debut today</a></li><li><span class="d">No. 20 &middot; Monday, September 21, 2026</span><a class="t" href="p/edition-20/">Inter Women&#x27;s Champions League debut is Tuesday</a></li><li><span class="d">No. 19 &middot; Sunday, September 20, 2026</span><a class="t" href="p/edition-19/">Lautaro scores twice as Inter draw 2–2 at the Olimpico</a></li><li><span class="d">No. 18 &middot; Saturday, September 19, 2026</span><a class="t" href="p/edition-18/">Sandro Mazzola dies, aged 83</a></li><li><span class="d">No. 17 &middot; Friday, September 18, 2026</span><a class="t" href="p/edition-17/">Stones&#x27; left hamstring, and a silent Chivu</a></li><li><span class="d">No. 16 &middot; Thursday, September 17, 2026</span><a class="t" href="p/edition-16/">Stones scanned this morning</a></li><li><span class="d">No. 15 &middot; Wednesday, September 16, 2026</span><a class="t" href="p/edition-15/">Çalhanoğlu&#x27;s adductor, and a scan for Stones</a></li><li><span class="d">No. 14 &middot; Tuesday, September 15, 2026</span><a class="t" href="p/edition-14/">Inter 5–3 Udinese, from two down</a></li><li><span class="d">No. 13 &middot; Monday, September 14, 2026</span><a class="t" href="p/edition-13/">Stones in, Dimarco benched</a></li><li><span class="d">No. 12 &middot; Sunday, September 13, 2026</span><a class="t" href="p/edition-12/">Dimarco available</a></li><li><span class="d">No. 11 &middot; Saturday, September 12, 2026</span><a class="t" href="p/edition-11/">Dimarco talks open</a></li><li><span class="d">No. 10 &middot; Friday, September 11, 2026</span><a class="t" href="p/edition-10/">Stones in, Dimarco close</a></li><li><span class="d">No. 9 &middot; Thursday, September 10, 2026</span><a class="t" href="p/edition-9/">Udinese Monday, derby October 31</a></li><li><span class="d">No. 8 &middot; Wednesday, September 9, 2026</span><a class="t" href="p/edition-8/">Madrid punish two mistakes</a></li><li><span class="d">No. 7 &middot; Tuesday, September 8, 2026</span><a class="t" href="p/edition-7/">Madrid today, without Dimarco</a></li><li><span class="d">No. 6 &middot; Monday, September 7, 2026</span><a class="t" href="p/edition-6/">Back to the Bernabéu</a></li><li><span class="d">No. 5 &middot; Sunday, September 6, 2026</span><a class="t" href="p/edition-5/">Two down, then three back</a></li><li><span class="d">No. 4 &middot; Saturday, September 5, 2026</span><a class="t" href="p/edition-4/">Napoli today, and a hard draw for the women</a></li><li><span class="d">No. 3 &middot; Friday, September 4, 2026</span><a class="t" href="p/edition-3/">Napoli tomorrow, Europe this morning</a></li><li><span class="d">No. 2 &middot; Thursday, September 3, 2026</span><a class="t" href="p/edition-2/">After 28 years, Ausilio goes and Baccin takes the sporting office</a></li><li><span class="d">No. 1 &middot; Wednesday, September 2, 2026</span><a class="t" href="p/edition-1/">From two down to the Champions League</a></li></ul></div><div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>
+</div><a class="card" href="/p/edition-21/" aria-label="Read edition No. 21"><img src="/assets/mast/edition-21.png" alt="Nerazzurri Daily Edition No. 21, Tuesday, September 22, 2026 — Milan says goodbye to Mazzola, and Inter Women debut today"><div class="cb"><p class="eyebrow">Today · No. 21 · Tue, Sep 22</p><p class="cdek">Sandro Mazzola was buried on Monday at the Basilica of Sant&#x27;Ambrogio in Milan. Hundreds of supporters outside the church sang the club anthem and recited the lineup that won the 1964 European Cup. Inter…</p><div class="ci"><small>CONFIRMED</small>Milan says goodbye to Sandro Mazzola</div><div class="ci rep"><small>REPORTED</small>Gazzetta: Spence will be ready for Parma</div><span class="go">Read today’s edition →</span></div></a></div>
+<div class="three"><div><b>Confirmed</b>What the club, the league or UEFA has actually said — with the source and the date on every item.</div><div class="r"><b>Reported</b>What the Italian papers are saying, kept apart from the facts and attributed to the outlet that broke it.</div><div><b>Next up</b>Every fixture with the Eastern kickoff, the Milan time and the US broadcaster once it is published.</div></div>
+<div class="who"><div class="mk">ND</div><div><b>Who writes this</b><p>An Inter fan in New Jersey who reads the Italian press so you don’t have to. Every morning I go through Gazzetta, Corriere, Sky Sport Italia and Inter.it, keep what the club has actually said apart from what the papers are guessing, and send it before you’re up. Reply to any edition — I read every one.</p></div></div>
+<div class="idx compact"><h2>Every edition</h2><p class="sub">Every morning since No. 1 — sorted into what is confirmed and what is only reported.</p><ul><li><span class="d">No. 21 &middot; Tuesday, September 22, 2026</span><a class="t" href="p/edition-21/">Milan says goodbye to Mazzola, and Inter Women debut today</a></li><li><span class="d">No. 20 &middot; Monday, September 21, 2026</span><a class="t" href="p/edition-20/">Inter Women&#x27;s Champions League debut is Tuesday</a></li><li><span class="d">No. 19 &middot; Sunday, September 20, 2026</span><a class="t" href="p/edition-19/">Lautaro scores twice as Inter draw 2–2 at the Olimpico</a></li><li><span class="d">No. 18 &middot; Saturday, September 19, 2026</span><a class="t" href="p/edition-18/">Sandro Mazzola dies, aged 83</a></li><li><span class="d">No. 17 &middot; Friday, September 18, 2026</span><a class="t" href="p/edition-17/">Stones&#x27; left hamstring, and a silent Chivu</a></li><li><span class="d">No. 16 &middot; Thursday, September 17, 2026</span><a class="t" href="p/edition-16/">Stones scanned this morning</a></li><li><span class="d">No. 15 &middot; Wednesday, September 16, 2026</span><a class="t" href="p/edition-15/">Çalhanoğlu&#x27;s adductor, and a scan for Stones</a></li><li><span class="d">No. 14 &middot; Tuesday, September 15, 2026</span><a class="t" href="p/edition-14/">Inter 5–3 Udinese, from two down</a></li><li><span class="d">No. 13 &middot; Monday, September 14, 2026</span><a class="t" href="p/edition-13/">Stones in, Dimarco benched</a></li><li><span class="d">No. 12 &middot; Sunday, September 13, 2026</span><a class="t" href="p/edition-12/">Dimarco available</a></li><li><span class="d">No. 11 &middot; Saturday, September 12, 2026</span><a class="t" href="p/edition-11/">Dimarco talks open</a></li><li><span class="d">No. 10 &middot; Friday, September 11, 2026</span><a class="t" href="p/edition-10/">Stones in, Dimarco close</a></li><li><span class="d">No. 9 &middot; Thursday, September 10, 2026</span><a class="t" href="p/edition-9/">Udinese Monday, derby October 31</a></li><li><span class="d">No. 8 &middot; Wednesday, September 9, 2026</span><a class="t" href="p/edition-8/">Madrid punish two mistakes</a></li><li><span class="d">No. 7 &middot; Tuesday, September 8, 2026</span><a class="t" href="p/edition-7/">Madrid today, without Dimarco</a></li><li><span class="d">No. 6 &middot; Monday, September 7, 2026</span><a class="t" href="p/edition-6/">Back to the Bernabéu</a></li><li><span class="d">No. 5 &middot; Sunday, September 6, 2026</span><a class="t" href="p/edition-5/">Two down, then three back</a></li><li><span class="d">No. 4 &middot; Saturday, September 5, 2026</span><a class="t" href="p/edition-4/">Napoli today, and a hard draw for the women</a></li><li><span class="d">No. 3 &middot; Friday, September 4, 2026</span><a class="t" href="p/edition-3/">Napoli tomorrow, Europe this morning</a></li><li><span class="d">No. 2 &middot; Thursday, September 3, 2026</span><a class="t" href="p/edition-2/">After 28 years, Ausilio goes and Baccin takes the sporting office</a></li><li><span class="d">No. 1 &middot; Wednesday, September 2, 2026</span><a class="t" href="p/edition-1/">From two down to the Champions League</a></li></ul></div><div class="ctaband end"><span>Tomorrow’s edition lands at 6 AM Eastern.</span><a href="#subscribe">Get it free →</a></div>
+<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>
 <a href="#subscribe">Subscribe</a> &middot; <a href="./">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>
 </div>
 <script>
