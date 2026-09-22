@@ -1,0 +1,235 @@
+{
+ "season": "2026-27",
+ "competition": "Serie A",
+ "source": "inter.it, calendar published Jul 6, 2026",
+ "rows": [
+  {
+   "md": 1,
+   "dates": "Aug 22-23",
+   "opponent": "Monza",
+   "venue": "HOME"
+  },
+  {
+   "md": 2,
+   "dates": "Aug 29-30",
+   "opponent": "Cagliari",
+   "venue": "AWAY"
+  },
+  {
+   "md": 3,
+   "dates": "Sep 5-6",
+   "opponent": "Napoli",
+   "venue": "HOME"
+  },
+  {
+   "md": 4,
+   "dates": "Sep 12-13",
+   "opponent": "Udinese",
+   "venue": "HOME"
+  },
+  {
+   "md": 5,
+   "dates": "Sep 19-20",
+   "opponent": "Roma",
+   "venue": "AWAY"
+  },
+  {
+   "md": 6,
+   "dates": "Oct 10-11",
+   "opponent": "Parma",
+   "venue": "HOME"
+  },
+  {
+   "md": 7,
+   "dates": "Oct 17-18",
+   "opponent": "Bologna",
+   "venue": "AWAY"
+  },
+  {
+   "md": 8,
+   "dates": "Oct 24-25",
+   "opponent": "Fiorentina",
+   "venue": "HOME"
+  },
+  {
+   "md": 9,
+   "dates": "Oct 28",
+   "opponent": "Venezia",
+   "venue": "AWAY"
+  },
+  {
+   "md": 10,
+   "dates": "Oct 31/Nov 1",
+   "opponent": "Milan",
+   "venue": "AWAY"
+  },
+  {
+   "md": 11,
+   "dates": "Nov 7-8",
+   "opponent": "Como",
+   "venue": "HOME"
+  },
+  {
+   "md": 12,
+   "dates": "Nov 21-22",
+   "opponent": "Atalanta",
+   "venue": "AWAY"
+  },
+  {
+   "md": 13,
+   "dates": "Nov 28-29",
+   "opponent": "Genoa",
+   "venue": "HOME"
+  },
+  {
+   "md": 14,
+   "dates": "Dec 5-6",
+   "opponent": "Frosinone",
+   "venue": "AWAY"
+  },
+  {
+   "md": 15,
+   "dates": "Dec 12-13",
+   "opponent": "Torino",
+   "venue": "HOME"
+  },
+  {
+   "md": 16,
+   "dates": "Dec 19-20",
+   "opponent": "Lecce",
+   "venue": "AWAY"
+  },
+  {
+   "md": 17,
+   "dates": "Jan 2-3",
+   "opponent": "Sassuolo",
+   "venue": "HOME"
+  },
+  {
+   "md": 18,
+   "dates": "Jan 6",
+   "opponent": "Lazio",
+   "venue": "AWAY"
+  },
+  {
+   "md": 19,
+   "dates": "Jan 9-10",
+   "opponent": "Juventus",
+   "venue": "HOME"
+  },
+  {
+   "md": 20,
+   "dates": "Jan 16-17",
+   "opponent": "Parma",
+   "venue": "AWAY"
+  },
+  {
+   "md": 21,
+   "dates": "Jan 23-24",
+   "opponent": "Venezia",
+   "venue": "HOME"
+  },
+  {
+   "md": 22,
+   "dates": "Jan 30-31",
+   "opponent": "Napoli",
+   "venue": "AWAY"
+  },
+  {
+   "md": 23,
+   "dates": "Feb 6-7",
+   "opponent": "Cagliari",
+   "venue": "HOME"
+  },
+  {
+   "md": 24,
+   "dates": "Feb 13-14",
+   "opponent": "Milan",
+   "venue": "HOME"
+  },
+  {
+   "md": 25,
+   "dates": "Feb 20-21",
+   "opponent": "Fiorentina",
+   "venue": "AWAY"
+  },
+  {
+   "md": 26,
+   "dates": "Feb 27-28",
+   "opponent": "Atalanta",
+   "venue": "HOME"
+  },
+  {
+   "md": 27,
+   "dates": "Mar 6-7",
+   "opponent": "Udinese",
+   "venue": "AWAY"
+  },
+  {
+   "md": 28,
+   "dates": "Mar 13-14",
+   "opponent": "Torino",
+   "venue": "AWAY"
+  },
+  {
+   "md": 29,
+   "dates": "Mar 20-21",
+   "opponent": "Frosinone",
+   "venue": "HOME"
+  },
+  {
+   "md": 30,
+   "dates": "Apr 3-4",
+   "opponent": "Genoa",
+   "venue": "AWAY"
+  },
+  {
+   "md": 31,
+   "dates": "Apr 10-11",
+   "opponent": "Roma",
+   "venue": "HOME"
+  },
+  {
+   "md": 32,
+   "dates": "Apr 17-18",
+   "opponent": "Monza",
+   "venue": "AWAY"
+  },
+  {
+   "md": 33,
+   "dates": "Apr 24-25",
+   "opponent": "Bologna",
+   "venue": "HOME"
+  },
+  {
+   "md": 34,
+   "dates": "May 1-2",
+   "opponent": "Como",
+   "venue": "AWAY"
+  },
+  {
+   "md": 35,
+   "dates": "May 8-9",
+   "opponent": "Lecce",
+   "venue": "HOME"
+  },
+  {
+   "md": 36,
+   "dates": "May 15-16",
+   "opponent": "Juventus",
+   "venue": "AWAY"
+  },
+  {
+   "md": 37,
+   "dates": "May 22-23",
+   "opponent": "Lazio",
+   "venue": "HOME"
+  },
+  {
+   "md": 38,
+   "dates": "May 29-30",
+   "opponent": "Sassuolo",
+   "venue": "AWAY"
+  }
+ ]
+}

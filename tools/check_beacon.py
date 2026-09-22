@@ -9,7 +9,7 @@ import os, sys
 
 TOKEN = 'fd1d42426a934b7e94ed7cfe7afc9ccc'
 SCRIPT = 'static.cloudflareinsights.com/beacon.min.js'
-SKIP = {'.git', 'build', 'node_modules', '.github'}
+SKIP = {'.git', 'build', 'node_modules', '.github', 'templates'}
 
 missing, checked = [], 0
 for root, dirs, files in os.walk('.'):
