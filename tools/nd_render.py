@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Nerazzurri Daily renderer (design of Sept 19, 2026).
   python3 tools/nd_render.py data/edition-N.json           -> p/edition-N/index.html, build/email-N.html, build/edition-N.txt
-  python3 tools/nd_render.py --index                        -> index.html, subscribe/index.html, sitemap.xml (from data/*.json + data/legacy.json)
+  python3 tools/nd_render.py --index                        -> index.html, subscribe/index.html, fixtures/index.html, feed.xml, sitemap.xml (from data/*.json + data/legacy.json + data/season-2026-27.json)
 Run from the repo root. The masthead must already exist at assets/mast/edition-NN.png.
 """
 import sys, os, re, json, html, glob, datetime
@@ -51,7 +51,7 @@ FORM_CSS = """
 .formbox .sec{margin:0 0 12px}
 .formbox.inline{margin:16px 28px 0;padding:14px 18px 12px;background:#EEF1F6;border-color:#C4CDDE}
 .formbox.inline .kick2{font-family:Oswald,sans-serif;font-weight:700;font-size:17px;color:#0B1020;margin:0 0 2px}
-.formbox.inline .kick3{font-size:15px;line-height:1.5;color:#3D465C;margin:0 0 10px}
+.formbox .kick3{font-size:15px;line-height:1.5;color:#3D465C;margin:0 0 10px}
 .fine{font-family:'Fragment Mono',monospace;font-size:.82rem;color:#5A647E;line-height:1.6}
 .proof{font-family:'Fragment Mono',monospace;font-size:.82rem;color:#5A647E;line-height:1.7;margin:10px 28px 0}
 .idx h2{font-family:Oswald,sans-serif;font-size:22px;color:#0B1020;margin:26px 0 10px}
@@ -64,6 +64,8 @@ FORM_CSS = """
 .pn a small{display:block;font-family:'Fragment Mono',monospace;font-size:.82rem;color:#5A647E;font-weight:400;letter-spacing:.04em}
 .pn a.next{text-align:right;margin-left:auto}
 .pn a[hidden]{display:none}
+.signoff .share{font-family:'Fragment Mono',monospace;font-size:.82rem;color:#5A647E;line-height:1.6;margin:10px 0 0}
+.signoff .share a{color:#0A2A66}
 .signoff .byline{font-family:'Fragment Mono',monospace;font-size:.82rem;color:#5A647E;line-height:1.6;margin:14px 0 0}
 .stick{display:none}
 @media(max-width:700px){
@@ -174,6 +176,32 @@ def prev_next(n, eds=None):
 
 PN_JS = """<script>(function(){var a=document.getElementById('pn-next');if(!a)return;fetch(a.getAttribute('href'),{method:'HEAD'}).then(function(r){if(r.ok)a.hidden=false;}).catch(function(){});})();</script>"""
 
+def et_offset(iso):
+    """-04:00 or -05:00 for a date in America/New_York."""
+    from zoneinfo import ZoneInfo
+    off = datetime.datetime.fromisoformat(iso + 'T05:30:00').replace(tzinfo=ZoneInfo('America/New_York')).utcoffset()
+    h = int(off.total_seconds() // 3600); return f'{h:+03d}:00'
+
+def jsonld_article(n, title, desc, iso, image):
+    d = {"@context": "https://schema.org", "@type": "NewsArticle", "headline": title, "description": desc,
+         "datePublished": f"{iso}T05:30:00{et_offset(iso)}", "dateModified": f"{iso}T05:30:00{et_offset(iso)}",
+         "image": [image], "mainEntityOfPage": f"{SITE}/p/edition-{n}/", "inLanguage": "en-US",
+         "author": {"@type": "Person", "name": "Nerazzurri Daily"},
+         "publisher": {"@type": "Organization", "name": "Nerazzurri Daily", "url": SITE, "logo": {"@type": "ImageObject", "url": OG_BRAND}}}
+    return '<script type="application/ld+json">' + json.dumps(d, ensure_ascii=False).replace('</', '<\\/') + '</script>\n'
+
+def share_block(n, title):
+    """Page sign-off: X, WhatsApp and copy-link, each UTM-tagged so Cloudflare shows what forwards do."""
+    from urllib.parse import quote
+    u = lambda medium: f'{SITE}/p/edition-{n}/?utm_source=share&utm_medium={medium}&utm_campaign=ed{n}'
+    text = f'{title} \u2014 Nerazzurri Daily'
+    x = 'https://x.com/intent/post?text=' + quote(text) + '&url=' + quote(u('x'))
+    wa = 'https://wa.me/?text=' + quote(text + ' ' + u('whatsapp'))
+    return (f'<p class="share">Know an Interista? Send them this one: <a href="{x}" rel="noopener" target="_blank">X</a> \u00b7 '
+            f'<a href="{wa}" rel="noopener" target="_blank">WhatsApp</a> \u00b7 <a href="{u("copy")}" id="copy-link">Copy link</a></p>')
+
+SHARE_JS = """<script>(function(){var a=document.getElementById('copy-link');if(!a||!navigator.clipboard)return;a.addEventListener('click',function(e){e.preventDefault();navigator.clipboard.writeText(a.getAttribute('href')).then(function(){var t=a.textContent;a.textContent='Copied';setTimeout(function(){a.textContent=t;},1500);});});})();</script>"""
+
 def proof_line(count, first_iso):
     d = datetime.date.fromisoformat(first_iso)
     return f'<p class="proof">{count} editions · every morning since {MONTHS[d.month-1][:3]} {d.day}, {d.year} · {SOURCES_LINE}</p>\n'
@@ -191,6 +219,7 @@ def meta(title, desc, url, image, kind='website', published=None):
          f'<meta name="description" content="{esc(desc)}">\n'
          f'<meta property="og:site_name" content="Nerazzurri Daily"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}">\n'
          f'<meta property="og:type" content="{kind}"><meta property="og:url" content="{url}"><meta property="og:image" content="{image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">\n'
+         f'<link rel="alternate" type="application/rss+xml" title="Nerazzurri Daily" href="{SITE}/feed.xml">'
          f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(title)}"><meta name="twitter:description" content="{esc(desc)}"><meta name="twitter:image" content="{image}">\n')
     if published: m += f'<meta property="article:published_time" content="{published}">\n'
     return m
@@ -352,7 +381,7 @@ def page_blocks(d):
         elif t in ('note','ask','next','follow'):
             if not in_signoff: out.append('<div class="signoff">'); in_signoff = True
             if t == 'note': out.append(f'<p class="note">{b["html"]}</p>')
-            elif t == 'ask': out.append(f'<p class="ask">{b["html"]}</p><p class="byline">{esc(BYLINE)}</p>')
+            elif t == 'ask': out.append(f'<p class="ask">{b["html"]}</p><p class="byline">{esc(BYLINE)}</p>' + share_block(d['n'], d['title']))
             elif t == 'next': out.append(f'<div class="next"><b>Next edition</b><span>{esc(b["text"])}</span></div>')
             elif t == 'follow':
                 links = ' · '.join(f'<a href="{esc(l["url"])}" rel="noopener">{esc(l["label"])}</a>' for l in b['links'])
@@ -373,12 +402,13 @@ def render_page(d):
     head = (f'<!doctype html><html lang="en"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n'
             f'<title>{esc(title)} — Nerazzurri Daily No. {n}</title>'
             + meta(title, desc, f'{SITE}/p/edition-{n}/', f'{SITE}/assets/mast/edition-{n:02d}.png', 'article', d['date'])
+            + jsonld_article(n, title, desc, d['date'], f'{SITE}/assets/mast/edition-{n:02d}.png')
             + f'{FONTS}\n{SIB_CSS}\n<style>{CSS}{FORM_CSS}</style></head>')
     body = (f'<body><div class="sheet">\n<div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a><span class="util">Edition No. {n} · {shortdate(d["date"])} · <a href="#subscribe">Subscribe</a></span></div>'
             f'<h1 class="sr">{esc(title)}</h1><img class="mast" src="/assets/mast/edition-{n:02d}.png" alt="{esc(alt)}">'
             + page_blocks(d) +
-            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="/">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div>\n'
-            + STICK + HOME_FORM_JS + PN_JS + '\n</body></html>\n')
+            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="/">All editions</a> &middot; <a href="/fixtures/">Fixtures</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div>\n'
+            + STICK + HOME_FORM_JS + PN_JS + SHARE_JS + '\n</body></html>\n')
     return require_signup_form(head + body, f'p/edition-{n}/index.html')
 
 # ------------------------------------------------------------------ email (tables + inline styles, 644px)
@@ -428,7 +458,9 @@ def render_email(d, absolute_links=True):
         elif t in ('note','ask','next','follow'):
             if not in_signoff: rows.append('<tr><td style="background:#ffffff;padding:4px 28px 6px;">'); in_signoff = True
             if t == 'note': rows.append(P(b['html'], 13, '#5A647E', 8, 0, MONO))
-            elif t == 'ask': rows.append(P(b['html'], 17, '#3D465C', 18, 0)); rows.append(P(esc(BYLINE), 13, '#5A647E', 14, 0, MONO))
+            elif t == 'ask':
+                rows.append(P(b['html'], 17, '#3D465C', 18, 0)); rows.append(P(esc(BYLINE), 13, '#5A647E', 14, 0, MONO))
+                rows.append(P(f'Know an Interista? Forward this email \u2014 they can subscribe at <a href="{SITE}/subscribe/?utm_source=email&utm_medium=forward&utm_campaign=ed{n}" style="color:#0A2A66;">nerazzurridaily.com/subscribe</a>.', 13, '#5A647E', 10, 0, MONO))
             elif t == 'next': rows.append(f'<div style="margin-top:18px;"><div style="font-family:{SANS};font-size:13px;font-weight:bold;letter-spacing:1.5px;color:#2B5BB8;margin-bottom:2px;">NEXT EDITION</div><div style="font-family:{SANS};font-weight:bold;font-size:18px;color:#0B1020;line-height:1.25;">{esc(b["text"])}</div></div>')
             elif t == 'follow':
                 links = ' · '.join(f'<a href="{esc(l["url"])}" style="color:#0A2A66;">{esc(l["label"])}</a>' for l in b['links'])
@@ -491,7 +523,7 @@ def render_subscribe(count, first_iso):
             '<li class="r"><b>Reported</b>What the Italian papers are saying, kept apart from the facts and attributed to the outlet that broke it.</li>\n'
             '<li><b>Next up</b>Every fixture with the Eastern kickoff, the Milan time and the US broadcaster once it is published.</li>\n'
             '</ul>\n'
-            + form_block(head='Subscribe') + proof_line(count, first_iso) +
+            + form_block(head='Subscribe', sub='The Kickoff Card \u2014 all 38 Serie A dates as a phone wallpaper \u2014 comes with your welcome email.') + proof_line(count, first_iso) +
             '<div class="sub-hero"><p class="fine">Not sure yet? <a href="/">Read any past edition</a> first.</p></div>\n'
             '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="/">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n'
             '</div>\n' + HOME_FORM_JS + '\n</body></html>\n')
@@ -516,6 +548,67 @@ def today_card():
             f'<div class="cb"><p class="eyebrow">Today \u00b7 No. {n} \u00b7 {shortdate(d["date"])}</p><p class="cdek">{esc(dek)}</p>{items}'
             f'<span class="go">Read today\u2019s edition \u2192</span></div></a>')
 
+# ------------------------------------------------------------------ /fixtures/ (evergreen: next up from the latest edition + the season calendar)
+FIX_CSS = """
+.fx-note{font-family:'Fragment Mono',monospace;font-size:.82rem;color:#5A647E;line-height:1.6;margin:6px 28px 0}
+.season{width:100%;border-collapse:collapse;margin:6px 28px 0;width:calc(100% - 56px)}
+.season td{padding:8px 0;border-bottom:1px solid #D8DFEC;vertical-align:baseline}
+.season .md{font-family:'Fragment Mono',monospace;font-size:.82rem;color:#5A647E;width:36px}
+.season .dt{font-family:'Fragment Mono',monospace;font-size:.82rem;color:#3D465C;width:120px;white-space:nowrap}
+.season .op{font-family:Oswald,sans-serif;font-weight:700;font-size:17px;color:#0B1020}
+.season .op i{display:inline-block;width:8px;height:8px;border-radius:50%;background:#E7B4AE;margin-left:8px;vertical-align:1px}
+.season .ha{text-align:right}
+@media(max-width:520px){.fx-note{margin-left:16px;margin-right:16px}.season{margin-left:16px;width:calc(100% - 32px)}.season .dt{width:96px;white-space:normal}}
+"""
+def render_fixtures(count, first_iso):
+    paths = sorted(glob.glob('data/edition-*.json'), key=lambda p: int(re.search(r'edition-(\d+)', p).group(1)))
+    latest = json.load(open(paths[-1], encoding='utf-8')) if paths else {'blocks': [], 'n': 0}
+    fx = next((b for b in latest['blocks'] if b['t'] == 'fixtures'), None)
+    note = next((b['html'] for b in latest['blocks'] if b['t'] == 'note'), '')
+    season = json.load(open('data/season-2026-27.json', encoding='utf-8'))
+    title = 'Inter fixtures in Eastern time, with US TV'
+    desc = ('Every upcoming Inter Milan match with the Eastern kickoff, the Milan time and the US broadcaster, plus all 38 Serie A dates of 2026-27. '
+            'Updated every morning by Nerazzurri Daily.')
+    rows = ''.join(f'<tr><td><div class="nm">{chip(r["name"], r.get("venue"))}</div><div class="meta">{nbsp(r["line2"])}</div>'
+                   f'<div class="tm">{et_bold(nbsp(r["line3"]))}</div></td></tr>' for r in (fx['rows'] if fx else []))
+    big = {'Milan', 'Juventus', 'Napoli'}
+    srows = ''.join(f'<tr><td class="md">{r["md"]:02d}</td><td class="dt">{esc(r["dates"])}</td><td class="op">{esc(r["opponent"])}{"<i></i>" if r["opponent"] in big else ""}</td>'
+                    f'<td class="ha"><span class="chip">{r["venue"]}</span></td></tr>' for r in season['rows'])
+    page = (f'<!doctype html><html lang="en"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n'
+            f'<title>{title} \u2014 Nerazzurri Daily</title>'
+            + meta(title, desc, f'{SITE}/fixtures/', OG_BRAND)
+            + f'{FONTS}\n{SIB_CSS}\n<style>{CSS}{FORM_CSS}{FIX_CSS}</style></head><body><div class="sheet">\n'
+            f'<div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a><span class="util">{count} editions · <a href="#subscribe">Subscribe</a></span></div>\n'
+            f'<div class="hero"><h1>Inter fixtures in Eastern time.</h1><p>Every kickoff in ET first, Milan time second, and the US broadcaster once it is published. '
+            f'Kept current every morning from <a href="/p/edition-{latest.get("n", "")}/">the latest edition</a>.</p></div>\n'
+            + form_block(head='Every kickoff in your inbox', fine='Free \u00b7 one email a morning with the next match at the top \u00b7 unsubscribe any time')
+            + f'<div class="sec"><b>Next up</b><em>EASTERN TIME FIRST, MILAN SECOND</em></div><div class="in"><table class="sb"><tbody>{rows}</tbody></table></div>'
+            + (f'<p class="fx-note">{note}</p>' if note else '')
+            + f'<div class="sec"><b>Serie A 2026-27 \u00b7 all 38</b><em>WEEKEND WINDOWS FROM INTER.IT</em></div>'
+            f'<table class="season"><tbody>{srows}</tbody></table>'
+            f'<p class="fx-note">Dates are the league\u2019s weekend windows ({esc(season["source"])}); the exact day and the Eastern kickoff appear above once Serie A sets them. '
+            f'The pink dot marks the derby, Juventus and Napoli. HOME is San Siro.</p>'
+            + cta_band().replace('class="ctaband"', 'class="ctaband end"') +
+            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="/">All editions</a> &middot; <a href="/fixtures/">Fixtures</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n'
+            '</div>\n' + STICK + HOME_FORM_JS + '\n</body></html>\n')
+    return require_signup_form(require_beacon(page, 'fixtures/index.html'), 'fixtures/index.html')
+
+# ------------------------------------------------------------------ /feed.xml (RSS 2.0, every edition)
+def render_feed(eds):
+    import email.utils
+    descs = {}
+    for p in glob.glob('data/edition-*.json'):
+        d = json.load(open(p, encoding='utf-8')); descs[d['n']] = d.get('description', '')
+    items = ''
+    for n, dt, t in eds:
+        pub = email.utils.format_datetime(datetime.datetime.fromisoformat(dt + 'T05:30:00').replace(tzinfo=datetime.timezone(datetime.timedelta(hours=int(et_offset(dt)[:3])))))
+        items += (f'  <item><title>{esc(t)}</title><link>{SITE}/p/edition-{n}/</link><guid isPermaLink="true">{SITE}/p/edition-{n}/</guid>'
+                  f'<pubDate>{pub}</pubDate><description>{esc(descs.get(n) or t)}</description></item>\n')
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>\n'
+            f'  <title>Nerazzurri Daily</title><link>{SITE}/</link><atom:link href="{SITE}/feed.xml" rel="self" type="application/rss+xml"/>\n'
+            '  <description>Inter Milan in English, every morning, in 90 seconds \u2014 what the club has confirmed, kept apart from what the papers are only reporting.</description>'
+            '<language>en-us</language>\n' + items + '</channel></rss>\n')
+
 # ------------------------------------------------------------------ index + sitemap
 def build_index():
     eds = []
@@ -531,9 +624,9 @@ def build_index():
             f'<title>Nerazzurri Daily \u2014 Inter Milan in English, every morning</title>'
             + meta('Nerazzurri Daily \u2014 Inter Milan in English, every morning', home_desc, f'{SITE}/', OG_BRAND)
             + f'{FONTS}\n{SIB_CSS}\n<style>{CSS}{FORM_CSS}{HOME_CSS}</style></head>'
-            f'<body><div class="sheet">\n<div class="top"><a class="wm" href="./">NERAZZURRI <b>DAILY</b></a><span class="util">{len(eds)} editions · <a href="#subscribe">Subscribe</a></span></div>\n'
+            f'<body><div class="sheet">\n<div class="top"><a class="wm" href="./">NERAZZURRI <b>DAILY</b></a><span class="util">{len(eds)} editions · <a href="/fixtures/">Fixtures (ET)</a> · <a href="#subscribe">Subscribe</a></span></div>\n'
             f'<div class="hero2"><div><h1 class="hero-h">{esc(HEADLINE)}</h1><p class="hero-p">{esc(SUBLINE)}</p>'
-            + form_block(head='Get it every morning') + proof_line(len(eds), first) + '</div>'
+            + form_block(head='Get it every morning', sub='Subscribe and the Kickoff Card \u2014 all 38 Serie A dates as a phone wallpaper \u2014 comes with your welcome email.') + proof_line(len(eds), first) + '</div>'
             + today_card() + '</div>\n'
             '<div class="three">'
             '<div><b>Confirmed</b>What the club, the league or UEFA has actually said \u2014 with the source and the date on every item.</div>'
@@ -542,18 +635,21 @@ def build_index():
             f'<div class="who"><div class="mk">ND</div><div><b>{esc(WHO_HEAD)}</b><p>{esc(WHO)}</p></div></div>\n'
             f'<div class="idx compact"><h2>Every edition</h2><p class="sub">Every morning since No. 1 \u2014 sorted into what is confirmed and what is only reported.</p><ul>{lis}</ul></div>'
             + cta_band().replace('class="ctaband"', 'class="ctaband end"') +
-            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="./">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div>\n' + HOME_FORM_JS + '\n</body></html>\n')
+            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="./">All editions</a> &middot; <a href="/fixtures/">Fixtures</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div>\n' + HOME_FORM_JS + '\n</body></html>\n')
     require_beacon(page, 'index.html')  # checked BEFORE open(): open('w') truncates the live file
     require_signup_form(page, 'index.html')
     open('index.html', 'w', encoding='utf-8').write(page)
     sub = render_subscribe(len(eds), first)
     os.makedirs('subscribe', exist_ok=True); open('subscribe/index.html', 'w', encoding='utf-8').write(sub)
-    urls = [(f'{SITE}/', eds[0][1]), (f'{SITE}/subscribe/', eds[0][1])] + [(f'{SITE}/p/edition-{n}/', dt) for n, dt, _ in eds]
+    fx = render_fixtures(len(eds), first)
+    os.makedirs('fixtures', exist_ok=True); open('fixtures/index.html', 'w', encoding='utf-8').write(fx)
+    open('feed.xml', 'w', encoding='utf-8').write(render_feed(eds))
+    urls = [(f'{SITE}/', eds[0][1]), (f'{SITE}/subscribe/', eds[0][1]), (f'{SITE}/fixtures/', eds[0][1])] + [(f'{SITE}/p/edition-{n}/', dt) for n, dt, _ in eds]
     open('sitemap.xml', 'w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(f'  <url><loc>{u}</loc><lastmod>{dt}</lastmod></url>\n' for u, dt in urls) + '</urlset>\n')
     return len(eds)
 
 if __name__ == '__main__':
-    if '--index' in sys.argv: print('index + subscribe + sitemap:', build_index(), 'editions'); sys.exit()
+    if '--index' in sys.argv: print('index + subscribe + fixtures + feed + sitemap:', build_index(), 'editions'); sys.exit()
     for p in [a for a in sys.argv[1:] if a.endswith('.json')]:
         d = json.load(open(p, encoding='utf-8')); n = d['n']
         # a plain paragraph right after the fixtures table is the kickoff note
