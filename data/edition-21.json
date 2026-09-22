@@ -1,0 +1,245 @@
+{
+ "n": 21,
+ "date": "2026-09-22",
+ "title": "Milan says goodbye to Mazzola, and Inter Women debut today",
+ "description": "Inter Women play their first Champions League match today against BK H\u00e4cken of Sweden, and Federico Dimarco has left Italy's camp with a knee problem.",
+ "mast_alt": "Nerazzurri Daily Edition No. 21, Tuesday, September 22, 2026 \u2014 Milan says goodbye to Mazzola, and Inter Women debut today",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Sandro Mazzola was buried on Monday at the Basilica of Sant'Ambrogio in Milan. Hundreds of supporters outside the church sang the club anthem and recited the lineup that won the 1964 European Cup. <a href=\"https://www.inter.it/it/notizie/champions-league-women-vigilia-inter-hacken-guida-allenamento\" rel=\"noopener\">Inter Women play the first Champions League match in their history today</a>, at home to BK H\u00e4cken of Sweden, at 12:45 PM ET."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "TODAY",
+     "name": "H\u00e4cken",
+     "venue": "HOME",
+     "line": "INTER\u00a0WOMEN \u00b7 12:45\u00a0PM\u00a0ET \u00b7 18:45\u00a0CEST \u00b7 WOMEN'S\u00a0CHAMPIONS\u00a0LEAGUE"
+    },
+    {
+     "label": "LAST",
+     "name": "Roma 2\u20132 Inter",
+     "venue": null,
+     "line": "SERIE\u00a0A \u00b7 MATCHDAY\u00a05 \u00b7 OLIMPICO"
+    },
+    {
+     "label": "NEXT",
+     "name": "Parma",
+     "venue": "HOME",
+     "line": "SAT,\u00a0OCT\u00a010 \u00b7 12:00\u00a0PM\u00a0ET \u00b7 18:00\u00a0CEST"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB \u00b7 LEAGUE \u00b7 UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Milan says goodbye to Sandro Mazzola",
+   "paras": [
+    "His number 8 Inter jersey lay on the coffin, which was covered in white roses. Mazzola, who died on Saturday at the age of 83, spent 17 seasons at Inter and played for no other club.",
+    "Giuseppe Marotta, Inter's president and chief executive, gave the eulogy. \"\u00c8 una leggenda che se ne va\" \u2014 a legend is leaving us \u2014 he said, and asked the club to teach its young players who Mazzola was. Massimo Moratti, the former president and Javier Zanetti, the vice president, were among the mourners.",
+    "Outside, in Piazza Sant'Ambrogio, Inter's ultras hung a banner: \"Il tuo nome resta tra le pagine della nostra storia\" \u2014 your name stays in the pages of our history."
+   ],
+   "kicker": "INTER.IT \u00b7 ANSA \u00b7 SEP 21"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter Women open in Europe today against BK H\u00e4cken",
+   "paras": [
+    "Kickoff at the Stadio Brianteo in Monza is 12:45 PM ET, 18:45 CEST. It is matchday 1 of the league phase, and Inter Women's first match in the competition.",
+    "What is new since yesterday: the team trained at the Brianteo on Monday to get used to the stadium. David Sassarini, the head coach, told reporters that the aim is to learn and that he expects mistakes, his own included.",
+    "H\u00e4cken, from Gothenburg, won the Swedish title in 2025 and the first Women's Europa Cup. In the United States the only coverage is in Spanish, on ESPN Deportes."
+   ],
+   "kicker": "UPDATE \u00b7 INTER.IT \u00b7 SEP 22"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY \u00b7 NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Gazzetta: Spence will be ready for Parma",
+   "paras": [
+    "Gazzetta dello Sport, Italy's biggest sports daily, reports that Djed Spence, the wing-back, will be available when Inter play Parma on October 10. He has not played a minute for Inter, having missed the first five matchdays.",
+    "What is new: the paper now puts a date on it. Spence is finishing his recovery at Appiano Gentile, Inter's training ground, and rejoins full training when the squad returns on September 28."
+   ],
+   "kicker": "UPDATE \u00b7 GAZZETTA DELLO SPORT VIA FCINTERNEWS \u00b7 SEP 22"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Dimarco leaves Italy's camp with a knee problem",
+   "paras": [
+    "Federico Dimarco, the wing-back, has left Italy's training base at Coverciano and gone back to Milan. Corriere dello Sport reports a mild sprain of the left knee, picked up against Napoli on September 5.",
+    "The paper quotes the Italian federation: Dimarco has not recovered from a club injury and is unavailable. Matteo Ruggeri of Aston Villa was called up in his place. Italy face Belgium in Rome later this week."
+   ],
+   "kicker": "CORRIERE DELLO SPORT \u00b7 SEP 21"
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "SERIE A \u00b7 MATCHDAY 5 \u00b7 STADIO OLIMPICO"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Roma 2\u20132 Inter",
+   "paras": [
+    "KON\u00c9 6' \u00b7 KON\u00c9 37' \u00b7 LAUTARO MART\u00cdNEZ 46' \u00b7 LAUTARO MART\u00cdNEZ 79'",
+    "Inter came from two goals down."
+   ],
+   "kicker": "SERIE A FORM W W W W D \u00b7 THIRTEEN POINTS \u00b7 SECOND, LEVEL WITH ROMA ON POINTS"
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "OCTOBER AFTER THE BREAK \u00b7 EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Parma",
+     "venue": "HOME",
+     "line2": "SAT,\u00a0OCT\u00a010 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a06",
+     "line3": "12:00\u00a0PM\u00a0ET \u00b7 18:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+    },
+    {
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line2": "TUE,\u00a0OCT\u00a013 \u00b7 CHAMPIONS\u00a0LEAGUE",
+     "line3": "3:00\u00a0PM\u00a0ET \u00b7 21:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0NOT\u00a0YET\u00a0PUBLISHED"
+    },
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT,\u00a0OCT\u00a017 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a07",
+     "line3": "12:00\u00a0PM\u00a0ET \u00b7 18:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+    },
+    {
+     "name": "Shakhtar Donetsk",
+     "venue": "HOME",
+     "line2": "WED,\u00a0OCT\u00a021 \u00b7 CHAMPIONS\u00a0LEAGUE",
+     "line3": "3:00\u00a0PM\u00a0ET \u00b7 21:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0NOT\u00a0YET\u00a0PUBLISHED"
+    },
+    {
+     "name": "Fiorentina",
+     "venue": "HOME",
+     "line2": "SUN,\u00a0OCT\u00a025 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a08",
+     "line3": "7:30\u00a0AM\u00a0ET \u00b7 12:30\u00a0CET \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+    }
+   ]
+  },
+  {
+   "t": "note",
+   "html": "Kickoff times are the club's; US listings are World Soccer Talk's, which publishes no Champions League dates for October yet. Milan moves to CET on October 25."
+  },
+  {
+   "t": "ask",
+   "html": "Reply to this email with one word \u2014 which of today's items should I chase tomorrow? \u2014 and tell me where you're reading from. I read every one."
+  },
+  {
+   "t": "next",
+   "text": "WEDNESDAY, SEPTEMBER 23 \u2014 WHAT HAPPENED IN MONZA"
+  },
+  {
+   "t": "follow",
+   "links": [
+    {
+     "label": "YouTube",
+     "url": "https://www.youtube.com/@nerazzurridaily"
+    },
+    {
+     "label": "TikTok",
+     "url": "https://www.tiktok.com/@nerazzurridaily"
+    }
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "Inter.it",
+     "title": "Luce, silenzio e amore: l'ultimo saluto a Sandro Mazzola",
+     "url": "https://www.inter.it/it/notizie/racconto-giornata-funerale-sandro-mazzola"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Il ricordo del Presidente Marotta al funerale di Sandro Mazzola",
+     "url": "https://www.inter.it/it/notizie/discorso-presidente-marotta-funerale-sandro-mazzola"
+    },
+    {
+     "outlet": "ANSA",
+     "title": "A Sant'Ambrogio l'ultimo saluto a Mazzola",
+     "url": "https://www.ansa.it/sito/notizie/sport/calcio/2026/09/21/gli-ultras-ai-funerali-di-sandro-mazzola-il-tuo-nome-nella-storia-dellinter_7a153788-b747-4753-a2e0-f6fef5275d11.html"
+    },
+    {
+     "outlet": "Il Sole 24 Ore",
+     "title": "Funerali Mazzola, Marotta: leggenda che se ne va",
+     "url": "https://stream24.ilsole24ore.com/video/sport24/funerali-mazzola-marotta-leggenda-che-se-ne-va-custodire-sua-memoria/AJ3eyKKB"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Vigilia di Inter-Hacken: guida all'esordio in Champions League",
+     "url": "https://www.inter.it/it/notizie/champions-league-women-vigilia-inter-hacken-guida-allenamento"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Sassarini: scenderemo in campo senza paura di sbagliare",
+     "url": "https://www.inter.it/it/notizie/sassarini-santi-conferenza-stampa-inter-hacken-uefa-womens-champions-league"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Inter Women-BK H\u00e4cken, orari e dove vederla in tv",
+     "url": "https://www.inter.it/it/notizie/inter-bk-haecken-women-champions-league-dove-vederla-in-tv"
+    },
+    {
+     "outlet": "ESPN Press Room",
+     "title": "ESPN secures UEFA Women's Champions League media rights",
+     "url": "https://espnpressroom.com/press-release/uefa-womens-cl-global/"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "GdS - Spence pronto per l'Inter: l'agenda per tornare gia col Parma",
+     "url": "https://www.fcinternews.it/in-primo-piano/i-gds-i-spence-pronto-inter-agenda-tornare-parma-1019028"
+    },
+    {
+     "outlet": "Corriere dello Sport",
+     "title": "Altro forfait per l'Italia: Mancini perde Dimarco, al suo posto ecco Ruggeri",
+     "url": "https://www.corrieredellosport.it/news/calcio/italia/2026/09/21-151395908/altro_forfait_per_l_italia_mancini_perde_dimarco_al_suo_posto_ecco_ruggeri"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Lautaro scores twice as Inter fight back to draw with Roma",
+     "url": "https://www.inter.it/en/news/roma-inter-serie-a-2026-27"
+    },
+    {
+     "outlet": "Sky Sport Italia",
+     "title": "Serie A standings",
+     "url": "https://sport.sky.it/calcio/serie-a/classifica"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Inter fixtures",
+     "url": "https://www.inter.it/en/matches"
+    },
+    {
+     "outlet": "World Soccer Talk",
+     "title": "Serie A TV schedule",
+     "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+    }
+   ]
+  }
+ ]
+}
