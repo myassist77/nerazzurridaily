@@ -46,6 +46,9 @@ def check(page_path, base, browser):
     # regex, not a glob: the host is <id>.sibforms.com and glob ** will not
     # split inside a host segment.
     page.route(re.compile(r"sibforms\.com/serve/"), route)
+    # never let a test run count as a visit: the Cloudflare beacon is aborted here (68 fake
+    # pageviews from 127.0.0.1 showed up in Web Analytics in the week of Sep 22, 2026)
+    page.route(re.compile(r"cloudflareinsights\.com"), lambda r: r.abort())
     url = f"{base}/{page_path}"
     page.goto(url, wait_until="networkidle", timeout=60000)
 

@@ -35,6 +35,7 @@ async def run(a):
             for kind, url in (('page', f'http://localhost:{a.port}/p/edition-{a.n}/'), ('email', f'http://localhost:{a.port}/build/_email-{a.n}-local.html')):
                 for w in (700, 390):
                     pg = await b.new_page(viewport={"width": w, "height": 900})
+                    await pg.route(re.compile(r"cloudflareinsights\.com"), lambda r: r.abort())   # a control run is not a visit
                     await pg.goto(url, wait_until="networkidle"); await pg.wait_for_timeout(300)
                     sw = await pg.evaluate("document.documentElement.scrollWidth")
                     k = f'{kind}-{w}'; res[k] = {'scrollWidth': sw}
