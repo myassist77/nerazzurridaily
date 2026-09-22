@@ -194,7 +194,7 @@ def jsonld_article(n, title, desc, iso, image):
 # A door is a tiny page under /go/<channel>/ that carries the beacon, rewrites its own path to /go/<channel>/ed{N}/
 # (history.replaceState, before the beacon loads) and then redirects to the target — so the channel AND the edition
 # show up as a requestPath, and the landing page's refererPath, with no dependence on utm_* or third-party referrers.
-DOORS = {'yt': '/subscribe/', 'tt': '/subscribe/', 'wa': '/', 'copy': '/', 'x': '/', 'forward': '/subscribe/', 'welcome': '/'}
+DOORS = {'yt': '/subscribe/', 'tt': '/subscribe/', 'wa': '/', 'copy': '/', 'x': '/', 'forward': '/subscribe/', 'welcome': '/', 'email': '/', 'fb': '/'}
 
 def door_url(channel, n=None, to=None, variant=None):
     q = []
@@ -503,7 +503,7 @@ def render_email(d, absolute_links=True):
                         + P(links, 13, '#3D465C', 8, 0, MONO, 'normal', '1.8') + '</td></tr>')
         elif t == 'p': R(P(b['html']), '#ffffff', '2px 28px')
     if in_signoff: rows.append('</td></tr>')
-    R(f'<div style="font-family:{MONO};font-size:13px;color:#5A647E;line-height:1.9;">Fan-made. Not affiliated with FC Internazionale Milano.<br><a href="{SITE}/subscribe/" style="color:#0A2A66;">Subscribe</a> &middot; <a href="{SITE}/" style="color:#0A2A66;">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" style="color:#0A2A66;">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" style="color:#0A2A66;">TikTok</a></div>', '#DCE3EF', '18px 28px')
+    R(f'<div style="font-family:{MONO};font-size:13px;color:#5A647E;line-height:1.9;">Fan-made. Not affiliated with FC Internazionale Milano.<br><a href="{door_url('email', n, '/subscribe/')}" style="color:#0A2A66;">Subscribe</a> &middot; <a href="{door_url('email', n)}" style="color:#0A2A66;">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" style="color:#0A2A66;">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" style="color:#0A2A66;">TikTok</a></div>', '#DCE3EF', '18px 28px')
     R(f'<div style="font-family:{MONO};font-size:13px;color:#4A5470;line-height:1.8;text-align:center;">You are receiving this because you subscribed to Nerazzurri Daily.<br><a href="{{{{ unsubscribe }}}}" style="color:#4A5470;text-decoration:underline;">Unsubscribe</a> &middot; <a href="{SITE}/p/edition-{n}/" style="color:#4A5470;text-decoration:underline;">Read online</a></div>', '#DCE3EF', '0 28px 24px')
     return (f'<!doctype html>\n<html lang="en"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n<title>{esc(d["title"])}</title></head>\n'
             f'<body style="margin:0;padding:0;background:#DCE3EF;">\n<div style="display:none;max-height:0;overflow:hidden;opacity:0;">{esc(d["description"])}</div>\n'
