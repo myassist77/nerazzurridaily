@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Nerazzurri Daily renderer (design of Sept 19, 2026).
   python3 tools/nd_render.py data/edition-N.json           -> p/edition-N/index.html, build/email-N.html, build/edition-N.txt
-  python3 tools/nd_render.py --index                        -> index.html, sitemap.xml (from data/*.json + data/legacy.json)
+  python3 tools/nd_render.py --index                        -> index.html, subscribe/index.html, sitemap.xml (from data/*.json + data/legacy.json)
 Run from the repo root. The masthead must already exist at assets/mast/edition-NN.png.
 """
 import sys, os, re, json, html, glob, datetime
@@ -28,24 +28,49 @@ SIB_LOADER_SVG = (
 CONFIRM_MSG = ("Almost there. Check your inbox for an email from Nerazzurri Daily and tap the confirm link. "
                "Nothing arrives until you do. Not there in a minute? Look in spam or Promotions.")
 
-HOME_FORM_CSS = """
+# --- house copy (one headline, one promise, everywhere — audit of Sept 22, 2026) -------------
+HEADLINE = 'Inter Milan in English, every morning, in 90 seconds.'
+SUBLINE = ('What the club has confirmed, what the papers are only reporting — kept apart, with the source and date on every item. '
+           'Kickoffs in Eastern time first.')
+BUTTON = 'Send me tomorrow’s edition'
+FINE = 'Free · one email a morning · unsubscribe any time'
+SOURCES_LINE = 'built from Gazzetta dello Sport, Corriere dello Sport, Sky Sport Italia and Inter.it'
+OG_BRAND = f'{SITE}/assets/og/nerazzurri-daily-1200x630.png'
+
+FORM_CSS = """
 .hero{padding:22px 28px 0}
-.hero h1{font-family:Oswald,sans-serif;font-size:30px;line-height:1.12;color:#0B1020;margin:0 0 8px}
+.hero h1{font-family:Oswald,sans-serif;font-size:30px;line-height:1.12;color:#0B1020;margin:0 0 8px;text-wrap:balance}
 .hero p{font-size:17px;line-height:1.55;margin:0}
 .formbox{margin:18px 28px 8px;padding:18px 18px 14px;border:1px solid #D8DFEC;background:#fff}
 .formbox .sec{margin:0 0 12px}
+.formbox.inline{margin:16px 28px 0;padding:14px 18px 12px;background:#EEF1F6;border-color:#C4CDDE}
+.formbox.inline .kick2{font-family:Oswald,sans-serif;font-weight:700;font-size:17px;color:#0B1020;margin:0 0 2px}
+.formbox.inline .kick3{font-size:15px;line-height:1.5;color:#3D465C;margin:0 0 10px}
 .fine{font-family:'Fragment Mono',monospace;font-size:.82rem;color:#5A647E;line-height:1.6}
+.proof{font-family:'Fragment Mono',monospace;font-size:.82rem;color:#5A647E;line-height:1.7;margin:10px 28px 0}
 .idx h2{font-family:Oswald,sans-serif;font-size:22px;color:#0B1020;margin:26px 0 10px}
+.ctaband{background:#06080F;color:#fff;margin:26px 0 0;padding:16px 28px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.ctaband span{font-family:Oswald,sans-serif;font-weight:700;font-size:18px;line-height:1.25}
+.ctaband a{display:inline-block;background:#2B5BB8;color:#fff;font-family:Oswald,sans-serif;font-weight:700;font-size:16px;letter-spacing:.04em;padding:10px 16px;border-radius:3px;text-decoration:none}
+.ctaband a:hover{background:#234A9A}
+.stick{display:none}
+@media(max-width:700px){
+  .stick{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:center;gap:10px;background:#06080F;color:#fff;padding:10px 12px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -6px 18px rgba(6,8,15,.25)}
+  .stick[hidden]{display:none}
+  .stick span{flex:1;font-family:Oswald,sans-serif;font-weight:700;font-size:15px;line-height:1.2}
+  .stick a{background:#2B5BB8;color:#fff;font-family:Oswald,sans-serif;font-weight:700;font-size:15px;padding:9px 12px;border-radius:3px;text-decoration:none;white-space:nowrap}
+  .stick button{background:transparent;border:0;color:#DCE3EF;font-size:22px;line-height:1;padding:4px 6px;cursor:pointer}
+  body.has-stick{padding-bottom:64px}
+}
 /* Brevo form, restyled to the house design (ids/classes kept: Brevo's script uses them) */
 .sib-form{text-align:left;background:transparent;padding:0}
 #sib-container{max-width:none;border:0;background:transparent;padding:0;text-align:left}
-#sib-form .lab{display:block;font-family:'Fragment Mono',monospace;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:#5A647E;margin:0 0 6px}
 #sib-form .row{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-start}
 #sib-form .entry__field{margin:0 !important;padding:0 !important}
 #sib-form input.input{flex:1 1 220px;min-width:0;height:46px;box-sizing:border-box;padding:0 12px;border:1px solid #C4CDDE;border-radius:3px;font-family:Georgia,'Times New Roman',serif;font-size:17px;color:#0B1020;background:#fff}
 #sib-form input.input:focus{outline:2px solid #2B5BB8;outline-offset:1px;border-color:#2B5BB8}
-#sib-form input.input::placeholder{color:#8A93A8;font-family:Georgia,serif}
-#sib-form .sib-form-block__button{height:46px;padding:0 20px;border:0;border-radius:3px;background:#2B5BB8;color:#fff;font-family:Oswald,sans-serif;font-weight:700;font-size:17px;letter-spacing:.04em;cursor:pointer}
+#sib-form input.input::placeholder{color:#6B7590;font-family:Georgia,serif}
+#sib-form .sib-form-block__button{height:46px;padding:0 20px;border:0;border-radius:3px;background:#2B5BB8;color:#fff;font-family:Oswald,sans-serif;font-weight:700;font-size:17px;letter-spacing:.04em;cursor:pointer;white-space:nowrap}
 #sib-form .sib-form-block__button:hover{background:#234A9A}
 #sib-form .sib-form-block__button:focus-visible{outline:2px solid #0B1020;outline-offset:2px}
 .sib-form-message-panel{font-family:Georgia,serif;font-size:16px;margin:0 0 12px;max-width:none}
@@ -53,33 +78,60 @@ HOME_FORM_CSS = """
 #success-message{color:#0B1020;background:#EEF1F6;border:1px solid #2B5BB8;border-radius:3px}
 .entry__error{font-family:'Fragment Mono',monospace;font-size:.82rem;color:#8C4034;margin-top:6px}
 .input--hidden{display:none}
-@media(max-width:520px){.hero{padding-left:16px;padding-right:16px}.formbox{margin-left:16px;margin-right:16px}}
+@media(max-width:520px){.hero{padding-left:16px;padding-right:16px}.formbox,.formbox.inline{margin-left:16px;margin-right:16px}.proof{margin-left:16px;margin-right:16px}.ctaband{padding-left:16px;padding-right:16px}}
 """
+HOME_FORM_CSS = FORM_CSS   # older name, kept for callers
 
-HOME_FORM = ('<div class="hero"><h1>Inter Milan in English, every morning.</h1>'
-             '<p>One email a day: what the club has confirmed, what the papers are only reporting, and when the next match kicks off \u2014 Eastern time first. Free.</p></div>\n'
-             '<div class="formbox" id="subscribe"><div class="sec"><b>Get it every morning</b></div>\n'
-             '<div class="sib-form"><div id="sib-form-container" class="sib-form-container">\n'
-             '  <div id="error-message" class="sib-form-message-panel"><div class="sib-form-message-panel__text sib-form-message-panel__text--center"><span class="sib-form-message-panel__inner-text">That didn\'t go through. Check the address and try once more.</span></div></div>\n'
-             '  <div></div>\n'
-             '  <div id="success-message" class="sib-form-message-panel"><div class="sib-form-message-panel__text sib-form-message-panel__text--center"><span class="sib-form-message-panel__inner-text">' + CONFIRM_MSG + '</span></div></div>\n'
-             '  <div></div>\n'
-             '  <div id="sib-container" class="sib-container--large sib-container--vertical">\n'
-             '    <form id="sib-form" method="POST" action="' + SIB_ACTION + '" data-type="subscription">\n'
-             '      <div class="sib-input sib-form-block"><div class="form__entry entry_block"><div class="form__label-row">\n'
-             '        <label class="lab" for="EMAIL">Your email</label>\n'
-             '        <div class="row">\n'
-             '          <div class="entry__field" style="flex:1 1 220px;display:flex"><input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="email" inputmode="email" value="" placeholder="you@example.com" data-required="true" required></div>\n'
-             '          <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">' + SIB_LOADER_SVG + 'Subscribe</button>\n'
-             '        </div></div>\n'
-             '        <label class="entry__error entry__error--primary"></label>\n'
-             '      </div></div>\n'
-             '      <input type="text" name="email_address_check" value="" class="input--hidden" tabindex="-1" autocomplete="off" aria-hidden="true">\n'
-             '      <input type="hidden" name="locale" value="en">\n'
-             '    </form>\n'
-             '  </div>\n'
-             '</div></div>\n'
-             '<p class="fine" style="margin:12px 0 0">Free. One email each morning. Unsubscribe from any of them. Your address is never shared.</p></div>\n')
+def form_block(head=None, kick=None, sub=None, extra_class='', fine=FINE):
+    """The one Brevo form a page may carry (Brevo's main.js binds to id="sib-form", so never two per page).
+    Functional markup (action, ids, loader svg, hidden fields, message panels) is fixed; only the words around it vary."""
+    top = ''
+    if head: top += f'<div class="sec"><b>{esc(head)}</b></div>\n'
+    if kick: top += f'<p class="kick2">{esc(kick)}</p>'
+    if sub: top += f'<p class="kick3">{esc(sub)}</p>'
+    return (f'<div class="formbox{(" " + extra_class) if extra_class else ""}" id="subscribe">{top}'
+            '<div class="sib-form"><div id="sib-form-container" class="sib-form-container">\n'
+            '  <div id="error-message" class="sib-form-message-panel"><div class="sib-form-message-panel__text sib-form-message-panel__text--center"><span class="sib-form-message-panel__inner-text">That didn\'t go through. Check the address and try once more.</span></div></div>\n'
+            '  <div></div>\n'
+            '  <div id="success-message" class="sib-form-message-panel"><div class="sib-form-message-panel__text sib-form-message-panel__text--center"><span class="sib-form-message-panel__inner-text">' + CONFIRM_MSG + '</span></div></div>\n'
+            '  <div></div>\n'
+            '  <div id="sib-container" class="sib-container--large sib-container--vertical">\n'
+            '    <form id="sib-form" method="POST" action="' + SIB_ACTION + '" data-type="subscription">\n'
+            '      <div class="sib-input sib-form-block"><div class="form__entry entry_block"><div class="form__label-row">\n'
+            '        <label class="sr" for="EMAIL">Your email</label>\n'
+            '        <div class="row">\n'
+            '          <div class="entry__field" style="flex:1 1 220px;display:flex"><input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="email" inputmode="email" value="" placeholder="you@example.com" data-required="true" required></div>\n'
+            '          <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">' + SIB_LOADER_SVG + BUTTON + '</button>\n'
+            '        </div></div>\n'
+            '        <label class="entry__error entry__error--primary"></label>\n'
+            '      </div></div>\n'
+            '      <input type="text" name="email_address_check" value="" class="input--hidden" tabindex="-1" autocomplete="off" aria-hidden="true">\n'
+            '      <input type="hidden" name="locale" value="en">\n'
+            '    </form>\n'
+            '  </div>\n'
+            '</div></div>\n'
+            + (f'<p class="fine" style="margin:10px 0 0">{esc(fine)}</p>' if fine else '') + '</div>\n')
+
+def proof_line(count, first_iso):
+    d = datetime.date.fromisoformat(first_iso)
+    return f'<p class="proof">{count} editions · every morning since {MONTHS[d.month-1][:3]} {d.day}, {d.year} · {SOURCES_LINE}</p>\n'
+
+def cta_band():
+    return ('<div class="ctaband"><span>Tomorrow’s edition lands at 6 AM Eastern.</span>'
+            '<a href="#subscribe">Get it free →</a></div>\n')
+
+STICK = ('<div class="stick" id="stick" hidden><span>Inter, every morning, 6 AM ET</span><a href="#subscribe">Get it free</a>'
+         '<button type="button" id="stick-x" aria-label="Dismiss">×</button></div>\n')
+
+def meta(title, desc, url, image, kind='website', published=None):
+    """canonical + description + Open Graph + Twitter card (+ article:published_time for editions)."""
+    m = (f'<link rel="canonical" href="{url}"><link rel="icon" href="/favicon.svg" type="image/svg+xml">'
+         f'<meta name="description" content="{esc(desc)}">\n'
+         f'<meta property="og:site_name" content="Nerazzurri Daily"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}">\n'
+         f'<meta property="og:type" content="{kind}"><meta property="og:url" content="{url}"><meta property="og:image" content="{image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">\n'
+         f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(title)}"><meta name="twitter:description" content="{esc(desc)}"><meta name="twitter:image" content="{image}">\n')
+    if published: m += f'<meta property="article:published_time" content="{published}">\n'
+    return m
 
 HOME_FORM_JS = """<script>
   window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
@@ -99,6 +151,16 @@ HOME_FORM_JS = """<script>
 (function(){var M=%s;var p=document.getElementById('success-message');if(!p)return;
 function fix(){var s=p.querySelector('.sib-form-message-panel__inner-text');if(s&&s.textContent!==M){s.textContent=M;}}
 new MutationObserver(fix).observe(p,{childList:true,subtree:true,characterData:true});})();
+/* Every "Subscribe" link on the page goes to the one form and puts the cursor in it. */
+(function(){var f=document.getElementById('subscribe');if(!f)return;
+document.querySelectorAll('a[href="#subscribe"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();
+  f.scrollIntoView({behavior:'smooth',block:'center'});var i=document.getElementById('EMAIL');if(i)setTimeout(function(){i.focus({preventScroll:true});},450);});});
+/* Phone-only sticky bar: hidden while the form is on screen, gone after a submit or a dismiss (remembered on this device). */
+var s=document.getElementById('stick');if(!s)return;var K='nd_stick_off';var off=false;try{off=localStorage.getItem(K)==='1';}catch(e){}
+if(off)return;var formOn=false;function upd(){s.hidden=formOn;document.body.classList.toggle('has-stick',!formOn);}
+if('IntersectionObserver' in window){new IntersectionObserver(function(es){formOn=es[0].isIntersecting;upd();},{threshold:0.2}).observe(f);}
+upd();function kill(){s.hidden=true;document.body.classList.remove('has-stick');try{localStorage.setItem(K,'1');}catch(e){}}
+document.getElementById('stick-x').addEventListener('click',kill);var fm=document.getElementById('sib-form');if(fm)fm.addEventListener('submit',kill);})();
 </script>""" % json.dumps(CONFIRM_MSG)
 
 def require_signup_form(page, where):
@@ -208,7 +270,9 @@ def page_blocks(d):
     for b in d['blocks']:
         t = b['t']
         if t not in ('note','ask','next','follow'): close()
-        if t == 'dek': out.append(f'<div class="dek"><p>{b["html"]}</p></div>')
+        if t == 'dek':
+            out.append(f'<div class="dek"><p>{b["html"]}</p></div>')
+            out.append(form_block(kick='Tomorrow\u2019s edition, 6 AM Eastern.', sub='Confirmed news kept apart from rumor. One email. Free.', extra_class='inline'))
         elif t == 'scoreboard':
             rows = ''.join(f'<tr><td><div class="lbl">{esc(r["label"])}</div><div class="nm">{chip(r["name"], r.get("venue"))}</div>'
                            f'<div class="tm">{et_bold(nbsp(r["line"]))}</div></td></tr>' for r in b['rows'])
@@ -232,6 +296,7 @@ def page_blocks(d):
                 links = ' · '.join(f'<a href="{esc(l["url"])}" rel="noopener">{esc(l["label"])}</a>' for l in b['links'])
                 out.append(f'<p class="follow">FOLLOW {links}</p>')
         elif t == 'sources':
+            out.append(cta_band())
             links = '<br>\n'.join(f'<a href="{esc(l["url"])}" rel="noopener">' + (f'<b>{esc(l["outlet"])}</b> · ' if l.get('outlet') else '') + f'{esc(l["title"])}</a>' for l in b['links'])
             out.append(f'<div class="sources"><div class="sec"><b>Sources</b></div><p>{links}</p></div>')
         elif t == 'p': out.append(f'<div class="in"><p>{b["html"]}</p></div>')
@@ -243,14 +308,15 @@ def render_page(d):
     n = d['n']; title = d['title']; desc = d['description']; ld = longdate(d['date'])
     alt = d.get('mast_alt') or f"Nerazzurri Daily Edition No. {n}, {ld} — {title}"
     head = (f'<!doctype html><html lang="en"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n'
-            f'<title>{esc(title)} — Nerazzurri Daily No. {n}</title><link rel="canonical" href="{SITE}/p/edition-{n}/"><link rel="icon" href="/favicon.svg" type="image/svg+xml">'
-            f'<meta name="description" content="{esc(desc)}">\n<meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}">\n'
-            f'<meta property="og:type" content="article"><meta property="og:image" content="{SITE}/assets/mast/edition-{n:02d}.png">\n{FONTS}\n<style>{CSS}</style></head>')
-    body = (f'<body><div class="sheet">\n<div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a><span class="util">Edition No. {n} · {shortdate(d["date"])} · <a href="/">All editions</a></span></div>'
+            f'<title>{esc(title)} — Nerazzurri Daily No. {n}</title>'
+            + meta(title, desc, f'{SITE}/p/edition-{n}/', f'{SITE}/assets/mast/edition-{n:02d}.png', 'article', d['date'])
+            + f'{FONTS}\n{SIB_CSS}\n<style>{CSS}{FORM_CSS}</style></head>')
+    body = (f'<body><div class="sheet">\n<div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a><span class="util">Edition No. {n} · {shortdate(d["date"])} · <a href="#subscribe">Subscribe</a></span></div>'
             f'<h1 class="sr">{esc(title)}</h1><img class="mast" src="/assets/mast/edition-{n:02d}.png" alt="{esc(alt)}">'
             + page_blocks(d) +
-            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="/subscribe/">Subscribe</a> &middot; <a href="/">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div></body></html>\n')
-    return head + body
+            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="/">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div>\n'
+            + STICK + HOME_FORM_JS + '\n</body></html>\n')
+    return require_signup_form(head + body, f'p/edition-{n}/index.html')
 
 # ------------------------------------------------------------------ email (tables + inline styles, 644px)
 SANS = "Arial,Helvetica,sans-serif"; SERF = "Georgia,'Times New Roman',serif"; MONO = "'Courier New',Courier,monospace"
@@ -338,6 +404,36 @@ def render_text(d):
     lines += ['', 'Fan-made. Not affiliated with FC Internazionale Milano.']
     return '\n'.join(lines).replace('\xa0', ' ')
 
+# ------------------------------------------------------------------ /subscribe/ (the short landing page for bios and social links)
+SUB_CSS = """
+.sub-hero{padding:26px 28px 6px}
+.sub-hero h1{font-family:Oswald,sans-serif;font-size:32px;line-height:1.1;color:#0B1020;margin:0 0 10px;text-wrap:balance}
+.sub-hero p{font-size:17px;line-height:1.6;margin:0 0 12px}
+.promise{margin:18px 28px 0;padding:0;list-style:none;display:grid;gap:10px}
+.promise li{border-left:5px solid #2B5BB8;background:#EEF1F6;padding:10px 14px;font-size:16px;line-height:1.5}
+.promise li.r{border-left-color:#E7B4AE;background:#FBEAE7}
+.promise b{font-family:Oswald,sans-serif;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:#0B1020;display:block;margin-bottom:2px}
+@media(max-width:520px){.sub-hero{padding-left:16px;padding-right:16px}.promise{margin-left:16px;margin-right:16px}}
+"""
+def render_subscribe(count, first_iso):
+    desc = 'Inter Milan in English, every morning, in 90 seconds \u2014 what the club has confirmed, kept apart from what the papers are only reporting. Free.'
+    page = (f'<!doctype html><html lang="en"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n'
+            f'<title>Subscribe \u2014 Nerazzurri Daily</title>'
+            + meta('Subscribe to Nerazzurri Daily', desc, f'{SITE}/subscribe/', OG_BRAND)
+            + f'{FONTS}\n{SIB_CSS}\n<style>{CSS}{FORM_CSS}{SUB_CSS}</style></head><body><div class="sheet">\n'
+            f'<div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a><span class="util">{count} editions · <a href="/">All editions</a></span></div>\n'
+            f'<div class="sub-hero"><h1>{esc(HEADLINE)}</h1><p>{esc(SUBLINE)}</p></div>\n'
+            '<ul class="promise">\n'
+            '<li><b>Confirmed</b>What the club, the league or UEFA has actually said \u2014 with the source and the date on every item.</li>\n'
+            '<li class="r"><b>Reported</b>What the Italian papers are saying, kept apart from the facts and attributed to the outlet that broke it.</li>\n'
+            '<li><b>Next up</b>Every fixture with the Eastern kickoff, the Milan time and the US broadcaster once it is published.</li>\n'
+            '</ul>\n'
+            + form_block(head='Subscribe') + proof_line(count, first_iso) +
+            '<div class="sub-hero"><p class="fine">Not sure yet? <a href="/">Read any past edition</a> first.</p></div>\n'
+            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="/">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n'
+            '</div>\n' + HOME_FORM_JS + '\n</body></html>\n')
+    return require_signup_form(require_beacon(page, 'subscribe/index.html'), 'subscribe/index.html')
+
 # ------------------------------------------------------------------ index + sitemap
 def build_index():
     eds = []
@@ -347,23 +443,28 @@ def build_index():
         for e in json.load(open('data/legacy.json', encoding='utf-8')): eds.append((e['n'], e['date'], e['title']))
     eds = sorted({e[0]: e for e in eds}.values(), key=lambda e: -e[0])
     lis = ''.join(f'<li><span class="d">No. {n} &middot; {longdate(dt)}</span><a class="t" href="p/edition-{n}/">{esc(t)}</a></li>' for n, dt, t in eds)
+    first = min(e[1] for e in eds)
+    home_desc = 'Inter Milan in English, every morning, in 90 seconds \u2014 what the club has confirmed, kept apart from what the papers are only reporting, with the source and date on every item. Free.'
     page = (f'<!doctype html><html lang="en"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n'
-            f'<title>Nerazzurri Daily — every edition</title><link rel="canonical" href="{SITE}/"><link rel="icon" href="/favicon.svg" type="image/svg+xml">'
-            f'<meta name="description" content="Inter Milan in English, every morning — sorted into what is confirmed and what is only reported. Every edition of Nerazzurri Daily.">\n'
-            f'<meta property="og:title" content="Nerazzurri Daily — every edition"><meta property="og:image" content="{SITE}/assets/mast/edition-{eds[0][0]:02d}.png">\n{FONTS}\n{SIB_CSS}\n<style>{CSS}{HOME_FORM_CSS}</style></head>'
+            f'<title>Nerazzurri Daily \u2014 Inter Milan in English, every morning</title>'
+            + meta('Nerazzurri Daily \u2014 Inter Milan in English, every morning', home_desc, f'{SITE}/', OG_BRAND)
+            + f'{FONTS}\n{SIB_CSS}\n<style>{CSS}{FORM_CSS}</style></head>'
             f'<body><div class="sheet">\n<div class="top"><a class="wm" href="./">NERAZZURRI <b>DAILY</b></a><span class="util">{len(eds)} editions · <a href="#subscribe">Subscribe</a></span></div>\n'
-            f'{HOME_FORM}'
-            f'<div class="idx"><h2>Every edition</h2><p class="sub">Every morning since No. 1 — sorted into what is confirmed and what is only reported.</p><ul>{lis}</ul></div>'
-            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="subscribe/">Subscribe</a> &middot; <a href="./">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div>\n' + HOME_FORM_JS + '\n</body></html>\n')
+            f'<div class="hero"><h1>{esc(HEADLINE)}</h1><p>{esc(SUBLINE)}</p></div>\n'
+            + form_block(head='Get it every morning') + proof_line(len(eds), first) +
+            f'<div class="idx"><h2>Every edition</h2><p class="sub">Every morning since No. 1 \u2014 sorted into what is confirmed and what is only reported.</p><ul>{lis}</ul></div>'
+            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="./">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div>\n' + HOME_FORM_JS + '\n</body></html>\n')
     require_beacon(page, 'index.html')  # checked BEFORE open(): open('w') truncates the live file
     require_signup_form(page, 'index.html')
     open('index.html', 'w', encoding='utf-8').write(page)
+    sub = render_subscribe(len(eds), first)
+    os.makedirs('subscribe', exist_ok=True); open('subscribe/index.html', 'w', encoding='utf-8').write(sub)
     urls = [(f'{SITE}/', eds[0][1]), (f'{SITE}/subscribe/', eds[0][1])] + [(f'{SITE}/p/edition-{n}/', dt) for n, dt, _ in eds]
     open('sitemap.xml', 'w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(f'  <url><loc>{u}</loc><lastmod>{dt}</lastmod></url>\n' for u, dt in urls) + '</urlset>\n')
     return len(eds)
 
 if __name__ == '__main__':
-    if '--index' in sys.argv: print('index + sitemap:', build_index(), 'editions'); sys.exit()
+    if '--index' in sys.argv: print('index + subscribe + sitemap:', build_index(), 'editions'); sys.exit()
     for p in [a for a in sys.argv[1:] if a.endswith('.json')]:
         d = json.load(open(p, encoding='utf-8')); n = d['n']
         # a plain paragraph right after the fixtures table is the kickoff note

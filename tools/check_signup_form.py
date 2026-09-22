@@ -13,7 +13,13 @@ Needs:  pip install playwright && python3 -m playwright install --with-deps chro
 """
 import argparse, functools, http.server, re, socketserver, sys, threading, time
 
-PAGES = ["index.html", "subscribe/index.html"]
+def _editions():
+    """The newest JSON-rendered edition and the oldest legacy page: every edition page carries the form now."""
+    import glob, os
+    ns = sorted(int(re.search(r"edition-(\d+)", p).group(1)) for p in glob.glob("p/edition-*/index.html"))
+    return [f"p/edition-{ns[-1]}/index.html", f"p/edition-{ns[0]}/index.html"] if ns else []
+
+PAGES = ["index.html", "subscribe/index.html"] + _editions()
 STUB = ('{"success":true,"message":"Almost there. Check your inbox for an email from '
         'Nerazzurri Daily and tap the confirm link."}')
 TEST_EMAIL = "ci-check@example.invalid"   # never reaches Brevo: the POST is stubbed
