@@ -36,11 +36,17 @@ BUTTON = 'Send me tomorrow’s edition'
 FINE = 'Free · one email a morning · unsubscribe any time'
 SOURCES_LINE = 'built from Gazzetta dello Sport, Corriere dello Sport, Sky Sport Italia and Inter.it'
 OG_BRAND = f'{SITE}/assets/og/nerazzurri-daily-1200x630.png'
+BYLINE = 'Written every morning by an Inter fan in New Jersey who reads the Italian press so you don\u2019t have to.'
+WHO_HEAD = 'Who writes this'
+WHO = ('An Inter fan in New Jersey who reads the Italian press so you don\u2019t have to. Every morning I go through Gazzetta, Corriere, '
+       'Sky Sport Italia and Inter.it, keep what the club has actually said apart from what the papers are guessing, and send it before you\u2019re up. '
+       'Reply to any edition \u2014 I read every one.')
 
 FORM_CSS = """
 .hero{padding:22px 28px 0}
 .hero h1{font-family:Oswald,sans-serif;font-size:30px;line-height:1.12;color:#0B1020;margin:0 0 8px;text-wrap:balance}
-.hero p{font-size:17px;line-height:1.55;margin:0}
+.hero p,.hero-p{font-size:17px;line-height:1.55;margin:0}
+.hero-h{font-family:Oswald,sans-serif;font-size:28px;line-height:1.12;color:#0B1020;margin:0 0 8px;text-wrap:balance}
 .formbox{margin:18px 28px 8px;padding:18px 18px 14px;border:1px solid #D8DFEC;background:#fff}
 .formbox .sec{margin:0 0 12px}
 .formbox.inline{margin:16px 28px 0;padding:14px 18px 12px;background:#EEF1F6;border-color:#C4CDDE}
@@ -53,6 +59,12 @@ FORM_CSS = """
 .ctaband span{font-family:Oswald,sans-serif;font-weight:700;font-size:18px;line-height:1.25}
 .ctaband a{display:inline-block;background:#2B5BB8;color:#fff;font-family:Oswald,sans-serif;font-weight:700;font-size:16px;letter-spacing:.04em;padding:10px 16px;border-radius:3px;text-decoration:none}
 .ctaband a:hover{background:#234A9A}
+.pn{display:flex;justify-content:space-between;gap:12px;margin:22px 28px 0;flex-wrap:wrap}
+.pn a{font-family:Oswald,sans-serif;font-weight:700;font-size:15px;color:#0A2A66;text-decoration:none;line-height:1.3}
+.pn a small{display:block;font-family:'Fragment Mono',monospace;font-size:.82rem;color:#5A647E;font-weight:400;letter-spacing:.04em}
+.pn a.next{text-align:right;margin-left:auto}
+.pn a[hidden]{display:none}
+.signoff .byline{font-family:'Fragment Mono',monospace;font-size:.82rem;color:#5A647E;line-height:1.6;margin:14px 0 0}
 .stick{display:none}
 @media(max-width:700px){
   .stick{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:center;gap:10px;background:#06080F;color:#fff;padding:10px 12px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -6px 18px rgba(6,8,15,.25)}
@@ -79,6 +91,35 @@ FORM_CSS = """
 .entry__error{font-family:'Fragment Mono',monospace;font-size:.82rem;color:#8C4034;margin-top:6px}
 .input--hidden{display:none}
 @media(max-width:520px){.hero{padding-left:16px;padding-right:16px}.formbox,.formbox.inline{margin-left:16px;margin-right:16px}.proof{margin-left:16px;margin-right:16px}.ctaband{padding-left:16px;padding-right:16px}}
+"""
+HOME_CSS = """
+.hero2{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;padding:22px 28px 0;align-items:start}
+.hero2 .formbox{margin:14px 0 0}
+.hero2 .proof{margin:10px 0 0}
+.card{display:block;text-decoration:none;color:inherit;border:1px solid #C4CDDE;box-shadow:0 10px 24px rgba(11,16,32,.14);background:#fff;margin-top:4px}
+.card img{display:block;width:100%;height:auto;border:0}
+.card .cb{padding:10px 12px 12px}
+.card .eyebrow{font-family:'Fragment Mono',monospace;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:#5A647E;margin:0 0 6px}
+.card .cdek{font-size:15px;line-height:1.5;margin:0 0 10px;color:#3D465C}
+.card .ci{border-left:4px solid #2B5BB8;background:#EEF1F6;padding:6px 8px;margin:6px 0;font-family:Oswald,sans-serif;font-weight:700;font-size:15px;color:#0B1020;line-height:1.3}
+.card .ci.rep{border-left-color:#E7B4AE;background:#FBEAE7}
+.card .ci small{display:block;font-family:'Fragment Mono',monospace;font-size:.82rem;font-weight:700;letter-spacing:.08em;color:#2B5BB8;margin-bottom:2px}
+.card .ci.rep small{color:#8C4034}
+.card .go{display:inline-block;margin-top:10px;font-family:Oswald,sans-serif;font-weight:700;font-size:15px;color:#0A2A66}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:26px 28px 0}
+.three div{border-top:3px solid #2B5BB8;background:#EEF1F6;padding:10px 12px;font-size:15px;line-height:1.5}
+.three div.r{border-top-color:#E7B4AE;background:#FBEAE7}
+.three b{display:block;font-family:Oswald,sans-serif;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:#0B1020;margin-bottom:2px}
+.who{display:flex;gap:14px;align-items:flex-start;margin:22px 28px 0;padding:14px 16px;border:1px solid #D8DFEC}
+.who .mk{flex:0 0 44px;height:44px;border-radius:50%;background:#06080F;color:#8FB2F0;font-family:Oswald,sans-serif;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:15px;letter-spacing:.04em}
+.who b{display:block;font-family:Oswald,sans-serif;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:#0B1020;margin-bottom:4px}
+.who p{margin:0;font-size:16px;line-height:1.55}
+.idx.compact li{padding:9px 0}
+.idx.compact .t{font-size:1rem;margin-top:1px}
+.idx.compact .d{font-size:.78rem}
+.ctaband.end{margin-top:26px}
+@media(max-width:600px){.hero2{grid-template-columns:1fr;gap:16px}.three{grid-template-columns:1fr}}
+@media(max-width:520px){.hero2{padding-left:16px;padding-right:16px}.three,.who{margin-left:16px;margin-right:16px}}
 """
 HOME_FORM_CSS = FORM_CSS   # older name, kept for callers
 
@@ -111,6 +152,27 @@ def form_block(head=None, kick=None, sub=None, extra_class='', fine=FINE):
             '  </div>\n'
             '</div></div>\n'
             + (f'<p class="fine" style="margin:10px 0 0">{esc(fine)}</p>' if fine else '') + '</div>\n')
+
+def edition_index():
+    """{n: (date, title)} for every edition: data/*.json plus data/legacy.json."""
+    eds = {}
+    for p in glob.glob('data/edition-*.json'):
+        d = json.load(open(p, encoding='utf-8')); eds[d['n']] = (d['date'], d['title'])
+    if os.path.exists('data/legacy.json'):
+        for e in json.load(open('data/legacy.json', encoding='utf-8')): eds.setdefault(e['n'], (e['date'], e['title']))
+    return eds
+
+def prev_next(n, eds=None):
+    """Previous edition with its title (known at build time); the next one is revealed by JS once it exists,
+    so yesterday's page never needs a rebuild when today's is published."""
+    eds = eds if eds is not None else edition_index()
+    out = '<div class="pn">'
+    if n - 1 in eds:
+        out += f'<a href="/p/edition-{n-1}/"><small>\u2190 Previous edition \u00b7 No. {n-1}</small>{esc(eds[n-1][1])}</a>'
+    out += f'<a class="next" id="pn-next" hidden href="/p/edition-{n+1}/"><small>Next edition \u00b7 No. {n+1} \u2192</small>' + (esc(eds[n+1][1]) if n + 1 in eds else 'Read it') + '</a></div>\n'
+    return out
+
+PN_JS = """<script>(function(){var a=document.getElementById('pn-next');if(!a)return;fetch(a.getAttribute('href'),{method:'HEAD'}).then(function(r){if(r.ok)a.hidden=false;}).catch(function(){});})();</script>"""
 
 def proof_line(count, first_iso):
     d = datetime.date.fromisoformat(first_iso)
@@ -290,12 +352,13 @@ def page_blocks(d):
         elif t in ('note','ask','next','follow'):
             if not in_signoff: out.append('<div class="signoff">'); in_signoff = True
             if t == 'note': out.append(f'<p class="note">{b["html"]}</p>')
-            elif t == 'ask': out.append(f'<p class="ask">{b["html"]}</p>')
+            elif t == 'ask': out.append(f'<p class="ask">{b["html"]}</p><p class="byline">{esc(BYLINE)}</p>')
             elif t == 'next': out.append(f'<div class="next"><b>Next edition</b><span>{esc(b["text"])}</span></div>')
             elif t == 'follow':
                 links = ' · '.join(f'<a href="{esc(l["url"])}" rel="noopener">{esc(l["label"])}</a>' for l in b['links'])
                 out.append(f'<p class="follow">FOLLOW {links}</p>')
         elif t == 'sources':
+            out.append(prev_next(d['n']))
             out.append(cta_band())
             links = '<br>\n'.join(f'<a href="{esc(l["url"])}" rel="noopener">' + (f'<b>{esc(l["outlet"])}</b> · ' if l.get('outlet') else '') + f'{esc(l["title"])}</a>' for l in b['links'])
             out.append(f'<div class="sources"><div class="sec"><b>Sources</b></div><p>{links}</p></div>')
@@ -315,7 +378,7 @@ def render_page(d):
             f'<h1 class="sr">{esc(title)}</h1><img class="mast" src="/assets/mast/edition-{n:02d}.png" alt="{esc(alt)}">'
             + page_blocks(d) +
             '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="/">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div>\n'
-            + STICK + HOME_FORM_JS + '\n</body></html>\n')
+            + STICK + HOME_FORM_JS + PN_JS + '\n</body></html>\n')
     return require_signup_form(head + body, f'p/edition-{n}/index.html')
 
 # ------------------------------------------------------------------ email (tables + inline styles, 644px)
@@ -365,7 +428,7 @@ def render_email(d, absolute_links=True):
         elif t in ('note','ask','next','follow'):
             if not in_signoff: rows.append('<tr><td style="background:#ffffff;padding:4px 28px 6px;">'); in_signoff = True
             if t == 'note': rows.append(P(b['html'], 13, '#5A647E', 8, 0, MONO))
-            elif t == 'ask': rows.append(P(b['html'], 17, '#3D465C', 18, 0))
+            elif t == 'ask': rows.append(P(b['html'], 17, '#3D465C', 18, 0)); rows.append(P(esc(BYLINE), 13, '#5A647E', 14, 0, MONO))
             elif t == 'next': rows.append(f'<div style="margin-top:18px;"><div style="font-family:{SANS};font-size:13px;font-weight:bold;letter-spacing:1.5px;color:#2B5BB8;margin-bottom:2px;">NEXT EDITION</div><div style="font-family:{SANS};font-weight:bold;font-size:18px;color:#0B1020;line-height:1.25;">{esc(b["text"])}</div></div>')
             elif t == 'follow':
                 links = ' · '.join(f'<a href="{esc(l["url"])}" style="color:#0A2A66;">{esc(l["label"])}</a>' for l in b['links'])
@@ -434,6 +497,25 @@ def render_subscribe(count, first_iso):
             '</div>\n' + HOME_FORM_JS + '\n</body></html>\n')
     return require_signup_form(require_beacon(page, 'subscribe/index.html'), 'subscribe/index.html')
 
+# ------------------------------------------------------------------ today's edition card (home hero)
+def strip_tags(h):
+    from bs4 import BeautifulSoup
+    return BeautifulSoup(h, 'html.parser').get_text()
+
+def today_card():
+    """The newest JSON edition as an overlapping card: masthead, dek, first CONFIRMED and first REPORTED item."""
+    paths = sorted(glob.glob('data/edition-*.json'), key=lambda p: int(re.search(r'edition-(\d+)', p).group(1)))
+    if not paths: return ''
+    d = json.load(open(paths[-1], encoding='utf-8')); n = d['n']
+    dek = next((strip_tags(b['html']) for b in d['blocks'] if b['t'] == 'dek'), '')
+    if len(dek) > 210: dek = dek[:207].rsplit(' ', 1)[0] + '\u2026'
+    conf = next((strip_tags(b['h3']) for b in d['blocks'] if b['t'] == 'item' and not b.get('rep')), None)
+    repd = next((strip_tags(b['h3']) for b in d['blocks'] if b['t'] == 'item' and b.get('rep')), None)
+    items = (f'<div class="ci"><small>CONFIRMED</small>{esc(conf)}</div>' if conf else '') + (f'<div class="ci rep"><small>REPORTED</small>{esc(repd)}</div>' if repd else '')
+    return (f'<a class="card" href="/p/edition-{n}/" aria-label="Read edition No. {n}"><img src="/assets/mast/edition-{n:02d}.png" alt="{esc(d.get("mast_alt") or d["title"])}">'
+            f'<div class="cb"><p class="eyebrow">Today \u00b7 No. {n} \u00b7 {shortdate(d["date"])}</p><p class="cdek">{esc(dek)}</p>{items}'
+            f'<span class="go">Read today\u2019s edition \u2192</span></div></a>')
+
 # ------------------------------------------------------------------ index + sitemap
 def build_index():
     eds = []
@@ -448,11 +530,18 @@ def build_index():
     page = (f'<!doctype html><html lang="en"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n'
             f'<title>Nerazzurri Daily \u2014 Inter Milan in English, every morning</title>'
             + meta('Nerazzurri Daily \u2014 Inter Milan in English, every morning', home_desc, f'{SITE}/', OG_BRAND)
-            + f'{FONTS}\n{SIB_CSS}\n<style>{CSS}{FORM_CSS}</style></head>'
+            + f'{FONTS}\n{SIB_CSS}\n<style>{CSS}{FORM_CSS}{HOME_CSS}</style></head>'
             f'<body><div class="sheet">\n<div class="top"><a class="wm" href="./">NERAZZURRI <b>DAILY</b></a><span class="util">{len(eds)} editions · <a href="#subscribe">Subscribe</a></span></div>\n'
-            f'<div class="hero"><h1>{esc(HEADLINE)}</h1><p>{esc(SUBLINE)}</p></div>\n'
-            + form_block(head='Get it every morning') + proof_line(len(eds), first) +
-            f'<div class="idx"><h2>Every edition</h2><p class="sub">Every morning since No. 1 \u2014 sorted into what is confirmed and what is only reported.</p><ul>{lis}</ul></div>'
+            f'<div class="hero2"><div><h1 class="hero-h">{esc(HEADLINE)}</h1><p class="hero-p">{esc(SUBLINE)}</p>'
+            + form_block(head='Get it every morning') + proof_line(len(eds), first) + '</div>'
+            + today_card() + '</div>\n'
+            '<div class="three">'
+            '<div><b>Confirmed</b>What the club, the league or UEFA has actually said \u2014 with the source and the date on every item.</div>'
+            '<div class="r"><b>Reported</b>What the Italian papers are saying, kept apart from the facts and attributed to the outlet that broke it.</div>'
+            '<div><b>Next up</b>Every fixture with the Eastern kickoff, the Milan time and the US broadcaster once it is published.</div></div>\n'
+            f'<div class="who"><div class="mk">ND</div><div><b>{esc(WHO_HEAD)}</b><p>{esc(WHO)}</p></div></div>\n'
+            f'<div class="idx compact"><h2>Every edition</h2><p class="sub">Every morning since No. 1 \u2014 sorted into what is confirmed and what is only reported.</p><ul>{lis}</ul></div>'
+            + cta_band().replace('class="ctaband"', 'class="ctaband end"') +
             '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="./">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div>\n' + HOME_FORM_JS + '\n</body></html>\n')
     require_beacon(page, 'index.html')  # checked BEFORE open(): open('w') truncates the live file
     require_signup_form(page, 'index.html')
