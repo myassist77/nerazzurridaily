@@ -194,7 +194,7 @@ def jsonld_article(n, title, desc, iso, image):
 # A door is a tiny page under /go/<channel>/ that carries the beacon, rewrites its own path to /go/<channel>/ed{N}/
 # (history.replaceState, before the beacon loads) and then redirects to the target — so the channel AND the edition
 # show up as a requestPath, and the landing page's refererPath, with no dependence on utm_* or third-party referrers.
-DOORS = {'yt': '/subscribe/', 'tt': '/subscribe/', 'wa': '/', 'copy': '/', 'x': '/', 'forward': '/subscribe/', 'welcome': '/', 'email': '/', 'fb': '/'}
+DOORS = {'yt': '/subscribe/', 'tt': '/', 'wa': '/', 'copy': '/', 'x': '/', 'forward': '/subscribe/', 'welcome': '/', 'email': '/', 'fb': '/'}
 
 def door_url(channel, n=None, to=None, variant=None):
     q = []
