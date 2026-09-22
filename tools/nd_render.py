@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Nerazzurri Daily renderer (design of Sept 19, 2026).
   python3 tools/nd_render.py data/edition-N.json           -> p/edition-N/index.html, build/email-N.html, build/edition-N.txt
-  python3 tools/nd_render.py --index                        -> index.html, subscribe/index.html, fixtures/index.html, feed.xml, sitemap.xml (from data/*.json + data/legacy.json + data/season-2026-27.json)
+  python3 tools/nd_render.py --index                        -> index.html, subscribe/index.html, fixtures/index.html, feed.xml, sitemap.xml, go/<channel>/index.html (from data/*.json + data/legacy.json + data/season-2026-27.json)
 Run from the repo root. The masthead must already exist at assets/mast/edition-NN.png.
 """
 import sys, os, re, json, html, glob, datetime
@@ -190,15 +190,44 @@ def jsonld_article(n, title, desc, iso, image):
          "publisher": {"@type": "Organization", "name": "Nerazzurri Daily", "url": SITE, "logo": {"@type": "ImageObject", "url": OG_BRAND}}}
     return '<script type="application/ld+json">' + json.dumps(d, ensure_ascii=False).replace('</', '<\\/') + '</script>\n'
 
+# --- tracking doors (Sept 22, 2026): Cloudflare Web Analytics records paths and referrers, never query strings.
+# A door is a tiny page under /go/<channel>/ that carries the beacon, rewrites its own path to /go/<channel>/ed{N}/
+# (history.replaceState, before the beacon loads) and then redirects to the target — so the channel AND the edition
+# show up as a requestPath, and the landing page's refererPath, with no dependence on utm_* or third-party referrers.
+DOORS = {'yt': '/subscribe/', 'tt': '/subscribe/', 'wa': '/', 'copy': '/', 'x': '/', 'forward': '/subscribe/', 'welcome': '/'}
+
+def door_url(channel, n=None, to=None, variant=None):
+    q = []
+    if n: q.append(f'ed={n}')
+    if variant: q.append(f'v={variant}')
+    if to and to != DOORS[channel]: q.append('to=' + to)
+    return f'{SITE}/go/{channel}/' + ('?' + '&'.join(q) if q else '')
+
+def render_door(channel):
+    default = DOORS[channel]
+    desc = 'Inter Milan in English, every morning, in 90 seconds \u2014 what the club has confirmed, kept apart from what the papers are only reporting. Free.'
+    pre = ('<script>(function(){var q=new URLSearchParams(location.search),to=q.get("to")||%s,ed=(q.get("ed")||"").replace(/\\D/g,""),v=(q.get("v")||"").replace(/[^a-z0-9-]/gi,"");'
+           'if(!/^\\/(?!\\/)[A-Za-z0-9_\\-./?=&%%]*$/.test(to))to=%s;window.__to=to;'
+           'try{history.replaceState(null,"",location.pathname+(ed?"ed"+ed+"/":"")+(v?v+"/":""));}catch(e){}})();</script>\n') % (json.dumps(default), json.dumps(default))
+    page = (f'<!doctype html><html lang="en"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n'
+            f'<title>Nerazzurri Daily</title><meta name="robots" content="noindex,nofollow">'
+            + pre + meta('Nerazzurri Daily \u2014 Inter Milan in English, every morning', desc, f'{SITE}{default}', OG_BRAND)
+            + f'{FONTS}\n<style>{CSS}.go{{padding:40px 28px 48px;text-align:center}}.go p{{font-size:17px;line-height:1.6;margin:0 0 14px}}.go a{{font-family:Oswald,sans-serif;font-weight:700;font-size:17px;color:#0A2A66}}</style></head>'
+            f'<body><div class="sheet"><div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a></div>'
+            f'<div class="go"><p>Taking you to Nerazzurri Daily\u2026</p><p><a id="go" href="{default}">Continue \u2192</a></p></div></div>\n'
+            '<script>(function(){var a=document.getElementById("go"),t=window.__to||a.getAttribute("href");a.setAttribute("href",t);'
+            'window.addEventListener("load",function(){setTimeout(function(){location.replace(t);},700);});})();</script>\n</body></html>\n')
+    return require_beacon(page, f'go/{channel}/index.html')
+
 def share_block(n, title):
     """Page sign-off: X, WhatsApp and copy-link, each UTM-tagged so Cloudflare shows what forwards do."""
     from urllib.parse import quote
-    u = lambda medium: f'{SITE}/p/edition-{n}/?utm_source=share&utm_medium={medium}&utm_campaign=ed{n}'
+    page = f'/p/edition-{n}/'
     text = f'{title} \u2014 Nerazzurri Daily'
-    x = 'https://x.com/intent/post?text=' + quote(text) + '&url=' + quote(u('x'))
-    wa = 'https://wa.me/?text=' + quote(text + ' ' + u('whatsapp'))
+    x = 'https://x.com/intent/post?text=' + quote(text) + '&url=' + quote(f'{SITE}{page}?utm_source=share&utm_medium=x&utm_campaign=ed{n}')
+    wa = 'https://wa.me/?text=' + quote(text + ' ' + door_url('wa', n, page))
     return (f'<p class="share">Know an Interista? Send them this one: <a href="{x}" rel="noopener" target="_blank">X</a> \u00b7 '
-            f'<a href="{wa}" rel="noopener" target="_blank">WhatsApp</a> \u00b7 <a href="{u("copy")}" id="copy-link">Copy link</a></p>')
+            f'<a href="{wa}" rel="noopener" target="_blank">WhatsApp</a> \u00b7 <a href="{door_url("copy", n, page)}" id="copy-link">Copy link</a></p>')
 
 SHARE_JS = """<script>(function(){var a=document.getElementById('copy-link');if(!a||!navigator.clipboard)return;a.addEventListener('click',function(e){e.preventDefault();navigator.clipboard.writeText(a.getAttribute('href')).then(function(){var t=a.textContent;a.textContent='Copied';setTimeout(function(){a.textContent=t;},1500);});});})();</script>"""
 
@@ -354,7 +383,7 @@ def head_case(s):  # LATEST RESULT -> Latest result (CSS uppercases on the page;
 
 # ------------------------------------------------------------------ page
 def page_blocks(d):
-    out = []; in_signoff = False
+    out = []; in_signoff = False; signed = False
     def close():
         nonlocal in_signoff
         if in_signoff: out.append('</div>'); in_signoff = False
@@ -381,12 +410,14 @@ def page_blocks(d):
         elif t in ('note','ask','next','follow'):
             if not in_signoff: out.append('<div class="signoff">'); in_signoff = True
             if t == 'note': out.append(f'<p class="note">{b["html"]}</p>')
-            elif t == 'ask': out.append(f'<p class="ask">{b["html"]}</p><p class="byline">{esc(BYLINE)}</p>' + share_block(d['n'], d['title']))
+            elif t == 'ask': out.append(f'<p class="ask">{b["html"]}</p><p class="byline">{esc(BYLINE)}</p>' + share_block(d['n'], d['title'])); signed = True
             elif t == 'next': out.append(f'<div class="next"><b>Next edition</b><span>{esc(b["text"])}</span></div>')
             elif t == 'follow':
                 links = ' · '.join(f'<a href="{esc(l["url"])}" rel="noopener">{esc(l["label"])}</a>' for l in b['links'])
                 out.append(f'<p class="follow">FOLLOW {links}</p>')
         elif t == 'sources':
+            if not signed:   # editions without an 'ask' block (10-12) still get the byline + share line
+                out.append(f'<div class="signoff"><p class="byline">{esc(BYLINE)}</p>' + share_block(d['n'], d['title']) + '</div>'); signed = True
             out.append(prev_next(d['n']))
             out.append(cta_band())
             links = '<br>\n'.join(f'<a href="{esc(l["url"])}" rel="noopener">' + (f'<b>{esc(l["outlet"])}</b> · ' if l.get('outlet') else '') + f'{esc(l["title"])}</a>' for l in b['links'])
@@ -460,7 +491,7 @@ def render_email(d, absolute_links=True):
             if t == 'note': rows.append(P(b['html'], 13, '#5A647E', 8, 0, MONO))
             elif t == 'ask':
                 rows.append(P(b['html'], 17, '#3D465C', 18, 0)); rows.append(P(esc(BYLINE), 13, '#5A647E', 14, 0, MONO))
-                rows.append(P(f'Know an Interista? Forward this email \u2014 they can subscribe at <a href="{SITE}/subscribe/?utm_source=email&utm_medium=forward&utm_campaign=ed{n}" style="color:#0A2A66;">nerazzurridaily.com/subscribe</a>.', 13, '#5A647E', 10, 0, MONO))
+                rows.append(P(f'Know an Interista? Forward this email \u2014 they can subscribe at <a href="{door_url("forward", n)}" style="color:#0A2A66;">nerazzurridaily.com/subscribe</a>.', 13, '#5A647E', 10, 0, MONO))
             elif t == 'next': rows.append(f'<div style="margin-top:18px;"><div style="font-family:{SANS};font-size:13px;font-weight:bold;letter-spacing:1.5px;color:#2B5BB8;margin-bottom:2px;">NEXT EDITION</div><div style="font-family:{SANS};font-weight:bold;font-size:18px;color:#0B1020;line-height:1.25;">{esc(b["text"])}</div></div>')
             elif t == 'follow':
                 links = ' · '.join(f'<a href="{esc(l["url"])}" style="color:#0A2A66;">{esc(l["label"])}</a>' for l in b['links'])
@@ -644,6 +675,8 @@ def build_index():
     fx = render_fixtures(len(eds), first)
     os.makedirs('fixtures', exist_ok=True); open('fixtures/index.html', 'w', encoding='utf-8').write(fx)
     open('feed.xml', 'w', encoding='utf-8').write(render_feed(eds))
+    for ch in DOORS:
+        os.makedirs(f'go/{ch}', exist_ok=True); open(f'go/{ch}/index.html', 'w', encoding='utf-8').write(render_door(ch))
     urls = [(f'{SITE}/', eds[0][1]), (f'{SITE}/subscribe/', eds[0][1]), (f'{SITE}/fixtures/', eds[0][1])] + [(f'{SITE}/p/edition-{n}/', dt) for n, dt, _ in eds]
     open('sitemap.xml', 'w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(f'  <url><loc>{u}</loc><lastmod>{dt}</lastmod></url>\n' for u, dt in urls) + '</urlset>\n')
     return len(eds)

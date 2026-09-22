@@ -92,11 +92,24 @@ def inject_share(path):
     open(path, 'w', encoding='utf-8').write(s)
     return 'done'
 
+def inject_doors(path):
+    """Fourth idempotent step: share links go through the tracking doors (Sept 22, 2026)."""
+    s = open(path, encoding='utf-8').read()
+    if '/go/' in s:
+        return 'already'
+    n = int(re.search(r'edition-(\d+)/', path).group(1))
+    leg = {e['n']: e for e in json.load(open('data/legacy.json', encoding='utf-8'))}
+    assert s.count('<p class="share">') == 1, path
+    s = re.sub(r'<p class="share">.*?</p>', lambda m: R.share_block(n, leg[n]['title']), s, count=1, flags=re.S)
+    R.require_signup_form(s, path); R.require_beacon(s, path)
+    open(path, 'w', encoding='utf-8').write(s)
+    return 'done'
+
 if __name__ == '__main__':
     done = 0
     for p in sorted(glob.glob('p/edition-*/index.html'), key=lambda x: int(re.search(r'edition-(\d+)', x).group(1))):
         n = int(re.search(r'edition-(\d+)', p).group(1))
         if os.path.exists(f'data/edition-{n}.json'):
             continue
-        r = inject(p); r2 = inject_nav(p); r3 = inject_share(p); print(f'{p}: form {r}, nav {r2}, share {r3}'); done += 'done' in (r, r2, r3)
+        r = inject(p); r2 = inject_nav(p); r3 = inject_share(p); r4 = inject_doors(p); print(f'{p}: form {r}, nav {r2}, share {r3}, doors {r4}'); done += 'done' in (r, r2, r3, r4)
     print(f'{done} legacy pages updated')
