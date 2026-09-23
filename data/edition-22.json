@@ -1,0 +1,244 @@
+{
+ "n": 22,
+ "date": "2026-09-23",
+ "title": "Inter Women win their Champions League debut, 1\u20130",
+ "description": "Haley Bugeja scored in the fifth minute at the Stadio Brianteo in Monza, and Inter came out of the opening round third in the league phase.",
+ "mast_alt": "Nerazzurri Daily Edition No. 22, Wednesday, September 23, 2026 \u2014 Inter Women win their Champions League debut, 1\u20130",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Inter Women won the first Champions League match in their history on Tuesday night, <a href=\"https://www.inter.it/en/news/inter-women-hacken-women-champions-league-2026-27\" rel=\"noopener\">beating BK H\u00e4cken of Sweden 1\u20130</a> at the Stadio Brianteo in Monza. Haley Bugeja, the Malta forward, scored in the fifth minute, and Inter came out of the opening round third in the league phase. The men do not play again until October 10, at home to Parma."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "TODAY",
+     "name": "No match",
+     "venue": null,
+     "line": "INTERNATIONAL\u00a0BREAK \u00b7 SERIE\u00a0A\u00a0RETURNS\u00a0OCT\u00a010"
+    },
+    {
+     "label": "LAST",
+     "name": "Inter 1\u20130 H\u00e4cken",
+     "venue": null,
+     "line": "INTER\u00a0WOMEN \u00b7 CHAMPIONS\u00a0LEAGUE \u00b7 MATCHDAY\u00a01 \u00b7 MONZA"
+    },
+    {
+     "label": "NEXT",
+     "name": "Austria Wien",
+     "venue": "AWAY",
+     "line": "INTER\u00a0WOMEN \u00b7 THU,\u00a0OCT\u00a01 \u00b7 12:45\u00a0PM\u00a0ET \u00b7 18:45\u00a0CEST"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB \u00b7 LEAGUE \u00b7 UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter Women win the first Champions League match in their history",
+   "paras": [
+    "Inter Women beat BK H\u00e4cken of Sweden 1\u20130 on Tuesday night at the Stadio Brianteo in Monza. Haley Bugeja, the Malta forward, scored in the fifth minute, and the lead held for the rest of the match.",
+    "Only Benfica and Arsenal have as many points so far. Inter's next match in the competition is away to Austria Wien on Thursday, October 1, at 12:45\u00a0PM\u00a0ET."
+   ],
+   "kicker": "INTER.IT \u00b7 SEP 22"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Bugeja: a night she could not have dreamed of",
+   "paras": [
+    "\"La partita di questa sera \u00e8 qualcosa che non avrei potuto mai sognare nemmeno da bambina,\" Haley Bugeja said after scoring. In English \u2014 tonight's match is something she could never have dreamed of, not even as a child.",
+    "\"Abbiamo fatto una prova molto matura, siamo andati in vantaggio subito,\" said David Sassarini, the Inter Women head coach. In English \u2014 a very mature performance, and they went ahead straight away."
+   ],
+   "kicker": "SAID \u00b7 INTER.IT \u00b7 SEP 22"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter mark fifty years of Ronaldo Naz\u00e1rio",
+   "paras": [
+    "The club gave an episode of its daily podcast to Ronaldo Naz\u00e1rio, the Brazilian striker, at fifty. He was born on September 18, 1976, but his birth was registered on September 22, and that later date is the one Inter marked.",
+    "Inter's own count of his years there: 59 goals in 99 appearances, two serious injuries, and a return after eighteen months out."
+   ],
+   "kicker": "INTER.IT \u00b7 SEP 22"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY \u00b7 NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "FCInterNews: Dimarco's withdrawal was precaution, not injury",
+   "paras": [
+    "Federico Dimarco, the Inter left back, left Italy's camp with a knee problem, as this newsletter reported yesterday. FCInterNews now says, on its own reporting, that it was a precaution and not a new injury.",
+    "Its words: \"Semplice, banale precauzione. Nessun allarmismo.\" In English \u2014 a simple, ordinary precaution, no cause for alarm. Italy's staff agreed he was not yet at his best and called up Matteo Ruggeri in his place."
+   ],
+   "kicker": "UPDATE \u00b7 FCINTERNEWS \u00b7 SEP 21"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Gazzetta: Inter are taking no chances with Calhanoglu",
+   "paras": [
+    "Hakan Calhanoglu, the Inter and Turkey midfielder, was left out of Turkey's squad. Gazzetta dello Sport, Italy's biggest sports daily, says he has a strain in the adductor of his right thigh.",
+    "The paper says \"la parola d'ordine \u00e8 cautela\" \u2014 the watchword is caution \u2014 and that Cristian Chivu, the Inter head coach, will not rush him back. Calhanoglu wants to start at home to Parma, but no chances will be taken."
+   ],
+   "kicker": "GAZZETTA DELLO SPORT VIA FCINTERNEWS \u00b7 SEP 22"
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "SERIE\u00a0A \u00b7 MATCHDAY\u00a05 \u00b7 STADIO\u00a0OLIMPICO"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Roma 2\u20132 Inter",
+   "paras": [
+    "KON\u00c9 6' \u00b7 KON\u00c9 37' \u00b7 LAUTARO MART\u00cdNEZ 46' \u00b7 LAUTARO MART\u00cdNEZ 79'",
+    "Inter came from two goals down."
+   ],
+   "kicker": "SERIE A FORM W W W W D \u00b7 THIRTEEN POINTS \u00b7 SECOND, LEVEL WITH ROMA AND LAZIO"
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "OCTOBER, AFTER THE BREAK \u00b7 EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Austria Wien",
+     "venue": "AWAY",
+     "line2": "THU,\u00a0OCT\u00a01 \u00b7 INTER\u00a0WOMEN \u00b7 CHAMPIONS\u00a0LEAGUE \u00b7 MATCHDAY\u00a02",
+     "line3": "12:45\u00a0PM\u00a0ET \u00b7 18:45\u00a0CEST \u00b7 US\u00a0TV:\u00a0NOT\u00a0YET\u00a0PUBLISHED"
+    },
+    {
+     "name": "Parma",
+     "venue": "HOME",
+     "line2": "SAT,\u00a0OCT\u00a010 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a06",
+     "line3": "12:00\u00a0PM\u00a0ET \u00b7 18:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+    },
+    {
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line2": "TUE,\u00a0OCT\u00a013 \u00b7 CHAMPIONS\u00a0LEAGUE",
+     "line3": "3:00\u00a0PM\u00a0ET \u00b7 21:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0NOT\u00a0YET\u00a0PUBLISHED"
+    },
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT,\u00a0OCT\u00a017 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a07",
+     "line3": "12:00\u00a0PM\u00a0ET \u00b7 18:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+    },
+    {
+     "name": "Shakhtar Donetsk",
+     "venue": "HOME",
+     "line2": "WED,\u00a0OCT\u00a021 \u00b7 CHAMPIONS\u00a0LEAGUE",
+     "line3": "3:00\u00a0PM\u00a0ET \u00b7 21:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0NOT\u00a0YET\u00a0PUBLISHED"
+    },
+    {
+     "name": "Fiorentina",
+     "venue": "HOME",
+     "line2": "SUN,\u00a0OCT\u00a025 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a08",
+     "line3": "7:30\u00a0AM\u00a0ET \u00b7 12:30\u00a0CET \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+    }
+   ]
+  },
+  {
+   "t": "note",
+   "html": "Kickoff times are the club's; US listings are World Soccer Talk's, which shows no Champions League dates for October yet. Milan moves to CET on October 25."
+  },
+  {
+   "t": "ask",
+   "html": "Reply to this email with one word \u2014 which of today's items should I chase tomorrow? \u2014 and tell me where you're reading from. I read every one."
+  },
+  {
+   "t": "next",
+   "text": "THURSDAY, SEPTEMBER 24 \u2014 WHO IS AWAY WITH THEIR COUNTRY"
+  },
+  {
+   "t": "follow",
+   "links": [
+    {
+     "label": "YouTube",
+     "url": "https://www.youtube.com/@nerazzurridaily"
+    },
+    {
+     "label": "TikTok",
+     "url": "https://www.tiktok.com/@nerazzurridaily"
+    }
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "Inter.it",
+     "title": "Inter Women, l'esordio in Champions \u00e8 da sogno: Bugeja piega l'H\u00e4cken 1-0",
+     "url": "https://www.inter.it/en/news/inter-women-hacken-women-champions-league-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Inter vs. H\u00e4cken, the official lineups",
+     "url": "https://www.inter.it/en/news/inter-women-hacken-team-news-champions-league-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Le voci delle protagoniste: \"Emozione difficile da immaginare\"",
+     "url": "https://www.inter.it/it/notizie/bugeja-santi-andres-intervista-post-inter-hacken-uefa-womens-champions-league"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Sassarini: \"Prova matura della squadra, siamo sulla strada giusta\"",
+     "url": "https://www.inter.it/it/notizie/sassarini-intervista-inter-women-hacken-champions-league-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "UEFA Women's Champions League, classifica e calendario",
+     "url": "https://www.inter.it/it/notizie/uefa-womens-champions-league-classifica-e-calendario"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Ronaldo - i cinquanta",
+     "url": "https://www.inter.it/it/notizie/ronaldo-cinquanta-internazionale-morining-club-podcast"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "FCIN - Dimarco, nessun allarmismo: semplice scelta precauzionale",
+     "url": "https://www.fcinternews.it/esclusive/fcin-dimarco-allarmismo-semplice-scelta-precauzionale-1019004"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "GdS - Inter-Parma, cautela Calhanoglu: il turco vuole esserci, ma...",
+     "url": "https://www.fcinternews.it/rassegna/i-gds-i-inter-parma-cautela-calhanoglu-turco-vuole-esserci-ma-1019034"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Lautaro scores twice as Inter fight back to draw with Roma",
+     "url": "https://www.inter.it/en/news/roma-inter-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Inter fixtures and Serie A standings",
+     "url": "https://www.inter.it/en/matches"
+    },
+    {
+     "outlet": "World Soccer Talk",
+     "title": "Serie A 2026 TV schedule: how to watch in the USA",
+     "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+    }
+   ]
+  }
+ ]
+}
