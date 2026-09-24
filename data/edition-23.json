@@ -1,0 +1,230 @@
+{
+ "n": 23,
+ "date": "2026-09-24",
+ "title": "Thirteen Inter players are away with their countries",
+ "description": "Inter Women open their Serie A season on Sunday at the Arena Civica in Milan, and admission is free.",
+ "mast_alt": "Nerazzurri Daily Edition No. 23, Thursday, September 24, 2026 \u2014 Thirteen Inter players are away with their countries",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Inter have <a href=\"https://www.inter.it/en/news/inter-players-selected-international-break-sept-oct-2026\" rel=\"noopener\">thirteen players away with their countries</a> in the season's first break, and three play today. Inter Women are at home first: they <a href=\"https://www.inter.it/it/notizie/inter-women-fiorentina-guida-serie-a-26-27\" rel=\"noopener\">open their Serie A season</a> against Fiorentina on Sunday at the Arena Civica, and it is free to get in. The men return on October 10, against Parma."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "TODAY",
+     "name": "No match",
+     "venue": null,
+     "line": "INTERNATIONAL\u00a0BREAK \u00b7 SERIE\u00a0A\u00a0RETURNS\u00a0OCT\u00a010"
+    },
+    {
+     "label": "LAST",
+     "name": "Inter 1\u20130 H\u00e4cken",
+     "venue": null,
+     "line": "INTER\u00a0WOMEN \u00b7 CHAMPIONS\u00a0LEAGUE \u00b7 MATCHDAY\u00a01 \u00b7 MONZA"
+    },
+    {
+     "label": "NEXT",
+     "name": "Fiorentina",
+     "venue": "HOME",
+     "line": "INTER\u00a0WOMEN \u00b7 SUN,\u00a0SEP\u00a027 \u00b7 7:00\u00a0AM\u00a0ET \u00b7 13:00\u00a0CEST"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB \u00b7 LEAGUE \u00b7 UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Thirteen Inter players are away with their countries",
+   "paras": [
+    "Inter named thirteen players in national-team squads on Wednesday. Italy took four: Nicol\u00f2 Barella, the midfielder; Alessandro Bastoni, the center back; Federico Dimarco, the left back; and Francesco Pio Esposito, the young forward. Lautaro Mart\u00ednez, the captain and striker, is with Argentina.",
+    "Three play today: Ange-Yoan Bonny, the forward, with Ivory Coast against Ghana; Yann-Aurel Bisseck, the defender, with Germany against the Netherlands; and Aleksandar Stankovic, the midfielder, with Serbia against Greece. Italy meet Belgium on Friday.",
+    "Also away: the midfielders Petar Sucic (Croatia), Andy Diouf (France) and Piotr Zielinski (Poland), the goalkeeper Josep Mart\u00ednez (Spain) and the defender Manuel Akanji (Switzerland). One name is disputed. Corriere dello Sport reported on Tuesday that Dimarco had left Italy's camp with a knee problem, and the club's list, published a day later, still names him."
+   ],
+   "kicker": "INTER.IT \u00b7 SEP 23"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter Women open their Serie A season on Sunday, free of charge",
+   "paras": [
+    "Inter Women play Fiorentina on Sunday at 7:00\u00a0AM\u00a0ET, 13:00 CEST, at the Arena Civica Gianni Brera in Milan. It is their first match of the Serie A season, and admission is free.",
+    "They arrive on the back of Tuesday's 1\u20130 win over BK H\u00e4cken on their Champions League debut, which left them third in the league phase."
+   ],
+   "kicker": "INTER.IT \u00b7 SEP 24"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY \u00b7 NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Corriere dello Sport: Dimarco has the whole break to recover",
+   "paras": [
+    "Corriere dello Sport says Federico Dimarco's problem is a sprained knee, picked up in the match against Napoli. He now has the length of the break in Milan to get over it before Parma on October 10. Monday's report called his withdrawal a precaution; this one names the injury.",
+    "The same piece has Djed Spence, the defender, available as soon as the squad reconvenes. It gives good prospects for Hakan Calhanoglu, the midfielder, and no date for John Stones, the center back. Cristian Chivu gave the players a week off; they are back at Appiano Gentile, Inter's training ground, on Monday."
+   ],
+   "kicker": "UPDATE \u00b7 CORRIERE DELLO SPORT VIA FCINTER1908 \u00b7 SEP 22"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "L'\u00c9quipe: Zidane may start Andy Diouf at left back",
+   "paras": [
+    "Zin\u00e9dine Zidane takes charge of France for the first time on Friday, away to Turkey. L'\u00c9quipe reports that Andy Diouf, the Inter midfielder, is in line to start the match at left back.",
+    "Chivu has used Diouf on the right of midfield this season. The paper calls it a bold choice."
+   ],
+   "kicker": "L'\u00c9QUIPE VIA FCINTERNEWS \u00b7 SEP 24"
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "SERIE\u00a0A \u00b7 MATCHDAY\u00a05 \u00b7 STADIO\u00a0OLIMPICO"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Roma 2\u20132 Inter",
+   "paras": [
+    "KON\u00c9 6' \u00b7 KON\u00c9 37' \u00b7 LAUTARO MART\u00cdNEZ 46' \u00b7 LAUTARO MART\u00cdNEZ 79'",
+    "Inter came from two goals down."
+   ],
+   "kicker": "SERIE A FORM W W W W D \u00b7 THIRTEEN POINTS \u00b7 SECOND, LEVEL WITH ROMA AND LAZIO"
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "SEPTEMBER\u00a0INTO\u00a0OCTOBER \u00b7 EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Fiorentina",
+     "venue": "HOME",
+     "line2": "SUN,\u00a0SEP\u00a027 \u00b7 INTER\u00a0WOMEN \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a01",
+     "line3": "7:00\u00a0AM\u00a0ET \u00b7 13:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0NOT\u00a0YET\u00a0PUBLISHED"
+    },
+    {
+     "name": "Austria Wien",
+     "venue": "AWAY",
+     "line2": "THU,\u00a0OCT\u00a01 \u00b7 INTER\u00a0WOMEN \u00b7 CHAMPIONS\u00a0LEAGUE \u00b7 MATCHDAY\u00a02",
+     "line3": "12:45\u00a0PM\u00a0ET \u00b7 18:45\u00a0CEST \u00b7 US\u00a0TV:\u00a0NOT\u00a0YET\u00a0PUBLISHED"
+    },
+    {
+     "name": "Parma",
+     "venue": "HOME",
+     "line2": "SAT,\u00a0OCT\u00a010 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a06",
+     "line3": "12:00\u00a0PM\u00a0ET \u00b7 18:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+    },
+    {
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line2": "TUE,\u00a0OCT\u00a013 \u00b7 CHAMPIONS\u00a0LEAGUE",
+     "line3": "3:00\u00a0PM\u00a0ET \u00b7 21:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0NOT\u00a0YET\u00a0PUBLISHED"
+    },
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT,\u00a0OCT\u00a017 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a07",
+     "line3": "12:00\u00a0PM\u00a0ET \u00b7 18:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+    },
+    {
+     "name": "Shakhtar Donetsk",
+     "venue": "HOME",
+     "line2": "WED,\u00a0OCT\u00a021 \u00b7 CHAMPIONS\u00a0LEAGUE",
+     "line3": "3:00\u00a0PM\u00a0ET \u00b7 21:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0NOT\u00a0YET\u00a0PUBLISHED"
+    }
+   ]
+  },
+  {
+   "t": "note",
+   "html": "Kickoff times are the club's; US listings are World Soccer Talk's, which still shows no Champions League dates for October. Milan moves to CET on October 25."
+  },
+  {
+   "t": "ask",
+   "html": "Reply to this email with one word \u2014 which of today's items should I chase tomorrow? \u2014 and tell me where you're reading from. I read every one."
+  },
+  {
+   "t": "next",
+   "text": "FRIDAY, SEPTEMBER 25 \u2014 ITALY MEET BELGIUM WITH FOUR NERAZZURRI"
+  },
+  {
+   "t": "follow",
+   "links": [
+    {
+     "label": "YouTube",
+     "url": "https://www.youtube.com/@nerazzurridaily"
+    },
+    {
+     "label": "TikTok",
+     "url": "https://www.tiktok.com/@nerazzurridaily"
+    }
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "Inter.it",
+     "title": "The Nerazzurri players called up for international duty",
+     "url": "https://www.inter.it/en/news/inter-players-selected-international-break-sept-oct-2026"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "I convocati nerazzurri per gli impegni con le Nazionali",
+     "url": "https://www.inter.it/it/notizie/convocati-inter-sosta-nazionali-settembre-ottobre-2026"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Women, l'esordio in Serie A all'Arena Civica",
+     "url": "https://www.inter.it/it/notizie/inter-women-fiorentina-guida-serie-a-26-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Serie A Women 2026/27, il calendario delle nerazzurre",
+     "url": "https://www.inter.it/en/news/serie-a-women-2026-27-schedule-inter"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "UEFA Women's Champions League, classifica e calendario",
+     "url": "https://www.inter.it/it/notizie/uefa-womens-champions-league-classifica-e-calendario"
+    },
+    {
+     "outlet": "FCInter1908",
+     "title": "Inter, Dimarco torna ad Appiano: Calhanoglu e Stones, quando rientrano gli infortunati",
+     "url": "https://www.fcinter1908.it/news/rassegna-stampa/inter-dimarco-torna-appiano-calhanoglu-stones-quando-rientrano-infortunati/"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "L'\u00c9quipe - Francia, prime scelte coraggiose di Zidane: Diouf subito titolare",
+     "url": "https://www.fcinternews.it/in-primo-piano/i-l-equipe-i-francia-prime-scelte-coraggiose-zidane-diouf-titolare-1019175"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Lautaro scores twice as Inter fight back to draw with Roma",
+     "url": "https://www.inter.it/en/news/roma-inter-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Inter fixtures and Serie A standings",
+     "url": "https://www.inter.it/en/matches"
+    },
+    {
+     "outlet": "World Soccer Talk",
+     "title": "Serie A 2026 TV schedule: how to watch in the USA",
+     "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+    }
+   ]
+  }
+ ]
+}
