@@ -1,0 +1,232 @@
+{
+ "n": 24,
+ "date": "2026-09-25",
+ "title": "Inter's board signs off a €22.7 million profit",
+ "description": "Nicolò Barella and Francesco Pio Esposito are in Italy's squad for tonight's Nations League opener in Rome, where a minute's silence will remember Sandro Mazzola.",
+ "mast_alt": "Nerazzurri Daily Edition No. 24, Friday, September 25, 2026 — Inter's board signs off a €22.7 million profit",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Inter's board <a href=\"https://www.inter.it/en/news/inter-board-approves-2025-26-financial-results\" rel=\"noopener\">approved the 2025/26 accounts</a> on Thursday: revenue of €518 million, a net profit of €22.7 million and a second straight year in the black. Tonight Italy open their Nations League campaign against Belgium in Rome, with Nicolò Barella and Francesco Pio Esposito in the squad and <a href=\"https://www.figc.it/it/nazionali/news/parte-da-roma-il-cammino-in-nations-league-mancini-speriamo-di-arrivare-in-finale-bel-gioco-e-risultati-sono-la-miglior-medicina-ak96n4y1\" rel=\"noopener\">a minute's silence for Sandro Mazzola</a>. Ange-Yoan Bonny played 72 minutes as Ivory Coast beat Ghana."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "TODAY",
+     "name": "No match",
+     "venue": null,
+     "line": "INTERNATIONAL BREAK · SERIE A RETURNS OCT 10"
+    },
+    {
+     "label": "LAST",
+     "name": "Roma 2–2 Inter",
+     "venue": null,
+     "line": "SERIE A · MATCHDAY 5 · STADIO OLIMPICO"
+    },
+    {
+     "label": "NEXT",
+     "name": "Fiorentina",
+     "venue": "HOME",
+     "line": "INTER WOMEN · SUN, SEP 27 · 7:00 AM ET · 13:00 CEST"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB · LEAGUE · UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter's board signs off a €22.7 million profit",
+   "paras": [
+    "Inter's board approved the draft accounts for 2025/26 on Thursday. Revenue came to €518 million and the net profit to €22.7 million, the second profitable year in a row. Shareholders' equity is positive again at €10.4 million, after a year at minus €12 million.",
+    "Revenue is down from €567 million the year before, which carried one-off money from the FIFA Club World Cup and the 2025 Champions League final. Costs fell, commercial revenue grew 7 percent, and refinancing cut finance costs roughly in half. The shareholders vote in mid-October."
+   ],
+   "kicker": "INTER.IT · SEP 24"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Two Nerazzurri in Italy's Nations League opener tonight",
+   "paras": [
+    "Italy play Belgium at the Stadio Olimpico in Rome at 2:45 PM ET, which is 20:45 CEST. It is their Nations League opener. Nicolò Barella, the Inter midfielder, and Francesco Pio Esposito, the Inter forward, are both in the squad picked by Roberto Mancini, the Italy head coach.",
+    "The Italian football federation counts it as Italy's 900th international match. Before kickoff there is a minute's silence for Sandro Mazzola, the Inter and Italy forward who died this month, and a tribute to Franco Baresi."
+   ],
+   "kicker": "FIGC · SEP 24"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Bonny plays 72 minutes as Ivory Coast beat Ghana",
+   "paras": [
+    "Ange-Yoan Bonny, the Inter forward, started for Ivory Coast in their Africa Cup of Nations qualifier on Thursday and came off in the 72nd minute. Ivory Coast won 2–0 in Bouaké, with goals in the 44th minute and the 58th.",
+    "Yann-Aurel Bisseck, the Inter defender, and Aleksandar Stanković, the Inter midfielder, were unused substitutes for Germany and Serbia."
+   ],
+   "kicker": "INTER.IT · SEP 24"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY · NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Il Giorno: Inter open renewal talks with Calhanoglu's agent",
+   "paras": [
+    "Il Giorno, a Milan daily, reports that Dario Baccin, Inter's sporting director, meets the agent of Hakan Calhanoğlu, the Inter midfielder, next week. The paper says Inter want two more years and would move him from €6.5 million a season to €4.5 million. Galatasaray and Juventus are watching. (Italian salaries are quoted after tax.)"
+   ],
+   "kicker": "IL GIORNO VIA FCINTERNEWS · SEP 25"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Corriere dello Sport: Spence back in the group on Monday",
+   "paras": [
+    "Corriere dello Sport says Djed Spence, the Inter full back, is almost fit and should rejoin full training on Monday. A first appearance could come against Club Brugge in the Champions League on October 13. Calhanoğlu, out since the Udinese match, is working toward the same night."
+   ],
+   "kicker": "CORRIERE DELLO SPORT VIA FCINTERNEWS · SEP 25"
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "SERIE A · MATCHDAY 5 · STADIO OLIMPICO"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Roma 2–2 Inter",
+   "paras": [
+    "KONÉ 6' · KONÉ 37' · LAUTARO MARTÍNEZ 46' · LAUTARO MARTÍNEZ 79'",
+    "Inter were two down at halftime and level within 25 minutes of the restart."
+   ],
+   "kicker": "SERIE A FORM W W W W D · THIRTEEN POINTS · SECOND AFTER FIVE MATCHES"
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "SEPTEMBER INTO OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Fiorentina",
+     "venue": "HOME",
+     "line2": "SUN, SEP 27 · INTER WOMEN · SERIE A · MATCHDAY 1",
+     "line3": "7:00 AM ET · 13:00 CEST · US TV: NOT YET PUBLISHED"
+    },
+    {
+     "name": "Austria Wien",
+     "venue": "AWAY",
+     "line2": "THU, OCT 1 · INTER WOMEN · CHAMPIONS LEAGUE · MATCHDAY 2",
+     "line3": "12:45 PM ET · 18:45 CEST · US TV: NOT YET PUBLISHED"
+    },
+    {
+     "name": "Parma",
+     "venue": "HOME",
+     "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+    },
+    {
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    },
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+    },
+    {
+     "name": "Shakhtar Donetsk",
+     "venue": "HOME",
+     "line2": "WED, OCT 21 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    }
+   ]
+  },
+  {
+   "t": "note",
+   "html": "Kickoff times are the club's; US listings are World Soccer Talk's, which still shows no Champions League dates for October. Milan time is CEST until October 25, when Italy moves to CET."
+  },
+  {
+   "t": "ask",
+   "html": "Reply to this email with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+  },
+  {
+   "t": "next",
+   "text": "SATURDAY, SEPTEMBER 26 — WHAT ITALY'S NIGHT IN ROME MEANT FOR INTER"
+  },
+  {
+   "t": "follow",
+   "links": [
+    {
+     "label": "YouTube",
+     "url": "https://www.youtube.com/@nerazzurridaily"
+    },
+    {
+     "label": "TikTok",
+     "url": "https://www.tiktok.com/@nerazzurridaily"
+    }
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "Inter.it",
+     "title": "FC Internazionale Milano S.P.A. board approves 2025/26 financial results",
+     "url": "https://www.inter.it/en/news/inter-board-approves-2025-26-financial-results"
+    },
+    {
+     "outlet": "FIGC",
+     "title": "Parte da Roma il cammino in Nations League",
+     "url": "https://www.figc.it/it/nazionali/news/parte-da-roma-il-cammino-in-nations-league-mancini-speriamo-di-arrivare-in-finale-bel-gioco-e-risultati-sono-la-miglior-medicina-ak96n4y1"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Nazionali, Bonny in campo nella vittoria della Costa d'Avorio",
+     "url": "https://www.inter.it/it/notizie/nazionali-bonny-costa-d-avorio-ghana-qualificazioni-coppa-africa"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "Il Giorno — Inter, tempo di rinnovi: primo contatto per Calhanoglu",
+     "url": "https://www.fcinternews.it/focus/i-il-giorno-i-inter-rinnovi-contatto-calhanoglu-1019257"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "CdS — Inter, Spence in gruppo da lunedì. Con Parma e Bruges...",
+     "url": "https://www.fcinternews.it/rassegna/i-cds-i-inter-spence-lunedi-parma-bruges-1019255"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Roma 2-2 Inter, Serie A 2026-27",
+     "url": "https://www.inter.it/en/news/roma-inter-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Inter's 2026/27 fixtures",
+     "url": "https://www.inter.it/en/matches"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Women, l'esordio in Serie A all'Arena Civica",
+     "url": "https://www.inter.it/it/notizie/inter-women-fiorentina-guida-serie-a-26-27"
+    },
+    {
+     "outlet": "World Soccer Talk",
+     "title": "Serie A on US TV schedule",
+     "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+    }
+   ]
+  }
+ ]
+}
