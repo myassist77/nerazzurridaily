@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Nerazzurri Daily — motion short renderer (1080x1920, 30 fps; silent by design — always pass --silent).
+"""Nerazzurri Daily — motion short renderer (1080x1920, 30 fps; posted videos render WITHOUT --silent and carry the nd_music.py soundtrack).
 
     python3 social_motion.py --json beats.json --out ./pack --workdir <dir with node_modules> --silent
-    options: --fps 30  --silent (always, per the SOP)  --keep-frames  --name ND-2026-09-14-calha-benched
+    options: --fps 30  --silent (files-only runs; posted videos omit it)  --keep-frames  --name ND-2026-09-14-calha-benched
 
 Every beat is an HTML frame with a deterministic seek(t) function; frames are captured
 one by one with Playwright (no wall-clock timing, so output is reproducible), assembled
@@ -458,8 +458,16 @@ def soundtrack(path):
 name = NAME
 mp4 = os.path.join(out, name + ".mp4")
 cmd = ["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(A.fps), "-i", os.path.join(frames, "%05d.png")]
+MUSIC = None
 if not A.silent:
-    wav = os.path.join(wd, "_m_bed.wav"); soundtrack(wav)
+    wav = os.path.join(wd, "_m_bed.wav")
+    try:   # daily-varying original soundtrack (tools/nd_music.py, Sept 26, 2026); old bed is the fallback
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import nd_music
+        MUSIC = nd_music.render(wav, total, [b["_t0"] for b in beats[1:]], name=NAME, override=spec.get("music"))
+        print(f"soundtrack: {MUSIC['style']} · {MUSIC['key_name']} · {MUSIC['bpm']} bpm")
+    except Exception as ex:
+        print(f"soundtrack: nd_music failed ({ex}); using the fixed bed"); soundtrack(wav); MUSIC = {"style": "fixed-bed"}
     cmd += ["-i", wav, "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", "-c:a", "aac", "-b:a", "160k", "-shortest"]
 cmd += ["-vf", "format=yuv420p", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-movflags", "+faststart", "-r", str(A.fps), mp4]
 subprocess.run(cmd, check=True)
@@ -469,6 +477,6 @@ info = json.loads(probe); dur = float(info["format"]["duration"])
 if abs(dur - total) > 0.6: sys.exit(f"BUILD FAILED: MP4 is {dur:.2f}s, beats sum to {total}s")
 if not A.keep_frames: shutil.rmtree(frames, ignore_errors=True)
 thumbs = render_thumbnails(name)
-json.dump({"mp4": mp4, "seconds": round(dur, 2), "beats": len(beats), "audio": not A.silent,
+json.dump({"mp4": mp4, "seconds": round(dur, 2), "beats": len(beats), "audio": not A.silent, "music": MUSIC,
            "streams": info["streams"], "stills": stills, "thumbnails": thumbs}, open(os.path.join(out, "manifest.json"), "w"), indent=2)
 print(f"OK {mp4} — {dur:.2f}s, {len(beats)} beats, {'with soundtrack' if not A.silent else 'silent'}; settled stills in {stills}; thumbnails: {', '.join(os.path.basename(t) for t in thumbs) or 'none (no thumbnail block)'}")
