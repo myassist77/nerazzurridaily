@@ -3,7 +3,7 @@
 
     python3 nd_debate.py --json debate.json --out ./pack --workdir <dir with node_modules> --name ND-DEBATE-2026-09-26-greatest-keeper
 
-The look ("the curva"): a nero ground with the black-and-blue shirt stripes low in the mix, a floodlight glow,
+The look ("the curva"): a nero ground with the black-and-blue shirt stripes low in the mix, a floodlight glow (no film grain: it pushed the MP4 to ~5 MB, past the commit route's payload limit),
 gold (#E8C547) for honours and the verdict, Anton for the big lines, Oswald for names, IBM Plex Mono for kickers.
 No CONFIRMED/REPORTED registers here — a debate is opinion, and it says so on the frame ("THE DEBATE", "OUR PICK").
 Every beat is an HTML frame with a deterministic seek(t); frames are captured with Playwright and assembled with
@@ -110,10 +110,10 @@ CSS = FONT_CSS + f"""
 
 BG_PNG = os.path.join(wd, "_d_bg.png")
 def render_bg():
-    """Rasterize stripes + floodlight glow + vignette + grain ONCE; frames composite it as an image (live filters cost ~0.7 s/frame)."""
+    """Rasterize stripes + floodlight glow + vignette ONCE; frames composite it as an image (live filters cost ~0.7 s/frame)."""
     hp = os.path.join(wd, "_d_bg.html")
     open(hp, "w").write(f'<!doctype html><html><head><meta charset="utf-8"><style>{CSS}</style></head><body><div id="f">'
-                        '<div class="stripes"></div><div class="glow"></div><div class="vignette"></div><div class="grain"></div></div>'
+                        '<div class="stripes"></div><div class="glow"></div><div class="vignette"></div></div>'
                         '<script>document.fonts.ready.then(()=>{document.body.dataset.fitted="1"})</script></body></html>')
     js = r"""const {chromium}=require('playwright');(async()=>{const b=await chromium.launch({executablePath:process.argv[3]});
 const p=await b.newPage({viewport:{width:1080,height:1920}});await p.goto('file://'+process.argv[2]);await p.waitForFunction(()=>document.body.dataset.fitted==='1');
@@ -249,7 +249,7 @@ const bad=[];document.querySelectorAll('#f div').forEach(el=>{if(!el.innerText||
 if(r.left<20||r.right>F.clientWidth-20||r.top<0||r.bottom>F.clientHeight-10)bad.push(el.innerText.slice(0,40)+' @'+Math.round(r.right)+','+Math.round(r.bottom));});
 document.body.dataset.bad=JSON.stringify(bad);document.body.dataset.fitted='1';});</script>"""
     return (f'<!doctype html><html><head><meta charset="utf-8"><style>{css}</style></head><body>'
-            f'<div id="f" style="width:{W_}px;height:{H_}px">{body}<div class="vignette"></div><div class="grain"></div></div>{fit}</body></html>')
+            f'<div id="f" style="width:{W_}px;height:{H_}px">{body}<div class="vignette"></div></div>{fit}</body></html>')
 
 def render_thumbnails(name):
     T = spec.get("thumbnail")
@@ -344,7 +344,7 @@ for f in glob.glob(os.path.join(frames, "_settled_*.jpg")): shutil.move(f, os.pa
 
 mp4 = os.path.join(out, NAME + ".mp4")
 subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(A.fps), "-i", os.path.join(frames, "%05d.jpg"), "-vf", "format=yuv420p",
-                "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-movflags", "+faststart", "-r", str(A.fps), mp4], check=True)
+                "-c:v", "libx264", "-preset", "medium", "-crf", "21", "-movflags", "+faststart", "-r", str(A.fps), mp4], check=True)
 info = json.loads(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration:stream=codec_type,width,height", "-of", "json", mp4],
                                  capture_output=True, text=True).stdout)
 dur = float(info["format"]["duration"])
@@ -354,4 +354,3 @@ thumbs = render_thumbnails(NAME)
 json.dump({"mp4": mp4, "seconds": round(dur, 2), "beats": len(beats), "audio": False, "format": "debate", "streams": info["streams"],
            "stills": stills, "thumbnails": thumbs}, open(os.path.join(out, "manifest.json"), "w"), indent=2)
 print(f"OK {mp4} — {dur:.2f}s, {len(beats)} beats, silent (voice is mixed on by nd_voice.py); stills in {stills}; thumbnails: {', '.join(os.path.basename(t) for t in thumbs)}")
-

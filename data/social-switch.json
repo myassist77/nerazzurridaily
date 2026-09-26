@@ -1,6 +1,7 @@
 {
   "tiktok_autopost": true,
   "youtube_autopost": true,
-  "note": "Read by the 9:05 AM ET Postiz task (TikTok + YouTube) and the matchday full-time one-shot before they post. Set a key to false to stop that platform; a missing key means true. The 6:45 task always commits the post files regardless.",
-  "changed_at_utc": "2026-09-26T03:50:00Z"
+  "note": "Read by the 9:05 AM ET Postiz task (TikTok + YouTube) and the matchday full-time one-shot before they post. Set a key to false to stop that platform; a missing key means true. The 6:45 task always commits the post files regardless. 'debate_autopost' is read by the weekly THE DEBATE task before it posts.",
+  "changed_at_utc": "2026-09-26T03:50:00Z",
+  "debate_autopost": true
 }

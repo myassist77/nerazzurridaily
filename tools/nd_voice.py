@@ -14,16 +14,22 @@ Two steps, so the local copy and the sandbox copy of a video share one timing:
       the second copy: speaks the lines again but keeps the durations already in the file
       (fails if a line no longer fits its beat).
   python3 tools/nd_voice.py mix --json beats.voiced.json --wavdir ./vo --video pack/NAME.mp4 --out pack/NAME-voiced.mp4
-      lays each line at its beat's start + 0.15 s, masters speech to -16 LUFS / -1.5 dBTP at 48 kHz stereo AAC,
+      lays each line at its beat's start + 0.15 s, masters speech to -16 LUFS / -1.5 dBTP at 48 kHz stereo AAC (112 kbps — voice only, and the commit route caps a file near 4 MB),
       copies the video stream untouched and checks the result with ffprobe.
       Add --cover pack/NAME-thumb-9x16.png to open the video on the designed cover for 0.2 s: Postiz has no
       TikTok cover setting, and TikTok uses the opening frame, so this makes the thumbnail the TikTok cover.
-      (The video stream is then re-encoded once, at the engine's own settings.)
+      (Only the 0.2 s cover clip is encoded; it is stitched in front by stream copy, so the video is never re-encoded.)
 
 Voice: Kokoro v1.0 (open source, Apache-2.0), int8 model (the full model runs out of memory on the
 985 MB sandbox), voice am_michael, speed 1.08. Model files are fetched once from the kokoro-onnx GitHub
 release into --model-dir (default ~/.cache/nd-voice). Needs: pip install kokoro-onnx soundfile numpy.
 A line that runs long is rewritten shorter, never sped up. The build stops, with the reason, on any problem.
+
+NUMBERS ARE WRITTEN THE WAY THEY ARE SAID, IN FULL (owner, Sept 26, 2026): "four hundred seventy-three games",
+"nineteen eighty-nine", "twenty-ten", "twenty-five million pounds". Never a shorthand like "four seventy-three" —
+the voice reads it as three separate numbers. plan() spells plain integers and scores out itself (473 → "four hundred
+seventy-three", 2–1 → "two one", 1989 → "nineteen eighty-nine") and STOPS on decimals, ordinals, currency or units —
+write those in words by hand.
 """
 import argparse, json, os, re, subprocess, sys, urllib.request
 
@@ -44,6 +50,28 @@ FIX = {
     "Sommer": "sˈɔmmer", "Yann Sommer": "jˈan sˈɔmmer",
     "Zenga": "zˈɛŋɡa", "Walter Zenga": "vˈalter zˈɛŋɡa",
 }
+
+ONES = "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen".split()
+TENS = "_ _ twenty thirty forty fifty sixty seventy eighty ninety".split()
+def _sub100(n): return ONES[n] if n < 20 else TENS[n // 10] + ("-" + ONES[n % 10] if n % 10 else "")
+def words(n, year=False):
+    """473 → 'four hundred seventy-three'; a four-digit 1100–2099 number standing alone is read as a year ('nineteen eighty-nine', 'twenty ten')."""
+    if year and 1100 <= n <= 2099 and n % 100:
+        return (_sub100(n // 100) + " " + ("oh " + ONES[n % 100] if n % 100 < 10 else _sub100(n % 100))) if not (2000 <= n < 2010) else "two thousand " + ONES[n % 100]
+    if year and n in (2000,): return "two thousand"
+    if n >= 1000000: die(f"number {n} is too big to spell automatically — write it in words in the vo line")
+    out = []
+    if n >= 1000: out.append(words(n // 1000) + " thousand"); n %= 1000
+    if n >= 100: out.append(ONES[n // 100] + " hundred"); n %= 100
+    if n or not out: out.append(_sub100(n))
+    return " ".join(out)
+def spell_numbers(text, where=""):
+    """Replace plain integers in a vo line with words. 2–1 / 2-1 scores become 'two one'; 1100–2099 alone is a year.
+    Decimals, ordinals, currency and units (1.5, 3rd, £25m, 90') stop the build: write those in words yourself."""
+    if re.search(r"\d[.,]\d|\d(st|nd|rd|th)\b|[£$€]\s*\d|\d\s*[%']|\d[a-zA-Z]", text):
+        die(f"vo on {where} has a number that must be written in words by hand (decimal, ordinal, currency, unit): {text!r}")
+    text = re.sub(r"(\d+)\s*[–-]\s*(\d+)", lambda m: words(int(m.group(1))) + " " + words(int(m.group(2))), text)   # scores
+    return re.sub(r"\d+", lambda m: words(int(m.group(0)), year=len(m.group(0)) == 4), text)
 
 def die(msg): sys.exit(f"VOICE FAILED: {msg}")
 
@@ -69,7 +97,9 @@ class Speaker:
         p = FIX.get(w) or self.tok.phonemize(w, "it")
         if w in FIX and any(c not in self.vocab for c in FIX[w]): die(f"FIX entry for {w!r} uses characters outside Kokoro's vocab: {[c for c in FIX[w] if c not in self.vocab]} (use IPA ɡ, not ASCII g)")
         p = p.replace("ɪ", "i").replace("ʊ", "u")          # Italian has no lax vowels
-        return "".join(c for c in p if c in self.vocab)
+        dropped = [c for c in p if c not in self.vocab]
+        if dropped: die(f"phonemes for {w!r} ({p}) contain characters outside Kokoro's vocab {dropped} — a dropped letter changes the name (an ASCII g made Zenga 'Zena' on Sept 26, 2026); use IPA ɡ and fix the FIX entry")
+        return p
     def phonemes(self, text):
         if text.count("[") != text.count("]"): die(f"unbalanced [ ] in: {text!r}")
         out = []
@@ -88,6 +118,8 @@ def plan(A):
     spec = json.load(open(A.json)); beats = spec["beats"]
     missing = [b["id"] for b in beats if not (b.get("vo") or "").strip()]
     if missing: die(f"every beat needs a \"vo\" line; missing on {missing}")
+    for b in beats:                      # plain integers are spelled out the way a person says them; anything else stops
+        b["vo"] = spell_numbers(b["vo"], b["id"])
     os.makedirs(A.wavdir, exist_ok=True); sp = Speaker(A.model_dir); report = []
     for b in beats:
         a = sp.say(b["vo"]); sec = len(a) / SR
@@ -120,15 +152,25 @@ def mix(A):
         lead_in = COVER_SEC; track = np.concatenate([np.zeros(int(lead_in * SR), dtype="float32"), track]); total = round(total + lead_in, 3)
     wav = os.path.splitext(A.out)[0] + "-vo.wav"; sf.write(wav, track[:int(total * SR)], SR)
     af = "highpass=f=80,acompressor=threshold=-20dB:ratio=3:attack=5:release=80,loudnorm=I=-16:TP=-1.5:LRA=7,aresample=48000"
+    video = A.video
     if A.cover:
-        vin = ["-loop", "1", "-framerate", "30", "-t", f"{lead_in}", "-i", A.cover, "-i", A.video, "-i", wav]
-        vmap = ["-filter_complex", "[0:v]scale=1080:1920,setsar=1,format=yuv420p,fps=30[c];[1:v]fps=30,format=yuv420p,setsar=1[m];[c][m]concat=n=2:v=1:a=0[v]",
-                "-map", "[v]", "-map", "2:a", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-r", "30"]
-    else:
-        vin = ["-i", A.video, "-i", wav]; vmap = ["-map", "0:v", "-map", "1:a", "-c:v", "copy"]
+        # Encode ONLY the 0.2 s cover clip, then stitch it in front of the untouched video by stream copy through
+        # MPEG-TS (h264 annex-b + genpts) — the plain concat demuxer produced a file whose seeks landed on the cover, and
+        # re-encoding the whole video was OOM-killed on the 985 MB sandbox (both measured Sept 26, 2026).
+        base = os.path.splitext(A.out)[0]; c_ts, v_ts, stitched = base + "-cover.ts", base + "-video.ts", base + "-stitched.mp4"
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-framerate", "30", "-t", f"{lead_in}", "-i", A.cover,
+                        "-vf", "scale=1080:1920,setsar=1,format=yuv420p", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-r", "30",
+                        "-pix_fmt", "yuv420p", "-bsf:v", "h264_mp4toannexb", "-f", "mpegts", c_ts], check=True)
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", A.video, "-c", "copy", "-bsf:v", "h264_mp4toannexb", "-f", "mpegts", v_ts], check=True)
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-fflags", "+genpts", "-i", f"concat:{c_ts}|{v_ts}", "-c", "copy",
+                        "-movflags", "+faststart", stitched], check=True)
+        for f in (c_ts, v_ts): os.remove(f)
+        video = stitched
+    vin = ["-i", video, "-i", wav]; vmap = ["-map", "0:v", "-map", "1:a", "-c:v", "copy"]
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *vin, *vmap, "-af", af, "-ar", "48000", "-ac", "2",
-                    "-c:a", "aac", "-b:a", "160k", "-t", f"{total:.3f}", "-movflags", "+faststart", A.out], check=True)
+                    "-c:a", "aac", "-b:a", "112k", "-t", f"{total:.3f}", "-movflags", "+faststart", A.out], check=True)
     os.remove(wav)
+    if A.cover: os.remove(video)
     info = json.loads(subprocess.run(["ffprobe", "-v", "error", "-show_entries",
           "format=duration:stream=codec_type,codec_name,sample_rate,channels,duration", "-of", "json", A.out],
           capture_output=True, text=True).stdout)
