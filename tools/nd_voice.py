@@ -39,6 +39,10 @@ FIX = {
     "Hakan Çalhanoğlu": "hˈakan tʃalhanˈoːlu", "Çalhanoğlu": "tʃalhanˈoːlu", "Calhanoglu": "tʃalhanˈoːlu",
     "Chivu": "kˈivu", "Cristian Chivu": "krˈistjan kˈivu",
     "Lautaro": "lautˈaro", "Lautaro Martínez": "lautˈaro martˈines",
+    "Handanovič": "handˈanovitʃ", "Samir Handanovič": "sˈamir handˈanovitʃ", "Handanovic": "handˈanovitʃ",
+    "Júlio César": "ʒˈuljo sˈɛzar", "Julio Cesar": "ʒˈuljo sˈɛzar",
+    "Sommer": "sˈɔmmer", "Yann Sommer": "jˈan sˈɔmmer",
+    "Zenga": "zˈɛŋɡa", "Walter Zenga": "vˈalter zˈɛŋɡa",
 }
 
 def die(msg): sys.exit(f"VOICE FAILED: {msg}")
@@ -63,6 +67,7 @@ class Speaker:
         self.vocab = set(json.load(open(os.path.join(os.path.dirname(kokoro_onnx.__file__), "config.json")))["vocab"])
     def it(self, w):
         p = FIX.get(w) or self.tok.phonemize(w, "it")
+        if w in FIX and any(c not in self.vocab for c in FIX[w]): die(f"FIX entry for {w!r} uses characters outside Kokoro's vocab: {[c for c in FIX[w] if c not in self.vocab]} (use IPA ɡ, not ASCII g)")
         p = p.replace("ɪ", "i").replace("ʊ", "u")          # Italian has no lax vowels
         return "".join(c for c in p if c in self.vocab)
     def phonemes(self, text):

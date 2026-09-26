@@ -1,0 +1,160 @@
+{
+ "format": "debate",
+ "slug": "greatest-keeper",
+ "date_iso": "2026-09-26",
+ "debate_no": 1,
+ "beats": [
+  {
+   "id": "b1",
+   "kind": "hook",
+   "eyebrow": "THE DEBATE · NO. 1",
+   "lines": [
+    "INTER'S",
+    "GREATEST",
+    "KEEPER?"
+   ],
+   "sub": "six names · one pick · fight it out below",
+   "duration": 5,
+   "vo": "[Inter]'s greatest keeper ever. We pick one. You won't all agree."
+  },
+  {
+   "id": "b2",
+   "kind": "lineup",
+   "kicker": "THE CONTENDERS",
+   "rows": [
+    {
+     "name": "Walter Zenga",
+     "era": "1982–94"
+    },
+    {
+     "name": "Gianluca Pagliuca",
+     "era": "1994–99"
+    },
+    {
+     "name": "Francesco Toldo",
+     "era": "2001–10"
+    },
+    {
+     "name": "Júlio César",
+     "era": "2005–12"
+    },
+    {
+     "name": "Samir Handanovič",
+     "era": "2012–23"
+    },
+    {
+     "name": "Yann Sommer",
+     "era": "2023–26"
+    }
+   ],
+   "duration": 5,
+   "vo": "Six names. [Zenga], [Pagliuca], [Toldo], [Júlio César], [Handanovič], [Sommer]."
+  },
+  {
+   "id": "b3",
+   "kind": "card",
+   "kicker": "THE CASE · 1982–94",
+   "number": 473,
+   "label": "Inter games · a club record",
+   "name": "Walter Zenga",
+   "facts": [
+    "World's best keeper 1989 · 90 · 91",
+    "2 UEFA Cups · 1 Scudetto"
+   ],
+   "source": "inter.it hall of fame · IFFHS",
+   "duration": 5,
+   "vo": "[Zenga]. Four seventy-three games, a record. World's best keeper three years running."
+  },
+  {
+   "id": "b4",
+   "kind": "card",
+   "kicker": "THE COUNTER · 2005–12",
+   "number": 5,
+   "label": "trophies in 2010 alone",
+   "name": "Júlio César",
+   "facts": [
+    "Champions League 2010",
+    "Serie A keeper of the year · 09 & 10"
+   ],
+   "source": "uefa.com · lega serie a",
+   "duration": 5,
+   "vo": "[Júlio César]. Five trophies in twenty-ten, with the Champions League. The winner's case."
+  },
+  {
+   "id": "b5",
+   "kind": "versus",
+   "left": {
+    "name": "Zenga",
+    "era": "1982–94"
+   },
+   "right": {
+    "name": "Júlio César",
+    "era": "2005–12"
+   },
+   "rows": [
+    {
+     "label": "Inter appearances",
+     "l": 473,
+     "r": 300,
+     "win": "l"
+    },
+    {
+     "label": "Scudetti",
+     "l": 1,
+     "r": 5,
+     "win": "r"
+    },
+    {
+     "label": "World's best keeper (IFFHS)",
+     "l": 3,
+     "r": 0,
+     "win": "l"
+    },
+    {
+     "label": "Champions League",
+     "l": 0,
+     "r": 1,
+     "win": "r"
+    }
+   ],
+   "duration": 5,
+   "vo": "Longevity or silverware. [Zenga] outlasted him. [Júlio César] out-won him."
+  },
+  {
+   "id": "b6",
+   "kind": "verdict",
+   "stamp": "OUR PICK",
+   "name": "Zenga",
+   "lines": [
+    "12 seasons · 473 games",
+    "the best in the world, 3 years running"
+   ],
+   "duration": 5,
+   "vo": "Our pick: [Zenga]. Twelve seasons. The best in the world for three of them."
+  },
+  {
+   "id": "b7",
+   "kind": "end",
+   "lines": [
+    "YOUR",
+    "PICK?"
+   ],
+   "ask": "reply in the comments",
+   "duration": 5,
+   "vo": "Who's yours? Reply below. Then read the [Inter] press in English at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "thumbnail": {
+  "lines": [
+   "GREATEST INTER KEEPER?"
+  ],
+  "left": {
+   "name": "Zenga",
+   "era": "1982–94 · 473 games"
+  },
+  "right": {
+   "name": "Júlio César",
+   "era": "2005–12 · the treble"
+  }
+ }
+}
