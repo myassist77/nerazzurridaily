@@ -11,7 +11,7 @@ Run from the repo root in the Composio remote sandbox (fresh each morning: `curl
 | `nd_checks.py` | text controls (American English, times, glosses, length, links); see the skill |
 | `check_beacon.py` | fails if any repo HTML page lacks the Cloudflare Web Analytics beacon (run by `.github/workflows/analytics-beacon.yml` on every push) |
 | `nd_publish.py` | workbench-only: one GitHub commit, one Brevo DRAFT |
-| `nd_social_publish.py` | workbench-only: upload the daily Short to YouTube (unlisted), set its 16:9 thumbnail, post the comment, flip it public; reads/writes `data/social-ed{N}.json` |
+| `nd_social_publish.py` | RETIRED for posting since Sept 26, 2026 (YouTube now goes through Postiz). Kept for read helpers (`yt_status`) and the legacy `data/social-ed{N}.json` files |
 | `social_motion.py` | the motion-short renderer (1080×1920, 30 fps, silent): beats JSON → Playwright frames → ffmpeg MP4 + 9:16/16:9 thumbnails. Canonical copy; the nerazzurri-shorts skill's embedded copy is a fallback |
 | `nd_extract.py` / `nd_legacy_restyle.py` | one-time migration helpers (Sept 19, 2026) |
 
@@ -24,25 +24,26 @@ The beacon is part of the shared `FONTS` head constant in `nd_render.py`, so eve
 - `nd_render.py` refuses to write a web page without the beacon, and refuses to write an email that contains it (mail clients strip scripts).
 - `.github/workflows/analytics-beacon.yml` runs `tools/check_beacon.py` on every push and fails if any HTML page — including the hand-edited `subscribe/`, `yt/` and `404.html` — has lost it. When hand-editing one of those pages, keep the `<!-- Cloudflare Web Analytics -->` snippet in its `<head>`.
 
-## The Short (YouTube, automated since Sept 21, 2026)
+## The Short — TikTok + YouTube through Postiz (since Sept 26, 2026)
 
-The 6:45 AM social run renders the MP4 in the Composio workbench, commits it to
-`assets/video/ed{N}.mp4`, uploads it to the channel **unlisted**, sets the 16:9 thumbnail, posts
-the pinned-comment text, and writes `data/social-ed{N}.json` with the video id. A second task at
-9:00 AM ET reads that file and flips the video to public — the two hours in between are the
-owner's veto window.
+1. **6:45 AM ET** social task renders the silent MP4 in the Composio workbench and commits
+   `assets/video/ed{N}.mp4`, `assets/video/ed{N}-thumb.png` (16:9), `data/tiktok-ed{N}.json`
+   (title, caption) and `data/youtube-ed{N}.json` (title, description, tags, comment). It posts nothing.
+2. **9:05 AM ET** Postiz task (`CRON_TZ=America/New_York`) uploads the MP4 to Postiz by URL from the
+   live site and posts it — TikTok (DIRECT_POST, public, silent) and YouTube (public, title,
+   description, tags, 16:9 thumbnail, comment). 6:45 → 9:05 is the owner's veto window.
+3. It records what it posted in `data/posted-ed{N}.json` **before** verifying (the primary
+   never-post-twice guard — Postiz's post list has come back empty while posts existed), then
+   fills in the real states and the YouTube video id. The Monday numbers task reads these files.
+4. Matchday full-time cards follow the same route immediately after the whistle: media at
+   `assets/video/ft-{date}.mp4`, record at `data/posted-ft-{date}.json`.
 
-Facts the code depends on, all measured against the live channel on Sept 20, 2026:
+Kill switches: `data/social-switch.json` — `tiktok_autopost`, `youtube_autopost` (missing = on).
+Old files `data/social-ed{N}.json` (Sept 20–25) are the retired direct-upload era, kept for history.
 
-- `YOUTUBE_UPLOAD_VIDEO` takes an S3 key, so the MP4 has to be rendered (or copied) inside the
-  workbench and staged into `/mnt/files/` — `get_mount_file_s3_key()`. A file in the run's own
-  sandbox cannot be uploaded.
-- A comment on a **private** video returns 404 `videoNotFound`; on an **unlisted** one it posts
-  fine. That is why the first write is unlisted, never private.
-- `YOUTUBE_UPDATE_THUMBNAIL` needs a public URL — `get_mount_file_url()` on the staged PNG. 16:9
-  only: the 9:16 Shorts thumbnail is YouTube Partner Program + Studio desktop, no API.
-- Pinning a comment has no API on any platform. The comment is posted; pinning is one tap or not
-  at all.
-- An upload costs 1,600 of the channel's 10,000 daily quota units.
-- TikTok is **not** automated: Composio's TikTok app has no usable client key, and TikTok's own
-  API forces private-only posts until the developer app passes an audit (Sept 20, 2026).
+Facts that still hold:
+
+- Pinning a comment has no API on any platform; the 9:16 Shorts thumbnail is Studio-desktop only.
+- Postiz posts cannot be deleted through its tools, and its "draft" type is unreliable for TikTok —
+  never create drafts.
+- A machine-posted TikTok is silent: no API attaches a trending sound (owner accepted this Sept 25, 2026).
