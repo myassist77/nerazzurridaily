@@ -12,7 +12,8 @@ Run from the repo root in the Composio remote sandbox (fresh each morning: `curl
 | `check_beacon.py` | fails if any repo HTML page lacks the Cloudflare Web Analytics beacon (run by `.github/workflows/analytics-beacon.yml` on every push) |
 | `nd_publish.py` | workbench-only: one GitHub commit, one Brevo DRAFT |
 | `nd_social_publish.py` | RETIRED for posting since Sept 26, 2026 (YouTube now goes through Postiz). Kept for read helpers (`yt_status`) and the legacy `data/social-ed{N}.json` files |
-| `social_motion.py` | the motion-short renderer (1080×1920, 30 fps, silent): beats JSON → Playwright frames → ffmpeg MP4 + 9:16/16:9 thumbnails. Canonical copy; the nerazzurri-shorts skill's embedded copy is a fallback |
+| `social_motion.py` | the motion-short renderer (1080×1920, 30 fps, run with --silent): beats JSON → Playwright frames → ffmpeg MP4 + 9:16/16:9 thumbnails. Canonical copy; the nerazzurri-shorts skill's embedded copy is a fallback |
+| `nd_voice.py` | the voiceover (since Sept 26, 2026): `plan` speaks each beat's `"vo"` line (Kokoro, voice am_michael; `[bracketed]` Italian names in Italian) and times the beats to it; `mix` lays the voice on the silent render at -16 LUFS, 48 kHz stereo AAC, and with `--cover` opens on the 9:16 thumbnail for 0.2 s so it is the TikTok cover. Voice only, no music |
 | `nd_extract.py` / `nd_legacy_restyle.py` | one-time migration helpers (Sept 19, 2026) |
 
 `build/` is scratch and is never committed. Editions 1–9 predate the JSON schema and live as HTML only (`data/legacy.json` lists them for the index).
@@ -26,11 +27,11 @@ The beacon is part of the shared `FONTS` head constant in `nd_render.py`, so eve
 
 ## The Short — TikTok + YouTube through Postiz (since Sept 26, 2026)
 
-1. **6:45 AM ET** social task renders the silent MP4 in the Composio workbench and commits
+1. **6:45 AM ET** social task renders the six-beat MP4 (voice only since Sept 26, 2026: `nd_voice.py plan` → `social_motion.py --silent` → `nd_voice.py mix --cover`) and commits
    `assets/video/ed{N}.mp4`, `assets/video/ed{N}-thumb.png` (16:9), `data/tiktok-ed{N}.json`
    (title, caption) and `data/youtube-ed{N}.json` (title, description, tags, comment). It posts nothing.
 2. **9:05 AM ET** Postiz task (`CRON_TZ=America/New_York`) uploads the MP4 to Postiz by URL from the
-   live site and posts it — TikTok (DIRECT_POST, public, silent) and YouTube (public, title,
+   live site and posts it — TikTok (DIRECT_POST, public, voiced) and YouTube (public, title,
    description, tags, 16:9 thumbnail, comment). 6:45 → 9:05 is the owner's veto window.
 3. It records what it posted in `data/posted-ed{N}.json` **before** verifying (the primary
    never-post-twice guard — Postiz's post list has come back empty while posts existed), then
@@ -46,4 +47,5 @@ Facts that still hold:
 - Pinning a comment has no API on any platform; the 9:16 Shorts thumbnail is Studio-desktop only.
 - Postiz posts cannot be deleted through its tools, and its "draft" type is unreliable for TikTok —
   never create drafts.
-- A machine-posted TikTok is silent: no API attaches a trending sound (owner accepted this Sept 25, 2026).
+- No API attaches a trending sound; the only sound is the voiceover baked into the MP4 (no music — the generated soundtrack was rejected Sept 26, 2026).
+- Postiz has no TikTok cover setting; TikTok uses the opening frame, which `nd_voice.py mix --cover` makes the designed 9:16 thumbnail.
