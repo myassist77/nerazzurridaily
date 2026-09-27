@@ -2,7 +2,7 @@
   "n": 26,
   "date": "2026-09-27",
   "slug": "papers-scorecard",
-  "tiktok": {"post_id": "cmuju4d7i0dn9qr0ycqnxoxqw", "posted_at_utc": "2026-09-27T13:09:00Z", "state": "SUBMITTED", "url": null},
-  "youtube": {"post_id": "cmuju4lu20dnaqr0y2nzyfxi0", "posted_at_utc": "2026-09-27T13:09:30Z", "state": "SUBMITTED", "video_id": null, "url": null, "privacy": null, "comment": null},
-  "updated_at_utc": "2026-09-27T13:10:00Z"
+  "tiktok": {"post_id": "cmuju4d7i0dn9qr0ycqnxoxqw", "posted_at_utc": "2026-09-27T13:09:00Z", "state": "ERROR", "url": null},
+  "youtube": {"post_id": "cmuju4lu20dnaqr0y2nzyfxi0", "posted_at_utc": "2026-09-27T13:09:30Z", "state": "PUBLISHED", "video_id": "mVVJxMM98vM", "url": "https://www.youtube.com/shorts/mVVJxMM98vM", "privacy": "public", "comment": "not visible"},
+  "updated_at_utc": "2026-09-27T13:13:30Z"
 }
