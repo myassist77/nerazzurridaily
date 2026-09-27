@@ -1,0 +1,233 @@
+{
+ "n": 26,
+ "date": "2026-09-27",
+ "title": "Inter Women open Serie A at the Arena Civica today",
+ "description": "Manuel Akanji and Petar Sucic both started for their countries on Saturday night, and Inter put the Double trophies on show at San Siro on Tuesday.",
+ "mast_alt": "Nerazzurri Daily Edition No. 26, Sunday, September 27, 2026 — Inter Women open Serie A at the Arena Civica today",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Inter Women open their Serie A season at home to Fiorentina at 7:00 AM ET today, 13:00 CEST. <a href=\"https://www.inter.it/it/notizie/inter-women-fiorentina-guida-serie-a-26-27\" rel=\"noopener\">Entry at the Arena Civica is free</a>. Manuel Akanji and Petar Sucic both <a href=\"https://www.inter.it/it/notizie/impegni-nazionali-nations-league-26-settembre-2026\" rel=\"noopener\">started for their countries</a> on Saturday night, and Inter put last season’s <a href=\"https://www.inter.it/it/notizie/trofei-double-scudetto-coppa-italia-inter-store-san-siro-settembre-2026\" rel=\"noopener\">Double trophies on show</a> at San Siro this week."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "TODAY",
+     "name": "Fiorentina",
+     "venue": "HOME",
+     "line": "7:00 AM ET · 13:00 CEST · SERIE A WOMEN · MATCHDAY 1"
+    },
+    {
+     "label": "LAST",
+     "name": "Roma 2–2 Inter",
+     "venue": null,
+     "line": "SERIE A · MATCHDAY 5 · STADIO OLIMPICO"
+    },
+    {
+     "label": "NEXT",
+     "name": "Parma",
+     "venue": "HOME",
+     "line": "SAT, OCT 10 · SERIE A · MATCHDAY 6 · 12:00 PM ET"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB · LEAGUE · UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter Women open Serie A at the Arena Civica today",
+   "paras": [
+    "Inter Women play Fiorentina at 7:00 AM ET, which is 13:00 CEST, at the Arena Civica Gianni Brera in Milan. It is matchday 1 of Serie A Women, and entry is free. The club published its guide to the day on Saturday, with a DJ and a stadium announcer.",
+    "David Sassarini, the Inter Women head coach, comes into it off a 1–0 win over BK Häcken on their Champions League debut in Monza. Haley Bugeja, the Inter Women forward, scored in the fifth minute. Fiorentina are coached by Pablo Piñones Arce."
+   ],
+   "kicker": "UPDATE · INTER.IT · SEP 26"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Akanji and Sucic both start on Saturday night",
+   "paras": [
+    "Manuel Akanji, the Inter center back, played all 90 minutes as Switzerland won 3–0 in North Macedonia. Petar Sucic, the Inter midfielder, played 88 minutes in Croatia’s 2–1 win in Prague, where the Croatia midfielders Luka Modric and Mario Pasalic scored in the second half.",
+    "Josep Martínez, the Inter goalkeeper, stayed on the bench as Spain won 3–2 at Wembley. Italy, with Nicolò Barella and Alessandro Bastoni, play Turkey in Bursa on Monday."
+   ],
+   "kicker": "INTER.IT · SEP 26"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "The Double trophies go on show at San Siro this week",
+   "paras": [
+    "Inter will put the Serie A and Coppa Italia trophies they won last season on display at the Inter Store inside San Siro. The doors are open on Tuesday, September 29 and Wednesday, September 30, from 4:00 AM ET to 1:30 PM ET, which is 10:00 to 19:30 CEST.",
+    "There is no charge, though the club asks visitors to be signed up to its INTERISTA membership program and to show the member avatar at the door."
+   ],
+   "kicker": "INTER.IT · SEP 26"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY · NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Gazzetta dello Sport: seven matches in 23 days for Chivu",
+   "paras": [
+    "Gazzetta dello Sport, Italy’s biggest sports daily, counts seven matches in 23 days for Inter once Serie A returns. Four of the first five are at San Siro, and the run ends at the derby against Milan on October 31.",
+    "The paper expects Cristian Chivu, the Inter head coach, to rotate his way through it, and it notes that Milan have the lighter month of the two."
+   ],
+   "kicker": "GAZZETTA DELLO SPORT VIA FCINTERNEWS · SEP 27"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Gazzetta dello Sport: Lautaro back only on the eve of Parma",
+   "paras": [
+    "Lautaro Martínez, the Inter captain and forward, is expected in Buenos Aires on October 6 for Argentina’s farewell match for Lionel Messi, the Argentina captain.",
+    "Gazzetta puts him back at Appiano Gentile, Inter’s training ground, on Thursday, October 8 at the earliest. That would leave Chivu his captain only on the eve of the Parma match."
+   ],
+   "kicker": "GAZZETTA DELLO SPORT VIA FCINTERNEWS · SEP 26"
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "SERIE A · MATCHDAY 5 · STADIO OLIMPICO"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Roma 2–2 Inter",
+   "paras": [
+    "KONÉ 6' · KONÉ 37' · LAUTARO MARTÍNEZ 46' · LAUTARO MARTÍNEZ 79'",
+    "Inter came from two goals down."
+   ],
+   "kicker": "SERIE A FORM W W W W D · THIRTEEN POINTS · SECOND AFTER FIVE MATCHES"
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Austria Wien",
+     "venue": "AWAY",
+     "line2": "THU, OCT 1 · WOMEN'S CHAMPIONS LEAGUE · MATCHDAY 2",
+     "line3": "12:45 PM ET · 18:45 CEST · US TV: NOT YET PUBLISHED"
+    },
+    {
+     "name": "Parma",
+     "venue": "HOME",
+     "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+    },
+    {
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    },
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+    },
+    {
+     "name": "Shakhtar Donetsk",
+     "venue": "HOME",
+     "line2": "WED, OCT 21 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    }
+   ]
+  },
+  {
+   "t": "note",
+   "html": "Kickoff times are the club’s; US listings are World Soccer Talk’s, which still shows no Champions League dates for October. Milan time is CEST until October 25, when Italy moves to CET."
+  },
+  {
+   "t": "ask",
+   "html": "Reply to this email with one word — which of today’s items should I chase tomorrow? — and tell me where you’re reading from. I read every one."
+  },
+  {
+   "t": "next",
+   "text": "MONDAY, SEPTEMBER 28 — ITALY PLAY TURKEY IN BURSA"
+  },
+  {
+   "t": "follow",
+   "links": [
+    {
+     "label": "YouTube",
+     "url": "https://www.youtube.com/@nerazzurridaily"
+    },
+    {
+     "label": "TikTok",
+     "url": "https://www.tiktok.com/@nerazzurridaily"
+    }
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "Inter.it",
+     "title": "Women, l’esordio in Serie A all’Arena Civica",
+     "url": "https://www.inter.it/it/notizie/inter-women-fiorentina-guida-serie-a-26-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Nazionali, Akanji e Sucic in campo con Svizzera e Croazia",
+     "url": "https://www.inter.it/it/notizie/impegni-nazionali-nations-league-26-settembre-2026"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "I trofei del Double per due giorni all’Inter Store San Siro",
+     "url": "https://www.inter.it/it/notizie/trofei-double-scudetto-coppa-italia-inter-store-san-siro-settembre-2026"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Inter Women make dream Champions League debut with victory over Häcken",
+     "url": "https://www.inter.it/en/news/inter-women-hacken-women-champions-league-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "UEFA Women’s Champions League, classifica e calendario",
+     "url": "https://www.inter.it/it/notizie/uefa-womens-champions-league-classifica-e-calendario"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Roma 2-2 Inter, Serie A 2026-27",
+     "url": "https://www.inter.it/en/news/roma-inter-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Calendario partite Inter 2026/27",
+     "url": "https://www.inter.it/it/matches"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "GdS — Ottobre caldissimo: Chivu atteso da sette partite in 23 giorni",
+     "url": "https://www.fcinternews.it/rassegna/i-gds-i-ottobre-caldissimo-chivu-atteso-partite-23-1019401"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "GdS — L’ultima di Messi in Nazionale: ecco quando Lautaro tornerà da Chivu",
+     "url": "https://www.fcinternews.it/in-primo-piano/messi-addio-argentina-rientro-lautaro-inter-1019338"
+    },
+    {
+     "outlet": "World Soccer Talk",
+     "title": "Serie A on US TV schedule",
+     "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+    }
+   ]
+  }
+ ]
+}
