@@ -49,6 +49,8 @@ FIX = {
     "Júlio César": "ʒˈuljo sˈɛzar", "Julio Cesar": "ʒˈuljo sˈɛzar",
     "Sommer": "sˈɔmmer", "Yann Sommer": "jˈan sˈɔmmer",
     "Zenga": "zˈɛŋɡa", "Walter Zenga": "vˈalter zˈɛŋɡa",
+    "FCInterNews": "ˌɛffetʃˈi ˈinter njˈuz",
+    "Andy Diouf": "ˈandi djˈuf", "Diouf": "djˈuf",
 }
 
 ONES = "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen".split()
