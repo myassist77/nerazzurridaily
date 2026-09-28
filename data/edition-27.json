@@ -1,0 +1,249 @@
+{
+ "n": 27,
+ "date": "2026-09-28",
+ "title": "Inter Women beat Fiorentina 2–0 in their Serie A opener",
+ "description": "Three Nerazzurri travel to Bursa for Italy's match in Turkey tonight, with Nicolò Barella among the ten players Roberto Mancini left at Coverciano.",
+ "mast_alt": "Nerazzurri Daily Edition No. 27, Monday, September 28, 2026 — Inter Women beat Fiorentina 2–0 in their Serie A opener",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Inter Women won their Serie A opener <a href=\"https://www.inter.it/it/notizie/inter-women-fiorentina-serie-a-femminile-2026-27\" rel=\"noopener\">2–0 at the Arena Civica</a> on Sunday. The midfielder Lina Magull scored in the 72nd minute, and the forward Brittany Raphino headed in a free kick in the 91st minute. Italy play Turkey in Bursa at 2:45 PM ET tonight, 20:45 CEST, with three Inter players in the squad and the midfielder <a href=\"https://www.ansa.it/sito/notizie/sport/2026/09/27/nations-league-mancini-divide-il-gruppo-10-azzurri-non-partono-per-la-turchia_da450839-4940-4c84-b2d6-30c73abdcb79.html\" rel=\"noopener\">Nicolò Barella left at Coverciano</a>."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "TODAY",
+     "name": "No match",
+     "venue": null,
+     "line": "ITALY V TURKEY · 2:45 PM ET · 20:45 CEST · NATIONS LEAGUE"
+    },
+    {
+     "label": "LAST",
+     "name": "Roma 2–2 Inter",
+     "venue": null,
+     "line": "SERIE A · MATCHDAY 5 · STADIO OLIMPICO"
+    },
+    {
+     "label": "NEXT",
+     "name": "Parma",
+     "venue": "HOME",
+     "line": "SAT, OCT 10 · SERIE A · MATCHDAY 6 · 12:00 PM ET"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB · LEAGUE · UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter Women beat Fiorentina 2–0 on their opening day",
+   "paras": [
+    "Inter Women won 2–0 at the Arena Civica Gianni Brera in Milan on Sunday, on matchday 1 of Serie A Women. It was their first league win of the season.",
+    "Lina Magull, the Inter Women midfielder, scored from close range in the 72nd minute. Brittany Raphino, the Inter Women forward, headed in a free kick in the 91st minute. Inter finished with ten after a second yellow card in stoppage time.",
+    "David Sassarini, the Inter Women head coach, told Inter TV: “Abbiamo fatto una gran partita” — we played a great match."
+   ],
+   "kicker": "UPDATE · INTER.IT · SEP 27"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Three Nerazzurri travel to Bursa, Barella stays behind",
+   "paras": [
+    "Italy play Turkey in Bursa at 2:45 PM ET tonight, which is 20:45 CEST. The match is at the Atatürk Spor Kompleksi. Alessandro Bastoni and Federico Dimarco, the Inter defenders, and Francesco Pio Esposito, the Inter forward, are in the traveling squad.",
+    "Nicolò Barella, the Inter midfielder, is one of ten players Roberto Mancini, the Italy head coach, left training at Coverciano instead of making the trip. Italy lost 0–2 to Belgium in Rome on Friday."
+   ],
+   "kicker": "UPDATE · FIGC VIA ANSA · SEP 27"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Bisseck and Stankovic both lose on Sunday night",
+   "paras": [
+    "Yann Bisseck, the Inter center back, played all 90 minutes as Germany lost 0–1 to Greece. Aleksandar Stankovic, the Inter midfielder, played 59 minutes as Serbia lost at home to the Netherlands.",
+    "Greece lead the group; the Netherlands have four points, Germany one, Serbia none."
+   ],
+   "kicker": "INTER.IT · SEP 27"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY · NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Gazzetta dello Sport: Thuram starts against Parma",
+   "paras": [
+    "Gazzetta dello Sport, Italy’s biggest sports daily, expects Marcus Thuram, the Inter forward, to start against Parma on October 10, back alongside Lautaro Martínez, the Inter captain and forward.",
+    "Zinedine Zidane, the France head coach, has not called Thuram up since taking the job. He spent the break training at Appiano Gentile, Inter’s training ground, while his teammates were away."
+   ],
+   "kicker": "GAZZETTA DELLO SPORT VIA FCINTERNEWS · SEP 27"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "TEAMtalk: Chelsea still want Bastoni",
+   "paras": [
+    "TEAMtalk, an English soccer site, says Chelsea have made Alessandro Bastoni their first choice for the left of a back three. Xabi Alonso, the Chelsea head coach, has pushed for him, the site says, and Inter’s asking price is about £70 million.",
+    "It reports no talks between the clubs, and says Bastoni would be open to the Premier League. Inter have announced nothing."
+   ],
+   "kicker": "TEAMTALK VIA FCINTERNEWS · SEP 27"
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "SERIE A · MATCHDAY 5 · STADIO OLIMPICO"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Roma 2–2 Inter",
+   "paras": [
+    "KONÉ 6' · KONÉ 37' · LAUTARO MARTÍNEZ 46' · LAUTARO MARTÍNEZ 79'",
+    "It was the third time this season Inter came back from two goals down in the league."
+   ],
+   "kicker": "SERIE A FORM W W W W D · THIRTEEN POINTS · SECOND AFTER FIVE MATCHES"
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Austria Wien",
+     "venue": "AWAY",
+     "line2": "THU, OCT 1 · WOMEN'S CHAMPIONS LEAGUE · MATCHDAY 2",
+     "line3": "12:45 PM ET · 18:45 CEST · US TV: NOT YET PUBLISHED"
+    },
+    {
+     "name": "Parma",
+     "venue": "HOME",
+     "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+    },
+    {
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    },
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+    },
+    {
+     "name": "Shakhtar Donetsk",
+     "venue": "HOME",
+     "line2": "WED, OCT 21 · CHAMPIONS LEAGUE",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: NOT YET PUBLISHED"
+    }
+   ]
+  },
+  {
+   "t": "note",
+   "html": "Kickoff times are the club’s; US listings are World Soccer Talk’s, which lists no Champions League dates yet. Milan time is CEST until October 25, when Italy moves to CET."
+  },
+  {
+   "t": "ask",
+   "html": "Reply to this email with one word — which of today’s items should I chase tomorrow? — and tell me where you’re reading from. I read every one."
+  },
+  {
+   "t": "next",
+   "text": "TUESDAY, SEPTEMBER 29 — WHAT ITALY DID IN BURSA"
+  },
+  {
+   "t": "follow",
+   "links": [
+    {
+     "label": "YouTube",
+     "url": "https://www.youtube.com/@nerazzurridaily"
+    },
+    {
+     "label": "TikTok",
+     "url": "https://www.tiktok.com/@nerazzurridaily"
+    }
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "Inter.it",
+     "title": "Inter Women, 2-0 alla Fiorentina nell’esordio in campionato",
+     "url": "https://www.inter.it/it/notizie/inter-women-fiorentina-serie-a-femminile-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Sassarini: “Oggi ho visto una squadra forte”",
+     "url": "https://www.inter.it/it/notizie/sassarini-raphino-magull-intervista-post-inter-fiorentina-serie-a-women-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Nations League, Stankovic e Bisseck in campo con Serbia e Germania",
+     "url": "https://www.inter.it/it/notizie/impegni-nazionali-nations-league-27-settembre-2026"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Nazionali, tre nerazzurri in campo in Nations League",
+     "url": "https://www.inter.it/it/notizie/impegni-nazionali-nations-league-25-settembre-2026"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Roma 2-2 Inter, Serie A 2026-27",
+     "url": "https://www.inter.it/en/news/roma-inter-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Calendario partite Inter 2026/27",
+     "url": "https://www.inter.it/it/matches"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "UEFA Women’s Champions League, classifica e calendario",
+     "url": "https://www.inter.it/it/notizie/uefa-womens-champions-league-classifica-e-calendario"
+    },
+    {
+     "outlet": "FIGC",
+     "title": "L’Italia e Mancini ripartono dalla Nations League: 34 convocati",
+     "url": "https://www.figc.it/it/nazionali/news/litalia-e-mancini-ripartono-dalla-nations-league-34-convocati-sono-9-i-volti-nuovi-jtrsukbs"
+    },
+    {
+     "outlet": "ANSA",
+     "title": "Nations League, Mancini divide il gruppo: 10 azzurri non partono per la Turchia",
+     "url": "https://www.ansa.it/sito/notizie/sport/2026/09/27/nations-league-mancini-divide-il-gruppo-10-azzurri-non-partono-per-la-turchia_da450839-4940-4c84-b2d6-30c73abdcb79.html"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "Mancini divide il gruppo: niente Turchia per 10 azzurri, out anche Barella",
+     "url": "https://www.fcinternews.it/in-primo-piano/mancini-divide-gruppo-turchia-10-azzurri-out-barella-1019411"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "GdS — Thuram senza Francia, Chivu se lo coccola: sarà titolare contro il Parma",
+     "url": "https://www.fcinternews.it/in-primo-piano/i-gds-i-thuram-francia-chivu-coccola-pronto-parma-1019396"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "From UK — Il Chelsea non molla Bastoni: è il primo obiettivo di Xabi Alonso",
+     "url": "https://www.fcinternews.it/focus/i-from-uk-i-chelsea-molla-bastoni-obiettivo-xabi-alonso-1019419"
+    },
+    {
+     "outlet": "World Soccer Talk",
+     "title": "Serie A on US TV schedule",
+     "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+    }
+   ]
+  }
+ ]
+}
