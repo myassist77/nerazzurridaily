@@ -16,9 +16,9 @@ Two steps, so the local copy and the sandbox copy of a video share one timing:
   python3 tools/nd_voice.py mix --json beats.voiced.json --wavdir ./vo --video pack/NAME.mp4 --out pack/NAME-voiced.mp4
       lays each line at its beat's start + 0.15 s, masters speech to -16 LUFS / -1.5 dBTP at 48 kHz stereo AAC (112 kbps — voice only, and the commit route caps a file near 4 MB),
       copies the video stream untouched and checks the result with ffprobe.
-      Add --cover pack/NAME-thumb-9x16.png to open the video on the designed cover for 0.2 s: Postiz has no
+      Add --cover pack/NAME-thumb-9x16.png to open the video on the designed cover for 1.0 s: Postiz has no
       TikTok cover setting, and TikTok uses the opening frame, so this makes the thumbnail the TikTok cover.
-      (Only the 0.2 s cover clip is encoded; it is stitched in front by stream copy, so the video is never re-encoded.)
+      (Only the 1.0 s cover clip is encoded; it is stitched in front by stream copy, so the video is never re-encoded.)
 
 Voice: Kokoro v1.0 (open source, Apache-2.0), int8 model (the full model runs out of memory on the
 985 MB sandbox), voice am_michael, speed 1.08. Model files are fetched once from the kokoro-onnx GitHub
@@ -35,7 +35,7 @@ import argparse, json, os, re, subprocess, sys, urllib.request
 
 LEAD, TAIL = 0.15, 0.30          # silence before each line, and after it before the cut
 VOICE, SPEED, SR = "am_michael", 1.08, 24000
-COVER_SEC = 0.2                  # --cover: the 9:16 thumbnail holds the first 0.2 s, so it is the post's cover frame
+COVER_SEC = 1.0                  # --cover: the 9:16 thumbnail holds the first 1.0 s, so it is the post's cover frame
 REL = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
 FILES = {"kokoro-v1.0.int8.onnx": 92361271, "voices-v1.0.bin": 28214398}
 # Names the Italian pronunciation tool gets wrong or that are not Italian. Add new ones here as they come up.
@@ -150,13 +150,13 @@ def mix(A):
         if LEAD + len(a) / SR > b["duration"]: die(f"beat {b['id']}: its line overruns the beat")
         i = int((t0 + LEAD) * SR); track[i:i + len(a)] += a
     lead_in = 0.0
-    if A.cover:   # TikTok (and the Shorts feed) show the opening frame: open on the designed 9:16 cover for 0.2 s
+    if A.cover:   # TikTok (and the Shorts feed) show the opening frame: open on the designed 9:16 cover for 1.0 s
         lead_in = COVER_SEC; track = np.concatenate([np.zeros(int(lead_in * SR), dtype="float32"), track]); total = round(total + lead_in, 3)
     wav = os.path.splitext(A.out)[0] + "-vo.wav"; sf.write(wav, track[:int(total * SR)], SR)
     af = "highpass=f=80,acompressor=threshold=-20dB:ratio=3:attack=5:release=80,loudnorm=I=-16:TP=-1.5:LRA=7,aresample=48000"
     video = A.video
     if A.cover:
-        # Encode ONLY the 0.2 s cover clip, then stitch it in front of the untouched video by stream copy through
+        # Encode ONLY the 1.0 s cover clip, then stitch it in front of the untouched video by stream copy through
         # MPEG-TS (h264 annex-b + genpts) — the plain concat demuxer produced a file whose seeks landed on the cover, and
         # re-encoding the whole video was OOM-killed on the 985 MB sandbox (both measured Sept 26, 2026).
         base = os.path.splitext(A.out)[0]; c_ts, v_ts, stitched = base + "-cover.ts", base + "-video.ts", base + "-stitched.mp4"
