@@ -2,7 +2,20 @@
   "n": 28,
   "date": "2026-09-29",
   "slug": "esposito-italy-striker",
-  "tiktok": {"post_id": "cmumozdqm014amy0y9m7gxhk2", "posted_at_utc": "2026-09-29T13:08:30Z", "state": "SUBMITTED", "url": null},
-  "youtube": {"post_id": "cmumozmcj014bmy0yehtc5vz7", "posted_at_utc": "2026-09-29T13:09:00Z", "state": "SUBMITTED", "video_id": null, "url": null, "privacy": null, "comment": null},
-  "updated_at_utc": "2026-09-29T13:09:30Z"
+  "tiktok": {
+    "post_id": "cmumozdqm014amy0y9m7gxhk2",
+    "posted_at_utc": "2026-09-29T13:08:30Z",
+    "state": "PUBLISHED",
+    "url": null
+  },
+  "youtube": {
+    "post_id": "cmumozmcj014bmy0yehtc5vz7",
+    "posted_at_utc": "2026-09-29T13:09:00Z",
+    "state": "PUBLISHED",
+    "video_id": "eZDhaiE-0Vo",
+    "url": "https://www.youtube.com/shorts/eZDhaiE-0Vo",
+    "privacy": "public",
+    "comment": "unknown"
+  },
+  "updated_at_utc": "2026-09-29T13:13:30Z"
 }
