@@ -301,7 +301,7 @@ def thumb_html(T, W_, H_):
                     f'<div style="position:absolute;right:0;top:0;bottom:0;width:90px;display:grid;grid-template-rows:3fr 2fr 4fr 2fr 3fr 2fr 4fr 3fr">{sleeve}</div>'
                     f'<div style="position:absolute;left:60px;top:56px"><span class="mono pill" style="background:{g["bg"]};color:{g["fg"]};font-size:22px">{esc(n["kicker"])}</span></div>'
                     f'<div class="anton fit" style="position:absolute;left:50px;top:110px;font-size:560px;line-height:.85;color:#4A7BE0">{esc(n["big"])}</div>'
-                    f'<div style="position:absolute;left:{560 if len(str(n["big"]))<3 else 700}px;top:150px;width:560px">{lines(n["lines_a"], 118, "#fff")}{lines(n.get("lines_b", []), 118, "#E7B4AE")}</div>'
+                    f'<div style="position:absolute;left:{560 if len(str(n["big"]))<3 else 700}px;top:150px;width:{560 if len(str(n["big"]))<3 else 520}px">{lines(n["lines_a"], 118, "#fff")}{lines(n.get("lines_b", []), 118, "#E7B4AE")}</div>'
                     f'<div style="position:absolute;left:60px;bottom:40px">{pill}</div>'
                     f'<div class="wm" style="position:absolute;right:130px;bottom:40px;font-size:40px">Nerazzurri <b>Daily</b></div>')
         else:
