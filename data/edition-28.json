@@ -1,0 +1,275 @@
+{
+  "n": 28,
+  "date": "2026-09-29",
+  "title": "Bastoni and Esposito score as Italy win 4–1 in Bursa",
+  "description": "Inter went back to work at Appiano Gentile on Monday afternoon, with Djed Spence among the players Cristian Chivu had on the field.",
+  "mast_alt": "Nerazzurri Daily Edition No. 28, Tuesday, September 29, 2026 — Bastoni and Esposito score as Italy win 4–1 in Bursa",
+  "blocks": [
+    {
+      "t": "dek",
+      "html": "Alessandro Bastoni and Francesco Pio Esposito both scored as <a href=\"https://www.inter.it/it/notizie/bastoni-esposito-gol-turchia-italia-diouf-esordio-francia-zielinski-polonia\" rel=\"noopener\">Italy beat Turkey 4–1 in Bursa</a> on Monday night. Pio Esposito and his brother Sebastiano became the first brothers to start a match for Italy in 111 years. At home, the players who stayed behind <a href=\"https://www.inter.it/en/news/inter-training-28-september-2026\" rel=\"noopener\">went back to work at Appiano Gentile</a>, Inter's training ground."
+    },
+    {
+      "t": "scoreboard",
+      "rows": [
+        {
+          "label": "TODAY",
+          "name": "No match",
+          "venue": null,
+          "line": "CROATIA, SWITZERLAND · 2:45 PM ET · 20:45 CEST · NATIONS LEAGUE"
+        },
+        {
+          "label": "LAST",
+          "name": "Roma 2–2 Inter",
+          "venue": null,
+          "line": "SERIE A · MATCHDAY 5 · STADIO OLIMPICO"
+        },
+        {
+          "label": "NEXT",
+          "name": "Parma",
+          "venue": "HOME",
+          "line": "SAT, OCT 10 · SERIE A · MATCHDAY 6 · 12:00 PM ET"
+        }
+      ]
+    },
+    {
+      "t": "bar",
+      "kind": "c",
+      "label": "CONFIRMED",
+      "sub": "CLUB · LEAGUE · UEFA"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Bastoni and Pio Esposito score in Italy's 4–1 win",
+      "paras": [
+        "Alessandro Bastoni, the Inter center back, put Italy in front in the 9th minute, turning in a corner with his left foot. Davide Frattesi, the Italy midfielder, and Michael Kayode, the Italy defender, added two more before the half hour.",
+        "Francesco Pio Esposito, the Inter forward, set up Kayode's goal. He then scored the fourth in the 50th minute, heading in after a shot from Sandro Tonali, the Italy midfielder, came back off the post. Baris Yilmaz, the Turkey forward, pulled one back right at the break.",
+        "The last brothers to start a match for Italy were Aldo and Luigi Cevenini in 1915. Bastoni played all 90 minutes, Pio Esposito 75."
+      ],
+      "kicker": "INTER.IT · SEP 28"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Inter are back at Appiano Gentile, and Spence trained",
+      "paras": [
+        "Inter went back to work on Monday afternoon at Appiano Gentile, Inter's training ground, with most of the squad away. Cristian Chivu, the Inter head coach, took the session.",
+        "Djed Spence, the Inter defender, and Federico Dimarco, the Inter left back, were both on the club's list of the players who trained. Dimarco did not travel to Bursa with Italy after all.",
+        "Hakan Calhanoglu, the Inter midfielder, and John Stones, the Inter center back, were not on that list."
+      ],
+      "kicker": "UPDATE · INTER.IT · SEP 28"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Inter Women have their schedule through November 7",
+      "paras": [
+        "The Italian federation has published Serie A Women dates and times through matchday 6. Inter Women's next league match is away to Como Women on Sunday, October 4 at 12:00 PM ET, 18:00 CEST.",
+        "The derby away at Milan falls on Saturday, November 7 at 9:00 AM ET, 15:00 CET."
+      ],
+      "kicker": "INTER.IT · SEP 28"
+    },
+    {
+      "t": "bar",
+      "kind": "r",
+      "label": "REPORTED",
+      "sub": "PRESS ONLY · NOT YET OFFICIAL"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Tuttosport: Inter are watching Anguissa's contract",
+      "paras": [
+        "Tuttosport, the Turin sports daily, says Inter are following Napoli's renewal talks with André-Frank Zambo Anguissa, the Cameroon midfielder, whose contract runs out in June 2027. There is no sign of an agreement, it says.",
+        "Inter would weigh a free transfer in 2027 if he leaves, and asked Napoli about him in May before signing Curtis Jones instead. Inter have announced nothing."
+      ],
+      "kicker": "TUTTOSPORT VIA FCINTERNEWS · SEP 28"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Sky Sport Italia: Inter want a quicker center back",
+      "paras": [
+        "Gianluca Di Marzio, the Sky Sport Italia transfer reporter, says Inter will look for \"un difensore veloce\" — a fast defender — the next time they buy. He points out that John Stones still needs time.",
+        "He calls Djed Spence, who has yet to play for Inter, a new signing in effect."
+      ],
+      "kicker": "SKY SPORT ITALIA VIA FCINTER1908 · SEP 28"
+    },
+    {
+      "t": "section",
+      "head": "LATEST RESULT",
+      "meta": "SERIE A · MATCHDAY 5 · STADIO OLIMPICO"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Roma 2–2 Inter",
+      "paras": [
+        "KONÉ 6' · KONÉ 37' · LAUTARO MARTÍNEZ 46' · LAUTARO MARTÍNEZ 79'",
+        "Inter came from two goals down for the third time this season."
+      ],
+      "kicker": "SERIE A FORM W W W W D · THIRTEEN POINTS · LEVEL AT THE TOP WITH ROMA AND LAZIO"
+    },
+    {
+      "t": "section",
+      "head": "NEXT UP",
+      "meta": "OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+    },
+    {
+      "t": "fixtures",
+      "rows": [
+        {
+          "name": "Austria Wien",
+          "venue": "AWAY",
+          "line2": "THU, OCT 1 · WOMEN'S CHAMPIONS LEAGUE · MATCHDAY 2",
+          "line3": "12:45 PM ET · 18:45 CEST · US TV: NOT YET PUBLISHED"
+        },
+        {
+          "name": "Como Women",
+          "venue": "AWAY",
+          "line2": "SUN, OCT 4 · SERIE A WOMEN · MATCHDAY 2",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: NOT YET PUBLISHED"
+        },
+        {
+          "name": "Parma",
+          "venue": "HOME",
+          "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+        },
+        {
+          "name": "Club Brugge",
+          "venue": "HOME",
+          "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE · MATCHDAY 2",
+          "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+ · VIX"
+        },
+        {
+          "name": "Bologna",
+          "venue": "AWAY",
+          "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+        }
+      ]
+    },
+    {
+      "t": "note",
+      "html": "Kickoff times are the club's; US listings are World Soccer Talk's, which does not yet carry the two women's matches. Milan time is CEST until October 25."
+    },
+    {
+      "t": "ask",
+      "html": "Reply to this email with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+    },
+    {
+      "t": "next",
+      "text": "WEDNESDAY, SEPTEMBER 30 — THE LAST WORD FROM THE BREAK"
+    },
+    {
+      "t": "follow",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@nerazzurridaily"
+        },
+        {
+          "label": "TikTok",
+          "url": "https://www.tiktok.com/@nerazzurridaily"
+        }
+      ]
+    },
+    {
+      "t": "sources",
+      "links": [
+        {
+          "outlet": "Inter.it",
+          "title": "I gol di Bastoni e Pio spingono l'Italia",
+          "url": "https://www.inter.it/it/notizie/bastoni-esposito-gol-turchia-italia-diouf-esordio-francia-zielinski-polonia"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter back in training: the Nerazzurri's session",
+          "url": "https://www.inter.it/en/news/inter-training-28-september-2026"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Serie A Women 2026/27, il calendario delle nerazzurre",
+          "url": "https://www.inter.it/it/notizie/serie-a-women-2026-27-calendario-inter"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Austria Wien-Inter Women: biglietti per il settore ospiti",
+          "url": "https://www.inter.it/it/notizie/austria-wien-inter-women-biglietti-ospiti-women-champions-league"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Ottobre nerazzurro: il calendario dell'Inter dopo la sosta",
+          "url": "https://www.inter.it/en/news/inter-ticket-calendar-october-matches-san-siro"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Champions, il calendario dell'Inter",
+          "url": "https://www.inter.it/en/news/inter-schedule-champions-league-2026-2027"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Roma-Inter, Serie A 2026/27",
+          "url": "https://www.inter.it/en/news/roma-inter-serie-a-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Nazionali, Akanji e Sucic in campo con Svizzera e Croazia",
+          "url": "https://www.inter.it/it/notizie/impegni-nazionali-nations-league-26-settembre-2026"
+        },
+        {
+          "outlet": "FIGC",
+          "title": "Serie A Women: dates and times for matchdays 4 to 6",
+          "url": "https://www.figc.it/it/serie-a-women/news/date-e-orari-dalla-4-alla-6-giornata-juventus-roma-sabato-24-ottobre-alle-1830-il-derby-di-milano-sabato-7-novembre-alle-15-iefuxgby"
+        },
+        {
+          "outlet": "Sportmediaset",
+          "title": "Nations League: Bursa si tinge d'azzurro, l'Italia batte 4-1 la Turchia",
+          "url": "https://www.sportmediaset.mediaset.it/nationsleague/nations-league-turchia-italia_117093667-202602k.shtml"
+        },
+        {
+          "outlet": "Goal",
+          "title": "Turchia-Italia 1-4, pagelle e tabellino",
+          "url": "https://www.goal.com/it/liste/turchia-italia-1-4-pagelle-e-tabellino-gli-azzurri-si-rialzano-trainati-dai-fratelli-esposito-tonali-solita-certezza/blted5691b6574831a1"
+        },
+        {
+          "outlet": "Associated Press",
+          "title": "Pio and Sebastiano Esposito start for Italy, a first for brothers since 1915",
+          "url": "https://www.bozemandailychronicle.com/wire/sports/pio-and-sebastiano-esposito-start-for-italy-a-first-for-brothers-since-1915/article_caad5d80-3ee4-59c3-ba47-2a1ef4830efd.html"
+        },
+        {
+          "outlet": "Sky Sport Italia",
+          "title": "Nations League, partite di oggi 29 settembre",
+          "url": "https://sport.sky.it/calcio/nations-league/2026/09/29/nations-league-partite-oggi-29-settembre-dove-vedere"
+        },
+        {
+          "outlet": "FCInterNews",
+          "title": "Anguissa-Napoli, rinnovo complicato. L'Inter osserva e valuta",
+          "url": "https://www.fcinternews.it/in-primo-piano/anguissa-napoli-rinnovo-complicato-inter-osserva-valuta-1019479"
+        },
+        {
+          "outlet": "FCInter1908",
+          "title": "Di Marzio: \"Spence nuovo acquisto\"",
+          "url": "https://www.fcinter1908.it/calciomercato/mercato-inter/di-marzio-spence-inter-nuovo-profilo-difesa/"
+        },
+        {
+          "outlet": "Corriere dello Sport",
+          "title": "Classifica Serie A 2026-27",
+          "url": "https://www.corrieredellosport.it/live/classifica-serie-a"
+        },
+        {
+          "outlet": "World Soccer Talk",
+          "title": "Serie A TV schedule",
+          "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+        },
+        {
+          "outlet": "World Soccer Talk",
+          "title": "Champions League TV schedule",
+          "url": "https://worldsoccertalk.com/champions-league-tv-schedule/"
+        }
+      ]
+    }
+  ]
+}
