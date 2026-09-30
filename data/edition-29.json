@@ -1,0 +1,250 @@
+{
+  "n": 29,
+  "date": "2026-09-30",
+  "title": "Inter play Lumezzane behind closed doors on Saturday",
+  "description": "Manuel Akanji captained Switzerland to a 3–0 win at Hampden Park, and Petar Sucic came off in the 81st minute as Croatia lost 4–1 to Spain.",
+  "mast_alt": "Nerazzurri Daily Edition No. 29, Wednesday, September 30, 2026 — Inter play Lumezzane behind closed doors on Saturday",
+  "blocks": [
+    {
+      "t": "dek",
+      "html": "Inter will play <a href=\"https://www.inter.it/it/notizie/annuncio-amichevole-inter-lumezzane-3-ottobre-appiano-gentile\" rel=\"noopener\">a closed-door friendly against Lumezzane</a> on Saturday at 5:00 AM ET, 11:00 CEST. It is their only match before Parma come to San Siro on October 10. On Tuesday <a href=\"https://www.inter.it/it/notizie/impegni-nations-league-nazionali-29-settembre-2026\" rel=\"noopener\">Manuel Akanji captained Switzerland to a 3–0 win</a>, and <a href=\"https://www.inter.it/it/notizie/champions-league-women-vigilia-austria-vienna-inter-guida-allenamento\" rel=\"noopener\">Inter Women are in Vienna on Thursday</a>."
+    },
+    {
+      "t": "scoreboard",
+      "rows": [
+        {
+          "label": "TODAY",
+          "name": "No match",
+          "venue": null,
+          "line": "INTERNATIONAL BREAK · SERIE A RESUMES SAT, OCT 10"
+        },
+        {
+          "label": "LAST",
+          "name": "Roma 2–2 Inter",
+          "venue": null,
+          "line": "SERIE A · MATCHDAY 5 · STADIO OLIMPICO"
+        },
+        {
+          "label": "NEXT",
+          "name": "Lumezzane",
+          "venue": "HOME",
+          "line": "SAT, OCT 3 · FRIENDLY · 5:00 AM ET · 11:00 CEST"
+        }
+      ]
+    },
+    {
+      "t": "bar",
+      "kind": "c",
+      "label": "CONFIRMED",
+      "sub": "CLUB · LEAGUE · UEFA"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Inter will play Lumezzane behind closed doors on Saturday",
+      "paras": [
+        "Inter announced on Wednesday that they will play Lumezzane, a Serie C side, at 5:00 AM ET, 11:00 CEST on Saturday, October 3. The match is at Appiano Gentile, Inter's training ground.",
+        "The club said it will be played “a porte chiuse” — behind closed doors — and will not be open to the public. No broadcast was announced.",
+        "Most of the squad is still away. Italy play France on Friday and Turkey on Monday."
+      ],
+      "kicker": "INTER.IT · SEP 30"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Akanji wore the armband as Switzerland won 3–0",
+      "paras": [
+        "Manuel Akanji, the Inter center back, captained Switzerland and played all 90 minutes of a 3–0 win over Scotland at Hampden Park on Tuesday. Scotland were down to ten men from the 11th minute.",
+        "Petar Sucic, the Inter midfielder, started for Croatia and came off in the 81st minute of a 4–1 defeat by Spain. Lamine Yamal, the Spain forward, scored twice.",
+        "Switzerland lead Group 1 of League B with six points; Croatia have three."
+      ],
+      "kicker": "INTER.IT · SEP 30"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Inter Women are in Vienna on Thursday for matchday 2",
+      "paras": [
+        "Inter Women play Austria Wien in Vienna on Thursday at 12:45 PM ET, 18:45 CEST, their first away match of the Women's Champions League league phase.",
+        "Inter, coached by David Sassarini, have three points from a 1–0 win over Häcken; Austria Wien lost at Chelsea and have none. Disney+ shows the match in Italy and ESPN UK in Britain. No US listing has been published."
+      ],
+      "kicker": "INTER.IT · SEP 30"
+    },
+    {
+      "t": "bar",
+      "kind": "r",
+      "label": "REPORTED",
+      "sub": "PRESS ONLY · NOT YET OFFICIAL"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Gazzetta dello Sport: Thuram is the only forward at Appiano",
+      "paras": [
+        "Gazzetta dello Sport, Italy's biggest sports daily, reports that Marcus Thuram, the Inter forward, is the only striker training at Appiano Gentile this week. Lautaro Martínez, the Inter captain, is with Argentina, Francesco Pio Esposito with Italy and Ange-Yoan Bonny with Ivory Coast.",
+        "The paper counts four goal contributions in 205 minutes for him this season. It says he is getting ready to start against Parma and Club Brugge. Inter have published no lineup."
+      ],
+      "kicker": "GAZZETTA DELLO SPORT VIA FCINTERNEWS · SEP 30"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Tuttosport: seven options for two flanks, and Spence is close",
+      "paras": [
+        "Tuttosport, the Turin sports daily, lists seven players Cristian Chivu, the Inter head coach, can use on the two flanks. They are the defenders Federico Dimarco, Carlos Augusto, Benjamin Pavard and Djed Spence, the midfielders Andy Diouf and Curtis Jones, and the forward Luis Henrique.",
+        "The paper says Spence, who has yet to play for Inter, is now almost certain to make his debut against Parma."
+      ],
+      "kicker": "TUTTOSPORT VIA FCINTERNEWS · SEP 30"
+    },
+    {
+      "t": "section",
+      "head": "LATEST RESULT",
+      "meta": "SERIE A · MATCHDAY 5 · STADIO OLIMPICO"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Roma 2–2 Inter",
+      "paras": [
+        "KONÉ 6' · KONÉ 37' · LAUTARO MARTÍNEZ 46' · LAUTARO MARTÍNEZ 79'",
+        "Inter came from two goals down at the Stadio Olimpico."
+      ],
+      "kicker": "SERIE A FORM W W W W D · THIRTEEN POINTS · LEVEL AT THE TOP WITH ROMA AND LAZIO"
+    },
+    {
+      "t": "section",
+      "head": "NEXT UP",
+      "meta": "OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+    },
+    {
+      "t": "fixtures",
+      "rows": [
+        {
+          "name": "Austria Wien",
+          "venue": "AWAY",
+          "line2": "THU, OCT 1 · WOMEN'S CHAMPIONS LEAGUE · MATCHDAY 2",
+          "line3": "12:45 PM ET · 18:45 CEST · US TV: NOT YET PUBLISHED"
+        },
+        {
+          "name": "Como Women",
+          "venue": "AWAY",
+          "line2": "SUN, OCT 4 · SERIE A WOMEN · MATCHDAY 2",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: NOT YET PUBLISHED"
+        },
+        {
+          "name": "Parma",
+          "venue": "HOME",
+          "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+        },
+        {
+          "name": "Club Brugge",
+          "venue": "HOME",
+          "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE · MATCHDAY 2",
+          "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+ · VIX"
+        },
+        {
+          "name": "Bologna",
+          "venue": "AWAY",
+          "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+        }
+      ]
+    },
+    {
+      "t": "note",
+      "html": "Kickoff times are the club's; US listings are World Soccer Talk's, which does not yet carry the two women's matches. Milan time is CEST until October 25."
+    },
+    {
+      "t": "ask",
+      "html": "Reply to this email with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+    },
+    {
+      "t": "next",
+      "text": "THURSDAY, OCTOBER 1 — INTER WOMEN IN VIENNA"
+    },
+    {
+      "t": "follow",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@nerazzurridaily"
+        },
+        {
+          "label": "TikTok",
+          "url": "https://www.tiktok.com/@nerazzurridaily"
+        }
+      ]
+    },
+    {
+      "t": "sources",
+      "links": [
+        {
+          "outlet": "Inter.it",
+          "title": "Sabato 3 ottobre amichevole a porte chiuse con il Lumezzane",
+          "url": "https://www.inter.it/it/notizie/annuncio-amichevole-inter-lumezzane-3-ottobre-appiano-gentile"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Nazionali, due nerazzurri in campo in Nations League",
+          "url": "https://www.inter.it/it/notizie/impegni-nations-league-nazionali-29-settembre-2026"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Vigilia di Austria Wien-Inter: guida alla seconda giornata (matchday 2) di UWCL",
+          "url": "https://www.inter.it/it/notizie/champions-league-women-vigilia-austria-vienna-inter-guida-allenamento"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "UWCL, Austria Wien-Inter: dove vederla in tv",
+          "url": "https://www.inter.it/it/notizie/austria-vienna-inter-women-champions-league-dove-vederla-in-tv"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter Women: results, videos, matches and official news",
+          "url": "https://www.inter.it/en/inter-women"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Roma-Inter, Serie A 2026/27",
+          "url": "https://www.inter.it/en/news/roma-inter-serie-a-2026-27"
+        },
+        {
+          "outlet": "Sky Sport Italia",
+          "title": "Italia in Nations League, il programma verso le partite con Francia e Turchia",
+          "url": "https://sport.sky.it/calcio/nations-league/2026/09/30/italia-nations-league-programma"
+        },
+        {
+          "outlet": "FCInterNews",
+          "title": "GdS — Inter, Thuram unica punta ad Appiano",
+          "url": "https://www.fcinternews.it/rassegna/i-gds-i-inter-thuram-unica-punta-appiano-francese-sa-che-1019645"
+        },
+        {
+          "outlet": "FCInterNews",
+          "title": "TS — Inter, che abbondanza sugli esterni: sette soluzioni per due fasce",
+          "url": "https://www.fcinternews.it/rassegna/i-ts-i-inter-abbondanza-esterni-soluzioni-fasce-1019650"
+        },
+        {
+          "outlet": "Corriere dello Sport",
+          "title": "Classifica Serie A 2026-27",
+          "url": "https://www.corrieredellosport.it/live/classifica-serie-a"
+        },
+        {
+          "outlet": "World Soccer Talk",
+          "title": "Serie A TV schedule",
+          "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+        },
+        {
+          "outlet": "World Soccer Talk",
+          "title": "Champions League TV schedule",
+          "url": "https://worldsoccertalk.com/champions-league-tv-schedule/"
+        },
+        {
+          "outlet": "World Soccer Talk",
+          "title": "Women's Champions League TV schedule",
+          "url": "https://worldsoccertalk.com/womens-champions-league-tv-schedule/"
+        }
+      ]
+    }
+  ]
+}
