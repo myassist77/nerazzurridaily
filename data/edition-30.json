@@ -1,0 +1,255 @@
+{
+  "n": 30,
+  "date": "2026-10-01",
+  "title": "Lautaro Martínez draws level with Agüero for Argentina",
+  "description": "Inter Women are in Vienna tonight for matchday 2 of the Women's Champions League, kicking off at 12:45 PM ET.",
+  "mast_alt": "Nerazzurri Daily Edition No. 30, Thursday, October 1, 2026 — Lautaro Martínez draws level with Agüero for Argentina",
+  "blocks": [
+    {
+      "t": "dek",
+      "html": "<a href=\"https://www.inter.it/it/notizie/nazionali-lautaro-gol-argentina-bolivia-amichevole-1-ottobre-2026\" rel=\"noopener\">Lautaro Martínez scored in the 19th minute</a> as Argentina beat Bolivia 4–0 in Córdoba. It was his 41st goal for Argentina, which ties him with Sergio Agüero in third place on his country's all-time list. <a href=\"https://www.inter.it/en/news/press-conference-sassarini-runarsdottir-austria-vienna-inter-women-champions-league-2026-27\" rel=\"noopener\">Inter Women play at Austria Wien tonight</a>, 12:45 PM ET, in matchday 2 of the Women's Champions League."
+    },
+    {
+      "t": "scoreboard",
+      "rows": [
+        {
+          "label": "TODAY",
+          "name": "Austria Wien (Women)",
+          "venue": "AWAY",
+          "line": "12:45 PM ET · 18:45 CEST · WOMEN'S CHAMPIONS LEAGUE · MATCHDAY 2"
+        },
+        {
+          "label": "LAST",
+          "name": "Roma 2–2 Inter",
+          "venue": null,
+          "line": "SERIE A · MATCHDAY 5 · STADIO OLIMPICO"
+        },
+        {
+          "label": "NEXT",
+          "name": "Lumezzane",
+          "venue": "HOME",
+          "line": "SAT, OCT 3 · FRIENDLY · 5:00 AM ET · 11:00 CEST"
+        }
+      ]
+    },
+    {
+      "t": "bar",
+      "kind": "c",
+      "label": "CONFIRMED",
+      "sub": "CLUB · LEAGUE · UEFA"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Lautaro Martínez matches Agüero's Argentina total",
+      "paras": [
+        "Argentina beat Bolivia 4–0 at the Estadio Mario Alberto Kempes in Córdoba. Lautaro Martínez, Inter's captain and center forward, scored in the 19th minute with a low right-footed shot from the edge of the box.",
+        "It was his 41st goal for his country. That ties him with the former Manchester City forward Sergio Agüero, third on Argentina's all-time list. Lionel Messi has 125; Gabriel Batistuta has 55.",
+        "The club filed the report on Thursday in Italy. Kickoff in Córdoba was Wednesday night."
+      ],
+      "kicker": "INTER.IT · OCT 1"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Inter Women are in Vienna tonight, and their coach wants courage",
+      "paras": [
+        "Inter play Austria Wien at the Franz-Horr-Stadion at 12:45 PM ET, 18:45 CEST, in matchday 2 of the Women's Champions League. Inter won their opener against Häcken.",
+        "David Sassarini, Inter Women's head coach, wants \"the same determination, desire and courage as always\" from his players. He also asked them to be \"good at playing cleanly and building our moves\" in Vienna.",
+        "Cecilía Rán Rúnarsdóttir, Inter's goalkeeper, said she was \"very happy and proud\" to play in the Champions League. The club lists the match on Disney+ and ESPN UK, with no US broadcaster."
+      ],
+      "kicker": "SAID · INTER.IT · OCT 1"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "A film about the Double season arrives on Monday",
+      "paras": [
+        "\"Solo Noi. A Double-winning season\" is a documentary from Inter Media House about the 2025/26 campaign. Inter won a 21st league title and a 10th Coppa Italia — the Italian cup.",
+        "It arrives pay-per-view on Monday, October 5, on Sky Primafila, DAZN and OneFootball. The Italian actor Stefano Accorsi narrates."
+      ],
+      "kicker": "INTER.IT · SEP 30"
+    },
+    {
+      "t": "bar",
+      "kind": "r",
+      "label": "REPORTED",
+      "sub": "PRESS ONLY · NOT YET OFFICIAL"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Gazzetta dello Sport: a new deal for Carlos Augusto is a priority",
+      "paras": [
+        "Gazzetta dello Sport, Italy's biggest sports daily, reports that Inter will meet the representatives of Carlos Augusto soon. His contract runs to 2028. No figures were published.",
+        "The paper says Cristian Chivu, Inter's head coach, uses the Brazilian defender as a left-sided center back who can also push higher."
+      ],
+      "kicker": "GAZZETTA DELLO SPORT VIA FCINTER1908 · OCT 1"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Gazzetta dello Sport: Inter are watching a Cagliari midfielder",
+      "paras": [
+        "Positive scouting reports on Alessandro Romano, a young midfielder at Cagliari, have reached Inter. Cagliari are obliged to buy him for 6.5 million euros and will give him a five-year contract.",
+        "The paper calls it long-term planning, with the futures of Hakan Calhanoglu and Henrikh Mkhitaryan unsettled."
+      ],
+      "kicker": "GAZZETTA DELLO SPORT VIA FCINTER1908 · OCT 1"
+    },
+    {
+      "t": "section",
+      "head": "LATEST RESULT",
+      "meta": "SERIE A · MATCHDAY 5 · STADIO OLIMPICO"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Roma 2–2 Inter",
+      "paras": [
+        "KONÉ 6' · KONÉ 37' · LAUTARO MARTÍNEZ 46' · LAUTARO MARTÍNEZ 79'",
+        "Inter came from two goals down in Rome on September 19. Lautaro Martínez scored 50 seconds into the second half and again in the 79th minute."
+      ],
+      "kicker": "SERIE A FORM W W W W D · THIRTEEN POINTS · SECOND ON GOAL DIFFERENCE"
+    },
+    {
+      "t": "section",
+      "head": "NEXT UP",
+      "meta": "OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+    },
+    {
+      "t": "fixtures",
+      "rows": [
+        {
+          "name": "Lumezzane",
+          "venue": "HOME",
+          "line2": "SAT, OCT 3 · FRIENDLY · BEHIND CLOSED DOORS",
+          "line3": "5:00 AM ET · 11:00 CEST · US TV: NOT YET PUBLISHED"
+        },
+        {
+          "name": "Como Women",
+          "venue": "AWAY",
+          "line2": "SUN, OCT 4 · SERIE A WOMEN · MATCHDAY 2",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: NOT YET PUBLISHED"
+        },
+        {
+          "name": "Parma",
+          "venue": "HOME",
+          "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+        },
+        {
+          "name": "Club Brugge",
+          "venue": "HOME",
+          "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE · MATCHDAY 2",
+          "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+ · VIX"
+        },
+        {
+          "name": "Bologna",
+          "venue": "AWAY",
+          "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+        }
+      ]
+    },
+    {
+      "t": "note",
+      "html": "Kickoff times are the club's, except Como Women's, which comes from the league's published calendar. US listings are World Soccer Talk's, which does not yet carry the two women's matches. Milan time is CEST until October 25."
+    },
+    {
+      "t": "ask",
+      "html": "Reply to this email with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+    },
+    {
+      "t": "next",
+      "text": "FRIDAY, OCTOBER 2 — WHAT HAPPENED IN VIENNA"
+    },
+    {
+      "t": "follow",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@nerazzurridaily"
+        },
+        {
+          "label": "TikTok",
+          "url": "https://www.tiktok.com/@nerazzurridaily"
+        }
+      ]
+    },
+    {
+      "t": "sources",
+      "links": [
+        {
+          "outlet": "Inter.it",
+          "title": "Lautaro scores against Bolivia",
+          "url": "https://www.inter.it/it/notizie/nazionali-lautaro-gol-argentina-bolivia-amichevole-1-ottobre-2026"
+        },
+        {
+          "outlet": "Football Italia",
+          "title": "Lautaro Martinez matches Aguero to become Argentina's third all-time top scorer",
+          "url": "https://football-italia.net/lautaro-martinez-argentina-third-top-scorer/"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Sassarini and Rúnarsdóttir: \"We'll be brave and play our game\"",
+          "url": "https://www.inter.it/en/news/press-conference-sassarini-runarsdottir-austria-vienna-inter-women-champions-league-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "UWCL, Austria Wien vs. Inter: where to watch on TV",
+          "url": "https://www.inter.it/en/news/austria-vienna-inter-women-champions-league-where-to-watch"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Cecilía Rán Rúnarsdóttir: stats, news and career",
+          "url": "https://www.inter.it/en/teams/inter-women/player/cecilia-runarsdottir"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Solo Noi. A Double-winning season",
+          "url": "https://www.inter.it/en/news/solo-noi-a-double-winning-season-2026"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Closed-door friendly against Lumezzane on Saturday 3rd October",
+          "url": "https://www.inter.it/en/news/friendly-inter-lumezzane-3-ottobre-appiano-gentile"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Roma 2-2 Inter, the match report",
+          "url": "https://www.inter.it/en/news/roma-inter-serie-a-2026-27"
+        },
+        {
+          "outlet": "FCInter1908",
+          "title": "Carlos Augusto's renewal, from Gazzetta dello Sport",
+          "url": "https://www.fcinter1908.it/calciomercato/mercato-inter/inter-rinnovo-augusto-presto-incontro/"
+        },
+        {
+          "outlet": "FCInter1908",
+          "title": "Scouting reports on Alessandro Romano, from Gazzetta dello Sport",
+          "url": "https://www.fcinter1908.it/calciomercato/mercato-inter/mercato-gazzetta-svela-relazioni-positive-arrivate-inter-mossa/"
+        },
+        {
+          "outlet": "Corriere dello Sport",
+          "title": "Serie A standings",
+          "url": "https://www.corrieredellosport.it/live/classifica-serie-a"
+        },
+        {
+          "outlet": "L'Interista",
+          "title": "Serie A Women: confirmed dates and times for matchdays 2 and 3",
+          "url": "https://www.linterista.it/femminile/serie-women-ufficiali-date-orari-2-3-giornata-gioca-inter-200031"
+        },
+        {
+          "outlet": "World Soccer Talk",
+          "title": "Serie A on US TV",
+          "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+        },
+        {
+          "outlet": "World Soccer Talk",
+          "title": "Champions League on US TV",
+          "url": "https://worldsoccertalk.com/champions-league-tv-schedule/"
+        }
+      ]
+    }
+  ]
+}
