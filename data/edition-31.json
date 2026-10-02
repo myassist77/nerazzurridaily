@@ -1,0 +1,263 @@
+{
+  "n": 31,
+  "date": "2026-10-02",
+  "title": "Ivana Andrés rescues Inter Women in Vienna, 1–1",
+  "description": "The Supercoppa Italiana returns to Italy as a single match, and Inter will play Lazio at San Siro in December.",
+  "mast_alt": "Nerazzurri Daily Edition No. 31, Friday, October 2, 2026 — Ivana Andrés rescues Inter Women in Vienna, 1–1",
+  "blocks": [
+    {
+      "t": "dek",
+      "html": "<a href=\"https://www.inter.it/it/notizie/austria-wien-inter-women-uefa-women-champions-league-2026-27\" rel=\"noopener\">Ivana Andrés scored in the 93rd minute in Vienna</a> to rescue a 1–1 draw against Austria Wien in matchday 2 of the Women's Champions League. The club has also confirmed that <a href=\"https://www.inter.it/it/notizie/supercoppa-italiana-inter-lazio-22-dicembre-2026-san-siro\" rel=\"noopener\">the Supercoppa Italiana returns to Italy as a single match</a>. Inter play Lazio at San Siro on Tuesday, December 22, 3:00 PM ET (21:00 CET)."
+    },
+    {
+      "t": "scoreboard",
+      "rows": [
+        {
+          "label": "TODAY",
+          "name": "No match",
+          "venue": null,
+          "line": "INTERNATIONAL BREAK · SERIE A RESUMES OCT 10"
+        },
+        {
+          "label": "LAST",
+          "name": "Roma 2–2 Inter",
+          "venue": null,
+          "line": "SERIE A · MATCHDAY 5 · STADIO OLIMPICO"
+        },
+        {
+          "label": "NEXT",
+          "name": "Lumezzane",
+          "venue": "HOME",
+          "line": "SAT, OCT 3 · FRIENDLY · 5:00 AM ET · 11:00 CEST"
+        }
+      ]
+    },
+    {
+      "t": "bar",
+      "kind": "c",
+      "label": "CONFIRMED",
+      "sub": "CLUB · LEAGUE · UEFA"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Andrés rescues a point in Vienna with the last kick",
+      "paras": [
+        "Ivana Andrés, the Inter Women captain, scored in the 93rd minute at the Franz-Horr-Stadion to earn a 1–1 draw against Austria Wien in matchday 2 of the Women's Champions League. Modesta Uka had put the home side ahead in the 21st minute with a shot from distance.",
+        "It was Andrés's first goal in a UEFA club competition. David Sassarini, the head coach, made four changes at halftime, and his team created chances in the 72nd and 78th minutes before the ball fell to Andrés in stoppage time.",
+        "Inter have four points and sit sixth in the league phase. UEFA logs the goal in the 94th minute; the club's own report says the 93rd."
+      ],
+      "kicker": "INTER.IT · OCT 1"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "The Supercoppa comes home, and Inter play Lazio at San Siro",
+      "paras": [
+        "Inter will play Lazio in the Supercoppa Italiana at San Siro on Tuesday, December 22, at 3:00 PM ET (21:00 CET). The 39th edition goes back to a single match after years of a four-team Final Four abroad.",
+        "Inter qualify as the Serie A champions and Lazio as the Coppa Italia finalists. Mediaset has the match in Italy."
+      ],
+      "kicker": "INTER.IT · OCT 1"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Bisseck on joining Inter: \"it felt surreal\"",
+      "paras": [
+        "Yann Bisseck, the Inter center back, spoke at the Festival dello Sport in Trento, the annual event run by Gazzetta dello Sport, Italy's biggest sports daily. \"When Inter called, it felt surreal. Even after a good season, I never expected a club that big to come in for me,\" he said.",
+        "He named Matteo Darmian, the Inter defender, as the teammate he has learned the most from. The Italian game suits him: \"All 11 players have to work together like a perfectly oiled machine,\" he added."
+      ],
+      "kicker": "SAID · INTER.IT · OCT 1"
+    },
+    {
+      "t": "bar",
+      "kind": "r",
+      "label": "REPORTED",
+      "sub": "PRESS ONLY · NOT YET OFFICIAL"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Gazzetta dello Sport: Calhanoglu trains with the group again",
+      "paras": [
+        "Hakan Calhanoglu, the Inter midfielder, took part in some of Thursday's session with the rest of the squad at Appiano Gentile, Inter's training ground. It was his first group work since his injury, and the paper expects him back for Parma.",
+        "The same report says John Stones, the Inter center back, is still working on his own and is unlikely to face Parma, with a clearer picture due early next week."
+      ],
+      "kicker": "GAZZETTA DELLO SPORT VIA FCINTER1908 · OCT 2"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "TeamTalk: Inter are still watching Tarik Muharemovic",
+      "paras": [
+        "Inter have kept track of Tarik Muharemovic, the 23-year-old Bosnian center back who left Sassuolo for Leeds United for €40 million in the summer. They could go back for him if Alessandro Bastoni, the Inter defender, leaves in 2027. TeamTalk, the English outlet, reported it on Thursday."
+      ],
+      "kicker": "TEAMTALK VIA FCINTERNEWS · OCT 1"
+    },
+    {
+      "t": "section",
+      "head": "LATEST RESULT",
+      "meta": "SERIE A · MATCHDAY 5 · STADIO OLIMPICO"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Roma 2–2 Inter",
+      "paras": [
+        "KONÉ 6' · KONÉ 37' · LAUTARO MARTÍNEZ 46' · LAUTARO MARTÍNEZ 79'"
+      ],
+      "kicker": "SERIE A FORM W W W W D · THIRTEEN POINTS · SECOND ON GOAL DIFFERENCE"
+    },
+    {
+      "t": "section",
+      "head": "NEXT UP",
+      "meta": "OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+    },
+    {
+      "t": "fixtures",
+      "rows": [
+        {
+          "name": "Lumezzane",
+          "venue": "HOME",
+          "line2": "SAT, OCT 3 · FRIENDLY · BEHIND CLOSED DOORS",
+          "line3": "5:00 AM ET · 11:00 CEST · US TV: NOT YET PUBLISHED"
+        },
+        {
+          "name": "Como Women",
+          "venue": "AWAY",
+          "line2": "SUN, OCT 4 · SERIE A WOMEN · MATCHDAY 2",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: NOT YET PUBLISHED"
+        },
+        {
+          "name": "Parma",
+          "venue": "HOME",
+          "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+        },
+        {
+          "name": "Club Brugge",
+          "venue": "HOME",
+          "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE · MATCHDAY 2",
+          "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+"
+        },
+        {
+          "name": "Bologna",
+          "venue": "AWAY",
+          "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+        },
+        {
+          "name": "Shakhtar Donetsk",
+          "venue": "HOME",
+          "line2": "WED, OCT 21 · CHAMPIONS LEAGUE · MATCHDAY 3",
+          "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+"
+        }
+      ]
+    },
+    {
+      "t": "note",
+      "html": "Kickoff times are the club's. US listings are World Soccer Talk's, which does not yet carry the friendly or the women's match. Milan time is CEST until October 25."
+    },
+    {
+      "t": "ask",
+      "html": "Reply to this email with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+    },
+    {
+      "t": "next",
+      "text": "SATURDAY, OCTOBER 3 — INTER PLAY LUMEZZANE BEHIND CLOSED DOORS"
+    },
+    {
+      "t": "follow",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@nerazzurridaily"
+        },
+        {
+          "label": "TikTok",
+          "url": "https://www.tiktok.com/@nerazzurridaily"
+        }
+      ]
+    },
+    {
+      "t": "sources",
+      "links": [
+        {
+          "outlet": "Inter.it",
+          "title": "Andrés all'ultimo respiro! L'Inter Women riprende l'Austria Wien",
+          "url": "https://www.inter.it/it/notizie/austria-wien-inter-women-uefa-women-champions-league-2026-27"
+        },
+        {
+          "outlet": "UEFA.com",
+          "title": "Women's Champions League matchday 2 Thursday highlights",
+          "url": "https://www.uefa.com/womenschampionsleague/news/02aa-21b9cf1a1cfd-385fc928737f-1000--uefa-women-s-champions-league-matchday-2-thursday-highlight/"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Sassarini e le protagoniste: \"Grande reazione nel finale\"",
+          "url": "https://www.inter.it/it/notizie/intervista-sassarini-andres-magull-lebihan-austria-vienna-inter-champions-league-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "UEFA Women's Champions League: standings and fixtures",
+          "url": "https://www.inter.it/en/news/uefa-womens-champions-league-standings-and-fixtures"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Supercoppa Italiana: Inter-Lazio il 22 dicembre a San Siro",
+          "url": "https://www.inter.it/it/notizie/supercoppa-italiana-inter-lazio-22-dicembre-2026-san-siro"
+        },
+        {
+          "outlet": "Calcio e Finanza",
+          "title": "La Supercoppa torna in Italia: ufficiale Inter-Lazio a San Siro il 22 dicembre",
+          "url": "https://www.calcioefinanza.it/2026/10/01/supercoppa-italiana-inter-lazio-data-orario/"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Yann Bisseck at the Festival dello Sport in Trento",
+          "url": "https://www.inter.it/en/news/yann-bisseck-at-festival-dello-sport-trento-2026"
+        },
+        {
+          "outlet": "FCInter1908",
+          "title": "Inter, Calhanoglu in gruppo. Come stanno Dimarco e Stones",
+          "url": "https://www.fcinter1908.it/news/infortuni/inter-calhanoglu-gruppo-dimarco-stones/"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Nerazzurri al lavoro: l'allenamento dell'Inter",
+          "url": "https://www.inter.it/it/notizie/allenamento-inter-1-ottobre-2026"
+        },
+        {
+          "outlet": "FCInterNews",
+          "title": "From UK: Inter continua a seguire Muharemovic. E se partisse Bastoni?",
+          "url": "https://www.fcinternews.it/focus/i-from-uk-i-inter-continua-seguire-muharemovic-partisse-bastoni-1019777"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Closed-door friendly against Lumezzane on Saturday 3rd October",
+          "url": "https://www.inter.it/en/news/friendly-inter-lumezzane-3-ottobre-appiano-gentile"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter's schedule after the break",
+          "url": "https://www.inter.it/en/news/inter-ticket-calendar-october-matches-san-siro"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter Women",
+          "url": "https://www.inter.it/en/inter-women"
+        },
+        {
+          "outlet": "World Soccer Talk",
+          "title": "Serie A TV schedule: how to watch in the USA",
+          "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+        },
+        {
+          "outlet": "World Soccer Talk",
+          "title": "Champions League TV schedule",
+          "url": "https://worldsoccertalk.com/champions-league-tv-schedule/"
+        }
+      ]
+    }
+  ]
+}
