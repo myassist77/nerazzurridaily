@@ -2,7 +2,7 @@
   "n": 32,
   "date": "2026-10-03",
   "slug": "jeltsch-40m",
-  "tiktok": {"post_id": "cmusapv6p00nuo40ywvjnz5tf", "posted_at_utc": "2026-10-03T11:16:00Z", "state": "SUBMITTED", "url": null},
-  "youtube": {"post_id": "cmusaq2nl00nvo40yrxiuewl2", "posted_at_utc": "2026-10-03T11:16:30Z", "state": "SUBMITTED", "video_id": null, "url": null, "privacy": null, "comment": null},
-  "updated_at_utc": "2026-10-03T11:17:00Z"
+  "tiktok": {"post_id": "cmusapv6p00nuo40ywvjnz5tf", "posted_at_utc": "2026-10-03T11:16:00Z", "state": "PUBLISHED", "url": null},
+  "youtube": {"post_id": "cmusaq2nl00nvo40yrxiuewl2", "posted_at_utc": "2026-10-03T11:16:30Z", "state": "PUBLISHED", "video_id": "e54FVIkC6QI", "url": "https://www.youtube.com/shorts/e54FVIkC6QI", "privacy": "public", "comment": "not visible"},
+  "updated_at_utc": "2026-10-03T11:23:00Z"
 }
