@@ -1,0 +1,253 @@
+{
+  "n": 32,
+  "date": "2026-10-03",
+  "title": "Bastoni scores again as Italy draw 1–1 in Paris",
+  "description": "Inter host Lumezzane of Serie C in a closed-doors friendly this morning, their last work before Parma on October 10.",
+  "mast_alt": "Nerazzurri Daily Edition No. 32, Saturday, October 3, 2026 — Bastoni scores again as Italy draw 1–1 in Paris",
+  "blocks": [
+    {
+      "t": "dek",
+      "html": "<a href=\"https://www.inter.it/it/notizie/partite-nazionali-nations-league-2-ottobre-2026\" rel=\"noopener\">Alessandro Bastoni, the Inter center back, scored again for Italy on Friday night</a>, his second goal in two games, as Italy drew 1–1 with France in Paris. Piotr Zielinski, the Inter midfielder, scored in Poland's 6–0 win over Romania. Inter are at home this morning for <a href=\"https://www.inter.it/en/news/friendly-inter-lumezzane-3-ottobre-appiano-gentile\" rel=\"noopener\">a closed-doors friendly against Lumezzane</a>, 5:00 AM ET (11:00 CEST), their last work before Parma."
+    },
+    {
+      "t": "scoreboard",
+      "rows": [
+        {
+          "label": "TODAY",
+          "name": "Lumezzane",
+          "venue": "HOME",
+          "line": "5:00 AM ET · 11:00 CEST · FRIENDLY · CLOSED DOORS"
+        },
+        {
+          "label": "LAST",
+          "name": "Roma 2–2 Inter",
+          "venue": null,
+          "line": "SERIE A · MATCHDAY 5 · STADIO OLIMPICO"
+        },
+        {
+          "label": "NEXT",
+          "name": "Parma",
+          "venue": "HOME",
+          "line": "SAT, OCT 10 · SERIE A · 12:00 PM ET"
+        }
+      ]
+    },
+    {
+      "t": "bar",
+      "kind": "c",
+      "label": "CONFIRMED",
+      "sub": "CLUB · LEAGUE · UEFA"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Bastoni scores again as Italy hold France in Paris",
+      "paras": [
+        "Bastoni equalized at the Stade de France to earn Italy a 1–1 draw with France. Michael Olise had put the hosts ahead from Rayan Cherki's free kick in the 55th minute. Bastoni then took the ball off Lucas Da Cunha and finished with his left foot. Neither Inter nor UEFA published the minute.",
+        "Francesco Pio Esposito, the Inter forward, started and came off in the 62nd minute, when Nicolò Barella, the Inter midfielder, came on. Italy have four points, third in their group.",
+        "Zielinski scored in the 62nd minute of Poland's 6–0 win over Romania, with a right-footed lob after a loose backpass."
+      ],
+      "kicker": "INTER.IT · UEFA.COM · OCT 2"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Inter host Lumezzane behind closed doors this morning",
+      "paras": [
+        "Inter play Lumezzane, a Serie C club from Group A, at the Inter Training Center in Appiano Gentile, Inter's training ground, at 5:00 AM ET (11:00 CEST). The club says it is closed to the public, and FCInter1908 reports there is no broadcast.",
+        "Friday's session was the last work before it. Marcus Thuram, Hakan Calhanoglu, Henrikh Mkhitaryan, Federico Dimarco and Benjamin Pavard were among the first-team players who trained, with two U23 players."
+      ],
+      "kicker": "INTER.IT · OCT 2"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Bastoni asks for calm: \"equilibrio nei giudizi\"",
+      "paras": [
+        "Bastoni spoke to Sky Sport Italia afterward and asked for perspective. \"Chiedo grande calma ed equilibrio nei giudizi\" — I'm asking for real calm and balance in how we are judged. Italy won 3–1 in France two years ago, he said, and we know what came next."
+      ],
+      "kicker": "SAID · SKY SPORT ITALIA · OCT 2"
+    },
+    {
+      "t": "bar",
+      "kind": "r",
+      "label": "REPORTED",
+      "sub": "PRESS ONLY · NOT YET OFFICIAL"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Sky Sport Italia: Calhanoglu in full training early next week",
+      "paras": [
+        "Calhanoglu is doing only part of the group's work and should join full training early next week. That is more cautious than the version we carried yesterday. Dimarco is close too, and is expected back with the group next week.",
+        "John Stones, the Inter center back, is still working alone and needs more days; the report makes him a doubt for Parma. Sky Sport Italia also expects renewal talks with Calhanoglu soon; his contract expires in 2027."
+      ],
+      "kicker": "UPDATE · SKY SPORT ITALIA VIA FCINTER1908 · OCT 2"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Corriere dello Sport: Inter are watching Finn Jeltsch",
+      "paras": [
+        "Finn Jeltsch, the 20-year-old German center back at Stuttgart, is Inter's latest idea for the defense, and Cristian Chivu, the Inter head coach, wants him. Stuttgart value him at €40 million. Barcelona, Arsenal, Liverpool and Manchester United are watching him too."
+      ],
+      "kicker": "CORRIERE DELLO SPORT · OCT 3"
+    },
+    {
+      "t": "section",
+      "head": "LATEST RESULT",
+      "meta": "SERIE A · MATCHDAY 5 · STADIO OLIMPICO"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Roma 2–2 Inter",
+      "paras": [
+        "KONÉ 6' · KONÉ 37' · LAUTARO MARTÍNEZ 46' · LAUTARO MARTÍNEZ 79'",
+        "Roma led 2–0 at the break, and Lautaro Martínez scored twice after it."
+      ],
+      "kicker": "SERIE A FORM W W W W D · THIRTEEN POINTS · SECOND ON GOAL DIFFERENCE"
+    },
+    {
+      "t": "section",
+      "head": "NEXT UP",
+      "meta": "OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+    },
+    {
+      "t": "fixtures",
+      "rows": [
+        {
+          "name": "Como Women",
+          "venue": "AWAY",
+          "line2": "SUN, OCT 4 · SERIE A WOMEN · MATCHDAY 2",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: NOT YET PUBLISHED"
+        },
+        {
+          "name": "Parma",
+          "venue": "HOME",
+          "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+        },
+        {
+          "name": "Club Brugge",
+          "venue": "HOME",
+          "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE · MATCHDAY 2",
+          "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+ · VIX"
+        },
+        {
+          "name": "Bologna",
+          "venue": "AWAY",
+          "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+        },
+        {
+          "name": "Shakhtar Donetsk",
+          "venue": "HOME",
+          "line2": "WED, OCT 21 · CHAMPIONS LEAGUE · MATCHDAY 3",
+          "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+ · VIX"
+        },
+        {
+          "name": "Fiorentina",
+          "venue": "HOME",
+          "line2": "SUN, OCT 25 · SERIE A · MATCHDAY 8",
+          "line3": "7:30 AM ET · 12:30 CET · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+        }
+      ]
+    },
+    {
+      "t": "note",
+      "html": "Kickoff times are the club's; US listings are World Soccer Talk's, which does not yet carry the women's match. Milan moves to CET on October 25, so Fiorentina is 7:30 AM ET (12:30 CET)."
+    },
+    {
+      "t": "ask",
+      "html": "Reply to this email with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+    },
+    {
+      "t": "next",
+      "text": "SUNDAY, OCTOBER 4 — WHAT THE LUMEZZANE FRIENDLY SHOWED"
+    },
+    {
+      "t": "follow",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@nerazzurridaily"
+        },
+        {
+          "label": "TikTok",
+          "url": "https://www.tiktok.com/@nerazzurridaily"
+        }
+      ]
+    },
+    {
+      "t": "sources",
+      "links": [
+        {
+          "outlet": "Inter.it",
+          "title": "Nazionali, Bastoni e Zielinski in gol in Nations League",
+          "url": "https://www.inter.it/it/notizie/partite-nazionali-nations-league-2-ottobre-2026"
+        },
+        {
+          "outlet": "UEFA.com",
+          "title": "Nations League matchday 3 round-up",
+          "url": "https://www.uefa.com/uefanationsleague/news/02aa-21b9c92be12f-a190457ae8e6-1000--uefa-nations-league-matchday-3-round-up-kevin-de-bruyne-star/"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter in campo: l'allenamento dei nerazzurri",
+          "url": "https://www.inter.it/it/notizie/allenamento-inter-2-ottobre-2026"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Closed-door friendly against Lumezzane on Saturday 3rd October",
+          "url": "https://www.inter.it/en/news/friendly-inter-lumezzane-3-ottobre-appiano-gentile"
+        },
+        {
+          "outlet": "FCInter1908",
+          "title": "Inter-Lumezzane oggi: a che ora si gioca e dove vederla",
+          "url": "https://www.fcinter1908.it/news/rassegna-stampa/inter-lumezzane-oggi-a-che-ora-si-gioca-e-dove-vederla-attesa-per-spence/"
+        },
+        {
+          "outlet": "FCInterNews",
+          "title": "Bastoni a Sky: \"Calma coi giudizi, due anni fa vincemmo 3-1 e poi...\"",
+          "url": "https://www.fcinternews.it/news/bastoni-i-sky-i-calma-giudizi-vincemmo-3-1-poi-1019885"
+        },
+        {
+          "outlet": "FCInter1908",
+          "title": "Inter, novità su Calhanoglu da Appiano! Dimarco e Stones...",
+          "url": "https://www.fcinter1908.it/news/infortuni/inter-appiano-notizia-importante-calhanoglu-rientri-dimarco-stones/"
+        },
+        {
+          "outlet": "FCInter1908",
+          "title": "Sky - Rinnovo Calhanoglu, ecco la possibile offerta dell'Inter",
+          "url": "https://www.fcinter1908.it/calciomercato/mercato-inter/sky-rinnovo-calhanoglu-ecco-la-possibile-offerta-dellinter-scenario-tra-ingaggio-e-bonus/"
+        },
+        {
+          "outlet": "Corriere dello Sport",
+          "title": "Jeltsch è l'ultima grande idea dell'Inter per la difesa",
+          "url": "https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/10/03-151613824/jeltsch_lultima_grande_idea_dellinter_per_la_difesa_chivu_lo_vuole_ma_costa_tanto_e_in_premier"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter's schedule after the break",
+          "url": "https://www.inter.it/en/news/inter-ticket-calendar-october-matches-san-siro"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter Women",
+          "url": "https://www.inter.it/en/inter-women"
+        },
+        {
+          "outlet": "World Soccer Talk",
+          "title": "Serie A TV schedule: how to watch in the USA",
+          "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+        },
+        {
+          "outlet": "World Soccer Talk",
+          "title": "Champions League TV schedule",
+          "url": "https://worldsoccertalk.com/champions-league-tv-schedule/"
+        }
+      ]
+    }
+  ]
+}
