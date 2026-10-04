@@ -427,11 +427,15 @@ def page_blocks(d):
     close()
     return ''.join(out)
 
+def seo_title(title):
+    """Search title for an edition page: makes sure the word Inter is in it (people search 'Inter ...')."""
+    return title if 'inter' in title.lower() else f'Inter: {title}'
+
 def render_page(d):
     n = d['n']; title = d['title']; desc = d['description']; ld = longdate(d['date'])
     alt = d.get('mast_alt') or f"Nerazzurri Daily Edition No. {n}, {ld} — {title}"
     head = (f'<!doctype html><html lang="en"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n'
-            f'<title>{esc(title)} — Nerazzurri Daily No. {n}</title>'
+            f'<title>{esc(seo_title(title))} — Inter Milan news in English · No. {n}</title>'
             + meta(title, desc, f'{SITE}/p/edition-{n}/', f'{SITE}/assets/mast/edition-{n:02d}.png', 'article', d['date'])
             + jsonld_article(n, title, desc, d['date'], f'{SITE}/assets/mast/edition-{n:02d}.png')
             + f'{FONTS}\n{SIB_CSS}\n<style>{CSS}{FORM_CSS}</style></head>')
@@ -652,8 +656,8 @@ def build_index():
     first = min(e[1] for e in eds)
     home_desc = 'Inter Milan in English, every morning, in 90 seconds \u2014 what the club has confirmed, kept apart from what the papers are only reporting, with the source and date on every item. Free.'
     page = (f'<!doctype html><html lang="en"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n'
-            f'<title>Nerazzurri Daily \u2014 Inter Milan in English, every morning</title>'
-            + meta('Nerazzurri Daily \u2014 Inter Milan in English, every morning', home_desc, f'{SITE}/', OG_BRAND)
+            f'<title>Inter Milan news in English, every morning \u2014 Nerazzurri Daily</title>'
+            + meta('Inter Milan news in English, every morning \u2014 Nerazzurri Daily', home_desc, f'{SITE}/', OG_BRAND)
             + f'{FONTS}\n{SIB_CSS}\n<style>{CSS}{FORM_CSS}{HOME_CSS}</style></head>'
             f'<body><div class="sheet">\n<div class="top"><a class="wm" href="./">NERAZZURRI <b>DAILY</b></a><span class="util">{len(eds)} editions · <a href="/fixtures/">Fixtures (ET)</a> · <a href="#subscribe">Subscribe</a></span></div>\n'
             f'<div class="hero2"><div><h1 class="hero-h">{esc(HEADLINE)}</h1><p class="hero-p">{esc(SUBLINE)}</p>'
