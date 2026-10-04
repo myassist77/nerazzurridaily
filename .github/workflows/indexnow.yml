@@ -1,0 +1,40 @@
+name: indexnow
+# Tells Bing / Yandex / Seznam / Naver (IndexNow) about new or changed pages as soon as they land on main.
+on:
+  push:
+    branches: [main]
+    paths: ['p/**', 'index.html', 'sitemap.xml', 'fixtures/**', 'subscribe/index.html']
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - name: Wait for Pages to publish
+        run: sleep 90
+      - name: Ping IndexNow
+        run: |
+          python3 - <<'PY'
+          import json, re, subprocess, urllib.request
+          KEY = "6853e0b381f80722f7022dc7cfe8c2c9"
+          HOST = "www.nerazzurridaily.com"
+          if subprocess.run(["git", "rev-parse", "HEAD~1"], capture_output=True).returncode == 0:
+              changed = subprocess.run(["git", "diff", "--name-only", "HEAD~1", "HEAD"], capture_output=True, text=True).stdout.split()
+          else:
+              changed = []
+          urls = set()
+          for f in changed:
+              if f == "index.html" or f == "sitemap.xml": urls.add(f"https://{HOST}/")
+              m = re.match(r"(p/edition-\d+|fixtures|subscribe)/index\.html$", f)
+              if m: urls.add(f"https://{HOST}/{m.group(1)}/")
+          if not urls:  # manual run: send the whole sitemap
+              sm = open("sitemap.xml", encoding="utf-8").read()
+              urls = set(re.findall(r"<loc>(.*?)</loc>", sm))
+          body = json.dumps({"host": HOST, "key": KEY, "keyLocation": f"https://{HOST}/{KEY}.txt", "urlList": sorted(urls)}).encode()
+          req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body, headers={"Content-Type": "application/json; charset=utf-8"})
+          try:
+              with urllib.request.urlopen(req, timeout=30) as r: print("IndexNow", r.status, sorted(urls))
+          except urllib.error.HTTPError as e:
+              print("IndexNow HTTP", e.code, e.read()[:300]); raise SystemExit(0 if e.code in (200, 202) else 1)
+          PY
