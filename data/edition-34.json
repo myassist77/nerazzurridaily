@@ -1,0 +1,247 @@
+{
+  "n": 34,
+  "date": "2026-10-05",
+  "title": "Inter Women win at Como and stay perfect in the league",
+  "description": "Aleksandar Stankovic started again as Serbia lost 2–1 in the Netherlands, and the club has published a month of nine matches in 29 days.",
+  "mast_alt": "Nerazzurri Daily Edition No. 34, Monday, October 5, 2026 — Inter Women win at Como and stay perfect in the league",
+  "blocks": [
+    {
+      "t": "dek",
+      "html": "Inter Women <a href=\"https://www.inter.it/en/news/como-women-inter-women-serie-a-women-2026-27\" rel=\"noopener\">won 2–0 at Como Women on Sunday</a>, two wins from two in Serie A Women. Karólína Lea Vilhjálmsdóttir scored a penalty and Haley Bugeja the second. Aleksandar Stankovic <a href=\"https://www.inter.it/it/notizie/nazionali-stankovic-serbia-olanda-partite-nations-league-4-ottobre-2026\" rel=\"noopener\">started again for Serbia</a>, who lost 2–1 in the Netherlands. The club has also published <a href=\"https://www.inter.it/it/notizie/inter-calendario-biglietti-partite-ottobre-san-siro\" rel=\"noopener\">the month ahead</a>: nine matches in 29 days, five of them at San Siro."
+    },
+    {
+      "t": "scoreboard",
+      "rows": [
+        {
+          "label": "TODAY",
+          "name": "No match",
+          "venue": null,
+          "line": "INTERNATIONAL BREAK · SERIE A RESUMES SAT, OCT 10"
+        },
+        {
+          "label": "LAST",
+          "name": "Inter 2–0 Lumezzane",
+          "venue": null,
+          "line": "FRIENDLY · APPIANO GENTILE · CLOSED DOORS"
+        },
+        {
+          "label": "NEXT",
+          "name": "Parma",
+          "venue": "HOME",
+          "line": "SAT, OCT 10 · SERIE A · 12:00 PM ET"
+        }
+      ]
+    },
+    {
+      "t": "bar",
+      "kind": "c",
+      "label": "CONFIRMED",
+      "sub": "CLUB · LEAGUE · UEFA"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Inter Women win at Como and go into the break on six points",
+      "paras": [
+        "Inter Women won 2–0 away at Como Women on Sunday, a second league win in two games. Karólína Lea Vilhjálmsdóttir, the Inter midfielder, scored the first from the penalty spot, given in the 59th minute for a handball on a corner.",
+        "Haley Bugeja, the Inter striker, came off the bench and made it two in the 83rd minute, running onto a pass from Benedetta Glionna. Glionna, the Inter forward, had a hand in both goals.",
+        "David Sassarini's team have six points from two games, and return on October 18 at home to Parma."
+      ],
+      "kicker": "INTER.IT · OCT 4"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Stankovic starts again as Serbia lose in Eindhoven",
+      "paras": [
+        "Aleksandar Stankovic, the Inter midfielder, made his second Nations League start on Sunday. Serbia lost 2–1 to the Netherlands in Eindhoven, and he came off after 66 minutes.",
+        "Serbia went behind, equalized in the first half, and then conceded the winner in the 72nd minute. They are bottom of their League A group with no points from four games."
+      ],
+      "kicker": "INTER.IT · OCT 4"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Nine matches in 29 days, five of them at San Siro",
+      "paras": [
+        "The club has set out the month ahead: nine matches in 29 days, six in Serie A and three in the Champions League. Five of them are at San Siro, and the first Milan derby is away on Saturday, October 31."
+      ],
+      "kicker": "INTER.IT · OCT 2"
+    },
+    {
+      "t": "bar",
+      "kind": "r",
+      "label": "REPORTED",
+      "sub": "PRESS ONLY · NOT YET OFFICIAL"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Quotidiano Sportivo: Calhanoglu back in full training today or tomorrow",
+      "paras": [
+        "Quotidiano Sportivo, an Italian sports daily, reports via FCInter1908 that Hakan Calhanoglu, the Inter midfielder, could be back in full training with the group today or tomorrow. He did not play in Saturday's friendly against Lumezzane.",
+        "What is new is the date. FCInterNews had him back in group training early this week; the paper now has him fit to be an option against Parma. It also expects Federico Dimarco, the Inter left back, to start on Saturday."
+      ],
+      "kicker": "UPDATE · QUOTIDIANO SPORTIVO VIA FCINTER1908 · OCT 5"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Corriere dello Sport: five wide players for two spots",
+      "paras": [
+        "Corriere dello Sport reports that Cristian Chivu, the Inter head coach, has all five of his wide players available for the first time this season. They are Djed Spence, Federico Dimarco, Andy Diouf, Luis Henrique and Carlos Augusto.",
+        "The paper's question is who plays on the right. Diouf has started five of Inter's six games; Spence is back after two months out and still needs match fitness. Corriere dello Sport reads Diouf as the more attacking and Spence as the more defensive."
+      ],
+      "kicker": "CORRIERE DELLO SPORT · OCT 5"
+    },
+    {
+      "t": "section",
+      "head": "LATEST RESULT",
+      "meta": "FRIENDLY · APPIANO GENTILE · CLOSED DOORS"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Inter 2–0 Lumezzane",
+      "paras": [
+        "MKHITARYAN 14' · AGBONIFO 62'"
+      ],
+      "kicker": "SERIE A FORM W W W W D · THIRTEEN POINTS · SECOND ON GOAL DIFFERENCE"
+    },
+    {
+      "t": "section",
+      "head": "NEXT UP",
+      "meta": "OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+    },
+    {
+      "t": "fixtures",
+      "rows": [
+        {
+          "name": "Parma",
+          "venue": "HOME",
+          "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+        },
+        {
+          "name": "Club Brugge",
+          "venue": "HOME",
+          "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE · MATCHDAY 2",
+          "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+ · VIX"
+        },
+        {
+          "name": "Bologna",
+          "venue": "AWAY",
+          "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+        },
+        {
+          "name": "Shakhtar Donetsk",
+          "venue": "HOME",
+          "line2": "WED, OCT 21 · CHAMPIONS LEAGUE · MATCHDAY 3",
+          "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+ · VIX"
+        },
+        {
+          "name": "Fiorentina",
+          "venue": "HOME",
+          "line2": "SUN, OCT 25 · SERIE A · MATCHDAY 8",
+          "line3": "7:30 AM ET · 12:30 CET · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+        }
+      ]
+    },
+    {
+      "t": "note",
+      "html": "Kickoff times are the club's; US listings are World Soccer Talk's. No US listing yet for Inter Women's home game with Parma on October 18. Milan moves to CET on October 25, so Fiorentina is 7:30 AM ET (12:30 CET)."
+    },
+    {
+      "t": "ask",
+      "html": "Reply to this email with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+    },
+    {
+      "t": "next",
+      "text": "TUESDAY, OCTOBER 6 — ARGENTINA, BENIN, AND MESSI'S GOODBYE"
+    },
+    {
+      "t": "follow",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@nerazzurridaily"
+        },
+        {
+          "label": "TikTok",
+          "url": "https://www.tiktok.com/@nerazzurridaily"
+        }
+      ]
+    },
+    {
+      "t": "sources",
+      "links": [
+        {
+          "outlet": "Inter.it",
+          "title": "A dominant Inter beats Como Women 2-0 with goals from Vilhjálmsdóttir and Bugeja",
+          "url": "https://www.inter.it/en/news/como-women-inter-women-serie-a-women-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Una grande Inter batte 0-2 il Como Women con Vilhjálmsdóttir e Bugeja",
+          "url": "https://www.inter.it/it/notizie/como-women-inter-women-serie-a-femminile-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Como Women - Inter, le formazioni ufficiali",
+          "url": "https://www.inter.it/it/notizie/formazioni-ufficiali-como-women-inter-women-serie-a-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Women First Team: the squad list",
+          "url": "https://www.inter.it/en/teams/inter-women"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Nations League, Stankovic titolare con la Serbia",
+          "url": "https://www.inter.it/it/notizie/nazionali-stankovic-serbia-olanda-partite-nations-league-4-ottobre-2026"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Argentina, Lautaro in gol contro il Burkina Faso",
+          "url": "https://www.inter.it/it/notizie/lautaro-martinez-gol-argentina-burkina-faso-amichevole-2026"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Ottobre nerazzurro: il calendario dell'Inter dopo la sosta",
+          "url": "https://www.inter.it/it/notizie/inter-calendario-biglietti-partite-ottobre-san-siro"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter beat Lumezzane 2-0 in friendly",
+          "url": "https://www.inter.it/en/news/inter-lumezzane-friendly-appiano-gentile-3-october-2026"
+        },
+        {
+          "outlet": "FCInter1908",
+          "title": "Inter, Dimarco pronto per il Parma. Le ultime su Calhanoglu: quando tornerà in gruppo",
+          "url": "https://www.fcinter1908.it/news/infortuni/inter-dimarco-parma-calhanoglu-quando-gruppo/"
+        },
+        {
+          "outlet": "FCInterNews",
+          "title": "Tabella di rientro rispettata: Calhanoglu out in amichevole",
+          "url": "https://www.fcinternews.it/focus/tabella-rientro-rispettata-calhanoglu-out-amichevole-1019919"
+        },
+        {
+          "outlet": "Corriere dello Sport",
+          "title": "Chivu fa il pieno di esterni: cinque giocatori per due caselle",
+          "url": "https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/10/05-151669613/chivu_fa_il_pieno_di_esterni_cinque_giocatori_per_due_caselle"
+        },
+        {
+          "outlet": "World Soccer Talk",
+          "title": "Serie A TV schedule: how to watch in the USA",
+          "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+        },
+        {
+          "outlet": "World Soccer Talk",
+          "title": "Champions League TV schedule",
+          "url": "https://worldsoccertalk.com/champions-league-tv-schedule/"
+        }
+      ]
+    }
+  ]
+}
