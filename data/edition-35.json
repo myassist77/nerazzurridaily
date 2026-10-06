@@ -1,0 +1,253 @@
+{
+  "n": 35,
+  "date": "2026-10-06",
+  "title": "Pio Esposito scores Italy's third against T\u00fcrkiye",
+  "description": "FCInterNews has Hakan Calhanoglu back in full training with the group, with John Stones the only Inter player still working on his own.",
+  "mast_alt": "Nerazzurri Daily Edition No. 35, Tuesday, October 6, 2026 \u2014 Pio Esposito scores Italy's third against T\u00fcrkiye",
+  "blocks": [
+    {
+      "t": "dek",
+      "html": "Francesco Pio Esposito came off the bench in Bologna on Monday night and <a href=\"https://www.inter.it/en/news/national-goal-pio-esposito-italy-turkiye-nations-league-5-october-2026\" rel=\"noopener\">scored Italy's third in a 3\u20131 win over T\u00fcrkiye</a>. It was his seventh goal in 13 appearances for his country. Alessandro Bastoni played the full 90 minutes and Nicol\u00f2 Barella 70. At Appiano Gentile, Inter's training ground, <a href=\"https://www.fcinternews.it/focus/fcin-calhanoglu-gruppo-bonny-rientra-nazionale-stones-1020098\" rel=\"noopener\">FCInterNews has Hakan Calhanoglu back in full training</a>, four days before <a href=\"https://www.inter.it/en/news/inter-ticket-calendar-october-matches-san-siro\" rel=\"noopener\">Parma come to San Siro</a>."
+    },
+    {
+      "t": "scoreboard",
+      "rows": [
+        {
+          "label": "TODAY",
+          "name": "No match",
+          "venue": null,
+          "line": "INTERNATIONAL BREAK \u00b7 SERIE\u00a0A RESUMES SAT,\u00a0OCT\u00a010"
+        },
+        {
+          "label": "LAST",
+          "name": "Inter 2\u20130 Lumezzane",
+          "venue": null,
+          "line": "FRIENDLY \u00b7 APPIANO\u00a0GENTILE \u00b7 OCT\u00a03"
+        },
+        {
+          "label": "NEXT",
+          "name": "Parma",
+          "venue": "HOME",
+          "line": "SAT,\u00a0OCT\u00a010 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a06 \u00b7 12:00\u00a0PM\u00a0ET"
+        }
+      ]
+    },
+    {
+      "t": "bar",
+      "kind": "c",
+      "label": "CONFIRMED",
+      "sub": "CLUB \u00b7 LEAGUE \u00b7 UEFA"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Pio Esposito scores Italy's third at the Dall'Ara",
+      "paras": [
+        "Francesco Pio Esposito, the Inter striker, replaced Gianluca Scamacca in the 56th minute and scored in the 88th, turning in a driven cross.",
+        "Scamacca, the Italy striker, had opened the scoring in the 26th minute. T\u00fcrkiye drew level through \u015eim\u015fir in the 60th. Riccardo Calafiori, the Arsenal defender, headed Italy back in front in the 64th. The crowd at the Stadio Dall'Ara was 30,040.",
+        "Alessandro Bastoni played the whole match. Nicol\u00f2 Barella came off for Sandro Tonali after 70 minutes. Italy are second in their group on seven points, three behind France."
+      ],
+      "kicker": "INTER.IT AND FIGC \u00b7 OCT 5"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Thirteen Nerazzurre leave for international duty",
+      "paras": [
+        "Inter have 13 women away with their national teams this week, from nine countries. Italy take four: Elisa Bartoli, Michela Cambiaghi, Benedetta Glionna and Elisa Polli. Iceland take two, the goalkeeper Cecil\u00eda R\u00fanarsd\u00f3ttir and Kar\u00f3l\u00edna Lea Vilhj\u00e1lmsd\u00f3ttir.",
+        "The rest go to Belgium, Bosnia, the Dominican Republic, Haiti, Malta, Montenegro and Nigeria. Most play on October 9 and again on October 13."
+      ],
+      "kicker": "INTER.IT \u00b7 OCT 5"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "The club's film of the Double season is out",
+      "paras": [
+        "Inter Media House released Solo Noi \u2014 only us \u2014 on Monday. It is a documentary on the 2025/26 season, the club's 21st league title and 10th Coppa Italia. Stefano Accorsi, the Italian actor, narrates.",
+        "It is pay-per-view: Sky Primafila on demand, DAZN and OneFootball."
+      ],
+      "kicker": "INTER.IT \u00b7 OCT 5"
+    },
+    {
+      "t": "bar",
+      "kind": "r",
+      "label": "REPORTED",
+      "sub": "PRESS ONLY \u00b7 NOT YET OFFICIAL"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "FCInterNews: Calhanoglu in with the group, Stones the only one outside it",
+      "paras": [
+        "FCInterNews reports that Hakan Calhanoglu, the Inter midfielder, trained with the group on Monday afternoon after a muscle injury. Ange-Yoan Bonny, the Inter forward, is back from duty with Ivory Coast.",
+        "What is new is Monday's session. Quotidiano Sportivo had him due back today or tomorrow; FCInterNews has him already in. The same report leaves John Stones, the Inter defender, as the only player working alone, hurt against Udinese and a doubt for Saturday."
+      ],
+      "kicker": "UPDATE \u00b7 FCINTERNEWS \u00b7 OCT 5"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Tuttosport: Anguissa, Kovacic and Bernab\u00e9 on Baccin's desk",
+      "paras": [
+        "Tuttosport, via FCInter1908, reports that Dario Baccin, an Inter director, is working through midfield files for next summer. The names are Andr\u00e9-Frank Zambo Anguissa of Napoli and Mateo Kovacic, who is out of contract at Manchester City. The third is Adrian Bernab\u00e9 of Parma, whose deal runs to June 2027 and who the paper calls the low-cost option.",
+        "No fee is quoted and nothing is close. Bernab\u00e9 is at San Siro on Saturday."
+      ],
+      "kicker": "TUTTOSPORT VIA FCINTER1908 \u00b7 OCT 6"
+    },
+    {
+      "t": "section",
+      "head": "LATEST RESULT",
+      "meta": "FRIENDLY \u00b7 APPIANO\u00a0GENTILE \u00b7 OCT\u00a03"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Inter 2\u20130 Lumezzane",
+      "paras": [
+        "MKHITARYAN 14' \u00b7 AGBONIFO 62'"
+      ],
+      "kicker": "SERIE A FORM W W W W D \u00b7 THIRTEEN POINTS \u00b7 SECOND ON GOAL DIFFERENCE"
+    },
+    {
+      "t": "section",
+      "head": "NEXT UP",
+      "meta": "OCTOBER \u00b7 EASTERN TIME FIRST, MILAN SECOND"
+    },
+    {
+      "t": "fixtures",
+      "rows": [
+        {
+          "name": "Parma",
+          "venue": "HOME",
+          "line2": "SAT,\u00a0OCT\u00a010 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a06",
+          "line3": "12:00\u00a0PM\u00a0ET \u00b7 18:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+        },
+        {
+          "name": "Club Brugge",
+          "venue": "HOME",
+          "line2": "TUE,\u00a0OCT\u00a013 \u00b7 CHAMPIONS\u00a0LEAGUE \u00b7 MATCHDAY\u00a02",
+          "line3": "3:00\u00a0PM\u00a0ET \u00b7 21:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 VIX"
+        },
+        {
+          "name": "Bologna",
+          "venue": "AWAY",
+          "line2": "SAT,\u00a0OCT\u00a017 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a07",
+          "line3": "12:00\u00a0PM\u00a0ET \u00b7 18:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+        },
+        {
+          "name": "Shakhtar Donetsk",
+          "venue": "HOME",
+          "line2": "WED,\u00a0OCT\u00a021 \u00b7 CHAMPIONS\u00a0LEAGUE \u00b7 MATCHDAY\u00a03",
+          "line3": "3:00\u00a0PM\u00a0ET \u00b7 21:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 VIX"
+        },
+        {
+          "name": "Fiorentina",
+          "venue": "HOME",
+          "line2": "SUN,\u00a0OCT\u00a025 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a08",
+          "line3": "7:30\u00a0AM\u00a0ET \u00b7 12:30\u00a0CET \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+        }
+      ]
+    },
+    {
+      "t": "note",
+      "html": "Kickoff times are the club's; US listings are World Soccer Talk's. Milan moves to CET on October 25, so Fiorentina is 7:30 AM ET (12:30 CET). No US listing yet for Inter Women's home game with Parma on October 18."
+    },
+    {
+      "t": "ask",
+      "html": "Reply to this email with one word \u2014 which of today's items should I chase tomorrow? \u2014 and tell me where you're reading from. I read every one."
+    },
+    {
+      "t": "next",
+      "text": "WEDNESDAY, OCTOBER 7 \u2014 WHO IS FIT FOR PARMA"
+    },
+    {
+      "t": "follow",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@nerazzurridaily"
+        },
+        {
+          "label": "TikTok",
+          "url": "https://www.tiktok.com/@nerazzurridaily"
+        }
+      ]
+    },
+    {
+      "t": "sources",
+      "links": [
+        {
+          "outlet": "Inter.it",
+          "title": "Nations League: Pio Esposito on target in Italy win",
+          "url": "https://www.inter.it/en/news/national-goal-pio-esposito-italy-turkiye-nations-league-5-october-2026"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Nations League, Pio Esposito in gol nella vittoria dell'Italia",
+          "url": "https://www.inter.it/it/notizie/nazionali-gol-pio-esposito-italia-turchia-nations-league-5-ottobre-2026"
+        },
+        {
+          "outlet": "FIGC",
+          "title": "Three more points against T\u00fcrkiye as Scamacca, Calafiori and Pio Esposito strike in Bologna",
+          "url": "https://www.figc.it/en/national-teams/news/three-more-points-against-turkiye-as-scamacca-calafiori-and-pio-esposito-strike-in-bologna-u4ppk93x"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Women, the Nerazzurre called up for international duty",
+          "url": "https://www.inter.it/en/news/players-inter-women-called-up-internationals-october-2026"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Solo Noi. A Double-winning season",
+          "url": "https://www.inter.it/en/news/solo-noi-a-double-winning-season-2026"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "L'allenamento dell'Inter ad Appiano Gentile",
+          "url": "https://www.inter.it/it/notizie/allenamento-inter-5-ottobre-2026"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter's schedule after the break",
+          "url": "https://www.inter.it/en/news/inter-ticket-calendar-october-matches-san-siro"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter vs. Parma: where to watch",
+          "url": "https://www.inter.it/en/news/inter-vs-parma-where-to-watch"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter beat Lumezzane 2-0 in friendly",
+          "url": "https://www.inter.it/en/news/inter-lumezzane-friendly-appiano-gentile-3-october-2026"
+        },
+        {
+          "outlet": "FCInterNews",
+          "title": "Calhanoglu in gruppo, Bonny rientra dalla nazionale. A parte solo Stones",
+          "url": "https://www.fcinternews.it/focus/fcin-calhanoglu-gruppo-bonny-rientra-nazionale-stones-1020098"
+        },
+        {
+          "outlet": "FCInter1908",
+          "title": "Inter, da Anguissa a Kovacic e Meret: i dossier sul tavolo di Baccin",
+          "url": "https://www.fcinter1908.it/calciomercato/mercato-inter/inter-anguissa-kovacic-dossier-baccin-nome-nuovo/"
+        },
+        {
+          "outlet": "Sky Sport Italia",
+          "title": "Classifica Serie A 2026/2027",
+          "url": "https://sport.sky.it/calcio/serie-a/classifica"
+        },
+        {
+          "outlet": "World Soccer Talk",
+          "title": "Serie A TV schedule: how to watch in the USA",
+          "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+        },
+        {
+          "outlet": "World Soccer Talk",
+          "title": "Champions League TV schedule",
+          "url": "https://worldsoccertalk.com/champions-league-tv-schedule/"
+        }
+      ]
+    }
+  ]
+}
