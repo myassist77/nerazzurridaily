@@ -52,6 +52,8 @@ FIX = {
     "FCInterNews": "ˌɛffetʃˈi ˈinter njˈuz",
     "Andy Diouf": "ˈandi djˈuf", "Diouf": "djˈuf",
     "Milito": "milˈito", "Diego Milito": "djˈeɡo milˈito",   # Italian G2P stressed the first syllable (Sept 30, 2026)
+    # Initialisms are letter names, not words: Italian G2P read TyC as "tee-chee" (Oct 7, 2026)
+    "TyC Sport": "tˈiː wˈaɪ sˈiː spˈɔːɹt", "TyC": "tˈiː wˈaɪ sˈiː",
 }
 
 ONES = "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen".split()
