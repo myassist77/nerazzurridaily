@@ -8,6 +8,14 @@
   "state": "SUBMITTED",
   "url": null
  },
- "youtube": null,
- "updated_at_utc": "2026-10-07T17:43:30Z"
+ "youtube": {
+  "post_id": "cmuyeciis01mrmm0yok6ci4sv",
+  "posted_at_utc": "2026-10-07T17:44:30Z",
+  "state": "SUBMITTED",
+  "video_id": null,
+  "url": null,
+  "privacy": null,
+  "comment": "unknown"
+ },
+ "updated_at_utc": "2026-10-07T17:43:53Z"
 }
