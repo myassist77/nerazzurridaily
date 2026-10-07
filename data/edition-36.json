@@ -1,0 +1,234 @@
+{
+  "n": 36,
+  "date": "2026-10-07",
+  "title": "Lautaro plays in Messi's farewell and may miss Parma",
+  "description": "Hakan Calhanoglu was in the group the club listed at Appiano Gentile on Tuesday, four days before Parma come to San Siro.",
+  "mast_alt": "Nerazzurri Daily Edition No. 36, Wednesday, October 7, 2026 \u2014 Lautaro plays in Messi's farewell and may miss Parma",
+  "blocks": [
+    {
+      "t": "dek",
+      "html": "Lautaro Mart\u00ednez, Inter's captain, started at the Estadio Monumental on Tuesday night as <a href=\"https://www.nbcphiladelphia.com/news/sports/soccer/messi-final-game-argentina-benin-score/4475321/\" rel=\"noopener\">Argentina beat Benin 3\u20130</a>. Lionel Messi, in his last match for Argentina, set up Nicol\u00e1s Otamendi in the 48th minute and Nico Paz in the 61st, then scored a penalty in the 71st. At Appiano Gentile, Inter's training ground, <a href=\"https://www.inter.it/it/notizie/allenamento-inter-6-ottobre-2026\" rel=\"noopener\">Hakan Calhanoglu was in the group again</a>, four days before Parma."
+    },
+    {
+      "t": "scoreboard",
+      "rows": [
+        {
+          "label": "TODAY",
+          "name": "No match",
+          "venue": null,
+          "line": "INTERNATIONAL\u00a0BREAK \u00b7 SERIE\u00a0A RESUMES SAT,\u00a0OCT\u00a010"
+        },
+        {
+          "label": "LAST",
+          "name": "Inter 2\u20130 Lumezzane",
+          "venue": null,
+          "line": "FRIENDLY \u00b7 APPIANO\u00a0GENTILE \u00b7 OCT\u00a03"
+        },
+        {
+          "label": "NEXT",
+          "name": "Parma",
+          "venue": "HOME",
+          "line": "SAT,\u00a0OCT\u00a010 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a06 \u00b7 12:00\u00a0PM\u00a0ET"
+        }
+      ]
+    },
+    {
+      "t": "bar",
+      "kind": "c",
+      "label": "CONFIRMED",
+      "sub": "CLUB \u00b7 LEAGUE \u00b7 UEFA"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Calhanoglu is in the group as Inter turn toward Parma",
+      "paras": [
+        "Inter trained at Appiano Gentile on Tuesday under Cristian Chivu, the head coach. Hakan Calhanoglu, the Inter midfielder, was in the squad the club listed, after an international break spent coming back from a muscle problem.",
+        "What is new is that the club itself now names him with the group. Yesterday that came from FCInterNews. Marcus Thuram, Ange-Yoan Bonny, Federico Dimarco, Benjamin Pavard, Henrikh Mkhitaryan, Curtis Jones, Djed Spence and Ivan Provedel were all named too.",
+        "John Stones, the Inter defender, is not among the names. Inter host Parma on Saturday at 12:00 PM ET, 18:00 CEST."
+      ],
+      "kicker": "UPDATE \u00b7 INTER.IT \u00b7 OCT 6"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Parma lose Almqvist before San Siro",
+      "paras": [
+        "Pontus Almqvist, the Parma forward, will not play on Saturday. The club said on Tuesday that tests found \"una lesione di basso grado del polpaccio della gamba sinistra\" \u2014 a low-grade tear in his left calf.",
+        "He begins rehabilitation on Wednesday. Parma gave no return date."
+      ],
+      "kicker": "PARMA CALCIO \u00b7 OCT 6"
+    },
+    {
+      "t": "bar",
+      "kind": "r",
+      "label": "REPORTED",
+      "sub": "PRESS ONLY \u00b7 NOT YET OFFICIAL"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "TyC Sport: Lautaro gets home with 48 hours to spare",
+      "paras": [
+        "TyC Sport, the Buenos Aires broadcaster, reports through FCInter1908 that Lautaro Mart\u00ednez has about 11,000 kilometers \u2014 some 6,800 miles \u2014 to travel home. He lands in Milan roughly 48 hours before kickoff, which the report calls close to impossible for a start.",
+        "Inter agreed to the trip. Seven matches in 21 days follow Saturday, and TyC Sport expects Chivu to rest him at the start of that run."
+      ],
+      "kicker": "TYC SPORT VIA FCINTER1908 \u00b7 OCT 6"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Gazzetta dello Sport: Chalobah, not Gila, was the summer plan",
+      "paras": [
+        "Gazzetta dello Sport, Italy's biggest sports daily, reports through FCInter1908 that Inter's first choice for the defense last summer was Trevoh Chalobah, who went to Como instead. Mario Gila of Lazio was never pursued.",
+        "Gila said this week at the Festival dello Sport in Trento that Inter had shown interest. The paper's answer is that the defense was already full once Benjamin Pavard was back and John Stones had signed. No fee is quoted."
+      ],
+      "kicker": "GAZZETTA DELLO SPORT VIA FCINTER1908 \u00b7 OCT 6"
+    },
+    {
+      "t": "section",
+      "head": "LATEST RESULT",
+      "meta": "FRIENDLY \u00b7 APPIANO\u00a0GENTILE \u00b7 OCT\u00a03"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Inter 2\u20130 Lumezzane",
+      "paras": [
+        "MKHITARYAN 14' \u00b7 AGBONIFO 62'",
+        "Played over two 35-minute halves at the training center."
+      ],
+      "kicker": "SERIE A FORM W W W W D \u00b7 THIRTEEN POINTS \u00b7 SECOND ON GOAL DIFFERENCE"
+    },
+    {
+      "t": "section",
+      "head": "NEXT UP",
+      "meta": "OCTOBER \u00b7 EASTERN TIME FIRST, MILAN SECOND"
+    },
+    {
+      "t": "fixtures",
+      "rows": [
+        {
+          "name": "Parma",
+          "venue": "HOME",
+          "line2": "SAT,\u00a0OCT\u00a010 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a06",
+          "line3": "12:00\u00a0PM\u00a0ET \u00b7 18:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+        },
+        {
+          "name": "Club Brugge",
+          "venue": "HOME",
+          "line2": "TUE,\u00a0OCT\u00a013 \u00b7 CHAMPIONS\u00a0LEAGUE \u00b7 MATCHDAY\u00a02",
+          "line3": "3:00\u00a0PM\u00a0ET \u00b7 21:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0PARAMOUNT+"
+        },
+        {
+          "name": "Bologna",
+          "venue": "AWAY",
+          "line2": "SAT,\u00a0OCT\u00a017 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a07",
+          "line3": "12:00\u00a0PM\u00a0ET \u00b7 18:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+        },
+        {
+          "name": "Shakhtar Donetsk",
+          "venue": "HOME",
+          "line2": "WED,\u00a0OCT\u00a021 \u00b7 CHAMPIONS\u00a0LEAGUE \u00b7 MATCHDAY\u00a03",
+          "line3": "3:00\u00a0PM\u00a0ET \u00b7 21:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0PARAMOUNT+"
+        },
+        {
+          "name": "Fiorentina",
+          "venue": "HOME",
+          "line2": "SUN,\u00a0OCT\u00a025 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a08",
+          "line3": "7:30\u00a0AM\u00a0ET \u00b7 12:30\u00a0CET \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+        }
+      ]
+    },
+    {
+      "t": "note",
+      "html": "Kickoff times are the club's; US listings are World Soccer Talk's. Milan moves to CET on October 25, so Fiorentina is 7:30 AM ET (12:30 CET)."
+    },
+    {
+      "t": "ask",
+      "html": "Reply to this email with one word \u2014 which of today's items should I chase tomorrow? \u2014 and tell me where you're reading from. I read every one."
+    },
+    {
+      "t": "next",
+      "text": "THURSDAY, OCTOBER 8 \u2014 THE LAST LOOK AT THE SQUAD BEFORE PARMA"
+    },
+    {
+      "t": "follow",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@nerazzurridaily"
+        },
+        {
+          "label": "TikTok",
+          "url": "https://www.tiktok.com/@nerazzurridaily"
+        }
+      ]
+    },
+    {
+      "t": "sources",
+      "links": [
+        {
+          "outlet": "Inter.it",
+          "title": "Verso Inter-Parma, l'allenamento dei nerazzurri",
+          "url": "https://www.inter.it/it/notizie/allenamento-inter-6-ottobre-2026"
+        },
+        {
+          "outlet": "Parma Calcio",
+          "title": "Bollettino medico: Pontus Almqvist",
+          "url": "https://www.parmacalcio1913.com/news/bollettino-medico-pontus-almqvist-2/"
+        },
+        {
+          "outlet": "NBC Philadelphia",
+          "title": "Messi scores, tallies 2 assists as Argentina beats Benin 3-0",
+          "url": "https://www.nbcphiladelphia.com/news/sports/soccer/messi-final-game-argentina-benin-score/4475321/"
+        },
+        {
+          "outlet": "Flashscore",
+          "title": "Messi gets one last goal and emotional farewell in final match for Argentina",
+          "url": "https://www.flashscore.com/news/soccer-lionel-messi-argentina-benin-report-october-7-2026/CfxoPT95/"
+        },
+        {
+          "outlet": "FCInter1908",
+          "title": "Lautaro, la scelta dell'Inter dopo 11.000 km: verso il riposo col Parma",
+          "url": "https://www.fcinter1908.it/ultimora/lautaro-scelta-inter-dopo-11000-km-parma/"
+        },
+        {
+          "outlet": "FCInter1908",
+          "title": "La Gazzetta svela: Gila non era il vero obiettivo dell'Inter",
+          "url": "https://www.fcinter1908.it/calciomercato/mercato-inter/mercato-gazzetta-svela-gila-vero-obiettivo-inter/"
+        },
+        {
+          "outlet": "FCInterNews",
+          "title": "Qui Parma - Lesione muscolare per Almqvist: salter\u00e0 l'Inter",
+          "url": "https://www.fcinternews.it/l-avversario/parma-lesione-muscolare-almqvist-saltera-inter-1020183"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter beat Lumezzane 2-0 in friendly",
+          "url": "https://www.inter.it/en/news/inter-lumezzane-friendly-appiano-gentile-3-october-2026"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter vs. Parma: where to watch",
+          "url": "https://www.inter.it/en/news/inter-vs-parma-where-to-watch"
+        },
+        {
+          "outlet": "Sky Sport Italia",
+          "title": "Classifica Serie A 2026/2027",
+          "url": "https://sport.sky.it/calcio/serie-a/classifica"
+        },
+        {
+          "outlet": "World Soccer Talk",
+          "title": "Serie A TV schedule: how to watch in the USA",
+          "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+        },
+        {
+          "outlet": "World Soccer Talk",
+          "title": "Champions League TV schedule",
+          "url": "https://worldsoccertalk.com/champions-league-tv-schedule/"
+        }
+      ]
+    }
+  ]
+}
