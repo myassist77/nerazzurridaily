@@ -5,17 +5,17 @@
   "tiktok": {
     "post_id": "cmuy4ypx0028npd0ycx0xpfys",
     "posted_at_utc": "2026-10-07T13:21:30Z",
-    "state": "SUBMITTED",
+    "state": "PUBLISHED",
     "url": null
   },
   "youtube": {
     "post_id": "cmuy4yz3e028ppd0y1fay7fmq",
     "posted_at_utc": "2026-10-07T13:22:00Z",
-    "state": "SUBMITTED",
-    "video_id": null,
-    "url": null,
-    "privacy": null,
-    "comment": null
+    "state": "PUBLISHED",
+    "video_id": "-zNfw81HI0o",
+    "url": "https://www.youtube.com/shorts/-zNfw81HI0o",
+    "privacy": "public",
+    "comment": "unknown"
   },
-  "updated_at_utc": "2026-10-07T13:23:00Z"
+  "updated_at_utc": "2026-10-07T13:28:00Z"
 }
