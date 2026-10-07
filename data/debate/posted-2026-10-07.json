@@ -5,17 +5,18 @@
  "tiktok": {
   "post_id": "cmuyeby7e01mqmm0y9pjeyjvh",
   "posted_at_utc": "2026-10-07T17:43:30Z",
-  "state": "SUBMITTED",
+  "state": "PUBLISHED",
   "url": null
  },
  "youtube": {
   "post_id": "cmuyeciis01mrmm0yok6ci4sv",
   "posted_at_utc": "2026-10-07T17:44:30Z",
-  "state": "SUBMITTED",
+  "state": "PUBLISHED",
   "video_id": null,
   "url": null,
   "privacy": null,
-  "comment": "unknown"
+  "comment": "unknown",
+  "note": "Postiz state read 2026-10-07T23:18Z. Video id not confirmed: the read-only YouTube API returned 403 quotaExceeded at that time; settings sent were type public with the 9:16 thumbnail."
  },
- "updated_at_utc": "2026-10-07T17:43:53Z"
+ "updated_at_utc": "2026-10-07T23:18:25Z"
 }
