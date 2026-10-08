@@ -12,11 +12,11 @@
   "post_id": "cmuyeciis01mrmm0yok6ci4sv",
   "posted_at_utc": "2026-10-07T17:44:30Z",
   "state": "PUBLISHED",
-  "video_id": null,
-  "url": null,
-  "privacy": null,
+  "video_id": "hore7Aq2KxA",
+  "url": "https://www.youtube.com/shorts/hore7Aq2KxA",
+  "privacy": "public",
   "comment": "unknown",
-  "note": "Postiz state read 2026-10-07T23:18Z. Video id not confirmed: the read-only YouTube API returned 403 quotaExceeded at that time; settings sent were type public with the 9:16 thumbnail."
+  "note": "Video id and privacy confirmed 2026-10-08 through the read-only YouTube API (uploads playlist; published 2026-10-07T17:44:28Z). The first read on Oct. 7 failed with 403 quotaExceeded. Comment not checked."
  },
- "updated_at_utc": "2026-10-07T23:18:25Z"
+ "updated_at_utc": "2026-10-08T07:21:04Z"
 }
