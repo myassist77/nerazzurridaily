@@ -1,0 +1,248 @@
+{
+  "n": 37,
+  "date": "2026-10-08",
+  "title": "Chivu speaks Friday as Inter's internationals come home",
+  "description": "Kevin Bonacina will referee Saturday's match against Parma, and Inter's eleven internationals came back from the break with seven goals between them.",
+  "mast_alt": "Nerazzurri Daily Edition No. 37, Thursday, October 8, 2026 — Chivu speaks Friday as Inter's internationals come home",
+  "blocks": [
+    {
+      "t": "dek",
+      "html": "Cristian Chivu, Inter's head coach, <a href=\"https://www.inter.it/it/notizie/annuncio-conferenza-stampa-chivu-inter-parma-serie-a-26-27\" rel=\"noopener\">meets reporters on Friday at 8:30 AM ET</a>, 14:30 CEST, the day before Parma visit San Siro. Kevin Bonacina, a referee from the Bergamo section, has been appointed to referee it. Inter's eleven internationals came home with <a href=\"https://www.inter.it/it/notizie/giocatori-inter-nazionali-sosta-settembre-2026\" rel=\"noopener\">seven goals, four assists and 2,342 minutes</a> between them."
+    },
+    {
+      "t": "scoreboard",
+      "rows": [
+        {
+          "label": "TODAY",
+          "name": "No match",
+          "venue": null,
+          "line": "INTERNATIONAL BREAK · SERIE A RESUMES SAT, OCT 10"
+        },
+        {
+          "label": "LAST",
+          "name": "Inter 2–0 Lumezzane",
+          "venue": null,
+          "line": "FRIENDLY · APPIANO GENTILE · OCT 3"
+        },
+        {
+          "label": "NEXT",
+          "name": "Parma",
+          "venue": "HOME",
+          "line": "SAT, OCT 10 · SERIE A · MATCHDAY 6 · 12:00 PM ET"
+        }
+      ]
+    },
+    {
+      "t": "bar",
+      "kind": "c",
+      "label": "CONFIRMED",
+      "sub": "CLUB · LEAGUE · UEFA"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Chivu meets the press on Friday, and Bonacina will referee",
+      "paras": [
+        "Inter said on Wednesday that Cristian Chivu, the head coach, speaks to reporters on Friday at 8:30 AM ET, 14:30 CEST. It is at Appiano Gentile, Inter's training ground. The club will stream it.",
+        "Kevin Bonacina, a referee from the Bergamo section, was appointed to the match. Gianluca Manganiello is the fourth official. Daniele Paterna is on VAR."
+      ],
+      "kicker": "INTER.IT · CORRIERE DELLO SPORT · OCT 7"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Eleven away, seven goals, 2,342 minutes",
+      "paras": [
+        "The club counted up the break on Wednesday: eleven players away, 2,342 minutes, seven goals and four assists.",
+        "Alessandro Bastoni, the defender, and Francesco Pio Esposito, the forward, scored two each for Italy. Lautaro Martínez, Inter's captain, scored twice for Argentina and set up two more. Piotr Zielinski, the midfielder, scored for Poland."
+      ],
+      "kicker": "INTER.IT · OCT 7"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Gentleman awards for Marotta, Dimarco and Zielinski",
+      "paras": [
+        "The 31st Premio Gentleman, Italy's fair-play awards, was held on Wednesday evening in Milan, at a military academy called the Scuola Militare Teuliè. Giuseppe Marotta, Inter's president and chief executive, took its international award.",
+        "Marotta then gave an award in memory of Sandro Mazzola, the Inter forward who died in September, to Mazzola's son. Federico Dimarco, the Inter defender, was named the league's gentleman of the year. Piotr Zielinski took two awards, and Mattia Mosconi, who debuted last season, was the club's breakthrough player.",
+        "FCInterNews published video of Marotta afterward, asked whether Inter can chase another treble. His answer: \"Il dovere è fare bene, il diritto è quello di sognare\" — the duty is to do well, the right is to dream."
+      ],
+      "kicker": "INTER.IT · OCT 7"
+    },
+    {
+      "t": "bar",
+      "kind": "r",
+      "label": "REPORTED",
+      "sub": "PRESS ONLY · NOT YET OFFICIAL"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Sky Sport Italia: Lautaro is back at Appiano this afternoon",
+      "paras": [
+        "Sky Sport Italia reports through FCInter1908 that Lautaro Martínez is available to Chivu from Thursday afternoon. He played 79 minutes in Lionel Messi's farewell match for Argentina.",
+        "What is new is the timing: he is back two days out, not on the eve of the match. Marcus Thuram, the forward who trained through the break, and Ange-Yoan Bonny, who has not started this season, are both pushing for a place. John Stones, the defender, is the only player out."
+      ],
+      "kicker": "UPDATE · SKY SPORT ITALIA VIA FCINTER1908 · OCT 7"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Gazzetta dello Sport: a 100 million euro valuation for Esposito",
+      "paras": [
+        "Gazzetta dello Sport, Italy's biggest sports daily, reports through FCInterNews that €100 million is now a plausible price for Francesco Pio Esposito. Inter have no intention of selling the 21-year-old.",
+        "The paper says his contract runs to 2032 and pays €2.7 million plus bonuses (Italian salaries are quoted after tax). When Arsenal asked last winter, Marotta said €100 million would not be enough."
+      ],
+      "kicker": "GAZZETTA DELLO SPORT VIA FCINTERNEWS · OCT 8"
+    },
+    {
+      "t": "section",
+      "head": "LATEST RESULT",
+      "meta": "FRIENDLY · APPIANO GENTILE · OCT 3"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Inter 2–0 Lumezzane",
+      "paras": [
+        "MKHITARYAN 14' · AGBONIFO 62'"
+      ],
+      "kicker": "SERIE A FORM · THIRTEEN POINTS FROM FIVE · LEVEL WITH ROMA AND LAZIO AT THE TOP"
+    },
+    {
+      "t": "section",
+      "head": "NEXT UP",
+      "meta": "OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+    },
+    {
+      "t": "fixtures",
+      "rows": [
+        {
+          "name": "Parma",
+          "venue": "HOME",
+          "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK · GOLAZO NETWORK"
+        },
+        {
+          "name": "Club Brugge",
+          "venue": "HOME",
+          "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE · MATCHDAY 2",
+          "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+ · VIX"
+        },
+        {
+          "name": "Bologna",
+          "venue": "AWAY",
+          "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+        },
+        {
+          "name": "Shakhtar Donetsk",
+          "venue": "HOME",
+          "line2": "WED, OCT 21 · CHAMPIONS LEAGUE · MATCHDAY 3",
+          "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+ · VIX"
+        },
+        {
+          "name": "Fiorentina",
+          "venue": "HOME",
+          "line2": "SUN, OCT 25 · SERIE A · MATCHDAY 8",
+          "line3": "7:30 AM ET · 12:30 CET · US TV: PARAMOUNT+"
+        }
+      ]
+    },
+    {
+      "t": "note",
+      "html": "Kickoff times are the club's; US listings are Sports Media Watch's. Milan moves to CET on October 25, so Fiorentina is 7:30 AM ET, 12:30 CET."
+    },
+    {
+      "t": "ask",
+      "html": "Reply to this email with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+    },
+    {
+      "t": "next",
+      "text": "FRIDAY, OCTOBER 9 — CHIVU ON THE EVE OF PARMA"
+    },
+    {
+      "t": "follow",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@nerazzurridaily"
+        },
+        {
+          "label": "TikTok",
+          "url": "https://www.tiktok.com/@nerazzurridaily"
+        }
+      ]
+    },
+    {
+      "t": "sources",
+      "links": [
+        {
+          "outlet": "Inter.it",
+          "title": "Inter-Parma, venerdì la conferenza stampa di Chivu",
+          "url": "https://www.inter.it/it/notizie/annuncio-conferenza-stampa-chivu-inter-parma-serie-a-26-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "InterNazionali: 7 gol, 4 assist e 2342' per i nerazzurri",
+          "url": "https://www.inter.it/it/notizie/giocatori-inter-nazionali-sosta-settembre-2026"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "L'Inter protagonista al Premio Gentleman Fair Play",
+          "url": "https://www.inter.it/it/notizie/inter-premio-gentleman-2026"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter 2-0 Lumezzane, the friendly at Appiano Gentile",
+          "url": "https://www.inter.it/en/news/inter-lumezzane-friendly-appiano-gentile-3-october-2026"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Serie A 2026/27 schedule: Inter, Matchdays 6-12",
+          "url": "https://www.inter.it/en/news/serie-a-2026-27-schedule-inter-matchdays-6-12"
+        },
+        {
+          "outlet": "Corriere dello Sport",
+          "title": "Serie A, the referees for matchday 6",
+          "url": "https://www.corrieredellosport.it/news/calcio/serie-a/2026/10/07-151727505/gli_arbitri_della_sesta_giornata_di_serie_a_fabbri_per_como-roma_a_feliciani_napoli-frosinone"
+        },
+        {
+          "outlet": "FCInter1908",
+          "title": "Serie A, ecco chi è l'arbitro di Inter-Parma",
+          "url": "https://www.fcinter1908.it/serie-a/inter-parma-bonacina-arbitro/"
+        },
+        {
+          "outlet": "FCInter1908",
+          "title": "Sky: Inter, domani Lautaro ad Appiano verso il Parma",
+          "url": "https://www.fcinter1908.it/partite/probabili-formazioni/sky-inter-domani-lautaro-ad-appiano-verso-il-parma-scalpitano-in-due-un-solo-assente/"
+        },
+        {
+          "outlet": "FCInterNews",
+          "title": "GdS - Esposito, un tesoro da 100 milioni",
+          "url": "https://www.fcinternews.it/in-primo-piano/i-gds-i-esposito-tesoro-100-milioni-interista-storia-1020265"
+        },
+        {
+          "outlet": "FCInterNews",
+          "title": "Marotta: \"Triplete? Sognare è un diritto\"",
+          "url": "https://www.fcinternews.it/in-primo-piano/video-marotta-triplete-sognare-diritto-dovere-bene-1020262"
+        },
+        {
+          "outlet": "FCInterNews",
+          "title": "Inter-Parma, i numeri della vigilia",
+          "url": "https://www.fcinternews.it/stats/inter-parma-numeri-chiari-importante-serie-risultati-positivi-1020246"
+        },
+        {
+          "outlet": "Sports Media Watch",
+          "title": "Serie A TV schedule",
+          "url": "https://www.sportsmediawatch.com/tv-schedules/club-soccer/serie-a/"
+        },
+        {
+          "outlet": "Sports Media Watch",
+          "title": "UEFA Champions League TV schedule",
+          "url": "https://www.sportsmediawatch.com/tv-schedules/club-soccer/uefa-champions-league/"
+        }
+      ]
+    }
+  ]
+}
