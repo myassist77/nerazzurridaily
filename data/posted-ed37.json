@@ -2,7 +2,7 @@
   "n": 37,
   "date": "2026-10-08",
   "slug": "esposito-valuation",
-  "tiktok": {"post_id": "cmuzkgi3p01dlpa0y1t9kfuyd", "posted_at_utc": "2026-10-08T13:23:30Z", "state": "SUBMITTED", "url": null},
-  "youtube": {"post_id": "cmuzkgqnn01dopa0yso4p2qrr", "posted_at_utc": "2026-10-08T13:24:00Z", "state": "SUBMITTED", "video_id": null, "url": null, "privacy": null, "comment": null},
-  "updated_at_utc": "2026-10-08T13:24:30Z"
+  "tiktok": {"post_id": "cmuzkgi3p01dlpa0y1t9kfuyd", "posted_at_utc": "2026-10-08T13:23:30Z", "state": "PUBLISHED", "url": null},
+  "youtube": {"post_id": "cmuzkgqnn01dopa0yso4p2qrr", "posted_at_utc": "2026-10-08T13:24:00Z", "state": "PUBLISHED", "video_id": "koohxBl7Wgg", "url": "https://www.youtube.com/shorts/koohxBl7Wgg", "privacy": "public", "comment": "unknown"},
+  "updated_at_utc": "2026-10-08T22:40:30Z"
 }
