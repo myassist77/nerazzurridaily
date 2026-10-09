@@ -1,0 +1,253 @@
+{
+  "n": 38,
+  "date": "2026-10-09",
+  "title": "Jones out with an adductor strain, and Parma visit Saturday",
+  "description": "Cristian Chivu meets reporters at 8:30 AM ET, and the club says San Siro is close to selling out for Saturday's visit of Parma.",
+  "mast_alt": "Nerazzurri Daily Edition No. 38, Friday, October 9, 2026 — Jones out with an adductor strain, and Parma visit Saturday",
+  "blocks": [
+    {
+      "t": "dek",
+      "html": "Curtis Jones, the midfielder, has <a href=\"https://www.inter.it/en/news/curtis-jones-condition-injury-october-2026\" rel=\"noopener\">a strain in the adductor muscles of his right thigh</a>. Inter gave no return date, and Sky Sport Italia reports three to four weeks. Cristian Chivu, Inter's head coach, meets reporters this morning at 8:30 AM ET, 14:30 CEST, a day before Parma visit a <a href=\"https://www.inter.it/it/notizie/inter-parma-biglietti-info-stadio-serie-a-26-27\" rel=\"noopener\">San Siro that is close to selling out</a>."
+    },
+    {
+      "t": "scoreboard",
+      "rows": [
+        {
+          "label": "TODAY",
+          "name": "No match",
+          "venue": null,
+          "line": "CHIVU PRESS CONFERENCE · 8:30 AM ET · 14:30 CEST"
+        },
+        {
+          "label": "LAST",
+          "name": "Inter 2–0 Lumezzane",
+          "venue": null,
+          "line": "FRIENDLY · APPIANO GENTILE · OCT 3"
+        },
+        {
+          "label": "NEXT",
+          "name": "Parma",
+          "venue": "HOME",
+          "line": "SAT, OCT 10 · SERIE A · MATCHDAY 6 · 12:00 PM ET"
+        }
+      ]
+    },
+    {
+      "t": "bar",
+      "kind": "c",
+      "label": "CONFIRMED",
+      "sub": "CLUB · LEAGUE · UEFA"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Inter say Jones has a strain in his right adductors",
+      "paras": [
+        "Curtis Jones had tests on Thursday morning at the Humanitas Research Hospital in Rozzano, south of Milan. The club said they found a myofascial strain in the adductor muscles of his right thigh.",
+        "Inter set no return date, saying only he will be reassessed in the coming days."
+      ],
+      "kicker": "INTER.IT · OCT 8"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Parma on Saturday, with San Siro close to selling out",
+      "paras": [
+        "Kevin Bonacina, a referee from the Bergamo section, will referee Saturday's match, with Gianluca Manganiello as fourth official and Daniele Paterna on VAR. Gates open at 10:00 AM ET, 16:00 CEST, with the remaining tickets in a resale for season ticket holders.",
+        "Inter have not lost to Parma in their last nine league meetings, and Marcus Thuram, the forward, has scored in each of his four Serie A matches against them. The guide has Parma 15th with four points."
+      ],
+      "kicker": "INTER.IT · OCT 8"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Genoa in the Coppa Italia on December 1, and tickets open today",
+      "paras": [
+        "Inter, who hold the cup, play Genoa at San Siro in the round of 16 on Tuesday, December 1 at 3:00 PM ET, 21:00 CET. It is one match, not two legs.",
+        "PLUS season ticket holders can confirm a seat for €1 from 6:00 AM ET today, 12:00 CEST, until 5:59 PM ET on Sunday. The general sale opens at 6:00 AM ET on Monday, 12:00 CEST."
+      ],
+      "kicker": "INTER.IT · OCT 8"
+    },
+    {
+      "t": "bar",
+      "kind": "r",
+      "label": "REPORTED",
+      "sub": "PRESS ONLY · NOT YET OFFICIAL"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Sky Sport Italia: three to four weeks for Jones, and Barella starts",
+      "paras": [
+        "Sky Sport Italia reports through FCInterNews that Jones is out for three to four weeks. He is aiming for the home match against Como, the last before the November international break. Gazzetta dello Sport, Italy's biggest sports daily, reads it as about 20 days, with Venezia on October 28 or the derby on October 31 as the target.",
+        "Sky says Inter's midfield re-forms around three. Nicolò Barella is ready to start against Parma, with Henrikh Mkhitaryan beside him, and Hakan Calhanoglu is available again after the problem that kept him out before Udinese."
+      ],
+      "kicker": "SKY SPORT ITALIA VIA FCINTERNEWS · OCT 8"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Corriere dello Sport: English interest in Sucic, and a raise to discuss",
+      "paras": [
+        "Corriere dello Sport reports through FCInterNews that English clubs have begun to ask about Petar Sucic, the midfielder, and that Inter are not entertaining a sale. His representatives want to talk about a raise, and Dario Baccin, Inter's deputy sporting director, has kept a slot for them.",
+        "Fabrizio Romano, the transfer reporter, wrote on Friday that Sucic, asked after Croatia duty, said the picture would be clearer in two or three months."
+      ],
+      "kicker": "CORRIERE DELLO SPORT VIA FCINTERNEWS · OCT 8"
+    },
+    {
+      "t": "section",
+      "head": "LATEST RESULT",
+      "meta": "FRIENDLY · APPIANO GENTILE · OCT 3"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Inter 2–0 Lumezzane",
+      "paras": [
+        "MKHITARYAN 14' · AGBONIFO 62'"
+      ],
+      "kicker": "SERIE A FORM · THIRTEEN POINTS FROM FIVE · LEVEL WITH ROMA AND LAZIO AT THE TOP"
+    },
+    {
+      "t": "section",
+      "head": "NEXT UP",
+      "meta": "OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+    },
+    {
+      "t": "fixtures",
+      "rows": [
+        {
+          "name": "Parma",
+          "venue": "HOME",
+          "line2": "SAT, OCT 10 · SERIE A · MATCHDAY 6",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK · GOLAZO NETWORK"
+        },
+        {
+          "name": "Club Brugge",
+          "venue": "HOME",
+          "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE · MATCHDAY 2",
+          "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+ · VIX"
+        },
+        {
+          "name": "Bologna",
+          "venue": "AWAY",
+          "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · DAZN"
+        },
+        {
+          "name": "Shakhtar Donetsk",
+          "venue": "HOME",
+          "line2": "WED, OCT 21 · CHAMPIONS LEAGUE · MATCHDAY 3",
+          "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+ · VIX"
+        },
+        {
+          "name": "Fiorentina",
+          "venue": "HOME",
+          "line2": "SUN, OCT 25 · SERIE A · MATCHDAY 8",
+          "line3": "7:30 AM ET · 12:30 CET · US TV: PARAMOUNT+ · DAZN"
+        },
+        {
+          "name": "Venezia",
+          "venue": "AWAY",
+          "line2": "WED, OCT 28 · SERIE A · MATCHDAY 9",
+          "line3": "1:30 PM ET · 18:30 CET · US TV: NOT YET PUBLISHED"
+        }
+      ]
+    },
+    {
+      "t": "note",
+      "html": "Kickoff times are the club's; US listings are Sports Media Watch's. Milan moves to CET on October 25, so Fiorentina is 7:30 AM ET. Sports Media Watch lists Bologna on Sunday, October 18; the club's Saturday date is the one printed here."
+    },
+    {
+      "t": "ask",
+      "html": "Reply to this email with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+    },
+    {
+      "t": "next",
+      "text": "SATURDAY, OCTOBER 10 — CHIVU'S WORDS AND THE PARMA LINEUP"
+    },
+    {
+      "t": "follow",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@nerazzurridaily"
+        },
+        {
+          "label": "TikTok",
+          "url": "https://www.tiktok.com/@nerazzurridaily"
+        }
+      ]
+    },
+    {
+      "t": "sources",
+      "links": [
+        {
+          "outlet": "Inter.it",
+          "title": "Curtis Jones' condition",
+          "url": "https://www.inter.it/en/news/curtis-jones-condition-injury-october-2026"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "La guida completa in vista di Inter-Parma",
+          "url": "https://www.inter.it/it/notizie/guida-inter-parma-serie-a-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter-Parma: ultimi biglietti e info per San Siro",
+          "url": "https://www.inter.it/it/notizie/inter-parma-biglietti-info-stadio-serie-a-26-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Coppa Italia, Inter-Genoa: biglietti in vendita",
+          "url": "https://www.inter.it/it/notizie/biglietti-inter-genoa-coppa-italia-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Si torna in campo: l'allenamento verso Inter-Parma",
+          "url": "https://www.inter.it/it/notizie/allenamento-inter-8-ottobre-2026"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Serie A 2026/27 schedule: Inter, Matchdays 6-12",
+          "url": "https://www.inter.it/en/news/serie-a-2026-27-schedule-inter-matchdays-6-12"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter 2-0 Lumezzane, the October 3 friendly",
+          "url": "https://www.inter.it/en/news/inter-lumezzane-friendly-appiano-gentile-3-october-2026"
+        },
+        {
+          "outlet": "FCInterNews",
+          "title": "Sky: Jones, la possibile data del rientro. Per Inter-Parma è pronto Barella",
+          "url": "https://www.fcinternews.it/focus/i-sky-i-jones-possibile-data-rientro-inter-parma-pronto-barella-1020308"
+        },
+        {
+          "outlet": "FCInterNews",
+          "title": "Curtis Jones out una ventina di giorni: obiettivo Venezia o derby",
+          "url": "https://www.fcinternews.it/focus/curtis-jones-out-ventina-giorni-obiettivo-venezia-derby-1020298"
+        },
+        {
+          "outlet": "FCInterNews",
+          "title": "CdS - Sirene inglesi per Sucic? L'Inter non ha dubbi",
+          "url": "https://www.fcinternews.it/focus/i-cds-i-sirene-inglesi-sucic-inter-dubbi-incontro-agenda-1020267"
+        },
+        {
+          "outlet": "FCInter1908",
+          "title": "Romano e la verità su Sucic: la risposta dell'Inter",
+          "url": "https://www.fcinter1908.it/calciomercato/mercato-inter/romano-verita-sucic-risposta-inter/"
+        },
+        {
+          "outlet": "Sports Media Watch",
+          "title": "Serie A TV schedule",
+          "url": "https://www.sportsmediawatch.com/tv-schedules/club-soccer/serie-a/"
+        },
+        {
+          "outlet": "Sports Media Watch",
+          "title": "UEFA Champions League TV schedule",
+          "url": "https://www.sportsmediawatch.com/tv-schedules/club-soccer/uefa-champions-league/"
+        }
+      ]
+    }
+  ]
+}
