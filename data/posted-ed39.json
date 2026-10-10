@@ -2,7 +2,7 @@
   "n": 39,
   "date": "2026-10-10",
   "slug": "stankovic-start",
-  "tiktok": {"post_id": "cmv2aor8q0cyrnp0ybyfoidi1", "posted_at_utc": "2026-10-10T11:12:30Z", "state": "SUBMITTED", "url": null},
-  "youtube": {"post_id": "cmv2ap03y0cysnp0y60pgsqa7", "posted_at_utc": "2026-10-10T11:13:00Z", "state": "SUBMITTED", "video_id": null, "url": null, "privacy": null, "comment": null},
-  "updated_at_utc": "2026-10-10T11:13:30Z"
+  "tiktok": {"post_id": "cmv2aor8q0cyrnp0ybyfoidi1", "posted_at_utc": "2026-10-10T11:12:30Z", "state": "PUBLISHED", "url": null},
+  "youtube": {"post_id": "cmv2ap03y0cysnp0y60pgsqa7", "posted_at_utc": "2026-10-10T11:13:00Z", "state": "PUBLISHED", "video_id": "pED9jDLNYMg", "url": "https://www.youtube.com/shorts/pED9jDLNYMg", "privacy": "public", "comment": "not visible"},
+  "updated_at_utc": "2026-10-10T11:20:00Z"
 }
