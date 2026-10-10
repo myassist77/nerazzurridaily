@@ -1,0 +1,250 @@
+{
+  "n": 39,
+  "date": "2026-10-10",
+  "title": "Spence is back, and Parma visit San Siro today",
+  "description": "Cristian Chivu has Hakan Çalhanoğlu available again too, and Kevin Bonacina referees the noon-Eastern kickoff at San Siro.",
+  "mast_alt": "Nerazzurri Daily Edition No. 39, Saturday, October 10, 2026 — Spence is back, and Parma visit San Siro today",
+  "blocks": [
+    {
+      "t": "dek",
+      "html": "<a href=\"https://www.inter.it/it/notizie/conferenza-stampa-chivu-inter-parma-serie-a-2026-27\" rel=\"noopener\">Djed Spence, the defender, is available again</a> after about two months out. Cristian Chivu, Inter's head coach, said on Friday that Hakan Çalhanoğlu is back with the group as well. <a href=\"https://www.inter.it/it/notizie/guida-inter-parma-serie-a-2026-27\" rel=\"noopener\">Inter host Parma</a> at San Siro at 12:00 PM ET, 18:00 CEST, first in Serie A with 13 points."
+    },
+    {
+      "t": "scoreboard",
+      "rows": [
+        {
+          "label": "TODAY",
+          "name": "Parma",
+          "venue": "HOME",
+          "line": "12:00 PM ET · 18:00 CEST · SERIE A · MATCHDAY 6"
+        },
+        {
+          "label": "LAST",
+          "name": "Inter 2–0 Lumezzane",
+          "venue": null,
+          "line": "FRIENDLY · APPIANO GENTILE · OCT 3"
+        },
+        {
+          "label": "NEXT",
+          "name": "Club Brugge",
+          "venue": "HOME",
+          "line": "TUE, OCT 13 · CHAMPIONS LEAGUE · 3:00 PM ET"
+        }
+      ]
+    },
+    {
+      "t": "bar",
+      "kind": "c",
+      "label": "CONFIRMED",
+      "sub": "CLUB · LEAGUE · UEFA"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Chivu says Spence and Çalhanoğlu are both available",
+      "paras": [
+        "Cristian Chivu, Inter's head coach, met reporters on Friday at Appiano Gentile, Inter's training ground. Djed Spence, the defender, has been off the field for about two months. Chivu said: “sono due mesi che è assente dai campi: ora è a disposizione e sarà convocato” — now available, and he will be in the squad.",
+        "Hakan Çalhanoğlu, the midfielder, is in the same position: “Anche Hakan ha ricominciato lunedì … ed è a disposizione del gruppo” — he restarted on Monday and is available. Chivu would not name a lineup."
+      ],
+      "kicker": "SAID · INTER.IT · OCT 9"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Parma at San Siro, with Bonacina refereeing",
+      "paras": [
+        "Kickoff is 12:00 PM ET, 18:00 CEST, in Serie A matchday 6. Inter are first with 13 points from five matches, four wins and a draw; Parma are 15th with 4. Kevin Bonacina referees, and the club lists no suspensions on either side.",
+        "Inter have not lost to Parma in the league in nine meetings, and Parma have won twice in 29 visits to Milan, in 1999 and 2018. The last was on May 3, when a Marcus Thuram opener set up a 2–0 win that clinched Inter's 21st Scudetto, the Italian league title. Parma arrive under a new head coach, Alberto Gilardino, appointed on September 29 after Carlos Cuesta left."
+      ],
+      "kicker": "INTER.IT · SKY SPORT ITALIA · OCT 9"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Inter Women go to Lyon on October 28, and away tickets are open",
+      "paras": [
+        "Inter Women play OL Lyonnes in Lyon on Wednesday, October 28, in matchday 3 of the Women's Champions League, kicking off at 4:00 PM ET, 21:00 CET. Seats in the away section cost 10 euros on the French club's ticketing site, and sales close on Monday, October 26 at 7:00 AM ET, 12:00 CET. They host Parma in Milan next Sunday, October 18, at 10:00 AM ET, 16:00 CEST."
+      ],
+      "kicker": "INTER.IT · OCT 9"
+    },
+    {
+      "t": "bar",
+      "kind": "r",
+      "label": "REPORTED",
+      "sub": "PRESS ONLY · NOT YET OFFICIAL"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Gazzetta dello Sport: a first start for Aleksandar Stankovic",
+      "paras": [
+        "Gazzetta dello Sport, Italy's largest sports daily, expects Aleksandar Stankovic, the midfielder, to make his first start. It has him preferred to Hakan Çalhanoğlu in a 3-5-2, with Josep Martínez in goal and Petar Sucic alongside Nicolò Barella. Lautaro Martínez, the captain, starts rather than rests, ahead of Francesco Pio Esposito."
+      ],
+      "kicker": "GAZZETTA DELLO SPORT VIA FCINTERNEWS · OCT 10"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Sky Sport Italia has the same shape, with Zielinski the alternative",
+      "paras": [
+        "Sky Sport Italia's Friday version gives the last midfield place to Piotr Zielinski rather than Sucic, with Henrikh Mkhitaryan the other candidate. It lists Djed Spence among the squad for the first time this season."
+      ],
+      "kicker": "SKY SPORT ITALIA · OCT 9"
+    },
+    {
+      "t": "section",
+      "head": "LATEST RESULT",
+      "meta": "FRIENDLY · APPIANO GENTILE · OCT 3"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Inter 2–0 Lumezzane",
+      "paras": [
+        "MKHITARYAN 14' · AGBONIFO 62'"
+      ],
+      "kicker": "SERIE A FORM · FOUR WINS AND A DRAW FROM FIVE · FIRST WITH THIRTEEN POINTS"
+    },
+    {
+      "t": "section",
+      "head": "NEXT UP",
+      "meta": "OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+    },
+    {
+      "t": "fixtures",
+      "rows": [
+        {
+          "name": "Club Brugge",
+          "venue": "HOME",
+          "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE · MATCHDAY 2",
+          "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+ · VIX"
+        },
+        {
+          "name": "Bologna",
+          "venue": "AWAY",
+          "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+          "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · DAZN"
+        },
+        {
+          "name": "Shakhtar Donetsk",
+          "venue": "HOME",
+          "line2": "WED, OCT 21 · CHAMPIONS LEAGUE · MATCHDAY 3",
+          "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+ · VIX"
+        },
+        {
+          "name": "Fiorentina",
+          "venue": "HOME",
+          "line2": "SUN, OCT 25 · SERIE A · MATCHDAY 8",
+          "line3": "7:30 AM ET · 12:30 CET · US TV: PARAMOUNT+ · DAZN"
+        },
+        {
+          "name": "Venezia",
+          "venue": "AWAY",
+          "line2": "WED, OCT 28 · SERIE A · MATCHDAY 9",
+          "line3": "1:30 PM ET · 18:30 CET · US TV: PARAMOUNT+ · DAZN"
+        },
+        {
+          "name": "AC Milan",
+          "venue": "AWAY",
+          "line2": "SAT, OCT 31 · SERIE A · MATCHDAY 10",
+          "line3": "3:45 PM ET · 20:45 CET · US TV: PARAMOUNT+ · DAZN"
+        }
+      ]
+    },
+    {
+      "t": "note",
+      "html": "Kickoff times are the club's; US listings are Sports Media Watch's. Milan moves to CET on October 25, so Fiorentina is 7:30 AM ET. Sports Media Watch lists Bologna on Sunday, October 18 and the derby on Sunday, November 1; the club's Saturday dates are the ones printed here."
+    },
+    {
+      "t": "ask",
+      "html": "Reply to this email with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+    },
+    {
+      "t": "next",
+      "text": "SUNDAY, OCTOBER 11 — WHAT HAPPENED AGAINST PARMA"
+    },
+    {
+      "t": "follow",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@nerazzurridaily"
+        },
+        {
+          "label": "TikTok",
+          "url": "https://www.tiktok.com/@nerazzurridaily"
+        }
+      ]
+    },
+    {
+      "t": "sources",
+      "links": [
+        {
+          "outlet": "Inter.it",
+          "title": "Chivu: “Si ricomincia: attesa lunga, siamo felici”",
+          "url": "https://www.inter.it/it/notizie/conferenza-stampa-chivu-inter-parma-serie-a-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "The complete guide in the run up to Inter vs Parma",
+          "url": "https://www.inter.it/it/notizie/guida-inter-parma-serie-a-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "OL Lyonnes vs Inter Women: away-section tickets on sale",
+          "url": "https://www.inter.it/it/notizie/ol-lyonnes-inter-women-biglietti-ospiti-women-champions-league"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter Women: results, matches and official news",
+          "url": "https://www.inter.it/en/inter-women"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter vs Club Brugge, where to watch it on TV",
+          "url": "https://www.inter.it/it/notizie/champions-league-inter-club-brugge-dove-vederla-in-tv"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Serie A 2026/27 schedule: Inter, matchdays 6–12",
+          "url": "https://www.inter.it/en/news/serie-a-2026-27-schedule-inter-matchdays-6-12"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter 2–0 Lumezzane",
+          "url": "https://www.inter.it/en/news/inter-lumezzane-friendly-appiano-gentile-3-october-2026"
+        },
+        {
+          "outlet": "UEFA.com",
+          "title": "Inter Milan: Champions League matches",
+          "url": "https://www.uefa.com/uefachampionsleague/clubs/50138--inter-milan/matches/"
+        },
+        {
+          "outlet": "FCInterNews",
+          "title": "GdS — Inter-Parma, prima da titolare per Stankovic",
+          "url": "https://www.fcinternews.it/focus/inter-parma-probabile-formazione-stankovic-lautaro-1020417"
+        },
+        {
+          "outlet": "Sky Sport Italia",
+          "title": "Inter-Parma, le ultime sulle probabili formazioni",
+          "url": "https://sport.sky.it/calcio/serie-a/2026/10/09/inter-parma-probabili-formazioni-6-giornata"
+        },
+        {
+          "outlet": "Sky Sport Italia",
+          "title": "Alberto Gilardino nuovo allenatore del Parma",
+          "url": "https://sport.sky.it/calcio/serie-a/2026/09/29/alberto-gilardino-parma-allenatore-news"
+        },
+        {
+          "outlet": "Sports Media Watch",
+          "title": "Serie A TV schedule",
+          "url": "https://www.sportsmediawatch.com/tv-schedules/club-soccer/serie-a/"
+        },
+        {
+          "outlet": "Sports Media Watch",
+          "title": "UEFA Champions League TV schedule",
+          "url": "https://www.sportsmediawatch.com/tv-schedules/club-soccer/uefa-champions-league/"
+        }
+      ]
+    }
+  ]
+}
