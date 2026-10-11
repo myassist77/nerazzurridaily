@@ -1,0 +1,272 @@
+{
+ "n": 40,
+ "date": "2026-10-11",
+ "title": "Sucic opens, and Inter score three in half an hour",
+ "description": "Petar Sucic's first Inter goal won him man of the match, Djed Spence came on for his debut, and Club Brugge visit San Siro on Tuesday.",
+ "mast_alt": "Nerazzurri Daily Edition No. 40, Sunday, October 11, 2026 — Sucic opens, and Inter score three in half an hour",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Inter <a href=\"https://www.inter.it/it/notizie/cinque-momenti-inter-parma-serie-a-2026-27\" rel=\"noopener\">beat Parma 3–0 at San Siro</a> on Saturday, with all three goals inside the first 31 minutes. Petar Sucic, the midfielder, scored his first Inter goal and was named man of the match; Hakan Çalhanoğlu, the penalty taker, and Marcus Thuram, the forward, got the others. Inter have 16 points from six matches, and <a href=\"https://www.inter.it/it/notizie/champions-league-inter-club-brugge-programma-vigilia-26-27\" rel=\"noopener\">Club Brugge come to San Siro on Tuesday</a>."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "TODAY",
+     "name": "No match",
+     "venue": null,
+     "line": "NEXT MATCH TUESDAY · 3:00 PM ET"
+    },
+    {
+     "label": "LAST",
+     "name": "Inter 3–0 Parma",
+     "venue": null,
+     "line": "SERIE A · MATCHDAY 6 · SAN SIRO"
+    },
+    {
+     "label": "NEXT",
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line": "TUE, OCT 13 · CHAMPIONS LEAGUE · 3:00 PM ET"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB · LEAGUE · UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Sucic's first Inter goal, and the man-of-the-match award",
+   "paras": [
+    "Edoardo Corvi, the Parma goalkeeper, played a weak pass out of his area in the 13th minute. Sucic took the ball off Mandela Keita, the Parma midfielder, and finished with his left foot. It was his first goal for the club.",
+    "Sucic said afterward: “sono contento per il premio” — he was pleased with the award, and said what mattered was winning in front of Inter's own fans."
+   ],
+   "kicker": "SAID · INTER.IT · OCT 10"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Spence comes on for his debut as Chivu rotates",
+   "paras": [
+    "Djed Spence, the defender, came on for Andy Diouf, the midfielder, in the 73rd minute, for his first Inter appearance. He had been out for about two months. In the 83rd minute he crossed for Lautaro Martínez, the captain, whose header went just over the bar.",
+    "Cristian Chivu, Inter's head coach, said: “abbiamo fatto riposare chi ha dato tanto in nazionale” — the players who gave a lot for their countries were rested."
+   ],
+   "kicker": "SAID · INTER.IT · OCT 10"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Club Brugge come to San Siro with Inter on no points",
+   "paras": [
+    "Inter host Club Brugge on Tuesday, October 13 at 3:00 PM ET, 21:00 CEST, in matchday 2 of the Champions League league phase. It is their first home match in the competition, and they arrive 25th of 36 with no points after losing 2–1 at Real Madrid.",
+    "Chivu's press conference is Monday at 8:30 AM ET, 14:30 CEST, at Appiano Gentile, Inter's training ground."
+   ],
+   "kicker": "INTER.IT · OCT 11"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY · NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Corriere dello Sport: the referee missed the penalty, and VAR fixed it",
+   "paras": [
+    "Corriere dello Sport's refereeing review says Kevin Bonacina, the referee, missed Diego Carlos, the Parma defender, stepping on the right foot of Francesco Pio Esposito, the Inter forward. The penalty was given after an on-field review. The paper calls that and a missing booking for Sucic in the 14th minute “le uniche sviste” — the only lapses."
+   ],
+   "kicker": "CORRIERE DELLO SPORT VIA FCINTER1908 · OCT 11"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Club Brugge arrive top of their league, with Sommer in goal",
+   "paras": [
+    "FCInterNews reports that Club Brugge won 4–1 away at RAAL La Louvière, a seventh win in eight league matches that keeps them top in Belgium. Their goalkeeper is Yann Sommer, Inter's for two seasons. FCInter1908 quoted him on Sunday: “Ho vissuto momenti memorabili con l'Inter e ora con il Brugge” — memorable moments with Inter, and now with Brugge."
+   ],
+   "kicker": "FCINTERNEWS · FCINTER1908 · OCT 11"
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "SERIE A · MATCHDAY 6 · SAN SIRO"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter 3–0 Parma",
+   "paras": [
+    "SUCIC 13' · ÇALHANOĞLU 18' (PEN) · THURAM 31'",
+    "It was Inter's second Serie A clean sheet of the season. Thuram was born in Parma and has scored against them in five straight meetings."
+   ],
+   "kicker": "SERIE A FORM · FIVE WINS AND A DRAW FROM SIX · SIXTEEN POINTS"
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE · MATCHDAY 2",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+ · VIX"
+    },
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Shakhtar Donetsk",
+     "venue": "HOME",
+     "line2": "WED, OCT 21 · CHAMPIONS LEAGUE · MATCHDAY 3",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+ · VIX"
+    },
+    {
+     "name": "Fiorentina",
+     "venue": "HOME",
+     "line2": "SUN, OCT 25 · SERIE A · MATCHDAY 8",
+     "line3": "7:30 AM ET · 12:30 CET · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "Venezia",
+     "venue": "AWAY",
+     "line2": "WED, OCT 28 · SERIE A · MATCHDAY 9",
+     "line3": "1:30 PM ET · 18:30 CET · US TV: PARAMOUNT+"
+    },
+    {
+     "name": "AC Milan",
+     "venue": "AWAY",
+     "line2": "SAT, OCT 31 · SERIE A · MATCHDAY 10",
+     "line3": "3:45 PM ET · 20:45 CET · US TV: PARAMOUNT+"
+    }
+   ]
+  },
+  {
+   "t": "note",
+   "html": "Kickoff times are the club's, converted to Eastern. For US listings only Paramount+ appears on both published schedules; World Soccer Talk adds Peacock Premium, Sports Media Watch adds DAZN and still dates Bologna Sunday, October 18."
+  },
+  {
+   "t": "ask",
+   "html": "Reply to this email with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+  },
+  {
+   "t": "next",
+   "text": "MONDAY, OCTOBER 12 — CHIVU BEFORE CLUB BRUGGE"
+  },
+  {
+   "t": "follow",
+   "links": [
+    {
+     "label": "YouTube",
+     "url": "https://www.youtube.com/@nerazzurridaily"
+    },
+    {
+     "label": "TikTok",
+     "url": "https://www.tiktok.com/@nerazzurridaily"
+    }
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "Inter.it",
+     "title": "Il gol di Sucic, l'esperienza di Mkhi: i cinque momenti di Inter-Parma",
+     "url": "https://www.inter.it/it/notizie/cinque-momenti-inter-parma-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Le formazioni ufficiali di Inter-Parma",
+     "url": "https://www.inter.it/it/notizie/inter-parma-formazioni-ufficiali-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Sucic, un gol da MVP: “Contento per il premio, ma conta vincere”",
+     "url": "https://www.inter.it/it/notizie/intervista-sucic-inter-parma-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Chivu: “Contenti per l'approccio: bravissimi i ragazzi ad adattarsi”",
+     "url": "https://www.inter.it/it/notizie/intervista-chivu-inter-parma-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "L'esordio di Spence: “Grande emozione giocare davanti a questo pubblico”",
+     "url": "https://www.inter.it/it/notizie/djed-spence-esordio-inter-parma-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Thuram: “Ci interessa solo scendere in campo e vincere”",
+     "url": "https://www.inter.it/it/notizie/intervista-thuram-pavard-post-inter-parma-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Champions League, Inter-Club Brugge: le attività di vigilia",
+     "url": "https://www.inter.it/it/notizie/champions-league-inter-club-brugge-programma-vigilia-26-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Standings in the league phase and Inter's fixtures",
+     "url": "https://www.inter.it/en/news/standings-league-phase-inter-fixtures-champions-league-26-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Matches",
+     "url": "https://www.inter.it/en/matches"
+    },
+    {
+     "outlet": "Football Italia",
+     "title": "Serie A: Inter 3-0 Parma",
+     "url": "https://football-italia.net/serie-a-inter-3-0-parma-calhanoglu-gilardino/"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "Classifica Serie A",
+     "url": "https://www.fcinternews.it/classifica/serie-a"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "Il Club Brugge arriva a San Siro con fiducia",
+     "url": "https://www.fcinternews.it/l-avversario/club-brugge-arriva-san-siro-fiducia-poker-trasferta-primato-confermato-1020493"
+    },
+    {
+     "outlet": "FCInter1908",
+     "title": "Inter-Parma, la moviola del Corriere dello Sport",
+     "url": "https://www.fcinter1908.it/news/rassegna-stampa/inter-parma-moviola-cds/"
+    },
+    {
+     "outlet": "FCInter1908",
+     "title": "Sommer: “Momenti memorabili con i colori nerazzurri, ora al Brugge”",
+     "url": "https://www.fcinter1908.it/ultimora/sommer-inter-momenti-memorabili-con-i-colori-nerazzurri-ora-al-brugge/"
+    },
+    {
+     "outlet": "World Soccer Talk",
+     "title": "Champions League TV schedule",
+     "url": "https://worldsoccertalk.com/champions-league-tv-schedule/"
+    },
+    {
+     "outlet": "World Soccer Talk",
+     "title": "Serie A TV schedule and streaming links in the USA",
+     "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+    },
+    {
+     "outlet": "Sports Media Watch",
+     "title": "Serie A TV schedule",
+     "url": "https://www.sportsmediawatch.com/tv-schedules/club-soccer/serie-a/"
+    }
+   ]
+  }
+ ]
+}
