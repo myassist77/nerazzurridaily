@@ -1,0 +1,255 @@
+{
+ "n": 41,
+ "date": "2026-10-12",
+ "title": "Club Brugge at San Siro, and Chivu speaks at 8:30 AM ET",
+ "description": "Inter arrive on no Champions League points after losing at Real Madrid, and the former Inter goalkeeper Yann Sommer comes back to San Siro in Club Brugge's goal.",
+ "mast_alt": "Nerazzurri Daily Edition No. 41, Monday, October 12, 2026 — Club Brugge at San Siro, and Chivu speaks at 8:30 AM ET",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Inter play their first Champions League match of the season at San Siro on Tuesday, against <a href=\"https://www.inter.it/en/news/opposition-analysis-champions-league-club-brugge\" rel=\"noopener\">Club Brugge</a>. Cristian Chivu, Inter's head coach, takes the pre-match press conference at 8:30 AM ET today. Inter have no points in the league phase and <a href=\"https://www.inter.it/it/notizie/classifica-league-phase-inter-calendario-champions-league-26-27\" rel=\"noopener\">sit 25th of 36</a>, while in Serie A they are top with 16 points after <a href=\"https://www.inter.it/en/news/inter-parma-serie-a-26-27\" rel=\"noopener\">beating Parma 3–0</a>."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "TODAY",
+     "name": "No match",
+     "venue": null,
+     "line": "NEXT MATCH TUESDAY · 3:00 PM ET"
+    },
+    {
+     "label": "LAST",
+     "name": "Inter 3–0 Parma",
+     "venue": null,
+     "line": "SERIE A · MATCHDAY 6 · SAN SIRO"
+    },
+    {
+     "label": "NEXT",
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line": "TUE, OCT 13 · CHAMPIONS LEAGUE · 3:00 PM ET"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB · LEAGUE · UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Chivu speaks at 8:30 AM ET, and kickoff is Tuesday at 3:00 PM ET",
+   "paras": [
+    "Inter trained at Appiano Gentile, Inter's training ground, at 5:00 AM ET on Monday. Cristian Chivu's official press conference follows there at 8:30 AM ET, which is 14:30 CEST. Club Brugge hold their own at San Siro at 12:45 PM ET, or 18:45 CEST.",
+    "Kickoff is Tuesday at 3:00 PM ET, 21:00 CEST, at San Siro. The Inter site FCInterNews had listed the press conference at 7:00 AM ET, or 13:00 CEST; the club's own time is the one printed here."
+   ],
+   "kicker": "INTER.IT · OCT 11"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "No points yet in the league phase, and 25th of 36",
+   "paras": [
+    "Inter lost their opening league-phase match 2–1 at Real Madrid. Tuesday is the first of their four home matches in the phase.",
+    "Shakhtar Donetsk come to San Siro on Wednesday, October 21, and Inter go to Feyenoord on Tuesday, November 3."
+   ],
+   "kicker": "INTER.IT · OCT 12"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Club Brugge arrive second in Belgium, with Sommer in goal",
+   "paras": [
+    "Club Brugge have won seven of their first eight matches in the Belgian Pro League and sit second with 21 points, one behind Gent. In the Champions League they have no points either, after losing 3–2 at home to Aston Villa.",
+    "Ivan Leko, their head coach since 2025, plays a 4-2-3-1 that can become a 4-3-3. Inter's own analysis names the high line that Aston Villa punished on the counterattack as the way in.",
+    "Hans Vanaken, the captain, is the creative hub, and Yann Sommer, the former Inter goalkeeper, is in the Brugge goal."
+   ],
+   "kicker": "INTER.IT · OCT 11"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY · NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Sky Sport Italia expects five starters back for Brugge",
+   "paras": [
+    "Sky Sport Italia, relayed by FCInterNews, reports that Chivu will change the side. Lautaro Martínez, the captain and forward, is expected to start, with the midfielders Nicolò Barella and Piotr Zieliński and the defenders Alessandro Bastoni and Manuel Akanji. None of the five started against Parma.",
+    "Inter publish the lineup about an hour before kickoff."
+   ],
+   "kicker": "SKY SPORT ITALIA VIA FCINTERNEWS · OCT 11"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Rohit Saggi of Norway has the match, with a Spanish VAR",
+   "paras": [
+    "FCInterNews reports that Rohit Saggi, the Norwegian referee, has been appointed for Inter against Club Brugge. Carlos del Cerro Grande of Spain is on VAR.",
+    "UEFA makes the appointment, and its own page would not load this morning, so it stays under the rust bar."
+   ],
+   "kicker": "FCINTERNEWS · OCT 11"
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "SERIE A · MATCHDAY 6 · SAN SIRO"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter 3–0 Parma",
+   "paras": [
+    "SUCIC 13' · ÇALHANOĞLU 18' (PEN) · THURAM 31'",
+    "Henrikh Mkhitaryan, the midfielder, made the third, and a video review gave the penalty."
+   ],
+   "kicker": "SERIE A FORM · FIVE WINS AND A DRAW FROM SIX · TOP OF SERIE A WITH SIXTEEN POINTS"
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "OCTOBER · EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Club Brugge",
+     "venue": "HOME",
+     "line2": "TUE, OCT 13 · CHAMPIONS LEAGUE · MATCHDAY 2",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+ · VIX"
+    },
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7",
+     "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+    },
+    {
+     "name": "Shakhtar Donetsk",
+     "venue": "HOME",
+     "line2": "WED, OCT 21 · CHAMPIONS LEAGUE · MATCHDAY 3",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+ · VIX"
+    },
+    {
+     "name": "Fiorentina",
+     "venue": "HOME",
+     "line2": "SUN, OCT 25 · SERIE A · MATCHDAY 8",
+     "line3": "7:30 AM ET · 12:30 CET · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+    },
+    {
+     "name": "Venezia",
+     "venue": "AWAY",
+     "line2": "WED, OCT 28 · SERIE A · MATCHDAY 9",
+     "line3": "1:30 PM ET · 18:30 CET · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+    },
+    {
+     "name": "AC Milan",
+     "venue": "AWAY",
+     "line2": "SAT, OCT 31 · SERIE A · MATCHDAY 10",
+     "line3": "3:45 PM ET · 20:45 CET · US TV: PARAMOUNT+ · PEACOCK PREMIUM"
+    }
+   ]
+  },
+  {
+   "t": "note",
+   "html": "Kickoff times are the club's, converted to Eastern. US listings are World Soccer Talk's."
+  },
+  {
+   "t": "ask",
+   "html": "Reply to this email with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+  },
+  {
+   "t": "next",
+   "text": "TUESDAY, OCTOBER 13 — WHAT CHIVU SAID BEFORE CLUB BRUGGE"
+  },
+  {
+   "t": "follow",
+   "links": [
+    {
+     "label": "YouTube",
+     "url": "https://www.youtube.com/@nerazzurridaily"
+    },
+    {
+     "label": "TikTok",
+     "url": "https://www.tiktok.com/@nerazzurridaily"
+    }
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "Inter.it",
+     "title": "Champions League, Inter vs. Club Brugge: pre-match schedule",
+     "url": "https://www.inter.it/en/news/champions-league-inter-vs-club-brugge-pre-match-schedule-26-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Champions League, Inter-Club Brugge: le attività di vigilia",
+     "url": "https://www.inter.it/it/notizie/champions-league-inter-club-brugge-programma-vigilia-26-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Opposition analysis: Club Brugge",
+     "url": "https://www.inter.it/en/news/opposition-analysis-champions-league-club-brugge"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Champions, classifica e calendario",
+     "url": "https://www.inter.it/it/notizie/classifica-league-phase-inter-calendario-champions-league-26-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Inter-Club Brugge, dove vederla in tv",
+     "url": "https://www.inter.it/it/notizie/champions-league-inter-club-brugge-dove-vederla-in-tv"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Inter are back: Parma swept aside in 3-0 San Siro win",
+     "url": "https://www.inter.it/en/news/inter-parma-serie-a-26-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Sucic's goal, Mkhi's experience: 5 moments from Inter vs. Parma",
+     "url": "https://www.inter.it/en/news/five-moments-inter-parma-serie-a-2026-27"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "Sky - Chivu fa scelte oculate: contro il Bruges qualche cambio",
+     "url": "https://www.fcinternews.it/in-primo-piano/i-sky-i-chivu-scelte-oculate-bruges-cambio-akanji-zielinski-tornano-1-1020556"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "Inter-Club Bruges, arbitra il norvegese Rohit Saggi",
+     "url": "https://www.fcinternews.it/focus/inter-club-bruges-arbitra-il-norvegese-rohit-saggi-1020511"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "Inter-Brugge, domani parla Chivu: conferenza stampa alle 13",
+     "url": "https://www.fcinternews.it/news/inter-brugge-domani-parla-chivu-conferenza-stampa-13-1020513"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "Classifica Serie A",
+     "url": "https://www.fcinternews.it/classifica/serie-a"
+    },
+    {
+     "outlet": "World Soccer Talk",
+     "title": "Champions League TV schedule",
+     "url": "https://worldsoccertalk.com/champions-league-tv-schedule/"
+    },
+    {
+     "outlet": "World Soccer Talk",
+     "title": "Serie A TV schedule",
+     "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+    }
+   ]
+  }
+ ]
+}
