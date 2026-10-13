@@ -2,7 +2,7 @@
  "n": 42,
  "date": "2026-10-13",
  "slug": "rotate-vs-brugge",
- "tiktok": {"post_id": "cmv6oerjq0io0qw0yzj2zlyyr", "posted_at_utc": "2026-10-13T12:47:30Z", "state": "SUBMITTED", "url": null},
- "youtube": {"post_id": "cmv6oerrx0io1qw0ye2svlfio", "posted_at_utc": "2026-10-13T12:47:30Z", "state": "SUBMITTED", "video_id": null, "url": null, "privacy": null, "comment": null},
- "updated_at_utc": "2026-10-13T12:48:00Z"
+ "tiktok": {"post_id": "cmv6oerjq0io0qw0yzj2zlyyr", "posted_at_utc": "2026-10-13T12:47:30Z", "state": "PUBLISHED", "url": null},
+ "youtube": {"post_id": "cmv6oerrx0io1qw0ye2svlfio", "posted_at_utc": "2026-10-13T12:47:30Z", "state": "PUBLISHED", "video_id": "btO0Tw6B_68", "url": "https://www.youtube.com/shorts/btO0Tw6B_68", "privacy": "public", "comment": "not visible"},
+ "updated_at_utc": "2026-10-13T12:55:00Z"
 }
