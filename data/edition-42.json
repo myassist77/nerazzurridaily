@@ -1,0 +1,243 @@
+{
+  "n": 42,
+  "date": "2026-10-13",
+  "title": "Club Brugge at San Siro today, and what Chivu said",
+  "description": "Cristian Chivu says the dream of a European run has to become a responsibility, and Inter\u2019s 2025/26 accounts show \u20ac518 million in revenue and a \u20ac22.7 million profit.",
+  "mast_alt": "Nerazzurri Daily Edition No. 42, Tuesday, October 13, 2026 \u2014 Club Brugge at San Siro today, and what Chivu said",
+  "blocks": [
+    {
+      "t": "dek",
+      "html": "Inter host <a href=\"https://www.inter.it/en/news/inter-vs-club-brugge-previous-meetings-and-key-facts\" rel=\"noopener\">Club Brugge</a> at San Siro today at 3:00 PM ET. It is the second match of the Champions League league phase, and Inter\u2019s first at home. Cristian Chivu, Inter\u2019s head coach, said on Monday that the dream of a European run <a href=\"https://www.inter.it/en/news/press-conference-chivu-inter-club-brugge-champions-league-2026-27\" rel=\"noopener\">\u201chas to become a responsibility,\u201d</a> and that Hakan \u00c7alhano\u011flu is fit. The two clubs have never met in a competitive match."
+    },
+    {
+      "t": "scoreboard",
+      "rows": [
+        {
+          "label": "TODAY",
+          "name": "Club Brugge",
+          "venue": "HOME",
+          "line": "3:00\u00a0PM\u00a0ET \u00b7 21:00\u00a0CEST \u00b7 CHAMPIONS\u00a0LEAGUE \u00b7 MATCHDAY\u00a02"
+        },
+        {
+          "label": "LAST",
+          "name": "Inter 3\u20130 Parma",
+          "venue": null,
+          "line": "SERIE\u00a0A \u00b7 MATCHDAY\u00a06 \u00b7 SAN\u00a0SIRO"
+        },
+        {
+          "label": "NEXT",
+          "name": "Bologna",
+          "venue": "AWAY",
+          "line": "SAT,\u00a0OCT\u00a017 \u00b7 SERIE\u00a0A \u00b7 12:00\u00a0PM\u00a0ET"
+        }
+      ]
+    },
+    {
+      "t": "bar",
+      "kind": "c",
+      "label": "CONFIRMED",
+      "sub": "CLUB \u00b7 LEAGUE \u00b7 UEFA"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Chivu: the dream has to become a responsibility",
+      "paras": [
+        "Chivu took the pre-match press conference at Appiano Gentile, Inter\u2019s training ground, on Monday. He said the club\u2019s standing demands that it chase every objective. There are no easy matches in the Champions League, he said, and he does not want his team to lose its identity even in defeat.",
+        "On the squad, Chivu said \u00c7alhano\u011flu is fit, and that \u201cwe\u2019ll make a few changes.\u201d Alessandro Bastoni, the defender, is available. Djed Spence, the wing back, is training again and played 25 minutes against Parma. Chivu said he is \u201cgetting fitter.\u201d He also thanked Yann Sommer, Inter\u2019s goalkeeper for three years, who is in Club Brugge\u2019s goal today."
+      ],
+      "kicker": "SAID \u00b7 INTER.IT \u00b7 OCT 12"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Akanji wants the top eight, and a home win first",
+      "paras": [
+        "Manuel Akanji, the Inter defender, spoke after his coach. He said the aim is to \u201cfinish in the top eight\u201d of the league phase, and that it starts with a win at San Siro. He refused to call the match must-win: six league-phase matches follow this one."
+      ],
+      "kicker": "SAID \u00b7 INTER.IT \u00b7 OCT 12"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "The accounts: \u20ac518 million in revenue and a second straight profit",
+      "paras": [
+        "Inter\u2019s shareholders approved the 2025/26 financial statements on Monday. Revenue was \u20ac518 million, the club\u2019s second-highest figure. Only 2024/25 was higher, at \u20ac567 million, lifted by the FIFA Club World Cup and the 2025 Champions League final. Net profit was \u20ac22.7 million, a second profitable year in a row. Giuseppe Marotta, Inter\u2019s president and chief executive, spoke at the meeting, and the club published its first sustainability report."
+      ],
+      "kicker": "INTER.IT \u00b7 OCT 12"
+    },
+    {
+      "t": "bar",
+      "kind": "r",
+      "label": "REPORTED",
+      "sub": "PRESS ONLY \u00b7 NOT YET OFFICIAL"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Gazzetta dello Sport expects six changes, and a first start for Stankovi\u0107",
+      "paras": [
+        "Gazzetta dello Sport, Italy\u2019s biggest sports daily, reported on Monday night that Chivu will make six changes from the side that beat Parma. The least predictable, the paper says, is a first Inter start for Aleksandar Stankovi\u0107. Inter signed the midfielder in July, after a season at Club Brugge. Gazzetta puts Nicol\u00f2 Barella and Piotr Zieli\u0144ski either side of him, with Akanji and Bastoni back in defense."
+      ],
+      "kicker": "GAZZETTA DELLO SPORT VIA FCINTERNEWS \u00b7 OCT 12"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Sky Sport Italia\u2019s lineup differs in one place",
+      "paras": [
+        "Sky Sport Italia published its own projected lineup on Monday morning, and it agrees almost everywhere. It has Josep Mart\u00ednez in goal behind Yann Bisseck, Akanji and Bastoni. Andy Diouf and Federico Dimarco play wide, with Lautaro Mart\u00ednez and Marcus Thuram together in attack. The one difference is the deep midfield place, which Sky gives to \u00c7alhano\u011flu rather than Stankovi\u0107."
+      ],
+      "kicker": "SKY SPORT ITALIA \u00b7 OCT 12"
+    },
+    {
+      "t": "section",
+      "head": "LATEST RESULT",
+      "meta": "SERIE A \u00b7 MATCHDAY 6 \u00b7 SAN SIRO"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Inter 3\u20130 Parma",
+      "paras": [
+        "SU\u010cI\u0106 13' \u00b7 \u00c7ALHANO\u011eLU 18' (PEN) \u00b7 THURAM 31'"
+      ],
+      "kicker": "SERIE A FORM \u00b7 FIVE WINS AND A DRAW FROM SIX \u00b7 TOP ON SIXTEEN POINTS, LEVEL WITH LAZIO"
+    },
+    {
+      "t": "section",
+      "head": "NEXT UP",
+      "meta": "OCTOBER \u00b7 EASTERN TIME FIRST, MILAN SECOND"
+    },
+    {
+      "t": "fixtures",
+      "rows": [
+        {
+          "name": "Bologna",
+          "venue": "AWAY",
+          "line2": "SAT,\u00a0OCT\u00a017 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a07",
+          "line3": "12:00\u00a0PM\u00a0ET \u00b7 18:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+        },
+        {
+          "name": "Shakhtar Donetsk",
+          "venue": "HOME",
+          "line2": "WED,\u00a0OCT\u00a021 \u00b7 CHAMPIONS\u00a0LEAGUE \u00b7 MATCHDAY\u00a03",
+          "line3": "3:00\u00a0PM\u00a0ET \u00b7 21:00\u00a0CEST \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 VIX"
+        },
+        {
+          "name": "Fiorentina",
+          "venue": "HOME",
+          "line2": "SUN,\u00a0OCT\u00a025 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a08",
+          "line3": "7:30\u00a0AM\u00a0ET \u00b7 12:30\u00a0CET \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+        },
+        {
+          "name": "Venezia",
+          "venue": "AWAY",
+          "line2": "WED,\u00a0OCT\u00a028 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a09",
+          "line3": "1:30\u00a0PM\u00a0ET \u00b7 18:30\u00a0CET \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+        },
+        {
+          "name": "AC Milan",
+          "venue": "AWAY",
+          "line2": "SAT,\u00a0OCT\u00a031 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a010",
+          "line3": "3:45\u00a0PM\u00a0ET \u00b7 20:45\u00a0CET \u00b7 US\u00a0TV:\u00a0PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+        }
+      ]
+    },
+    {
+      "t": "note",
+      "html": "Kickoff times are the club\u2019s; US listings are World Soccer Talk\u2019s."
+    },
+    {
+      "t": "ask",
+      "html": "Reply to this email with one word \u2014 which of today\u2019s items should I chase tomorrow? \u2014 and tell me where you\u2019re reading from. I read every one."
+    },
+    {
+      "t": "next",
+      "text": "WEDNESDAY, OCTOBER 14 \u2014 WHAT HAPPENED AGAINST CLUB BRUGGE"
+    },
+    {
+      "t": "follow",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@nerazzurridaily"
+        },
+        {
+          "label": "TikTok",
+          "url": "https://www.tiktok.com/@nerazzurridaily"
+        }
+      ]
+    },
+    {
+      "t": "sources",
+      "links": [
+        {
+          "outlet": "Inter.it",
+          "title": "Chivu: \u201cA dream comes with great responsibility\u201d",
+          "url": "https://www.inter.it/en/news/press-conference-chivu-inter-club-brugge-champions-league-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Akanji: \u201cWe want to win in front of our fans\u201d",
+          "url": "https://www.inter.it/en/news/akanji-press-conference-inter-club-brugge-champions-league-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Shareholders meeting approves 2025/26 financial results",
+          "url": "https://www.inter.it/en/news/inter-shareholders-meeting-october-2026"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter vs. Club Brugge: previous meetings and key facts",
+          "url": "https://www.inter.it/en/news/inter-vs-club-brugge-previous-meetings-and-key-facts"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter vs. Club Brugge: where to watch on TV",
+          "url": "https://www.inter.it/en/news/champions-league-inter-club-brugge-where-to-watch"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Champions League | Standings and fixtures",
+          "url": "https://www.inter.it/en/news/standings-league-phase-inter-fixtures-champions-league-26-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter 3-0 Parma",
+          "url": "https://www.inter.it/en/news/inter-parma-serie-a-26-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "FC Internazionale unveil new signing Aleksandar Stankovic",
+          "url": "https://www.inter.it/en/news/aleksandar-stankovic-inter-presentation-interview"
+        },
+        {
+          "outlet": "Sky Sport Italia",
+          "title": "Inter-Bruges, le probabili formazioni della gara di Champions",
+          "url": "https://sport.sky.it/calcio/champions-league/2026/10/12/inter-bruges-probabili-formazioni-2-giornata"
+        },
+        {
+          "outlet": "FCInterNews",
+          "title": "(GdS) Inter-Bruges, Chivu cambia mezza squadra: sorpresa Stankovic",
+          "url": "https://www.fcinternews.it/focus/i-gds-i-inter-bruges-chivu-cambia-mezza-squadra-sorpresa-stankovic-1-1020650"
+        },
+        {
+          "outlet": "FCInterNews",
+          "title": "Serie A table",
+          "url": "https://www.fcinternews.it/classifica/serie-a"
+        },
+        {
+          "outlet": "World Soccer Talk",
+          "title": "Champions League TV schedule",
+          "url": "https://worldsoccertalk.com/champions-league-tv-schedule/"
+        },
+        {
+          "outlet": "World Soccer Talk",
+          "title": "Serie A TV schedule",
+          "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+        }
+      ]
+    }
+  ]
+}
