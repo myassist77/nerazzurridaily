@@ -45,6 +45,16 @@ FONTS = {"Anton": F("anton/files/anton-latin-400-normal.woff2"),
          "IBM Plex Mono": F("ibm-plex-mono/files/ibm-plex-mono-latin-500-normal.woff2"),
          "Oswald": F("oswald/files/oswald-latin-600-normal.woff2"),
          "Gelasio": F("gelasio/files/gelasio-latin-400-normal.woff2")}
+# latin-ext covers the diacritics the brand actually prints - C-acute, G-breve, N-acute, S-caron
+# (Stankovic, Calhanoglu, Zielinski, Sucic). Without it Chromium silently falls back to a serif
+# face for that ONE letter and the Anton line breaks apart (seen on No. 42, Oct 13, 2026).
+FONTS_EXT = {k: v for k, v in ((k, v.replace("-latin-", "-latin-ext-")) for k, v in FONTS.items())
+             if os.path.exists(v[len("file://"):])}
+EXT_RANGE = ("U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,"
+             "U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF")
+_FACE = lambda k, v, r="": '@font-face{font-family:"%s";src:url(%s) format("woff2")%s}' % (k, v, r)
+FACES = ("".join(_FACE(k, v) for k, v in FONTS.items())
+         + "".join(_FACE(k, v, ";unicode-range:" + EXT_RANGE) for k, v in FONTS_EXT.items()))
 GROUNDS = {
     "nero":    {"bg": "#06080F", "fg": "#FFFFFF", "kick": "#8A94AE", "sub": "#AEB7CC", "acc": "#4A7BE0",
                 "url": "#8FB2F0", "bar": "rgba(143,178,240,.55)", "line": "rgba(255,255,255,.28)"},
@@ -89,7 +99,7 @@ if beats[0]["kind"] != "cover" or beats[-1]["kind"] != "end":
     sys.exit("BUILD FAILED: first beat must be 'cover' and last beat 'end'")
 
 esc = lambda s: html.escape(str(s)).replace(" · ", " &nbsp;·&nbsp; ")
-CSS = "".join(f'@font-face{{font-family:"{k}";src:url({v}) format("woff2")}}' for k, v in FONTS.items()) + f"""
+CSS = FACES + f"""
 *{{box-sizing:border-box;margin:0}} body{{background:#000}}
 #f{{width:{W}px;height:{H}px;position:relative;overflow:hidden;display:flex;flex-direction:column;
    justify-content:center;align-items:center;padding:200px 96px 340px;text-align:center}}
@@ -253,7 +263,7 @@ document.fonts.ready.then(()=>{fit(); window.seek(0); document.body.dataset.fitt
             f'<div id="f" class="{sleeve_cls}" style="background:{g["bg"]}">{body}</div>{js}</body></html>')
 
 # ---- THUMBNAILS: designed 9:16 (Shorts custom thumbnail / TikTok cover) + 16:9 ------------------
-THUMB_CSS = "".join(f'@font-face{{font-family:"{k}";src:url({v}) format("woff2")}}' for k, v in FONTS.items()) + """
+THUMB_CSS = FACES + """
 *{box-sizing:border-box;margin:0} body{background:#000}
 .mono{font-family:"IBM Plex Mono",monospace;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
 .anton{font-family:Anton;text-transform:uppercase;line-height:.92;white-space:nowrap}

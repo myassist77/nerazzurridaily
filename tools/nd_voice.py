@@ -54,6 +54,10 @@ FIX = {
     "Milito": "milˈito", "Diego Milito": "djˈeɡo milˈito",   # Italian G2P stressed the first syllable (Sept 30, 2026)
     # Initialisms are letter names, not words: Italian G2P read TyC as "tee-chee" (Oct 7, 2026)
     "TyC Sport": "tˈiː wˈaɪ sˈiː spˈɔːɹt", "TyC": "tˈiː wˈaɪ sˈiː",
+    # Flemish, not Italian: Italian G2P read Brugge as "BROO-jeh" (Oct 13, 2026)
+    "Club Brugge": "klˈʌb brˈuɡə", "Brugge": "brˈuɡə",
+    # Serbian stress is on the first syllable; Italian G2P gave "stan-KO-vitch" (Oct 13, 2026)
+    "Aleksandar Stanković": "aleksˈandar stˈankovitʃ", "Stanković": "stˈankovitʃ",
 }
 
 ONES = "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen".split()
