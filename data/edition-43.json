@@ -1,0 +1,257 @@
+{
+ "n": 43,
+ "date": "2026-10-14",
+ "title": "Inter lose 3\u20134 to Club Brugge \u2014 Tresoldi hat trick",
+ "description": "Nicol\u00f2 Tresoldi scored three times for Club Brugge, Lautaro Mart\u00ednez scored twice for Inter, and Inter have no points from their first two Champions League matches.",
+ "mast_alt": "Nerazzurri Daily Edition No. 43, Wednesday, October 14, 2026 \u2014 Inter lose 3\u20134 to Club Brugge",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Club Brugge <a href=\"https://www.inter.it/it/notizie/inter-club-brugge-champions-league-2026-27\" rel=\"noopener\">won 4\u20133 at San Siro</a> on Tuesday night, and Inter have no points from their first two Champions League matches. Nicol\u00f2 Tresoldi, the 22-year-old Brugge striker, scored three times, the first from the penalty spot, and Inter were behind from the 63rd minute on. Cristian Chivu, Inter\u2019s head coach, <a href=\"https://www.inter.it/en/news/chivu-interview-post-inter-club-brugge-champions-league-2026-27\" rel=\"noopener\">said the team lost its balance and shape when it pressed</a>."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "TODAY",
+     "name": "No match",
+     "venue": null,
+     "line": "SERIE\u00a0A \u00b7 TOP ON SIXTEEN POINTS \u00b7 BOLOGNA AWAY SATURDAY"
+    },
+    {
+     "label": "LAST",
+     "name": "Inter 3\u20134 Club Brugge",
+     "venue": null,
+     "line": "CHAMPIONS\u00a0LEAGUE \u00b7 MATCHDAY\u00a02 \u00b7 SAN SIRO"
+    },
+    {
+     "label": "NEXT",
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line": "SAT,\u00a0OCT\u00a017 \u00b7 SERIE\u00a0A \u00b7 12:00\u00a0PM\u00a0ET"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB \u00b7 LEAGUE \u00b7 UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Chivu: \u201cWe lost our balance and shape when pressing\u201d",
+   "paras": [
+    "Cristian Chivu spoke to the club\u2019s channels after the match. \u201cI cannot be satisfied with the number of goals we conceded,\u201d he said. The work ahead, he said, is on balance, duels, second balls and the distances between players when they press.",
+    "He credited Club Brugge for their intensity and their pace out wide, and said he should have projected more calm at halftime. \u201cAbove all, we must not lose faith in ourselves,\u201d he said. Yann Bisseck, the Inter defender, was blunter. \u201cWe simply cannot concede four goals in the Champions League,\u201d he said."
+   ],
+   "kicker": "SAID \u00b7 INTER.IT \u00b7 OCT 13"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Lautaro Mart\u00ednez scores twice and moves to 181 for Inter",
+   "paras": [
+    "Lautaro Mart\u00ednez, Inter\u2019s captain and striker, scored in the 44th minute, after a flick from Federico Dimarco. He scored again in the 81st, from the rebound after Yann Sommer, the former Inter goalkeeper now at Club Brugge, had saved a substitute\u2019s shot.",
+    "The club\u2019s own all-time scorers list now puts him third on 181 goals, behind Alessandro Altobelli on 209 and Giuseppe Meazza on 284."
+   ],
+   "kicker": "INTER.IT \u00b7 OCT 13"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter U23 win 4\u20130 at Giugliano",
+   "paras": [
+    "Inter\u2019s U23 team won 4\u20130 away at Giugliano on Tuesday in a rescheduled Serie C match. All four goals came late: Mosconi in the 75th minute, Kaczmarski in the 83rd, and Zuberek twice in stoppage time.",
+    "Stefano Vecchi\u2019s side have 13 points, and a postponed match against Scafatese still to play on October 27."
+   ],
+   "kicker": "INTER.IT \u00b7 OCT 13"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY \u00b7 NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Gazzetta dello Sport: Dimarco close to terms through 2030",
+   "paras": [
+    "Gazzetta dello Sport, Italy\u2019s biggest sports daily, reported on Monday that Inter want to extend Federico Dimarco\u2019s contract to 2030. The paper says talks with his representatives have begun and that a meeting with the club is coming. The current deal renews automatically to 2028 through an option Inter hold."
+   ],
+   "kicker": "GAZZETTA DELLO SPORT VIA FCINTERNEWS \u00b7 OCT 12"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "The papers put the second goal on Josep Mart\u00ednez",
+   "paras": [
+    "Goal\u2019s Italian edition gave Josep Mart\u00ednez, Inter\u2019s goalkeeper, a 5 out of 10 and called the second goal another serious mistake after the opening defeat in Madrid. It gave Manuel Akanji, the defender, 4.5, and wrote that he was almost always out of position.",
+    "Filippo Tramontana, writing for FCInterNews, called the night a disaster and said Inter lost their heads after that goal."
+   ],
+   "kicker": "GOAL ITALIA \u00b7 FCINTERNEWS \u00b7 OCT 13"
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "CHAMPIONS\u00a0LEAGUE \u00b7 MATCHDAY\u00a02 \u00b7 SAN SIRO"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter 3\u20134 Club Brugge",
+   "paras": [
+    "TRESOLDI 30' (PEN) \u00b7 LAUTARO 44' \u00b7 TRESOLDI 63' \u00b7 TRESOLDI 74' \u00b7 LAUTARO 81' \u00b7 VERMANT 87' \u00b7 BONNY 90+3'",
+    "Hakan \u00c7alhano\u011flu, the midfielder, conceded the penalty and later hit the crossbar. Ange-Yoan Bonny\u2019s goal, in the third minute of stoppage time, was his first in the Champions League."
+   ],
+   "kicker": "CHAMPIONS LEAGUE \u00b7 NO POINTS FROM TWO \u00b7 LOST 2\u20131 AT REAL MADRID ON MATCHDAY ONE"
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "OCTOBER \u00b7 EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT,\u00a0OCT\u00a017 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a07",
+     "line3": "12:00\u00a0PM\u00a0ET \u00b7 18:00\u00a0CEST \u00b7 US\u00a0TV: PARAMOUNT+ \u00b7 CBS\u00a0SPORTS\u00a0GOLAZO"
+    },
+    {
+     "name": "Shakhtar Donetsk",
+     "venue": "HOME",
+     "line2": "WED,\u00a0OCT\u00a021 \u00b7 CHAMPIONS\u00a0LEAGUE \u00b7 MATCHDAY\u00a03",
+     "line3": "3:00\u00a0PM\u00a0ET \u00b7 21:00\u00a0CEST \u00b7 US\u00a0TV: PARAMOUNT+ \u00b7 VIX"
+    },
+    {
+     "name": "Fiorentina",
+     "venue": "HOME",
+     "line2": "SUN,\u00a0OCT\u00a025 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a08",
+     "line3": "7:30\u00a0AM\u00a0ET \u00b7 12:30\u00a0CET \u00b7 US\u00a0TV: PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+    },
+    {
+     "name": "Venezia",
+     "venue": "AWAY",
+     "line2": "WED,\u00a0OCT\u00a028 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a09",
+     "line3": "1:30\u00a0PM\u00a0ET \u00b7 18:30\u00a0CET \u00b7 US\u00a0TV: PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+    },
+    {
+     "name": "AC Milan",
+     "venue": "AWAY",
+     "line2": "SAT,\u00a0OCT\u00a031 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a010",
+     "line3": "3:45\u00a0PM\u00a0ET \u00b7 20:45\u00a0CET \u00b7 US\u00a0TV: PARAMOUNT+ \u00b7 PEACOCK\u00a0PREMIUM"
+    }
+   ]
+  },
+  {
+   "t": "note",
+   "html": "Kickoff times are the club\u2019s; US listings are World Soccer Talk\u2019s."
+  },
+  {
+   "t": "ask",
+   "html": "Reply to this email with one word \u2014 which of today\u2019s items should I chase tomorrow? \u2014 and tell me where you\u2019re reading from. I read every one."
+  },
+  {
+   "t": "next",
+   "text": "THURSDAY, OCTOBER 15 \u2014 WHAT CHIVU CHANGES BEFORE BOLOGNA"
+  },
+  {
+   "t": "follow",
+   "links": [
+    {
+     "label": "YouTube",
+     "url": "https://www.youtube.com/@nerazzurridaily"
+    },
+    {
+     "label": "TikTok",
+     "url": "https://www.tiktok.com/@nerazzurridaily"
+    }
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "Inter.it",
+     "title": "L\u2019Inter sconfitta 3-4 dal Club Brugge",
+     "url": "https://www.inter.it/it/notizie/inter-club-brugge-champions-league-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Chivu: \u201cWe need to work on maintaining our balance\u201d",
+     "url": "https://www.inter.it/en/news/chivu-interview-post-inter-club-brugge-champions-league-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Bonny: \u201cIt\u2019s important to bounce back straight away\u201d",
+     "url": "https://www.inter.it/en/news/bonny-diouf-bisseck-interview-post-inter-club-brugge-champions-league-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Inter\u2019s all-time top scorers",
+     "url": "https://www.inter.it/en/news/standings-scorers-inter"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Opposition analysis: Club Brugge",
+     "url": "https://www.inter.it/en/news/opposition-analysis-champions-league-club-brugge"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Champions League | Standings and fixtures",
+     "url": "https://www.inter.it/en/news/standings-league-phase-inter-fixtures-champions-league-26-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "L\u2019Inter U23 riparte alla grande: 0-4 in casa del Giugliano",
+     "url": "https://www.inter.it/it/notizie/giugliano-inter-u23-serie-c-2026-27"
+    },
+    {
+     "outlet": "L\u2019Interista",
+     "title": "Giugliano-Inter U23 0-4: Zuberek show, a segno anche Mosconi e Kaczmarski",
+     "url": "https://www.linterista.it/inter-u23/finale-inter-u23-zuberek-show-mosconi-kaczmarski-201681"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "GdS \u2014 Inter, Dimarco fa anche il regista. Rinnovo fino al 2030: il punto",
+     "url": "https://www.fcinternews.it/focus/i-gds-i-inter-dimarco-regista-rinnovo-2030-punto-1020566"
+    },
+    {
+     "outlet": "Goal",
+     "title": "Inter-Bruges 3-4, pagelle e tabellino",
+     "url": "https://www.goal.com/it/liste/inter-bruges-risultato-voti-pagelle-marcatori-tabellino-cronaca/blt884989e2305700dd"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "Tramontana: \u201cInter da oratorio! Un disastro\u201d",
+     "url": "https://fcinternews.it/vento-di-tramontana/video-inter-club-brugge-tramontana-1020708"
+    },
+    {
+     "outlet": "Fantacalcio",
+     "title": "Inter - Club Brugge 3-4, tabellino e voti",
+     "url": "https://www.fantacalcio.it/fantachampions/voti-e-tabellini/13_10_2026/tresoldi-mattatore-a-san-siro-tra-inter-e-club-brugge-finisce-3-4-499173"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "Serie A table",
+     "url": "https://www.fcinternews.it/classifica/serie-a"
+    },
+    {
+     "outlet": "World Soccer Talk",
+     "title": "Serie A TV schedule",
+     "url": "https://worldsoccertalk.com/serie-a-tv-schedule/"
+    },
+    {
+     "outlet": "World Soccer Talk",
+     "title": "Champions League TV schedule",
+     "url": "https://worldsoccertalk.com/champions-league-tv-schedule/"
+    }
+   ]
+  }
+ ]
+}
