@@ -1,0 +1,267 @@
+{
+ "n": 44,
+ "date": "2026-10-15",
+ "title": "Chivu speaks Friday as the press expects changes",
+ "description": "Daniele Doveri will referee Saturday\u2019s match at the Dall\u2019Ara, and Gazzetta dello Sport and Corriere dello Sport both expect Cristian Chivu to rest players who started against Parma and Club Brugge.",
+ "mast_alt": "Nerazzurri Daily Edition No. 44, Thursday, October 15, 2026 \u2014 Chivu speaks Friday as the press expects changes",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Cristian Chivu, Inter\u2019s head coach, <a href=\"https://www.inter.it/en/news/chivu-press-conference-announcement-bologna-inter-serie-a-26-27\" rel=\"noopener\">faces reporters on Friday at 8:30 AM ET</a>, 14:30 CEST, at Appiano Gentile, Inter\u2019s training ground. Inter play at Bologna the next day. Daniele Doveri will referee it: the <a href=\"https://www.legaseriea.it/serie-a/news/le-designazioni-arbitrali-della-7a\" rel=\"noopener\">Lega Serie A named him on Wednesday</a>. Gazzetta dello Sport, Italy\u2019s biggest sports daily, and Corriere dello Sport both expect Chivu to change his lineup."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "TODAY",
+     "name": "No match",
+     "venue": null,
+     "line": "SERIE\u00a0A \u00b7 BOLOGNA AWAY SATURDAY \u00b7 12:00\u00a0PM\u00a0ET"
+    },
+    {
+     "label": "LAST",
+     "name": "Inter 3\u20134 Club Brugge",
+     "venue": null,
+     "line": "CHAMPIONS\u00a0LEAGUE \u00b7 MATCHDAY\u00a02 \u00b7 SAN SIRO"
+    },
+    {
+     "label": "NEXT",
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line": "SAT,\u00a0OCT\u00a017 \u00b7 SERIE\u00a0A \u00b7 12:00\u00a0PM\u00a0ET"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB \u00b7 LEAGUE \u00b7 UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Chivu speaks on Friday, and Doveri will referee at Bologna",
+   "paras": [
+    "Inter have set Cristian Chivu\u2019s pre-match press conference for Friday. It begins at 8:30 AM ET, 14:30 CEST, at the training center at Appiano Gentile, and the club will stream it.",
+    "The match is Saturday at 12:00 PM ET, 18:00 CEST, at the Dall\u2019Ara in Bologna. It is matchday 7 of Serie A. The Lega Serie A named Daniele Doveri as the referee on Wednesday. Italy gets the match on DAZN; US listings show Paramount+, CBS Sports Golazo and Peacock."
+   ],
+   "kicker": "INTER.IT \u00b7 LEGA SERIE A \u00b7 OCT 14"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter U23 host Monopoli on Saturday",
+   "paras": [
+    "Inter\u2019s U23 team play Monopoli on Saturday at 8:30 AM ET, 14:30 CEST. The stadium is the Ernesto Breda in Sesto San Giovanni, and it is matchday 10 of Serie C.",
+    "Inter U23, coached by Stefano Vecchi, are seventh with 13 points from eight matches and have a match in hand. Monopoli are 12th with 12 points. Inter won 4\u20130 at Giugliano on Tuesday."
+   ],
+   "kicker": "INTER.IT \u00b7 OCT 14"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter Women host Parma on Sunday",
+   "paras": [
+    "Inter Women play Parma on Sunday at 10:00 AM ET, 16:00 CEST. The venue is the Arena Civica Gianni Brera in Milan, and it is matchday 3 of Serie A Women.",
+    "Inter have won both league matches and have six points. The last was a 2\u20130 win at Como Women on October 4. Karolina Lea Vilhj\u00e1lmsd\u00f3ttir, the midfielder, scored a penalty in the 63rd minute, and Haley Bugeja, the forward, added the second in the 83rd."
+   ],
+   "kicker": "INTER.IT \u00b7 OCT 4"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY \u00b7 NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "The papers expect Chivu to change his lineup at Bologna",
+   "paras": [
+    "Gazzetta dello Sport reported on Thursday that Carlos Augusto, the left-sided defender, is in line to start. He missed the Club Brugge match with a physical problem. The paper also puts Benjamin Pavard, the center-back, back in the defense, and has Ange-Yoan Bonny, the forward, close to a start.",
+    "Corriere dello Sport wrote that Yann Bisseck, the defender, Hakan \u00c7alhano\u011flu, the midfielder, and Marcus Thuram, the forward, all started against both Parma and Club Brugge. All three could sit, with Andy Diouf and Federico Dimarco. John Stones, the defender, and Curtis Jones, the midfielder, are still injured."
+   ],
+   "kicker": "GAZZETTA DELLO SPORT AND CORRIERE DELLO SPORT VIA FCINTERNEWS \u00b7 OCT 15"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Sportitalia: Mancuso close to a new deal to 2031",
+   "paras": [
+    "Sportitalia reported on Wednesday that Inter are close to extending Matias Mancuso\u2019s contract to 2031. He is a teenage midfielder in the U23 squad and started the win at Giugliano. FCInterNews relayed the report and credited the journalist Gianluigi Longari."
+   ],
+   "kicker": "SPORTITALIA VIA FCINTERNEWS \u00b7 OCT 14"
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "CHAMPIONS LEAGUE \u00b7 MATCHDAY 2 \u00b7 SAN SIRO"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter 3\u20134 Club Brugge",
+   "paras": [
+    "TRESOLDI 30' (PEN) \u00b7 LAUTARO 44' \u00b7 TRESOLDI 63' \u00b7 TRESOLDI 74' \u00b7 LAUTARO 81' \u00b7 VERMANT 87' \u00b7 BONNY 90+3'"
+   ],
+   "kicker": "CHAMPIONS LEAGUE \u00b7 NO POINTS FROM TWO \u00b7 28TH OF 36 IN THE LEAGUE PHASE"
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "OCTOBER & INTO NOVEMBER \u00b7 EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Bologna",
+     "venue": "AWAY",
+     "line2": "SAT,\u00a0OCT\u00a017 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a07",
+     "line3": "12:00\u00a0PM\u00a0ET \u00b7 18:00\u00a0CEST \u00b7 US\u00a0TV: PARAMOUNT+ \u00b7 CBS\u00a0SPORTS\u00a0GOLAZO \u00b7 PEACOCK"
+    },
+    {
+     "name": "Shakhtar Donetsk",
+     "venue": "HOME",
+     "line2": "WED,\u00a0OCT\u00a021 \u00b7 CHAMPIONS\u00a0LEAGUE \u00b7 MATCHDAY\u00a03",
+     "line3": "3:00\u00a0PM\u00a0ET \u00b7 21:00\u00a0CEST \u00b7 US\u00a0TV: PARAMOUNT+ \u00b7 CBS\u00a0SPORTS\u00a0NETWORK"
+    },
+    {
+     "name": "Fiorentina",
+     "venue": "HOME",
+     "line2": "SUN,\u00a0OCT\u00a025 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a08",
+     "line3": "7:30\u00a0AM\u00a0ET \u00b7 12:30\u00a0CET \u00b7 US\u00a0TV: PARAMOUNT+ \u00b7 CBS\u00a0SPORTS\u00a0NETWORK"
+    },
+    {
+     "name": "Venezia",
+     "venue": "AWAY",
+     "line2": "WED,\u00a0OCT\u00a028 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a09",
+     "line3": "1:30\u00a0PM\u00a0ET \u00b7 18:30\u00a0CET \u00b7 US\u00a0TV: PARAMOUNT+"
+    },
+    {
+     "name": "AC Milan",
+     "venue": "AWAY",
+     "line2": "SAT,\u00a0OCT\u00a031 \u00b7 SERIE\u00a0A \u00b7 MATCHDAY\u00a010",
+     "line3": "3:45\u00a0PM\u00a0ET \u00b7 20:45\u00a0CET \u00b7 US\u00a0TV: PARAMOUNT+"
+    },
+    {
+     "name": "Feyenoord",
+     "venue": "AWAY",
+     "line2": "TUE,\u00a0NOV\u00a03 \u00b7 CHAMPIONS\u00a0LEAGUE \u00b7 MATCHDAY\u00a04",
+     "line3": "3:00\u00a0PM\u00a0ET \u00b7 21:00\u00a0CET \u00b7 US\u00a0TV: NOT\u00a0YET\u00a0PUBLISHED"
+    }
+   ]
+  },
+  {
+   "t": "note",
+   "html": "Kickoff times are the club\u2019s and the Lega Serie A\u2019s; US listings are Sports Media Watch\u2019s and Live Soccer TV\u2019s."
+  },
+  {
+   "t": "ask",
+   "html": "Reply to this email with one word \u2014 which of today\u2019s items should I chase tomorrow? \u2014 and tell me where you\u2019re reading from. I read every one."
+  },
+  {
+   "t": "next",
+   "text": "FRIDAY, OCTOBER 16 \u2014 WHAT CHIVU SAYS BEFORE BOLOGNA"
+  },
+  {
+   "t": "follow",
+   "links": [
+    {
+     "label": "YouTube",
+     "url": "https://www.youtube.com/@nerazzurridaily"
+    },
+    {
+     "label": "TikTok",
+     "url": "https://www.tiktok.com/@nerazzurridaily"
+    }
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "Inter.it",
+     "title": "Bologna vs. Inter, Chivu\u2019s press conference on Friday",
+     "url": "https://www.inter.it/en/news/chivu-press-conference-announcement-bologna-inter-serie-a-26-27"
+    },
+    {
+     "outlet": "Lega Serie A",
+     "title": "Le designazioni arbitrali della 7\u00aa",
+     "url": "https://www.legaseriea.it/serie-a/news/le-designazioni-arbitrali-della-7a"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Bologna-Inter, dove vederla in tv",
+     "url": "https://www.inter.it/it/notizie/bologna-inter-dove-vederla-in-tv-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Sabato Inter U23-Monopoli al \u201cBreda\u201d: la guida e le info sui biglietti",
+     "url": "https://www.inter.it/it/notizie/inter-u23-monopoli-guida-biglietti-dove-vedere-tv"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Inter Women: results, matches and official news",
+     "url": "https://www.inter.it/en/inter-women"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "A dominant Inter beats Como Women 2-0",
+     "url": "https://www.inter.it/en/news/como-women-inter-women-serie-a-women-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Champions League | Standings and fixtures",
+     "url": "https://www.inter.it/en/news/standings-league-phase-inter-fixtures-champions-league-26-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Feyenoord vs. Inter, away tickets: sales underway",
+     "url": "https://www.inter.it/en/news/feyenoord-inter-tickets-away-section-champions-league"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "AC Milan vs. Inter, away tickets: all the information",
+     "url": "https://www.inter.it/en/news/ac-milan-vs-inter-away-tickets-information-serie-a-2026-27"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "GdS - Bologna-Inter, tre nomi nuovi per Chivu. Bonny da titolare?",
+     "url": "https://www.fcinternews.it/focus/i-gds-i-bologna-inter-nomi-chivu-bonny-titolare-1020813"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "CdS - In tre sia col Parma che col Bruges: Chivu pensa ai cambi per Bologna",
+     "url": "https://www.fcinternews.it/rassegna/i-cds-i-parma-bruges-chivu-pensa-cambi-bologna-1020820"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "SI - Matias Mancuso verso il rinnovo con l\u2019Inter",
+     "url": "https://www.fcinternews.it/news/i-si-i-matias-mancuso-rinnovo-inter-1020754"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "Inter, lavoro post Brugge: scarico per chi ha giocato",
+     "url": "https://www.fcinternews.it/focus/inter-lavoro-post-brugge-scarico-giocato-stones-jones-1020784"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "Doveri per Bologna-Inter: il precedente",
+     "url": "https://www.fcinternews.it/news/doveri-bologna-inter-precedente-firmato-estupinan-1020766"
+    },
+    {
+     "outlet": "Sports Media Watch",
+     "title": "Serie A TV schedule 2026-27",
+     "url": "https://www.sportsmediawatch.com/tv-schedules/club-soccer/serie-a/"
+    },
+    {
+     "outlet": "Live Soccer TV",
+     "title": "FC Internazionale Milano fixtures and TV schedule",
+     "url": "https://www.livesoccertv.com/teams/italy/inter-milan/"
+    }
+   ]
+  }
+ ]
+}
