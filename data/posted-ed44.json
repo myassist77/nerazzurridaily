@@ -2,7 +2,7 @@
   "n": 44,
   "date": "2026-10-15",
   "slug": "chivu-rotation",
-  "tiktok": {"post_id": "cmv9kdxis01r7le0y3paut9dt", "posted_at_utc": "2026-10-15T13:18:30Z", "state": "SUBMITTED", "url": null},
-  "youtube": {"post_id": "cmv9ke6fm01rgle0yw8za2xv8", "posted_at_utc": "2026-10-15T13:19:00Z", "state": "SUBMITTED", "video_id": null, "url": null, "privacy": null, "comment": null},
-  "updated_at_utc": "2026-10-15T13:19:30Z"
+  "tiktok": {"post_id": "cmv9kdxis01r7le0y3paut9dt", "posted_at_utc": "2026-10-15T13:18:30Z", "state": "PUBLISHED", "url": null},
+  "youtube": {"post_id": "cmv9ke6fm01rgle0yw8za2xv8", "posted_at_utc": "2026-10-15T13:19:00Z", "state": "PUBLISHED", "video_id": "yhPNBSv90p0", "url": "https://www.youtube.com/shorts/yhPNBSv90p0", "privacy": "public", "comment": "not visible"},
+  "updated_at_utc": "2026-10-15T13:26:00Z"
 }
