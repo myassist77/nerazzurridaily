@@ -1,0 +1,132 @@
+{
+  "n": 45,
+  "date": "2026-10-16",
+  "title": "Lautaro Martínez has a strain in his left hamstring",
+  "description": "Gazzetta dello Sport expects five to six weeks out, and Inter play at Bologna on Saturday without their captain.",
+  "mast_alt": "Nerazzurri Daily Edition No. 45, Friday, October 16, 2026 — Lautaro Martínez has a strain in his left hamstring",
+  "blocks": [
+    {
+      "t": "dek",
+      "html": "Lautaro Martínez, Inter's captain and center forward, <a href=\"https://www.inter.it/en/news/lautaro-martinez-condition-injury-october-2026\" rel=\"noopener\">has a strain in his left hamstring</a>, the club said on Thursday after tests in Rozzano, outside Milan. Inter gave no return date. Gazzetta dello Sport, Italy's biggest sports daily, <a href=\"https://www.fcinter1908.it/news/infortuni/inter-lautaro-infortunio-gazzetta-tempi-recupero/\" rel=\"noopener\">expects him out for five to six weeks</a>, and Cristian Chivu, Inter's head coach, faces reporters at 8:30 AM ET, 14:30 CEST, before Saturday's match at Bologna."
+    },
+    {
+      "t": "scoreboard",
+      "rows": [
+        {"label": "TODAY", "name": "No match", "venue": null, "line": "SERIE A · BOLOGNA AWAY SATURDAY · 12:00 PM ET"},
+        {"label": "LAST", "name": "Inter 3–4 Club Brugge", "venue": null, "line": "CHAMPIONS LEAGUE · MATCHDAY 2 · SAN SIRO"},
+        {"label": "NEXT", "name": "Bologna", "venue": "AWAY", "line": "SAT, OCT 17 · SERIE A · 12:00 PM ET"}
+      ]
+    },
+    {"t": "bar", "kind": "c", "label": "CONFIRMED", "sub": "CLUB · LEAGUE · UEFA"},
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Lautaro Martínez has a strain in his left hamstring",
+      "paras": [
+        "Inter said on Thursday that Lautaro Martínez, the club's captain and center forward, had clinical and diagnostic tests at the Istituto Humanitas hospital in Rozzano, outside Milan. The tests, the club said, \"revealed a strain in his left hamstring.\"",
+        "The statement gave no return date. He had played the whole match against Club Brugge two days earlier, and scored twice."
+      ],
+      "kicker": "INTER.IT · OCT 15"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Chivu speaks at 8:30 AM ET, and the officials are named",
+      "paras": [
+        "Cristian Chivu, Inter's head coach, faces reporters at 8:30 AM ET, 14:30 CEST, at Appiano Gentile, Inter's training ground. This edition went out before he spoke; what he says leads tomorrow.",
+        "New since yesterday: Inter's match guide names the full crew for Saturday at the Stadio Dall'Ara. Daniele Doveri referees, with Zingarelli and Bercigli on the lines, Di Marco as fourth official, Gariglio on VAR and Piccinini assisting him. Kickoff is 12:00 PM ET, 18:00 CEST."
+      ],
+      "kicker": "UPDATE · INTER.IT · OCT 15"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Away tickets at Feyenoord open to loyalty members today",
+      "paras": [
+        "Inter said on Friday that the last sale phase for the away section at Feyenoord opens today at 9:00 AM ET, 15:00 CET. It is open to members of the club's INTERISTA loyalty program, if any tickets are left.",
+        "The match is Champions League matchday 4 in Rotterdam, Tuesday, November 3, 3:00 PM ET, 21:00 CET. Tickets are €50, one per member, sold only at trasferte.inter.it, and not transferable."
+      ],
+      "kicker": "INTER.IT · OCT 16"
+    },
+    {"t": "bar", "kind": "r", "label": "REPORTED", "sub": "PRESS ONLY · NOT YET OFFICIAL"},
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Gazzetta dello Sport expects five to six weeks out",
+      "paras": [
+        "Gazzetta dello Sport reported on Friday that the injury is a \"lesione\" — a muscle tear — at the back of Lautaro Martínez's left thigh. The paper expects a \"stop previsto di 5-6 settimane\": a layoff of five to six weeks. The club's own word was \"strain,\" and Inter have published no timeline.",
+        "On that reading he misses the rest of October and much of November. The report says Chivu expects to see him again after the November international break."
+      ],
+      "kicker": "GAZZETTA DELLO SPORT VIA FCINTER1908 · OCT 16"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "The papers disagree over who starts beside Thuram",
+      "paras": [
+        "Yesterday the press expected rotation at Bologna. Lautaro Martínez's injury has changed the question to replacement.",
+        "Gazzetta dello Sport, relayed by FCInter1908, expects Francesco Pio Esposito, a center forward, to start beside Marcus Thuram, Inter's other center forward. Ange-Yoan Bonny waits. Sky Sport Italia's projected lineup puts Bonny there instead. Inter have published no lineup."
+      ],
+      "kicker": "UPDATE · GAZZETTA DELLO SPORT AND SKY SPORT ITALIA · OCT 16"
+    },
+    {"t": "section", "head": "LATEST RESULT", "meta": "CHAMPIONS LEAGUE · MATCHDAY 2 · SAN SIRO"},
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Inter 3–4 Club Brugge",
+      "paras": [
+        "TRESOLDI 30' (PEN) · LAUTARO 44' · TRESOLDI 63' · TRESOLDI 74' · LAUTARO 81' · VERMANT 87' · BONNY 90+3'",
+        "Lautaro Martínez scored twice and finished the match; the strain was found two days later."
+      ],
+      "kicker": "CHAMPIONS LEAGUE · NO POINTS FROM TWO · 29TH OF 36 IN THE LEAGUE PHASE"
+    },
+    {"t": "section", "head": "NEXT UP", "meta": "OCTOBER & INTO NOVEMBER · EASTERN TIME FIRST, MILAN SECOND"},
+    {
+      "t": "fixtures",
+      "rows": [
+        {"name": "Bologna", "venue": "AWAY", "line2": "SAT, OCT 17 · SERIE A · MATCHDAY 7", "line3": "12:00 PM ET · 18:00 CEST · US TV: PARAMOUNT+ · CBS SPORTS GOLAZO · PEACOCK"},
+        {"name": "Shakhtar Donetsk", "venue": "HOME", "line2": "WED, OCT 21 · CHAMPIONS LEAGUE · MATCHDAY 3", "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+ · VIX"},
+        {"name": "Fiorentina", "venue": "HOME", "line2": "SUN, OCT 25 · SERIE A · MATCHDAY 8", "line3": "7:30 AM ET · 12:30 CET · US TV: PARAMOUNT+ · DAZN"},
+        {"name": "Venezia", "venue": "AWAY", "line2": "WED, OCT 28 · SERIE A · MATCHDAY 9", "line3": "1:30 PM ET · 18:30 CET · US TV: PARAMOUNT+ · DAZN"},
+        {"name": "AC Milan", "venue": "AWAY", "line2": "SAT, OCT 31 · SERIE A · MATCHDAY 10", "line3": "3:45 PM ET · 20:45 CET · US TV: PARAMOUNT+ · DAZN"},
+        {"name": "Feyenoord", "venue": "AWAY", "line2": "TUE, NOV 3 · CHAMPIONS LEAGUE · MATCHDAY 4", "line3": "3:00 PM ET · 21:00 CET · US TV: PARAMOUNT+ · VIX"}
+      ]
+    },
+    {
+      "t": "note",
+      "html": "Kickoff times are Inter's and Sky Sport Italia's; US listings are Sports Media Watch's and World Soccer Talk's."
+    },
+    {
+      "t": "ask",
+      "html": "Reply to this email with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+    },
+    {"t": "next", "text": "SATURDAY, OCTOBER 17 — WHAT CHIVU SAID, AND INTER AT BOLOGNA"},
+    {
+      "t": "follow",
+      "links": [
+        {"label": "YouTube", "url": "https://www.youtube.com/@nerazzurridaily"},
+        {"label": "TikTok", "url": "https://www.tiktok.com/@nerazzurridaily"}
+      ]
+    },
+    {
+      "t": "sources",
+      "links": [
+        {"outlet": "Inter.it", "title": "Lautaro Martinez's condition", "url": "https://www.inter.it/en/news/lautaro-martinez-condition-injury-october-2026"},
+        {"outlet": "Inter.it", "title": "Bologna vs. Inter: complete match guide", "url": "https://www.inter.it/en/news/guide-bologna-inter-serie-a-2026-27"},
+        {"outlet": "Inter.it", "title": "Bologna vs. Inter, Chivu's press conference on Friday", "url": "https://www.inter.it/en/news/chivu-press-conference-announcement-bologna-inter-serie-a-26-27"},
+        {"outlet": "Inter.it", "title": "Feyenoord vs. Inter, away tickets: sales underway", "url": "https://www.inter.it/en/news/feyenoord-inter-tickets-away-section-champions-league"},
+        {"outlet": "Inter.it", "title": "Inter-Club Brugge, Champions League match report", "url": "https://www.inter.it/it/notizie/inter-club-brugge-champions-league-2026-27"},
+        {"outlet": "Inter.it", "title": "Champions League league phase table and calendar", "url": "https://www.inter.it/it/notizie/classifica-league-phase-inter-calendario-champions-league-26-27"},
+        {"outlet": "FCInter1908", "title": "La Gazzetta allunga i tempi di recupero di Lautaro", "url": "https://www.fcinter1908.it/news/infortuni/inter-lautaro-infortunio-gazzetta-tempi-recupero/"},
+        {"outlet": "FCInter1908", "title": "Come Chivu gestirà l'attacco senza Lautaro", "url": "https://www.fcinter1908.it/news/rassegna-stampa/inter-senza-lautaro-attacco-bologna-bonny/"},
+        {"outlet": "Sky Sport Italia", "title": "Bologna-Inter projected lineups", "url": "https://sport.sky.it/calcio/serie-a/partite/2026/giornata-7/bologna-inter/formazioni"},
+        {"outlet": "Sky Sport Italia", "title": "Inter-Fiorentina, matchday 8", "url": "https://sport.sky.it/calcio/serie-a/partite/2026/giornata-8/inter-fiorentina"},
+        {"outlet": "Sky Sport Italia", "title": "Venezia-Inter, matchday 9", "url": "https://sport.sky.it/calcio/serie-a/partite/2026/giornata-9/venezia-inter"},
+        {"outlet": "Sky Sport Italia", "title": "Milan-Inter, matchday 10", "url": "https://sport.sky.it/calcio/serie-a/partite/2026/giornata-10/milan-inter"},
+        {"outlet": "Sports Media Watch", "title": "Serie A TV schedule 2026-27", "url": "https://www.sportsmediawatch.com/tv-schedules/club-soccer/serie-a/"},
+        {"outlet": "Sports Media Watch", "title": "UEFA Champions League TV schedule", "url": "https://www.sportsmediawatch.com/tv-schedules/club-soccer/uefa-champions-league/"},
+        {"outlet": "World Soccer Talk", "title": "Paramount+ soccer schedule", "url": "https://worldsoccertalk.com/channels/paramount-plus-soccer-schedule/"}
+      ]
+    }
+  ]
+}
