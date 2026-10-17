@@ -1,4 +1,21 @@
-{"n": 46, "date": "2026-10-17", "slug": "pavard-out-bologna",
- "tiktok": {"post_id": "cmvcev5ts0r08qt0ydjbtwen4", "posted_at_utc": "2026-10-17T13:07:05Z", "state": "SUBMITTED", "url": null},
- "youtube": {"post_id": "cmvceve180r0bqt0y57zqzc8d", "posted_at_utc": "2026-10-17T13:07:35Z", "state": "SUBMITTED", "video_id": null, "url": null, "privacy": null, "comment": null},
- "updated_at_utc": "2026-10-17T13:08:00Z"}
+{
+ "n": 46,
+ "date": "2026-10-17",
+ "slug": "pavard-out-bologna",
+ "tiktok": {
+  "post_id": "cmvcev5ts0r08qt0ydjbtwen4",
+  "posted_at_utc": "2026-10-17T13:07:00Z",
+  "state": "PUBLISHED",
+  "url": null
+ },
+ "youtube": {
+  "post_id": "cmvceve180r0bqt0y57zqzc8d",
+  "posted_at_utc": "2026-10-17T13:07:00Z",
+  "state": "PUBLISHED",
+  "video_id": "Va-a7pfk4QM",
+  "url": "https://www.youtube.com/shorts/Va-a7pfk4QM",
+  "privacy": "public",
+  "comment": "not visible"
+ },
+ "updated_at_utc": "2026-10-17T13:14:00Z"
+}
