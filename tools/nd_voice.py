@@ -59,6 +59,7 @@ FIX = {
     # Serbian stress is on the first syllable; Italian G2P gave "stan-KO-vitch" (Oct 13, 2026)
     "Aleksandar Stanković": "aleksˈandar stˈankovitʃ", "Stanković": "stˈankovitʃ",
     # Spanish stress is on the second syllable (e-RRE-ra); Italian G2P gave "E-rrera" (Oct 14, 2026)
+    "Shakhtar Donetsk": "ʃˈaktar donˈɛtsk", "Shakhtar": "ʃˈaktar",
     "Helenio Herrera": "elˈɛnjo errˈera", "Herrera": "errˈera",
 }
 
