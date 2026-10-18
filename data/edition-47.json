@@ -1,0 +1,292 @@
+{
+  "n": 47,
+  "date": "2026-10-18",
+  "title": "Inter come from behind to win 3–1 at Bologna",
+  "description": "Carlos Augusto scored seconds after coming on, Ange-Yoan Bonny made it three, and Inter have their best start to a Serie A season since 2018.",
+  "mast_alt": "Nerazzurri Daily Edition No. 47, Sunday, October 18, 2026 — Inter come from behind to win 3–1 at Bologna",
+  "blocks": [
+    {
+      "t": "dek",
+      "html": "Inter went a goal down at Bologna on Saturday evening and <a href=\"https://www.inter.it/en/news/bologna-inter-serie-a-2026-27\" rel=\"noopener\">won 3–1</a>. Carlos Augusto, a left back, scored seconds after coming on, and Ange-Yoan Bonny, a center forward, made it three. Inter have 19 points from seven matches, <a href=\"https://www.legaseriea.it/serie-a/news/bologna-inter-2026-2027-1-3-cronaca-risultato-gol\" rel=\"noopener\">their best start since 2018</a>."
+    },
+    {
+      "t": "scoreboard",
+      "rows": [
+        {
+          "label": "TODAY",
+          "name": "No match",
+          "venue": null,
+          "line": "INTER WOMEN vs PARMA · 12:00 PM ET · ARENA CIVICA"
+        },
+        {
+          "label": "LAST",
+          "name": "Bologna 1–3 Inter",
+          "venue": null,
+          "line": "SERIE A · MATCHDAY 7 · DALL'ARA"
+        },
+        {
+          "label": "NEXT",
+          "name": "Shakhtar Donetsk",
+          "venue": "HOME",
+          "line": "WED, OCT 21 · CHAMPIONS LEAGUE · 3:00 PM ET"
+        }
+      ]
+    },
+    {
+      "t": "bar",
+      "kind": "c",
+      "label": "CONFIRMED",
+      "sub": "CLUB · LEAGUE · UEFA"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Chivu lost his voice, so Kolarov spoke for him",
+      "paras": [
+        "Cristian Chivu, Inter's head coach, did not speak after the match. Sky Sport Italia reported that he \"è rimasto senza voce\" — he had lost his voice. Aleksandar Kolarov, his assistant coach, took the questions instead.",
+        "Kolarov said Bologna were the fresher side early on. Then he claimed the second half: \"ma poi abbiamo dominato il secondo tempo\" — but then we dominated the second half. Asked whether Inter had anything to prove after two Champions League defeats, he said \"non dobbiamo dimostrare niente a nessuno ma a noi stessi\" — we have nothing to prove to anyone but ourselves."
+      ],
+      "kicker": "SAID · INTER.IT · OCT 17"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Marotta points to Paris after the European losses",
+      "paras": [
+        "Giuseppe Marotta, Inter's president, spoke in a DAZN studio before kickoff. On the two Champions League defeats, he said teams once written off now organize themselves well. \"Non sono più squadre materasso ma ti impensieriscono\" — they are not pushovers any more, they give you trouble. He pointed to Paris Saint-Germain, who lost three in a row last season and still won their league.",
+        "On reports of Qatari interest in buying the club, he said the decision was not his. He added: \"ogni scelta sarà fatta per il bene dell'Inter\" — every choice will be made for Inter's good."
+      ],
+      "kicker": "SAID · DAZN VIA FCINTERNEWS · OCT 17"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "The Under-23 side lost at home, and the women play today",
+      "paras": [
+        "Inter's Under-23 team lost 4–2 at home to Monopoli on Saturday, in Serie C matchday 10. Jan Zuberek, a forward, scored twice. Inter are tenth with 13 points and a game in hand.",
+        "Inter Women host Parma at the Arena Civica Gianni Brera in Milan today at 12:00 PM ET, 18:00 CEST, in Serie A Women matchday 3. Entry is free. Inter have won both openers 2–0."
+      ],
+      "kicker": "INTER.IT · OCT 17"
+    },
+    {
+      "t": "bar",
+      "kind": "r",
+      "label": "REPORTED",
+      "sub": "PRESS ONLY · NOT YET OFFICIAL"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Gazzetta puts Milan in front in the race for Tresoldi",
+      "paras": [
+        "Nicolò Tresoldi, the Club Brugge center forward who scored three against Inter on October 13, is wanted by AC Milan. The report is Gazzetta dello Sport's, Italy's biggest sports daily, relayed by FCInterNews. Inter are following him too.",
+        "Brugge turned down an offer of 35 million euros from Roma. The paper says \"la valutazione del giocatore avrebbe superato quota 50 milioni\" — his valuation has passed 50 million euros. Inter have said nothing."
+      ],
+      "kicker": "GAZZETTA DELLO SPORT VIA FCINTERNEWS · OCT 17"
+    },
+    {
+      "t": "item",
+      "rep": true,
+      "h3": "Opta: a start this good has happened three times before",
+      "paras": [
+        "OptaPaolo, the statistics service, says Inter have reached 19 points after seven matches only four times since Serie A went to three points for a win. The others were 1997-98, 2002-03 and 2017-18."
+      ],
+      "kicker": "OPTA VIA FCINTERNEWS · OCT 17"
+    },
+    {
+      "t": "section",
+      "head": "LATEST RESULT",
+      "meta": "SERIE A · MATCHDAY 7 · STADIO RENATO DALL'ARA"
+    },
+    {
+      "t": "item",
+      "rep": false,
+      "h3": "Bologna 1–3 Inter",
+      "paras": [
+        "POBEGA 10' · THURAM 44' · CARLOS AUGUSTO 69' · BONNY 83'",
+        "Bologna led through Matteo Pobega, a midfielder, after a mistake by Luis Henrique, a winger."
+      ],
+      "kicker": "SERIE A: FIRST WITH NINETEEN POINTS · SIX WINS AND A DRAW FROM SEVEN · BEST START SINCE 2018"
+    },
+    {
+      "t": "section",
+      "head": "NEXT UP",
+      "meta": "OCTOBER & INTO NOVEMBER · EASTERN TIME FIRST, MILAN SECOND"
+    },
+    {
+      "t": "fixtures",
+      "rows": [
+        {
+          "name": "Shakhtar Donetsk",
+          "venue": "HOME",
+          "line2": "WED, OCT 21 · CHAMPIONS LEAGUE · MATCHDAY 3",
+          "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+ · VIX"
+        },
+        {
+          "name": "Fiorentina",
+          "venue": "HOME",
+          "line2": "SUN, OCT 25 · SERIE A · MATCHDAY 8",
+          "line3": "7:30 AM ET · 12:30 CET · US TV: PARAMOUNT+ · DAZN"
+        },
+        {
+          "name": "Venezia",
+          "venue": "AWAY",
+          "line2": "WED, OCT 28 · SERIE A · MATCHDAY 9",
+          "line3": "1:30 PM ET · 18:30 CET · US TV: PARAMOUNT+ · DAZN"
+        },
+        {
+          "name": "AC Milan",
+          "venue": "AWAY",
+          "line2": "SAT, OCT 31 · SERIE A · MATCHDAY 10",
+          "line3": "3:45 PM ET · 20:45 CET · US TV: PARAMOUNT+ · DAZN"
+        },
+        {
+          "name": "Feyenoord",
+          "venue": "AWAY",
+          "line2": "TUE, NOV 3 · CHAMPIONS LEAGUE · MATCHDAY 4",
+          "line3": "3:00 PM ET · 21:00 CET · US TV: PARAMOUNT+ · VIX"
+        }
+      ]
+    },
+    {
+      "t": "note",
+      "html": "Kickoff times are Inter's and Sky Sport Italia's; US listings are Sports Media Watch's, which has the Milan derby a day later than the club does."
+    },
+    {
+      "t": "ask",
+      "html": "Reply to this email with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+    },
+    {
+      "t": "next",
+      "text": "MONDAY, OCTOBER 19 — WHAT THE PAPERS MAKE OF THE COMEBACK"
+    },
+    {
+      "t": "follow",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@nerazzurridaily"
+        },
+        {
+          "label": "TikTok",
+          "url": "https://www.tiktok.com/@nerazzurridaily"
+        }
+      ]
+    },
+    {
+      "t": "sources",
+      "links": [
+        {
+          "outlet": "Inter.it",
+          "title": "L'Inter riparte: rimonta di carattere, Bologna battuto 1-3",
+          "url": "https://www.inter.it/it/notizie/bologna-inter-serie-a-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter Bounce Back in Style: Comeback Win Seals 3-1 Victory Over Bologna",
+          "url": "https://www.inter.it/en/news/bologna-inter-serie-a-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Bologna vs. Inter: the official starting elevens",
+          "url": "https://www.inter.it/en/news/bologna-inter-official-lineups-serie-a-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Bologna vs. Inter: complete match guide",
+          "url": "https://www.inter.it/en/news/guide-bologna-inter-serie-a-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Kolarov: \"Our strength lies in our togetherness\"",
+          "url": "https://www.inter.it/en/news/kolarov-interview-post-match-bologna-inter-serie-a-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Carlos Augusto: \"We showed heart and a desire to win\"",
+          "url": "https://www.inter.it/en/news/Carlos-augusto-interview-bologna-inter-serie-a-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Bonny Scores Again: \"We Have to Be Ready\"",
+          "url": "https://www.inter.it/en/news/interview-bonny-bologna-inter-serie-a-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter U23 lose 4-2 to Monopoli at the Breda",
+          "url": "https://www.inter.it/en/news/inter-u23-monopoli-serie-c-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Women, Inter-Parma all'Arena Civica domenica 18 ottobre",
+          "url": "https://www.inter.it/it/notizie/inter-women-parma-guida-serie-a-26-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "Inter-Shakhtar Donetsk, dove vederla in TV",
+          "url": "https://www.inter.it/it/notizie/inter-shakhtar-donetsk-dove-vederla-in-tv-champions-league-2026-27"
+        },
+        {
+          "outlet": "Inter.it",
+          "title": "AC Milan vs. Inter, away tickets: all the information",
+          "url": "https://www.inter.it/en/news/ac-milan-vs-inter-away-tickets-information-serie-a-2026-27"
+        },
+        {
+          "outlet": "Lega Serie A",
+          "title": "Bologna-Inter 1-3, Chivu allunga in vetta",
+          "url": "https://www.legaseriea.it/serie-a/news/bologna-inter-2026-2027-1-3-cronaca-risultato-gol"
+        },
+        {
+          "outlet": "Sky Sport Italia",
+          "title": "Kolarov: \"Non dobbiamo dimostrare nulla a nessuno\"",
+          "url": "https://sport.sky.it/calcio/serie-a/2026/10/17/kolarov-bologna-inter-intervista-video"
+        },
+        {
+          "outlet": "Sky Sport Italia",
+          "title": "Serie A, la classifica",
+          "url": "https://sport.sky.it/calcio/serie-a/classifica"
+        },
+        {
+          "outlet": "Sky Sport Italia",
+          "title": "Inter-Fiorentina, matchday 8",
+          "url": "https://sport.sky.it/calcio/serie-a/partite/2026/giornata-8/inter-fiorentina"
+        },
+        {
+          "outlet": "Sky Sport Italia",
+          "title": "Venezia-Inter, matchday 9",
+          "url": "https://sport.sky.it/calcio/serie-a/partite/2026/giornata-9/venezia-inter"
+        },
+        {
+          "outlet": "Sky Sport Italia",
+          "title": "Milan-Inter, matchday 10",
+          "url": "https://sport.sky.it/calcio/serie-a/partite/2026/giornata-10/milan-inter"
+        },
+        {
+          "outlet": "FCInterNews",
+          "title": "Marotta: \"I ko in UCL? Capitò anche al PSG. Con Oaktree in mani sicure\"",
+          "url": "https://www.fcinternews.it/in-primo-piano/marotta-i-ko-i-ucl-i-capito-psg-oaktree-mani-sicure-1021017"
+        },
+        {
+          "outlet": "FCInterNews",
+          "title": "Il Milan vuole Tresoldi, anche l'Inter lo segue",
+          "url": "https://www.fcinternews.it/copertina/milan-inter-tresoldi-club-brugge-calciomercato-1020982"
+        },
+        {
+          "outlet": "FCInterNews",
+          "title": "Inter a 19 punti dopo 7 giornate solo per la quarta volta nell'era dei 3 punti",
+          "url": "https://www.fcinternews.it/stats/inter-19-punti-7-giornate-quarta-3-punti-1021037"
+        },
+        {
+          "outlet": "Sports Media Watch",
+          "title": "Serie A TV schedule 2026-27",
+          "url": "https://www.sportsmediawatch.com/tv-schedules/club-soccer/serie-a/"
+        },
+        {
+          "outlet": "Sports Media Watch",
+          "title": "UEFA Champions League TV schedule",
+          "url": "https://www.sportsmediawatch.com/tv-schedules/club-soccer/uefa-champions-league/"
+        }
+      ]
+    }
+  ]
+}
