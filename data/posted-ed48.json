@@ -2,7 +2,7 @@
   "n": 48,
   "date": "2026-10-19",
   "slug": "zero-in-europe",
-  "tiktok": {"post_id": "cmvf9s0ii04owp90yeidq5quk", "posted_at_utc": "2026-10-19T13:08:30Z", "state": "SUBMITTED", "url": null},
-  "youtube": {"post_id": "cmvf9s9sn04oxp90yxpoisugy", "posted_at_utc": "2026-10-19T13:09:00Z", "state": "SUBMITTED", "video_id": null, "url": null, "privacy": null, "comment": null},
-  "updated_at_utc": "2026-10-19T13:09:30Z"
+  "tiktok": {"post_id": "cmvf9s0ii04owp90yeidq5quk", "posted_at_utc": "2026-10-19T13:08:30Z", "state": "PUBLISHED", "url": null},
+  "youtube": {"post_id": "cmvf9s9sn04oxp90yxpoisugy", "posted_at_utc": "2026-10-19T13:09:00Z", "state": "PUBLISHED", "video_id": "MMNvfZnOXUk", "url": "https://www.youtube.com/shorts/MMNvfZnOXUk", "privacy": "public", "comment": "unknown"},
+  "updated_at_utc": "2026-10-19T13:15:30Z"
 }
