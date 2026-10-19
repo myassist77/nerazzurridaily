@@ -1,0 +1,258 @@
+{
+ "n": 48,
+ "date": "2026-10-19",
+ "title": "Top of Italy, pointless in Europe — Shakhtar on Wednesday",
+ "description": "Lazio's 3–0 win at Juventus has drawn them level with Inter at the top, and Inter Women beat Parma 3–0 without conceding again.",
+ "mast_alt": "Nerazzurri Daily Edition No. 48, Monday, October 19, 2026 — Top of Italy, pointless in Europe — Shakhtar on Wednesday",
+ "blocks": [
+  {
+   "t": "dek",
+   "html": "Inter lead Serie A with nineteen points and <a href=\"https://www.inter.it/en/news/standings-league-phase-inter-fixtures-champions-league-26-27\" rel=\"noopener\">have none at all</a> in the Champions League. They sit 29th of 36 teams in Europe, and Shakhtar Donetsk come to San Siro on Wednesday. <a href=\"https://sport.sky.it/calcio/serie-a/classifica\" rel=\"noopener\">Lazio are level with them</a> at the top after winning 3–0 at Juventus, and Monday's papers all ask the same question about Europe."
+  },
+  {
+   "t": "scoreboard",
+   "rows": [
+    {
+     "label": "TODAY",
+     "name": "No match",
+     "venue": null,
+     "line": "CHIVU SPEAKS TUESDAY · 8:30 AM ET · 14:30 CEST"
+    },
+    {
+     "label": "LAST",
+     "name": "Bologna 1–3 Inter",
+     "venue": null,
+     "line": "SERIE A · MATCHDAY 7 · DALL'ARA"
+    },
+    {
+     "label": "NEXT",
+     "name": "Shakhtar Donetsk",
+     "venue": "HOME",
+     "line": "WED, OCT 21 · CHAMPIONS LEAGUE · 3:00 PM ET"
+    }
+   ]
+  },
+  {
+   "t": "bar",
+   "kind": "c",
+   "label": "CONFIRMED",
+   "sub": "CLUB · LEAGUE · UEFA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter have no points in Europe before Shakhtar visit",
+   "paras": [
+    "Inter have no points from two Champions League matches and sit 29th of 36 teams. They lost 2–1 at Real Madrid and then 4–3 at home to Club Brugge.",
+    "The club's matchday calendar has Cristian Chivu, Inter's head coach, speaking at Appiano Gentile, Inter's training ground, at 8:30 AM ET on Tuesday (14:30 CEST). Kickoff on Wednesday is 3:00 PM ET (21:00 CEST)."
+   ],
+   "kicker": "INTER.IT · OCT 18"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "The club times the comeback at Bologna to the second",
+   "paras": [
+    "Inter's own account of the match picks out the equalizer by Marcus Thuram, a center forward, in the 44th minute. It was a header from a cross by Nicolò Barella, a midfielder, and his fourth league goal of the season.",
+    "It also has Carlos Augusto, a left back, touching the ball 49 seconds after coming on. He scored in the 69th minute and crossed for Ange-Yoan Bonny, a center forward, to finish in the 83rd."
+   ],
+   "kicker": "INTER.IT · OCT 18"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Inter Women win again and have still not conceded",
+   "paras": [
+    "Inter Women beat Parma 3–0 at the Arena Civica on Sunday. Haley Bugeja scored in the 39th minute, Karòlina Lea Vilhjálmsdóttir in the 58th and Michela Cambiaghi in the 87th.",
+    "That is three wins from three, nine points, eight goals scored and none conceded. The side coached by David Sassarini, Inter Women's head coach, is away at Napoli on Saturday."
+   ],
+   "kicker": "INTER.IT · OCT 18"
+  },
+  {
+   "t": "bar",
+   "kind": "r",
+   "label": "REPORTED",
+   "sub": "PRESS ONLY · NOT YET OFFICIAL"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Gazzetta expects Provedel to make his Inter debut",
+   "paras": [
+    "La Gazzetta dello Sport, Italy's biggest sports daily, expects Ivan Provedel, a goalkeeper who has not played a match since March 4, to start on Wednesday, with Josep Martínez rested. The paper says the change \"non risponde a criteri meritocratici\" — it is not a decision made on merit — but a chance to look at the new goalkeeper.",
+    "The same report has Hakan Çalhanoğlu and Andy Diouf, both midfielders, returning after resting at Bologna, and Bonny starting for the first time this season."
+   ],
+   "kicker": "GAZZETTA DELLO SPORT VIA FCINTER1908 · OCT 19"
+  },
+  {
+   "t": "item",
+   "rep": true,
+   "h3": "Sky and Corriere say Chivu raised his voice at halftime",
+   "paras": [
+    "Sky Sport Italia reported on Sunday that Chivu was angry in the dressing room at halftime in Bologna, with the match level at 1–1. Corriere dello Sport carried the same account the same day.",
+    "Both say Inter had been second to Bologna's counterattacks for most of the first half. Corriere dello Sport adds that Thuram was booked for simulation in an incident Inter believed was a penalty."
+   ],
+   "kicker": "SKY SPORT ITALIA VIA FCINTER1908 · OCT 18"
+  },
+  {
+   "t": "section",
+   "head": "LATEST RESULT",
+   "meta": "SERIE A · MATCHDAY 7 · STADIO RENATO DALL'ARA"
+  },
+  {
+   "t": "item",
+   "rep": false,
+   "h3": "Bologna 1–3 Inter",
+   "paras": [
+    "POBEGA 10' · THURAM 44' · CARLOS AUGUSTO 69' · BONNY 83'",
+    "It was Inter's fourth comeback win of the season."
+   ],
+   "kicker": "SERIE A: SIX WINS AND A DRAW FROM SEVEN · NINETEEN POINTS · LEVEL WITH LAZIO AT THE TOP"
+  },
+  {
+   "t": "section",
+   "head": "NEXT UP",
+   "meta": "OCTOBER & INTO NOVEMBER · EASTERN TIME FIRST, MILAN SECOND"
+  },
+  {
+   "t": "fixtures",
+   "rows": [
+    {
+     "name": "Shakhtar Donetsk",
+     "venue": "HOME",
+     "line2": "WED, OCT 21 · CHAMPIONS LEAGUE · MATCHDAY 3",
+     "line3": "3:00 PM ET · 21:00 CEST · US TV: PARAMOUNT+ · VIX"
+    },
+    {
+     "name": "Fiorentina",
+     "venue": "HOME",
+     "line2": "SUN, OCT 25 · SERIE A · MATCHDAY 8",
+     "line3": "7:30 AM ET · 12:30 CET · US TV: PARAMOUNT+ · DAZN"
+    },
+    {
+     "name": "Venezia",
+     "venue": "AWAY",
+     "line2": "WED, OCT 28 · SERIE A · MATCHDAY 9",
+     "line3": "1:30 PM ET · 18:30 CET · US TV: PARAMOUNT+ · DAZN"
+    },
+    {
+     "name": "AC Milan",
+     "venue": "AWAY",
+     "line2": "SAT, OCT 31 · SERIE A · MATCHDAY 10",
+     "line3": "3:45 PM ET · 20:45 CET · US TV: PARAMOUNT+ · DAZN"
+    },
+    {
+     "name": "Feyenoord",
+     "venue": "AWAY",
+     "line2": "TUE, NOV 3 · CHAMPIONS LEAGUE · MATCHDAY 4",
+     "line3": "3:00 PM ET · 21:00 CET · US TV: PARAMOUNT+ · VIX"
+    }
+   ]
+  },
+  {
+   "t": "note",
+   "html": "Kickoff times are Inter's and Sky Sport Italia's. US listings are Sports Media Watch's, which has the derby a day later than the club does."
+  },
+  {
+   "t": "ask",
+   "html": "Reply to this email with one word — which of today's items should I chase tomorrow? — and tell me where you're reading from. I read every one."
+  },
+  {
+   "t": "next",
+   "text": "TUESDAY, OCTOBER 20 — CHIVU SPEAKS BEFORE SHAKHTAR"
+  },
+  {
+   "t": "follow",
+   "links": [
+    {
+     "label": "YouTube",
+     "url": "https://www.youtube.com/@nerazzurridaily"
+    },
+    {
+     "label": "TikTok",
+     "url": "https://www.tiktok.com/@nerazzurridaily"
+    }
+   ]
+  },
+  {
+   "t": "sources",
+   "links": [
+    {
+     "outlet": "Inter.it",
+     "title": "Champions League | Standings and fixtures",
+     "url": "https://www.inter.it/en/news/standings-league-phase-inter-fixtures-champions-league-26-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Champions League, Inter vs. Shakhtar, activities on the eve of the match",
+     "url": "https://www.inter.it/en/news/champions-league-inter-shakhtar-schedule-eve-26-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Carlos's 49 seconds, Bonny's impact: five moments from Bologna vs. Inter",
+     "url": "https://www.inter.it/en/news/cinque-moments-bologna-inter-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Inter Bounce Back in Style: Comeback Win Seals 3-1 Victory Over Bologna",
+     "url": "https://www.inter.it/en/news/bologna-inter-serie-a-2026-27"
+    },
+    {
+     "outlet": "Inter.it",
+     "title": "Inter Women-Parma 3-0",
+     "url": "https://www.inter.it/en/news/inter-women-parma-serie-a-women-2026-27"
+    },
+    {
+     "outlet": "Sky Sport Italia",
+     "title": "Serie A classifica",
+     "url": "https://sport.sky.it/calcio/serie-a/classifica"
+    },
+    {
+     "outlet": "Sky Sport Italia",
+     "title": "Inter-Fiorentina, matchday 8",
+     "url": "https://sport.sky.it/calcio/serie-a/partite/2026/giornata-8/inter-fiorentina"
+    },
+    {
+     "outlet": "Sky Sport Italia",
+     "title": "Venezia-Inter, matchday 9",
+     "url": "https://sport.sky.it/calcio/serie-a/partite/2026/giornata-9/venezia-inter"
+    },
+    {
+     "outlet": "Sky Sport Italia",
+     "title": "Milan-Inter, matchday 10",
+     "url": "https://sport.sky.it/calcio/serie-a/partite/2026/giornata-10/milan-inter"
+    },
+    {
+     "outlet": "FCInter1908",
+     "title": "Inter-Shakhtar, Chivu prepara molte novità. C'è Provedel",
+     "url": "https://www.fcinter1908.it/partite/probabili-formazioni/inter-shakhtar-chivu-novita/"
+    },
+    {
+     "outlet": "FCInter1908",
+     "title": "Bologna-Inter, CorSport conferma la furia di Chivu all'intervallo",
+     "url": "https://www.fcinter1908.it/news/rassegna-stampa/bologna-inter-corsport-conferma-furia-chivu-allintervallo-ha-alzato-la-voce-perche/"
+    },
+    {
+     "outlet": "Corriere dello Sport",
+     "title": "Inter, quel ritmo da esportare in Europa",
+     "url": "https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/10/19-151999790/inter_quel_ritmo_da_esportare_in_europa"
+    },
+    {
+     "outlet": "FCInterNews",
+     "title": "Lazio passeggia a Torino e aggancia l'Inter",
+     "url": "https://www.fcinternews.it/news/lazio-passeggia-torino-agguanta-inter-tris-biancoceleste-juventus-1021111"
+    },
+    {
+     "outlet": "Sports Media Watch",
+     "title": "UEFA Champions League TV schedule",
+     "url": "https://www.sportsmediawatch.com/tv-schedules/club-soccer/uefa-champions-league/"
+    },
+    {
+     "outlet": "Sports Media Watch",
+     "title": "Serie A TV schedule",
+     "url": "https://www.sportsmediawatch.com/tv-schedules/club-soccer/serie-a/"
+    }
+   ]
+  }
+ ]
+}
