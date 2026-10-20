@@ -12,7 +12,7 @@ import datetime, json, os
 TEMPLATE_NAME = 'Nerazzurri Daily — Welcome'
 SUBJECT = "You’re in — and here’s your Kickoff Card"
 SENDER = {'name': 'Nerazzurri Daily', 'email': 'mail@nerazzurridaily.com'}
-LIST_NAME = 'Nerazzurri Daily'
+LIST_ID = 4   # the "Nerazzurri Daily" contact list, by ID since Oct 20, 2026 (it was renamed; the id is stable)
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def _bx(method, endpoint, **kw):
@@ -21,9 +21,9 @@ def _bx(method, endpoint, **kw):
     return _unwrap(r) if r is not None else {}
 
 def list_id():
-    for l in _bx('GET', '/contacts/lists', query_params={'limit': '50'}).get('lists', []):
-        if l['name'] == LIST_NAME: return l['id']
-    raise RuntimeError('list not found')
+    l = _bx('GET', f'/contacts/lists/{LIST_ID}')
+    if l.get('id') != LIST_ID: raise RuntimeError(f'list id {LIST_ID} not found')
+    return LIST_ID
 
 def ensure_attribute():
     names = {a['name'] for a in _bx('GET', '/contacts/attributes').get('attributes', [])}

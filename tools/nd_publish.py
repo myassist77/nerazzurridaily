@@ -10,7 +10,8 @@ import base64, json, os, time, requests
 REPO = '/repos/myassist77/nerazzurridaily'
 ROOT = os.environ.get('ND_ROOT', '/home/user/nd')   # the checkout the scheduled run makes (Step 0.25); was /home/user/nd/site before Sept 19
 SENDER = 'mail@nerazzurridaily.com'
-LIST_NAME = 'Nerazzurri Daily'
+LIST_ID = 4   # the "Nerazzurri Daily" contact list. Looked up BY ID since Oct 20, 2026 (owner's decision): the list was renamed
+              # "Nerazzurri Daily Mailing List" and the by-name lookup raised. Its name may change; this id is the one Brevo keeps.
 TRAILER = "\n\nCo-Authored-By: Claude <noreply@anthropic.com>"
 
 def _unwrap(x):
@@ -50,11 +51,14 @@ def wait_live(url, needle, tries=10, sleep=15):
         time.sleep(sleep)
     return False
 
-def brevo_list_id(name=LIST_NAME):
-    ls = _unwrap(proxy_execute(method='GET', endpoint='/contacts/lists', toolkit='brevo', query_params={'limit': '50'})[0])
-    for l in ls.get('lists', []):
-        if l['name'].strip().lower() == name.lower(): return l['id']
-    raise RuntimeError(f'Brevo list "{name}" not found; lists: {[l["name"] for l in ls.get("lists", [])]}')
+def brevo_list_id(list_id=LIST_ID):
+    """The contact list, by ID (never by name — the name changed on Oct 20, 2026). Confirms the list exists and returns its id."""
+    r, e = proxy_execute(method='GET', endpoint=f'/contacts/lists/{list_id}', toolkit='brevo')
+    l = _unwrap(r) if not e else {}
+    if e or l.get('id') != list_id:
+        ls = _unwrap(proxy_execute(method='GET', endpoint='/contacts/lists', toolkit='brevo', query_params={'limit': '50'})[0])
+        raise RuntimeError(f'Brevo list id {list_id} not found; lists: {[(x["id"], x["name"]) for x in ls.get("lists", [])]}')
+    return l['id']
 
 def brevo_sender_id(email=SENDER):
     s = _unwrap(proxy_execute(method='GET', endpoint='/senders', toolkit='brevo')[0])
