@@ -10,6 +10,8 @@ mixes, QCs and commits the post files, and leaves review/social-<job>/status.jso
         --beats beats.voiced.json --tiktok tiktok.json --youtube youtube.json \\
         [--captions captions.txt] [--manifest manifest.json] [--index-row index.json] [--force] --out data/social/ed49.json
 
+Full-time (kind=fulltime, --n --date): job ft-{date}, name ND-{date}-ft, outputs assets/video/ft-{date}.mp4 / -thumb.png / -thumb-9x16.png,
+qc assets/qc/match-contact.jpg, post files data/tiktok-ft-{date}.json and data/youtube-ft-{date}.json (door links carry &v=ft).
 Daily defaults (kind=daily): name ND-{date}-ed{n}-{slug}; outputs assets/video/ed{n}.mp4, ed{n}-thumb.png (16:9),
 ed{n}-thumb-9x16.png; qc assets/qc/latest-contact.jpg + latest-thumb-9x16.png + latest-thumb-16x9.png;
 post files data/tiktok-ed{n}.json and data/youtube-ed{n}.json. Debate (kind=debate, --name required):
@@ -22,11 +24,12 @@ Validation here is the same the workflow applies, so a request that passes here 
 import argparse, json, os, re, sys
 
 AP = argparse.ArgumentParser()
-AP.add_argument("--job", required=True); AP.add_argument("--kind", choices=["daily", "debate", "weekly"], required=True)
+AP.add_argument("--job", required=True); AP.add_argument("--kind", choices=["daily", "fulltime", "debate", "weekly"], required=True)
 AP.add_argument("--n", type=int); AP.add_argument("--date"); AP.add_argument("--slug"); AP.add_argument("--name")
 AP.add_argument("--beats"); AP.add_argument("--tiktok"); AP.add_argument("--youtube")
 AP.add_argument("--captions"); AP.add_argument("--manifest"); AP.add_argument("--index-row"); AP.add_argument("--weekly-end", type=int)
-AP.add_argument("--force", action="store_true"); AP.add_argument("--out", required=True)
+AP.add_argument("--force", action="store_true"); AP.add_argument("--posted-guard", help="repo path whose existence stops a re-render (default data/posted-<job>.json; debates use data/debate/posted-<date>.json)")
+AP.add_argument("--out", required=True)
 A = AP.parse_args()
 
 def die(m): sys.exit(f"REQUEST FAILED: {m}")
@@ -47,6 +50,13 @@ if A.kind == "daily":
     r["outputs"] = {"mp4": f"assets/video/ed{A.n}.mp4", "thumb16": f"assets/video/ed{A.n}-thumb.png", "thumb9": f"assets/video/ed{A.n}-thumb-9x16.png"}
     r["qc"] = {"contact": "assets/qc/latest-contact.jpg", "thumb9": "assets/qc/latest-thumb-9x16.png", "thumb16": "assets/qc/latest-thumb-16x9.png"}
     if A.job != f"ed{A.n}": die(f"daily job is ed{A.n}, not {A.job}")
+elif A.kind == "fulltime":
+    if not (A.n and A.date): die("fulltime needs --n (today's edition) and --date (the match date, YYYY-MM-DD)")
+    if not re.match(r"^\d{4}-\d{2}-\d{2}$", A.date): die("--date is YYYY-MM-DD")
+    r["name"] = A.name or f"ND-{A.date}-ft"
+    r["outputs"] = {"mp4": f"assets/video/ft-{A.date}.mp4", "thumb16": f"assets/video/ft-{A.date}-thumb.png", "thumb9": f"assets/video/ft-{A.date}-thumb-9x16.png"}
+    r["qc"] = {"contact": "assets/qc/match-contact.jpg"}
+    if A.job != f"ft-{A.date}": die(f"fulltime job is ft-{A.date}, not {A.job}")
 elif A.kind == "debate":
     if not A.name: die("debate needs --name (e.g. debate-2026-10-21-greatest-keeper)")
     r["name"] = A.name
@@ -71,40 +81,44 @@ if A.kind != "weekly":
         if not isinstance(vo, str) or not vo.strip(): die(f"beat {x.get('id')}: no vo line")
         if re.search(r"\d", vo): die(f"beat {x.get('id')}: a digit in the vo line — write numbers as words")
         if not isinstance(x.get("duration"), (int, float)) or x["duration"] <= 0: die(f"beat {x.get('id')}: duration")
-    if A.kind == "daily" and not b.get("sunday_scorecard") and len(beats) != 6: die(f"a daily video has exactly six beats, this has {len(beats)}")
+    if A.kind in ("daily", "fulltime") and not b.get("sunday_scorecard") and len(beats) != 6: die(f"a daily video has exactly six beats, this has {len(beats)}")
     if A.kind == "daily" and len(beats) > 7: die("at most seven beats with the voice")
-    if A.kind == "daily" and (b.get("thumbnail") or {}).get("style") not in ("number", "split"): die('thumbnail.style must be "number" (or "split" on a day with no figure)')
+    if A.kind in ("daily", "fulltime") and (b.get("thumbnail") or {}).get("style") not in ("number", "split"): die('thumbnail.style must be "number" (or "split" on a day with no figure)')
     if b.get("voice"):
         total = sum(x["duration"] for x in beats)
         if not 20.0 <= total <= 39.0: die(f"voiced beats sum to {total:.2f}s, outside 20–39 s")
     r["beats"] = b
     r["post_files"] = {}
-    tt_path = f"data/tiktok-{A.job}.json" if A.kind == "daily" else f"data/tiktok-{r['name']}.json"
-    yt_path = f"data/youtube-{A.job}.json" if A.kind == "daily" else f"data/youtube-{r['name']}.json"
+    tt_path = f"data/tiktok-{A.job}.json" if A.kind in ("daily", "fulltime") else f"data/tiktok-{r['name']}.json"
+    yt_path = f"data/youtube-{A.job}.json" if A.kind in ("daily", "fulltime") else f"data/youtube-{r['name']}.json"
+    door = {"daily": (f"go/tt/?ed={A.n}", f"go/yt/?ed={A.n}"), "fulltime": (f"go/tt/?ed={A.n}&v=ft", f"go/yt/?ed={A.n}&v=ft")}.get(A.kind)
     if A.tiktok:
         t = load(A.tiktok)
         if list(t.keys()) != TT_KEYS: die(f"tiktok keys are {list(t.keys())}, must be exactly {TT_KEYS}")
         if A.kind == "daily" and (t["n"] != A.n or t["date"] != A.date or t["slug"] != A.slug): die("tiktok n/date/slug differ from --n/--date/--slug")
+        if A.kind == "fulltime" and (t["n"] != A.n or t["date"] != A.date): die("tiktok n/date differ from --n/--date")
         if t["mp4"] != r["outputs"]["mp4"]: die(f"tiktok mp4 must be {r['outputs']['mp4']}")
         if not (1 <= len(t["title"]) <= 90): die("tiktok title is 1–90 characters")
         if not (1 <= len(t["caption"]) <= 2000): die("tiktok caption is 1–2000 characters")
-        if A.kind == "daily" and f"https://www.nerazzurridaily.com/go/tt/?ed={A.n}" not in t["caption"]: die("tiktok caption lacks the go/tt door link")
+        if door and f"https://www.nerazzurridaily.com/{door[0]}" not in t["caption"]: die(f"tiktok caption lacks the door link {door[0]}")
         r["post_files"][tt_path] = t
     if A.youtube:
         y = load(A.youtube)
         if list(y.keys()) != YT_KEYS: die(f"youtube keys are {list(y.keys())}, must be exactly {YT_KEYS}")
         if A.kind == "daily" and (y["n"] != A.n or y["date"] != A.date or y["slug"] != A.slug): die("youtube n/date/slug differ from --n/--date/--slug")
+        if A.kind == "fulltime" and (y["n"] != A.n or y["date"] != A.date): die("youtube n/date differ from --n/--date")
         if y["mp4"] != r["outputs"]["mp4"] or y["thumb"] != r["outputs"]["thumb9"]: die(f"youtube mp4/thumb must be {r['outputs']['mp4']} / {r['outputs']['thumb9']}")
         if not (2 <= len(y["title"]) <= 100): die("youtube title is 2–100 characters")
         if not (1 <= len(y["description"]) <= 5000): die("youtube description is 1–5000 characters")
-        if A.kind == "daily" and f"https://www.nerazzurridaily.com/go/yt/?ed={A.n}" not in y["description"]: die("youtube description lacks the go/yt door link")
+        if door and f"https://www.nerazzurridaily.com/{door[1]}" not in y["description"]: die(f"youtube description lacks the door link {door[1]}")
         if not isinstance(y["tags"], list) or any(not isinstance(s, str) or s.startswith("#") for s in y["tags"]): die("youtube tags is a list of strings without #")
         if not isinstance(y["comment"], str) or not y["comment"].strip(): die("youtube comment is the pinned-comment text")
         r["post_files"][yt_path] = y
-    if A.kind == "daily" and set(r["post_files"]) != {tt_path, yt_path}: die("a daily request needs both --tiktok and --youtube")
+    if A.kind in ("daily", "fulltime") and set(r["post_files"]) != {tt_path, yt_path}: die("a daily or full-time request needs both --tiktok and --youtube")
 if A.captions: r["captions"] = open(A.captions, encoding="utf-8").read()
 if A.manifest: r["manifest"] = load(A.manifest)
 if A.index_row: r["index_row"] = load(A.index_row)
+if A.posted_guard: r["posted_guard"] = A.posted_guard
 if A.force: r["force"] = True
 
 os.makedirs(os.path.dirname(A.out) or ".", exist_ok=True)

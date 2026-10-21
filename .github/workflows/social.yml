@@ -14,7 +14,7 @@ name: social
 # unless the request carries "force": true — the 9:05 task posts from the committed files, and a
 # re-render after the post would change what the archive says was posted.
 # Request schema (tools/nd_social_request.py writes and validates it):
-#   {"job": "ed49", "kind": "daily"|"debate"|"weekly", "name": "ND-2026-10-21-ed49-slug",
+#   {"job": "ed49", "kind": "daily"|"fulltime"|"debate"|"weekly", "name": "ND-2026-10-21-ed49-slug",   ("posted_guard": a path; default data/posted-<job>.json)
 #    "beats": {...the beats JSON, voiced or not...},            (daily, debate)
 #    "weekly": {"end": 54},                                      (weekly: tools/nd_weekly.py --end)
 #    "outputs": {"mp4": "assets/video/ed49.mp4", "thumb16": "assets/video/ed49-thumb.png", "thumb9": "assets/video/ed49-thumb-9x16.png"},
@@ -72,7 +72,7 @@ jobs:
               job = os.path.basename(max(glob.glob('data/social/*.json'), key=os.path.getmtime))[:-5]
           r = json.load(open(f'data/social/{job}.json', encoding='utf-8'))
           assert r.get('job') == job, f"data/social/{job}.json carries job={r.get('job')!r}"
-          kind = r.get('kind'); assert kind in ('daily', 'debate', 'weekly'), f'kind {kind!r}'
+          kind = r.get('kind'); assert kind in ('daily', 'fulltime', 'debate', 'weekly'), f'kind {kind!r}'
           assert r.get('name') and re.match(r'^[A-Za-z0-9._-]+$', r['name']), 'request.name is the MP4 basename'
           assert isinstance(r.get('outputs'), dict) and r['outputs'].get('mp4'), 'request.outputs.mp4 is required'
           if kind != 'weekly': assert isinstance(r.get('beats'), dict) and r['beats'].get('beats'), 'request.beats carries the beats JSON'
@@ -208,11 +208,12 @@ jobs:
               if dst: os.makedirs(os.path.dirname(dst), exist_ok=True); shutil.copy(p, dst); print('->', dst, os.path.getsize(dst), 'bytes')
           # QC: contact sheet of the settled stills, and the rolling thumbnails
           qc = r.get('qc') or {}
-          stills = sorted(glob.glob('build/pack/stills/*.png'))
+          stills = sorted(glob.glob('build/pack/stills/*.png')) or sorted(glob.glob('build/pack/stills/*.jpg'))   # the daily engine writes PNG stills, the debate engine JPEG
           if qc.get('contact') and stills:
               os.makedirs(os.path.dirname(qc['contact']), exist_ok=True)
-              subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-pattern_type', 'glob', '-i', 'build/pack/stills/*.png', '-filter_complex',
-                              'scale=360:640,tile=4x3:padding=8:color=0x06080F', '-frames:v', '1', '-q:v', '4', qc['contact']], check=True)
+              rows = max(1, -(-len(stills) // 4))
+              subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-pattern_type', 'glob', '-i', 'build/pack/stills/*.' + stills[0].rsplit('.', 1)[1], '-filter_complex',
+                              f'scale=360:640,tile=4x{rows}:padding=8:color=0x06080F', '-frames:v', '1', '-q:v', '4', qc['contact']], check=True)
               print('->', qc['contact'], os.path.getsize(qc['contact']), 'bytes', f'({len(stills)} stills)')
           for k in ('thumb9', 'thumb16'):
               if qc.get(k) and src.get(k): os.makedirs(os.path.dirname(qc[k]), exist_ok=True); shutil.copy(src[k], qc[k])
