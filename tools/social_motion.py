@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Nerazzurri Daily — motion short renderer (1080x1920, 30 fps; posted videos render WITHOUT --silent and carry the nd_music.py soundtrack).
+"""Nerazzurri Daily — motion short renderer (1080x1920, 30 fps). Since Sept 26, 2026 every posted video is rendered WITH --silent and
+the only audio is the voiceover nd_voice.py mix adds afterwards (no music — owner's decision; the nd_music.py bed is retired).
 
     python3 social_motion.py --json beats.json --out ./pack --workdir <dir with node_modules> --silent
-    options: --fps 30  --silent (files-only runs; posted videos omit it)  --keep-frames  --name ND-2026-09-14-calha-benched
+    options: --fps 30  --silent (always, since Sept 26, 2026)  --keep-frames  --name ND-2026-09-14-calha-benched
 
 Every beat is an HTML frame with a deterministic seek(t) function; frames are captured
 one by one with Playwright (no wall-clock timing, so output is reproducible), assembled
