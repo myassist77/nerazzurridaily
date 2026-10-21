@@ -1,0 +1,158 @@
+{
+ "n": 50,
+ "built_at_utc": "2026-10-21T09:52:40+00:00",
+ "run_id": "39580244578",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/39580244578",
+ "passed": true,
+ "steps": {
+  "mast": "success",
+  "controls": "success",
+  "checks": "success"
+ },
+ "files_md5": {
+  "p/edition-50/index.html": "72218d9e3922cddb7824177f0eeb2d9e",
+  "assets/mast/edition-50.png": "bc53bbd5e65a7ea70608a683dcd22efc",
+  "data/edition-50.json": "8b52146232a8f04389b924dcf9429fab",
+  "index.html": "78f76026735a4ad1a44f2eb715213997",
+  "subscribe/index.html": "773312f80a62bbf3045ae2cccf46027f",
+  "fixtures/index.html": "453ecc2baa6a150254a41decaf86884f",
+  "feed.xml": "b88e56f4c910bd2bb1203ad50cd56020",
+  "sitemap.xml": "8411226416954101a3b987a478031016"
+ },
+ "title": "Chivu takes the blame as Shakhtar arrive at San Siro",
+ "date": "2026-10-21",
+ "masthead": {
+  "bytes": 6252,
+  "lines": 2,
+  "colors": 7,
+  "fonts": {
+   "anton": true,
+   "mono": true
+  }
+ },
+ "controls": {
+  "n": 50,
+  "fails": [],
+  "warns": [],
+  "page-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 700,
+    "h": 382.8125,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "page-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "email-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 644,
+    "h": 352.1875,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  },
+  "email-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  }
+ },
+ "checks": {
+  "fails": [],
+  "warns": [
+   "sentences: 37 words: “POBEGA 10′ · THURAM 44′ · CARLOS AUGUSTO 69′ · BONNY 83′ Fiorentina  HOME Venezia  AWAY AC Milan  AWAY Feyenoo…”"
+  ],
+  "info": {
+   "prose_words": 496,
+   "read_seconds": 125,
+   "avg_sentence_words": 17.1,
+   "flesch_reading_ease": 60.6,
+   "edition_from_masthead": null,
+   "dates": {
+    "today": "October 21"
+   },
+   "external_to_fetch": [
+    "https://sport.sky.it/calcio/serie-a/classifica",
+    "https://worldsoccertalk.com/champions-league-tv-schedule/",
+    "https://worldsoccertalk.com/serie-a-tv-schedule/",
+    "https://www.fcinternews.it/focus/i-gds-i-bastoni-centro-difesa-idea-chivu-vista-inter-shakhtar-porta-1021272",
+    "https://www.fcinternews.it/rassegna/i-cds-i-inter-shakhtar-portiere-martinez-scelte-chivu-1021278",
+    "https://www.inter.it/en/news/bologna-inter-serie-a-2026-27",
+    "https://www.inter.it/en/news/inter-shakhtar-previous-facts-on-clash",
+    "https://www.inter.it/en/news/press-conference-bastoni-inter-shakhtar-champions-league-2026-27",
+    "https://www.inter.it/en/news/press-conference-chivu-inter-shakhtar-champions-league-2026-27",
+    "https://www.inter.it/en/news/standings-league-phase-inter-fixtures-champions-league-26-27",
+    "https://www.inter.it/it/notizie/inter-shakhtar-donetsk-dove-vederla-in-tv-champions-league-2026-27",
+    "https://www.tiktok.com/@nerazzurridaily",
+    "https://www.youtube.com/@nerazzurridaily"
+   ],
+   "site_links": [
+    "https://www.nerazzurridaily.com/go/email/?ed=50",
+    "https://www.nerazzurridaily.com/go/email/?ed=50&to=/subscribe/",
+    "https://www.nerazzurridaily.com/go/forward/?ed=50",
+    "https://www.nerazzurridaily.com/p/edition-50/"
+   ]
+  }
+ },
+ "email": {
+  "md5": "43db9f6bc76214869578b588522a56a0",
+  "chars": 25157,
+  "bytes": 25309
+ }
+}
