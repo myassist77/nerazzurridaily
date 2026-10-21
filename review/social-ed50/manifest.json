@@ -1,0 +1,129 @@
+{
+ "edition": 50,
+ "date": "2026-10-21",
+ "slug": "chivu-takes-blame",
+ "hook": "Chivu's blame won't fix Inter's Europe.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-50/",
+ "edition_json_sha256": "0bdcf1f136a503c764e30c61dcf34da7c4d6b03206d1ad35d472b13f4f181800",
+ "brevo": {
+  "campaign_id": 39,
+  "status": "sent",
+  "sent_at_et": "2026-10-21T05:58:08-04:00",
+  "name": "Nerazzurri Daily No. 50 — Chivu takes the blame as Shakhtar arrive at San Siro"
+ },
+ "local_render": {
+  "filename": "ND-2026-10-21-ed50-chivu-takes-blame-voiced.mp4",
+  "seconds": 28.76,
+  "beats": 6,
+  "bytes": 1289053,
+  "md5": "c7685a87cf565e07d999fec192456999",
+  "sha256": "90411d64a165887c342842001c632ec28484e52f77028e0119ab489c17278a36"
+ },
+ "audio": {
+  "content": "voiceover only — no music",
+  "codec": "aac",
+  "sample_rate": "48000",
+  "channels": 2,
+  "duration": null,
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 27.76
+  }
+ },
+ "stories": [
+  {
+   "register": "CONFIRMED",
+   "headline": "Chivu puts it on himself: “I never point the finger at my players”",
+   "source": "Inter.it",
+   "date": "Oct 20"
+  },
+  {
+   "register": "CONFIRMED",
+   "headline": "Bastoni: a result today, or the top eight gets very hard",
+   "source": "Inter.it",
+   "date": "Oct 20"
+  },
+  {
+   "register": "REPORTED",
+   "headline": "Gazzetta has Bastoni in the middle of a back three, as a trial",
+   "source": "Gazzetta dello Sport via FCInterNews",
+   "date": "Oct 21"
+  }
+ ],
+ "youtube_title": "Inter 29th in Europe as Chivu takes the blame before Shakhtar | Nerazzurri Daily No. 50",
+ "pinned_comment_question": "Top eight or not - in one word, can this Inter still finish in the Champions League top eight?",
+ "next_fixture": {
+  "opponent": "Shakhtar Donetsk",
+  "venue": "HOME",
+  "when": "Wed, Oct 21 - Champions League Matchday 3",
+  "kickoff": "3:00 PM ET / 21:00 CEST",
+  "us_tv": "not published in the edition"
+ },
+ "optional_drafts": {
+  "reddit": false,
+  "facebook": true
+ },
+ "thumbnail_style": "number",
+ "archive": "review/social-ed50/ + data/social/INDEX.csv row",
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/39588719779",
+  "built_at_utc": "2026-10-21T11:02:11+00:00",
+  "seconds": 28.76,
+  "beats": 6,
+  "files": {
+   "assets/video/ed50.mp4": {
+    "bytes": 1293896,
+    "md5": "50e881d0e93c10e2d7e77a738127bcea",
+    "sha256": "24344bd35df9023fdf0f009a56ea9e0f3938e541c726a56a5faa019c4580b2c8"
+   },
+   "assets/video/ed50-thumb.png": {
+    "bytes": 64896,
+    "md5": "834a89c5596f7fbbc4bcb0a5799ef316",
+    "sha256": "96602fcb640a2e82eb247d20cbf8a48859307a5c1f6b9f0d2c74b49869561e0f"
+   },
+   "assets/video/ed50-thumb-9x16.png": {
+    "bytes": 87584,
+    "md5": "33e8cce49ccee8f147638a9b3e258632",
+    "sha256": "cd619eed7ffc8f37b487b5170b5989c0824230fd42672c178d887c408b7213c3"
+   },
+   "data/tiktok-ed50.json": {
+    "bytes": 562,
+    "md5": "e8c1a4de1de6bdb45629f0d6ae3dd566",
+    "sha256": "858b9ec09e0415175881ff435a5cf0ee9d84619a888f9f2f876f439121897140"
+   },
+   "data/youtube-ed50.json": {
+    "bytes": 1476,
+    "md5": "dca231032546ffeef619346df11d40bf",
+    "sha256": "9aef7b3abea8ae6b4705d6b1ccc074aef751dc0a4fb2ea13075fef1ad046ca90"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 123556,
+    "md5": "dfa5919241811c1bfc777b17f60d5961",
+    "sha256": "dbaa81198554b1d1965339a566ec30ee31a76a1bcb1e6108470a7bb885d55504"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 87584,
+    "md5": "33e8cce49ccee8f147638a9b3e258632",
+    "sha256": "cd619eed7ffc8f37b487b5170b5989c0824230fd42672c178d887c408b7213c3"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 64896,
+    "md5": "834a89c5596f7fbbc4bcb0a5799ef316",
+    "sha256": "96602fcb640a2e82eb247d20cbf8a48859307a5c1f6b9f0d2c74b49869561e0f"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 27.76
+  },
+  "passed": true
+ }
+}

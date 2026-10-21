@@ -1,0 +1,96 @@
+{
+ "job": "ed50",
+ "kind": "daily",
+ "name": "ND-2026-10-21-ed50-chivu-takes-blame",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-10-21T11:02:11+00:00",
+ "run_id": "39588719779",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/39588719779",
+ "files": {
+  "assets/video/ed50.mp4": {
+   "bytes": 1293896,
+   "md5": "50e881d0e93c10e2d7e77a738127bcea",
+   "sha256": "24344bd35df9023fdf0f009a56ea9e0f3938e541c726a56a5faa019c4580b2c8"
+  },
+  "assets/video/ed50-thumb.png": {
+   "bytes": 64896,
+   "md5": "834a89c5596f7fbbc4bcb0a5799ef316",
+   "sha256": "96602fcb640a2e82eb247d20cbf8a48859307a5c1f6b9f0d2c74b49869561e0f"
+  },
+  "assets/video/ed50-thumb-9x16.png": {
+   "bytes": 87584,
+   "md5": "33e8cce49ccee8f147638a9b3e258632",
+   "sha256": "cd619eed7ffc8f37b487b5170b5989c0824230fd42672c178d887c408b7213c3"
+  },
+  "data/tiktok-ed50.json": {
+   "bytes": 562,
+   "md5": "e8c1a4de1de6bdb45629f0d6ae3dd566",
+   "sha256": "858b9ec09e0415175881ff435a5cf0ee9d84619a888f9f2f876f439121897140"
+  },
+  "data/youtube-ed50.json": {
+   "bytes": 1476,
+   "md5": "dca231032546ffeef619346df11d40bf",
+   "sha256": "9aef7b3abea8ae6b4705d6b1ccc074aef751dc0a4fb2ea13075fef1ad046ca90"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 123556,
+   "md5": "dfa5919241811c1bfc777b17f60d5961",
+   "sha256": "dbaa81198554b1d1965339a566ec30ee31a76a1bcb1e6108470a7bb885d55504"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 87584,
+   "md5": "33e8cce49ccee8f147638a9b3e258632",
+   "sha256": "cd619eed7ffc8f37b487b5170b5989c0824230fd42672c178d887c408b7213c3"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 64896,
+   "md5": "834a89c5596f7fbbc4bcb0a5799ef316",
+   "sha256": "96602fcb640a2e82eb247d20cbf8a48859307a5c1f6b9f0d2c74b49869561e0f"
+  }
+ },
+ "seconds": 28.76,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "28.733333"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "28.760000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-10-21-ed50-chivu-takes-blame-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-10-21-ed50-chivu-takes-blame-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-10-21-ed50-chivu-takes-blame-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 853866,
+  "md5": "db08690eadb9849ace43482a0aa30445",
+  "sha256": "cdcf1275d15e29d2882bb5cd9fd0f0bacea30a84836bb0b439a217f4eef0c33e"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 27.76
+ },
+ "voice_log_tail": "b1: voice 4.01s → beat 4.38s\nb2: voice 4.57s → beat 5.02s\nb3: voice 3.39s → beat 3.84s\nb4: voice 5.46s → beat 5.91s\nb5: voice 2.69s → beat 3.1s\nb6: voice 5.10s → beat 5.51s\nPLAN OK build/beats.voiced.json — 6 beats, 27.76s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-10-21-ed50-chivu-takes-blame.mp4 — 27.73s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-10-21-ed50-chivu-takes-blame-thumb-9x16.png, ND-2026-10-21-ed50-chivu-takes-blame-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-10-21-ed50-chivu-takes-blame-voiced.mp4 — 28.76s, AAC 48 kHz stereo, I: -16.3 LUFS Peak: -4.1 dBFS\n"
+}

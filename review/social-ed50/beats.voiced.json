@@ -1,0 +1,120 @@
+{
+ "slug": "chivu-takes-blame",
+ "date_iso": "2026-10-21",
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "29",
+   "lines_a": [
+    "OUT OF 36",
+    "IN EUROPE"
+   ],
+   "lines_b": [
+    "NO POINTS",
+    "FROM TWO"
+   ],
+   "pill": "GAZZETTA: BASTONI AT CENTER-BACK",
+   "pill_register": "REPORTED"
+  }
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "kind": "cover",
+   "duration": 4.38,
+   "eyebrow": "EDITION NO. 50 · OCTOBER 21",
+   "lines": [
+    "CHIVU'S BLAME",
+    "WON'T FIX",
+    "INTER'S EUROPE"
+   ],
+   "vo": "[Chivu] says the blame is his. That will not fix [Inter] in Europe."
+  },
+  {
+   "id": "b2",
+   "kind": "quote",
+   "duration": 5.02,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · OCT 20",
+   "lines": [
+    "I never point the finger",
+    "at my players"
+   ],
+   "sub": [
+    "CRISTIAN CHIVU · APPIANO GENTILE"
+   ],
+   "vo": "The club's own site has [Chivu] saying he never points the finger at his players."
+  },
+  {
+   "id": "b3",
+   "kind": "item",
+   "duration": 3.84,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "OWNING IT",
+    "IS THE EASY PART",
+    "FIXING IT ISN'T"
+   ],
+   "sub": [
+    "OPINION · NERAZZURRI DAILY"
+   ],
+   "vo": "Owning it is the easy part. Fixing it is the job."
+  },
+  {
+   "id": "b4",
+   "kind": "item",
+   "duration": 5.91,
+   "register": "REPORTED",
+   "kicker": "REPORTED · GAZZETTA · OCT 21",
+   "lines": [
+    "BASTONI MOVED",
+    "TO THE MIDDLE",
+    "OF A BACK THREE"
+   ],
+   "sub": [
+    "A TRIAL, THE PAPER SAYS —",
+    "NOT A CHANGE INTER WILL KEEP"
+   ],
+   "vo": "[Gazzetta dello Sport] has [Bastoni] in the middle of a back three. The paper calls it a trial."
+  },
+  {
+   "id": "b5",
+   "kind": "fixture",
+   "duration": 3.1,
+   "register": "NEUTRAL",
+   "kicker": "TODAY · CHAMPIONS LEAGUE · MD3",
+   "lines": [
+    "SHAKHTAR",
+    "AT SAN SIRO"
+   ],
+   "sub_top": "HOME · MATCHDAY 3",
+   "big": "3:00 PM ET",
+   "sub": [
+    "21:00 CEST IN MILAN",
+    "NEXT: FIORENTINA SUN OCT 25",
+    "7:30 AM ET · CBSSN · PARAMOUNT+"
+   ],
+   "vo": "Kickoff is three Eastern, nine in [Milan]."
+  },
+  {
+   "id": "b6",
+   "kind": "end",
+   "duration": 5.51,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Top eight, or not? One word in the comments, at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 27.76
+ }
+}

@@ -1,0 +1,60 @@
+NERAZZURRI DAILY — SOCIAL PACK, EDITION NO. 50, OCTOBER 21, 2026
+Video: ND-2026-10-21-ed50-chivu-takes-blame-voiced.mp4 — 28.76s, 6 beats, 9:16 1080x1920.
+Hook: "Chivu's blame won't fix Inter's Europe."
+Printed pink (REPORTED): Gazzetta dello Sport — Bastoni in the middle of a back three, a trial.
+
+=========================================================
+(a) TIKTOK  — @nerazzurridaily
+Posted automatically at 9:05 AM ET via Postiz. The MP4 carries the voiceover only, no music — the owner's choice of Sept 26, 2026.
+Suggested posting window: 8-10 AM ET. (Matchday note: Inter play at 3:00 PM ET today, so the full-time window is within 30 minutes of the whistle — a separate one-shot task builds that card.)
+
+TITLE
+Inter are 29th in Europe and Chivu says the blame is his
+
+CAPTION
+Inter are 29th of 36 in the Champions League with no points, and Chivu says that is on him: "I never point the finger at my players," per Inter.it. Gazzetta dello Sport has Bastoni in the middle of a back three tonight, as a trial. #Inter #InterShakhtar #Chivu https://www.nerazzurridaily.com/go/tt/?ed=50
+
+=========================================================
+(b) YOUTUBE SHORTS — @nerazzurridaily
+Posted automatically at 9:05 AM ET via Postiz. The MP4 carries the voiceover only, no music — the owner's choice of Sept 26, 2026.
+The 9:16 thumbnail is sent to YouTube with the post (the 16:9 file is the fallback); the same 9:16 image opens the video for 1 second, which makes it the TikTok cover.
+
+TITLE (87 characters)
+Inter 29th in Europe as Chivu takes the blame before Shakhtar | Nerazzurri Daily No. 50
+
+DESCRIPTION
+Chivu's blame won't fix Inter's Europe: 29th of 36, no points from two.
+https://www.nerazzurridaily.com/go/yt/?ed=50
+
+Blue means the club said it. Pink means only the papers did.
+
+CONFIRMED - Chivu: "I never point the finger at my players." (Inter.it, Oct 20)
+CONFIRMED - Bastoni: "We need a result tomorrow; otherwise, finishing in the top eight will become extremely difficult." (Inter.it, Oct 20)
+REPORTED - Gazzetta dello Sport has Bastoni as the central defender of a back three, and calls it a trial. (via FCInterNews, Oct 21)
+
+Today: Inter v Shakhtar Donetsk, San Siro, 3:00 PM ET / 21:00 CEST, Champions League Matchday 3.
+
+Read today's edition: https://www.nerazzurridaily.com/p/edition-50/
+Fan-made - not affiliated with FC Internazionale Milano.
+
+#Inter #ChampionsLeague #InterShakhtar #Chivu #ForzaInter
+
+TAGS
+Inter, ChampionsLeague, InterShakhtar, Chivu, ForzaInter
+
+PINNED COMMENT
+Top eight or not - in one word, can this Inter still finish in the Champions League top eight? Reply in the comments. https://www.nerazzurridaily.com/go/yt/?ed=50&v=pinned
+
+=========================================================
+(c) REDDIT — not included. The r/FCInterMilan fixtures post is a Monday draft; today is Wednesday.
+
+=========================================================
+(d) FACEBOOK — draft for JohnnyMac's own profile (never posted by this task)
+Today's Nerazzurri Daily: Chivu took the blame himself before Shakhtar come to San Siro tonight, with Inter 29th of 36 in the Champions League and still on no points. If you know one Inter fan, send them nerazzurridaily.com/go/fb/?ed=50
+
+=========================================================
+SOURCES BEHIND EVERY CLAIM (all from data/edition-50.json, verified by the 5:30 edition controls)
+CONFIRMED - Chivu press conference — Inter.it, Oct 20
+CONFIRMED - Bastoni press conference — Inter.it, Oct 20
+REPORTED  - Bastoni in a back three — Gazzetta dello Sport via FCInterNews, Oct 21
+Today's fixture and kickoff times — Inter.it scoreboard, edition No. 50
