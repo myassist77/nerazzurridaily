@@ -61,6 +61,10 @@ FIX = {
     # Spanish stress is on the second syllable (e-RRE-ra); Italian G2P gave "E-rrera" (Oct 14, 2026)
     "Shakhtar Donetsk": "ʃˈaktar donˈɛtsk", "Shakhtar": "ʃˈaktar",
     "Helenio Herrera": "elˈɛnjo errˈera", "Herrera": "errˈera",
+    # Dutch, French and Spanish names for THE DEBATE D05 (added Oct 20, 2026 audit; checked against Kokoro's vocab): the Italian G2P read Sneijder as "zneidʒdɛr"
+    "Sneijder": "ˈsnɛidər", "Wesley Sneijder": "wˈɛsli ˈsnɛidər",
+    "Thuram": "tyrˈam", "Marcus Thuram": "mˈarkus tyrˈam",
+    "Javier Zanetti": "havjˈɛr dzanˈetːi",
 }
 
 ONES = "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen".split()
