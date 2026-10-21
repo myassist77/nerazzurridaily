@@ -1,0 +1,94 @@
+{
+ "edition": 49,
+ "date": "2026-10-20",
+ "slug": "keeper-at-kickoff",
+ "hook": "Inter can't pick a keeper at kickoff.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-49/",
+ "edition_json_sha256": "6b1d76eaa8a043a9fbe90800fd53fa348aded5cc99a644178c14206f3b5b021e",
+ "brevo": {
+  "campaign_id": 38,
+  "status": "sent"
+ },
+ "audio": "voiceover only — no music",
+ "stories": [
+  {
+   "beat": "b2",
+   "register": "REPORTED",
+   "source": "La Gazzetta dello Sport via FCInterNews",
+   "date": "2026-10-20"
+  },
+  {
+   "beat": "b4",
+   "register": "CONFIRMED",
+   "source": "inter.it",
+   "date": "2026-10-19"
+  }
+ ],
+ "youtube_title": "Inter can't pick a keeper at kickoff | Provedel or Martínez vs Shakhtar #Shorts",
+ "pinned_comment": "Provedel or Martínez in goal against Shakhtar? Name your pick in the comments. https://www.nerazzurridaily.com/go/yt/?ed=49",
+ "next_fixture": "Shakhtar Donetsk (H), Wed Oct 21, 3:00 PM ET / 21:00 CEST, CBSSN · Paramount+ · ViX",
+ "local_render": {
+  "voiced_md5": "cdf21d66c0cd46a095feac9bfa905a0c",
+  "silent_md5": "3c4cbc3757caa72601bf0a14da2acc69",
+  "voiced_bytes": 1484131
+ },
+ "thumbnail_style": "number",
+ "optional_drafts": [],
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/39524232626",
+  "built_at_utc": "2026-10-21T00:57:36+00:00",
+  "seconds": 34.97,
+  "beats": 6,
+  "files": {
+   "assets/video/ed49.mp4": {
+    "bytes": 1483304,
+    "md5": "96ff64b73de48624d5665ec80f2b1b6b",
+    "sha256": "beb6463f8bc66eb2873008a702d0b71cd2410985804a0da6b9e2223f5a589e9b"
+   },
+   "assets/video/ed49-thumb.png": {
+    "bytes": 57369,
+    "md5": "4eaad4be9c340769713ed6409795924f",
+    "sha256": "1fb325a5cb3397bed8eb7894a904ff68379716d23b215bbcf36f9094a950533b"
+   },
+   "assets/video/ed49-thumb-9x16.png": {
+    "bytes": 78152,
+    "md5": "29f13e530d0b0c7750a846d41244c6ca",
+    "sha256": "d1c95c445b27f8064b4f57ed99860a50ba161f816a506d0b931a580aad2991e5"
+   },
+   "data/tiktok-ed49.json": {
+    "bytes": 623,
+    "md5": "c77b4fe5fca795442fbf7394adfedd7e",
+    "sha256": "44500c2d04f24e80d32e0bc6548be0616b9848b0e1767d376acb60843e7b3143"
+   },
+   "data/youtube-ed49.json": {
+    "bytes": 1328,
+    "md5": "3255302c731f893a33bbc8459d947815",
+    "sha256": "f352fbadf38b822727c6c003b22e138ed08f0109d3644796b161fa0e90d5e26b"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 141828,
+    "md5": "015e9eeb5aa841c035040bfcc32afc9e",
+    "sha256": "82585233b1bdf5e5718881dbe52c81ef47769e0e948fde7033ff4e399eb22642"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 78152,
+    "md5": "29f13e530d0b0c7750a846d41244c6ca",
+    "sha256": "d1c95c445b27f8064b4f57ed99860a50ba161f816a506d0b931a580aad2991e5"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 57369,
+    "md5": "4eaad4be9c340769713ed6409795924f",
+    "sha256": "1fb325a5cb3397bed8eb7894a904ff68379716d23b215bbcf36f9094a950533b"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 33.97
+  },
+  "passed": true
+ }
+}

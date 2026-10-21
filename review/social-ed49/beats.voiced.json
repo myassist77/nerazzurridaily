@@ -1,0 +1,137 @@
+{
+ "date_iso": "2026-10-20",
+ "slug": "keeper-at-kickoff",
+ "edition": 49,
+ "beats": [
+  {
+   "id": "b1",
+   "kind": "cover",
+   "eyebrow": "EDITION NO. 49 · OCTOBER 20",
+   "lines": [
+    "INTER CAN'T PICK",
+    "A KEEPER AT KICKOFF."
+   ],
+   "duration": 4.33,
+   "vo": "[Inter] can't walk into a Champions League night still picking its keeper."
+  },
+  {
+   "id": "b2",
+   "kind": "item",
+   "register": "REPORTED",
+   "kicker": "REPORTED · GAZZETTA DELLO SPORT · OCT 20",
+   "lines": [
+    "PROVEDEL OR",
+    "MARTINEZ?",
+    "CHIVU DECIDES LATE."
+   ],
+   "sub": [
+    "PROVEDEL HAS YET TO PLAY FOR INTER"
+   ],
+   "duration": 6.94,
+   "vo": "[La Gazzetta dello Sport] says [Chivu] picks between [Provedel] and [Josep Martínez] just before kickoff."
+  },
+  {
+   "id": "b3",
+   "kind": "item",
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "A KEEPER NEEDS",
+    "TO KNOW",
+    "THE NIGHT BEFORE."
+   ],
+   "sub": [
+    "NO POINTS IN EUROPE IS NO WEEK TO HEDGE"
+   ],
+   "duration": 6.19,
+   "vo": "A keeper needs to know the night before. With no points in Europe, this is no week to hedge."
+  },
+  {
+   "id": "b4",
+   "kind": "stat",
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · OCT 19",
+   "number": "29",
+   "suffix": "th",
+   "lines": [
+    "OF 36 IN EUROPE.",
+    "NO POINTS YET."
+   ],
+   "sub": [
+    "SHAKHTAR ARE 11TH WITH FOUR"
+   ],
+   "duration": 6.55,
+   "vo": "The club's own table has [Inter] twenty-ninth of thirty-six, with no points. [Shakhtar] have four."
+  },
+  {
+   "id": "b5",
+   "kind": "fixture",
+   "register": "NEUTRAL",
+   "kicker": "NEXT · CHAMPIONS LEAGUE · MATCHDAY 3",
+   "lines": [
+    "SHAKHTAR DONETSK",
+    "AT SAN SIRO"
+   ],
+   "sub_top": "WEDNESDAY, OCTOBER 21",
+   "big": "3:00 PM ET",
+   "sub": [
+    "21:00 CEST",
+    "US TV: CBSSN · PARAMOUNT+ · VIX"
+   ],
+   "duration": 3.22,
+   "vo": "[Shakhtar] at [San Siro] Wednesday, three Eastern."
+  },
+  {
+   "id": "b6",
+   "kind": "end",
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "duration": 6.74,
+   "vo": "[Provedel] or [Martínez] in goal? Tell me below, and read more at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "thumbnail": {
+  "style": "number",
+  "top": {
+   "register": "REPORTED",
+   "kicker": "REPORTED · GAZZETTA",
+   "lines": [
+    "KEEPER",
+    "UNDECIDED."
+   ]
+  },
+  "bottom": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "lines": [
+    "29TH",
+    "OF 36."
+   ],
+   "sub": "NO POINTS IN EUROPE"
+  },
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "29",
+   "lines_a": [
+    "OF 36",
+    "IN EUROPE."
+   ],
+   "lines_b": [
+    "AND NO",
+    "KEEPER YET."
+   ],
+   "pill": "REPORTED: PROVEDEL OR MARTINEZ",
+   "pill_register": "REPORTED"
+  }
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 33.97
+ }
+}
