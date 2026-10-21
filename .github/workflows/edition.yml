@@ -1,0 +1,186 @@
+name: edition
+# Builds and publishes one edition from data/edition-N.json — the masthead, the page, the index pages,
+# the feed and the sitemap — after running every hard control (A1–H). Added Oct 21, 2026 when the
+# Composio sandbox lost outbound network and github proxy execution: the morning run now commits only
+# data/edition-N.json (with its "mast" lines) and this workflow does the rest. It commits the eight
+# files ONLY when the masthead builder, nd_controls.py and nd_checks.py all exit 0; on any failure it
+# commits only review/edition-N/status.json so the morning run can read why. build/ is never committed.
+on:
+  push:
+    branches: [main]
+    paths: ['data/edition-*.json']
+  workflow_dispatch:
+    inputs:
+      n:
+        description: 'Edition number (default: the newest data/edition-N.json)'
+        required: false
+      publish:
+        description: 'Commit the eight files when the controls pass (false = build and check only)'
+        required: false
+        default: 'true'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: edition-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install the build tools
+        run: |
+          pip install --quiet playwright beautifulsoup4 lxml html5lib pillow requests
+          python -m playwright install --with-deps chromium
+      - name: Which edition
+        id: which
+        env:
+          INPUT_N: ${{ github.event.inputs.n }}
+          INPUT_PUBLISH: ${{ github.event.inputs.publish }}
+        run: |
+          python3 - <<'PY'
+          import glob, json, os, re, subprocess
+          n = (os.environ.get('INPUT_N') or '').strip()
+          if not n and os.environ.get('GITHUB_EVENT_NAME') == 'push':
+              changed = subprocess.run(['git', 'diff', '--name-only', 'HEAD~1', 'HEAD'], capture_output=True, text=True).stdout.split()
+              ns = [int(m.group(1)) for f in changed for m in [re.match(r'data/edition-(\d+)\.json$', f)] if m]
+              n = str(max(ns)) if ns else ''
+          if not n:
+              n = str(max(int(re.search(r'edition-(\d+)\.json$', p).group(1)) for p in glob.glob('data/edition-*.json')))
+          d = json.load(open(f'data/edition-{n}.json', encoding='utf-8'))
+          assert d['n'] == int(n), f"data/edition-{n}.json carries n={d['n']}"
+          mast = d.get('mast') or {}
+          assert mast.get('line1') and mast.get('line2'), 'data/edition-N.json needs "mast": {"line1": ..., "line2": ...} for the masthead'
+          publish = (os.environ.get('INPUT_PUBLISH') or 'true').strip().lower() != 'false'
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f"n={n}\nnn={int(n):02d}\ndate={d['date']}\nline1={mast['line1']}\nline2={mast['line2']}\npublish={'true' if publish else 'false'}\n")
+          print('edition', n, '|', d['title'], '| publish', publish)
+          PY
+      - name: Masthead (fails the build on any spec breach)
+        id: mast
+        run: |
+          mkdir -p build review/edition-${{ steps.which.outputs.n }}
+          python3 tools/nd_mast.py --n ${{ steps.which.outputs.n }} --date ${{ steps.which.outputs.date }} \
+            --line1 "${{ steps.which.outputs.line1 }}" --line2 "${{ steps.which.outputs.line2 }}" \
+            --out assets/mast/edition-${{ steps.which.outputs.nn }}.png | tee build/mast-${{ steps.which.outputs.n }}.log
+      - name: Render page, email, text, index, subscribe, fixtures, feed, sitemap
+        run: |
+          python3 tools/nd_render.py data/edition-${{ steps.which.outputs.n }}.json
+          python3 tools/nd_render.py --index
+      - name: Control A1–A3 — design, contrast, mobile type (Playwright at 700 and 390)
+        id: controls
+        run: python3 tools/nd_controls.py --n ${{ steps.which.outputs.n }}
+      - name: Control B — the email carries no <style> block and no class attribute
+        run: |
+          test "$(grep -c '<style' build/email-${{ steps.which.outputs.n }}.html)" = "0"
+          test "$(grep -o 'class=' build/email-${{ steps.which.outputs.n }}.html | wc -l)" = "0"
+      - name: Controls C, D1, E, H — the checks engine
+        id: checks
+        run: |
+          python3 - <<'PY'
+          import json, datetime, subprocess, sys
+          n = "${{ steps.which.outputs.n }}"
+          d = json.load(open(f'data/edition-{n}.json', encoding='utf-8'))
+          dt = datetime.date.fromisoformat(d['date'])
+          today = f"{dt.strftime('%B')} {dt.day}"
+          r = subprocess.run([sys.executable, 'tools/nd_checks.py', '--text', f'build/edition-{n}.txt', '--html', f'build/email-{n}.html',
+                              '--subject', d['title'], '--subtitle', d['description'], '--date', today, '--json', f'build/checks-{n}.json'])
+          sys.exit(r.returncode)
+          PY
+      - name: Status file and reviewer crops
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json, hashlib, os, datetime, shutil, glob
+          n = "${{ steps.which.outputs.n }}"; nn = "${{ steps.which.outputs.nn }}"
+          ok = {'mast': "${{ steps.mast.outcome }}", 'controls': "${{ steps.controls.outcome }}", 'checks': "${{ steps.checks.outcome }}"}
+          passed = all(v == 'success' for v in ok.values())
+          def md5(p):
+              return hashlib.md5(open(p, 'rb').read()).hexdigest() if os.path.exists(p) else None
+          files = [f'p/edition-{n}/index.html', f'assets/mast/edition-{nn}.png', f'data/edition-{n}.json', 'index.html',
+                   'subscribe/index.html', 'fixtures/index.html', 'feed.xml', 'sitemap.xml']
+          st = {'n': int(n), 'built_at_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds'),
+                'run_id': os.environ.get('GITHUB_RUN_ID'), 'run_url': f"{os.environ.get('GITHUB_SERVER_URL')}/{os.environ.get('GITHUB_REPOSITORY')}/actions/runs/{os.environ.get('GITHUB_RUN_ID')}",
+                'passed': passed, 'steps': ok, 'files_md5': {p: md5(p) for p in files}}
+          try:
+              d = json.load(open(f'data/edition-{n}.json', encoding='utf-8')); st['title'] = d['title']; st['date'] = d['date']
+          except Exception as e: st['title_error'] = str(e)
+          try:
+              st['masthead'] = {'bytes': os.path.getsize(f'assets/mast/edition-{nn}.png')}
+              log = open(f'build/mast-{n}.log', encoding='utf-8').read()
+              j = json.loads(log[log.index('{'):log.rindex('}') + 1]); st['masthead'].update({'lines': j['measure']['head']['lines'], 'colors': j['colors'], 'fonts': j['measure']['fonts']})
+          except Exception as e: st['masthead_error'] = str(e)
+          try: st['controls'] = json.load(open(f'build/controls-{n}.json', encoding='utf-8'))
+          except Exception as e: st['controls_error'] = str(e)
+          try: st['checks'] = json.load(open(f'build/checks-{n}.json', encoding='utf-8'))
+          except Exception as e: st['checks_error'] = str(e)
+          em = f'build/email-{n}.html'
+          if os.path.exists(em):
+              s = open(em, encoding='utf-8').read(); st['email'] = {'md5': md5(em), 'chars': len(s), 'bytes': os.path.getsize(em)}
+          os.makedirs(f'review/edition-{n}', exist_ok=True)
+          for c in glob.glob(f'build/crop-{n}-email-390-*.jpg'): shutil.copy(c, f'review/edition-{n}/')
+          json.dump(st, open(f'review/edition-{n}/status.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+          print(json.dumps({k: st[k] for k in ('n', 'passed', 'steps', 'masthead') if k in st}))
+          PY
+      - name: Keep the build outputs as artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: edition-${{ steps.which.outputs.n }}-build
+          path: |
+            build/
+            review/edition-${{ steps.which.outputs.n }}/
+          if-no-files-found: ignore
+      - name: Commit (the eight files when every control passed; only the status file otherwise)
+        id: commit
+        if: always() && steps.which.outputs.n != ''
+        env:
+          N: ${{ steps.which.outputs.n }}
+          NN: ${{ steps.which.outputs.nn }}
+          PUBLISH: ${{ steps.which.outputs.publish }}
+          PASSED: ${{ steps.mast.outcome == 'success' && steps.controls.outcome == 'success' && steps.checks.outcome == 'success' }}
+        run: |
+          git config user.name "nerazzurri-daily[bot]"
+          git config user.email "mail@nerazzurridaily.com"
+          git add "review/edition-$N/status.json"
+          if [ "$PASSED" = "true" ] && [ "$PUBLISH" = "true" ]; then
+            TITLE=$(python3 -c "import json;print(json.load(open('data/edition-$N.json',encoding='utf-8'))['title'])")
+            git add "p/edition-$N/index.html" "assets/mast/edition-$NN.png" "data/edition-$N.json" index.html subscribe/index.html fixtures/index.html feed.xml sitemap.xml "review/edition-$N/"
+            MSG="Edition No. $N — $TITLE"
+          else
+            MSG="Edition No. $N — build status (controls $PASSED, publish $PUBLISH)"
+          fi
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -q -m "$MSG" -m "Built by the edition workflow, run $GITHUB_RUN_ID."
+          git push origin HEAD:main
+          echo "committed $(git rev-parse HEAD)"
+          echo "published=$([ "$PASSED" = "true" ] && [ "$PUBLISH" = "true" ] && echo true || echo false)" >> "$GITHUB_OUTPUT"
+      - name: IndexNow (a push by this workflow's token does not start the indexnow workflow)
+        if: steps.commit.outputs.published == 'true'
+        continue-on-error: true
+        run: |
+          sleep 90
+          python3 - <<'PY'
+          import json, urllib.request
+          n = "${{ steps.which.outputs.n }}"
+          HOST = "www.nerazzurridaily.com"; KEY = "6853e0b381f80722f7022dc7cfe8c2c9"
+          urls = [f"https://{HOST}/", f"https://{HOST}/p/edition-{n}/", f"https://{HOST}/fixtures/", f"https://{HOST}/subscribe/"]
+          body = json.dumps({"host": HOST, "key": KEY, "keyLocation": f"https://{HOST}/{KEY}.txt", "urlList": urls}).encode()
+          req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body, headers={"Content-Type": "application/json; charset=utf-8"})
+          try:
+              with urllib.request.urlopen(req, timeout=30) as r: print("IndexNow", r.status, urls)
+          except urllib.error.HTTPError as e: print("IndexNow HTTP", e.code, e.read()[:200])
+          PY
+      - name: Fail the run if a control failed
+        if: steps.mast.outcome != 'success' || steps.controls.outcome != 'success' || steps.checks.outcome != 'success'
+        run: |
+          echo "masthead=${{ steps.mast.outcome }} controls=${{ steps.controls.outcome }} checks=${{ steps.checks.outcome }}"
+          exit 1
