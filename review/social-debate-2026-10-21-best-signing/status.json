@@ -1,0 +1,86 @@
+{
+ "job": "debate-2026-10-21-best-signing",
+ "kind": "debate",
+ "name": "debate-2026-10-21-best-signing",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-10-21T16:40:32+00:00",
+ "run_id": "39636492947",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/39636492947",
+ "files": {
+  "assets/video/debate-2026-10-21-best-signing.mp4": {
+   "bytes": 2602276,
+   "md5": "84103406a79af9244e2e1792af384fa4",
+   "sha256": "0c5ea1a32ae2f57937aea9571bf99c6e3f5f47636da6d91555abeddc2f2834d1"
+  },
+  "assets/video/debate-2026-10-21-best-signing-thumb.png": {
+   "bytes": 311920,
+   "md5": "d22e187291bda9b881415ab7ecc6aa7f",
+   "sha256": "4a670cf7d8d778a3d2269ca2ac443424095bec29263f6b8444a15e9183e9dced"
+  },
+  "assets/video/debate-2026-10-21-best-signing-thumb-9x16.png": {
+   "bytes": 624836,
+   "md5": "674c4837bf751205a8bc5a4994b180db",
+   "sha256": "b98d0c0f39ff0da2b7166ea8767d706dab9368f779a36194a0f5a2e337b1cfe0"
+  },
+  "data/tiktok-debate-2026-10-21-best-signing.json": {
+   "bytes": 672,
+   "md5": "fac8f815d6e83b8d287107ebff839d33",
+   "sha256": "dce3ea5d8cdcd445578eca3c9111a4290f31cababc9a955f52816a80c79ede3e"
+  },
+  "data/youtube-debate-2026-10-21-best-signing.json": {
+   "bytes": 2150,
+   "md5": "6b7a5d50e89f34c5c803d01164c9a27e",
+   "sha256": "d5a79bc253e8260a80efde70aa6b37a950a085e754514a2582e1615e91106ded"
+  },
+  "assets/qc/debate-contact.jpg": {
+   "bytes": 158363,
+   "md5": "9bb51791d6f61d16a6c90b7332e69b9f",
+   "sha256": "8c887e4eaa865f1fff36a68409caa00bbb054cd6baf1312285e1997eaed4c400"
+  }
+ },
+ "seconds": 37.43,
+ "beats": 7,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "37.433333"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "37.410000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/debate-2026-10-21-best-signing-voiced.mp4",
+  "thumb16": "build/pack/debate-2026-10-21-best-signing-thumb-16x9.png",
+  "thumb9": "build/pack/debate-2026-10-21-best-signing-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 1984005,
+  "md5": "c657262d0f73239d5f16d3a4306afa80",
+  "sha256": "84cdcc36167f3ab193279a1def334219e3bce43e55ec35d3c2991305d2d07c14"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 36.41
+ },
+ "voice_log_tail": "b1: voice 3.54s → beat 3.95s\nb2: voice 3.69s → beat 4.23s\nb3: voice 6.29s → beat 6.76s\nb4: voice 5.59s → beat 6.02s\nb5: voice 3.93s → beat 4.4s\nb6: voice 4.18s → beat 4.65s\nb7: voice 5.97s → beat 6.4s\nPLAN OK build/beats.voiced.json — 7 beats, 36.41s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/debate-2026-10-21-best-signing.mp4 — 36.43s, 7 beats, silent (voice is mixed on by nd_voice.py); stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: debate-2026-10-21-best-signing-thumb-9x16.png, debate-2026-10-21-best-signing-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/debate-2026-10-21-best-signing-voiced.mp4 — 37.43s, AAC 48 kHz stereo, I: -16.4 LUFS Peak: -3.6 dBFS\n"
+}

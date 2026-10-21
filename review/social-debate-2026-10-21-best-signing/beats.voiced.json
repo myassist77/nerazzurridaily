@@ -1,0 +1,170 @@
+{
+ "date_iso": "2026-10-21",
+ "slug": "best-signing",
+ "beats": [
+  {
+   "id": "b1",
+   "kind": "hook",
+   "eyebrow": "THE DEBATE · NO. 5",
+   "lines": [
+    "INTER'S",
+    "BEST SIGNING",
+    "EVER?"
+   ],
+   "sub": "six deals · one answer · argue below",
+   "duration": 3.95,
+   "vo": "The best [Inter] signing ever? Six deals. One answer."
+  },
+  {
+   "id": "b2",
+   "kind": "lineup",
+   "kicker": "THE CONTENDERS",
+   "rows": [
+    {
+     "name": "Zanetti",
+     "era": "1995 · Banfield"
+    },
+    {
+     "name": "Ronaldo",
+     "era": "1997 · Barcelona"
+    },
+    {
+     "name": "Sneijder",
+     "era": "2009 · Real Madrid"
+    },
+    {
+     "name": "Milito",
+     "era": "2009 · Genoa"
+    },
+    {
+     "name": "Lautaro",
+     "era": "2018 · Racing"
+    },
+    {
+     "name": "Thuram",
+     "era": "2023 · free"
+    }
+   ],
+   "duration": 4.23,
+   "vo": "[Zanetti], [Ronaldo], [Sneijder], [Milito], [Lautaro], [Thuram]."
+  },
+  {
+   "id": "b3",
+   "kind": "card",
+   "kicker": "THE CASE · 2018 · RACING",
+   "number": 181,
+   "suffix": "",
+   "label": "Inter goals · third all-time",
+   "name": "Lautaro Martínez",
+   "facts": [
+    "Scudetti 2021 · 2024 · 2026",
+    "Serie A top scorer 2024 + 2026",
+    "Captain · 9 trophies"
+   ],
+   "source": "inter.it · Oct 13, 2026 · wikipedia",
+   "duration": 6.76,
+   "vo": "[Lautaro Martínez], signed in twenty eighteen. one hundred eighty-one goals, third in club history."
+  },
+  {
+   "id": "b4",
+   "kind": "card",
+   "kicker": "THE COUNTER · 1995 · BANFIELD",
+   "number": 858,
+   "suffix": "",
+   "label": "games · the club record",
+   "name": "Javier Zanetti",
+   "facts": [
+    "16 trophies · the club record",
+    "Captain of the 2010 treble",
+    "19 seasons · 1995–2014"
+   ],
+   "source": "inter.it · wikipedia",
+   "duration": 6.02,
+   "vo": "[Javier Zanetti]. eight hundred fifty-eight games, sixteen trophies. Both club records."
+  },
+  {
+   "id": "b5",
+   "kind": "versus",
+   "left": {
+    "name": "Lautaro",
+    "era": "2018–"
+   },
+   "right": {
+    "name": "Zanetti",
+    "era": "1995–2014"
+   },
+   "rows": [
+    {
+     "label": "Inter goals",
+     "l": 181,
+     "r": 21,
+     "win": "l"
+    },
+    {
+     "label": "Trophies",
+     "l": 9,
+     "r": 16,
+     "win": "r"
+    },
+    {
+     "label": "Serie A top scorer",
+     "l": 2,
+     "r": 0,
+     "win": "l"
+    },
+    {
+     "label": "Seasons",
+     "l": 9,
+     "r": 19,
+     "win": "r"
+    }
+   ],
+   "duration": 4.4,
+   "vo": "[Zanetti] has the trophies and the years. [Lautaro] has the goals."
+  },
+  {
+   "id": "b6",
+   "kind": "verdict",
+   "stamp": "OUR PICK",
+   "name": "Lautaro",
+   "lines": [
+    "181 goals · 9 trophies · captain",
+    "third all-time, and still scoring"
+   ],
+   "duration": 4.65,
+   "vo": "Our pick: [Lautaro]. Third on the all-time list, and still scoring."
+  },
+  {
+   "id": "b7",
+   "kind": "end",
+   "lines": [
+    "YOUR",
+    "PICK?"
+   ],
+   "ask": "reply in the comments",
+   "duration": 6.4,
+   "vo": "Who's yours? Reply below. The [Inter] press in English at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "thumbnail": {
+  "lines": [
+   "BEST SIGNING EVER?"
+  ],
+  "left": {
+   "name": "Lautaro",
+   "era": "2018 · 181 goals · 9 trophies"
+  },
+  "right": {
+   "name": "Zanetti",
+   "era": "1995 · 858 games · 16 trophies"
+  }
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 36.41
+ }
+}
