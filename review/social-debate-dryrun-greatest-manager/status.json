@@ -1,0 +1,86 @@
+{
+ "job": "debate-dryrun-greatest-manager",
+ "kind": "debate",
+ "name": "debate-dryrun-greatest-manager",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-10-21T02:28:19+00:00",
+ "run_id": "39532927368",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/39532927368",
+ "files": {
+  "assets/video/debate-dryrun-greatest-manager.mp4": {
+   "bytes": 2547475,
+   "md5": "9160824f5fed26ea61e537838c841c1f",
+   "sha256": "7d8b20d4852e46bea07cbcc0591a25b22b68a0771011f7b32dd39514c5a7ed2f"
+  },
+  "assets/video/debate-dryrun-greatest-manager-thumb.png": {
+   "bytes": 312121,
+   "md5": "8ee5f5c57aa1b396edb306113f1a1e1d",
+   "sha256": "b6395a32337122e78c8542826c7da2323f8029e6c0393b9183e794ec5e48a7eb"
+  },
+  "assets/video/debate-dryrun-greatest-manager-thumb-9x16.png": {
+   "bytes": 618422,
+   "md5": "8e664732ec62c3174ad6e3f0aef6616a",
+   "sha256": "103de27b2534394fef12ca0f92759055754bd00b4edecf6055e5e8257f8b4f33"
+  },
+  "data/tiktok-debate-dryrun-greatest-manager.json": {
+   "bytes": 585,
+   "md5": "f201a1a1607761396b03235c4938336b",
+   "sha256": "2425274c1d66ebd77d941a7312759206858ba9d4e9dd440f22b950b81314eb01"
+  },
+  "data/youtube-debate-dryrun-greatest-manager.json": {
+   "bytes": 2081,
+   "md5": "da7d3146c21415f7565ef2e178a36e29",
+   "sha256": "a04624a55b4543afb90a92b25c71165648d01acbe8509c9cfbeb1b824f0d5dc0"
+  },
+  "assets/qc/debate-contact.jpg": {
+   "bytes": 157114,
+   "md5": "eebeea079adeda00f2179491558b2c17",
+   "sha256": "d13e7acbf73b19164b870960aeaf050274bbd47bda873a0baceb90e056e62bb7"
+  }
+ },
+ "seconds": 38.73,
+ "beats": 7,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "38.733333"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "38.700000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/debate-dryrun-greatest-manager-voiced.mp4",
+  "thumb16": "build/pack/debate-dryrun-greatest-manager-thumb-16x9.png",
+  "thumb9": "build/pack/debate-dryrun-greatest-manager-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 1910731,
+  "md5": "bba406d866d9f0380fb70b25de339d0a",
+  "sha256": "a2f683a2394785471be836588d9ca6968ca0a185fe7f4483f705ffa16c1bb322"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 37.7
+ },
+ "voice_log_tail": "b1: voice 3.82s → beat 4.23s\nb2: voice 3.56s → beat 4.03s\nb3: voice 5.48s → beat 6.02s\nb4: voice 5.89s → beat 6.34s\nb5: voice 4.86s → beat 5.36s\nb6: voice 4.46s → beat 4.93s\nb7: voice 6.34s → beat 6.79s\nPLAN OK build/beats.voiced.json — 7 beats, 37.7s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/debate-dryrun-greatest-manager.mp4 — 37.73s, 7 beats, silent (voice is mixed on by nd_voice.py); stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: debate-dryrun-greatest-manager-thumb-9x16.png, debate-dryrun-greatest-manager-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/debate-dryrun-greatest-manager-voiced.mp4 — 38.73s, AAC 48 kHz stereo, I: -16.2 LUFS Peak: -4.3 dBFS\n"
+}

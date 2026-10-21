@@ -1,0 +1,166 @@
+{
+ "beats": [
+  {
+   "id": "b1",
+   "kind": "hook",
+   "eyebrow": "THE DEBATE · NO. 4",
+   "lines": [
+    "INTER'S",
+    "GREATEST",
+    "MANAGER?"
+   ],
+   "sub": "six coaches · one bench · argue below",
+   "duration": 4.23,
+   "vo": "The greatest [Inter] manager ever? Six coaches. One bench."
+  },
+  {
+   "id": "b2",
+   "kind": "lineup",
+   "kicker": "THE CONTENDERS",
+   "rows": [
+    {
+     "name": "Herrera",
+     "era": "1960–68"
+    },
+    {
+     "name": "Trapattoni",
+     "era": "1986–91"
+    },
+    {
+     "name": "Mancini",
+     "era": "2004–08 · 2014–16"
+    },
+    {
+     "name": "Mourinho",
+     "era": "2008–10"
+    },
+    {
+     "name": "Conte",
+     "era": "2019–21"
+    },
+    {
+     "name": "Inzaghi",
+     "era": "2021–25"
+    }
+   ],
+   "duration": 4.03,
+   "vo": "[Herrera], [Trapattoni], [Mancini], [Mourinho], [Conte], [Inzaghi]."
+  },
+  {
+   "id": "b3",
+   "kind": "card",
+   "kicker": "THE CASE · 2008–10",
+   "number": 45,
+   "label": "years without a European Cup",
+   "name": "José Mourinho",
+   "facts": [
+    "The treble · Italy's only",
+    "2 Scudetti in 2 seasons",
+    "Bayern 0–2 · Madrid · May 22, 2010"
+   ],
+   "source": "inter.it archive · uefa.com · wikipedia",
+   "duration": 6.02,
+   "vo": "[Mourinho]. Two seasons, five trophies, and the treble no Italian club had ever won."
+  },
+  {
+   "id": "b4",
+   "kind": "card",
+   "kicker": "THE COUNTER · 1960–68",
+   "number": 7,
+   "label": "trophies in eight seasons",
+   "name": "Helenio Herrera",
+   "facts": [
+    "3 Scudetti · 1963 · 65 · 66",
+    "European Cups 1964 + 1965",
+    "Intercontinental Cups 1964 + 1965"
+   ],
+   "source": "inter.it archive · uefa.com · wikipedia",
+   "duration": 6.34,
+   "vo": "[Herrera]. Eight seasons, seven trophies. Back-to-back European Cups, and the [Grande Inter]."
+  },
+  {
+   "id": "b5",
+   "kind": "versus",
+   "left": {
+    "name": "Mourinho",
+    "era": "2008–10"
+   },
+   "right": {
+    "name": "Herrera",
+    "era": "1960–68"
+   },
+   "rows": [
+    {
+     "label": "Trophies",
+     "l": 5,
+     "r": 7,
+     "win": "r"
+    },
+    {
+     "label": "European Cups",
+     "l": 1,
+     "r": 2,
+     "win": "r"
+    },
+    {
+     "label": "Trebles",
+     "l": 1,
+     "r": 0,
+     "win": "l"
+    },
+    {
+     "label": "Seasons needed",
+     "l": 2,
+     "r": 8,
+     "win": "l"
+    }
+   ],
+   "duration": 5.36,
+   "vo": "[Herrera] has the count. [Mourinho] needed two seasons, and won the only treble."
+  },
+  {
+   "id": "b6",
+   "kind": "verdict",
+   "stamp": "OUR PICK",
+   "name": "Mourinho",
+   "lines": [
+    "2 seasons · 5 trophies",
+    "the treble nobody else has"
+   ],
+   "duration": 4.93,
+   "vo": "Our pick: [Mourinho]. Forty-five years of waiting, over in two seasons."
+  },
+  {
+   "id": "b7",
+   "kind": "end",
+   "lines": [
+    "YOUR",
+    "PICK?"
+   ],
+   "ask": "reply in the comments",
+   "duration": 6.79,
+   "vo": "Who's yours? Reply below. Read the [Inter] press in English at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "thumbnail": {
+  "lines": [
+   "INTER'S BEST MANAGER?"
+  ],
+  "left": {
+   "name": "Mourinho",
+   "era": "2008–10 · 5 trophies"
+  },
+  "right": {
+   "name": "Herrera",
+   "era": "1960–68 · Grande Inter"
+  }
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 37.7
+ }
+}
