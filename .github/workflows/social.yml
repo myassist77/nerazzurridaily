@@ -1,0 +1,336 @@
+name: social
+# Renders one social video from a REQUEST file at data/social/<job>.json and commits the post files.
+# Added Oct 21, 2026 when the Composio sandbox lost outbound network and github proxy execution: the
+# 6:45 AM social run (and the debate, weekly and full-time runs) now write beats + post-file templates
+# into data/social/<job>.json, commit that one text file with the GITHUB_COMMIT_MULTIPLE_FILES tool,
+# and this workflow voices (tools/nd_voice.py), renders (tools/social_motion.py or tools/nd_debate.py,
+# always silent — the only audio is the voiceover), mixes with the 1.0 s cover, builds the QC contact
+# sheet, fills in seconds / beats / created_at_utc on every post file and commits:
+#   the MP4 and both thumbnails (request.outputs), the post files (request.post_files), the QC files
+#   (request.qc), data/social/INDEX.csv (one row per job) and review/social-<job>/{status.json,
+#   beats.voiced.json, captions.txt, manifest.json, contact.jpg}.
+# On ANY failure it commits only review/social-<job>/status.json, so the run that asked can read why.
+# A job whose data/posted-<job>.json already exists (the 9:05 task posted it) is never re-rendered
+# unless the request carries "force": true — the 9:05 task posts from the committed files, and a
+# re-render after the post would change what the archive says was posted.
+# Request schema (tools/nd_social_request.py writes and validates it):
+#   {"job": "ed49", "kind": "daily"|"debate"|"weekly", "name": "ND-2026-10-21-ed49-slug",
+#    "beats": {...the beats JSON, voiced or not...},            (daily, debate)
+#    "weekly": {"end": 54},                                      (weekly: tools/nd_weekly.py --end)
+#    "outputs": {"mp4": "assets/video/ed49.mp4", "thumb16": "assets/video/ed49-thumb.png", "thumb9": "assets/video/ed49-thumb-9x16.png"},
+#    "post_files": {"data/tiktok-ed49.json": {...}, "data/youtube-ed49.json": {...}},   # keys seconds/beats/created_at_utc are filled here
+#    "qc": {"contact": "assets/qc/latest-contact.jpg", "thumb9": "assets/qc/latest-thumb-9x16.png", "thumb16": "assets/qc/latest-thumb-16x9.png"},
+#    "captions": "...captions.txt text...", "manifest": {...}, "index_row": {...columns...}, "force": false}
+on:
+  push:
+    branches: [main]
+    paths: ['data/social/*.json']
+  workflow_dispatch:
+    inputs:
+      job:
+        description: 'Request to build: the basename of data/social/<job>.json (default: the one changed last)'
+        required: false
+      publish:
+        description: 'Commit the outputs when the build passes (false = build, check and keep the artifacts only)'
+        required: false
+        default: 'true'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: social-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Which request
+        id: which
+        env:
+          INPUT_JOB: ${{ github.event.inputs.job }}
+          INPUT_PUBLISH: ${{ github.event.inputs.publish }}
+        run: |
+          python3 - <<'PY'
+          import glob, json, os, re, subprocess
+          job = (os.environ.get('INPUT_JOB') or '').strip()
+          if not job and os.environ.get('GITHUB_EVENT_NAME') == 'push':
+              changed = subprocess.run(['git', 'diff', '--name-only', 'HEAD~1', 'HEAD'], capture_output=True, text=True).stdout.split()
+              jobs = [m.group(1) for f in changed for m in [re.match(r'data/social/([A-Za-z0-9._-]+)\.json$', f)] if m and os.path.exists(f)]
+              job = jobs[-1] if jobs else ''
+          if not job:
+              job = os.path.basename(max(glob.glob('data/social/*.json'), key=os.path.getmtime))[:-5]
+          r = json.load(open(f'data/social/{job}.json', encoding='utf-8'))
+          assert r.get('job') == job, f"data/social/{job}.json carries job={r.get('job')!r}"
+          kind = r.get('kind'); assert kind in ('daily', 'debate', 'weekly'), f'kind {kind!r}'
+          assert r.get('name') and re.match(r'^[A-Za-z0-9._-]+$', r['name']), 'request.name is the MP4 basename'
+          assert isinstance(r.get('outputs'), dict) and r['outputs'].get('mp4'), 'request.outputs.mp4 is required'
+          if kind != 'weekly': assert isinstance(r.get('beats'), dict) and r['beats'].get('beats'), 'request.beats carries the beats JSON'
+          else: assert isinstance(r.get('weekly'), dict) and r['weekly'].get('end'), 'request.weekly.end is the last edition of the week'
+          posted = r.get('posted_guard') or f'data/posted-{job}.json'
+          already = os.path.exists(posted) and not r.get('force')
+          publish = (os.environ.get('INPUT_PUBLISH') or 'true').strip().lower() != 'false'
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f"job={job}\nkind={kind}\nname={r['name']}\npublish={'true' if publish else 'false'}\nalready_posted={'true' if already else 'false'}\n")
+          print('job', job, '|', kind, '|', r['name'], '| publish', publish, '| already posted', already, f'({posted})')
+          PY
+      - name: Stop — this job was already posted (data/posted-<job>.json exists and the request has no "force")
+        if: steps.which.outputs.already_posted == 'true'
+        run: |
+          mkdir -p review/social-${{ steps.which.outputs.job }}
+          python3 - <<'PY'
+          import json, datetime, os
+          job = "${{ steps.which.outputs.job }}"
+          st = {'job': job, 'passed': False, 'skipped': 'already posted — data/posted-%s.json exists and the request has no "force": true' % job,
+                'built_at_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds'),
+                'run_id': os.environ.get('GITHUB_RUN_ID'), 'run_url': f"{os.environ.get('GITHUB_SERVER_URL')}/{os.environ.get('GITHUB_REPOSITORY')}/actions/runs/{os.environ.get('GITHUB_RUN_ID')}"}
+          json.dump(st, open(f'review/social-{job}/status.json', 'w', encoding='utf-8'), indent=1)
+          PY
+          git config user.name "nerazzurri-daily[bot]"; git config user.email "mail@nerazzurridaily.com"
+          git add review/social-${{ steps.which.outputs.job }}/status.json
+          git diff --cached --quiet || { git commit -q -m "Social ${{ steps.which.outputs.job }} — skipped (already posted)"; git push origin HEAD:main; }
+      - name: Cache the voice model (kokoro v1.0 int8, ~120 MB)
+        if: steps.which.outputs.already_posted != 'true'
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/nd-voice
+          key: nd-voice-kokoro-v1.0-int8
+      - name: Cache node_modules (playwright + the four fontsource packages)
+        id: npm-cache
+        if: steps.which.outputs.already_posted != 'true'
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: nd-social-node-${{ runner.os }}-playwright-fontsource-v1
+      - name: Install the build tools
+        if: steps.which.outputs.already_posted != 'true'
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          pip install --quiet numpy pillow soundfile kokoro-onnx
+          if [ ! -d node_modules/playwright ]; then
+            npm install --silent --no-audit --no-fund playwright @fontsource/anton @fontsource/oswald @fontsource/ibm-plex-mono @fontsource/gelasio
+          fi
+          npx playwright install --with-deps chromium
+          ls ~/.cache/ms-playwright/chromium-*/chrome-linux*/chrome
+          ffmpeg -version | head -1; node -e "console.log('node', process.version)"
+      - name: Unpack the request
+        id: req
+        if: steps.which.outputs.already_posted != 'true'
+        run: |
+          python3 - <<'PY'
+          import json, os
+          job = "${{ steps.which.outputs.job }}"
+          r = json.load(open(f'data/social/{job}.json', encoding='utf-8'))
+          os.makedirs('build', exist_ok=True)
+          if r.get('beats'):
+              json.dump(r['beats'], open('build/beats.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+              voiced = bool(r['beats'].get('voice'))
+              print('beats:', len(r['beats']['beats']), '| already voiced (durations kept):', voiced)
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as f: f.write(f"keep={'--keep-durations' if voiced else ''}\n")
+          if r.get('captions'): open('build/captions.txt', 'w', encoding='utf-8').write(r['captions'])
+          PY
+      - name: Voice (tools/nd_voice.py plan — the lines are spoken here; durations are kept when the request was voiced already)
+        id: voice
+        if: steps.which.outputs.already_posted != 'true' && steps.which.outputs.kind != 'weekly'
+        run: |
+          python3 tools/nd_voice.py plan --json build/beats.json --out build/beats.voiced.json --wavdir build/vo ${{ steps.req.outputs.keep }} | tee build/voice.log
+      - name: Render (silent — the voiceover is the only audio and is mixed on next)
+        id: render
+        if: steps.which.outputs.already_posted != 'true' && steps.which.outputs.kind != 'weekly'
+        env:
+          KIND: ${{ steps.which.outputs.kind }}
+          NAME: ${{ steps.which.outputs.name }}
+        run: |
+          if [ "$KIND" = "debate" ]; then
+            python3 tools/nd_debate.py --json build/beats.voiced.json --out build/pack --workdir . --name "$NAME" | tee build/render.log
+          else
+            python3 tools/social_motion.py --json build/beats.voiced.json --out build/pack --workdir . --name "$NAME" --silent | tee build/render.log
+          fi
+          ls -la build/pack
+      - name: Mix the voice onto the video, opening on the 9:16 cover for 1.0 s
+        id: mix
+        if: steps.which.outputs.already_posted != 'true' && steps.which.outputs.kind != 'weekly'
+        env:
+          NAME: ${{ steps.which.outputs.name }}
+        run: |
+          COVER=""; [ -f "build/pack/$NAME-thumb-9x16.png" ] && COVER="--cover build/pack/$NAME-thumb-9x16.png"
+          python3 tools/nd_voice.py mix --json build/beats.voiced.json --wavdir build/vo --video "build/pack/$NAME.mp4" $COVER --out "build/pack/$NAME-voiced.mp4" | tee build/mix.log
+      - name: Weekly (tools/nd_weekly.py stitches the week's Shorts into one 16:9 video)
+        id: weekly
+        if: steps.which.outputs.already_posted != 'true' && steps.which.outputs.kind == 'weekly'
+        run: |
+          END=$(python3 -c "import json;print(json.load(open('data/social/${{ steps.which.outputs.job }}.json'))['weekly']['end'])")
+          python3 tools/nd_weekly.py --end "$END" --out build/pack --fonts build/fonts | tee build/render.log
+          ls -la build/pack
+      - name: Verify the file, the QC sheet, the post files
+        id: verify
+        if: steps.which.outputs.already_posted != 'true'
+        env:
+          JOB: ${{ steps.which.outputs.job }}
+          KIND: ${{ steps.which.outputs.kind }}
+          NAME: ${{ steps.which.outputs.name }}
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess, shutil, glob, datetime, sys
+          job, kind, name = os.environ['JOB'], os.environ['KIND'], os.environ['NAME']
+          r = json.load(open(f'data/social/{job}.json', encoding='utf-8'))
+          out = r['outputs']
+          if kind == 'weekly':
+              end = r['weekly']['end']
+              src = {'mp4': f'build/pack/weekly-ed{end}.mp4', 'thumb16': f'build/pack/weekly-ed{end}-thumb.png'}
+          else:
+              src = {'mp4': f'build/pack/{name}-voiced.mp4', 'thumb16': f'build/pack/{name}-thumb-16x9.png', 'thumb9': f'build/pack/{name}-thumb-9x16.png'}
+          for k, p in src.items():
+              assert os.path.exists(p), f'{k}: {p} was not built'
+          probe = json.loads(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration:stream=codec_type,codec_name,sample_rate,channels,width,height,duration', '-of', 'json', src['mp4']], capture_output=True, text=True).stdout)
+          v = [s for s in probe['streams'] if s['codec_type'] == 'video']; a = [s for s in probe['streams'] if s['codec_type'] == 'audio']
+          assert len(v) == 1 and len(a) == 1, f'expected one video and one audio stream: {probe["streams"]}'
+          assert a[0]['codec_name'] == 'aac' and a[0]['sample_rate'] == '48000' and a[0]['channels'] == 2, f'audio is {a[0]}'
+          sec = round(float(probe['format']['duration']), 2)
+          if kind != 'weekly':
+              assert (v[0]['width'], v[0]['height']) == (1080, 1920), f'frame is {v[0]["width"]}x{v[0]["height"]}'
+              assert 20.0 <= sec <= 40.5, f'{sec}s is outside 20–40 s'
+              assert abs(float(a[0]['duration']) - float(v[0]['duration'])) <= 0.2, 'audio/video length differ'
+          beats = len(json.load(open('build/beats.voiced.json', encoding='utf-8'))['beats']) if os.path.exists('build/beats.voiced.json') else None
+          # the files, at their repo paths
+          for k, p in src.items():
+              dst = out.get(k)
+              if dst: os.makedirs(os.path.dirname(dst), exist_ok=True); shutil.copy(p, dst); print('->', dst, os.path.getsize(dst), 'bytes')
+          # QC: contact sheet of the settled stills, and the rolling thumbnails
+          qc = r.get('qc') or {}
+          stills = sorted(glob.glob('build/pack/stills/*.png'))
+          if qc.get('contact') and stills:
+              os.makedirs(os.path.dirname(qc['contact']), exist_ok=True)
+              subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-pattern_type', 'glob', '-i', 'build/pack/stills/*.png', '-filter_complex',
+                              'scale=360:640,tile=4x3:padding=8:color=0x06080F', '-frames:v', '1', '-q:v', '4', qc['contact']], check=True)
+              print('->', qc['contact'], os.path.getsize(qc['contact']), 'bytes', f'({len(stills)} stills)')
+          for k in ('thumb9', 'thumb16'):
+              if qc.get(k) and src.get(k): os.makedirs(os.path.dirname(qc[k]), exist_ok=True); shutil.copy(src[k], qc[k])
+          # post files: fill seconds / beats / created_at_utc, keep every other key exactly as written
+          now = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+          for path, body in (r.get('post_files') or {}).items():
+              body = dict(body)
+              if 'seconds' in body: body['seconds'] = sec
+              if 'beats' in body and beats is not None: body['beats'] = beats
+              if 'created_at_utc' in body: body['created_at_utc'] = now
+              assert body.get('mp4') in (None, out['mp4']), f'{path}: mp4 {body.get("mp4")} is not {out["mp4"]}'
+              os.makedirs(os.path.dirname(path), exist_ok=True)
+              json.dump(body, open(path, 'w', encoding='utf-8'), indent=2, ensure_ascii=False); open(path, 'a').write('\n')
+              print('->', path, json.dumps({k: body[k] for k in body if k in ('n', 'date', 'slug', 'seconds', 'beats')}))
+          # weekly: the tool wrote youtube-weekly-edN.json itself; the request names where it goes
+          if kind == 'weekly' and out.get('post'):
+              shutil.copy(f'build/pack/youtube-weekly-ed{r["weekly"]["end"]}.json', out['post']); print('->', out['post'])
+          json.dump({'seconds': sec, 'beats': beats, 'streams': probe['streams'], 'src': src}, open('build/verify.json', 'w'), indent=1)
+          PY
+      - name: Status file, review copies, INDEX.csv
+        if: always() && steps.which.outputs.job != '' && steps.which.outputs.already_posted != 'true'
+        env:
+          JOB: ${{ steps.which.outputs.job }}
+          KIND: ${{ steps.which.outputs.kind }}
+          NAME: ${{ steps.which.outputs.name }}
+          OUTCOMES: '{"voice": "${{ steps.voice.outcome }}", "render": "${{ steps.render.outcome }}", "mix": "${{ steps.mix.outcome }}", "weekly": "${{ steps.weekly.outcome }}", "verify": "${{ steps.verify.outcome }}"}'
+        run: |
+          python3 - <<'PY'
+          import json, hashlib, os, datetime, shutil, csv, io
+          job, kind, name = os.environ['JOB'], os.environ['KIND'], os.environ['NAME']
+          ok = {k: v for k, v in json.loads(os.environ['OUTCOMES']).items() if v != 'skipped'}
+          passed = bool(ok) and all(v == 'success' for v in ok.values()) and ok.get('verify') == 'success'
+          r = json.load(open(f'data/social/{job}.json', encoding='utf-8'))
+          def h(p):
+              if not os.path.exists(p): return None
+              b = open(p, 'rb').read(); return {'bytes': len(b), 'md5': hashlib.md5(b).hexdigest(), 'sha256': hashlib.sha256(b).hexdigest()}
+          files = list((r.get('outputs') or {}).values()) + list((r.get('post_files') or {}).keys()) + list((r.get('qc') or {}).values())
+          st = {'job': job, 'kind': kind, 'name': name, 'passed': passed, 'steps': ok,
+                'built_at_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds'),
+                'run_id': os.environ.get('GITHUB_RUN_ID'), 'run_url': f"{os.environ.get('GITHUB_SERVER_URL')}/{os.environ.get('GITHUB_REPOSITORY')}/actions/runs/{os.environ.get('GITHUB_RUN_ID')}",
+                'files': {p: h(p) for p in files}}
+          if os.path.exists('build/verify.json'): st.update(json.load(open('build/verify.json')))
+          silent = f'build/pack/{name}.mp4'
+          if os.path.exists(silent): st['silent_render'] = h(silent)   # deterministic: the same bytes as a local render of the same beats
+          try: st['voice'] = json.load(open('build/beats.voiced.json', encoding='utf-8')).get('voice')
+          except Exception: pass
+          for log in ('voice', 'render', 'mix'):
+              p = f'build/{log}.log'
+              if os.path.exists(p): st[f'{log}_log_tail'] = open(p, encoding='utf-8', errors='replace').read()[-1500:]
+          d = f'review/social-{job}'; os.makedirs(d, exist_ok=True)
+          if os.path.exists('build/beats.voiced.json'): shutil.copy('build/beats.voiced.json', f'{d}/beats.voiced.json')
+          if os.path.exists('build/captions.txt'): shutil.copy('build/captions.txt', f'{d}/captions.txt')
+          if r.get('manifest') is not None:
+              m = dict(r['manifest']); m['build'] = {k: st.get(k) for k in ('run_url', 'built_at_utc', 'seconds', 'beats', 'files', 'voice', 'passed')}
+              json.dump(m, open(f'{d}/manifest.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+          qc = (r.get('qc') or {}).get('contact')
+          if qc and os.path.exists(qc): shutil.copy(qc, f'{d}/contact.jpg')
+          json.dump(st, open(f'{d}/status.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+          # INDEX.csv: one row per job, replaced when the job runs again
+          row = r.get('index_row')
+          if passed and isinstance(row, dict):
+              row = {'job': job, **row}
+              p = 'data/social/INDEX.csv'; old = []; cols = []
+              if os.path.exists(p):
+                  rd = csv.DictReader(open(p, encoding='utf-8', newline='')); cols = list(rd.fieldnames or []); old = [x for x in rd if x.get('job') != job]
+              for c in row:
+                  if c not in cols: cols.append(c)
+              w = io.StringIO(); cw = csv.DictWriter(w, fieldnames=cols, extrasaction='ignore'); cw.writeheader()
+              for x in old + [row]: cw.writerow({c: x.get(c, '') for c in cols})
+              open(p, 'w', encoding='utf-8', newline='').write(w.getvalue())
+          print(json.dumps({k: st.get(k) for k in ('job', 'passed', 'steps', 'seconds', 'beats')}))
+          PY
+      - name: Keep the build outputs as artifacts (the pack without its frames)
+        if: always() && steps.which.outputs.already_posted != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: social-${{ steps.which.outputs.job }}-build
+          path: |
+            build/pack/*.mp4
+            build/pack/*.png
+            build/pack/*.json
+            build/pack/stills/
+            build/*.json
+            build/*.log
+            build/captions.txt
+            review/social-${{ steps.which.outputs.job }}/
+          if-no-files-found: ignore
+      - name: Commit (every output when the build passed; only the status file otherwise)
+        id: commit
+        if: always() && steps.which.outputs.job != '' && steps.which.outputs.already_posted != 'true'
+        env:
+          JOB: ${{ steps.which.outputs.job }}
+          PUBLISH: ${{ steps.which.outputs.publish }}
+          PASSED: ${{ steps.verify.outcome == 'success' }}
+        run: |
+          git config user.name "nerazzurri-daily[bot]"
+          git config user.email "mail@nerazzurridaily.com"
+          git add "review/social-$JOB/status.json"
+          if [ "$PASSED" = "true" ] && [ "$PUBLISH" = "true" ]; then
+            python3 - <<'PY' > build/commit-paths.txt
+          import json, os
+          job = os.environ['JOB']; r = json.load(open(f'data/social/{job}.json', encoding='utf-8'))
+          paths = list((r.get('outputs') or {}).values()) + list((r.get('post_files') or {}).keys()) + list((r.get('qc') or {}).values()) + [f'review/social-{job}', 'data/social/INDEX.csv']
+          print('\n'.join(p for p in paths if os.path.exists(p)))
+          PY
+            xargs -a build/commit-paths.txt git add --
+            MSG="Post files $JOB — $(python3 -c "import json,os;print(json.load(open('data/social/'+os.environ['JOB']+'.json',encoding='utf-8')).get('name'))")"
+          else
+            MSG="Social $JOB — build status (passed $PASSED, publish $PUBLISH)"
+          fi
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -q -m "$MSG" -m "Built by the social workflow, run $GITHUB_RUN_ID."
+          git push origin HEAD:main
+          echo "committed $(git rev-parse HEAD)"
+          echo "published=$([ "$PASSED" = "true" ] && [ "$PUBLISH" = "true" ] && echo true || echo false)" >> "$GITHUB_OUTPUT"
+      - name: Fail the run if the build failed (or the job was already posted)
+        if: always() && (steps.which.outputs.already_posted == 'true' || steps.verify.outcome != 'success')
+        run: |
+          echo "already_posted=${{ steps.which.outputs.already_posted }}"
+          echo "voice=${{ steps.voice.outcome }} render=${{ steps.render.outcome }} mix=${{ steps.mix.outcome }} weekly=${{ steps.weekly.outcome }} verify=${{ steps.verify.outcome }}"
+          exit 1
