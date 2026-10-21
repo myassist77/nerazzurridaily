@@ -4,7 +4,8 @@ name: edition
 # Composio sandbox lost outbound network and github proxy execution: the morning run now commits only
 # data/edition-N.json (with its "mast" lines) and this workflow does the rest. It commits the eight
 # files ONLY when the masthead builder, nd_controls.py and nd_checks.py all exit 0; on any failure it
-# commits only review/edition-N/status.json so the morning run can read why. build/ is never committed.
+# commits only review/edition-N/status.json so the morning run can read why. build/ is never committed;
+# the email body is kept at review/edition-N/email-N.html so the morning run can hand it to Brevo.
 on:
   push:
     branches: [main]
@@ -127,6 +128,7 @@ jobs:
               s = open(em, encoding='utf-8').read(); st['email'] = {'md5': md5(em), 'chars': len(s), 'bytes': os.path.getsize(em)}
           os.makedirs(f'review/edition-{n}', exist_ok=True)
           for c in glob.glob(f'build/crop-{n}-email-390-*.jpg'): shutil.copy(c, f'review/edition-{n}/')
+          if os.path.exists(em): shutil.copy(em, f'review/edition-{n}/email-{n}.html')  # the Brevo body; the workbench reads it from the repo
           json.dump(st, open(f'review/edition-{n}/status.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
           print(json.dumps({k: st[k] for k in ('n', 'passed', 'steps', 'masthead') if k in st}))
           PY

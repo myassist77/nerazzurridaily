@@ -86,3 +86,44 @@ def brevo_today_campaign(n):
     for x in c.get('campaigns', []):
         if x.get('name', '').startswith(f'Nerazzurri Daily No. {n} '): return {k: x.get(k) for k in ('id', 'name', 'status', 'sentDate')}
     return None
+
+# ---- Since Oct 21, 2026: the edition is built and committed by .github/workflows/edition.yml, not here. --------------
+# The Composio sandbox lost outbound network and github proxy execution on Oct 19-20, 2026, so gh_commit() and
+# wait_live() above cannot run in it. The morning run commits data/edition-N.json with the GITHUB_COMMIT_MULTIPLE_FILES
+# tool (a direct tool call), the workflow builds and commits the rest, and these helpers read what it left in the repo
+# through the GITHUB_GET_REPOSITORY_CONTENT tool (run_composio_tool, which works where proxy_execute for github does not).
+import hashlib
+
+def repo_file(path, ref='main'):
+    """Bytes of a file on the repo, read through the GitHub content tool (not the proxy)."""
+    r, e = run_composio_tool('GITHUB_GET_REPOSITORY_CONTENT', {"owner": "myassist77", "repo": "nerazzurridaily", "path": path, "ref": ref})
+    if e: raise RuntimeError(f'repo_file {path}: {e}')
+    d = r
+    for _ in range(4):
+        if isinstance(d, dict) and 'data' in d: d = d['data']
+    c = d.get('content') if isinstance(d, dict) else None
+    if isinstance(c, dict): c = c.get('content')
+    if not isinstance(c, str): raise RuntimeError(f'repo_file {path}: no content in response')
+    return base64.b64decode(c)
+
+def edition_status(n, ref='main'):
+    """review/edition-N/status.json as the edition workflow committed it (None if it is not there yet)."""
+    try: return json.loads(repo_file(f'review/edition-{n}/status.json', ref).decode('utf-8'))
+    except Exception: return None
+
+def brevo_draft_from_repo(n, subject, preview, name=None, dry_run=False):
+    """Create the DRAFT campaign from review/edition-N/email-N.html, after checking its md5 against status.json.
+    dry_run=True only fetches and verifies. Returns the campaign id (or the md5 on a dry run). Never sends."""
+    st = edition_status(n)
+    if not st or not st.get('passed'): raise RuntimeError(f'edition {n}: no passing status.json in the repo (got {st and st.get("steps")})')
+    raw = repo_file(f'review/edition-{n}/email-{n}.html')
+    md5 = hashlib.md5(raw).hexdigest()
+    if md5 != (st.get('email') or {}).get('md5'): raise RuntimeError(f'edition {n}: email md5 {md5} != status.json {st.get("email")}')
+    if dry_run: return md5
+    html = raw.decode('utf-8')
+    body = {"name": name or f"Nerazzurri Daily No. {n} — {subject}"[:200], "subject": subject, "previewText": preview,
+            "sender": {"name": "Nerazzurri Daily", "email": SENDER}, "replyTo": SENDER,
+            "htmlContent": html, "recipients": {"listIds": [brevo_list_id()]}, "mirrorActive": True}
+    r, e = proxy_execute(method='POST', endpoint='/emailCampaigns', toolkit='brevo', body=body)
+    if e: raise RuntimeError(f'brevo create: {e}')
+    return _unwrap(r)['id']
