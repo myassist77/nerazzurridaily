@@ -1,0 +1,159 @@
+{
+ "n": 51,
+ "built_at_utc": "2026-10-22T09:59:41+00:00",
+ "run_id": "39759596541",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/39759596541",
+ "passed": true,
+ "steps": {
+  "mast": "success",
+  "controls": "success",
+  "checks": "success"
+ },
+ "files_md5": {
+  "p/edition-51/index.html": "d0a999a22d9fffc2a7f584a9af5b4f09",
+  "assets/mast/edition-51.png": "7e88496b417b5ebe4415a96e03468d93",
+  "data/edition-51.json": "a974b6a6b70570fd58bdaf83f22f0171",
+  "index.html": "a83e8d79c20996f433aae0762310d769",
+  "subscribe/index.html": "ad6ac60ef2ad7ee41101ae014e6f3942",
+  "fixtures/index.html": "453945d3336500e9f166c69333030258",
+  "feed.xml": "54761425c20eb8056447fa486c701294",
+  "sitemap.xml": "9144a7c2982ac3363ea48ab2d7067b1f"
+ },
+ "title": "Carlos Augusto's goal gives ten-man Inter their first win",
+ "date": "2026-10-22",
+ "masthead": {
+  "bytes": 5514,
+  "lines": 2,
+  "colors": 7,
+  "fonts": {
+   "anton": true,
+   "mono": true
+  }
+ },
+ "controls": {
+  "n": 51,
+  "fails": [],
+  "warns": [],
+  "page-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 700,
+    "h": 382.8125,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "page-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "email-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 644,
+    "h": 352.1875,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  },
+  "email-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  }
+ },
+ "checks": {
+  "fails": [],
+  "warns": [],
+  "info": {
+   "prose_words": 497,
+   "read_seconds": 125,
+   "avg_sentence_words": 15.8,
+   "flesch_reading_ease": 58.0,
+   "edition_from_masthead": null,
+   "dates": {
+    "today": "October 22"
+   },
+   "external_to_fetch": [
+    "https://sport.sky.it/calcio/serie-a/2026/10/21/arbitri-serie-a-designazioni-giornata-8",
+    "https://worldsoccertalk.com/champions-league-tv-schedule/",
+    "https://worldsoccertalk.com/serie-a-tv-schedule/",
+    "https://www.fcinternews.it/focus/i-cds-i-inter-gare-infermeria-piena-recuperi-como-1021370",
+    "https://www.fcinternews.it/rassegna/i-la-nazione-i-fiorentina-arbitri-nervosismo-temono-errori-inter-1021364",
+    "https://www.goal.com/en/lists/inter-struggle-and-go-down-to-10-men-but-claim-their-first-champions-league-win-1-0-against-shakhtar/bltcb8dea226f7455ce",
+    "https://www.inter.it/en/matches",
+    "https://www.inter.it/en/news/barella-akanji-martinez-interview-post-inter-shakhtar-champions-league-2026-27",
+    "https://www.inter.it/en/news/carlos-augusto-interview-post-inter-shakhtar-champions-league-2026-27",
+    "https://www.inter.it/en/news/chivu-interview-post-inter-shakhtar-champions-league-2026-27",
+    "https://www.inter.it/en/news/inter-u20-shakhtar-donetsk-youth-league-2026-27",
+    "https://www.inter.it/it/notizie/classifica-league-phase-inter-calendario-champions-league-26-27",
+    "https://www.inter.it/it/notizie/inter-shakhtar-champions-league-2026-27",
+    "https://www.internews24.com/moviola-inter-shakhtar-donetsk-bastoni-espulso-champions-league-2026-27/",
+    "https://www.tiktok.com/@nerazzurridaily",
+    "https://www.youtube.com/@nerazzurridaily"
+   ],
+   "site_links": [
+    "https://www.nerazzurridaily.com/go/email/?ed=51",
+    "https://www.nerazzurridaily.com/go/email/?ed=51&to=/subscribe/",
+    "https://www.nerazzurridaily.com/go/forward/?ed=51",
+    "https://www.nerazzurridaily.com/p/edition-51/"
+   ]
+  }
+ },
+ "email": {
+  "md5": "b7fdcef2527aa1462c72e39553963683",
+  "chars": 26411,
+  "bytes": 26545
+ }
+}
