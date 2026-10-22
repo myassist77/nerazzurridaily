@@ -1,0 +1,117 @@
+{
+ "n": 51,
+ "date_iso": "2026-10-22",
+ "slug": "keeper-won-it",
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "1-0",
+   "lines_a": [
+    "TEN-MAN INTER",
+    "BEAT SHAKHTAR"
+   ],
+   "lines_b": [
+    "FIRST CHAMPIONS",
+    "LEAGUE WIN"
+   ],
+   "pill": "FOUR OUT FOR FIORENTINA",
+   "pill_register": "REPORTED"
+  }
+ },
+ "beats": [
+  {
+   "id": "stance",
+   "kind": "cover",
+   "duration": 4.12,
+   "eyebrow": "EDITION NO. 51 · OCTOBER 22",
+   "lines": [
+    "MARTINEZ WON IT",
+    "FOR INTER —",
+    "NOT CARLOS AUGUSTO."
+   ],
+   "vo": "[Josep Martinez] won [Inter] this game. Not the scorer."
+  },
+  {
+   "id": "result",
+   "kind": "result",
+   "duration": 6.08,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · OCT 21",
+   "home": "INTER",
+   "away": "SHAKHTAR DONETSK",
+   "score_home": 1,
+   "score_away": 0,
+   "inter": "home",
+   "sub": [
+    "CARLOS AUGUSTO 77' (MKHITARYAN)",
+    "BASTONI SENT OFF 68'",
+    "MARTINEZ SAVED TWICE IN THE 88TH"
+   ],
+   "vo": "The club says one nil, [Carlos Augusto] in the seventy-seventh. [Bastoni] was already off."
+  },
+  {
+   "id": "ourtake",
+   "kind": "item",
+   "duration": 3.67,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "A GOAL WINS IT.",
+    "TWO SAVES",
+    "KEEP IT WON."
+   ],
+   "vo": "A goal wins it. Two saves in one minute keep it won."
+  },
+  {
+   "id": "turn",
+   "kind": "item",
+   "duration": 6.25,
+   "register": "REPORTED",
+   "kicker": "REPORTED · CORRIERE DELLO SPORT · OCT 22",
+   "lines": [
+    "FOUR OUT",
+    "FOR FIORENTINA.",
+    "NO LAUTARO",
+    "UNTIL THE BREAK."
+   ],
+   "vo": "[Corriere dello Sport] says four miss [Fiorentina], and [Lautaro Martinez] not before the break."
+  },
+  {
+   "id": "fixture",
+   "kind": "fixture",
+   "duration": 4.06,
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP · SERIE A · MATCHDAY 8",
+   "lines": [
+    "FIORENTINA",
+    "AT SAN SIRO"
+   ],
+   "sub_top": "SUN, OCT 25 · SERIE A",
+   "big": "7:30 AM ET",
+   "sub": [
+    "12:30 CET",
+    "CBSSN · PARAMOUNT+ · TELEMUNDO"
+   ],
+   "vo": "[Fiorentina] at [San Siro], Sunday, seven thirty Eastern."
+  },
+  {
+   "id": "end",
+   "kind": "end",
+   "duration": 5.93,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Who won it, [Martinez] or [Carlos Augusto]? Tell us, at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 30.11
+ }
+}

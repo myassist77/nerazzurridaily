@@ -1,0 +1,139 @@
+{
+ "edition": 51,
+ "date": "2026-10-22",
+ "slug": "keeper-won-it",
+ "hook": "Martinez won it for Inter — not Carlos Augusto",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-51/",
+ "edition_json_sha256": "1be4c11a09bd77df4573882a9c320bfd5bca518c1d97e6ee3742a2e1b2007f4b",
+ "brevo": {
+  "campaign_id": 40,
+  "status": "sent",
+  "sent_at_et": "2026-10-22T06:10:29-04:00"
+ },
+ "local_render": {
+  "file": "ND-2026-10-22-ed51-keeper-won-it-voiced.mp4",
+  "seconds": 31.13,
+  "beats": 6,
+  "bytes": 1334395,
+  "md5": "1732592d95af3dd765729d95e901a25f",
+  "sha256": "5a6b04adf32fb06484d79b9bffc2a5e97aa7d81f0561411920e19c11dbbd7c41",
+  "audio": "voiceover only — no music; aac, 48000 Hz, 2 ch, 31.11 s",
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 30.11
+  }
+ },
+ "workflow_render": {
+  "note": "the workflow renders its own copy from the same beats.voiced.json; its md5 differs by design",
+  "md5": null,
+  "sha256": null,
+  "bytes": null,
+  "run_url": null
+ },
+ "stories": [
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Oct 21",
+   "what": "Inter 1-0 Shakhtar Donetsk; Carlos Augusto 77', Bastoni sent off 68', Martinez saved twice in the 88th"
+  },
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Oct 21",
+   "what": "Chivu called the win hugely important and said the side showed it can dig deep"
+  },
+  {
+   "register": "REPORTED",
+   "source": "Corriere dello Sport via FCInterNews",
+   "date": "Oct 22",
+   "what": "four miss Fiorentina and Venezia — Lautaro Martinez, Pavard, Stones, Jones; Lautaro not before the break"
+  },
+  {
+   "register": "REPORTED",
+   "source": "Sky Sport Italia",
+   "date": "Oct 21",
+   "what": "Mariani referees Inter v Fiorentina, Fabbri on VAR"
+  }
+ ],
+ "youtube_title": "Inter 1-0 Shakhtar: Martinez won it, not Carlos Augusto — Nerazzurri Daily No. 51",
+ "pinned_comment_question": "Who won Inter that game against Shakhtar — Josep Martinez or Carlos Augusto?",
+ "next_fixture": {
+  "opponent": "Fiorentina",
+  "venue": "HOME",
+  "when": "Sun, Oct 25 — 7:30 AM ET / 12:30 CET",
+  "us_tv": "CBSSN, Paramount+, Telemundo"
+ },
+ "optional_drafts": {
+  "reddit": false,
+  "reddit_why": "Mondays only; today is Thursday",
+  "facebook": true
+ },
+ "thumbnail_style": "number",
+ "sunday_scorecard": false,
+ "checks": {
+  "live_page": "not run — WebFetch needs a person to approve the URL and this run is unattended",
+  "brevo": "sent"
+ },
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/39767478859",
+  "built_at_utc": "2026-10-22T11:29:43+00:00",
+  "seconds": 31.13,
+  "beats": 6,
+  "files": {
+   "assets/video/ed51.mp4": {
+    "bytes": 1336907,
+    "md5": "8a9b27386822bee62aceb984d3175738",
+    "sha256": "727ffdf9af0f2cc2839b40bda657fe9bf6e9fed29f0c9b199c1b372fcc59ec5e"
+   },
+   "assets/video/ed51-thumb.png": {
+    "bytes": 58006,
+    "md5": "57b9f043dbdbd5dd0b404fab2e71f62b",
+    "sha256": "8d204d33d98757eab6aeddbba340ec99079d9bd6a81f9c5cd93df213b8ffb5f2"
+   },
+   "assets/video/ed51-thumb-9x16.png": {
+    "bytes": 82526,
+    "md5": "763f4bf45828b62f024e1f78299e0a83",
+    "sha256": "1aa54fc518198dc79ae734fa3dc428026879c8f23de1bba7957477645ade66d1"
+   },
+   "data/tiktok-ed51.json": {
+    "bytes": 768,
+    "md5": "7b695d772c5ee273ea44c5f87c354ff0",
+    "sha256": "b0f7c4d31067491cb677345ee23602222cbf79fc053bd226bc7aaf56a96bff37"
+   },
+   "data/youtube-ed51.json": {
+    "bytes": 1798,
+    "md5": "c8079d92618662d959b7d83ffb9b0e1c",
+    "sha256": "425f8bd20d0c6337113fb23481b95280ea167b38a7e70c2702e0254a26806f8e"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 125159,
+    "md5": "5a60646dd63836cad7d8ab8abdb531c9",
+    "sha256": "e392850871f265e2f8a7d920d42aaf9f88fcefe53086ce099a9016713ee33f78"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 82526,
+    "md5": "763f4bf45828b62f024e1f78299e0a83",
+    "sha256": "1aa54fc518198dc79ae734fa3dc428026879c8f23de1bba7957477645ade66d1"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 58006,
+    "md5": "57b9f043dbdbd5dd0b404fab2e71f62b",
+    "sha256": "8d204d33d98757eab6aeddbba340ec99079d9bd6a81f9c5cd93df213b8ffb5f2"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 30.11
+  },
+  "passed": true
+ }
+}
