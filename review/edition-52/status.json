@@ -1,0 +1,158 @@
+{
+ "n": 52,
+ "built_at_utc": "2026-10-23T09:54:43+00:00",
+ "run_id": "39935177449",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/39935177449",
+ "passed": true,
+ "steps": {
+  "mast": "success",
+  "controls": "success",
+  "checks": "success"
+ },
+ "files_md5": {
+  "p/edition-52/index.html": "d836d9d7ae4f94a46f7e9773ae526837",
+  "assets/mast/edition-52.png": "87a668f6f57ce8f77bdbbe19b0052ba9",
+  "data/edition-52.json": "58cbece4ca2aee4293c372d7a26c1dec",
+  "index.html": "d8e4afca5968bca0ec92bd72174c93e5",
+  "subscribe/index.html": "e8a66b9a0f0521625b9ef98f84070f1b",
+  "fixtures/index.html": "d7d9889a232762cbbadbc8400727b300",
+  "feed.xml": "afadc1c5e2ab5f94e50f65fd9edbd664",
+  "sitemap.xml": "da1f697feb04dceeaec72c5ea677ad1e"
+ },
+ "title": "Carlos Augusto is close to a new deal through 2031",
+ "date": "2026-10-23",
+ "masthead": {
+  "bytes": 6182,
+  "lines": 2,
+  "colors": 7,
+  "fonts": {
+   "anton": true,
+   "mono": true
+  }
+ },
+ "controls": {
+  "n": 52,
+  "fails": [],
+  "warns": [],
+  "page-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 700,
+    "h": 382.8125,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "page-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "email-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 644,
+    "h": 352.1875,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  },
+  "email-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  }
+ },
+ "checks": {
+  "fails": [],
+  "warns": [],
+  "info": {
+   "prose_words": 466,
+   "read_seconds": 117,
+   "avg_sentence_words": 15.3,
+   "flesch_reading_ease": 57.0,
+   "edition_from_masthead": null,
+   "dates": {
+    "today": "October 23"
+   },
+   "external_to_fetch": [
+    "https://worldsoccertalk.com/champions-league-tv-schedule/",
+    "https://worldsoccertalk.com/serie-a-tv-schedule/",
+    "https://www.fcinternews.it/focus/i-ts-i-bastoni-rosso-guaio-difesa-decisa-rotterdam-nodo-carlos-augusto-1021435",
+    "https://www.fcinternews.it/in-primo-piano/i-gds-i-carlos-augusto-inter-sprint-rinnovo-accordi-dirittura-arrivo-1021427",
+    "https://www.fcinternews.it/rassegna/i-cds-i-carlos-augusto-inter-rinnovo-entro-mese-giocatore-che-1021432",
+    "https://www.fcinternews.it/rassegna/i-la-nazione-i-spingere-attendere-idee-vanoli-vista-inter-1021439",
+    "https://www.fcinternews.it/rassegna/i-ts-i-provedel-campo-volte-intenzioni-chivu-1021434",
+    "https://www.inter.it/en/inter-women",
+    "https://www.inter.it/en/matches",
+    "https://www.inter.it/en/news/inter-fiorentina-where-to-watch-on-tv-serie-a-2026-27",
+    "https://www.inter.it/en/news/inter-u23-sorrento-ticketing-guide-serie-c-2026-27",
+    "https://www.inter.it/it/notizie/classifica-league-phase-inter-calendario-champions-league-26-27",
+    "https://www.inter.it/it/notizie/inter-fiorentina-analisi-avversario-serie-a-2026-27",
+    "https://www.tiktok.com/@nerazzurridaily",
+    "https://www.youtube.com/@nerazzurridaily"
+   ],
+   "site_links": [
+    "https://www.nerazzurridaily.com/go/email/?ed=52",
+    "https://www.nerazzurridaily.com/go/email/?ed=52&to=/subscribe/",
+    "https://www.nerazzurridaily.com/go/forward/?ed=52",
+    "https://www.nerazzurridaily.com/p/edition-52/"
+   ]
+  }
+ },
+ "email": {
+  "md5": "d3409b05a4f144433fc4cea4bd6b3db6",
+  "chars": 24772,
+  "bytes": 24855
+ }
+}
