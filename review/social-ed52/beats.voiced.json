@@ -1,0 +1,115 @@
+{
+ "name": "ND-2026-10-23-ed52-carlos-augusto-2031",
+ "beats": [
+  {
+   "id": "b1",
+   "kind": "cover",
+   "duration": 3.93,
+   "eyebrow": "EDITION NO. 52 · OCTOBER 23",
+   "lines": [
+    "CARLOS AUGUSTO",
+    "IS NOT INTER'S",
+    "BACKUP ANY MORE"
+   ],
+   "vo": "[Carlos Augusto] is not [Inter]'s backup any more."
+  },
+  {
+   "id": "b2",
+   "kind": "result",
+   "duration": 5.25,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · CHAMPIONS LEAGUE · OCT 21",
+   "home": "INTER",
+   "away": "SHAKHTAR",
+   "score_home": 1,
+   "score_away": 0,
+   "inter": "home",
+   "sub": [
+    "CARLOS AUGUSTO 77'",
+    "BASTONI SENT OFF 68'"
+   ],
+   "vo": "He scored the only goal against [Shakhtar] on Wednesday. [Inter] won, one nil."
+  },
+  {
+   "id": "b3",
+   "kind": "item",
+   "duration": 3.07,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "A BACKUP",
+    "DOESN'T WIN YOU",
+    "A EUROPEAN NIGHT"
+   ],
+   "vo": "A backup does not win you a European night."
+  },
+  {
+   "id": "b4",
+   "kind": "item",
+   "duration": 6.25,
+   "register": "REPORTED",
+   "kicker": "REPORTED · GAZZETTA DELLO SPORT · OCT 23",
+   "lines": [
+    "EXTENSION",
+    "TO 2031 INSIDE",
+    "FIFTEEN DAYS"
+   ],
+   "sub": [
+    "PAY RISES FROM €2.2M TO €3.5M"
+   ],
+   "vo": "[Gazzetta dello Sport] says a new deal to twenty thirty-one could be done inside fifteen days."
+  },
+  {
+   "id": "b5",
+   "kind": "fixture",
+   "duration": 4.06,
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP · SAN SIRO",
+   "lines": [
+    "FIORENTINA",
+    "AT HOME"
+   ],
+   "sub_top": "SUN, OCT 25 · SERIE A · MATCHDAY 8",
+   "big": "7:30 AM ET",
+   "sub": [
+    "12:30 IN MILAN",
+    "CBSSN · TELEMUNDO · PARAMOUNT+"
+   ],
+   "vo": "[Fiorentina] at [San Siro], Sunday, seven thirty Eastern."
+  },
+  {
+   "id": "b6",
+   "kind": "end",
+   "duration": 5.34,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Is he a starter now? Tell us in the comments, at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "REPORTED",
+   "kicker": "REPORTED · GAZZETTA DELLO SPORT",
+   "big": "15",
+   "lines_a": [
+    "DAYS TO DEFINE",
+    "CARLOS AUGUSTO'S"
+   ],
+   "lines_b": [
+    "DEAL TO 2031"
+   ],
+   "pill": "REPORTED: PROVEDEL TO START SUNDAY",
+   "pill_register": "REPORTED"
+  }
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 27.9
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "job": "ed52",
+ "kind": "daily",
+ "name": "ND-2026-10-23-ed52-carlos-augusto-2031",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-10-23T11:05:28+00:00",
+ "run_id": "39943376004",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/39943376004",
+ "files": {
+  "assets/video/ed52.mp4": {
+   "bytes": 1247956,
+   "md5": "998e98c47831b55080e440bfa4ed066e",
+   "sha256": "2e8ad7953af4f4f7a1da49d3426fe759be9d2cc3b30dfe405602246f8cd50b4f"
+  },
+  "assets/video/ed52-thumb.png": {
+   "bytes": 62346,
+   "md5": "f8a39593f9f6f97800ad0cc1a4aa7596",
+   "sha256": "62dc53e12288945f29f08439ff0f82f384f358eb0b2a7e76bfc17cbbcaa8cd50"
+  },
+  "assets/video/ed52-thumb-9x16.png": {
+   "bytes": 85890,
+   "md5": "3815757212e28565d50f4879e56b8093",
+   "sha256": "9647f019ba9345f58ad190a391a3a449bac70fe95b2d9345bd560514ae3ea01d"
+  },
+  "data/tiktok-ed52.json": {
+   "bytes": 796,
+   "md5": "94aee262fa3aa9ddfde405d5c2da6101",
+   "sha256": "5884ec54074034d8ee89382bf53dfae438220fb890f24787e2d4088678f9ea60"
+  },
+  "data/youtube-ed52.json": {
+   "bytes": 1827,
+   "md5": "901575a816ad9f6807021e32c04e6e6f",
+   "sha256": "5431012f568663205cc668c363e2c420a18f511775664d7ae450d6bb62c61aa8"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 122076,
+   "md5": "f5e5742367bd93ab95f711b7bff42384",
+   "sha256": "7e2a608a1da7113097b180e5d52b7181200273b521e1493f9b196ce334f7eeea"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 85890,
+   "md5": "3815757212e28565d50f4879e56b8093",
+   "sha256": "9647f019ba9345f58ad190a391a3a449bac70fe95b2d9345bd560514ae3ea01d"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 62346,
+   "md5": "f8a39593f9f6f97800ad0cc1a4aa7596",
+   "sha256": "62dc53e12288945f29f08439ff0f82f384f358eb0b2a7e76bfc17cbbcaa8cd50"
+  }
+ },
+ "seconds": 28.93,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "28.933333"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "28.900000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-10-23-ed52-carlos-augusto-2031-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-10-23-ed52-carlos-augusto-2031-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-10-23-ed52-carlos-augusto-2031-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 811942,
+  "md5": "bcf211f08b2329f5ce373ceeaf2d3e19",
+  "sha256": "15bda8661454d6bd3c778ade996b794b1fdbb511538cdb3eec4a141f846ce92f"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 27.9
+ },
+ "voice_log_tail": "b1: voice 3.43s → beat 3.93s\nb2: voice 4.89s → beat 5.25s\nb3: voice 2.65s → beat 3.07s\nb4: voice 5.85s → beat 6.25s\nb5: voice 3.61s → beat 4.06s\nb6: voice 4.82s → beat 5.34s\nPLAN OK build/beats.voiced.json — 6 beats, 27.9s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-10-23-ed52-carlos-augusto-2031.mp4 — 27.93s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-10-23-ed52-carlos-augusto-2031-thumb-9x16.png, ND-2026-10-23-ed52-carlos-augusto-2031-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-10-23-ed52-carlos-augusto-2031-voiced.mp4 — 28.93s, AAC 48 kHz stereo, I: -16.4 LUFS Peak: -3.8 dBFS\n"
+}
