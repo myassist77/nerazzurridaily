@@ -1,0 +1,120 @@
+{
+ "edition": 53,
+ "date": "2026-10-24",
+ "slug": "rest-five-fiorentina",
+ "thumbnail": {
+  "style": "number",
+  "register": "REPORTED",
+  "kicker": "REPORTED · GAZZETTA",
+  "number": {
+   "register": "REPORTED",
+   "kicker": "REPORTED · GAZZETTA",
+   "big": "5",
+   "lines_a": [
+    "CHANGES",
+    "EXPECTED"
+   ],
+   "lines_b": [
+    "VS FIORENTINA"
+   ],
+   "pill": "CONFIRMED · ADDUCTOR STRAIN",
+   "pill_register": "CONFIRMED"
+  }
+ },
+ "beats": [
+  {
+   "id": "stance",
+   "kind": "cover",
+   "register": "NEUTRAL",
+   "duration": 4.7,
+   "eyebrow": "EDITION NO. 53 · OCTOBER 24",
+   "lines": [
+    "INTER SHOULD REST",
+    "FIVE BEFORE",
+    "FIORENTINA"
+   ],
+   "vo": "[Inter] should rest five players before [Fiorentina]. Here is the case."
+  },
+  {
+   "id": "claim",
+   "kind": "item",
+   "register": "REPORTED",
+   "duration": 5.44,
+   "kicker": "REPORTED · GAZZETTA DELLO SPORT · OCT 24",
+   "lines": [
+    "GAZZETTA EXPECTS",
+    "AS MANY AS",
+    "FIVE CHANGES"
+   ],
+   "sub": [
+    "CARLOS AUGUSTO FOR DIMARCO"
+   ],
+   "vo": "[La Gazzetta dello Sport] expects as many as five changes against [Fiorentina]."
+  },
+  {
+   "id": "take",
+   "kind": "item",
+   "register": "NEUTRAL",
+   "duration": 4.23,
+   "kicker": "OUR TAKE",
+   "lines": [
+    "A SQUAD YOU NEVER",
+    "ROTATE IS JUST",
+    "ELEVEN PLAYERS"
+   ],
+   "vo": "A squad you never rotate is really just eleven players."
+  },
+  {
+   "id": "turn",
+   "kind": "item",
+   "register": "CONFIRMED",
+   "duration": 4.8,
+   "kicker": "CONFIRMED · INTER.IT · OCT 23",
+   "lines": [
+    "LUIS HENRIQUE:",
+    "STRAINED LEFT",
+    "ADDUCTOR"
+   ],
+   "sub": [
+    "NO RETURN DATE SET"
+   ],
+   "vo": "[Inter] say [Luis Henrique] strained his left adductor. No return date."
+  },
+  {
+   "id": "fixture",
+   "kind": "fixture",
+   "register": "NEUTRAL",
+   "duration": 4.16,
+   "kicker": "NEXT UP · SERIE A MATCHDAY 8",
+   "lines": [
+    "INTER HOST",
+    "FIORENTINA"
+   ],
+   "sub_top": "SUN, OCT 25 · SAN SIRO",
+   "big": "7:30 AM ET",
+   "sub": [
+    "12:30 CET IN MILAN",
+    "CBSSN · TELEMUNDO · PARAMOUNT+"
+   ],
+   "vo": "[Fiorentina] at [San Siro] tomorrow, seven thirty Eastern."
+  },
+  {
+   "id": "end",
+   "kind": "end",
+   "register": "NEUTRAL",
+   "duration": 5.66,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Who would you not rest against [Fiorentina]? Tell me, at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 28.99
+ }
+}

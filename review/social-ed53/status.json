@@ -1,0 +1,96 @@
+{
+ "job": "ed53",
+ "kind": "daily",
+ "name": "ND-2026-10-24-ed53-rest-five-fiorentina",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-10-24T11:03:16+00:00",
+ "run_id": "40088225167",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/40088225167",
+ "files": {
+  "assets/video/ed53.mp4": {
+   "bytes": 1274933,
+   "md5": "7947ad08db8922a86ac2d41770940c77",
+   "sha256": "5894d028c9229fa45e7b5222ae3082efd5f74f34ada962c32521bbd238f89712"
+  },
+  "assets/video/ed53-thumb.png": {
+   "bytes": 50092,
+   "md5": "21b674db0479c38b32621e77b00dccdd",
+   "sha256": "567cca7876584ffbcaf05577cdc66481e6450610046bebbbc164c58a8e2f369c"
+  },
+  "assets/video/ed53-thumb-9x16.png": {
+   "bytes": 69102,
+   "md5": "c49d3d3f4798f94f449823b6185d5c56",
+   "sha256": "520ec7efa2aaacd429d57290fe5e7f678dbf4a8cbc245eda286ba1e84490f02e"
+  },
+  "data/tiktok-ed53.json": {
+   "bytes": 771,
+   "md5": "a11e4d00d220cd600bd276e55986a7df",
+   "sha256": "7b05b810638cc060c6f0de68b407b15d3b53c415dd5a7c93f5d6e07da69152e6"
+  },
+  "data/youtube-ed53.json": {
+   "bytes": 1449,
+   "md5": "98ff09eb547dc6b9bf88412ff6f99d14",
+   "sha256": "99eb40d4fd2e004ad0c7ab46e2d8289c37e7eda60bdb6fe4839bad64152eee1d"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 130360,
+   "md5": "728ec72dc5a9979a10e46af383d1800d",
+   "sha256": "bb209002c4ee8921796e33bc75b7e8406a578977073e6bef13a6bc808fa09ae0"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 69102,
+   "md5": "c49d3d3f4798f94f449823b6185d5c56",
+   "sha256": "520ec7efa2aaacd429d57290fe5e7f678dbf4a8cbc245eda286ba1e84490f02e"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 50092,
+   "md5": "21b674db0479c38b32621e77b00dccdd",
+   "sha256": "567cca7876584ffbcaf05577cdc66481e6450610046bebbbc164c58a8e2f369c"
+  }
+ },
+ "seconds": 30.0,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "30.000000"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "29.990000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-10-24-ed53-rest-five-fiorentina-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-10-24-ed53-rest-five-fiorentina-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-10-24-ed53-rest-five-fiorentina-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 837789,
+  "md5": "6096ef17a37cd7e974e93b50a668869b",
+  "sha256": "f283455ebfce1f33b572ee5b2dc5a85309efeb5c5f1a189b06ac229001e37459"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 28.99
+ },
+ "voice_log_tail": "stance: voice 4.22s → beat 4.7s\nclaim: voice 4.95s → beat 5.44s\ntake: voice 3.69s → beat 4.23s\nturn: voice 4.27s → beat 4.8s\nfixture: voice 3.61s → beat 4.16s\nend: voice 5.14s → beat 5.66s\nPLAN OK build/beats.voiced.json — 6 beats, 28.99s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-10-24-ed53-rest-five-fiorentina.mp4 — 29.00s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-10-24-ed53-rest-five-fiorentina-thumb-9x16.png, ND-2026-10-24-ed53-rest-five-fiorentina-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-10-24-ed53-rest-five-fiorentina-voiced.mp4 — 30.00s, AAC 48 kHz stereo, I: -16.2 LUFS Peak: -3.4 dBFS\n"
+}

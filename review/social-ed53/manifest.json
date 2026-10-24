@@ -1,0 +1,137 @@
+{
+ "edition": 53,
+ "date": "2026-10-24",
+ "slug": "rest-five-fiorentina",
+ "job": "ed53",
+ "hook": "Inter should rest five before Fiorentina.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-53/",
+ "edition_json_sha256": "22504b0bca412f5674a46b4d9d9292be9c98814e9692a5c347939e25c1bac46d",
+ "brevo": {
+  "campaign_id": 42,
+  "status": "sent",
+  "sent_date": "2026-10-24T05:57:55.000-04:00"
+ },
+ "local_render": {
+  "filename": "ND-2026-10-24-ed53-rest-five-fiorentina-voiced.mp4",
+  "seconds": 30.0,
+  "beats": 6,
+  "bytes": 1280451,
+  "md5": "78a7364778bbbdadcf9f75714f6431b5",
+  "sha256": "e3c21d432455d3bc5783dff047bb85973ea45f4738544c636a4576223cb2128c"
+ },
+ "audio": {
+  "content": "voiceover only — no music",
+  "codec": "aac",
+  "sample_rate": "48000",
+  "channels": 2,
+  "duration": null,
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 28.99
+  }
+ },
+ "stories": [
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Oct 23",
+   "headline": "Luis Henrique has a strained left adductor; no return date"
+  },
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Oct 23",
+   "headline": "Mariani referees; 7:30 AM ET / 12:30 CET, Serie A matchday 8"
+  },
+  {
+   "register": "REPORTED",
+   "source": "Gazzetta dello Sport via FCInterNews",
+   "date": "Oct 24",
+   "headline": "As many as five changes against Fiorentina"
+  },
+  {
+   "register": "REPORTED",
+   "source": "Sky Sport Italia via FCInterNews",
+   "date": "Oct 24",
+   "headline": "Provedel set for his first Inter appearance"
+  }
+ ],
+ "youtube_title": "Inter: five changes expected vs Fiorentina, and Luis Henrique has an adductor strain",
+ "pinned_comment_question": "Who is the one player you would NOT rest against Fiorentina?",
+ "next_fixture": {
+  "opponent": "Fiorentina",
+  "venue": "HOME",
+  "date": "SUN, OCT 25 · SERIE A · MATCHDAY 8",
+  "kickoff": "7:30 AM ET · 12:30 CET",
+  "us_tv": "CBSSN · TELEMUNDO · PARAMOUNT+"
+ },
+ "optional_drafts": {
+  "reddit": false,
+  "reddit_reason": "Monday-only draft; today is Saturday",
+  "facebook": true
+ },
+ "thumbnail_style": "number",
+ "format": "daily six-beat",
+ "sunday_scorecard": false,
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/40088225167",
+  "built_at_utc": "2026-10-24T11:03:16+00:00",
+  "seconds": 30.0,
+  "beats": 6,
+  "files": {
+   "assets/video/ed53.mp4": {
+    "bytes": 1274933,
+    "md5": "7947ad08db8922a86ac2d41770940c77",
+    "sha256": "5894d028c9229fa45e7b5222ae3082efd5f74f34ada962c32521bbd238f89712"
+   },
+   "assets/video/ed53-thumb.png": {
+    "bytes": 50092,
+    "md5": "21b674db0479c38b32621e77b00dccdd",
+    "sha256": "567cca7876584ffbcaf05577cdc66481e6450610046bebbbc164c58a8e2f369c"
+   },
+   "assets/video/ed53-thumb-9x16.png": {
+    "bytes": 69102,
+    "md5": "c49d3d3f4798f94f449823b6185d5c56",
+    "sha256": "520ec7efa2aaacd429d57290fe5e7f678dbf4a8cbc245eda286ba1e84490f02e"
+   },
+   "data/tiktok-ed53.json": {
+    "bytes": 771,
+    "md5": "a11e4d00d220cd600bd276e55986a7df",
+    "sha256": "7b05b810638cc060c6f0de68b407b15d3b53c415dd5a7c93f5d6e07da69152e6"
+   },
+   "data/youtube-ed53.json": {
+    "bytes": 1449,
+    "md5": "98ff09eb547dc6b9bf88412ff6f99d14",
+    "sha256": "99eb40d4fd2e004ad0c7ab46e2d8289c37e7eda60bdb6fe4839bad64152eee1d"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 130360,
+    "md5": "728ec72dc5a9979a10e46af383d1800d",
+    "sha256": "bb209002c4ee8921796e33bc75b7e8406a578977073e6bef13a6bc808fa09ae0"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 69102,
+    "md5": "c49d3d3f4798f94f449823b6185d5c56",
+    "sha256": "520ec7efa2aaacd429d57290fe5e7f678dbf4a8cbc245eda286ba1e84490f02e"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 50092,
+    "md5": "21b674db0479c38b32621e77b00dccdd",
+    "sha256": "567cca7876584ffbcaf05577cdc66481e6450610046bebbbc164c58a8e2f369c"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 28.99
+  },
+  "passed": true
+ }
+}
