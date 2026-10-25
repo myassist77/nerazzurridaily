@@ -1,0 +1,127 @@
+{
+ "beats": [
+  {
+   "id": "01-stance",
+   "kind": "cover",
+   "duration": 4.46,
+   "eyebrow": "EDITION NO. 54 · FULL TIME",
+   "lines": [
+    "INTER WERE OUTPLAYED.",
+    "THEY WON ANYWAY."
+   ],
+   "vo": "[Inter] were outplayed for most of this one. They won it anyway."
+  },
+  {
+   "id": "02-result",
+   "kind": "result",
+   "duration": 7.47,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT MATCH REPORT",
+   "home": "INTER",
+   "away": "FIORENTINA",
+   "score_home": 2,
+   "score_away": 1,
+   "inter": "home",
+   "sub": [
+    "THURAM 90+1' · ZIELINSKI 90+8'",
+    "JIMENEZ 65'"
+   ],
+   "vo": "[Inter] two, [Fiorentina] one, per the official match report. [Thuram] levelled, then [Zielinski] scored from the spot."
+  },
+  {
+   "id": "03-our-take",
+   "kind": "item",
+   "duration": 4.84,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "UGLY FOR NINETY.",
+    "PERFECT FOR TEN."
+   ],
+   "sub": [
+    "TAKE IT AND GO."
+   ],
+   "vo": "For eighty-five minutes this was a mess. For the last ten it was [Inter]."
+  },
+  {
+   "id": "04-turn",
+   "kind": "stat",
+   "duration": 5.04,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT MATCH REPORT",
+   "number": "10",
+   "suffix": "MIN",
+   "lines": [
+    "OF STOPPAGE TIME.",
+    "BOTH INTER GOALS IN IT."
+   ],
+   "vo": "Ten minutes of stoppage time, and both [Inter] goals landed inside them."
+  },
+  {
+   "id": "05-fixture",
+   "kind": "fixture",
+   "duration": 3.91,
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP",
+   "lines": [
+    "VENEZIA (A)"
+   ],
+   "sub_top": "SERIE A · MATCHDAY 9",
+   "big": "1:30 PM ET",
+   "sub": [
+    "WED OCT 28 · 18:30 CET"
+   ],
+   "vo": "Next up, [Venezia] away, Wednesday, one thirty Eastern."
+  },
+  {
+   "id": "06-end",
+   "kind": "end",
+   "duration": 6.06,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Did [Inter] deserve that, or did they just want it more? At [Nerazzurri] Daily dot com."
+  }
+ ],
+ "thumbnail": {
+  "style": "number",
+  "top": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "lines": [
+    "INTER",
+    "2-1."
+   ]
+  },
+  "bottom": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "lines": [
+    "WON IN",
+    "STOPPAGE."
+   ],
+   "sub": "THURAM 90+1', ZIELINSKI 90+8'"
+  },
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "2-1",
+   "lines_a": [
+    "OUTPLAYED."
+   ],
+   "lines_b": [
+    "WON ANYWAY."
+   ],
+   "pill": "THURAM 90+1' · ZIELINSKI 90+8'",
+   "pill_register": "CONFIRMED"
+  }
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 31.78
+ }
+}

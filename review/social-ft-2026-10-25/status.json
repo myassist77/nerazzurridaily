@@ -1,0 +1,86 @@
+{
+ "job": "ft-2026-10-25",
+ "kind": "fulltime",
+ "name": "ND-2026-10-25-ft",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-10-25T13:59:29+00:00",
+ "run_id": "40199939368",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/40199939368",
+ "files": {
+  "assets/video/ft-2026-10-25.mp4": {
+   "bytes": 1299430,
+   "md5": "ec235325029a48e26420077bb9c5fe5e",
+   "sha256": "0b3b482ee7ed4495707f37c6de126fc8e9a72011ccbbcf52351d8d9d68df1aa7"
+  },
+  "assets/video/ft-2026-10-25-thumb.png": {
+   "bytes": 48530,
+   "md5": "9cba764512f2c462c15aa4bd73ef2da5",
+   "sha256": "d4c3f06ddf9f821a73490f6538b5300b32dcbcbf2dbefabc72a8e801084d2221"
+  },
+  "assets/video/ft-2026-10-25-thumb-9x16.png": {
+   "bytes": 66167,
+   "md5": "b9b96263e3e66dbd6275a905fa675e88",
+   "sha256": "03e243f26175e9b15859eb38533b46d13dd880b3dad3d11074fd9787721ee03a"
+  },
+  "data/tiktok-ft-2026-10-25.json": {
+   "bytes": 479,
+   "md5": "8a4639ebd58b066e93cf9d342304241b",
+   "sha256": "df3c5ea5b785af78ef1ca6b4e28db3613535a5ae242300c484f031337c399b16"
+  },
+  "data/youtube-ft-2026-10-25.json": {
+   "bytes": 1314,
+   "md5": "c6a5ea8b3035fe1685a7a5f4d9cdcd9a",
+   "sha256": "01b63f44621e171a939ff40787992c1370000a7bd23d97d3cebea87c28e33515"
+  },
+  "assets/qc/match-contact.jpg": {
+   "bytes": 116023,
+   "md5": "062d01996512318dafecc88d6049dd89",
+   "sha256": "e3b90af038bc8255159361083b0679ee16b5376614502650400b0b3d6eb543c3"
+  }
+ },
+ "seconds": 32.78,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "32.766667"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "32.780000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-10-25-ft-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-10-25-ft-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-10-25-ft-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 814625,
+  "md5": "4ab2436fb3e46e9485238aa41e632060",
+  "sha256": "306dcbd4b4d7b35ad0c4d34927023138aaae6f88e00a5b792949d23ccc41879a"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 31.78
+ },
+ "voice_log_tail": "01-stance: voice 4.03s → beat 4.46s\n02-result: voice 7.04s → beat 7.47s\n03-our-take: voice 4.35s → beat 4.84s\n04-turn: voice 4.57s → beat 5.04s\n05-fixture: voice 3.37s → beat 3.91s\n06-end: voice 5.78s → beat 6.06s\nPLAN OK build/beats.voiced.json — 6 beats, 31.78s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-10-25-ft.mp4 — 31.77s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-10-25-ft-thumb-9x16.png, ND-2026-10-25-ft-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-10-25-ft-voiced.mp4 — 32.78s, AAC 48 kHz stereo, I: -16.2 LUFS Peak: -4.0 dBFS\n"
+}
