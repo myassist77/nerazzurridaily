@@ -1,0 +1,138 @@
+{
+ "sunday_scorecard": true,
+ "beats": [
+  {
+   "id": "b1",
+   "kind": "cover",
+   "eyebrow": "EDITION NO. 54 · OCTOBER 25",
+   "lines": [
+    "INTER'S PAPERS",
+    "PRINTED 14 CLAIMS.",
+    "3 HELD UP."
+   ],
+   "duration": 5.61,
+   "vo": "The Italian papers printed fourteen claims about [Inter] this week. Three held up."
+  },
+  {
+   "id": "b2",
+   "kind": "item",
+   "register": "NEUTRAL",
+   "kicker": "DENIED · GAZZETTA · OCT 19",
+   "lines": [
+    "GAZZETTA SAID",
+    "PROVEDEL WOULD",
+    "DEBUT."
+   ],
+   "sub": [
+    "JOSEP MARTINEZ PLAYED · THREE SAVES",
+    "INTER.IT · OCT 21"
+   ],
+   "duration": 5.61,
+   "vo": "[Gazzetta] said [Provedel] would debut against [Shakhtar]. [Josep Martinez] played instead."
+  },
+  {
+   "id": "b3",
+   "kind": "item",
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · OCT 23",
+   "lines": [
+    "SKY CALLED",
+    "THE REFEREE",
+    "TWO DAYS EARLY."
+   ],
+   "sub": [
+    "MARIANI TAKES INTER-FIORENTINA",
+    "SKY SPORT ITALIA · OCT 21"
+   ],
+   "duration": 6.02,
+   "vo": "[Sky Sport Italia] named [Mariani] as today's referee. The club's guide confirmed him."
+  },
+  {
+   "id": "b4",
+   "kind": "item",
+   "register": "REPORTED",
+   "kicker": "REPORTED · GAZZETTA · OCT 23",
+   "lines": [
+    "CARLOS AUGUSTO",
+    "TO 2031 —",
+    "STILL UNSIGNED."
+   ],
+   "sub": [
+    "GAZZETTA: WITHIN FIFTEEN DAYS",
+    "INTER HAVE SAID NOTHING"
+   ],
+   "duration": 7.17,
+   "vo": "[Gazzetta] says [Carlos Augusto] signs through twenty thirty-one within fifteen days. [Inter] have said nothing."
+  },
+  {
+   "id": "b5",
+   "kind": "stat",
+   "register": "NEUTRAL",
+   "kicker": "SCORECARD · OCT 19-25",
+   "number": 3,
+   "suffix": "",
+   "lines": [
+    "CONFIRMED",
+    "BY THE CLUB"
+   ],
+   "sub": [
+    "ONE DENIED · TEN STILL OPEN",
+    "14 REPORTED ITEMS THIS WEEK"
+   ],
+   "duration": 4.12,
+   "vo": "Three of fourteen confirmed. One wrong. Ten still open."
+  },
+  {
+   "id": "b6",
+   "kind": "fixture",
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · OCT 25",
+   "lines": [
+    "VENEZIA",
+    "AWAY"
+   ],
+   "sub_top": "WED, OCT 28 · SERIE A",
+   "big": "1:30 PM ET",
+   "sub": [
+    "18:30 IN MILAN",
+    "US TV: PARAMOUNT+ · PEACOCK"
+   ],
+   "duration": 3.65,
+   "vo": "[Venezia] away Wednesday, half past one Eastern."
+  },
+  {
+   "id": "b7",
+   "kind": "end",
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "duration": 5.12,
+   "vo": "Which paper got it most wrong? Tell us, at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · OCT 19-25",
+   "big": "3",
+   "lines_a": [
+    "OF 14 PAPER",
+    "CLAIMS HELD UP"
+   ],
+   "lines_b": [
+    "ONE WAS WRONG"
+   ],
+   "pill": "REPORTED · 10 STILL OPEN",
+   "pill_register": "REPORTED"
+  }
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 37.3
+ }
+}

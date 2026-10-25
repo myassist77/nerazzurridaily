@@ -1,0 +1,150 @@
+{
+ "edition": 54,
+ "date": "2026-10-25",
+ "slug": "papers-scorecard",
+ "format": "sunday_scorecard",
+ "hook": "Inter's papers printed 14 claims. 3 held up.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-54/",
+ "edition_json_sha256": "1d79cc428b6b7dfcb197133b5c7b7edc0837546b24e7e3f044f56fd45ccea1da",
+ "brevo": {
+  "campaign_id": null,
+  "status": "no campaign exists for No. 54 (checked 35 campaigns; newest is No. 53, sent Oct 24)"
+ },
+ "local_render": {
+  "file": "ND-2026-10-25-ed54-papers-scorecard-voiced.mp4",
+  "seconds": 38.33,
+  "beats": 7,
+  "bytes": 1538060,
+  "md5": "ebe00679d0c6f432add48c54a659a6b5",
+  "sha256": "ef0b3b6ff4bf929ec98a135abda6fa587608a715cfb2b7401e9adfd323595a9d"
+ },
+ "audio": {
+  "note": "voiceover only - no music",
+  "codec": "aac",
+  "sample_rate": "48000",
+  "channels": 2,
+  "duration": null,
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 37.3
+  }
+ },
+ "stories": [
+  {
+   "status": "DENIED",
+   "claim": "Provedel to debut against Shakhtar",
+   "source": "Gazzetta dello Sport",
+   "date": "2026-10-19",
+   "resolved_by": "Inter.it, Oct 21 (No. 51)"
+  },
+  {
+   "status": "CONFIRMED",
+   "claim": "Mariani referees Inter-Fiorentina",
+   "source": "Sky Sport Italia",
+   "date": "2026-10-21",
+   "resolved_by": "Inter.it, Oct 23 (No. 53)"
+  },
+  {
+   "status": "CONFIRMED",
+   "claim": "Josep Martinez keeps the goalkeeper's place",
+   "source": "Corriere dello Sport / Gazzetta dello Sport",
+   "date": "2026-10-21",
+   "resolved_by": "Inter.it, Oct 21 (No. 51)"
+  },
+  {
+   "status": "CONFIRMED",
+   "claim": "Lautaro Martinez out for Fiorentina and Venezia",
+   "source": "Corriere dello Sport",
+   "date": "2026-10-22",
+   "resolved_by": "Inter.it, Oct 25 (No. 54)"
+  },
+  {
+   "status": "STILL OPEN",
+   "claim": "Carlos Augusto extension to 2031 within fifteen days",
+   "source": "Gazzetta dello Sport",
+   "date": "2026-10-23",
+   "resolved_by": null
+  }
+ ],
+ "tally": {
+  "reported_items": 14,
+  "confirmed": 3,
+  "denied": 1,
+  "still_open": 10,
+  "editions": "48-54"
+ },
+ "youtube_title": "Inter's press scorecard: 14 paper claims this week, only 3 held up",
+ "pinned_comment_question": "Which paper got it most wrong this week - Gazzetta, Corriere, Sky or Tuttosport?",
+ "next_fixture": "Venezia away, Wed Oct 28, 1:30 PM ET / 18:30 CET, Paramount+ / Peacock Premium",
+ "optional_drafts": {
+  "reddit": false,
+  "facebook": true
+ },
+ "checks": {
+  "live_page": "not run - WebFetch permission prompt went unanswered on this unattended run",
+  "brevo": "no campaign for No. 54",
+  "edition_ledger": "review/edition-54/ledger.json does not exist (404)"
+ },
+ "created_at_utc": "2026-10-25T10:59:34Z",
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/40187104019",
+  "built_at_utc": "2026-10-25T11:03:35+00:00",
+  "seconds": 38.33,
+  "beats": 7,
+  "files": {
+   "assets/video/ed54.mp4": {
+    "bytes": 1538191,
+    "md5": "12272bb481c480456b456c52944648fb",
+    "sha256": "1b2635d30b92b27f9049c7d18505c238127dfcef51d13ebc25005f545f743a22"
+   },
+   "assets/video/ed54-thumb.png": {
+    "bytes": 58031,
+    "md5": "f8fb6053d9d1b0de37e086174cff4cf3",
+    "sha256": "95d0f4d0ac327d2fb1afb626426a3866f8b2e2d850570a22282b740a49f51eb1"
+   },
+   "assets/video/ed54-thumb-9x16.png": {
+    "bytes": 81019,
+    "md5": "c0ef9e1a0cfb0525fb602601a94dedba",
+    "sha256": "8990bcab3ca8cb3a4149398413036626824cb4da943857e681cb788e38483e65"
+   },
+   "data/tiktok-ed54.json": {
+    "bytes": 780,
+    "md5": "a3925f7fa551428dceb6ccaa183d3c17",
+    "sha256": "e45cf0155ed975adb3e66e5dfdc85db31c3a4d75bf65c63dd3c110423cf97d22"
+   },
+   "data/youtube-ed54.json": {
+    "bytes": 1757,
+    "md5": "9d0b5c240a07ccfd7d2928c1f114ccfb",
+    "sha256": "b288997359e7ca03d2f41bccb131154676938e902ca266a3dff7d3a665842772"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 145677,
+    "md5": "2d9719a23eb1f0143da1e9ed099b61c3",
+    "sha256": "20f96422f9157a9b544b192a7208ab77fcc0be404120282d7ef91d89c2b3a6d6"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 81019,
+    "md5": "c0ef9e1a0cfb0525fb602601a94dedba",
+    "sha256": "8990bcab3ca8cb3a4149398413036626824cb4da943857e681cb788e38483e65"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 58031,
+    "md5": "f8fb6053d9d1b0de37e086174cff4cf3",
+    "sha256": "95d0f4d0ac327d2fb1afb626426a3866f8b2e2d850570a22282b740a49f51eb1"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 37.3
+  },
+  "passed": true
+ }
+}

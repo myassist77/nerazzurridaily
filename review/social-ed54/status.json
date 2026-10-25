@@ -1,0 +1,96 @@
+{
+ "job": "ed54",
+ "kind": "daily",
+ "name": "ND-2026-10-25-ed54-papers-scorecard",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-10-25T11:03:35+00:00",
+ "run_id": "40187104019",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/40187104019",
+ "files": {
+  "assets/video/ed54.mp4": {
+   "bytes": 1538191,
+   "md5": "12272bb481c480456b456c52944648fb",
+   "sha256": "1b2635d30b92b27f9049c7d18505c238127dfcef51d13ebc25005f545f743a22"
+  },
+  "assets/video/ed54-thumb.png": {
+   "bytes": 58031,
+   "md5": "f8fb6053d9d1b0de37e086174cff4cf3",
+   "sha256": "95d0f4d0ac327d2fb1afb626426a3866f8b2e2d850570a22282b740a49f51eb1"
+  },
+  "assets/video/ed54-thumb-9x16.png": {
+   "bytes": 81019,
+   "md5": "c0ef9e1a0cfb0525fb602601a94dedba",
+   "sha256": "8990bcab3ca8cb3a4149398413036626824cb4da943857e681cb788e38483e65"
+  },
+  "data/tiktok-ed54.json": {
+   "bytes": 780,
+   "md5": "a3925f7fa551428dceb6ccaa183d3c17",
+   "sha256": "e45cf0155ed975adb3e66e5dfdc85db31c3a4d75bf65c63dd3c110423cf97d22"
+  },
+  "data/youtube-ed54.json": {
+   "bytes": 1757,
+   "md5": "9d0b5c240a07ccfd7d2928c1f114ccfb",
+   "sha256": "b288997359e7ca03d2f41bccb131154676938e902ca266a3dff7d3a665842772"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 145677,
+   "md5": "2d9719a23eb1f0143da1e9ed099b61c3",
+   "sha256": "20f96422f9157a9b544b192a7208ab77fcc0be404120282d7ef91d89c2b3a6d6"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 81019,
+   "md5": "c0ef9e1a0cfb0525fb602601a94dedba",
+   "sha256": "8990bcab3ca8cb3a4149398413036626824cb4da943857e681cb788e38483e65"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 58031,
+   "md5": "f8fb6053d9d1b0de37e086174cff4cf3",
+   "sha256": "95d0f4d0ac327d2fb1afb626426a3866f8b2e2d850570a22282b740a49f51eb1"
+  }
+ },
+ "seconds": 38.33,
+ "beats": 7,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "38.333333"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "38.300000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-10-25-ed54-papers-scorecard-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-10-25-ed54-papers-scorecard-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-10-25-ed54-papers-scorecard-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 972110,
+  "md5": "d4d92f0a97af074ae3e4035834c8e7ab",
+  "sha256": "731ad55047b0e814148ac17bedba8655f7bb365482b79c9df5035fa851456562"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 37.3
+ },
+ "voice_log_tail": "b1: voice 5.21s → beat 5.61s\nb2: voice 5.23s → beat 5.61s\nb3: voice 5.55s → beat 6.02s\nb4: voice 6.55s → beat 7.17s\nb5: voice 3.61s → beat 4.12s\nb6: voice 3.22s → beat 3.65s\nb7: voice 4.71s → beat 5.12s\nPLAN OK build/beats.voiced.json — 7 beats, 37.3s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-10-25-ed54-papers-scorecard.mp4 — 37.33s, 7 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-10-25-ed54-papers-scorecard-thumb-9x16.png, ND-2026-10-25-ed54-papers-scorecard-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-10-25-ed54-papers-scorecard-voiced.mp4 — 38.33s, AAC 48 kHz stereo, I: -16.2 LUFS Peak: -3.3 dBFS\n"
+}
