@@ -1,0 +1,155 @@
+{
+ "n": 54,
+ "built_at_utc": "2026-10-25T09:52:05+00:00",
+ "run_id": "40182364287",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/40182364287",
+ "passed": true,
+ "steps": {
+  "mast": "success",
+  "controls": "success",
+  "checks": "success"
+ },
+ "files_md5": {
+  "p/edition-54/index.html": "27aaf599c0ec5c6d9e618ec1a7bb09ed",
+  "assets/mast/edition-54.png": "f4a8c4a4fed7065cab56ca10f9f71c5e",
+  "data/edition-54.json": "25c5e4bfb1a79edc9a63dae9617f2139",
+  "index.html": "1d700bce5ad9809490891c87ed141023",
+  "subscribe/index.html": "59ae2723a4235b7e1023e0de21b7eb3a",
+  "fixtures/index.html": "c59ffbf06fe3e29c5091f1e87386c0a6",
+  "feed.xml": "13d28f89f42c4cd57ea4fff6b4290b45",
+  "sitemap.xml": "023a45a01ffe652523a1d4064defc319"
+ },
+ "title": "Fiorentina at San Siro, with Lautaro Martínez still out",
+ "date": "2026-10-25",
+ "masthead": {
+  "bytes": 5694,
+  "lines": 2,
+  "colors": 7,
+  "fonts": {
+   "anton": true,
+   "mono": true
+  }
+ },
+ "controls": {
+  "n": 54,
+  "fails": [],
+  "warns": [],
+  "page-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 700,
+    "h": 382.8125,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "page-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "email-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 644,
+    "h": 352.1875,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  },
+  "email-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  }
+ },
+ "checks": {
+  "fails": [],
+  "warns": [],
+  "info": {
+   "prose_words": 497,
+   "read_seconds": 125,
+   "avg_sentence_words": 16.7,
+   "flesch_reading_ease": 59.8,
+   "edition_from_masthead": null,
+   "dates": {
+    "today": "October 25"
+   },
+   "external_to_fetch": [
+    "https://worldsoccertalk.com/serie-a-tv-schedule/",
+    "https://www.fcinter1908.it/news/rassegna-stampa/inter-fiorentina-attacco-chi-resta-fuori-chivu/",
+    "https://www.fcinter1908.it/news/rassegna-stampa/inter-fiorentina-ritiro-light-chivu/",
+    "https://www.inter.it/en/matches",
+    "https://www.inter.it/en/news/guide-inter-fiorentina-serie-a-2026-27",
+    "https://www.inter.it/en/news/inter-u23-sorrento-serie-c-2026-27",
+    "https://www.inter.it/en/news/lautaro-martinez-condition-injury-october-2026",
+    "https://www.inter.it/en/news/napoli-women-inter-serie-a-women-2026-27",
+    "https://www.inter.it/it/notizie/rinnovo-matias-mancuso-inter",
+    "https://www.inter.it/it/notizie/venezia-inter-dove-vederla-in-tv-serie-a-2026-27",
+    "https://www.tiktok.com/@nerazzurridaily",
+    "https://www.youtube.com/@nerazzurridaily"
+   ],
+   "site_links": [
+    "https://www.nerazzurridaily.com/go/email/?ed=54",
+    "https://www.nerazzurridaily.com/go/email/?ed=54&to=/subscribe/",
+    "https://www.nerazzurridaily.com/go/forward/?ed=54",
+    "https://www.nerazzurridaily.com/p/edition-54/"
+   ]
+  }
+ },
+ "email": {
+  "md5": "d16d9da25d28e209588ba61dcfe8a661",
+  "chars": 24747,
+  "bytes": 24852
+ }
+}
