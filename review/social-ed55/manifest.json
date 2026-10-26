@@ -1,0 +1,144 @@
+{
+ "edition": 55,
+ "date": "2026-10-26",
+ "slug": "stoppage-time-win",
+ "name": "ND-2026-10-26-ed55-stoppage-time-win",
+ "hook": "Inter don't lose. They just finish late.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-55/",
+ "edition_json_sha256": "33644ccdfde34e2a79ec1d2cfeab127df658da15c76c83793122ea5e6b09bf9a",
+ "brevo": {
+  "campaign_id": 44,
+  "status": "draft",
+  "note": "the 5:30 run did not send the email for No. 55; it is still a draft in Brevo"
+ },
+ "local_render": {
+  "file": "ND-2026-10-26-ed55-stoppage-time-win-voiced.mp4",
+  "seconds": 33.68,
+  "beats": 6,
+  "bytes": 1345128,
+  "md5": "7520f9e29f202d216b56d46e9e6cb7e8",
+  "sha256": "bfde8257b31ff294da84ea87c10deb0a244440c36b76269d445facb1facbc138",
+  "audio": {
+   "summary": "voiceover only — no music",
+   "codec": "aac",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": 33.68
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 32.68
+  }
+ },
+ "stories": [
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Oct 26",
+   "line": "CONFIRMED · Inter.it · Oct 26 — Inter beat Fiorentina 2-1 at San Siro. Thuram equalized 90+1', Zielinski's penalty won it 90+8'; Jimenez had put Fiorentina ahead on 64'."
+  },
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Oct 26",
+   "line": "CONFIRMED · Inter.it · Oct 26 — Lautaro Martínez is one of 30 players on the 2026 Ballon d'Or shortlist. The ceremony is tonight at the London Palladium; the club published no start time."
+  },
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Oct 25",
+   "line": "CONFIRMED · Inter.it · Oct 25 — Ivan Provedel made his Inter debut in goal, completing 30 of 31 passes."
+  },
+  {
+   "register": "REPORTED",
+   "source": "Corriere dello Sport via FCInterNews",
+   "date": "Oct 25",
+   "line": "REPORTED · Corriere dello Sport via FCInterNews · Oct 25 — Curtis Jones and Benjamin Pavard both have adductor trouble. The paper calls the derby on Oct 31 unlikely and Feyenoord on Nov 3 the likely return."
+  },
+  {
+   "register": "REPORTED",
+   "source": "Gazzetta dello Sport via FCInterNews",
+   "date": "Oct 25",
+   "line": "REPORTED · Gazzetta dello Sport via FCInterNews · Oct 25 — Federico Dimarco is asking about €7.5m a season to renew, against about €5.2m now. Inter are in no hurry."
+  }
+ ],
+ "youtube_title": "Inter 2-1 Fiorentina: both goals after 90' | Jones & Pavard derby doubt #Shorts",
+ "pinned_question": "Thuram or Zielinski — who won Inter that game?",
+ "next_fixture": {
+  "opponent": "Venezia",
+  "venue": "AWAY",
+  "date": "Wed, Oct 28",
+  "competition": "Serie A matchday 9",
+  "kickoff_et": "1:30 PM ET",
+  "kickoff_cet": "18:30 CET",
+  "us_tv": "Paramount+ / Peacock Premium"
+ },
+ "optional_drafts": {
+  "reddit": true,
+  "facebook": true,
+  "instagram": false
+ },
+ "thumbnail_style": "number",
+ "static_fallback_used": false,
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/40312896018",
+  "built_at_utc": "2026-10-26T11:11:36+00:00",
+  "seconds": 33.68,
+  "beats": 6,
+  "files": {
+   "assets/video/ed55.mp4": {
+    "bytes": 1338492,
+    "md5": "b7fb56de750cbf3b9e1ecaca7f2188da",
+    "sha256": "aa8edc203d195d700e7e6eca7061dbc61daf6813b1bf95b0701023b1f7a60bc9"
+   },
+   "assets/video/ed55-thumb.png": {
+    "bytes": 56683,
+    "md5": "895d224c582db1e7a80e776214d614c8",
+    "sha256": "84fd3066a044abf4893996233147c2dca9c9903ba7016d7809ce99612f479d79"
+   },
+   "assets/video/ed55-thumb-9x16.png": {
+    "bytes": 75762,
+    "md5": "c26c85d3bb67e7fdfd25cd74dfeab331",
+    "sha256": "8159211e2391f333e2a8c979a9b6c92e52377950f41b6c46bbc383b00a3d0005"
+   },
+   "data/tiktok-ed55.json": {
+    "bytes": 562,
+    "md5": "513a37215c9f26069f51fe1571b934cf",
+    "sha256": "eae098923c5781a3aeeeebca87567521c957467a75d58b61c4e71f1accbf5d87"
+   },
+   "data/youtube-ed55.json": {
+    "bytes": 1889,
+    "md5": "679fe648ae71054dc05669eeac9cc38b",
+    "sha256": "e0ba84298a613760361f5517ffb92e15785300ec78a26bdb8de6fd8167c03f96"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 115778,
+    "md5": "7f8d3b66ea97a6fba9979203809ef388",
+    "sha256": "aa623f98064dd929beea8b16f2dff10f6633b1ec68103abf512e5d75a2e10886"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 75762,
+    "md5": "c26c85d3bb67e7fdfd25cd74dfeab331",
+    "sha256": "8159211e2391f333e2a8c979a9b6c92e52377950f41b6c46bbc383b00a3d0005"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 56683,
+    "md5": "895d224c582db1e7a80e776214d614c8",
+    "sha256": "84fd3066a044abf4893996233147c2dca9c9903ba7016d7809ce99612f479d79"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 32.68
+  },
+  "passed": true
+ }
+}

@@ -1,0 +1,133 @@
+{
+ "thumbnail": {
+  "style": "number",
+  "top": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "lines": [
+    "THURAM,",
+    "ZIELINSKI."
+   ]
+  },
+  "bottom": {
+   "register": "REPORTED",
+   "kicker": "REPORTED · CORRIERE",
+   "lines": [
+    "JONES,",
+    "PAVARD OUT."
+   ],
+   "sub": "DERBY UNLIKELY, BACK FOR FEYENOORD"
+  },
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "2-1",
+   "lines_a": [
+    "INTER BEAT",
+    "FIORENTINA."
+   ],
+   "lines_b": [
+    "BOTH GOALS",
+    "AFTER NINETY."
+   ],
+   "pill": "CONFIRMED: LAUTARO ON BALLON D'OR LIST",
+   "pill_register": "CONFIRMED"
+  }
+ },
+ "beats": [
+  {
+   "id": "01-stance",
+   "kind": "cover",
+   "duration": 3.07,
+   "eyebrow": "EDITION NO. 55 · OCTOBER 26",
+   "lines": [
+    "INTER DON'T LOSE.",
+    "THEY JUST FINISH LATE."
+   ],
+   "vo": "[Inter] don't lose. They just finish late."
+  },
+  {
+   "id": "02-claim",
+   "kind": "result",
+   "duration": 8.15,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · OCT 26",
+   "home": "INTER",
+   "away": "FIORENTINA",
+   "score_home": 2,
+   "score_away": 1,
+   "inter": "home",
+   "sub": [
+    "THURAM 90+1' · ZIELINSKI 90+8' PEN",
+    "JIMENEZ 64' · SAN SIRO"
+   ],
+   "vo": "[Inter] beat [Fiorentina] two one at [San Siro]. [Thuram] equalized in stoppage time, [Zielinski] scored the penalty."
+  },
+  {
+   "id": "03-our-take",
+   "kind": "item",
+   "duration": 4.35,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "A TITLE TEAM",
+    "WINS THE GAMES",
+    "IT ALREADY LOST."
+   ],
+   "sub": [
+    "UNBEATEN · 22 POINTS FROM EIGHT"
+   ],
+   "vo": "That's a title team's trick. Winning when the game is already gone."
+  },
+  {
+   "id": "04-turn",
+   "kind": "item",
+   "duration": 6.76,
+   "register": "REPORTED",
+   "kicker": "REPORTED · CORRIERE DELLO SPORT · OCT 25",
+   "lines": [
+    "JONES AND PAVARD:",
+    "DERBY UNLIKELY."
+   ],
+   "sub": [
+    "ADDUCTOR TROUBLE",
+    "BACK FOR FEYENOORD, NOV 3"
+   ],
+   "vo": "[Corriere dello Sport] says the derby is unlikely for [Jones] and [Pavard]. [Feyenoord] is the target."
+  },
+  {
+   "id": "05-fixture",
+   "kind": "fixture",
+   "duration": 4.33,
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP · SERIE A · MATCHDAY 9",
+   "lines": [
+    "VENEZIA (A)"
+   ],
+   "sub_top": "WED, OCT 28",
+   "big": "1:30 PM ET",
+   "sub": [
+    "18:30 CET",
+    "PARAMOUNT+ · PEACOCK PREMIUM"
+   ],
+   "vo": "[Venezia] away Wednesday, one thirty Eastern. Then the derby."
+  },
+  {
+   "id": "06-end",
+   "kind": "end",
+   "duration": 6.02,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Was it [Thuram] or [Zielinski]? Tell us in the comments, at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 32.68
+ }
+}
