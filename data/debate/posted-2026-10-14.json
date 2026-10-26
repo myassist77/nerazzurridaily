@@ -11,11 +11,13 @@
   "youtube": {
     "post_id": "cmvp6gv5a1aw2n31crhlxomd8",
     "posted_at_utc": "2026-10-26T11:33:14Z",
-    "state": "SUBMITTED",
-    "video_id": null,
-    "url": null,
-    "privacy": null,
-    "comment": null
+    "state": "PUBLISHED",
+    "video_id": "STnLPHieJE4",
+    "url": "https://www.youtube.com/shorts/STnLPHieJE4",
+    "privacy": "public",
+    "comment": "unknown",
+    "thumbnail_sent": true,
+    "verified_at_utc": "2026-10-26T11:37:00Z"
   },
-  "updated_at_utc": "2026-10-26T11:33:14Z"
+  "updated_at_utc": "2026-10-26T11:37:00Z"
 }
