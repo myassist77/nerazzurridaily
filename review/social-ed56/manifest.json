@@ -1,0 +1,118 @@
+{
+ "edition": 56,
+ "date": "2026-10-27",
+ "slug": "twenty-second",
+ "hook": "Inter's captain deserved better than 22nd.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-56/",
+ "edition_json_sha256": "b617d51cfdc3c8b7772ee021cb6094b8651816f6c2d0ab326f59f21a3d120bd9",
+ "brevo": {
+  "campaign_id": 45,
+  "status": "draft",
+  "note": "ledger: sendNow refused by the 5:30 run's permission classifier; all edition controls passed (0 fails, 0 warns)"
+ },
+ "local_render": {
+  "file": "ND-2026-10-27-ed56-twenty-second-voiced.mp4",
+  "seconds": 33.07,
+  "beats": 6,
+  "bytes": 1357472,
+  "md5": "e79c953c9d98976fd73fa9317dc978bc",
+  "sha256": "6979ec317a7ca4ac927e137f7d106025a417b2ed56cc8f030fcdb136713f9e7b"
+ },
+ "audio": {
+  "summary": "voiceover only — no music",
+  "codec": "aac",
+  "sample_rate": "48000",
+  "channels": 2,
+  "duration": [
+   null
+  ],
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 32.06
+  }
+ },
+ "stories": [
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Oct 26",
+   "h3": "Lautaro Martínez finishes 22nd in the Ballon d'Or"
+  },
+  {
+   "register": "REPORTED",
+   "source": "Sky Sport Italia via FCInterNews",
+   "date": "Oct 26",
+   "h3": "Sky Sport Italia expects Thuram to be rested at Venezia"
+  }
+ ],
+ "youtube_title": "Inter's Lautaro Martínez finished 22nd in the Ballon d'Or — Kane won it",
+ "pinned_comment_question": "Did Lautaro Martínez deserve better than 22nd?",
+ "next_fixture": "Venezia (away) · Wed, Oct 28 · Serie A MD9 · 1:30 PM ET · 18:30 CET · Paramount+ · Peacock Premium",
+ "optional_drafts": {
+  "reddit": false,
+  "facebook": true
+ },
+ "thumbnail_style": "number",
+ "sunday_scorecard": false,
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/40492693338",
+  "built_at_utc": "2026-10-27T11:38:01+00:00",
+  "seconds": 33.07,
+  "beats": 6,
+  "files": {
+   "assets/video/ed56.mp4": {
+    "bytes": 1363706,
+    "md5": "3a5b00c9ea2065e8350569969a24b783",
+    "sha256": "9bc3a5b415a04f41c29c5a630859ba9e99ef9aad36596d9ba7e6112bec4963ee"
+   },
+   "assets/video/ed56-thumb.png": {
+    "bytes": 55334,
+    "md5": "11a690f7c9790bbfcd13c3b188f92836",
+    "sha256": "5c1d4d4aaec816715ebed3be0756a782d31a8bed70a86ce6d4c4c62da771229a"
+   },
+   "assets/video/ed56-thumb-9x16.png": {
+    "bytes": 77217,
+    "md5": "4a8d4fd6812bf4b7d88c237a7d1ac3f0",
+    "sha256": "5f032160649d5fd20a633bae19ce468d1b3d3195672b42eeaef3c9bb943f76e2"
+   },
+   "data/tiktok-ed56.json": {
+    "bytes": 523,
+    "md5": "83be72e32e8288bccb411c3d4ce559e0",
+    "sha256": "8e531e88c8ff57996d33fa5363f5d08e1ab610b8c1e820e8982d96a9e2e61296"
+   },
+   "data/youtube-ed56.json": {
+    "bytes": 1354,
+    "md5": "b13b954f82e818dc15a049a6e6cda388",
+    "sha256": "05614f712e20a2415404d6347a12ae5c0d14cdc126fc793d43e92e887aa29067"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 133103,
+    "md5": "90ef39ed59f3699510cf7648adec12e3",
+    "sha256": "cdeff3a85c87be6c78307c04c6a370524eafacb19d01827410845b809cfb1965"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 77217,
+    "md5": "4a8d4fd6812bf4b7d88c237a7d1ac3f0",
+    "sha256": "5f032160649d5fd20a633bae19ce468d1b3d3195672b42eeaef3c9bb943f76e2"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 55334,
+    "md5": "11a690f7c9790bbfcd13c3b188f92836",
+    "sha256": "5c1d4d4aaec816715ebed3be0756a782d31a8bed70a86ce6d4c4c62da771229a"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 32.06
+  },
+  "passed": true
+ }
+}

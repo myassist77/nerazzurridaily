@@ -1,0 +1,118 @@
+{
+ "n": 56,
+ "date": "2026-10-27",
+ "slug": "twenty-second",
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "22",
+   "lines_a": [
+    "WHERE LAUTARO",
+    "FINISHED"
+   ],
+   "lines_b": [
+    "BALLON D'OR"
+   ],
+   "pill": "REPORTED · THURAM MAY REST",
+   "pill_register": "REPORTED"
+  }
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "kind": "cover",
+   "register": "NEUTRAL",
+   "duration": 4.65,
+   "eyebrow": "EDITION NO. 56 · OCTOBER 27",
+   "lines": [
+    "INTER'S CAPTAIN",
+    "DESERVED BETTER",
+    "THAN 22ND"
+   ],
+   "vo": "[Inter]'s captain deserved better than twenty-second in the [Ballon d'Or]."
+  },
+  {
+   "id": "b2",
+   "kind": "item",
+   "register": "CONFIRMED",
+   "duration": 7.11,
+   "kicker": "CONFIRMED · INTER.IT · OCT 26",
+   "lines": [
+    "LAUTARO FINISHED",
+    "22ND IN THE",
+    "BALLON D'OR"
+   ],
+   "sub": [
+    "FIFTH NOMINATION · NO POINT TOTAL PUBLISHED",
+    "THE ONLY SERIE A PLAYER IN THE 30"
+   ],
+   "vo": "[Inter] said [Lautaro Martínez] finished twenty-second, the only [Serie A] player among the thirty finalists."
+  },
+  {
+   "id": "b3",
+   "kind": "item",
+   "register": "NEUTRAL",
+   "duration": 5.95,
+   "kicker": "OUR TAKE",
+   "lines": [
+    "FIFTH NOMINATION.",
+    "ONLY SERIE A NAME.",
+    "STILL 22ND."
+   ],
+   "vo": "Fifth nomination, and the only [Serie A] name on the list. Twenty-second feels thin."
+  },
+  {
+   "id": "b4",
+   "kind": "item",
+   "register": "REPORTED",
+   "duration": 4.89,
+   "kicker": "REPORTED · SKY SPORT ITALIA · OCT 26",
+   "lines": [
+    "SKY EXPECTS",
+    "THURAM RESTED",
+    "AT VENEZIA"
+   ],
+   "sub": [
+    "CHIVU MAY ROTATE · ZIELINSKI AND SUCIC",
+    "IN THE CENTER"
+   ],
+   "vo": "[Sky Sport Italia] says [Chivu] may rest [Thuram] at [Venezia] on Wednesday."
+  },
+  {
+   "id": "b5",
+   "kind": "fixture",
+   "register": "NEUTRAL",
+   "duration": 3.74,
+   "kicker": "NEXT UP · INTER.IT · OCT 26",
+   "lines": [
+    "AT VENEZIA"
+   ],
+   "sub_top": "WED, OCT 28 · SERIE A · MATCHDAY 9",
+   "big": "1:30 PM ET",
+   "sub": [
+    "18:30 CET · PARAMOUNT+ · PEACOCK PREMIUM"
+   ],
+   "vo": "[Venezia] away, Wednesday, half past one Eastern."
+  },
+  {
+   "id": "b6",
+   "kind": "end",
+   "register": "NEUTRAL",
+   "duration": 5.72,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Did [Lautaro] deserve better? Tell me in the comments, at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 32.06
+ }
+}
