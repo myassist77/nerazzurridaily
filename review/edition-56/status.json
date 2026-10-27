@@ -1,0 +1,158 @@
+{
+ "n": 56,
+ "built_at_utc": "2026-10-27T09:53:26+00:00",
+ "run_id": "40484129122",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/40484129122",
+ "passed": true,
+ "steps": {
+  "mast": "success",
+  "controls": "success",
+  "checks": "success"
+ },
+ "files_md5": {
+  "p/edition-56/index.html": "da0efc5201017704d1d5cab1d700000e",
+  "assets/mast/edition-56.png": "6241fb05631904de4ca88db2d8247147",
+  "data/edition-56.json": "66355c22991021b1d8f1a033baca62a5",
+  "index.html": "7c71e8a08619679101f6c1322ac4cb24",
+  "subscribe/index.html": "5508b1e8791f82398e33c05f1317a079",
+  "fixtures/index.html": "2aa26e56efaa6ecaf1ddc14f369e9ccb",
+  "feed.xml": "22c7a64edd4347332782f1af7cbff9a9",
+  "sitemap.xml": "13094d65f586dfac6e4214da6b29ce0d"
+ },
+ "title": "Lautaro finishes 22nd as Kane wins the Ballon d'Or",
+ "date": "2026-10-27",
+ "masthead": {
+  "bytes": 5878,
+  "lines": 2,
+  "colors": 7,
+  "fonts": {
+   "anton": true,
+   "mono": true
+  }
+ },
+ "controls": {
+  "n": 56,
+  "fails": [],
+  "warns": [],
+  "page-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 700,
+    "h": 382.8125,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "page-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "email-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 644,
+    "h": 352.1875,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  },
+  "email-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  }
+ },
+ "checks": {
+  "fails": [],
+  "warns": [],
+  "info": {
+   "prose_words": 495,
+   "read_seconds": 125,
+   "avg_sentence_words": 16.2,
+   "flesch_reading_ease": 57.8,
+   "edition_from_masthead": null,
+   "dates": {
+    "today": "October 27"
+   },
+   "external_to_fetch": [
+    "https://sport.sky.it/calcio/2026/10/26/classifica-pallone-d-oro-2026",
+    "https://worldsoccertalk.com/champions-league-tv-schedule/",
+    "https://worldsoccertalk.com/serie-a-tv-schedule/",
+    "https://www.cbssports.com/soccer/serie-a/standings/",
+    "https://www.fcinternews.it/focus/serie-a-arbitri-nona-giornata-pairetto-venezia-inter-var-camplone-1021677",
+    "https://www.fcinternews.it/in-primo-piano/sky-venezia-inter-probabili-scelte-chivu-possibile-riposo-thuram-1021711",
+    "https://www.fcinternews.it/news/pallone-oro-2026-trionfa-harry-kane-battuti-yamal-mbappe-1021730",
+    "https://www.inter.it/en/inter-women",
+    "https://www.inter.it/en/matches",
+    "https://www.inter.it/en/news/2026-ballon-dor-lautaro-finishes-22nd",
+    "https://www.inter.it/it/notizie/inter-u23-scafatese-guida-biglietti-serie-c-2026-27",
+    "https://www.inter.it/it/notizie/uefa-womens-champions-league-classifica-e-calendario",
+    "https://www.sportmediaset.mediaset.it/calcio/classifica-pallone-d-oro-lautaro-martinez-chiude-22_118183674-202602k.shtml",
+    "https://www.tiktok.com/@nerazzurridaily",
+    "https://www.youtube.com/@nerazzurridaily"
+   ],
+   "site_links": [
+    "https://www.nerazzurridaily.com/go/email/?ed=56",
+    "https://www.nerazzurridaily.com/go/email/?ed=56&to=/subscribe/",
+    "https://www.nerazzurridaily.com/go/forward/?ed=56",
+    "https://www.nerazzurridaily.com/p/edition-56/"
+   ]
+  }
+ },
+ "email": {
+  "md5": "b914aa0208be6504884ba647cf923ebe",
+  "chars": 25904,
+  "bytes": 25997
+ }
+}
