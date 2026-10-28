@@ -1,0 +1,276 @@
+{
+ "k": 6,
+ "date": "2026-10-28",
+ "topic_id": "D06",
+ "title": "The greatest Inter season: 1964–65, 2009–10 or 2023–24?",
+ "slug": "greatest-season",
+ "pick": "1964–65 — Helenio Herrera's Grande Inter (Scudetto, European Cup, Intercontinental Cup)",
+ "beats": {
+  "thumbnail": {
+   "lines": [
+    "GREATEST INTER SEASON?"
+   ],
+   "left": {
+    "name": "1964–65",
+    "era": "Herrera · 3 trophies"
+   },
+   "right": {
+    "name": "2009–10",
+    "era": "Mourinho · the treble"
+   }
+  },
+  "beats": [
+   {
+    "id": "b1",
+    "kind": "hook",
+    "eyebrow": "THE DEBATE · NO. 6",
+    "lines": [
+     "GREATEST",
+     "INTER",
+     "SEASON?"
+    ],
+    "sub": "1964–65 · 2009–10 · 2023–24",
+    "duration": 3.52,
+    "vo": "The greatest [Inter] season ever? Three candidates."
+   },
+   {
+    "id": "b2",
+    "kind": "lineup",
+    "kicker": "THE CONTENDERS",
+    "rows": [
+     {
+      "name": "1964–65",
+      "era": "Herrera · 3 trophies"
+     },
+     {
+      "name": "2009–10",
+      "era": "Mourinho · the treble"
+     },
+     {
+      "name": "2023–24",
+      "era": "Inzaghi · second star"
+     }
+    ],
+    "duration": 3.33,
+    "vo": "Three teams. [Herrera], [Mourinho], [Inzaghi]."
+   },
+   {
+    "id": "b3",
+    "kind": "card",
+    "kicker": "THE CASE · 1964–65",
+    "number": 3,
+    "label": "trophies · Italy, Europe, world",
+    "name": "Grande Inter",
+    "facts": [
+     "Scudetto · 54 pts · 2 defeats",
+     "European Cup · Benfica 1–0",
+     "Intercontinental Cup · Independiente"
+    ],
+    "source": "inter.it · uefa.com · wikipedia",
+    "duration": 5.66,
+    "vo": "Nineteen sixty-five: champions of Italy, Europe, and the world. One season."
+   },
+   {
+    "id": "b4",
+    "kind": "card",
+    "kicker": "THE COUNTER · 2009–10",
+    "number": 3,
+    "label": "trophies · the only treble",
+    "name": "Mourinho's Inter",
+    "facts": [
+     "Serie A · 82 pts · 24 wins",
+     "Coppa Italia · Roma 1–0",
+     "Champions League · Bayern 0–2"
+    ],
+    "source": "inter.it · uefa.com · wikipedia",
+    "duration": 4.5,
+    "vo": "Twenty ten: the treble. League, cup, and Bayern beaten in Madrid."
+   },
+   {
+    "id": "b5",
+    "kind": "card",
+    "kicker": "THE THIRD WAY · 2023–24",
+    "number": 94,
+    "label": "points · the second star",
+    "name": "Inzaghi's Inter",
+    "facts": [
+     "Scudetto No. 20 · won in the derby",
+     "89 scored · 22 conceded",
+     "Supercoppa · Napoli 1–0"
+    ],
+    "source": "inter.it · wikipedia",
+    "duration": 4.06,
+    "vo": "Twenty twenty-four: ninety-four points and the second star."
+   },
+   {
+    "id": "b6",
+    "kind": "versus",
+    "left": {
+     "name": "1964–65",
+     "era": "HERRERA · GRANDE INTER"
+    },
+    "right": {
+     "name": "2009–10",
+     "era": "MOURINHO · THE TREBLE"
+    },
+    "rows": [
+     {
+      "label": "Trophies",
+      "l": 3,
+      "r": 3,
+      "win": null
+     },
+     {
+      "label": "World titles",
+      "l": 1,
+      "r": 0,
+      "win": "l"
+     },
+     {
+      "label": "Domestic cups",
+      "l": 0,
+      "r": 1,
+      "win": "r"
+     },
+     {
+      "label": "League defeats",
+      "l": 2,
+      "r": 4,
+      "win": "l"
+     }
+    ],
+    "duration": 3.78,
+    "vo": "Same trophy count. Only one of them ruled the world."
+   },
+   {
+    "id": "b7",
+    "kind": "verdict",
+    "stamp": "OUR PICK",
+    "name": "1964–65",
+    "lines": [
+     "Italy · Europe · the world",
+     "3 crowns in one season"
+    ],
+    "duration": 5.34,
+    "vo": "Our pick: nineteen sixty-five. The [Grande Inter] won everything there was."
+   },
+   {
+    "id": "b8",
+    "kind": "end",
+    "lines": [
+     "YOUR",
+     "PICK?"
+    ],
+    "ask": "reply in the comments",
+    "duration": 7.06,
+    "vo": "Which season is yours? Reply below. The [Inter] press in English at [Nerazzurri] Daily dot com."
+   }
+  ],
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 37.25
+  }
+ },
+ "tiktok": {
+  "title": "Inter's greatest season ever? 1964–65 vs the 2010 treble — we picked",
+  "caption": "Inter's greatest season of all time? 1964–65: Herrera's Grande Inter won the Scudetto, the European Cup and the Intercontinental Cup — champions of Italy, Europe and the world in one season. 2009–10: Mourinho's treble — Serie A, Coppa Italia and the Champions League, the only one by an Italian club. 2023–24: 94 points and the second star. We picked. Who's yours? #Inter #ForzaInter #GrandeInter #Treble #SerieA https://www.nerazzurridaily.com/go/tt/?v=debate6"
+ },
+ "youtube": {
+  "title": "Inter's greatest season ever: 1964–65, 2009–10 or 2023–24? #Shorts",
+  "description": "Inter's greatest season of all time? Our pick: 1964–65, Helenio Herrera's Grande Inter.\nhttps://www.nerazzurridaily.com/go/yt/?v=debate6 — the Italian Inter press in English every morning, free\n\nTHE DEBATE — a weekly fan-made argument, not the news.\n\n1964–65 (Helenio Herrera): Scudetto with 54 points, 22 wins and only 2 defeats in 34 games; European Cup, 1–0 v Benfica at San Siro on May 27, 1965 (Jair); Intercontinental Cup v Independiente, won 1–0 after extra time in the Madrid play-off (Corso). Champions of Italy, Europe and the world in the same season. Coppa Italia runners-up.\n2009–10 (José Mourinho): Serie A with 82 points (24 wins, 10 draws, 4 defeats), 2 points ahead of Roma; Coppa Italia, 1–0 v Roma on May 5, 2010 (Milito); Champions League, 2–0 v Bayern Munich in Madrid on May 22, 2010 (Milito ×2). The only treble by an Italian club.\n2023–24 (Simone Inzaghi): Serie A with 94 points (29 wins, 7 draws, 2 defeats), 89 scored and 22 conceded, clinched 2–1 in the derby on April 22, 2024 — the 20th title and the second star; Supercoppa Italiana, 1–0 v Napoli on January 22, 2024 (Lautaro Martínez). Out of the Coppa Italia and the Champions League in the round of 16.\n\nSources: inter.it (club history and honours), uefa.com, Wikipedia (English).\nFan-made — not affiliated with FC Internazionale Milano.\n\n#Inter #ForzaInter #GrandeInter #Treble #SerieA #Shorts",
+  "tags": [
+   "Inter",
+   "Inter Milan",
+   "Grande Inter",
+   "Helenio Herrera",
+   "Mourinho",
+   "treble",
+   "Serie A",
+   "Nerazzurri",
+   "Champions League",
+   "second star"
+  ],
+  "comment": "1964–65, 2009–10 — or the 94-point second star of 2023–24? Name your season.\nReply in the comments.\nhttps://www.nerazzurridaily.com/go/yt/?v=debate6-pinned"
+ },
+ "facebook": "This week's Debate is one I lose every time at the bar: Inter's greatest season — the 1964–65 Grande Inter, the 2010 treble or the 94-point second star — and we went with Herrera's 1965, champions of Italy, Europe and the world in one season. Tell me the treble beats it — nerazzurridaily.com/go/fb/?v=debate6",
+ "sources": [
+  {
+   "claim": "1964–65 Serie A: Inter 1st, 34 played, 22 W, 10 D, 2 L, 68–29, 54 points; Milan 2nd on 51",
+   "url": "https://en.wikipedia.org/wiki/1964%E2%80%9365_Serie_A"
+  },
+  {
+   "claim": "1964–65 season page: Herrera; W22 D10 L2; Mazzola 17 league goals; Coppa Italia runners-up; European Cup retained v Benfica",
+   "url": "https://en.wikipedia.org/wiki/1964%E2%80%9365_Inter_Milan_season"
+  },
+  {
+   "claim": "9th Scudetto clinched June 6, 1965 (2–2 v Torino); three trophies: Intercontinental Cup, European Cup (May 27, 1965, 1–0 Benfica), Scudetto",
+   "url": "https://inter.it/en/news/6-june-1965-inter-9th-scudetto"
+  },
+  {
+   "claim": "1965 European Cup final: Inter 1–0 Benfica, May 27, 1965, San Siro, Jair (Wikipedia/uefa.com 43', inter.it 42' — minute kept off screen)",
+   "url": "https://en.wikipedia.org/wiki/1965_European_Cup_final"
+  },
+  {
+   "claim": "uefa.com: Jair 43', Inter the third side to win successive European Cups; Liverpool beaten 4–3 on aggregate in the semi",
+   "url": "https://www.uefa.com/uefachampionsleague/news/0258-0e6a04df66ce-acdf9fb5f934-1000--1964-65-jair-the-difference-for-inter"
+  },
+  {
+   "claim": "inter.it finals list: 1965 Inter 1–0 Benfica (Jair); 2010 Bayern 0–2 Inter (Milito 35', 70')",
+   "url": "https://www.inter.it/en/news/history-inter-champions-league-finals"
+  },
+  {
+   "claim": "1964 Intercontinental Cup: Independiente 1–0 Inter (Sept 9), Inter 2–0 (Sept 23), play-off Inter 1–0 a.e.t. in Madrid Sept 26, 1964 (Corso 110')",
+   "url": "https://en.wikipedia.org/wiki/1964_Intercontinental_Cup"
+  },
+  {
+   "claim": "inter.it honours: two Intercontinental Cups under Herrera, 1964 decided by the Madrid play-off (Corso 110') and 1965 v Independiente (3–0, 0–0)",
+   "url": "https://www.inter.it/en/club/honours/coppa-intercontinentale"
+  },
+  {
+   "claim": "uefa.com on Herrera's Inter 1962–67: European Cups 1964 and 1965, Intercontinental Cups, Scudetti 1962–63, 1964–65, 1965–66",
+   "url": "https://www.uefa.com/uefachampionsleague/news/0253-0d7ff54821f7-e2055930d1e0-1000--the-greatest-teams-of-all-time-inter-1962-67"
+  },
+  {
+   "claim": "2009–10 Serie A: Inter 38 played, 24 W, 10 D, 4 L, 75–34, 82 points; Roma 80; final day May 16, 2010",
+   "url": "https://en.wikipedia.org/wiki/2009%E2%80%9310_Serie_A"
+  },
+  {
+   "claim": "2009–10 season page: Mourinho; Serie A, Coppa Italia and Champions League won (2–0 Bayern, May 22, 2010, Milito ×2); Supercoppa lost 2–1 to Lazio; Milito 22 league goals",
+   "url": "https://en.wikipedia.org/wiki/2009%E2%80%9310_Inter_Milan_season"
+  },
+  {
+   "claim": "2010 Coppa Italia final: Inter 1–0 Roma, May 5, 2010, Stadio Olimpico, Milito",
+   "url": "https://en.wikipedia.org/wiki/2010_Coppa_Italia_final"
+  },
+  {
+   "claim": "2023–24 Serie A: Inter 38 played, 29 W, 7 D, 2 L, 89–22, +67, 94 points; Milan 75; clinched with five games to spare",
+   "url": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Serie_A"
+  },
+  {
+   "claim": "2023–24 season page: Inzaghi; title clinched April 22, 2024, 2–1 v Milan (Acerbi, Thuram), 20th title/second star; Supercoppa 1–0 Napoli Jan 22, 2024 (Lautaro); Coppa Italia R16 exit v Bologna; CL R16 exit v Atlético on penalties",
+   "url": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Inter_Milan_season"
+  },
+  {
+   "claim": "inter.it recap: 94 points, 89 scored, 22 conceded, best attack and defence, Sommer 19 clean sheets, Lautaro 24 goals, third straight Supercoppa",
+   "url": "https://www.inter.it/en/news/inter-recap-2024-second-star"
+  }
+ ],
+ "verification": {
+  "disputed": "Jair's minute in the 1965 final (42' inter.it v 43' Wikipedia/uefa.com) — not shown; 2023–24's 94 points is not the club record (97 in 2006–07) so no 'record' claim is made; the 2010 Club World Cup (Dec 2010) belongs to 2010–11 and is not counted for the treble season",
+  "voice": "bracketed names: Inter, Herrera (FIX), Mourinho → murˈiɲo, Inzaghi → intsˈaɡi, Grande Inter, Nerazzurri (FIX); no FIX addition this run"
+ },
+ "render": {
+  "seconds": 38.27,
+  "beats": 8,
+  "md5_local": "ff45e7d7a4fc2916ee37dc1fb9362c11",
+  "md5_workflow": null,
+  "md5_note": "silent render + Kokoro voice; the workflow's bytes differ (another Chromium build, voice synthesized again) — not a fault",
+  "renderer": "tools/nd_debate.py (no grain, crf 21)",
+  "voice": "nd_voice.py (Kokoro am_michael, 1.0 s 9:16 cover); plan 37.25 s, 79 words"
+ },
+ "created_at_utc": "2026-10-28T16:26:39Z"
+}

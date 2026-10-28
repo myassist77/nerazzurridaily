@@ -1,1 +1,50 @@
-[{"k":1,"date":"2026-09-26","topic_id":"D01","slug":"greatest-keeper","title":"Inter's greatest goalkeeper of all time?","pick":"Walter Zenga"},{"k":2,"date":"2026-09-30","topic_id":"D02","slug":"greatest-striker","title":"Inter's greatest striker of all time?","pick":"Giuseppe Meazza"},{"k":3,"date":"2026-10-07","topic_id":"D03","slug":"greatest-captain","title":"Inter's greatest captain?","pick":"Javier Zanetti"},{"k":4,"date":"2026-10-14","topic_id":"D04","slug":"greatest-manager","title":"Inter's greatest manager?","pick":"José Mourinho"},{"k":5,"date":"2026-10-21","topic_id":"D05","slug":"best-signing","title":"Inter's best signing ever?","pick":"Lautaro Martínez"}]
+[
+ {
+  "k": 1,
+  "date": "2026-09-26",
+  "topic_id": "D01",
+  "slug": "greatest-keeper",
+  "title": "Inter's greatest goalkeeper of all time?",
+  "pick": "Walter Zenga"
+ },
+ {
+  "k": 2,
+  "date": "2026-09-30",
+  "topic_id": "D02",
+  "slug": "greatest-striker",
+  "title": "Inter's greatest striker of all time?",
+  "pick": "Giuseppe Meazza"
+ },
+ {
+  "k": 3,
+  "date": "2026-10-07",
+  "topic_id": "D03",
+  "slug": "greatest-captain",
+  "title": "Inter's greatest captain?",
+  "pick": "Javier Zanetti"
+ },
+ {
+  "k": 4,
+  "date": "2026-10-14",
+  "topic_id": "D04",
+  "slug": "greatest-manager",
+  "title": "Inter's greatest manager?",
+  "pick": "José Mourinho"
+ },
+ {
+  "k": 5,
+  "date": "2026-10-21",
+  "topic_id": "D05",
+  "slug": "best-signing",
+  "title": "Inter's best signing ever?",
+  "pick": "Lautaro Martínez"
+ },
+ {
+  "k": 6,
+  "date": "2026-10-28",
+  "topic_id": "D06",
+  "slug": "greatest-season",
+  "title": "The greatest Inter season: 1964–65, 2009–10 or 2023–24?",
+  "pick": "1964–65 (Herrera's Grande Inter)"
+ }
+]
