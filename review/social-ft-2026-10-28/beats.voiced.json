@@ -1,0 +1,132 @@
+{
+ "beats": [
+  {
+   "id": "01-stance",
+   "kind": "cover",
+   "duration": 3.84,
+   "eyebrow": "EDITION NO. 57 · FULL TIME",
+   "lines": [
+    "INTER DIDN'T WIN THIS.",
+    "VENEZIA LOST IT."
+   ],
+   "vo": "[Inter] didn't really win at [Venezia]. [Venezia] lost it."
+  },
+  {
+   "id": "02-result",
+   "kind": "result",
+   "duration": 5.83,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT MATCH REPORT",
+   "home": "VENEZIA",
+   "away": "INTER",
+   "score_home": 0,
+   "score_away": 2,
+   "inter": "away",
+   "sub": [
+    "MORENO 80' OWN GOAL",
+    "HALHAL 82' OWN GOAL"
+   ],
+   "vo": "The club's match report has it [Venezia] nil, [Inter] two — both goals own goals."
+  },
+  {
+   "id": "03-our-take",
+   "kind": "item",
+   "duration": 4.12,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "NOT PRETTY.",
+    "STILL TOP.",
+    "TAKE IT."
+   ],
+   "sub": [
+    "WINS LIKE THIS COUNT TOO"
+   ],
+   "vo": "Not pretty. Three points all the same, and [Inter] stay top."
+  },
+  {
+   "id": "04-turn",
+   "kind": "stat",
+   "duration": 5.04,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "number": "120",
+   "suffix": " SECONDS",
+   "lines": [
+    "TWO OWN GOALS."
+   ],
+   "sub": [
+    "INTER STAY TOP · 25 PTS"
+   ],
+   "vo": "[Moreno] turned it in on eighty minutes. Two minutes later, [Halhal] did the same."
+  },
+  {
+   "id": "05-fixture",
+   "kind": "fixture",
+   "duration": 4.33,
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP · SERIE A",
+   "lines": [
+    "AC MILAN"
+   ],
+   "sub_top": "SAT OCT 31 · AWAY",
+   "big": "3:45 PM ET",
+   "sub": [
+    "20:45 CET · SAN SIRO"
+   ],
+   "vo": "Next, the derby at [Milan], Saturday, three forty-five Eastern."
+  },
+  {
+   "id": "06-end",
+   "kind": "end",
+   "duration": 6.06,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Ugly win, or three points is three points? Tell us at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "thumbnail": {
+  "style": "number",
+  "top": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "lines": [
+    "MORENO",
+    "80' OG"
+   ]
+  },
+  "bottom": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "lines": [
+    "HALHAL",
+    "82' OG"
+   ],
+   "sub": "VENEZIA 0-2 INTER"
+  },
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "0-2",
+   "lines_a": [
+    "TWO OWN",
+    "GOALS."
+   ],
+   "lines_b": [
+    "INTER",
+    "WIN IT."
+   ],
+   "pill": "CONFIRMED: INTER STAY TOP",
+   "pill_register": "CONFIRMED"
+  }
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 29.22
+ }
+}
