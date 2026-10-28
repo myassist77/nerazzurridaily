@@ -5,17 +5,18 @@
  "tiktok": {
   "post_id": "cmvsecb5p052ppc1cojh80hpt",
   "posted_at_utc": "2026-10-28T17:36:40Z",
-  "state": "SUBMITTED",
+  "state": "PUBLISHED",
   "url": "https://platform.postiz.com/p/cmvsecb5p052ppc1cojh80hpt?share=true"
  },
  "youtube": {
   "post_id": "cmvsecvi50534pc1c0omh7uqj",
   "posted_at_utc": "2026-10-28T17:37:00Z",
-  "state": "SUBMITTED",
-  "video_id": null,
-  "url": "https://platform.postiz.com/p/cmvsecvi50534pc1c0omh7uqj?share=true",
+  "state": "PUBLISHED",
+  "video_id": "YucYDzW7WQ0",
+  "url": "https://www.youtube.com/shorts/YucYDzW7WQ0",
   "privacy": "public",
-  "comment": "unknown"
+  "comment": "unknown",
+  "postiz_url": "https://platform.postiz.com/p/cmvsecvi50534pc1c0omh7uqj?share=true"
  },
- "updated_at_utc": "2026-10-28T17:37:20Z"
+ "updated_at_utc": "2026-10-28T17:40:41Z"
 }
