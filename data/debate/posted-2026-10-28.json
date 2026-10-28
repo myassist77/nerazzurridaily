@@ -8,6 +8,14 @@
   "state": "SUBMITTED",
   "url": "https://platform.postiz.com/p/cmvsecb5p052ppc1cojh80hpt?share=true"
  },
- "youtube": null,
- "updated_at_utc": "2026-10-28T17:36:50Z"
+ "youtube": {
+  "post_id": "cmvsecvi50534pc1c0omh7uqj",
+  "posted_at_utc": "2026-10-28T17:37:00Z",
+  "state": "SUBMITTED",
+  "video_id": null,
+  "url": "https://platform.postiz.com/p/cmvsecvi50534pc1c0omh7uqj?share=true",
+  "privacy": "public",
+  "comment": "unknown"
+ },
+ "updated_at_utc": "2026-10-28T17:37:20Z"
 }
