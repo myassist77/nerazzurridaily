@@ -267,10 +267,18 @@
   "seconds": 38.27,
   "beats": 8,
   "md5_local": "ff45e7d7a4fc2916ee37dc1fb9362c11",
-  "md5_workflow": null,
+  "md5_workflow": "bbb5eef86116bf79a4368f64288b98e0",
   "md5_note": "silent render + Kokoro voice; the workflow's bytes differ (another Chromium build, voice synthesized again) — not a fault",
   "renderer": "tools/nd_debate.py (no grain, crf 21)",
-  "voice": "nd_voice.py (Kokoro am_michael, 1.0 s 9:16 cover); plan 37.25 s, 79 words"
+  "voice": "nd_voice.py (Kokoro am_michael, 1.0 s 9:16 cover); plan 37.25 s, 79 words",
+  "workflow": {
+   "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/40726425454",
+   "built_at_utc": "2026-10-28T16:32:04+00:00",
+   "mp4_bytes": 2713589,
+   "thumb_9x16_md5": "7a6e0bbc2082135e41455e09f33eb1ba",
+   "thumb_16x9_md5": "442818fac44dc8533a939bfb4ff73439",
+   "commit": "091ba3e10a13249368225f0dbd47b3f4d4856f88"
+  }
  },
  "created_at_utc": "2026-10-28T16:26:39Z"
 }
