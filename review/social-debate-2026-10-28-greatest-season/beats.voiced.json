@@ -1,0 +1,170 @@
+{
+ "thumbnail": {
+  "lines": [
+   "GREATEST INTER SEASON?"
+  ],
+  "left": {
+   "name": "1964–65",
+   "era": "Herrera · 3 trophies"
+  },
+  "right": {
+   "name": "2009–10",
+   "era": "Mourinho · the treble"
+  }
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "kind": "hook",
+   "eyebrow": "THE DEBATE · NO. 6",
+   "lines": [
+    "GREATEST",
+    "INTER",
+    "SEASON?"
+   ],
+   "sub": "1964–65 · 2009–10 · 2023–24",
+   "duration": 3.52,
+   "vo": "The greatest [Inter] season ever? Three candidates."
+  },
+  {
+   "id": "b2",
+   "kind": "lineup",
+   "kicker": "THE CONTENDERS",
+   "rows": [
+    {
+     "name": "1964–65",
+     "era": "Herrera · 3 trophies"
+    },
+    {
+     "name": "2009–10",
+     "era": "Mourinho · the treble"
+    },
+    {
+     "name": "2023–24",
+     "era": "Inzaghi · second star"
+    }
+   ],
+   "duration": 3.33,
+   "vo": "Three teams. [Herrera], [Mourinho], [Inzaghi]."
+  },
+  {
+   "id": "b3",
+   "kind": "card",
+   "kicker": "THE CASE · 1964–65",
+   "number": 3,
+   "label": "trophies · Italy, Europe, world",
+   "name": "Grande Inter",
+   "facts": [
+    "Scudetto · 54 pts · 2 defeats",
+    "European Cup · Benfica 1–0",
+    "Intercontinental Cup · Independiente"
+   ],
+   "source": "inter.it · uefa.com · wikipedia",
+   "duration": 5.66,
+   "vo": "Nineteen sixty-five: champions of Italy, Europe, and the world. One season."
+  },
+  {
+   "id": "b4",
+   "kind": "card",
+   "kicker": "THE COUNTER · 2009–10",
+   "number": 3,
+   "label": "trophies · the only treble",
+   "name": "Mourinho's Inter",
+   "facts": [
+    "Serie A · 82 pts · 24 wins",
+    "Coppa Italia · Roma 1–0",
+    "Champions League · Bayern 0–2"
+   ],
+   "source": "inter.it · uefa.com · wikipedia",
+   "duration": 4.5,
+   "vo": "Twenty ten: the treble. League, cup, and Bayern beaten in Madrid."
+  },
+  {
+   "id": "b5",
+   "kind": "card",
+   "kicker": "THE THIRD WAY · 2023–24",
+   "number": 94,
+   "label": "points · the second star",
+   "name": "Inzaghi's Inter",
+   "facts": [
+    "Scudetto No. 20 · won in the derby",
+    "89 scored · 22 conceded",
+    "Supercoppa · Napoli 1–0"
+   ],
+   "source": "inter.it · wikipedia",
+   "duration": 4.06,
+   "vo": "Twenty twenty-four: ninety-four points and the second star."
+  },
+  {
+   "id": "b6",
+   "kind": "versus",
+   "left": {
+    "name": "1964–65",
+    "era": "HERRERA · GRANDE INTER"
+   },
+   "right": {
+    "name": "2009–10",
+    "era": "MOURINHO · THE TREBLE"
+   },
+   "rows": [
+    {
+     "label": "Trophies",
+     "l": 3,
+     "r": 3,
+     "win": null
+    },
+    {
+     "label": "World titles",
+     "l": 1,
+     "r": 0,
+     "win": "l"
+    },
+    {
+     "label": "Domestic cups",
+     "l": 0,
+     "r": 1,
+     "win": "r"
+    },
+    {
+     "label": "League defeats",
+     "l": 2,
+     "r": 4,
+     "win": "l"
+    }
+   ],
+   "duration": 3.78,
+   "vo": "Same trophy count. Only one of them ruled the world."
+  },
+  {
+   "id": "b7",
+   "kind": "verdict",
+   "stamp": "OUR PICK",
+   "name": "1964–65",
+   "lines": [
+    "Italy · Europe · the world",
+    "3 crowns in one season"
+   ],
+   "duration": 5.34,
+   "vo": "Our pick: nineteen sixty-five. The [Grande Inter] won everything there was."
+  },
+  {
+   "id": "b8",
+   "kind": "end",
+   "lines": [
+    "YOUR",
+    "PICK?"
+   ],
+   "ask": "reply in the comments",
+   "duration": 7.06,
+   "vo": "Which season is yours? Reply below. The [Inter] press in English at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 37.25
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "job": "debate-2026-10-28-greatest-season",
+ "kind": "debate",
+ "name": "debate-2026-10-28-greatest-season",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-10-28T16:32:04+00:00",
+ "run_id": "40726425454",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/40726425454",
+ "files": {
+  "assets/video/debate-2026-10-28-greatest-season.mp4": {
+   "bytes": 2713589,
+   "md5": "bbb5eef86116bf79a4368f64288b98e0",
+   "sha256": "2a3ffb9adcc3e59b2a09d48fb052110733e61d789d87a148441df62775883d4f"
+  },
+  "assets/video/debate-2026-10-28-greatest-season-thumb.png": {
+   "bytes": 316509,
+   "md5": "442818fac44dc8533a939bfb4ff73439",
+   "sha256": "d16a2cf0dc61595ea57064cd78120076f3ebd6f32d7344a14215be202e6660e4"
+  },
+  "assets/video/debate-2026-10-28-greatest-season-thumb-9x16.png": {
+   "bytes": 630094,
+   "md5": "7a6e0bbc2082135e41455e09f33eb1ba",
+   "sha256": "7b93697e1af4042c93e03ad95765058e617fc0e875f7aa2264e162c181a62bc4"
+  },
+  "data/tiktok-debate-2026-10-28-greatest-season.json": {
+   "bytes": 768,
+   "md5": "9228ac56e988522c1c17cc4cbed6a8d5",
+   "sha256": "712b9746f224b568ea9cc91588a33f088975ff97f94bed1f0554ad3f6fc258df"
+  },
+  "data/youtube-debate-2026-10-28-greatest-season.json": {
+   "bytes": 2191,
+   "md5": "634cf6dba1406698dcbcb1f758b3e605",
+   "sha256": "fb74bdd787be7d989174f37c29bf3d065191a5345cadb4572a0bf92cfb87cdf8"
+  },
+  "assets/qc/debate-contact.jpg": {
+   "bytes": 171850,
+   "md5": "70e24bd7b1e639fd314326e458ae0a54",
+   "sha256": "6236146cc801e85e42b695239670ec92f83b70bf008eded8974ca369a9b23960"
+  }
+ },
+ "seconds": 38.27,
+ "beats": 8,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "38.266667"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "38.250000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/debate-2026-10-28-greatest-season-voiced.mp4",
+  "thumb16": "build/pack/debate-2026-10-28-greatest-season-thumb-16x9.png",
+  "thumb9": "build/pack/debate-2026-10-28-greatest-season-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 2079957,
+  "md5": "c5ffc81c6d1fc550eee44a9868a60827",
+  "sha256": "f18390f827d32c7de205564ffe32a5e06bcece4461827e12ab99889e92fe95ad"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 37.25
+ },
+ "voice_log_tail": "b1: voice 3.11s → beat 3.52s\nb2: voice 2.79s → beat 3.33s\nb3: voice 5.14s → beat 5.66s\nb4: voice 4.14s → beat 4.5s\nb5: voice 3.61s → beat 4.06s\nb6: voice 3.37s → beat 3.78s\nb7: voice 5.01s → beat 5.34s\nb8: voice 6.59s → beat 7.06s\nPLAN OK build/beats.voiced.json — 8 beats, 37.25s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/debate-2026-10-28-greatest-season.mp4 — 37.27s, 8 beats, silent (voice is mixed on by nd_voice.py); stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: debate-2026-10-28-greatest-season-thumb-9x16.png, debate-2026-10-28-greatest-season-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/debate-2026-10-28-greatest-season-voiced.mp4 — 38.27s, AAC 48 kHz stereo, I: -16.3 LUFS Peak: -3.9 dBFS\n"
+}
