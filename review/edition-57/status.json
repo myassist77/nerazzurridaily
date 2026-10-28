@@ -1,0 +1,159 @@
+{
+ "n": 57,
+ "built_at_utc": "2026-10-28T09:55:53+00:00",
+ "run_id": "40667971646",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/40667971646",
+ "passed": true,
+ "steps": {
+  "mast": "success",
+  "controls": "success",
+  "checks": "success"
+ },
+ "files_md5": {
+  "p/edition-57/index.html": "1b43b52cd5f1a240f7007533f12bba8d",
+  "assets/mast/edition-57.png": "779abde0ad4e12ce1546195125f10f35",
+  "data/edition-57.json": "1687231cfd5e3300e58bd40a47cbb05f",
+  "index.html": "9b893247e7b58b43f239a2733740e38d",
+  "subscribe/index.html": "6f375a7ab42616084ea5900c3238d635",
+  "fixtures/index.html": "84ab1b5a0fbb388801334a83f5af071f",
+  "feed.xml": "21db793489575a3dc6503732856f6de8",
+  "sitemap.xml": "edc1a95c8e4f23a9e4d3d147b55749b3"
+ },
+ "title": "Inter are at Venezia today, top of Serie A",
+ "date": "2026-10-28",
+ "masthead": {
+  "bytes": 6236,
+  "lines": 2,
+  "colors": 7,
+  "fonts": {
+   "anton": true,
+   "mono": true
+  }
+ },
+ "controls": {
+  "n": 57,
+  "fails": [],
+  "warns": [],
+  "page-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 700,
+    "h": 382.8125,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "page-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "email-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 644,
+    "h": 352.1875,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  },
+  "email-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  }
+ },
+ "checks": {
+  "fails": [],
+  "warns": [],
+  "info": {
+   "prose_words": 490,
+   "read_seconds": 124,
+   "avg_sentence_words": 19.6,
+   "flesch_reading_ease": 56.5,
+   "edition_from_masthead": null,
+   "dates": {
+    "today": "October 28"
+   },
+   "external_to_fetch": [
+    "https://worldsoccertalk.com/champions-league-tv-schedule/",
+    "https://worldsoccertalk.com/serie-a-tv-schedule/",
+    "https://www.cbssports.com/soccer/serie-a/standings/",
+    "https://www.fcinternews.it/focus/appiano-corsa-campo-scarpe-ginnastica-lautaro-1021769",
+    "https://www.fcinternews.it/focus/i-sky-i-venezia-inter-bastoni-centrale-stankovic-probabile-formazione-1021800",
+    "https://www.fcinternews.it/in-primo-piano/ipreviewi-venezia-inter-chivu-fedele-alla-linea-cambia-ma-non-troppo-1021776",
+    "https://www.inter.it/en/matches",
+    "https://www.inter.it/en/news/champions-league-women-eve-of-ol-lyonnes-inter-training-guide",
+    "https://www.inter.it/en/news/inter-fiorentina-serie-a-2026-27",
+    "https://www.inter.it/en/news/venezia-inter-opposition-focus-serie-a-2026-27",
+    "https://www.inter.it/it/notizie/allenamento-inter-27-ottobre-2026",
+    "https://www.inter.it/it/notizie/guida-venezia-inter-serie-a-2026-27",
+    "https://www.inter.it/it/notizie/inter-u23-scafatese-serie-c-2026-27",
+    "https://www.inter.it/it/notizie/sassarini-bugeja-intervista-pre-ol-lyonnes-inter-women-champions-league-2026-27",
+    "https://www.tiktok.com/@nerazzurridaily",
+    "https://www.youtube.com/@nerazzurridaily"
+   ],
+   "site_links": [
+    "https://www.nerazzurridaily.com/go/email/?ed=57",
+    "https://www.nerazzurridaily.com/go/email/?ed=57&to=/subscribe/",
+    "https://www.nerazzurridaily.com/go/forward/?ed=57",
+    "https://www.nerazzurridaily.com/p/edition-57/"
+   ]
+  }
+ },
+ "email": {
+  "md5": "fb747fcb7f59da17ef6525d9f82cf840",
+  "chars": 25880,
+  "bytes": 25975
+ }
+}
