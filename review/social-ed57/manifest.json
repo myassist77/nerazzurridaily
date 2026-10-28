@@ -1,0 +1,122 @@
+{
+ "edition": 57,
+ "date": "2026-10-28",
+ "slug": "rest-calhanoglu-venezia",
+ "job": "ed57",
+ "kind": "daily",
+ "hook": "Inter should rest Calhanoglu at Venezia.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-57/",
+ "edition_json_sha256": "ef5ed5cf6724b15eac44488df8bccf2519517da67228cff240551ca1f1cdb2d8",
+ "brevo": {
+  "campaign_id": 46,
+  "status": "sent",
+  "sent_at_et": "2026-10-28T06:02:03-04:00"
+ },
+ "local_render": {
+  "filename": "ND-2026-10-28-ed57-rest-calhanoglu-venezia-voiced.mp4",
+  "seconds": 31.45,
+  "beats": 6,
+  "bytes": 1324165,
+  "md5": "4602d98fc9cabd5f78d366169044da62",
+  "sha256": "e10ef147ad581fcc69d5a797b01724019183e1fd4cbf4275aec437dddc79082f"
+ },
+ "audio": {
+  "note": "voiceover only — no music",
+  "codec": "aac",
+  "sample_rate": "48000",
+  "channels": 2,
+  "duration": 31.45,
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 30.45
+  }
+ },
+ "stories": [
+  {
+   "register": "REPORTED",
+   "headline": "Sky Sport Italia has Stankovic starting and Calhanoglu rested",
+   "source": "Sky Sport Italia via FCInterNews",
+   "date": "Oct 27"
+  },
+  {
+   "register": "CONFIRMED",
+   "headline": "Inter go to the Penzo with top spot to protect — 22 points from eight, level with Lazio",
+   "source": "Inter.it",
+   "date": "Oct 28"
+  }
+ ],
+ "youtube_title": "Inter should rest Calhanoglu at Venezia | Sky has Stankovic starting | Edition No. 57",
+ "pinned_comment_question": "Who has to start in midfield at the Penzo today — Stankovic or Calhanoglu?",
+ "next_fixture": "AC Milan (away) · Sat, Oct 31 · 3:45 PM ET · 20:45 CET · Paramount+ / Telemundo",
+ "thumbnail_style": "number",
+ "optional_drafts": {
+  "reddit": false,
+  "facebook": true
+ },
+ "checks": {
+  "live_page": "not run — the WebFetch approval was not answered on this unattended run",
+  "brevo": "sent 6:02 AM ET",
+  "edition_ledger": "review/edition-57/ledger.json absent at 6:49 AM ET"
+ },
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/40676447601",
+  "built_at_utc": "2026-10-28T11:01:31+00:00",
+  "seconds": 31.45,
+  "beats": 6,
+  "files": {
+   "assets/video/ed57.mp4": {
+    "bytes": 1306045,
+    "md5": "4d8462b1d710f36a336e2d95b934f1b5",
+    "sha256": "ba0caffccb717d2a661213236408760b120de0d4afb6af476d58f3e8281d6d8f"
+   },
+   "assets/video/ed57-thumb.png": {
+    "bytes": 59150,
+    "md5": "f3b551d2075a126023986cc721a54660",
+    "sha256": "ca2d8791334361ba02e040b4fd3d3ae132d3f7c106277756f6247057c5dddc4d"
+   },
+   "assets/video/ed57-thumb-9x16.png": {
+    "bytes": 82038,
+    "md5": "e371f279b65d1c972d9437ce82281c6b",
+    "sha256": "979b2e1b092e55f3356c238ed364f6dd45ce300c0e085d00bd05d4306d5b8737"
+   },
+   "data/tiktok-ed57.json": {
+    "bytes": 705,
+    "md5": "226bfeb4ab0921837d4a4dc76089836f",
+    "sha256": "a4f0e0de1d8fa901d964eeff2921cad2f042e32646f1cef55673abfa4974cfaf"
+   },
+   "data/youtube-ed57.json": {
+    "bytes": 1511,
+    "md5": "aee5d3b3a5c3d14d8bfd4375102e0975",
+    "sha256": "cce1e77eeb6ba4c0b5156ece796aaa8e6883fde84cabd5e8e265c3dbcc0fc0f7"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 122471,
+    "md5": "8da4caf6d8b567cc34107b8bb30318c6",
+    "sha256": "85993d040ea0663c0174399b0a9f58643ba40824d5dfcc9b62a0a26f62179c6f"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 82038,
+    "md5": "e371f279b65d1c972d9437ce82281c6b",
+    "sha256": "979b2e1b092e55f3356c238ed364f6dd45ce300c0e085d00bd05d4306d5b8737"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 59150,
+    "md5": "f3b551d2075a126023986cc721a54660",
+    "sha256": "ca2d8791334361ba02e040b4fd3d3ae132d3f7c106277756f6247057c5dddc4d"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 30.45
+  },
+  "passed": true
+ }
+}

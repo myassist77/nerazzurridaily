@@ -1,0 +1,96 @@
+{
+ "job": "ed57",
+ "kind": "daily",
+ "name": "ND-2026-10-28-ed57-rest-calhanoglu-venezia",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-10-28T11:01:31+00:00",
+ "run_id": "40676447601",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/40676447601",
+ "files": {
+  "assets/video/ed57.mp4": {
+   "bytes": 1306045,
+   "md5": "4d8462b1d710f36a336e2d95b934f1b5",
+   "sha256": "ba0caffccb717d2a661213236408760b120de0d4afb6af476d58f3e8281d6d8f"
+  },
+  "assets/video/ed57-thumb.png": {
+   "bytes": 59150,
+   "md5": "f3b551d2075a126023986cc721a54660",
+   "sha256": "ca2d8791334361ba02e040b4fd3d3ae132d3f7c106277756f6247057c5dddc4d"
+  },
+  "assets/video/ed57-thumb-9x16.png": {
+   "bytes": 82038,
+   "md5": "e371f279b65d1c972d9437ce82281c6b",
+   "sha256": "979b2e1b092e55f3356c238ed364f6dd45ce300c0e085d00bd05d4306d5b8737"
+  },
+  "data/tiktok-ed57.json": {
+   "bytes": 705,
+   "md5": "226bfeb4ab0921837d4a4dc76089836f",
+   "sha256": "a4f0e0de1d8fa901d964eeff2921cad2f042e32646f1cef55673abfa4974cfaf"
+  },
+  "data/youtube-ed57.json": {
+   "bytes": 1511,
+   "md5": "aee5d3b3a5c3d14d8bfd4375102e0975",
+   "sha256": "cce1e77eeb6ba4c0b5156ece796aaa8e6883fde84cabd5e8e265c3dbcc0fc0f7"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 122471,
+   "md5": "8da4caf6d8b567cc34107b8bb30318c6",
+   "sha256": "85993d040ea0663c0174399b0a9f58643ba40824d5dfcc9b62a0a26f62179c6f"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 82038,
+   "md5": "e371f279b65d1c972d9437ce82281c6b",
+   "sha256": "979b2e1b092e55f3356c238ed364f6dd45ce300c0e085d00bd05d4306d5b8737"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 59150,
+   "md5": "f3b551d2075a126023986cc721a54660",
+   "sha256": "ca2d8791334361ba02e040b4fd3d3ae132d3f7c106277756f6247057c5dddc4d"
+  }
+ },
+ "seconds": 31.45,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "31.433333"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "31.450000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-10-28-ed57-rest-calhanoglu-venezia-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-10-28-ed57-rest-calhanoglu-venezia-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-10-28-ed57-rest-calhanoglu-venezia-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 832448,
+  "md5": "fbfe379e7f452fc0dd294fa240f61146",
+  "sha256": "cd97361a944ad11bd7ab7dce005ab130dbd395f59c5770388b41709b3507dcb1"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 30.45
+ },
+ "voice_log_tail": "stance: voice 5.29s → beat 5.76s\nclaim: voice 6.31s → beat 6.83s\ntake: voice 2.86s → beat 3.35s\nturn: voice 3.99s → beat 4.44s\nfixture: voice 3.71s → beat 3.99s\nend: voice 5.61s → beat 6.08s\nPLAN OK build/beats.voiced.json — 6 beats, 30.45s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-10-28-ed57-rest-calhanoglu-venezia.mp4 — 30.43s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-10-28-ed57-rest-calhanoglu-venezia-thumb-9x16.png, ND-2026-10-28-ed57-rest-calhanoglu-venezia-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-10-28-ed57-rest-calhanoglu-venezia-voiced.mp4 — 31.45s, AAC 48 kHz stereo, I: -16.2 LUFS Peak: -4.0 dBFS\n"
+}

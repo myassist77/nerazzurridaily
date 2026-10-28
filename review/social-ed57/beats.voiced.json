@@ -1,0 +1,113 @@
+{
+ "name": "ND-2026-10-28-ed57-rest-calhanoglu-venezia",
+ "beats": [
+  {
+   "id": "stance",
+   "kind": "cover",
+   "eyebrow": "EDITION NO. 57 · OCTOBER 28",
+   "lines": [
+    "INTER SHOULD REST",
+    "CALHANOGLU AT VENEZIA"
+   ],
+   "duration": 5.76,
+   "vo": "[Inter] should rest [Hakan Calhanoglu] at [Venezia]. The derby is the game that matters."
+  },
+  {
+   "id": "claim",
+   "kind": "item",
+   "register": "REPORTED",
+   "kicker": "REPORTED · SKY SPORT ITALIA · OCT 27",
+   "lines": [
+    "STANKOVIC STARTS,",
+    "CALHANOGLU RESTS"
+   ],
+   "sub": [
+    "SKY'S PROJECTED LINEUP",
+    "BONNY AND ESPOSITO UP FRONT"
+   ],
+   "duration": 6.83,
+   "vo": "[Sky Sport Italia] has [Aleksandar Stankovic] starting in midfield, and [Hakan Calhanoglu] rested."
+  },
+  {
+   "id": "take",
+   "kind": "item",
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "EIGHT GAMES IN,",
+    "THE SQUAD IS",
+    "DEEP ENOUGH"
+   ],
+   "duration": 3.35,
+   "vo": "Eight games in, the squad is deep enough. Trust it."
+  },
+  {
+   "id": "turn",
+   "kind": "item",
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · OCT 28",
+   "lines": [
+    "22 POINTS FROM EIGHT.",
+    "LEVEL WITH LAZIO."
+   ],
+   "sub": [
+    "TOP ON GOAL DIFFERENCE",
+    "VENEZIA ARE BOTTOM ON THREE"
+   ],
+   "duration": 4.44,
+   "vo": "Here is the catch. [Inter] lead [Lazio] only on goal difference."
+  },
+  {
+   "id": "fixture",
+   "kind": "fixture",
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP · SERIE A · MATCHDAY 10",
+   "lines": [
+    "AC MILAN",
+    "AWAY"
+   ],
+   "sub_top": "SAT, OCT 31 · SERIE A",
+   "big": "3:45 PM ET",
+   "sub": [
+    "20:45 CET IN MILAN",
+    "US TV: PARAMOUNT+ · TELEMUNDO"
+   ],
+   "duration": 3.99,
+   "vo": "Then the derby at [AC Milan], away, Saturday afternoon."
+  },
+  {
+   "id": "end",
+   "kind": "end",
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "duration": 6.08,
+   "vo": "Who has to start at the [Penzo]? Tell me, then subscribe at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "22",
+   "lines_a": [
+    "POINTS FROM",
+    "EIGHT GAMES"
+   ],
+   "lines_b": [
+    "TOP OF SERIE A"
+   ],
+   "pill": "SKY: CALHANOGLU RESTED",
+   "pill_register": "REPORTED"
+  }
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 30.45
+ }
+}
