@@ -1,0 +1,118 @@
+{
+ "n": 58,
+ "date_iso": "2026-10-29",
+ "slug": "top-and-lucky",
+ "beats": [
+  {
+   "id": "stance",
+   "kind": "cover",
+   "duration": 4.12,
+   "eyebrow": "EDITION NO. 58 · OCTOBER 29",
+   "lines": [
+    "INTER ARE TOP.",
+    "THEIR COACH",
+    "SAID LUCKY."
+   ],
+   "vo": "[Inter] are top of [Serie A]. Their own coach called it luck."
+  },
+  {
+   "id": "claim",
+   "kind": "quote",
+   "duration": 5.93,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · SKY SPORT ITALIA · OCT 28",
+   "lines": [
+    "Siamo stati fortunati oggi nel portarla a casa"
+   ],
+   "sub": [
+    "— WE WERE LUCKY TODAY TO BRING IT HOME",
+    "CHIVU · TOP WITH 25 POINTS FROM NINE"
+   ],
+   "vo": "[Chivu] told [Sky Sport Italia] they were lucky to bring it home. Twenty-five points from nine."
+  },
+  {
+   "id": "take",
+   "kind": "item",
+   "duration": 4.87,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "WINNING UGLY",
+    "IN OCTOBER IS",
+    "STILL WINNING"
+   ],
+   "sub": [
+    "THE TABLE DOES NOT ASK HOW"
+   ],
+   "vo": "Winning ugly in October is still winning. The table does not ask how."
+  },
+  {
+   "id": "turn",
+   "kind": "item",
+   "duration": 7.11,
+   "register": "REPORTED",
+   "kicker": "REPORTED · GAZZETTA DELLO SPORT · OCT 27",
+   "lines": [
+    "DIMARCO'S",
+    "NEW DEAL",
+    "HASN'T MOVED"
+   ],
+   "sub": [
+    "NO TALKS SINCE SEPTEMBER · DEAL TO 2027"
+   ],
+   "vo": "[La Gazzetta dello Sport] says talks over [Federico Dimarco]'s new deal have not moved since September."
+  },
+  {
+   "id": "fixture",
+   "kind": "fixture",
+   "duration": 3.35,
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP · SERIE A",
+   "lines": [
+    "AC MILAN",
+    "AWAY"
+   ],
+   "sub_top": "SAT, OCT 31 · SERIE A · MATCHDAY 10",
+   "big": "3:45 PM ET",
+   "sub": [
+    "20:45 CET · PARAMOUNT+ · TELEMUNDO"
+   ],
+   "vo": "The derby is Saturday at three forty-five Eastern."
+  },
+  {
+   "id": "end",
+   "kind": "end",
+   "duration": 6.0,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Luck or control at [Venezia]? Tell me in the comments. At [Nerazzurri] Daily dot com."
+  }
+ ],
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · SERIE A",
+   "big": "25",
+   "lines_a": [
+    "POINTS FROM",
+    "NINE GAMES"
+   ],
+   "lines_b": [
+    "TOP OF",
+    "THE TABLE"
+   ],
+   "pill": "REPORTED: DIMARCO DEAL STUCK",
+   "pill_register": "REPORTED"
+  }
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 31.38
+ }
+}

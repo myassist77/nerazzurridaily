@@ -1,0 +1,96 @@
+{
+ "job": "ed58",
+ "kind": "daily",
+ "name": "ND-2026-10-29-ed58-top-and-lucky",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-10-29T11:03:07+00:00",
+ "run_id": "40861960821",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/40861960821",
+ "files": {
+  "assets/video/ed58.mp4": {
+   "bytes": 1364053,
+   "md5": "5f1cc0d1ed7624171a32176f8f932c52",
+   "sha256": "06fd2cad56d7934fd94640b54fe8534dedef3d414149c454b43598065fb8e230"
+  },
+  "assets/video/ed58-thumb.png": {
+   "bytes": 58874,
+   "md5": "25566eab79d0ecd25b2972b3357ddd5a",
+   "sha256": "a2e5a90cdb258faf385fec8612165959d7ab67e88636247defe3b8bc1758384f"
+  },
+  "assets/video/ed58-thumb-9x16.png": {
+   "bytes": 80909,
+   "md5": "06e788f37a75ebc2d7080b58e48e764f",
+   "sha256": "1709f2cf5996e68746fa91cc25b177567d44df195ba4f3da89a490f459181296"
+  },
+  "data/tiktok-ed58.json": {
+   "bytes": 530,
+   "md5": "7ea25d9c322f0cd30258ff31aebc61e1",
+   "sha256": "a00fbf014e5e58c1460d59246aa41ad847164e3f09e538fdbca31cb34fb75a29"
+  },
+  "data/youtube-ed58.json": {
+   "bytes": 1315,
+   "md5": "cac3c7691e56750eaeaea2a871cfce9b",
+   "sha256": "f08810377e567555933be879ee2e0d43cd5ad183950f27fcc8d1b5de79e41207"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 120569,
+   "md5": "db7e7b29b03e17151ed35d8cdb3f98d4",
+   "sha256": "a2083f10ae8c4f05f9f92c4c4348c0921a57258369a8515ab78cbb9111903209"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 80909,
+   "md5": "06e788f37a75ebc2d7080b58e48e764f",
+   "sha256": "1709f2cf5996e68746fa91cc25b177567d44df195ba4f3da89a490f459181296"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 58874,
+   "md5": "25566eab79d0ecd25b2972b3357ddd5a",
+   "sha256": "a2e5a90cdb258faf385fec8612165959d7ab67e88636247defe3b8bc1758384f"
+  }
+ },
+ "seconds": 32.38,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "32.366667"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "32.380000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-10-29-ed58-top-and-lucky-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-10-29-ed58-top-and-lucky-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-10-29-ed58-top-and-lucky-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 876391,
+  "md5": "e40b7ce6a132385265b4164a0562e188",
+  "sha256": "a43857d572fc979bfd90aad02676951649f42284b64361712ac5702791ef17d1"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 31.38
+ },
+ "voice_log_tail": "stance: voice 3.75s → beat 4.12s\nclaim: voice 5.50s → beat 5.93s\ntake: voice 4.37s → beat 4.87s\nturn: voice 6.66s → beat 7.11s\nfixture: voice 2.84s → beat 3.35s\nend: voice 5.50s → beat 6.0s\nPLAN OK build/beats.voiced.json — 6 beats, 31.38s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-10-29-ed58-top-and-lucky.mp4 — 31.37s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-10-29-ed58-top-and-lucky-thumb-9x16.png, ND-2026-10-29-ed58-top-and-lucky-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-10-29-ed58-top-and-lucky-voiced.mp4 — 32.38s, AAC 48 kHz stereo, I: -16.2 LUFS Peak: -3.8 dBFS\n"
+}
