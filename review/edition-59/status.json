@@ -1,0 +1,157 @@
+{
+ "n": 59,
+ "built_at_utc": "2026-10-30T09:52:34+00:00",
+ "run_id": "41036482657",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/41036482657",
+ "passed": true,
+ "steps": {
+  "mast": "success",
+  "controls": "success",
+  "checks": "success"
+ },
+ "files_md5": {
+  "p/edition-59/index.html": "a84926644c8da49963f48cbd37455f53",
+  "assets/mast/edition-59.png": "fa982cc620af0c94510f492b229c35be",
+  "data/edition-59.json": "402ef127e2ed6bd18bee687afd887acd",
+  "index.html": "0bb64f167088775496356334adb031fe",
+  "subscribe/index.html": "b0cd020769ba2a303ed311983c674991",
+  "fixtures/index.html": "4bb6820e103afa6368fda3091b48812f",
+  "feed.xml": "392c07e10ed326c3ea45c1dbdedc17dc",
+  "sitemap.xml": "1727b4f880de514630eacf62e18b41c8"
+ },
+ "title": "Inter and Milan unveil a new stadium, derby on Saturday",
+ "date": "2026-10-30",
+ "masthead": {
+  "bytes": 6177,
+  "lines": 2,
+  "colors": 7,
+  "fonts": {
+   "anton": true,
+   "mono": true
+  }
+ },
+ "controls": {
+  "n": 59,
+  "fails": [],
+  "warns": [],
+  "page-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 700,
+    "h": 382.8125,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "page-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "email-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 644,
+    "h": 352.1875,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  },
+  "email-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  }
+ },
+ "checks": {
+  "fails": [],
+  "warns": [],
+  "info": {
+   "prose_words": 496,
+   "read_seconds": 125,
+   "avg_sentence_words": 16.0,
+   "flesch_reading_ease": 57.2,
+   "edition_from_masthead": null,
+   "dates": {
+    "today": "October 30"
+   },
+   "external_to_fetch": [
+    "https://worldsoccertalk.com/serie-a-tv-schedule/",
+    "https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/10/30-152253234/le_scelte_di_chivu_per_il_derby_akanji_in_difesa_e_in_porta_ci_va",
+    "https://www.fcinternews.it/focus/generali-stadium-cifre-record-650-25-anni-juve-1021969",
+    "https://www.fcinternews.it/focus/i-gds-i-milan-inter-certezze-rebus-difesa-probabili-scelte-1021974",
+    "https://www.inter.it/en/matches",
+    "https://www.inter.it/en/news/history-derby-numbers-lowdown-ac-milan-inter-2026-27",
+    "https://www.inter.it/en/news/inter-ac-milan-new-stadium-project-unveiled-at-castello-sforzesco",
+    "https://www.inter.it/en/news/inter-milan-generali-stadium-new-milano-stadium",
+    "https://www.inter.it/en/news/milan-inter-opposition-analysis-serie-a-2026-27",
+    "https://www.inter.it/it/notizie/inter-women-lazio-guida-serie-a-26-27",
+    "https://www.inter.it/it/notizie/milan-inter-dove-vederla-tv-serie-a-2026-27",
+    "https://www.tiktok.com/@nerazzurridaily",
+    "https://www.uefa.com/uefachampionsleague/clubs/50138--inter/squad/",
+    "https://www.youtube.com/@nerazzurridaily"
+   ],
+   "site_links": [
+    "https://www.nerazzurridaily.com/go/email/?ed=59",
+    "https://www.nerazzurridaily.com/go/email/?ed=59&to=/subscribe/",
+    "https://www.nerazzurridaily.com/go/forward/?ed=59",
+    "https://www.nerazzurridaily.com/p/edition-59/"
+   ]
+  }
+ },
+ "email": {
+  "md5": "095f9b7331f1e2216d1144e491f3d612",
+  "chars": 25286,
+  "bytes": 25385
+ }
+}
