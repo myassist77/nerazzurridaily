@@ -1,0 +1,116 @@
+{
+ "name": "ND-2026-10-30-ed59-derby-over-stadium",
+ "beats": [
+  {
+   "id": "stance",
+   "kind": "cover",
+   "duration": 5.38,
+   "eyebrow": "EDITION NO. 59 · OCTOBER 30",
+   "lines": [
+    "INTER'S DERBY",
+    "MATTERS MORE",
+    "THAN A STADIUM",
+    "FOR 2031"
+   ],
+   "vo": "[Inter] have a derby tomorrow. The new stadium can wait until twenty thirty-one."
+  },
+  {
+   "id": "claim",
+   "kind": "item",
+   "duration": 6.94,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · OCT 29",
+   "lines": [
+    "THE GENERALI",
+    "STADIUM",
+    "71,500 SEATS"
+   ],
+   "sub": [
+    "FIRST MATCH 2031/32 · BUILD STARTS 2028",
+    "FOSTER + PARTNERS AND MANICA"
+   ],
+   "vo": "[Inter] say the [Generali] Stadium holds seventy-one thousand five hundred, first match twenty thirty-one."
+  },
+  {
+   "id": "take",
+   "kind": "item",
+   "duration": 5.27,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "LOVELY BOWL.",
+    "SHAME IT'S",
+    "NOT TOMORROW."
+   ],
+   "vo": "A bowl for twenty thirty-one, a derby for tomorrow. We know which one matters."
+  },
+  {
+   "id": "turn",
+   "kind": "item",
+   "duration": 8.3,
+   "register": "REPORTED",
+   "kicker": "REPORTED · CORRIERE DELLO SPORT · OCT 30",
+   "lines": [
+    "LAUTARO OUT",
+    "AND FOUR",
+    "MORE WITH HIM"
+   ],
+   "sub": [
+    "PAVARD · STONES · JONES · LUIS HENRIQUE",
+    "INTER HAVE PUBLISHED NO TEAM NEWS"
+   ],
+   "vo": "[Corriere dello Sport] rules out five [Inter] players, captain [Lautaro Martínez] among them. [Inter] have published nothing."
+  },
+  {
+   "id": "fixture",
+   "kind": "fixture",
+   "duration": 4.97,
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP · SERIE A MATCHDAY 10",
+   "lines": [
+    "AC MILAN",
+    "AWAY"
+   ],
+   "sub_top": "SAT, OCT 31 · SAN SIRO",
+   "big": "3:45 PM ET",
+   "sub": [
+    "20:45 CET · PARAMOUNT+ · TELEMUNDO"
+   ],
+   "vo": "[Milan] host [Inter] at [San Siro], three forty-five Eastern tomorrow."
+  },
+  {
+   "id": "end",
+   "kind": "end",
+   "duration": 5.8,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Who partners [Thuram] in the derby? Tell us below, at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "REPORTED",
+   "kicker": "REPORTED · CORRIERE DELLO SPORT",
+   "big": "5",
+   "lines_a": [
+    "INTER PLAYERS",
+    "THE PAPERS RULE OUT"
+   ],
+   "lines_b": [
+    "LAUTARO AMONG THEM"
+   ],
+   "pill": "GENERALI STADIUM UNVEILED",
+   "pill_register": "CONFIRMED"
+  }
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 36.66
+ }
+}

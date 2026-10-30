@@ -1,0 +1,129 @@
+{
+ "edition": 59,
+ "date": "2026-10-30",
+ "slug": "derby-over-stadium",
+ "hook": "Inter's derby matters more than a stadium for 2031.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-59/",
+ "edition_json_sha256": "f2bf52f760ed253fc7a701e74e6d73e855742feaa66eb2c73f466b63758783e6",
+ "brevo": {
+  "campaign_id": 48,
+  "name": "Nerazzurri Daily No. 59 — Inter and Milan unveil a new stadium, derby on Saturday",
+  "status": "sent",
+  "sent_date": "2026-10-30T05:56:29-04:00"
+ },
+ "local_render": {
+  "file": "ND-2026-10-30-ed59-derby-over-stadium-voiced.mp4",
+  "seconds": 37.66,
+  "beats": 6,
+  "bytes": 1456027,
+  "md5": "56621fa96261a10741a3158a5180e878",
+  "sha256": "439359345867028c789af004650b1d62425e8d249c405f371cfed4336f20398e"
+ },
+ "audio": {
+  "note": "voiceover only — no music",
+  "codec": "aac",
+  "sample_rate": "48000",
+  "channels": 2,
+  "duration": 37.66,
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 36.66
+  }
+ },
+ "stories": [
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Oct 29",
+   "what": "Inter and AC Milan unveiled the Generali Stadium: 71,500 seats, build from 2028, first match targeted 2031/32"
+  },
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it / World Soccer Talk",
+   "date": "Oct 30",
+   "what": "AC Milan host Inter at San Siro, Sat Oct 31, 3:45 PM ET / 20:45 CET, Paramount+ and Telemundo"
+  },
+  {
+   "register": "REPORTED",
+   "source": "Corriere dello Sport",
+   "date": "Oct 30",
+   "what": "Lautaro Martinez, Pavard, Stones, Jones and Luis Henrique ruled out of the derby; Inter have published no team news"
+  },
+  {
+   "register": "REPORTED",
+   "source": "Calcio e Finanza via FCInterNews",
+   "date": "Oct 29",
+   "what": "Generali naming rights put at EUR 650 million over 25 years"
+  }
+ ],
+ "youtube_title": "Inter's Derby Matters More Than a 2031 Stadium | Lautaro Among 5 Papers Rule Out",
+ "pinned_comment_question": "Who partners Thuram up front at San Siro if Lautaro really is out?",
+ "next_fixture": "AC Milan (away) — Sat, Oct 31 · Serie A MD10 · 3:45 PM ET · 20:45 CET · Paramount+ / Telemundo",
+ "optional_drafts": {
+  "reddit": false,
+  "facebook": true
+ },
+ "thumbnail_style": "number",
+ "sunday_scorecard": false,
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/41045304516",
+  "built_at_utc": "2026-10-30T11:06:30+00:00",
+  "seconds": 37.66,
+  "beats": 6,
+  "files": {
+   "assets/video/ed59.mp4": {
+    "bytes": 1457154,
+    "md5": "0ac9391cbf9e2a0f8f576f2f1b9649d7",
+    "sha256": "81bbf214ce92c14710185c54888059e922ab77cad0563d49207501417f0f6e53"
+   },
+   "assets/video/ed59-thumb.png": {
+    "bytes": 50636,
+    "md5": "b539c561708e296451a571d7f316778c",
+    "sha256": "8bbbcb5d9f29a18286e5227458113182b59de00c512e36989adfebcffaa8ddea"
+   },
+   "assets/video/ed59-thumb-9x16.png": {
+    "bytes": 72680,
+    "md5": "e4c8aab01b95f57d15327fff1c05eaf9",
+    "sha256": "f515bfa4f3347bc0eea887967b07a691d53875cc436c49b772ce9c84f5965d5c"
+   },
+   "data/tiktok-ed59.json": {
+    "bytes": 599,
+    "md5": "f51ca659259ff2d87378a45620d81e2a",
+    "sha256": "95c2b577f3b8b0a4484116980a323e9816f03ccb4013f7c89af40053929349dd"
+   },
+   "data/youtube-ed59.json": {
+    "bytes": 1644,
+    "md5": "da2cbfd3e785dc2a5eeba5eb07355384",
+    "sha256": "100b848c556f0ffda39484870c2aa81df4857be561b122434abc65005e30aeac"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 133878,
+    "md5": "d87dd425a9727350258af59b9d1abf23",
+    "sha256": "08559d45a5ea5d573ce583e6fa5ee8fda2f312089d9dc198b96568867dc6649f"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 72680,
+    "md5": "e4c8aab01b95f57d15327fff1c05eaf9",
+    "sha256": "f515bfa4f3347bc0eea887967b07a691d53875cc436c49b772ce9c84f5965d5c"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 50636,
+    "md5": "b539c561708e296451a571d7f316778c",
+    "sha256": "8bbbcb5d9f29a18286e5227458113182b59de00c512e36989adfebcffaa8ddea"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 36.66
+  },
+  "passed": true
+ }
+}

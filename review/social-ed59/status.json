@@ -1,0 +1,96 @@
+{
+ "job": "ed59",
+ "kind": "daily",
+ "name": "ND-2026-10-30-ed59-derby-over-stadium",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-10-30T11:06:30+00:00",
+ "run_id": "41045304516",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/41045304516",
+ "files": {
+  "assets/video/ed59.mp4": {
+   "bytes": 1457154,
+   "md5": "0ac9391cbf9e2a0f8f576f2f1b9649d7",
+   "sha256": "81bbf214ce92c14710185c54888059e922ab77cad0563d49207501417f0f6e53"
+  },
+  "assets/video/ed59-thumb.png": {
+   "bytes": 50636,
+   "md5": "b539c561708e296451a571d7f316778c",
+   "sha256": "8bbbcb5d9f29a18286e5227458113182b59de00c512e36989adfebcffaa8ddea"
+  },
+  "assets/video/ed59-thumb-9x16.png": {
+   "bytes": 72680,
+   "md5": "e4c8aab01b95f57d15327fff1c05eaf9",
+   "sha256": "f515bfa4f3347bc0eea887967b07a691d53875cc436c49b772ce9c84f5965d5c"
+  },
+  "data/tiktok-ed59.json": {
+   "bytes": 599,
+   "md5": "f51ca659259ff2d87378a45620d81e2a",
+   "sha256": "95c2b577f3b8b0a4484116980a323e9816f03ccb4013f7c89af40053929349dd"
+  },
+  "data/youtube-ed59.json": {
+   "bytes": 1644,
+   "md5": "da2cbfd3e785dc2a5eeba5eb07355384",
+   "sha256": "100b848c556f0ffda39484870c2aa81df4857be561b122434abc65005e30aeac"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 133878,
+   "md5": "d87dd425a9727350258af59b9d1abf23",
+   "sha256": "08559d45a5ea5d573ce583e6fa5ee8fda2f312089d9dc198b96568867dc6649f"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 72680,
+   "md5": "e4c8aab01b95f57d15327fff1c05eaf9",
+   "sha256": "f515bfa4f3347bc0eea887967b07a691d53875cc436c49b772ce9c84f5965d5c"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 50636,
+   "md5": "b539c561708e296451a571d7f316778c",
+   "sha256": "8bbbcb5d9f29a18286e5227458113182b59de00c512e36989adfebcffaa8ddea"
+  }
+ },
+ "seconds": 37.66,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "37.633333"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "37.660000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-10-30-ed59-derby-over-stadium-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-10-30-ed59-derby-over-stadium-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-10-30-ed59-derby-over-stadium-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 894923,
+  "md5": "fec34967fca67e9c23b43ba02431d3f4",
+  "sha256": "19554ea145593e145a11f85fb0d924765553db4ab15a6d43285781311c78a10d"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 36.66
+ },
+ "voice_log_tail": "stance: voice 4.93s → beat 5.38s\nclaim: voice 6.44s → beat 6.94s\ntake: voice 4.89s → beat 5.27s\nturn: voice 7.85s → beat 8.3s\nfixture: voice 4.54s → beat 4.97s\nend: voice 5.35s → beat 5.8s\nPLAN OK build/beats.voiced.json — 6 beats, 36.66s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-10-30-ed59-derby-over-stadium.mp4 — 36.63s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-10-30-ed59-derby-over-stadium-thumb-9x16.png, ND-2026-10-30-ed59-derby-over-stadium-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-10-30-ed59-derby-over-stadium-voiced.mp4 — 37.66s, AAC 48 kHz stereo, I: -16.3 LUFS Peak: -3.3 dBFS\n"
+}
