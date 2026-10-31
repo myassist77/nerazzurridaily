@@ -1,0 +1,96 @@
+{
+ "job": "ed60",
+ "kind": "daily",
+ "name": "ND-2026-10-31-ed60-derby-keeper",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-10-31T10:57:37+00:00",
+ "run_id": "41194675339",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/41194675339",
+ "files": {
+  "assets/video/ed60.mp4": {
+   "bytes": 1456509,
+   "md5": "c1b63ae484c08778ff55c26906fb59c5",
+   "sha256": "bd2649e265f19304434c3bfc2ce2a307c40f323ff3e3e77a498259d1d8af2432"
+  },
+  "assets/video/ed60-thumb.png": {
+   "bytes": 62139,
+   "md5": "0c241e16ad5b8ed58da37f5b11abb9b1",
+   "sha256": "c91aee611eebb0631df66a9319fe71336262b86648166a699362078c5ef58279"
+  },
+  "assets/video/ed60-thumb-9x16.png": {
+   "bytes": 88691,
+   "md5": "13a0283aed6cc88df3f1ba5460153293",
+   "sha256": "91e4129f5251924f4333f84ae94cd18319b7864b551f721329918d02a9dd8491"
+  },
+  "data/tiktok-ed60.json": {
+   "bytes": 569,
+   "md5": "8ff9939fc70db6ab39700a4a0d9a28cb",
+   "sha256": "79dc99597b99606cf766314b185e5b4a84c7c79a54c2545a70acfc9530f225b7"
+  },
+  "data/youtube-ed60.json": {
+   "bytes": 1510,
+   "md5": "584539efd186f0ce9bd9005c829f8ac8",
+   "sha256": "dd951a559352a9e323f953c058d71209d617389f8853aec31e9128a42024bda6"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 124905,
+   "md5": "fa53fafe08c6b8a9dbbf1a474b6bff73",
+   "sha256": "35207be0f9ffe215d943792a7fe05e73b01b07558cbc34de46a7401b931b0314"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 88691,
+   "md5": "13a0283aed6cc88df3f1ba5460153293",
+   "sha256": "91e4129f5251924f4333f84ae94cd18319b7864b551f721329918d02a9dd8491"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 62139,
+   "md5": "0c241e16ad5b8ed58da37f5b11abb9b1",
+   "sha256": "c91aee611eebb0631df66a9319fe71336262b86648166a699362078c5ef58279"
+  }
+ },
+ "seconds": 34.57,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "34.566667"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "34.570000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-10-31-ed60-derby-keeper-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-10-31-ed60-derby-keeper-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-10-31-ed60-derby-keeper-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 930710,
+  "md5": "09a0c3ecc11847305a3d6dec94150bee",
+  "sha256": "1926ac0706872be99eb9cb36cb9b4dfa9195a9a8933db69b7b9bb2a2d4ec483a"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 33.57
+ },
+ "voice_log_tail": "b1-stance: voice 4.07s → beat 4.5s\nb2-claim: voice 4.71s → beat 5.14s\nb3-ourtake: voice 4.52s → beat 5.04s\nb4-turn: voice 7.17s → beat 7.62s\nb5-fixture: voice 3.50s → beat 3.99s\nb6-end: voice 6.87s → beat 7.28s\nPLAN OK build/beats.voiced.json — 6 beats, 33.57s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-10-31-ed60-derby-keeper.mp4 — 33.57s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-10-31-ed60-derby-keeper-thumb-9x16.png, ND-2026-10-31-ed60-derby-keeper-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-10-31-ed60-derby-keeper-voiced.mp4 — 34.57s, AAC 48 kHz stereo, I: -16.3 LUFS Peak: -4.1 dBFS\n"
+}

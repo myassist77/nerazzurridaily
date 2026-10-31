@@ -1,0 +1,118 @@
+{
+ "name": "ND-2026-10-31-ed60-derby-keeper",
+ "edition": 60,
+ "date": "2026-10-31",
+ "slug": "derby-keeper",
+ "beats": [
+  {
+   "id": "b1-stance",
+   "kind": "cover",
+   "duration": 4.5,
+   "eyebrow": "EDITION NO. 60 · OCTOBER 31",
+   "lines": [
+    "INTER'S KEEPER",
+    "IS PICKED.",
+    "CHIVU WON'T SAY."
+   ],
+   "vo": "[Inter] have picked their goalkeeper. [Chivu] just won't say it out loud."
+  },
+  {
+   "id": "b2-claim",
+   "kind": "quote",
+   "register": "CONFIRMED",
+   "duration": 5.14,
+   "kicker": "CONFIRMED · INTER.IT · OCT 30",
+   "lines": [
+    "Non lo so vedremo domani"
+   ],
+   "sub": [
+    "— I DON'T KNOW, WE'LL SEE TOMORROW",
+    "CHIVU, ASKED WHO STARTS IN GOAL"
+   ],
+   "vo": "[Inter] published it themselves. [Chivu] said: I don't know, we'll see tomorrow."
+  },
+  {
+   "id": "b3-ourtake",
+   "kind": "item",
+   "register": "NEUTRAL",
+   "duration": 5.04,
+   "kicker": "OUR TAKE",
+   "lines": [
+    "A DERBY SECRET",
+    "KEEPS ONE DAY.",
+    "THE PAPERS DON'T."
+   ],
+   "vo": "A derby secret keeps for one day. The papers never let it last that long."
+  },
+  {
+   "id": "b4-turn",
+   "kind": "item",
+   "register": "REPORTED",
+   "duration": 7.62,
+   "kicker": "REPORTED · GAZZETTA + CORRIERE · OCT 31",
+   "lines": [
+    "GAZZETTA AND",
+    "CORRIERE START",
+    "JOSEP MARTÍNEZ."
+   ],
+   "sub": [
+    "PROVEDEL DROPS TO THE BENCH",
+    "INTER HAVE PUBLISHED NO LINEUP"
+   ],
+   "vo": "[Gazzetta dello Sport] and [Corriere dello Sport] both start [Josep Martínez], with [Provedel] dropping to the bench."
+  },
+  {
+   "id": "b5-fixture",
+   "kind": "fixture",
+   "register": "NEUTRAL",
+   "duration": 3.99,
+   "kicker": "TODAY · SERIE A · MATCHDAY 10",
+   "lines": [
+    "MILAN v INTER",
+    "SAN SIRO"
+   ],
+   "sub_top": "SAT, OCT 31 · AWAY",
+   "big": "3:45 PM ET",
+   "sub": [
+    "20:45 CET",
+    "US TV: PARAMOUNT+ · TELEMUNDO"
+   ],
+   "vo": "Kickoff is three forty-five Eastern, on [Paramount] plus."
+  },
+  {
+   "id": "b6-end",
+   "kind": "end",
+   "duration": 7.28,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Who starts in goal — [Martínez] or [Provedel]? Tell us. Then subscribe at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "3",
+   "lines_a": [
+    "CENTER-BACKS",
+    "LEFT FOR THE DERBY"
+   ],
+   "lines_b": [
+    "CHIVU WON'T NAME",
+    "HIS GOALKEEPER"
+   ],
+   "pill": "REPORTED · PAPERS PICK MARTÍNEZ",
+   "pill_register": "REPORTED"
+  }
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 33.57
+ }
+}

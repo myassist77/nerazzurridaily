@@ -1,0 +1,123 @@
+{
+ "edition": 60,
+ "date": "2026-10-31",
+ "slug": "derby-keeper",
+ "hook": "Inter's keeper is picked. Chivu won't say.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-60/",
+ "edition_json_sha256": "e69b2c619d498886f5d99bea2973747bc9b59825fd9e639e401cb4cc893649df",
+ "brevo": {
+  "campaign_id": 49,
+  "status": "draft",
+  "note": "the 5:30 run held the email back as a draft; this task never sends or edits a campaign"
+ },
+ "local_render": {
+  "filename": "ND-2026-10-31-ed60-derby-keeper-voiced.mp4",
+  "seconds": 34.57,
+  "beats": 6,
+  "bytes": 1464249,
+  "md5": "54f89bbc58d401c7597c28e1c4533e84",
+  "sha256": "b51f563700c5b1115e540244cc556c1f5322b799ffa697f1de230603ce21cdce"
+ },
+ "audio": {
+  "summary": "voiceover only — no music",
+  "codec": "aac",
+  "sample_rate": "48000",
+  "channels": 2,
+  "duration": null,
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 33.57
+  }
+ },
+ "stories": [
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Oct 30",
+   "headline": "Chivu holds back his goalkeeper choice"
+  },
+  {
+   "register": "REPORTED",
+   "source": "Gazzetta dello Sport and Corriere dello Sport, via FCInterNews",
+   "date": "Oct 31",
+   "headline": "Papers put Josep Martínez back in goal"
+  },
+  {
+   "register": "REPORTED",
+   "source": "ANSA",
+   "date": "Oct 30",
+   "headline": "Marco Guida is appointed to the derby"
+  }
+ ],
+ "youtube_title": "Inter's Keeper Secret: Chivu Won't Say It, the Papers Already Have | Milan v Inter",
+ "pinned_question": "Who starts in goal at San Siro — Martínez or Provedel?",
+ "next_fixture": "Milan v Inter (away), Sat Oct 31, Serie A matchday 10 — 3:45 PM ET · 20:45 CET · Paramount+ · Telemundo",
+ "optional_drafts": {
+  "reddit": false,
+  "reddit_reason": "Monday only; today is Saturday",
+  "facebook": true
+ },
+ "thumbnail_style": "number",
+ "format": "daily six-beat",
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/41194675339",
+  "built_at_utc": "2026-10-31T10:57:37+00:00",
+  "seconds": 34.57,
+  "beats": 6,
+  "files": {
+   "assets/video/ed60.mp4": {
+    "bytes": 1456509,
+    "md5": "c1b63ae484c08778ff55c26906fb59c5",
+    "sha256": "bd2649e265f19304434c3bfc2ce2a307c40f323ff3e3e77a498259d1d8af2432"
+   },
+   "assets/video/ed60-thumb.png": {
+    "bytes": 62139,
+    "md5": "0c241e16ad5b8ed58da37f5b11abb9b1",
+    "sha256": "c91aee611eebb0631df66a9319fe71336262b86648166a699362078c5ef58279"
+   },
+   "assets/video/ed60-thumb-9x16.png": {
+    "bytes": 88691,
+    "md5": "13a0283aed6cc88df3f1ba5460153293",
+    "sha256": "91e4129f5251924f4333f84ae94cd18319b7864b551f721329918d02a9dd8491"
+   },
+   "data/tiktok-ed60.json": {
+    "bytes": 569,
+    "md5": "8ff9939fc70db6ab39700a4a0d9a28cb",
+    "sha256": "79dc99597b99606cf766314b185e5b4a84c7c79a54c2545a70acfc9530f225b7"
+   },
+   "data/youtube-ed60.json": {
+    "bytes": 1510,
+    "md5": "584539efd186f0ce9bd9005c829f8ac8",
+    "sha256": "dd951a559352a9e323f953c058d71209d617389f8853aec31e9128a42024bda6"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 124905,
+    "md5": "fa53fafe08c6b8a9dbbf1a474b6bff73",
+    "sha256": "35207be0f9ffe215d943792a7fe05e73b01b07558cbc34de46a7401b931b0314"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 88691,
+    "md5": "13a0283aed6cc88df3f1ba5460153293",
+    "sha256": "91e4129f5251924f4333f84ae94cd18319b7864b551f721329918d02a9dd8491"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 62139,
+    "md5": "0c241e16ad5b8ed58da37f5b11abb9b1",
+    "sha256": "c91aee611eebb0631df66a9319fe71336262b86648166a699362078c5ef58279"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 33.57
+  },
+  "passed": true
+ }
+}
