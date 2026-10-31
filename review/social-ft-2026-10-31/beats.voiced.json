@@ -1,0 +1,132 @@
+{
+ "beats": [
+  {
+   "id": "01-stance",
+   "kind": "cover",
+   "duration": 3.03,
+   "eyebrow": "EDITION NO. 60 · FULL TIME",
+   "lines": [
+    "INTER LOST THIS DERBY",
+    "IN TEN MINUTES."
+   ],
+   "vo": "[Inter] lost this derby in the first ten minutes."
+  },
+  {
+   "id": "02-result",
+   "kind": "result",
+   "duration": 7.47,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT MATCH REPORT",
+   "home": "AC MILAN",
+   "away": "INTER",
+   "score_home": 3,
+   "score_away": 1,
+   "inter": "away",
+   "sub": [
+    "PULISIC 4', RABIOT 10', MOREIRA 43'",
+    "BASTONI 22' FOR INTER"
+   ],
+   "vo": "The official [Inter] report says three one at [San Siro]. [Pulisic], [Rabiot], [Moreira]; [Bastoni] replied."
+  },
+  {
+   "id": "03-our-take",
+   "kind": "item",
+   "duration": 4.97,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "BASTONI GAVE US",
+    "A WAY BACK.",
+    "THE DEFENCE DIDN'T."
+   ],
+   "sub": [
+    "FOUR MINUTES IN, ALREADY CHASING"
+   ],
+   "vo": "[Bastoni] gave us a way back. The defending never gave us a chance to use it."
+  },
+  {
+   "id": "04-turn",
+   "kind": "stat",
+   "duration": 5.83,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · OCT 31",
+   "number": "43",
+   "suffix": "'",
+   "lines": [
+    "MOREIRA'S FREE KICK."
+   ],
+   "sub": [
+    "3-1 AT THE BREAK"
+   ],
+   "vo": "On forty-three minutes [Moreira] curled in a free kick. Three one at the break, game over."
+  },
+  {
+   "id": "05-fixture",
+   "kind": "fixture",
+   "duration": 3.42,
+   "register": "NEUTRAL",
+   "kicker": "NEUTRAL · NEXT UP",
+   "lines": [
+    "FEYENOORD"
+   ],
+   "sub_top": "CHAMPIONS LEAGUE · AWAY · TUE NOV 3",
+   "big": "3:00 PM ET",
+   "sub": [
+    "21:00 CET"
+   ],
+   "vo": "Next, [Feyenoord] away on Tuesday at three Eastern."
+  },
+  {
+   "id": "06-end",
+   "kind": "end",
+   "duration": 4.93,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Where was this derby lost? Tell us, at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "thumbnail": {
+  "style": "number",
+  "top": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "lines": [
+    "MILAN",
+    "WIN IT."
+   ]
+  },
+  "bottom": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "lines": [
+    "INTER",
+    "CHASING."
+   ],
+   "sub": "PULISIC, RABIOT, MOREIRA"
+  },
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "3-1",
+   "lines_a": [
+    "MILAN",
+    "WIN IT."
+   ],
+   "lines_b": [
+    "INTER",
+    "CHASING."
+   ],
+   "pill": "FULL TIME · SAN SIRO",
+   "pill_register": "CONFIRMED"
+  }
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 29.65
+ }
+}
