@@ -1,0 +1,14 @@
+{
+ "job": "weekly-ed61",
+ "kind": "weekly",
+ "name": "weekly-ed61",
+ "weekly": {
+  "end": 61
+ },
+ "outputs": {
+  "mp4": "assets/video/weekly-ed61.mp4",
+  "thumb16": "assets/video/weekly-ed61-thumb.png",
+  "post": "data/youtube-weekly-ed61.json"
+ },
+ "qc": {}
+}
