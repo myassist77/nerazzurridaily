@@ -1,0 +1,151 @@
+{
+ "job": "ed61",
+ "kind": "daily",
+ "format": "sunday scorecard (what the papers got right this week)",
+ "edition": 61,
+ "date": "2026-11-01",
+ "slug": "papers-scorecard",
+ "name": "ND-2026-11-01-ed61-papers-scorecard",
+ "hook": "Which Inter paper do you believe?",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-61/",
+ "edition_json_sha256": "149b20061c2ba738fdde856d55134552ab6a4a01cec54166e1ae9baf63a8191f",
+ "week_covered": "data/edition-55.json … data/edition-61.json",
+ "brevo": {
+  "campaign_id": 50,
+  "status": "sent",
+  "sent_at": "2026-11-01T05:59:23-05:00"
+ },
+ "local_render": {
+  "file": "ND-2026-11-01-ed61-papers-scorecard-voiced.mp4",
+  "seconds": 36.0,
+  "beats": 7,
+  "bytes": 1595657,
+  "md5": "add814bdbdd05f161230f446d89b6cb1",
+  "sha256": "fc971fe224ab7e78f7bd15fe53b3e5dbd83c1a23b2b6565b1c8a79b923f8388f",
+  "frame": "1080x1920"
+ },
+ "audio": {
+  "content": "voiceover only — no music",
+  "codec": "aac",
+  "sample_rate": "48000",
+  "channels": 2,
+  "duration": 35.96,
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 34.96
+  }
+ },
+ "stories": [
+  {
+   "beat": "sky",
+   "status": "CONFIRMED",
+   "register": "CONFIRMED",
+   "claim": "Sky Sport Italia projected Calhanoglu rested at Venezia",
+   "claim_source": "Sky Sport Italia via FCInterNews",
+   "claim_date": "2026-10-27",
+   "resolution": "ed58 blue bar: Chivu sent Calhanoglu, Barella and Akanji on at half-time",
+   "resolution_source": "Chivu via Sky Sport Italia",
+   "resolution_date": "2026-10-28"
+  },
+  {
+   "beat": "corriere",
+   "status": "TOOK IT BACK",
+   "register": "NEUTRAL",
+   "claim": "Corriere dello Sport expected Jones and Pavard back for Feyenoord",
+   "claim_source": "Corriere dello Sport via FCInterNews",
+   "claim_date": "2026-10-25",
+   "resolution": "ed61: the same paper puts both among five absences for Feyenoord",
+   "resolution_source": "Corriere dello Sport via FCInter1908",
+   "resolution_date": "2026-11-01"
+  },
+  {
+   "beat": "dimarco",
+   "status": "STILL OPEN",
+   "register": "REPORTED",
+   "claim": "Gazzetta dello Sport: the Dimarco renewal has not moved since September",
+   "claim_source": "Gazzetta dello Sport via FCInter1908",
+   "claim_date": "2026-10-27",
+   "resolution": "no club statement; Dimarco quoted saying no renewal talks yet",
+   "resolution_source": "Dimarco via Gazzetta dello Sport",
+   "resolution_date": "2026-10-29"
+  }
+ ],
+ "tally": {
+  "claims": 10,
+  "confirmed": 1,
+  "taken_back": 1,
+  "still_open": 8,
+  "editions": "55-61"
+ },
+ "youtube_title": "Inter: which Italian paper got it right this week? | Nerazzurri Daily #Shorts",
+ "pinned_question": "Which Italian paper do you actually trust on Inter?",
+ "next_fixture": "Feyenoord (away) · Tue, Nov 3 · Champions League matchday 4 · 3:00 PM ET · 21:00 CET · Paramount+ · CBS Sports Golazo",
+ "optional_drafts": {
+  "reddit": false,
+  "facebook": true
+ },
+ "thumbnail_style": "number",
+ "static_fallback_used": false,
+ "built_at_utc": "2026-11-01T11:59:13+00:00",
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/41304418603",
+  "built_at_utc": "2026-11-01T12:02:41+00:00",
+  "seconds": 36.0,
+  "beats": 7,
+  "files": {
+   "assets/video/ed61.mp4": {
+    "bytes": 1602044,
+    "md5": "d77385997268db94b6583885a3b176a7",
+    "sha256": "f762d77eaf1ec1b6e79d60a129851c60c15edaf3abf26c8f05f8b062e53e6a67"
+   },
+   "assets/video/ed61-thumb.png": {
+    "bytes": 55994,
+    "md5": "89947e1d47306d4a0a11bbf49094643f",
+    "sha256": "e7815a187c64bc198938d2011eb2aa8599f0aa9a711b3521d25ccaaf99727fae"
+   },
+   "assets/video/ed61-thumb-9x16.png": {
+    "bytes": 85279,
+    "md5": "fd3476a4fb06ec045f69e03b3ad03ad6",
+    "sha256": "5cd88a2e6c345db241e2b81f18b73e4fd1385a05b35a2e871bb754c7f723387e"
+   },
+   "data/tiktok-ed61.json": {
+    "bytes": 456,
+    "md5": "9a7ff9f121a700c9314d0b89bf4260c6",
+    "sha256": "88012d677288bbdd287a97eac671e58e6438394301d0c97fe1e3c6f9ed8f61cb"
+   },
+   "data/youtube-ed61.json": {
+    "bytes": 1915,
+    "md5": "3aec8c8515fff2ee6f3fcf2bf8461f56",
+    "sha256": "92a64a1d0fe442e06c13dac8b81c0b3ff86f88ac55dffc64b78f4e981a3eb694"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 155655,
+    "md5": "de2184dca5bb4c1b52675a35a6dd9981",
+    "sha256": "9293214c2d965db028e9b2a3dcd83df8925ad991a753d44a208e2ce75f71953e"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 85279,
+    "md5": "fd3476a4fb06ec045f69e03b3ad03ad6",
+    "sha256": "5cd88a2e6c345db241e2b81f18b73e4fd1385a05b35a2e871bb754c7f723387e"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 55994,
+    "md5": "89947e1d47306d4a0a11bbf49094643f",
+    "sha256": "e7815a187c64bc198938d2011eb2aa8599f0aa9a711b3521d25ccaaf99727fae"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 34.96
+  },
+  "passed": true
+ }
+}

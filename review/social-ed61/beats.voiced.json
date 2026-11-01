@@ -1,0 +1,136 @@
+{
+ "sunday_scorecard": true,
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "REPORTED",
+   "kicker": "REPORTED · THE ITALIAN PRESS",
+   "big": "10",
+   "lines_a": [
+    "CLAIMS THE PAPERS",
+    "PRINTED THIS WEEK"
+   ],
+   "lines_b": [
+    "ONE CONFIRMED.",
+    "ONE TAKEN BACK."
+   ],
+   "pill": "DERBY LOST 3–1",
+   "pill_register": "CONFIRMED"
+  }
+ },
+ "beats": [
+  {
+   "id": "cover",
+   "kind": "cover",
+   "duration": 4.61,
+   "eyebrow": "EDITION NO. 61 · NOVEMBER 1",
+   "lines": [
+    "WHICH INTER PAPER",
+    "DO YOU BELIEVE?"
+   ],
+   "vo": "Ten things the papers printed about [Inter] this week. One came true."
+  },
+  {
+   "id": "sky",
+   "kind": "item",
+   "duration": 5.02,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · CHIVU VIA SKY · OCT 28",
+   "lines": [
+    "SKY SAID ÇALHANOĞLU",
+    "WOULD BE RESTED.",
+    "HE WAS."
+   ],
+   "sub": [
+    "CLAIM: SKY SPORT ITALIA · OCT 27"
+   ],
+   "vo": "[Sky Sport Italia] said [Çalhanoğlu] would rest. He came on at half-time."
+  },
+  {
+   "id": "corriere",
+   "kind": "item",
+   "duration": 5.55,
+   "register": "NEUTRAL",
+   "kicker": "TOOK IT BACK · CORRIERE DELLO SPORT",
+   "lines": [
+    "CORRIERE HAD PAVARD",
+    "BACK FOR ROTTERDAM.",
+    "NOW IT HAS HIM OUT."
+   ],
+   "sub": [
+    "CLAIMED OCT 25 · REVERSED NOV 1",
+    "NO INTER INJURY LIST"
+   ],
+   "vo": "[Corriere dello Sport] had two [Inter] men back for Rotterdam. Now it has them out."
+  },
+  {
+   "id": "dimarco",
+   "kind": "item",
+   "duration": 4.25,
+   "register": "REPORTED",
+   "kicker": "REPORTED · GAZZETTA DELLO SPORT · OCT 27",
+   "lines": [
+    "GAZZETTA SAYS THE",
+    "DIMARCO RENEWAL",
+    "HASN'T MOVED."
+   ],
+   "sub": [
+    "DIMARCO: \"NON ABBIAMO ANCORA",
+    "PARLATO DI RINNOVO\" — NO TALKS YET"
+   ],
+   "vo": "[Gazzetta dello Sport] says the [Dimarco] renewal hasn't moved."
+  },
+  {
+   "id": "tally",
+   "kind": "stat",
+   "duration": 5.29,
+   "register": "NEUTRAL",
+   "kicker": "THE WEEK · EDITIONS 55 TO 61",
+   "number": 1,
+   "suffix": " OF 10",
+   "lines": [
+    "CONFIRMED BY THE CLUB",
+    "OR THE COACH."
+   ],
+   "sub": [
+    "ONE TAKEN BACK BY ITS OWN PAPER",
+    "EIGHT STILL OPEN"
+   ],
+   "vo": "Ten claims this week. One confirmed. One taken back. Eight still open."
+  },
+  {
+   "id": "fixture",
+   "kind": "fixture",
+   "duration": 4.65,
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP · AWAY",
+   "lines": [
+    "FEYENOORD",
+    "IN ROTTERDAM"
+   ],
+   "sub_top": "TUE, NOV 3 · CHAMPIONS LEAGUE",
+   "big": "3:00 PM ET",
+   "sub": [
+    "21:00 CET · PARAMOUNT+ · GOLAZO"
+   ],
+   "vo": "Rotterdam away on Tuesday. Kickoff three in the afternoon, Eastern."
+  },
+  {
+   "id": "end",
+   "kind": "end",
+   "duration": 5.59,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Which paper do you believe? Tell me in the comments, at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 34.96
+ }
+}

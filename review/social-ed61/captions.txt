@@ -1,0 +1,78 @@
+NERAZZURRI DAILY — SOCIAL PACK
+Edition No. 61 · Sunday, November 1, 2026
+Format: SUNDAY SCORECARD — "what the papers got right this week" (editions No. 55–61)
+Video: ND-2026-11-01-ed61-papers-scorecard-voiced.mp4 · 36.00 s · 7 beats · 1080×1920
+Hook: "Which Inter paper do you believe?"
+Thumbnail style: number ("10")
+
+================================================================
+(a) TIKTOK — data/tiktok-ed61.json
+================================================================
+Posted automatically at 9:05 AM ET via Postiz. The MP4 carries the voiceover only, no music — the owner's choice of Sept 26, 2026.
+Suggested posting window: 8–10 AM ET.
+
+TITLE
+Inter: which Italian paper got it right this week?
+
+CAPTION
+Inter fans — we scored every claim the Italian press printed this week. Corriere dello Sport took its own injury story back.
+
+#Inter #FeyenoordInter #Dimarco
+
+https://www.nerazzurridaily.com/go/tt/?ed=61
+
+================================================================
+(b) YOUTUBE SHORTS — data/youtube-ed61.json
+================================================================
+Posted automatically at 9:05 AM ET via Postiz. The MP4 carries the voiceover only, no music — the owner's choice of Sept 26, 2026.
+The 9:16 thumbnail is sent to YouTube with the post (the 16:9 file is the fallback); the same 9:16 image opens the video for 1 second, which makes it the TikTok cover.
+
+TITLE
+Inter: which Italian paper got it right this week? | Nerazzurri Daily #Shorts
+
+DESCRIPTION
+Which Inter paper do you believe? We scored every claim the Italian press printed this week.
+https://www.nerazzurridaily.com/go/yt/?ed=61
+
+Blue means the club said it. Pink means only the papers did.
+
+CONFIRMED — Sky Sport Italia (Oct 27) said Hakan Çalhanoğlu would be rested at Venezia. Chivu sent him on at half-time with the match goalless (Chivu via Sky Sport Italia, Oct 28).
+TOOK IT BACK — Corriere dello Sport (Oct 25) had Curtis Jones and Benjamin Pavard back for Feyenoord. On Nov 1 the same paper puts both among five absences, with Como on Nov 8 the likelier date (Corriere dello Sport via FCInter1908).
+REPORTED — Gazzetta dello Sport (Oct 27) says the Federico Dimarco renewal has not moved since September. Dimarco: "Purtroppo non abbiamo ancora parlato di rinnovo" — unfortunately we still haven't talked about a renewal.
+STILL OPEN — eight of the week's ten reported claims have had nothing from the club either way. Inter have published no injury list of their own.
+NEXT UP — Feyenoord away, Tue Nov 3, Champions League matchday 4. 3:00 PM ET · 21:00 CET · Paramount+ and CBS Sports Golazo Network.
+
+Read today's edition: https://www.nerazzurridaily.com/p/edition-61/
+
+Fan-made — not affiliated with FC Internazionale Milano.
+
+#Inter #SerieA #FeyenoordInter #Dimarco #ForzaInter
+
+PINNED COMMENT
+Which Italian paper do you actually trust on Inter? Reply in the comments. https://www.nerazzurridaily.com/go/yt/?ed=61&v=pinned
+
+TAGS (no #)
+Inter, SerieA, FeyenoordInter, Dimarco, ForzaInter
+
+================================================================
+(c) REDDIT — not today
+================================================================
+The r/FCInterMilan fixtures draft is a Monday item. Today is Sunday; no Reddit draft in this pack.
+
+================================================================
+(d) FACEBOOK — paste on your own profile
+================================================================
+Today's Nerazzurri Daily scores the week: of the ten things the Italian papers printed about Inter, exactly one was confirmed by the club, and Corriere dello Sport quietly reversed its own injury story six days later.
+If you know one Inter fan, send them nerazzurridaily.com/go/fb/?ed=61
+
+================================================================
+WHAT WAS VERIFIED
+================================================================
+Every claim in this pack comes from data/edition-{55..61}.json in the repo — no new research.
+· CONFIRMED beat — ed57 (Oct 28) carried Sky Sport Italia's projected XI with Çalhanoğlu rested; ed58 (Oct 29) carried, under the blue bar, Chivu sending Çalhanoğlu, Barella and Akanji on together at half-time.
+· TOOK IT BACK beat — ed55 (Oct 26) carried Corriere dello Sport expecting Jones and Pavard back for Feyenoord; ed61 (Nov 1) carries Corriere dello Sport putting both among five absences for the same match.
+· REPORTED beat — ed55 and ed58 both carried Gazzetta dello Sport on the Dimarco renewal; the Dimarco quote is ed58's, Italian inside the quotation marks with the English gloss after the em dash.
+· Tally — ten distinct reported claims across editions 55–61; one confirmed by the club or the coach, one reversed by its own paper, eight still open.
+· Fixture — ed61's NEXT UP row: Feyenoord away, Tue Nov 3, 3:00 PM ET · 21:00 CET · Paramount+ · CBS Sports Golazo.
+· Page check: p/edition-61/index.html is committed in the repo (200 from raw).
+· Links: only the two tracking doors, the Facebook door and the edition's own page URL. No live-site fetch was made (a scheduled run's shell cannot reach the site).
