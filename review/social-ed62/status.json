@@ -1,0 +1,96 @@
+{
+ "job": "ed62",
+ "kind": "daily",
+ "name": "ND-2026-11-02-ed62-twentieth-in-europe",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-02T11:57:37+00:00",
+ "run_id": "41440540662",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/41440540662",
+ "files": {
+  "assets/video/ed62.mp4": {
+   "bytes": 1373572,
+   "md5": "b0060e0e4911cd23b94d12bc6fd517fc",
+   "sha256": "4f28cf14c0d71738fe28530760d4053b36e259ea215b7099b3ddaa46f85d101a"
+  },
+  "assets/video/ed62-thumb.png": {
+   "bytes": 64017,
+   "md5": "059158efa2f1d0433a25732e632ce0f2",
+   "sha256": "84b012a8857369915d592a60256405547fd9d5385f9b88b640b6d64faf0987db"
+  },
+  "assets/video/ed62-thumb-9x16.png": {
+   "bytes": 89184,
+   "md5": "7842b6ea28db2186e735dd4cffb5f4c1",
+   "sha256": "77c4b1fec3bd67e9fc3f1ea1b1edac066cd22f8b946eca0ae588b9b3216dc5ab"
+  },
+  "data/tiktok-ed62.json": {
+   "bytes": 536,
+   "md5": "6831e2a722ebec843dce6ab107bd4e65",
+   "sha256": "5317dd55b1b295f95def95b543655e7c6c0d41905c380ab8237cf0f71413ce7d"
+  },
+  "data/youtube-ed62.json": {
+   "bytes": 1544,
+   "md5": "b489b02bde683805a9cbecb0f11856d8",
+   "sha256": "8c35bc7493e88ebff262e9e7fc27c469cdbff7a05f982d000b3e8f48472360ea"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 116891,
+   "md5": "90c61c7493d1e094c7fad0bab3c97dea",
+   "sha256": "89a37103f8eaf5a05db4dd89a7881cc3430e78aad2175ec526d79c6094664983"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 89184,
+   "md5": "7842b6ea28db2186e735dd4cffb5f4c1",
+   "sha256": "77c4b1fec3bd67e9fc3f1ea1b1edac066cd22f8b946eca0ae588b9b3216dc5ab"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 64017,
+   "md5": "059158efa2f1d0433a25732e632ce0f2",
+   "sha256": "84b012a8857369915d592a60256405547fd9d5385f9b88b640b6d64faf0987db"
+  }
+ },
+ "seconds": 35.62,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "35.600000"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "35.620000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-11-02-ed62-twentieth-in-europe-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-11-02-ed62-twentieth-in-europe-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-11-02-ed62-twentieth-in-europe-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 833211,
+  "md5": "a74328a8b06fc28f29ec1f9926cc4d32",
+  "sha256": "6d136766c0b02a9a000f0d44d121f556d10f0fbd4997a1fd1c02d722fbe3ca38"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 34.62
+ },
+ "voice_log_tail": "b1-stance: voice 4.27s → beat 4.72s\nb2-claim: voice 5.42s → beat 5.91s\nb3-ourtake: voice 5.80s → beat 6.27s\nb4-turn: voice 6.25s → beat 6.79s\nb5-fixture: voice 4.54s → beat 4.95s\nb6-end: voice 5.55s → beat 5.98s\nPLAN OK build/beats.voiced.json — 6 beats, 34.62s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-11-02-ed62-twentieth-in-europe.mp4 — 34.60s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-11-02-ed62-twentieth-in-europe-thumb-9x16.png, ND-2026-11-02-ed62-twentieth-in-europe-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-11-02-ed62-twentieth-in-europe-voiced.mp4 — 35.62s, AAC 48 kHz stereo, I: -16.4 LUFS Peak: -3.8 dBFS\n"
+}

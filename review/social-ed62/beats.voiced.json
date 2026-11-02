@@ -1,0 +1,118 @@
+{
+ "date_iso": "2026-11-02",
+ "slug": "twentieth-in-europe",
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "20",
+   "lines_a": [
+    "INTER SIT 20TH",
+    "OF 36 IN EUROPE"
+   ],
+   "lines_b": [
+    "THREE POINTS",
+    "FROM THREE GAMES"
+   ],
+   "pill": "PAVARD BACK IN TRAINING",
+   "pill_register": "REPORTED"
+  }
+ },
+ "beats": [
+  {
+   "id": "b1-stance",
+   "kind": "cover",
+   "eyebrow": "EDITION NO. 62 · NOVEMBER 2",
+   "lines": [
+    "INTER ARE 20TH.",
+    "ROTTERDAM IS MUST-WIN."
+   ],
+   "duration": 4.72,
+   "vo": "[Inter] sit twentieth in Europe. [Rotterdam] has stopped being a free hit."
+  },
+  {
+   "id": "b2-claim",
+   "kind": "item",
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · NOV 1",
+   "lines": [
+    "20TH OF 36",
+    "IN THE LEAGUE PHASE"
+   ],
+   "sub": [
+    "THREE POINTS FROM THREE",
+    "THE TOP 24 GO THROUGH"
+   ],
+   "duration": 5.91,
+   "vo": "The club's own table puts [Inter] twentieth of thirty-six. The top twenty-four go through."
+  },
+  {
+   "id": "b3-ourtake",
+   "kind": "item",
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "MID-TABLE IN EUROPE",
+    "IS NOT A PLAN"
+   ],
+   "sub": [
+    "ROTTERDAM DECIDES",
+    "WHICH HALF THEY'RE IN"
+   ],
+   "duration": 6.27,
+   "vo": "Twentieth is survivable. It is not a plan. [Rotterdam] decides which half they end up in."
+  },
+  {
+   "id": "b4-turn",
+   "kind": "item",
+   "register": "REPORTED",
+   "kicker": "REPORTED · TUTTOSPORT · NOV 2",
+   "lines": [
+    "PAVARD TRAINED",
+    "A BUG HIT DERBY WEEK"
+   ],
+   "sub": [
+    "THURAM THE ONLY ATTACKER",
+    "AT FULL FITNESS, IT SAYS"
+   ],
+   "duration": 6.79,
+   "vo": "[Tuttosport] says [Pavard] trained Sunday, and a stomach bug left [Thuram] the only attacker at full fitness."
+  },
+  {
+   "id": "b5-fixture",
+   "kind": "fixture",
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP · CHAMPIONS LEAGUE",
+   "lines": [
+    "FEYENOORD",
+    "AWAY"
+   ],
+   "sub_top": "TUE, NOV 3 · DE KUIP",
+   "big": "3:00 PM ET",
+   "sub": [
+    "21:00 CET",
+    "PARAMOUNT+ · CBS SPORTS GOLAZO"
+   ],
+   "duration": 4.95,
+   "vo": "[Feyenoord] away Tuesday, three in the afternoon Eastern, Paramount Plus."
+  },
+  {
+   "id": "b6-end",
+   "kind": "end",
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "duration": 5.98,
+   "vo": "Do [Inter] get through the league phase? One word below. At [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 34.62
+ }
+}

@@ -1,0 +1,142 @@
+{
+ "edition": 62,
+ "date": "2026-11-02",
+ "slug": "twentieth-in-europe",
+ "hook": "Inter are 20th. Rotterdam is must-win.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-62/",
+ "edition_json_sha256": "471bf2babc45274297ebfd5dae142228bce913236897d5c8c74e29fe85d7ac2f",
+ "brevo": {
+  "campaign_id": 51,
+  "status": "sent",
+  "sent_at": "2026-11-02T06:04:41-05:00"
+ },
+ "local_render": {
+  "filename": "ND-2026-11-02-ed62-twentieth-in-europe-voiced.mp4",
+  "seconds": 35.62,
+  "beats": 6,
+  "bytes": 1378034,
+  "md5": "af05b8b12f76a020b80a2c919b616403",
+  "sha256": "a72f36181a6c7009411921af16b0569ddd9aa382358b6c4edfd28654d4b80e20",
+  "silent_render_md5": "9c374fcdbaf70ad0b854e81d9ebf3ea0"
+ },
+ "audio": {
+  "summary": "voiceover only — no music",
+  "codec": "aac",
+  "sample_rate": "48000",
+  "channels": 2,
+  "duration": 35.62,
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 34.62
+  }
+ },
+ "stories": [
+  {
+   "register": "CONFIRMED",
+   "story": "Inter 20th of 36 in the league phase, three points from three; top 24 go through",
+   "source": "Inter.it",
+   "date": "Nov 1"
+  },
+  {
+   "register": "CONFIRMED",
+   "story": "Chivu speaks at De Kuip at 12:45 PM ET today",
+   "source": "Inter.it",
+   "date": "Nov 1"
+  },
+  {
+   "register": "CONFIRMED",
+   "story": "Zielinski's 100th appearance for the club",
+   "source": "Inter.it",
+   "date": "Oct 31"
+  },
+  {
+   "register": "REPORTED",
+   "story": "Pavard trained with the squad Sunday, should be available in Rotterdam",
+   "source": "Tuttosport via FCInterNews",
+   "date": "Nov 2"
+  },
+  {
+   "register": "REPORTED",
+   "story": "Stomach bug through derby week; Thuram the only attacker at full fitness",
+   "source": "Tuttosport via FCInterNews",
+   "date": "Nov 2"
+  },
+  {
+   "register": "REPORTED",
+   "story": "Expected 3-5-2 at De Kuip",
+   "source": "Tuttosport",
+   "date": "Nov 2"
+  }
+ ],
+ "youtube_title": "Inter Are 20th in Europe — Rotterdam Is Must-Win | Feyenoord Preview, Edition No. 62",
+ "pinned_comment_question": "Do Inter get out of the league phase? One word.",
+ "next_fixture": "Feyenoord (away) · Tue, Nov 3 · Champions League MD4 · 3:00 PM ET / 21:00 CET · Paramount+ · CBS Sports Golazo",
+ "optional_drafts": {
+  "reddit": true,
+  "facebook": true
+ },
+ "thumbnail_style": "number",
+ "sunday_scorecard": false,
+ "publishes": "nothing — the 9:05 AM ET Postiz task posts TikTok and YouTube from the committed files",
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/41440540662",
+  "built_at_utc": "2026-11-02T11:57:37+00:00",
+  "seconds": 35.62,
+  "beats": 6,
+  "files": {
+   "assets/video/ed62.mp4": {
+    "bytes": 1373572,
+    "md5": "b0060e0e4911cd23b94d12bc6fd517fc",
+    "sha256": "4f28cf14c0d71738fe28530760d4053b36e259ea215b7099b3ddaa46f85d101a"
+   },
+   "assets/video/ed62-thumb.png": {
+    "bytes": 64017,
+    "md5": "059158efa2f1d0433a25732e632ce0f2",
+    "sha256": "84b012a8857369915d592a60256405547fd9d5385f9b88b640b6d64faf0987db"
+   },
+   "assets/video/ed62-thumb-9x16.png": {
+    "bytes": 89184,
+    "md5": "7842b6ea28db2186e735dd4cffb5f4c1",
+    "sha256": "77c4b1fec3bd67e9fc3f1ea1b1edac066cd22f8b946eca0ae588b9b3216dc5ab"
+   },
+   "data/tiktok-ed62.json": {
+    "bytes": 536,
+    "md5": "6831e2a722ebec843dce6ab107bd4e65",
+    "sha256": "5317dd55b1b295f95def95b543655e7c6c0d41905c380ab8237cf0f71413ce7d"
+   },
+   "data/youtube-ed62.json": {
+    "bytes": 1544,
+    "md5": "b489b02bde683805a9cbecb0f11856d8",
+    "sha256": "8c35bc7493e88ebff262e9e7fc27c469cdbff7a05f982d000b3e8f48472360ea"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 116891,
+    "md5": "90c61c7493d1e094c7fad0bab3c97dea",
+    "sha256": "89a37103f8eaf5a05db4dd89a7881cc3430e78aad2175ec526d79c6094664983"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 89184,
+    "md5": "7842b6ea28db2186e735dd4cffb5f4c1",
+    "sha256": "77c4b1fec3bd67e9fc3f1ea1b1edac066cd22f8b946eca0ae588b9b3216dc5ab"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 64017,
+    "md5": "059158efa2f1d0433a25732e632ce0f2",
+    "sha256": "84b012a8857369915d592a60256405547fd9d5385f9b88b640b6d64faf0987db"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 34.62
+  },
+  "passed": true
+ }
+}

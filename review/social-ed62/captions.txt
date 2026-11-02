@@ -1,0 +1,86 @@
+NERAZZURRI DAILY — SOCIAL PACK
+Edition No. 62 · Monday, November 2, 2026
+Video: ND-2026-11-02-ed62-twentieth-in-europe-voiced.mp4 — 35.6s, 6 beats, 9:16 1080x1920
+Hook: "Inter are 20th. Rotterdam is must-win."
+
+================================================================
+(a) TIKTOK — @nerazzurridaily
+================================================================
+Posted automatically at 9:05 AM ET via Postiz. The MP4 carries the voiceover only, no music — the owner's choice of Sept 26, 2026.
+
+TITLE
+Inter are 20th in Europe — Rotterdam is must-win
+
+CAPTION
+Inter are 20th of 36 in the Champions League league phase with three points from three, per Inter.it — and the top 24 go through, so Rotterdam is now must-win. Tuttosport says Pavard trained Sunday. #Inter #FeyenoordInter #ChampionsLeague https://www.nerazzurridaily.com/go/tt/?ed=62
+
+SUGGESTED POSTING WINDOW
+8–10 AM ET. (On matchdays there is also a full-time window, within 30 minutes of the whistle — a separate one-shot task builds that card. Today is not a matchday; Inter play at Feyenoord on Tuesday, Nov 3.)
+
+================================================================
+(b) YOUTUBE SHORTS — @nerazzurridaily
+================================================================
+Posted automatically at 9:05 AM ET via Postiz. The MP4 carries the voiceover only, no music — the owner's choice of Sept 26, 2026.
+The 9:16 thumbnail is sent to YouTube with the post (the 16:9 file is the fallback); the same 9:16 image opens the video for 1 second, which makes it the TikTok cover.
+
+TITLE
+Inter Are 20th in Europe — Rotterdam Is Must-Win | Feyenoord Preview, Edition No. 62
+
+DESCRIPTION
+Inter are 20th of 36 in the Champions League league phase — Rotterdam has stopped being a free hit.
+https://www.nerazzurridaily.com/go/yt/?ed=62
+
+Blue means the club said it. Pink means only the papers did.
+
+CONFIRMED — Inter are 20th of 36 with three points from three; the top 24 go through (Inter.it, Nov 1).
+CONFIRMED — Cristian Chivu speaks at De Kuip at 12:45 PM ET today (Inter.it, Nov 1).
+CONFIRMED — Piotr Zielinski made his 100th appearance for the club in the derby (Inter.it, Oct 31).
+REPORTED — Benjamin Pavard trained with the squad on Sunday and should be available in Rotterdam (Tuttosport via FCInterNews, Nov 2).
+REPORTED — A stomach bug ran through the squad last week; Marcus Thuram was the only attacker at full fitness for the derby (Tuttosport via FCInterNews, Nov 2).
+
+Read today's edition: https://www.nerazzurridaily.com/p/edition-62/
+
+Fan-made — not affiliated with FC Internazionale Milano.
+
+PINNED COMMENT
+Do Inter get out of the league phase? One word. Reply in the comments. https://www.nerazzurridaily.com/go/yt/?ed=62&v=pinned
+
+HASHTAGS (first three show above the title)
+#Inter #ChampionsLeague #FeyenoordInter #Pavard #ForzaInter
+
+================================================================
+(c) REDDIT — r/FCInterMilan (Mondays only) — DRAFT, DO NOT POST UNCHECKED
+================================================================
+Check r/FCInterMilan's rules for self-promotion before posting this week. No link in the body.
+
+TITLE
+Inter's November fixtures — kickoff times in ET and CET, with US TV
+
+BODY
+DATE            OPPONENT        H/A   COMPETITION        ET        CET      US TV
+Tue, Nov 3      Feyenoord       Away  Champions League   3:00 PM   21:00    Paramount+ / CBS Sports Golazo
+Sun, Nov 8      Como            Home  Serie A            12:00 PM  18:00    Paramount+ / Universo
+Sun, Nov 22     Atalanta        Away  Serie A            2:45 PM   20:45    Not yet published
+Wed, Nov 25     VfB Stuttgart   Home  Champions League   3:00 PM   21:00    Not yet published
+Sat, Nov 28     Genoa           Home  Serie A            2:45 PM   20:45    Not yet published
+Tue, Dec 1      Genoa           Home  Coppa Italia       3:00 PM   21:00    Not yet published
+
+Kickoff times are the club's; US listings are World Soccer Talk's. Where a broadcaster has not been announced, the row says not yet published.
+
+CLOSING LINE — include only if the sub's rules allow self-promotion this week
+I write a free daily digest of the Italian Inter press, in English — happy to share the link if anyone wants it.
+
+================================================================
+(d) FACEBOOK — the owner's own profile, paste as is
+================================================================
+Today's Nerazzurri Daily: Inter are 20th of 36 in the Champions League league phase with three points from three, and they go to Feyenoord tomorrow night needing a result.
+
+If you know one Inter fan, send them nerazzurridaily.com/go/fb/?ed=62
+
+================================================================
+NOTES
+================================================================
+- This pack publishes nothing. The 9:05 AM ET task posts TikTok and YouTube from the committed files, each behind its own kill switch in data/social-switch.json.
+- Facebook and Reddit stay drafts for the owner.
+- American English, month-first dates, Eastern time first.
+- There is no poll.
