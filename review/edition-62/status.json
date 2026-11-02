@@ -1,0 +1,161 @@
+{
+ "n": 62,
+ "built_at_utc": "2026-11-02T10:56:35+00:00",
+ "run_id": "41432675448",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/41432675448",
+ "passed": true,
+ "steps": {
+  "mast": "success",
+  "controls": "success",
+  "checks": "success"
+ },
+ "files_md5": {
+  "p/edition-62/index.html": "0dcf92d886e0ea4604196d0c3e22f431",
+  "assets/mast/edition-62.png": "be0ea2e84baca715176f59641581d632",
+  "data/edition-62.json": "b6cd8dcdd19efe055a131079a562c395",
+  "index.html": "8ef638189c20d6bfb3628438cb0cc25b",
+  "subscribe/index.html": "97cbb9334f09da3b202328a86678d1b8",
+  "fixtures/index.html": "6375793d8a37443ca955f23263352254",
+  "feed.xml": "aded33c440d9d2478fa14d8e7726249e",
+  "sitemap.xml": "f8e30875abbdbf2176cdcef93dee6f7f"
+ },
+ "title": "Inter sit 20th in Europe before Rotterdam",
+ "date": "2026-11-02",
+ "masthead": {
+  "bytes": 5681,
+  "lines": 2,
+  "colors": 7,
+  "fonts": {
+   "anton": true,
+   "mono": true
+  }
+ },
+ "controls": {
+  "n": 62,
+  "fails": [],
+  "warns": [],
+  "page-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 700,
+    "h": 382.8125,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "page-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "email-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 644,
+    "h": 352.1875,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  },
+  "email-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  }
+ },
+ "checks": {
+  "fails": [],
+  "warns": [],
+  "info": {
+   "prose_words": 490,
+   "read_seconds": 124,
+   "avg_sentence_words": 16.6,
+   "flesch_reading_ease": 64.9,
+   "edition_from_masthead": null,
+   "dates": {
+    "today": "November 2"
+   },
+   "external_to_fetch": [
+    "https://worldsoccertalk.com/champions-league-tv-schedule/",
+    "https://worldsoccertalk.com/serie-a-tv-schedule/",
+    "https://www.espn.com/soccer/standings/_/league/ita.1",
+    "https://www.fcinternews.it/rassegna/i-ts-i-feyenoord-avversario-peggiore-mosse-chivu-evince-sospetto-1022237",
+    "https://www.inter.it/en/inter-women",
+    "https://www.inter.it/en/matches",
+    "https://www.inter.it/en/news/analysis-opposition-feyenoord-inter-champions-league-2026-27",
+    "https://www.inter.it/en/news/champions-league-feyenoord-vs-inter-pre-match-schedule-26-27",
+    "https://www.inter.it/en/news/inter-women-lazio-serie-a-women-2026-27",
+    "https://www.inter.it/en/news/standings-league-phase-inter-fixtures-champions-league-26-27",
+    "https://www.inter.it/en/news/training-inter-1-november-2026",
+    "https://www.inter.it/it/notizie/cosenza-inter-u23-serie-c-2026-27",
+    "https://www.inter.it/it/notizie/milan-inter-serie-a-2026-27",
+    "https://www.inter.it/it/notizie/piotr-zielinski-100-presenze-inter",
+    "https://www.paramountplus.com/sneak-peak/how-to-watch-feyenoord-vs-inter-ucl-matchday-4-2026/",
+    "https://www.tiktok.com/@nerazzurridaily",
+    "https://www.tuttosport.com/news/calcio/champions-league/2026/11/02-152319216/feyenoord-inter_probabili_formazioni_orario_e_dove_vedere_in_tv_e_streaming_la_champions_league",
+    "https://www.youtube.com/@nerazzurridaily"
+   ],
+   "site_links": [
+    "https://www.nerazzurridaily.com/go/email/?ed=62",
+    "https://www.nerazzurridaily.com/go/email/?ed=62&to=/subscribe/",
+    "https://www.nerazzurridaily.com/go/forward/?ed=62",
+    "https://www.nerazzurridaily.com/p/edition-62/"
+   ]
+  }
+ },
+ "email": {
+  "md5": "66a791b99739f0596fd41f92ac8b83b7",
+  "chars": 27076,
+  "bytes": 27217
+ }
+}
