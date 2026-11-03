@@ -1,0 +1,96 @@
+{
+ "job": "ed63",
+ "kind": "daily",
+ "name": "ND-2026-11-03-ed63-rotterdam-without-bastoni",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-03T11:58:01+00:00",
+ "run_id": "41631472035",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/41631472035",
+ "files": {
+  "assets/video/ed63.mp4": {
+   "bytes": 1356082,
+   "md5": "048795eddd3fedca26a249b1d829f69f",
+   "sha256": "a424aff05e0feae6d73cac6281c193a5c4ab43f2a67e3c4c7229475048c3f3a6"
+  },
+  "assets/video/ed63-thumb.png": {
+   "bytes": 58462,
+   "md5": "1cdb15e064a81ee669b8499823d51f6a",
+   "sha256": "bd93cfe39c7676cb177b9214dcd0e4dbad5f5042b1c76691b9a5547e25793e07"
+  },
+  "assets/video/ed63-thumb-9x16.png": {
+   "bytes": 79249,
+   "md5": "f84a81515dff30ea182285aa11815bb2",
+   "sha256": "0943f4b1fbb0bf6346f007a41fdc1bc7a2a7851bfb3013b70395bfe9b73266a8"
+  },
+  "data/tiktok-ed63.json": {
+   "bytes": 684,
+   "md5": "953c712674c81e529dce6e584b2f7cae",
+   "sha256": "a6bf491420ffa817d5b07ea5c673f2c4c43c300b12d213d3963d94afec7f4db7"
+  },
+  "data/youtube-ed63.json": {
+   "bytes": 1646,
+   "md5": "f88da4baf141dd0f863c9144738c3e7b",
+   "sha256": "337c51f1e4311e8fbe3c0a5177d0bc04758dce4f80bebdb27bfe327e0149ac43"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 122195,
+   "md5": "6e0baf7e41d8989441708f341806f23f",
+   "sha256": "43c84259a312ae6676eb446842d18212c6ecdb3e4073202240ef20a77b01ca85"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 79249,
+   "md5": "f84a81515dff30ea182285aa11815bb2",
+   "sha256": "0943f4b1fbb0bf6346f007a41fdc1bc7a2a7851bfb3013b70395bfe9b73266a8"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 58462,
+   "md5": "1cdb15e064a81ee669b8499823d51f6a",
+   "sha256": "bd93cfe39c7676cb177b9214dcd0e4dbad5f5042b1c76691b9a5547e25793e07"
+  }
+ },
+ "seconds": 32.19,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "32.166667"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "32.190000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-11-03-ed63-rotterdam-without-bastoni-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-11-03-ed63-rotterdam-without-bastoni-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-11-03-ed63-rotterdam-without-bastoni-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 874415,
+  "md5": "b03609eaf5d1cc04a0fd3e4de27aba08",
+  "sha256": "206494d2c3014165b62806da390c8215a442edd9e7a1cf063470ed62ab796254"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 31.19
+ },
+ "voice_log_tail": "b1-stance: voice 4.50s → beat 4.91s\nb2-claim: voice 5.89s → beat 6.25s\nb3-ourtake: voice 3.84s → beat 4.2s\nb4-turn: voice 5.23s → beat 5.78s\nb5-fixture: voice 2.84s → beat 3.31s\nb6-end: voice 6.19s → beat 6.74s\nPLAN OK build/beats.voiced.json — 6 beats, 31.19s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-11-03-ed63-rotterdam-without-bastoni.mp4 — 31.17s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-11-03-ed63-rotterdam-without-bastoni-thumb-9x16.png, ND-2026-11-03-ed63-rotterdam-without-bastoni-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-11-03-ed63-rotterdam-without-bastoni-voiced.mp4 — 32.19s, AAC 48 kHz stereo, I: -16.2 LUFS Peak: -4.1 dBFS\n"
+}

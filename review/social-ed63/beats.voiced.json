@@ -1,0 +1,116 @@
+{
+ "n": 63,
+ "date": "2026-11-03",
+ "slug": "rotterdam-without-bastoni",
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "3",
+   "lines_a": [
+    "POINTS FROM",
+    "THREE GAMES"
+   ],
+   "lines_b": [
+    "ROTTERDAM",
+    "TONIGHT"
+   ],
+   "pill": "REPORTED · JONES, STONES, SPENCE",
+   "pill_register": "REPORTED"
+  }
+ },
+ "beats": [
+  {
+   "id": "b1-stance",
+   "kind": "cover",
+   "duration": 4.91,
+   "eyebrow": "EDITION NO. 63 · NOVEMBER 3",
+   "lines": [
+    "INTER CANNOT",
+    "AFFORD A DRAW",
+    "IN ROTTERDAM"
+   ],
+   "vo": "[Inter] cannot afford a draw in [Rotterdam] tonight. Not with three points."
+  },
+  {
+   "id": "b2-claim",
+   "kind": "stat",
+   "duration": 6.25,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · NOV 3",
+   "number": 3,
+   "lines": [
+    "POINTS FROM",
+    "THREE GAMES"
+   ],
+   "sub": [
+    "FEYENOORD ARE LEVEL WITH INTER",
+    "BASTONI SUSPENDED · 3:00 PM ET"
+   ],
+   "vo": "[Inter] and [Feyenoord] both have three points. [Alessandro Bastoni] is suspended tonight."
+  },
+  {
+   "id": "b3-ourtake",
+   "kind": "item",
+   "duration": 4.2,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "THREE POINTS",
+    "IS NOT A START.",
+    "IT IS A WARNING."
+   ],
+   "vo": "Three points from three games is not a start. It is a warning."
+  },
+  {
+   "id": "b4-turn",
+   "kind": "item",
+   "duration": 5.78,
+   "register": "REPORTED",
+   "kicker": "REPORTED · CORRIERE DELLO SPORT · NOV 2",
+   "lines": [
+    "THREE SIGNINGS",
+    "FROM ENGLAND.",
+    "ALMOST NOTHING."
+   ],
+   "sub": [
+    "JONES, STONES AND SPENCE · PRESS ONLY"
+   ],
+   "vo": "[Corriere dello Sport] says his three signings from England have given [Chivu] almost nothing."
+  },
+  {
+   "id": "b5-fixture",
+   "kind": "fixture",
+   "duration": 3.31,
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP",
+   "lines": [
+    "COMO AT HOME"
+   ],
+   "sub_top": "SUN, NOV 8 · SERIE A · MATCHDAY 11",
+   "big": "12:00 PM ET",
+   "sub": [
+    "18:00 CET · PARAMOUNT+ · UNIVERSO"
+   ],
+   "vo": "[Inter] host [Como] on Sunday, noon Eastern."
+  },
+  {
+   "id": "b6-end",
+   "kind": "end",
+   "duration": 6.74,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Win or draw in [Rotterdam] tonight? Tell us in the comments, at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 31.19
+ }
+}
