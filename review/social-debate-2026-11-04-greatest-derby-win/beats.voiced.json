@@ -1,0 +1,168 @@
+{
+ "thumbnail": {
+  "lines": [
+   "GREATEST DERBY WIN?"
+  ],
+  "left": {
+   "name": "1–2 · APR 2024",
+   "era": "Scudetto · 20th title"
+  },
+  "right": {
+   "name": "5–1 · SEPT 2023",
+   "era": "Five goals · 4 scorers"
+  }
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "kind": "hook",
+   "eyebrow": "THE DEBATE · NO. 7",
+   "lines": [
+    "INTER'S",
+    "GREATEST",
+    "DERBY WIN?"
+   ],
+   "sub": "Six derbies · one pick",
+   "duration": 3.67,
+   "vo": "[Inter]'s greatest derby win? Six candidates."
+  },
+  {
+   "id": "b2",
+   "kind": "lineup",
+   "kicker": "THE CONTENDERS",
+   "rows": [
+    {
+     "name": "Inter 6–5 Milan",
+     "era": "Nov 1949"
+    },
+    {
+     "name": "Milan 0–4 Inter",
+     "era": "Aug 2009"
+    },
+    {
+     "name": "Inter 4–2 Milan",
+     "era": "Feb 2020"
+    },
+    {
+     "name": "Milan 0–2 Inter",
+     "era": "May 2023"
+    },
+    {
+     "name": "Inter 5–1 Milan",
+     "era": "Sep 2023"
+    },
+    {
+     "name": "Milan 1–2 Inter",
+     "era": "Apr 2024"
+    }
+   ],
+   "duration": 3.93,
+   "vo": "Nineteen forty-nine to twenty twenty-four. One pick."
+  },
+  {
+   "id": "b3",
+   "kind": "card",
+   "kicker": "THE CASE · APRIL 22, 2024",
+   "number": 20,
+   "suffix": "th",
+   "label": "Scudetto, sealed in the derby",
+   "name": "Milan 1–2 Inter",
+   "facts": [
+    "Acerbi 18' · Thuram 49'",
+    "5 games to spare",
+    "6th derby win in a row · record"
+   ],
+   "source": "inter.it · Sky Sports · wikipedia",
+   "duration": 7.36,
+   "vo": "April twenty twenty-four: [Acerbi], [Thuram], two one. The twentieth [Scudetto], sealed in the derby itself."
+  },
+  {
+   "id": "b4",
+   "kind": "card",
+   "kicker": "THE COUNTER · SEPT 16, 2023",
+   "number": 5,
+   "suffix": "–1",
+   "label": "four scorers, four-goal margin",
+   "name": "Inter 5–1 Milan",
+   "facts": [
+    "Mkhitaryan ×2 · Thuram",
+    "Çalhanoğlu pen · Frattesi",
+    "5th derby win in a row"
+   ],
+   "source": "inter.it · CBS Sports",
+   "duration": 6.51,
+   "vo": "September twenty twenty-three: five one. [Mkhitaryan] twice, [Thuram], [Çalhanoğlu], [Frattesi]."
+  },
+  {
+   "id": "b5",
+   "kind": "versus",
+   "left": {
+    "name": "1–2 · 2024",
+    "era": "THE SCUDETTO DERBY"
+   },
+   "right": {
+    "name": "5–1 · 2023",
+    "era": "THE FIVE-GOAL DERBY"
+   },
+   "rows": [
+    {
+     "label": "Goals scored",
+     "l": 2,
+     "r": 5,
+     "win": "r"
+    },
+    {
+     "label": "Winning margin",
+     "l": 1,
+     "r": 4,
+     "win": "r"
+    },
+    {
+     "label": "Titles sealed",
+     "l": 1,
+     "r": 0,
+     "win": "l"
+    },
+    {
+     "label": "Derby wins in a row",
+     "l": 6,
+     "r": 5,
+     "win": "l"
+    }
+   ],
+   "duration": 3.88,
+   "vo": "The five one has the goals. The two one has the trophy."
+  },
+  {
+   "id": "b6",
+   "kind": "verdict",
+   "stamp": "OUR PICK",
+   "name": "Milan 1–2 Inter · 2024",
+   "lines": [
+    "The 20th Scudetto, sealed",
+    "in the derby itself"
+   ],
+   "duration": 4.63,
+   "vo": "Our pick: the two one. A title won in the derby, sixth win in a row."
+  },
+  {
+   "id": "b7",
+   "kind": "end",
+   "lines": [
+    "YOUR",
+    "PICK?"
+   ],
+   "ask": "reply in the comments",
+   "duration": 6.34,
+   "vo": "Your derby? Reply below. The [Inter] press in English at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 36.32
+ }
+}

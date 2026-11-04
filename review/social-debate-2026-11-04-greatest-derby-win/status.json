@@ -1,0 +1,86 @@
+{
+ "job": "debate-2026-11-04-greatest-derby-win",
+ "kind": "debate",
+ "name": "debate-2026-11-04-greatest-derby-win",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-04T17:32:29+00:00",
+ "run_id": "41878044936",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/41878044936",
+ "files": {
+  "assets/video/debate-2026-11-04-greatest-derby-win.mp4": {
+   "bytes": 2730511,
+   "md5": "76057cbbdb82c96eca9a2ac7b51f95e1",
+   "sha256": "730a77eb7570b748c25f149aedcaba17fc3b544bf9201d17a6f0c8a54d10b152"
+  },
+  "assets/video/debate-2026-11-04-greatest-derby-win-thumb.png": {
+   "bytes": 316916,
+   "md5": "29b2ebcd488fa2bf3f06d60c7a2b71a6",
+   "sha256": "7cc8655905f626da1e8827901543839806e65c43704d96417172c32981b0b08a"
+  },
+  "assets/video/debate-2026-11-04-greatest-derby-win-thumb-9x16.png": {
+   "bytes": 625649,
+   "md5": "3a18505f581edf416da95b18866b2734",
+   "sha256": "171aa20f1e652e11942563b3ba5231728519e07221db1d81f1f36ad1a558a197"
+  },
+  "data/tiktok-debate-2026-11-04-greatest-derby-win.json": {
+   "bytes": 907,
+   "md5": "c5559d81e3307a9a08e356e21c54994d",
+   "sha256": "7a970b59f5ea54f8a95c5550d61eaa8969d79ef9c9b9ab996be41017acf57c30"
+  },
+  "data/youtube-debate-2026-11-04-greatest-derby-win.json": {
+   "bytes": 2482,
+   "md5": "e81e1a4ced91a3afc571820f304a7d7c",
+   "sha256": "4743feeab5b4dd888216732f52b7bc7781dfa2a03a31bea10dcd7fcc67b74743"
+  },
+  "assets/qc/debate-contact.jpg": {
+   "bytes": 163217,
+   "md5": "342d88231423dad821713394ab148efe",
+   "sha256": "fc4c861a6a353b0d2c732bed56b78cb2eec42967880fa4e16da739354878839a"
+  }
+ },
+ "seconds": 37.32,
+ "beats": 7,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "37.300000"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "37.320000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/debate-2026-11-04-greatest-derby-win-voiced.mp4",
+  "thumb16": "build/pack/debate-2026-11-04-greatest-derby-win-thumb-16x9.png",
+  "thumb9": "build/pack/debate-2026-11-04-greatest-derby-win-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 2106095,
+  "md5": "42ff49151aaff13a4d55ff2d129b2a99",
+  "sha256": "e422842d5e9fd0315fa2baf2d2136271ada732f243d1fe8561be8d2f01423b11"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 36.32
+ },
+ "voice_log_tail": "b1: voice 3.31s → beat 3.67s\nb2: voice 3.52s → beat 3.93s\nb3: voice 6.83s → beat 7.36s\nb4: voice 6.10s → beat 6.51s\nb5: voice 3.43s → beat 3.88s\nb6: voice 4.29s → beat 4.63s\nb7: voice 5.87s → beat 6.34s\nPLAN OK build/beats.voiced.json — 7 beats, 36.32s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/debate-2026-11-04-greatest-derby-win.mp4 — 36.30s, 7 beats, silent (voice is mixed on by nd_voice.py); stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: debate-2026-11-04-greatest-derby-win-thumb-9x16.png, debate-2026-11-04-greatest-derby-win-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/debate-2026-11-04-greatest-derby-win-voiced.mp4 — 37.32s, AAC 48 kHz stereo, I: -16.4 LUFS Peak: -3.3 dBFS\n"
+}
