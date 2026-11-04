@@ -1,0 +1,106 @@
+NERAZZURRI DAILY — SOCIAL PACK
+Date: November 4, 2026 (Wednesday) · Edition ed64 · slug rotterdam-answer
+Video: ND-2026-11-04-ed64-rotterdam-answer-voiced.mp4 — 29.43 s, 6 beats, 1080x1920
+Hook: Inter fixed it in Rotterdam — for one night.
+Suggested post window: 8–10 AM ET, after the morning email. Posted automatically at 9:05 AM ET via Postiz.
+THE MP4 CARRIES THE VOICEOVER ONLY — NO MUSIC (the owner's choice of Sept 26, 2026). No platform music is added.
+Source page: https://www.nerazzurridaily.com/p/edition-64/
+
+================================================================
+YOUTUBE SHORTS  (committed as data/youtube-ed64.json; posted as-is at 9:05 AM ET via Postiz)
+Posted automatically at 9:05 AM ET via Postiz. The MP4 carries the voiceover only, no music — the owner's choice of Sept 26, 2026.
+The 9:16 thumbnail is sent to YouTube with the post (the 16:9 file is the fallback); the same 9:16 image opens the video for 1 second, which makes it the TikTok cover.
+
+TITLE (75 chars)
+Inter 3-0 Feyenoord: the derby answer, and Sky says Dimarco to 2028 #Shorts
+
+DESCRIPTION
+Inter fixed it in Rotterdam — for one night.
+https://www.nerazzurridaily.com/go/yt/?ed=64
+
+Blue means the club said it. Pink means only the papers did.
+
+CONFIRMED · Inter.it (Nov 3): Feyenoord 0-3 Inter. Bisseck 8', Esposito 34', Zielinski 54'. Six points from four, 14th of 36 in the league phase.
+REPORTED · Sky Sport Italia via FCInterNews (Nov 3): a clause ties Federico Dimarco to June 30, 2028. Inter have announced nothing.
+
+Next up: Como at home, Sunday, November 8 — 12:00 PM ET / 18:00 CET, CBS Sports Golazo and Paramount+.
+
+Read today's edition: https://www.nerazzurridaily.com/p/edition-64/
+
+Fan-made — not affiliated with FC Internazionale Milano.
+
+#Inter #ChampionsLeague #FeyenoordInter #Dimarco #ForzaInter
+
+TAGS
+Inter, ChampionsLeague, FeyenoordInter, Dimarco, ForzaInter
+
+PINNED COMMENT
+Which of the three was the best goal — Bisseck, Esposito or Zielinski? Reply in the comments. https://www.nerazzurridaily.com/go/yt/?ed=64&v=pinned
+
+================================================================
+TIKTOK  (committed as data/tiktok-ed64.json; posted as-is at 9:05 AM ET via Postiz)
+Posted automatically at 9:05 AM ET via Postiz. The MP4 carries the voiceover only, no music — the owner's choice of Sept 26, 2026.
+
+TITLE (41 chars)
+Inter answered the derby 3-0 at Feyenoord
+
+CAPTION (204 chars)
+Inter answered the derby in Rotterdam, 3-0, per Inter.it. Sky Sport Italia says a clause ties Dimarco to 2028.
+https://www.nerazzurridaily.com/go/tt/?ed=64
+#Inter #FeyenoordInter #ChampionsLeague #Dimarco
+
+================================================================
+FACEBOOK — two sentences for your own profile (draft only; this run posts nothing)
+
+Today's Nerazzurri Daily: Inter answered the derby with a 3-0 win at Feyenoord, and Sky Sport Italia says a clause has tied Dimarco to 2028 while the club has said nothing. If you know one Inter fan, send them nerazzurridaily.com/go/fb/?ed=64
+
+================================================================
+REDDIT — none today. The r/FCInterMilan fixtures draft is a Monday item; today is Wednesday.
+
+================================================================
+BEAT TABLE
+
+ 0.00– 4.35  cover/—
+   ON SCREEN: INTER FIXED IT / FOR ONE NIGHT.
+   KICKER:    
+   VOICE:     [Inter] won three nil away. One night does not fix a season.
+
+ 4.35–10.33  result/CONFIRMED
+   ON SCREEN: FEYENOORD
+   KICKER:    CONFIRMED · INTER.IT · NOV 3
+   VOICE:     [Inter] say [Bisseck], [Esposito] and [Zieliński] scored. Six points from four matches.
+
+10.33–13.77  item/NEUTRAL
+   ON SCREEN: ONE NIGHT / IS A MOOD. / A SEASON NEEDS A HABIT.
+   KICKER:    OUR TAKE
+   VOICE:     A good night is a mood. A season needs a habit.
+
+13.77–20.32  item/REPORTED
+   ON SCREEN: A CLAUSE TIES / DIMARCO TO 2028.
+   KICKER:    REPORTED · SKY SPORT ITALIA · NOV 3
+   VOICE:     [Sky Sport Italia] says a clause ties [Dimarco] to twenty twenty-eight. [Inter] have announced nothing.
+
+20.32–23.14  fixture/NEUTRAL
+   ON SCREEN: COMO
+   KICKER:    NEXT UP · SERIE A
+   VOICE:     [Como] at home Sunday, noon Eastern.
+
+23.14–28.43  end/—
+   ON SCREEN: 
+   KICKER:    
+   VOICE:     Which was the best goal? Tell me in the comments, at [Nerazzurri] Daily dot com.
+
+================================================================
+VERIFIED
+Every claim comes from data/edition-64.json in the repo (sha256 39fdf3f80c4a1040b3a008b102832162a17178f3d8408bdb8897977fb0882d4b),
+written and controlled by the 5:30 AM run. No new research was done for this pack.
+  CONFIRMED · Inter.it · Nov 3 — Feyenoord 0-3 Inter; Bisseck 8', Esposito 34', Zielinski 54'; six points from four, 14th of 36.
+  REPORTED  · Sky Sport Italia via FCInterNews · Nov 3 — a clause carries Dimarco's contract to June 30, 2028; Inter have announced nothing.
+  NEUTRAL   — Next up: Como, HOME, Sun Nov 8, Serie A Matchday 11, 12:00 PM ET / 18:00 CET, CBS Sports Golazo and Paramount+.
+Printed pink today: the Dimarco clause (Sky Sport Italia via FCInterNews).
+Links are the tracking doors only, pasted verbatim; the edition's own page URL appears once in the YouTube description.
+Links were NOT fetched: a scheduled run's shell cannot reach the live site, and this task makes no live-site fetch.
+
+CHECKS
+  Edition page committed in the repo (p/edition-64/index.html): 200.
+  Brevo campaign 53 "Nerazzurri Daily No. 64 — ...": status DRAFT — the email was NOT sent.

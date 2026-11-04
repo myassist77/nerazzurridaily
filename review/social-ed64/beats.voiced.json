@@ -1,0 +1,130 @@
+{
+ "name": "ND-2026-11-04-ed64-rotterdam-answer",
+ "beats": [
+  {
+   "id": "01-stance",
+   "kind": "cover",
+   "duration": 4.35,
+   "eyebrow": "EDITION NO. 64 · NOVEMBER 4",
+   "lines": [
+    "INTER FIXED IT",
+    "FOR ONE NIGHT."
+   ],
+   "vo": "[Inter] won three nil away. One night does not fix a season."
+  },
+  {
+   "id": "02-claim",
+   "kind": "result",
+   "duration": 5.98,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · NOV 3",
+   "home": "FEYENOORD",
+   "away": "INTER",
+   "score_home": 0,
+   "score_away": 3,
+   "inter": "away",
+   "sub": [
+    "BISSECK 8' · ESPOSITO 34' · ZIELINSKI 54'",
+    "SIX POINTS FROM FOUR"
+   ],
+   "vo": "[Inter] say [Bisseck], [Esposito] and [Zieliński] scored. Six points from four matches."
+  },
+  {
+   "id": "03-our-take",
+   "kind": "item",
+   "duration": 3.44,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "ONE NIGHT",
+    "IS A MOOD.",
+    "A SEASON NEEDS A HABIT."
+   ],
+   "vo": "A good night is a mood. A season needs a habit."
+  },
+  {
+   "id": "04-turn",
+   "kind": "item",
+   "duration": 6.55,
+   "register": "REPORTED",
+   "kicker": "REPORTED · SKY SPORT ITALIA · NOV 3",
+   "lines": [
+    "A CLAUSE TIES",
+    "DIMARCO TO 2028."
+   ],
+   "sub": [
+    "INTER HAVE ANNOUNCED NOTHING."
+   ],
+   "vo": "[Sky Sport Italia] says a clause ties [Dimarco] to twenty twenty-eight. [Inter] have announced nothing."
+  },
+  {
+   "id": "05-fixture",
+   "kind": "fixture",
+   "duration": 2.82,
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP · SERIE A",
+   "lines": [
+    "COMO"
+   ],
+   "sub_top": "SUN, NOV 8 · HOME",
+   "big": "12:00 PM ET",
+   "sub": [
+    "18:00 CET",
+    "CBS SPORTS GOLAZO · PARAMOUNT+"
+   ],
+   "vo": "[Como] at home Sunday, noon Eastern."
+  },
+  {
+   "id": "06-end",
+   "kind": "end",
+   "duration": 5.29,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Which was the best goal? Tell me in the comments, at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "thumbnail": {
+  "style": "number",
+  "top": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "lines": [
+    "AWAY WIN",
+    "IN ROTTERDAM."
+   ]
+  },
+  "bottom": {
+   "register": "REPORTED",
+   "kicker": "REPORTED · SKY SPORT",
+   "lines": [
+    "DIMARCO",
+    "TO 2028?"
+   ],
+   "sub": "INTER HAVE ANNOUNCED NOTHING"
+  },
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "3",
+   "lines_a": [
+    "GOALS AWAY",
+    "IN ROTTERDAM."
+   ],
+   "lines_b": [
+    "DERBY",
+    "ANSWERED."
+   ],
+   "pill": "REPORTED: DIMARCO TO 2028",
+   "pill_register": "REPORTED"
+  }
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 28.43
+ }
+}

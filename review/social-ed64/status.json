@@ -1,0 +1,96 @@
+{
+ "job": "ed64",
+ "kind": "daily",
+ "name": "ND-2026-11-04-ed64-rotterdam-answer",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-04T11:58:30+00:00",
+ "run_id": "41824812942",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/41824812942",
+ "files": {
+  "assets/video/ed64.mp4": {
+   "bytes": 1182643,
+   "md5": "fda7907e6e3061ed8d058e1a00286e44",
+   "sha256": "8b9fc6c3794ce2419703d32ef78a9aacd1f5c097e525d956e783b8168ccbd0fd"
+  },
+  "assets/video/ed64-thumb.png": {
+   "bytes": 63617,
+   "md5": "986632645c74495d17e16f1b366f7030",
+   "sha256": "971c56ab182c082f0cab4815c1eda5095e835e5835954425492e8e7657269936"
+  },
+  "assets/video/ed64-thumb-9x16.png": {
+   "bytes": 86721,
+   "md5": "0bcc1f38bad95effba410e8e06e9f1de",
+   "sha256": "982342b9197e479e8cbb5f0dcd70fd5271b50d423bad3b16ff1615126bb4b243"
+  },
+  "data/tiktok-ed64.json": {
+   "bytes": 445,
+   "md5": "78cb806e34c836529a9ccae5cb897465",
+   "sha256": "f1882f4003f873cd7e200cc0c556f7f3baaf4361155a2f3d7827eb217910a19b"
+  },
+  "data/youtube-ed64.json": {
+   "bytes": 1356,
+   "md5": "585f795a3b79291d060edec06e8c3406",
+   "sha256": "76087c0a9fc8e1019b9559fa76de71627e48ebe1992ab2041c485e922da9a8ce"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 108655,
+   "md5": "5d9c51a979eb5a2059804181ac0001d3",
+   "sha256": "b1f4aaae8a6d835a926fd07835ac3085998d227b88cb8f80747c821e0eb192e0"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 86721,
+   "md5": "0bcc1f38bad95effba410e8e06e9f1de",
+   "sha256": "982342b9197e479e8cbb5f0dcd70fd5271b50d423bad3b16ff1615126bb4b243"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 63617,
+   "md5": "986632645c74495d17e16f1b366f7030",
+   "sha256": "971c56ab182c082f0cab4815c1eda5095e835e5835954425492e8e7657269936"
+  }
+ },
+ "seconds": 29.43,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "29.400000"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "29.430000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-11-04-ed64-rotterdam-answer-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-11-04-ed64-rotterdam-answer-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-11-04-ed64-rotterdam-answer-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 740353,
+  "md5": "a76b7db684df870743bc2b7bf01458fe",
+  "sha256": "1d3d905a64077585a3a10ab1a8b71768bb4102e0c150d2dd89f5e54ff8879b9e"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 28.43
+ },
+ "voice_log_tail": "01-stance: voice 3.84s → beat 4.35s\n02-claim: voice 5.48s → beat 5.98s\n03-our-take: voice 2.99s → beat 3.44s\n04-turn: voice 6.10s → beat 6.55s\n05-fixture: voice 2.35s → beat 2.82s\n06-end: voice 4.86s → beat 5.29s\nPLAN OK build/beats.voiced.json — 6 beats, 28.43s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-11-04-ed64-rotterdam-answer.mp4 — 28.40s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-11-04-ed64-rotterdam-answer-thumb-9x16.png, ND-2026-11-04-ed64-rotterdam-answer-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-11-04-ed64-rotterdam-answer-voiced.mp4 — 29.43s, AAC 48 kHz stereo, I: -16.2 LUFS Peak: -4.3 dBFS\n"
+}
