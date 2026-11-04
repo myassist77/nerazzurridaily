@@ -1,0 +1,157 @@
+{
+ "n": 64,
+ "built_at_utc": "2026-11-04T10:52:31+00:00",
+ "run_id": "41817014450",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/41817014450",
+ "passed": true,
+ "steps": {
+  "mast": "success",
+  "controls": "success",
+  "checks": "success"
+ },
+ "files_md5": {
+  "p/edition-64/index.html": "54b93fbec142e5d661964a3b45cda521",
+  "assets/mast/edition-64.png": "ac63119d12997e812974d14c591112fa",
+  "data/edition-64.json": "0fb3092acc51226c8c2c1696d3aaa866",
+  "index.html": "b437dbc0ee57c283ba5cfc2c7e8b5198",
+  "subscribe/index.html": "aae6abd7a9dcea30ae910698a2e2bf5b",
+  "fixtures/index.html": "cb90b8e9c00cd1d5052b25a423ef61a4",
+  "feed.xml": "097e10b2733dbc78d58e0ed157eeb701",
+  "sitemap.xml": "5de7e049b6ff5ed0db839f8daed6dba9"
+ },
+ "title": "Inter win 3–0 at Feyenoord to answer the derby",
+ "date": "2026-11-04",
+ "masthead": {
+  "bytes": 5836,
+  "lines": 2,
+  "colors": 7,
+  "fonts": {
+   "anton": true,
+   "mono": true
+  }
+ },
+ "controls": {
+  "n": 64,
+  "fails": [],
+  "warns": [],
+  "page-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 700,
+    "h": 382.8125,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "page-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "email-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 644,
+    "h": 352.1875,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  },
+  "email-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  }
+ },
+ "checks": {
+  "fails": [],
+  "warns": [],
+  "info": {
+   "prose_words": 484,
+   "read_seconds": 122,
+   "avg_sentence_words": 14.3,
+   "flesch_reading_ease": 67.6,
+   "edition_from_masthead": null,
+   "dates": {
+    "today": "November 4"
+   },
+   "external_to_fetch": [
+    "https://worldsoccertalk.com/serie-a-tv-schedule/",
+    "https://www.fcinternews.it/copertina/i-sky-i-dimarco-inter-esercitato-clausola-rinnovo-2028-1022333",
+    "https://www.fcinternews.it/pagelle/feyenoord-inter-pagelle-bisseck-apriscatole-carlos-mister-garanzia-1022329",
+    "https://www.inter.it/en/inter-women",
+    "https://www.inter.it/en/news/bisseck-esposito-zielinski-goals-interviews-feyenoord-inter-champions-league-2026-27",
+    "https://www.inter.it/en/news/feyenoord-inter-champions-league-2026-27",
+    "https://www.inter.it/en/news/feyenoord-inter-youth-league-2026-27",
+    "https://www.inter.it/en/news/interview-chivu-feyenoord-inter-champions-league-2026-27",
+    "https://www.inter.it/en/news/standings-league-phase-inter-fixtures-champions-league-26-27",
+    "https://www.inter.it/it/matches",
+    "https://www.inter.it/it/notizie/feyenoord-inter-champions-league-2026-27",
+    "https://www.inter.it/it/notizie/inter-como-dove-vederla-in-tv",
+    "https://www.tiktok.com/@nerazzurridaily",
+    "https://www.youtube.com/@nerazzurridaily"
+   ],
+   "site_links": [
+    "https://www.nerazzurridaily.com/go/email/?ed=64",
+    "https://www.nerazzurridaily.com/go/email/?ed=64&to=/subscribe/",
+    "https://www.nerazzurridaily.com/go/forward/?ed=64",
+    "https://www.nerazzurridaily.com/p/edition-64/"
+   ]
+  }
+ },
+ "email": {
+  "md5": "e68102c971b4198da335e9b82537a060",
+  "chars": 25866,
+  "bytes": 26000
+ }
+}
