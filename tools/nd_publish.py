@@ -3,7 +3,11 @@
 then:
     sha = gh_commit(['p/edition-19/index.html','assets/mast/edition-19.png','data/edition-19.json','index.html','sitemap.xml'], 'Edition No. 19 — <headline>')
     cid = brevo_draft(19, subject, preview_text, '/home/user/nd/build/email-19.html')
-Never schedules or sends: brevo_draft creates a DRAFT (no scheduled_at). The owner presses send.
+brevo_draft creates a DRAFT (no scheduled_at). brevo_draft_from_repo takes an optional scheduled_at
+(RFC3339 with offset, e.g. '2026-11-05T06:10:00-05:00'): with it Brevo itself sends the campaign at that
+time and no sendNow call is ever made (owner's decision, Nov 4, 2026 - the auto-mode classifier refuses
+sendNow in an unattended run, but creating a scheduled campaign is the same POST that already succeeds).
+Neither function ever calls sendNow.
 """
 import base64, json, os, time, requests
 
@@ -111,9 +115,12 @@ def edition_status(n, ref='main'):
     try: return json.loads(repo_file(f'review/edition-{n}/status.json', ref).decode('utf-8'))
     except Exception: return None
 
-def brevo_draft_from_repo(n, subject, preview, name=None, dry_run=False):
-    """Create the DRAFT campaign from review/edition-N/email-N.html, after checking its md5 against status.json.
-    dry_run=True only fetches and verifies. Returns the campaign id (or the md5 on a dry run). Never sends."""
+def brevo_draft_from_repo(n, subject, preview, name=None, dry_run=False, scheduled_at=None):
+    """Create the campaign from review/edition-N/email-N.html, after checking its md5 against status.json.
+    scheduled_at=None (the default) creates a DRAFT, exactly as before. Pass an RFC3339 string with a UTC
+    offset (e.g. '2026-11-05T06:10:00-05:00') and Brevo sends it itself at that time - no sendNow call.
+    dry_run=True only fetches and verifies. Returns the campaign id (or the md5 on a dry run).
+    This function never calls sendNow and never sends immediately."""
     st = edition_status(n)
     if not st or not st.get('passed'): raise RuntimeError(f'edition {n}: no passing status.json in the repo (got {st and st.get("steps")})')
     raw = repo_file(f'review/edition-{n}/email-{n}.html')
@@ -124,6 +131,10 @@ def brevo_draft_from_repo(n, subject, preview, name=None, dry_run=False):
     body = {"name": name or f"Nerazzurri Daily No. {n} — {subject}"[:200], "subject": subject, "previewText": preview,
             "sender": {"name": "Nerazzurri Daily", "email": SENDER}, "replyTo": SENDER,
             "htmlContent": html, "recipients": {"listIds": [brevo_list_id()]}, "mirrorActive": True}
+    if scheduled_at:
+        if not isinstance(scheduled_at, str) or 'T' not in scheduled_at:
+            raise RuntimeError(f'scheduled_at must be an RFC3339 string with a UTC offset, got {scheduled_at!r}')
+        body["scheduledAt"] = scheduled_at
     r, e = proxy_execute(method='POST', endpoint='/emailCampaigns', toolkit='brevo', body=body)
     if e: raise RuntimeError(f'brevo create: {e}')
     return _unwrap(r)['id']
