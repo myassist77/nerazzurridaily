@@ -1,0 +1,116 @@
+{
+ "date_iso": "2026-11-05",
+ "slug": "lautaro-must-wait",
+ "edition": 65,
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "REPORTED",
+   "kicker": "REPORTED · GAZZETTA DELLO SPORT",
+   "big": "2",
+   "lines_a": [
+    "BACK IN GROUP",
+    "WORK FOR COMO"
+   ],
+   "lines_b": [
+    "JONES AND STONES"
+   ],
+   "pill": "CONFIRMED · 0-3 AT FEYENOORD",
+   "pill_register": "CONFIRMED"
+  }
+ },
+ "beats": [
+  {
+   "id": "stance",
+   "kind": "cover",
+   "duration": 3.95,
+   "eyebrow": "EDITION NO. 65 · NOVEMBER 5",
+   "lines": [
+    "INTER DON'T NEED",
+    "LAUTARO FOR COMO"
+   ],
+   "vo": "[Inter] do not need [Lautaro] to beat [Como] on Sunday."
+  },
+  {
+   "id": "claim",
+   "kind": "item",
+   "duration": 7.19,
+   "register": "REPORTED",
+   "kicker": "REPORTED · GAZZETTA DELLO SPORT · NOV 5",
+   "lines": [
+    "LAUTARO WAITS",
+    "FOR ATALANTA"
+   ],
+   "sub": [
+    "LEFT THIGH · THE SQUAD'S MOST STUBBORN PROBLEM"
+   ],
+   "vo": "[Gazzetta dello Sport] says the captain's thigh is the most stubborn. The target is [Atalanta] after the break."
+  },
+  {
+   "id": "take",
+   "kind": "item",
+   "duration": 4.35,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "THE WIN CAME",
+    "WITHOUT HIM"
+   ],
+   "sub": [
+    "ROTTERDAM SAID THIS SQUAD CAN COPE"
+   ],
+   "vo": "The win in [Rotterdam] came without him. This squad can cope."
+  },
+  {
+   "id": "turn",
+   "kind": "result",
+   "duration": 7.45,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · NOV 4",
+   "home": "FEYENOORD",
+   "away": "INTER",
+   "score_home": 0,
+   "score_away": 3,
+   "inter": "away",
+   "sub": [
+    "BISSECK 8' · ESPOSITO 34' · ZIELINSKI 54'",
+    "PAVARD BACK ON IN THE 85TH"
+   ],
+   "vo": "[Feyenoord] nil, [Inter] three. [Bisseck], [Esposito], [Zielinski] — and [Pavard] back on in the eighty-fifth minute."
+  },
+  {
+   "id": "fixture",
+   "kind": "fixture",
+   "duration": 3.2,
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP · SERIE A · MATCHDAY 11",
+   "lines": [
+    "COMO AT",
+    "SAN SIRO"
+   ],
+   "sub_top": "SUN, NOV 8 · SERIE A",
+   "big": "12:00 PM ET",
+   "sub": [
+    "18:00 CET · US TV: PARAMOUNT+"
+   ],
+   "vo": "[Como] at [San Siro], Sunday, noon Eastern."
+  },
+  {
+   "id": "end",
+   "kind": "end",
+   "duration": 6.38,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Can [Inter] beat [Como] without their captain? Comment below. At [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 32.52
+ }
+}
