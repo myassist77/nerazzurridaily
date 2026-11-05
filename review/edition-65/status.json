@@ -1,0 +1,156 @@
+{
+ "n": 65,
+ "built_at_utc": "2026-11-05T10:58:59+00:00",
+ "run_id": "42015076883",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/42015076883",
+ "passed": true,
+ "steps": {
+  "mast": "success",
+  "controls": "success",
+  "checks": "success"
+ },
+ "files_md5": {
+  "p/edition-65/index.html": "1e5ff5eeccd3a40eaca191d14fdff08b",
+  "assets/mast/edition-65.png": "7ac437ea9157e0e4e1b18b27ac207402",
+  "data/edition-65.json": "04cba9f6de1c997078b77eacfe12353a",
+  "index.html": "1b357dbaca02ace7c34427795f95ede9",
+  "subscribe/index.html": "46061ed4f9bb2eed551b52cda2c2f11c",
+  "fixtures/index.html": "f36c0c28137c509eb349b775c412b7ed",
+  "feed.xml": "f9a707ddb87eeb37a4c657231fb7ec2a",
+  "sitemap.xml": "de91a24f5658a45de8352cdc9cec437b"
+ },
+ "title": "Jones and Stones are back, Lautaro must wait",
+ "date": "2026-11-05",
+ "masthead": {
+  "bytes": 6849,
+  "lines": 2,
+  "colors": 7,
+  "fonts": {
+   "anton": true,
+   "mono": true
+  }
+ },
+ "controls": {
+  "n": 65,
+  "fails": [],
+  "warns": [],
+  "page-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 700,
+    "h": 382.8125,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "page-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "email-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 644,
+    "h": 352.1875,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  },
+  "email-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  }
+ },
+ "checks": {
+  "fails": [],
+  "warns": [],
+  "info": {
+   "prose_words": 456,
+   "read_seconds": 115,
+   "avg_sentence_words": 17.9,
+   "flesch_reading_ease": 61.9,
+   "edition_from_masthead": null,
+   "dates": {
+    "today": "November 5"
+   },
+   "external_to_fetch": [
+    "https://www.fcinter1908.it/news/infortuni/jones-stones-como-lautaro-inter/",
+    "https://www.inter.it/en/matches",
+    "https://www.inter.it/en/news/condolences-inter-jesus-de-miguel-tenerife",
+    "https://www.inter.it/en/news/five-moments-feyenoord-inter-champions-league-2026-27",
+    "https://www.inter.it/en/news/interview-spence-feyenoord-inter-champions-league-2026-27",
+    "https://www.inter.it/en/news/serie-a-2026-27-schedule-inter-matchdays-6-12",
+    "https://www.inter.it/en/news/standings-league-phase-inter-fixtures-champions-league-26-27",
+    "https://www.inter.it/en/news/training-inter-4-november-2026",
+    "https://www.italpress.com/designazioni-arbitrali-11esima-giornata-serie-a-napoli-lazio-inter-como/",
+    "https://www.sportsmediawatch.com/tv-schedules/club-soccer/serie-a/",
+    "https://www.tiktok.com/@nerazzurridaily",
+    "https://www.uefa.com/uefachampionsleague/video/highlights/02ab-21fc62ef7b52-afa22e8d353f-1000--champions-league-highlights-feyenoord-0-3-inter/",
+    "https://www.youtube.com/@nerazzurridaily"
+   ],
+   "site_links": [
+    "https://www.nerazzurridaily.com/go/email/?ed=65",
+    "https://www.nerazzurridaily.com/go/email/?ed=65&to=/subscribe/",
+    "https://www.nerazzurridaily.com/go/forward/?ed=65",
+    "https://www.nerazzurridaily.com/p/edition-65/"
+   ]
+  }
+ },
+ "email": {
+  "md5": "72637deccde9fd5db01c599d1f3635c9",
+  "chars": 25299,
+  "bytes": 25404
+ }
+}
