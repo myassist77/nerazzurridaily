@@ -1,0 +1,115 @@
+{
+ "name": "ND-2026-11-06-ed66-twenty-goals-como",
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 32.35
+ },
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "REPORTED",
+   "kicker": "REPORTED · CORRIERE DELLO SPORT",
+   "big": "20",
+   "lines_a": [
+    "GOALS IN THEIR",
+    "LAST SIX MEETINGS"
+   ],
+   "lines_b": [
+    "INTER-COMO, SUNDAY"
+   ],
+   "pill": "CONFIRMED · BISSECK IN UEFA'S XI",
+   "pill_register": "CONFIRMED"
+  }
+ },
+ "beats": [
+  {
+   "id": "b1-stance",
+   "kind": "cover",
+   "duration": 4.46,
+   "eyebrow": "EDITION NO. 66 · NOVEMBER 6",
+   "lines": [
+    "INTER-COMO",
+    "WON'T END 1-0."
+   ],
+   "vo": "[Inter] host [Como] on Sunday, and this one never ends one nil."
+  },
+  {
+   "id": "b2-claim",
+   "kind": "stat",
+   "duration": 6.76,
+   "register": "REPORTED",
+   "kicker": "REPORTED · CORRIERE DELLO SPORT · NOV 6",
+   "number": 20,
+   "lines": [
+    "GOALS IN THEIR",
+    "LAST SIX MEETINGS"
+   ],
+   "sub": [
+    "INTER WON FIVE, DREW ONE",
+    "TWICE FROM TWO GOALS DOWN"
+   ],
+   "vo": "[Corriere dello Sport] counts twenty goals in six meetings. [Inter] won five, twice from two down."
+  },
+  {
+   "id": "b3-ourtake",
+   "kind": "item",
+   "duration": 5.93,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "WATCH THIS ONE",
+    "THROUGH YOUR FINGERS."
+   ],
+   "sub": [
+    "NOBODY IS PREDICTING A QUIET ONE"
+   ],
+   "vo": "Watch this one through your fingers. Nobody is predicting a quiet afternoon at [San Siro]."
+  },
+  {
+   "id": "b4-turn",
+   "kind": "item",
+   "duration": 5.36,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · UEFA.COM · NOV 5",
+   "lines": [
+    "UEFA PICKED",
+    "BISSECK AND DOUVIKAS"
+   ],
+   "sub": [
+    "SAME TEAM OF THE WEEK",
+    "AND THEY MEET ON SUNDAY"
+   ],
+   "vo": "[UEFA] named [Bisseck] in its team of the week, beside the [Como] striker he must stop."
+  },
+  {
+   "id": "b5-fixture",
+   "kind": "fixture",
+   "duration": 4.06,
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP · SERIE A · MATCHDAY 11",
+   "lines": [
+    "COMO",
+    "AT SAN SIRO"
+   ],
+   "sub_top": "SUNDAY, NOVEMBER 8",
+   "big": "12:00 PM ET",
+   "sub": [
+    "18:00 IN MILAN · US TV: PARAMOUNT+"
+   ],
+   "vo": "Sunday, noon Eastern. Six in the evening at [San Siro]."
+  },
+  {
+   "id": "b6-end",
+   "kind": "end",
+   "duration": 5.78,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Who scores first on Sunday? Tell me in the comments, at [Nerazzurri] Daily dot com."
+  }
+ ]
+}

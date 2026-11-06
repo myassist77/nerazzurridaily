@@ -1,0 +1,96 @@
+{
+ "job": "ed66",
+ "kind": "daily",
+ "name": "ND-2026-11-06-ed66-twenty-goals-como",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-06T11:57:20+00:00",
+ "run_id": "42213815987",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/42213815987",
+ "files": {
+  "assets/video/ed66.mp4": {
+   "bytes": 1349733,
+   "md5": "7d32f43dbdfa01a08838f20379b609dc",
+   "sha256": "63ce1c706071fca21467d7cecd05c7002aa61f3981a5b7d582dc84b5c37fcb46"
+  },
+  "assets/video/ed66-thumb.png": {
+   "bytes": 63893,
+   "md5": "88f8b0009963b5afe7f8bc7e7491e253",
+   "sha256": "f732af53adc05477d06a3c3ad6ad6b6cff19a304572768b3fa67a7e6cfec924b"
+  },
+  "assets/video/ed66-thumb-9x16.png": {
+   "bytes": 92875,
+   "md5": "89ab1c725e1da8c7c7f43a8677b7d080",
+   "sha256": "17b4bca613b6e3d5b35485f330d923b5b81bc7412dd3818d440cd50c4c97b936"
+  },
+  "data/tiktok-ed66.json": {
+   "bytes": 589,
+   "md5": "95b9adf084b31decce0b4985c8868ac0",
+   "sha256": "acdc7972db5e72d8f2774d44695c165a268ef3190724fc47f18419564b2a8051"
+  },
+  "data/youtube-ed66.json": {
+   "bytes": 1294,
+   "md5": "3ef185f4b93794f89478e2c32a13a161",
+   "sha256": "ba32e35631e119b2d5f2b9552ec35195d31af5756b59cb4cf4763959f430388f"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 114628,
+   "md5": "131fced483663cdc16e0ad56d0570ac9",
+   "sha256": "b1913a2a13e54b9fa6b885fa9ed02c33ec7ddf160ac8f8d3686ff49349840a6a"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 92875,
+   "md5": "89ab1c725e1da8c7c7f43a8677b7d080",
+   "sha256": "17b4bca613b6e3d5b35485f330d923b5b81bc7412dd3818d440cd50c4c97b936"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 63893,
+   "md5": "88f8b0009963b5afe7f8bc7e7491e253",
+   "sha256": "f732af53adc05477d06a3c3ad6ad6b6cff19a304572768b3fa67a7e6cfec924b"
+  }
+ },
+ "seconds": 33.37,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "33.366667"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "33.350000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-11-06-ed66-twenty-goals-como-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-11-06-ed66-twenty-goals-como-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-11-06-ed66-twenty-goals-como-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 842363,
+  "md5": "6c00a06cfc9e1970b2dd08fc86aeab26",
+  "sha256": "d21858aeaa5e8dd5b1e41e3c98c5303e4ccc04f24dda343129c7d5e7cf484611"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 32.35
+ },
+ "voice_log_tail": "b1-stance: voice 3.99s → beat 4.46s\nb2-claim: voice 6.27s → beat 6.76s\nb3-ourtake: voice 5.50s → beat 5.93s\nb4-turn: voice 4.97s → beat 5.36s\nb5-fixture: voice 3.58s → beat 4.06s\nb6-end: voice 5.38s → beat 5.78s\nPLAN OK build/beats.voiced.json — 6 beats, 32.35s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-11-06-ed66-twenty-goals-como.mp4 — 32.37s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-11-06-ed66-twenty-goals-como-thumb-9x16.png, ND-2026-11-06-ed66-twenty-goals-como-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-11-06-ed66-twenty-goals-como-voiced.mp4 — 33.37s, AAC 48 kHz stereo, I: -16.2 LUFS Peak: -3.9 dBFS\n"
+}

@@ -1,0 +1,131 @@
+{
+ "edition": 66,
+ "date": "2026-11-06",
+ "slug": "twenty-goals-como",
+ "hook": "Inter-Como won't end 1-0.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-66/",
+ "edition_json_sha256": "1dac5b8b51806a0e91ba4f76888a494e10a253cfc15db159686f3061b913e63b",
+ "brevo": {
+  "campaign_id": 55,
+  "status": "sent",
+  "sent_date": "2026-11-06T06:10:05-05:00"
+ },
+ "local_render": {
+  "filename": "ND-2026-11-06-ed66-twenty-goals-como-voiced.mp4",
+  "seconds": 33.37,
+  "beats": 6,
+  "bytes": 1346673,
+  "md5": "ada7ddb2d4463c143039fa1d878acaa7",
+  "sha256": "f4607f52823e1e343285526a4e21005807ec22403cf2f7b3bbc131b1e37633cb"
+ },
+ "audio": {
+  "note": "voiceover only — no music",
+  "codec": "aac",
+  "sample_rate": "48000",
+  "channels": 2,
+  "duration": 33.35,
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 32.35
+  }
+ },
+ "stories": [
+  {
+   "register": "REPORTED",
+   "source": "Corriere dello Sport",
+   "date": "2026-11-06",
+   "claim": "Inter and Como have scored 20 goals between them across their last six meetings; Inter won five and drew one."
+  },
+  {
+   "register": "CONFIRMED",
+   "source": "UEFA.com",
+   "date": "2026-11-05",
+   "claim": "UEFA named Yann Bisseck in its Champions League team of the week, alongside Como striker Tasos Douvikas."
+  },
+  {
+   "register": "CONFIRMED",
+   "source": "England Football",
+   "date": "2026-11-06",
+   "claim": "Djed Spence is in the 25-man England squad for Croatia and Spain."
+  }
+ ],
+ "youtube_title": "Inter vs Como: 20 Goals in Six Meetings | Bisseck in UEFA's Team of the Week",
+ "pinned_comment_question": "Who scores first at San Siro on Sunday — Inter or Como?",
+ "next_fixture": {
+  "opponent": "Como",
+  "venue": "HOME",
+  "date": "2026-11-08",
+  "competition": "Serie A · Matchday 11",
+  "et": "12:00 PM ET",
+  "cet": "18:00 CET",
+  "us_tv": "Paramount+"
+ },
+ "thumbnail_style": "number",
+ "optional_drafts": {
+  "reddit": false,
+  "facebook": true
+ },
+ "format": "daily six-beat",
+ "publishes": "nothing — the 9:05 AM ET Postiz task posts TikTok and YouTube from the committed files",
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/42213815987",
+  "built_at_utc": "2026-11-06T11:57:20+00:00",
+  "seconds": 33.37,
+  "beats": 6,
+  "files": {
+   "assets/video/ed66.mp4": {
+    "bytes": 1349733,
+    "md5": "7d32f43dbdfa01a08838f20379b609dc",
+    "sha256": "63ce1c706071fca21467d7cecd05c7002aa61f3981a5b7d582dc84b5c37fcb46"
+   },
+   "assets/video/ed66-thumb.png": {
+    "bytes": 63893,
+    "md5": "88f8b0009963b5afe7f8bc7e7491e253",
+    "sha256": "f732af53adc05477d06a3c3ad6ad6b6cff19a304572768b3fa67a7e6cfec924b"
+   },
+   "assets/video/ed66-thumb-9x16.png": {
+    "bytes": 92875,
+    "md5": "89ab1c725e1da8c7c7f43a8677b7d080",
+    "sha256": "17b4bca613b6e3d5b35485f330d923b5b81bc7412dd3818d440cd50c4c97b936"
+   },
+   "data/tiktok-ed66.json": {
+    "bytes": 589,
+    "md5": "95b9adf084b31decce0b4985c8868ac0",
+    "sha256": "acdc7972db5e72d8f2774d44695c165a268ef3190724fc47f18419564b2a8051"
+   },
+   "data/youtube-ed66.json": {
+    "bytes": 1294,
+    "md5": "3ef185f4b93794f89478e2c32a13a161",
+    "sha256": "ba32e35631e119b2d5f2b9552ec35195d31af5756b59cb4cf4763959f430388f"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 114628,
+    "md5": "131fced483663cdc16e0ad56d0570ac9",
+    "sha256": "b1913a2a13e54b9fa6b885fa9ed02c33ec7ddf160ac8f8d3686ff49349840a6a"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 92875,
+    "md5": "89ab1c725e1da8c7c7f43a8677b7d080",
+    "sha256": "17b4bca613b6e3d5b35485f330d923b5b81bc7412dd3818d440cd50c4c97b936"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 63893,
+    "md5": "88f8b0009963b5afe7f8bc7e7491e253",
+    "sha256": "f732af53adc05477d06a3c3ad6ad6b6cff19a304572768b3fa67a7e6cfec924b"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 32.35
+  },
+  "passed": true
+ }
+}
