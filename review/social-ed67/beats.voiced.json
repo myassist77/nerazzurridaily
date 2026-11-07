@@ -1,0 +1,120 @@
+{
+ "name": "ND-2026-11-07-ed67-women-at-the-derby",
+ "sunday_scorecard": false,
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "10",
+   "lines_a": [
+    "GOALS IN",
+    "FIVE GAMES"
+   ],
+   "lines_b": [
+    "NONE",
+    "CONCEDED"
+   ],
+   "pill": "REPORTED · A LEFT-BACK SWITCH FOR COMO",
+   "pill_register": "REPORTED"
+  }
+ },
+ "beats": [
+  {
+   "id": "stance",
+   "kind": "cover",
+   "duration": 3.61,
+   "eyebrow": "EDITION NO. 67 · NOVEMBER 7",
+   "lines": [
+    "INTER'S BEST TEAM",
+    "RIGHT NOW",
+    "IS THE WOMEN"
+   ],
+   "vo": "The best team at [Inter] right now might be the women."
+  },
+  {
+   "id": "claim",
+   "kind": "item",
+   "duration": 6.0,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · NOV 7",
+   "lines": [
+    "TEN GOALS SCORED",
+    "NONE CONCEDED",
+    "IN FIVE GAMES"
+   ],
+   "sub": [
+    "AWAY AT MILAN TODAY · 9:00 AM ET",
+    "15:00 CET · SERIE A WOMEN"
+   ],
+   "vo": "The club says they go to [Milan] this morning unbeaten: ten goals scored, none conceded."
+  },
+  {
+   "id": "take",
+   "kind": "item",
+   "duration": 4.33,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "THIS IS NOT",
+    "A HOT START"
+   ],
+   "sub": [
+    "SET AN ALARM. THE DERBY IS AT NINE."
+   ],
+   "vo": "That is not a hot start. That is a title run. Set an alarm."
+  },
+  {
+   "id": "turn",
+   "kind": "item",
+   "duration": 6.62,
+   "register": "REPORTED",
+   "kicker": "REPORTED · SPORTMEDIASET · NOV 7",
+   "lines": [
+    "CARLOS AUGUSTO",
+    "AHEAD OF DIMARCO",
+    "AT LEFT BACK"
+   ],
+   "sub": [
+    "AGAINST COMO TOMORROW",
+    "SKY HAD DIMARCO ON FRIDAY"
+   ],
+   "vo": "[Sportmediaset] now puts [Carlos Augusto] ahead of [Dimarco] at left back against [Como] tomorrow."
+  },
+  {
+   "id": "fixture",
+   "kind": "fixture",
+   "duration": 3.48,
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP · SERIE A · MATCHDAY 11",
+   "lines": [
+    "COMO",
+    "AT SAN SIRO"
+   ],
+   "sub_top": "SUN, NOV 8 · SERIE A · MATCHDAY 11",
+   "big": "12:00 PM ET",
+   "sub": [
+    "18:00 CET · US TV: PARAMOUNT+"
+   ],
+   "vo": "[Como] at [San Siro], noon Eastern, six in [Milan]."
+  },
+  {
+   "id": "end",
+   "kind": "end",
+   "duration": 5.46,
+   "sub": [
+    "SUBSCRIBE TO THE FREE",
+    "DAILY NEWSLETTER"
+   ],
+   "vo": "So who starts at left back tomorrow? Tell me, at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 29.5
+ }
+}

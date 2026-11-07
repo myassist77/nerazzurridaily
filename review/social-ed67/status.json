@@ -1,0 +1,96 @@
+{
+ "job": "ed67",
+ "kind": "daily",
+ "name": "ND-2026-11-07-ed67-women-at-the-derby",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-07T11:56:58+00:00",
+ "run_id": "42370158891",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/42370158891",
+ "files": {
+  "assets/video/ed67.mp4": {
+   "bytes": 1294131,
+   "md5": "ec91cffe7e897d47c50ccc83e7d02130",
+   "sha256": "96a01b0ec9923d2dead1e5af3ee61344bca65b478ab010a76e7edea93feb2899"
+  },
+  "assets/video/ed67-thumb.png": {
+   "bytes": 55452,
+   "md5": "681633c39cea55a294c91004c0b05e13",
+   "sha256": "f2e76f809940fe1fc00655548e280840ac13f74562255f849830ca623dc2c5b9"
+  },
+  "assets/video/ed67-thumb-9x16.png": {
+   "bytes": 75782,
+   "md5": "6797f956892eedf6d797aef87d17c25a",
+   "sha256": "56c1b05082d0bfe667201a1912c42395d7fac56cf1eced1fb1fa777e6599a4b5"
+  },
+  "data/tiktok-ed67.json": {
+   "bytes": 575,
+   "md5": "f873abec7079f0875f81d5e54db0554e",
+   "sha256": "9af304ee71597c6332dac8167001e34dfb02e0fc228e20b6feb002fe62f26ab4"
+  },
+  "data/youtube-ed67.json": {
+   "bytes": 1318,
+   "md5": "64f0730ba7310191a7737dca648e9ea1",
+   "sha256": "d7734912a505d502ec5af4fb5ca622e8aad564a8a2b5556ca7e5753d086ae656"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 133569,
+   "md5": "a6eef865aebc91bac5d8dc995e906987",
+   "sha256": "19ddcbe20dadf6663ccdf03da16b6146f69873da73532f96063a82d3df3ac09c"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 75782,
+   "md5": "6797f956892eedf6d797aef87d17c25a",
+   "sha256": "56c1b05082d0bfe667201a1912c42395d7fac56cf1eced1fb1fa777e6599a4b5"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 55452,
+   "md5": "681633c39cea55a294c91004c0b05e13",
+   "sha256": "f2e76f809940fe1fc00655548e280840ac13f74562255f849830ca623dc2c5b9"
+  }
+ },
+ "seconds": 30.5,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "30.500000"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "30.500000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-11-07-ed67-women-at-the-derby-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-11-07-ed67-women-at-the-derby-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-11-07-ed67-women-at-the-derby-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 842066,
+  "md5": "66ad499c480ee6ff15b920b3b3b1e649",
+  "sha256": "9c9e9d56794b76c7aac60d0008de4e88b4e00a7dca6f61d71e337931af9d2ab5"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 29.5
+ },
+ "voice_log_tail": "stance: voice 3.11s → beat 3.61s\nclaim: voice 5.57s → beat 6.0s\ntake: voice 3.82s → beat 4.33s\nturn: voice 6.06s → beat 6.62s\nfixture: voice 2.99s → beat 3.48s\nend: voice 5.01s → beat 5.46s\nPLAN OK build/beats.voiced.json — 6 beats, 29.5s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-11-07-ed67-women-at-the-derby.mp4 — 29.50s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-11-07-ed67-women-at-the-derby-thumb-9x16.png, ND-2026-11-07-ed67-women-at-the-derby-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-11-07-ed67-women-at-the-derby-voiced.mp4 — 30.50s, AAC 48 kHz stereo, I: -16.5 LUFS Peak: -3.9 dBFS\n"
+}

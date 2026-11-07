@@ -1,0 +1,145 @@
+{
+ "edition": 67,
+ "date": "2026-11-07",
+ "slug": "women-at-the-derby",
+ "name": "ND-2026-11-07-ed67-women-at-the-derby",
+ "hook": "Inter's best team right now is the women.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-67/",
+ "edition_json_sha256": "00e7fe26025a52512569bbbf69a60270c011196857dc138322877da9e882efe4",
+ "brevo": {
+  "campaign_id": 56,
+  "status": "draft",
+  "note": "the 5:30 run held the email back as a draft — a control failed; see its notification"
+ },
+ "local_render": {
+  "file": "ND-2026-11-07-ed67-women-at-the-derby-voiced.mp4",
+  "seconds": 30.5,
+  "beats": 6,
+  "bytes": 1303159,
+  "md5": "04359eac8d94deccf17cca82b3aa9710",
+  "sha256": "1af0a5ea8532eec46de5f9f19f3825079e69c81e3c1f7f9c75641a3f2c5c3261",
+  "audio": {
+   "summary": "voiceover only — no music",
+   "codec": "aac",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": 30.5
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 29.5
+  }
+ },
+ "workflow_render": {
+  "note": "the committed copy is rendered by .github/workflows/social.yml from the same beats.voiced.json; its MP4 bytes differ (different Chromium/ffmpeg build and the voice is synthesized again) — not a fault",
+  "md5": null
+ },
+ "stories": [
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Nov 7",
+   "h3": "Inter Women play the first Milan derby of the season"
+  },
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Nov 6",
+   "h3": "Chiffi will referee Inter against Como"
+  },
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Nov 7",
+   "h3": "San Siro is heading toward a sellout"
+  },
+  {
+   "register": "REPORTED",
+   "source": "Sportmediaset",
+   "date": "Nov 7",
+   "h3": "Sportmediaset puts Carlos Augusto ahead of Dimarco"
+  },
+  {
+   "register": "REPORTED",
+   "source": "Tuttosport via FCInterNews",
+   "date": "Nov 4",
+   "h3": "Tuttosport says Calhanoglu's agent is asking for two years"
+  }
+ ],
+ "youtube_title": "Inter's best team right now is the women — and the papers move the left back for Como",
+ "pinned_question": "Dimarco or Carlos Augusto at left back against Como?",
+ "next_fixture": {
+  "name": "Como",
+  "venue": "HOME",
+  "when": "SUN, NOV 8 · SERIE A · MATCHDAY 11",
+  "times": "12:00 PM ET · 18:00 CET · US TV: PARAMOUNT+"
+ },
+ "drafts_included": {
+  "tiktok": true,
+  "youtube": true,
+  "reddit": false,
+  "facebook": true
+ },
+ "format": "daily six-beat",
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/42370158891",
+  "built_at_utc": "2026-11-07T11:56:58+00:00",
+  "seconds": 30.5,
+  "beats": 6,
+  "files": {
+   "assets/video/ed67.mp4": {
+    "bytes": 1294131,
+    "md5": "ec91cffe7e897d47c50ccc83e7d02130",
+    "sha256": "96a01b0ec9923d2dead1e5af3ee61344bca65b478ab010a76e7edea93feb2899"
+   },
+   "assets/video/ed67-thumb.png": {
+    "bytes": 55452,
+    "md5": "681633c39cea55a294c91004c0b05e13",
+    "sha256": "f2e76f809940fe1fc00655548e280840ac13f74562255f849830ca623dc2c5b9"
+   },
+   "assets/video/ed67-thumb-9x16.png": {
+    "bytes": 75782,
+    "md5": "6797f956892eedf6d797aef87d17c25a",
+    "sha256": "56c1b05082d0bfe667201a1912c42395d7fac56cf1eced1fb1fa777e6599a4b5"
+   },
+   "data/tiktok-ed67.json": {
+    "bytes": 575,
+    "md5": "f873abec7079f0875f81d5e54db0554e",
+    "sha256": "9af304ee71597c6332dac8167001e34dfb02e0fc228e20b6feb002fe62f26ab4"
+   },
+   "data/youtube-ed67.json": {
+    "bytes": 1318,
+    "md5": "64f0730ba7310191a7737dca648e9ea1",
+    "sha256": "d7734912a505d502ec5af4fb5ca622e8aad564a8a2b5556ca7e5753d086ae656"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 133569,
+    "md5": "a6eef865aebc91bac5d8dc995e906987",
+    "sha256": "19ddcbe20dadf6663ccdf03da16b6146f69873da73532f96063a82d3df3ac09c"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 75782,
+    "md5": "6797f956892eedf6d797aef87d17c25a",
+    "sha256": "56c1b05082d0bfe667201a1912c42395d7fac56cf1eced1fb1fa777e6599a4b5"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 55452,
+    "md5": "681633c39cea55a294c91004c0b05e13",
+    "sha256": "f2e76f809940fe1fc00655548e280840ac13f74562255f849830ca623dc2c5b9"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 29.5
+  },
+  "passed": true
+ }
+}
