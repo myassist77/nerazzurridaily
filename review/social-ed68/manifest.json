@@ -1,0 +1,132 @@
+{
+ "edition": 68,
+ "date": "2026-11-08",
+ "slug": "papers-scorecard",
+ "format": "sunday_scorecard",
+ "hook": "Inter's papers went four for fourteen this week",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-68/",
+ "edition_json_sha256": "f1e7e0e0db66c995abf3c599db0ea57b85d24daea48bee5df38e09cd4756d9e8",
+ "brevo": {
+  "campaign_id": 57,
+  "status": "sent",
+  "sent_at_et": "2026-11-08T06:46:10-05:00"
+ },
+ "local_render": {
+  "filename": "ND-2026-11-08-ed68-papers-scorecard-voiced.mp4",
+  "seconds": 37.43,
+  "beats": 7,
+  "bytes": 1581516,
+  "md5": "e20aa602f54b04bd9e366a6e9e1972c1",
+  "sha256": "8a9a14c8bb39a72393b8e70cce9732a997b54967e69197240c71e32eb03146bc"
+ },
+ "audio": {
+  "note": "voiceover only — no music",
+  "codec": "aac",
+  "sample_rate": "48000",
+  "channels": 2,
+  "duration": 37.43,
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 36.4
+  }
+ },
+ "stories": [
+  {
+   "status": "DENIED",
+   "claim": "the three English signings have given Chivu almost nothing",
+   "source": "Corriere dello Sport",
+   "date": "Nov 3",
+   "register_on_frame": "NEUTRAL (nero)"
+  },
+  {
+   "status": "CONFIRMED",
+   "claim": "Chivu keeps Spence at right back at De Kuip",
+   "source": "Gazzetta dello Sport",
+   "date": "Nov 3",
+   "register_on_frame": "CONFIRMED (azzurro)"
+  },
+  {
+   "status": "STILL OPEN",
+   "claim": "who starts at left back against Como",
+   "source": "Sportmediaset / Sky Sport Italia / Gazzetta dello Sport",
+   "date": "Nov 6-8",
+   "register_on_frame": "REPORTED (pink)"
+  },
+  {
+   "status": "TALLY",
+   "claim": "14 reported items across editions 62-68: 4 confirmed, 2 denied, 8 still open",
+   "source": "Nerazzurri Daily editions 62-68",
+   "date": "Nov 2-8",
+   "register_on_frame": "NEUTRAL (nero)"
+  }
+ ],
+ "youtube_title": "Inter's papers went 4 for 14 this week — the Nerazzurri Daily scorecard",
+ "pinned_comment_question": "Which Italian paper do you actually trust on Inter? Name one.",
+ "next_fixture": "Como (HOME) — Sun, Nov 8, 12:00 PM ET / 18:00 CET, Serie A matchday 11, US TV: Paramount+",
+ "optional_drafts": {
+  "reddit": false,
+  "reddit_reason": "Mondays only; today is Sunday",
+  "facebook": true
+ },
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/42477848575",
+  "built_at_utc": "2026-11-08T11:58:19+00:00",
+  "seconds": 37.43,
+  "beats": 7,
+  "files": {
+   "assets/video/ed68.mp4": {
+    "bytes": 1573148,
+    "md5": "83343f1174f2a822dced3b35fd24f808",
+    "sha256": "6ab47743edc8e3dc7225d4df9c8f4a0b5d57b0e0b024f5855d31543aabb6ac2a"
+   },
+   "assets/video/ed68-thumb.png": {
+    "bytes": 42866,
+    "md5": "7e5e183a31a161925f5251f97d831dd9",
+    "sha256": "d522a87f3e2d2e6f12093ea6af1f24085c1e24925aa755c7d647dd2e888a7862"
+   },
+   "assets/video/ed68-thumb-9x16.png": {
+    "bytes": 61931,
+    "md5": "7c767c2119d93203bde06ce05633ef95",
+    "sha256": "b4dd759ce29b47c042a2ca47f2aaf7920de0fc1bc5bdb3b418ebb57cf35eb2e3"
+   },
+   "data/tiktok-ed68.json": {
+    "bytes": 809,
+    "md5": "c29e0d5161d0722137979aab72ac5720",
+    "sha256": "13686bb10da1f058c33e4c3118f1c692b2f20414371d0bb7e0354957f3b94f0d"
+   },
+   "data/youtube-ed68.json": {
+    "bytes": 1752,
+    "md5": "5a1ca43c9758a62cd0db40ebdbf8a8de",
+    "sha256": "eccd3c0d9ae6b84fa345de21a7090fd462fb45f9503064cb5bc731e7df9d6250"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 145045,
+    "md5": "2776001f595cd4fd8a01e378eb022254",
+    "sha256": "6d9e8a3e68471ba96f851906b0008f1995cfd393b566c297d2d82a6ccb334e00"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 61931,
+    "md5": "7c767c2119d93203bde06ce05633ef95",
+    "sha256": "b4dd759ce29b47c042a2ca47f2aaf7920de0fc1bc5bdb3b418ebb57cf35eb2e3"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 42866,
+    "md5": "7e5e183a31a161925f5251f97d831dd9",
+    "sha256": "d522a87f3e2d2e6f12093ea6af1f24085c1e24925aa755c7d647dd2e888a7862"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 36.4
+  },
+  "passed": true
+ }
+}

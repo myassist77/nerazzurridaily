@@ -1,0 +1,138 @@
+{
+ "sunday_scorecard": true,
+ "name": "ND-2026-11-08-ed68-papers-scorecard",
+ "edition": 68,
+ "date": "2026-11-08",
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "NEUTRAL",
+   "kicker": "SCORECARD · NOV 2-8",
+   "big": "4",
+   "lines_a": [
+    "CLAIMS CONFIRMED",
+    "BY THE CLUB"
+   ],
+   "lines_b": [
+    "OUT OF FOURTEEN"
+   ],
+   "pill": "EIGHT STILL OPEN",
+   "pill_register": "REPORTED"
+  }
+ },
+ "beats": [
+  {
+   "id": "cover",
+   "kind": "cover",
+   "duration": 4.4,
+   "eyebrow": "EDITION NO. 68 · NOVEMBER 8",
+   "lines": [
+    "INTER'S PAPERS WENT",
+    "FOUR FOR FOURTEEN",
+    "THIS WEEK"
+   ],
+   "vo": "The [Inter] papers made fourteen claims this week. Four held up."
+  },
+  {
+   "id": "denied-english",
+   "kind": "item",
+   "duration": 6.62,
+   "register": "NEUTRAL",
+   "kicker": "DENIED · CORRIERE DELLO SPORT · NOV 3",
+   "lines": [
+    "THE ENGLISH SIGNINGS",
+    "GAVE CHIVU NOTHING"
+   ],
+   "sub": [
+    "SPENCE THEN TOOK UEFA'S",
+    "PLAYER OF THE MATCH AT DE KUIP",
+    "AND AN ENGLAND CALL-UP"
+   ],
+   "vo": "[Corriere dello Sport] said the English signings gave [Chivu] nothing. [Spence] is in the England squad."
+  },
+  {
+   "id": "confirmed-spence",
+   "kind": "item",
+   "duration": 5.72,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · GAZZETTA DELLO SPORT · NOV 3",
+   "lines": [
+    "GAZZETTA KEPT SPENCE",
+    "AT RIGHT BACK"
+   ],
+   "sub": [
+    "HE STARTED AT DE KUIP",
+    "AND SET UP BISSECK'S OPENER"
+   ],
+   "vo": "[La Gazzetta dello Sport] kept [Spence] at right back in Rotterdam. That one was right."
+  },
+  {
+   "id": "open-leftback",
+   "kind": "item",
+   "duration": 5.51,
+   "register": "REPORTED",
+   "kicker": "REPORTED · STILL OPEN · NOV 8",
+   "lines": [
+    "NOBODY KNOWS WHO",
+    "STARTS AT LEFT BACK"
+   ],
+   "sub": [
+    "SPORTMEDIASET: CARLOS AUGUSTO",
+    "SKY: DIMARCO",
+    "GAZZETTA: AUGUSTO IN THE BACK THREE"
+   ],
+   "vo": "Three papers, three different left backs today. Nobody has the [Inter] team sheet."
+  },
+  {
+   "id": "tally",
+   "kind": "stat",
+   "duration": 4.29,
+   "register": "NEUTRAL",
+   "kicker": "THE WEEK'S SCORECARD · NOV 2-8",
+   "number": 4,
+   "suffix": "/14",
+   "lines": [
+    "CONFIRMED BY THE CLUB"
+   ],
+   "sub": [
+    "TWO DENIED",
+    "EIGHT STILL OPEN"
+   ],
+   "vo": "Fourteen claims. Four confirmed, two wrong, eight still open."
+  },
+  {
+   "id": "fixture",
+   "kind": "fixture",
+   "duration": 4.2,
+   "register": "NEUTRAL",
+   "kicker": "TODAY · SERIE A · MATCHDAY 11",
+   "lines": [
+    "INTER HOST COMO",
+    "AT SAN SIRO"
+   ],
+   "sub_top": "SUN, NOV 8 · SERIE A · MATCHDAY 11",
+   "big": "12:00 PM ET",
+   "sub": [
+    "18:00 CET · US TV: PARAMOUNT+"
+   ],
+   "vo": "[Como] at [San Siro] today, noon Eastern on Paramount Plus."
+  },
+  {
+   "id": "end",
+   "kind": "end",
+   "duration": 5.66,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Which paper do you trust? Tell us in the comments. At [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 36.4
+ }
+}
