@@ -1,0 +1,158 @@
+{
+ "n": 68,
+ "built_at_utc": "2026-11-08T11:00:49+00:00",
+ "run_id": "42473776239",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/42473776239",
+ "passed": true,
+ "steps": {
+  "mast": "success",
+  "controls": "success",
+  "checks": "success"
+ },
+ "files_md5": {
+  "p/edition-68/index.html": "ae02529489611f2cac4ebdb8d36de11b",
+  "assets/mast/edition-68.png": "c04423ad3cc394577b0f4d3651f11d1b",
+  "data/edition-68.json": "b18a1f95750f7451be90bd2af31bb4bf",
+  "index.html": "72fa6d1fd4bff9f3f4eda96c3b3ae00a",
+  "subscribe/index.html": "3889ed361bf74f1132f064fda357c609",
+  "fixtures/index.html": "424995a68715a3090c1470c908f39552",
+  "feed.xml": "05deb37b516b85a726b64d60ceea6de0",
+  "sitemap.xml": "ee476bab009d9f287fc7ec4ec211cca1"
+ },
+ "title": "Inter Women win the derby 3–0, Como at San Siro today",
+ "date": "2026-11-08",
+ "masthead": {
+  "bytes": 6121,
+  "lines": 2,
+  "colors": 7,
+  "fonts": {
+   "anton": true,
+   "mono": true
+  }
+ },
+ "controls": {
+  "n": 68,
+  "fails": [],
+  "warns": [],
+  "page-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 700,
+    "h": 382.8125,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "page-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "email-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 644,
+    "h": 352.1875,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  },
+  "email-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  }
+ },
+ "checks": {
+  "fails": [],
+  "warns": [
+   "sentences: 31 words: “Como  HOME Feyenoord 0–3 Inter Atalanta  AWAY Haley Bugeja, an Inter forward, scored a penalty in the 56th min…”",
+   "sentences: 34 words: “BISSECK 8′ · ESPOSITO 34′ · ZIELINSKI 54′ Como  HOME Atalanta  AWAY VfB Stuttgart  HOME Genoa  HOME Genoa  HOM…”"
+  ],
+  "info": {
+   "prose_words": 499,
+   "read_seconds": 126,
+   "avg_sentence_words": 18.0,
+   "flesch_reading_ease": 56.6,
+   "edition_from_masthead": null,
+   "dates": {
+    "today": "November 8"
+   },
+   "external_to_fetch": [
+    "https://www.fcinter1908.it/partite/probabili-formazioni/inter-como-idea-chivu-novita-formazione/",
+    "https://www.fcinternews.it/focus/i-sky-i-torna-bastoni-difesa-dubbio-centrocampo-1022662",
+    "https://www.fcinternews.it/in-primo-piano/i-sky-i-calhanoglu-vuole-restare-inter-dato-input-procuratori-1022677",
+    "https://www.inter.it/en/matches",
+    "https://www.inter.it/en/news/ac-milan-inter-women-serie-a-women-2026-27",
+    "https://www.inter.it/en/news/guide-inter-como-serie-a-2026-27",
+    "https://www.inter.it/en/news/opponent-analysis-inter-como-serie-a-2026-27",
+    "https://www.inter.it/en/news/sandro-mazzola-inter-birthday-anniversary-2026",
+    "https://www.inter.it/en/news/standings-league-phase-inter-fixtures-champions-league-26-27",
+    "https://www.inter.it/it/notizie/intervista-sassarini-bugeja-milan-inter-women-serie-a-2026-27",
+    "https://www.tiktok.com/@nerazzurridaily",
+    "https://www.youtube.com/@nerazzurridaily"
+   ],
+   "site_links": [
+    "https://www.nerazzurridaily.com/go/email/?ed=68",
+    "https://www.nerazzurridaily.com/go/email/?ed=68&to=/subscribe/",
+    "https://www.nerazzurridaily.com/go/forward/?ed=68",
+    "https://www.nerazzurridaily.com/p/edition-68/"
+   ]
+  }
+ },
+ "email": {
+  "md5": "92053b49bbc29c217f44a32770f72c16",
+  "chars": 25831,
+  "bytes": 25949
+ }
+}
