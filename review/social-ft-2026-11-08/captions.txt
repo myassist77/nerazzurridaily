@@ -1,0 +1,86 @@
+NERAZZURRI DAILY — FULL-TIME CARD
+Date: 2026-11-08 (Sun)   Edition: ed68   Slug: ft-como-home   Job: ft-2026-11-08
+Video: ND-2026-11-08-ft-voiced.mp4 — 33.5 s, 9:16, opens on the designed cover for 1.0 s.
+Audio: VOICEOVER ONLY, NO MUSIC (owner's decision, Sept 26, 2026). AAC 48 kHz stereo, -16.3 LUFS.
+Posting: full-time card — posted immediately after the whistle, no veto window.
+
+Thumbnail note: the 9:16 "number" cover uses big "2" (goals) with the full scoreline in the
+pill, not big "2-0". The engine's 9:16 number branch does not narrow the text column for a
+3-character big the way the 16:9 branch does (fixed there Sept 29, 2026), so "2-0" ran off
+the right edge under the sleeve. Text-only fix; the engine was not touched.
+
+================================ TIKTOK ================================
+TITLE (40 chars)
+Inter 2-0 Como: seven minutes decided it
+
+CAPTION (228 chars)
+Inter 2-0 Como at San Siro — Esposito 12', Thuram 19', per the inter.it match report. Seven minutes settled it. Next: Atalanta away, Nov 22, 2:45 PM ET. https://www.nerazzurridaily.com/go/tt/?ed=68&v=ft #Inter #SerieA #InterComo
+
+Audio: voiceover only, no music. No platform music added.
+
+============================ YOUTUBE SHORTS ============================
+TITLE (53 chars)
+Inter 2-0 Como: seven minutes was all it took #Shorts
+
+DESCRIPTION
+Inter 2-0 Como at San Siro — Esposito 12', Thuram 19'.
+https://www.nerazzurridaily.com/go/yt/?ed=68&v=ft
+
+CONFIRMED — Inter 2-0 Como, Serie A Matchday 11, San Siro (inter.it match report, Nov 8, 2026)
+CONFIRMED — Goals: Esposito 12', Thuram 19' (inter.it match report, Nov 8, 2026)
+CONFIRMED — Inter on 28 points after 11 matches, one behind Lazio (inter.it match report, Nov 8, 2026)
+NEUTRAL — Next up: Atalanta away, Sun Nov 22, 2:45 PM ET / 20:45 CET, Serie A (inter.it fixtures)
+
+Fan-made — not affiliated with FC Internazionale Milano.
+
+#Inter #SerieA #InterComo #Shorts
+
+TAGS
+Inter, Inter Milan, Serie A, Inter Como, Esposito
+
+PINNED COMMENT (posted by the run; pinning is a manual tap)
+Was Inter brilliant, or Como poor? Reply in the comments. https://www.nerazzurridaily.com/go/yt/?ed=68&v=ft-pinned
+
+Thumbnail: ft-2026-11-08-thumb-9x16.png (9:16, per the owner's decision of Sept 29, 2026).
+Audio: voiceover only, no music.
+
+=============================== BEATS ==================================
+time        kind / register        on-screen                         voice                                                        source
+0.0–4.8     cover / —              EDITION NO. 68 · FULL TIME        Inter won this in seven minutes. The other eighty           —
+                                   INTER WON THIS / IN SEVEN          three barely mattered.
+                                   MINUTES.
+4.8–11.9    result / CONFIRMED     INTER 2-0 COMO                    Inter two, Como nothing. The club's match report            inter.it match report, Nov 8, 2026
+                                   ESPOSITO 12' · THURAM 19'          credits Esposito at twelve minutes and Thuram at
+                                   SAN SIRO · MATCHDAY 11             nineteen.
+11.9–17.5   item / NEUTRAL         OUR TAKE                          Seven minutes of real Inter, then a game managed            — (opinion)
+                                   SEVEN MINUTES / OF REAL INTER.     without fuss. That will do.
+                                   / THEN CONTROL.
+17.5–23.2   stat / CONFIRMED       28 POINTS AFTER ELEVEN GAMES.     That win puts Inter on twenty eight points after            inter.it match report, Nov 8, 2026
+                                   ONE BEHIND LAZIO.                  eleven matches, one behind Lazio.
+23.2–26.8   fixture / NEUTRAL      ATALANTA (A) · SUN NOV 22         Next up, Atalanta away, two forty five Eastern.              inter.it/en/matches
+                                   2:45 PM ET / 20:45 CET
+26.8–32.4   end / —                SUBSCRIBE TO THE FREE DAILY       Was Inter brilliant, or Como poor? Answer at                —
+                                   NEWSLETTER                         Nerazzurri Daily dot com.
+
+Voice script: 77 words (budget 90). Voiced total 32.44 s + 1.0 s cover = 33.47 s.
+
+============================== VERIFIED ================================
+https://www.inter.it/en/news/inter-vs-como-serie-a-2026-27
+  Headline "Inter 2-0 Como: Esposito and Thuram seal a convincing win". Score block "INTER 2-0 COMO".
+  Goals line verbatim: "Goals: 12' Esposito (I), 19' Thuram (I)". Subtitle: "Inter claimed a 2-0 victory
+  over Como at San Siro on Matchday 11 of Serie A". Body: "The win takes Inter to 28 points after eleven
+  matches, just one behind Lazio." Booked: Esposito (I). NO RED CARDS LISTED for either side.
+  Substitutions listed through 88' (Dimarco/Diouf, Thuram/Pavard), and "Serie A now pauses for the
+  international break" — the club writing in the past tense about a completed match.
+https://www.inter.it/it/notizie/inter-como-serie-a-2026-27
+  Italian copy: "Inter bella e letale: Esposito e Thuram abbattono il Como", "INTER-COMO 2-0 | TABELLINO",
+  "Reti: 12' Esposito (I), 19' Thuram (I)". Same substitution minutes. No red cards.
+https://www.inter.it/en/matches
+  Next fixture: Atalanta, Serie A, Nov 22nd 2026 — 19:45 UTC (= 2:45 PM ET / 20:45 CET), Inter away.
+
+NOT USED: legaseriea.it served content-free page shells for this round and confirmed nothing.
+NOTE: inter.it was initially served to this run from a stale cache showing only pre-match articles;
+cache-busting query strings were needed to reach the published report. Nothing was taken from press.
+
+============================ ALTERNATIVES ==============================
+(single-story full-time card — no runner-up scout this run)

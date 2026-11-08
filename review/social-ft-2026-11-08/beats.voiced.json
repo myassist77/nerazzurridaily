@@ -1,0 +1,126 @@
+{
+ "beats": [
+  {
+   "id": "01-stance",
+   "kind": "cover",
+   "duration": 4.78,
+   "eyebrow": "EDITION NO. 68 · FULL TIME",
+   "lines": [
+    "INTER WON THIS",
+    "IN SEVEN MINUTES."
+   ],
+   "vo": "[Inter] won this in seven minutes. The other eighty three barely mattered."
+  },
+  {
+   "id": "02-result",
+   "kind": "result",
+   "duration": 7.13,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT MATCH REPORT",
+   "home": "INTER",
+   "away": "COMO",
+   "score_home": 2,
+   "score_away": 0,
+   "inter": "home",
+   "sub": [
+    "ESPOSITO 12' · THURAM 19'",
+    "SAN SIRO · MATCHDAY 11"
+   ],
+   "vo": "[Inter] two, [Como] nothing. The club's match report credits [Esposito] at twelve minutes and [Thuram] at nineteen."
+  },
+  {
+   "id": "03-our-take",
+   "kind": "item",
+   "duration": 5.59,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "SEVEN MINUTES",
+    "OF REAL INTER.",
+    "THEN CONTROL."
+   ],
+   "vo": "Seven minutes of real [Inter], then a game managed without fuss. That will do."
+  },
+  {
+   "id": "04-turn",
+   "kind": "stat",
+   "duration": 5.7,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT MATCH REPORT",
+   "number": 28,
+   "lines": [
+    "POINTS AFTER",
+    "ELEVEN GAMES."
+   ],
+   "sub": [
+    "ONE BEHIND LAZIO."
+   ],
+   "vo": "That win puts [Inter] on twenty eight points after eleven matches, one behind [Lazio]."
+  },
+  {
+   "id": "05-fixture",
+   "kind": "fixture",
+   "duration": 3.65,
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP · SERIE A",
+   "lines": [
+    "ATALANTA (A)"
+   ],
+   "sub_top": "SUN · NOV 22",
+   "big": "2:45 PM ET",
+   "sub": [
+    "20:45 CET",
+    "AWAY · SERIE A"
+   ],
+   "vo": "Next up, [Atalanta] away, two forty five Eastern."
+  },
+  {
+   "id": "06-end",
+   "kind": "end",
+   "duration": 5.59,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Was [Inter] brilliant, or [Como] poor? Answer at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "thumbnail": {
+  "style": "number",
+  "top": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "lines": [
+    "INTER 2-0",
+    "COMO."
+   ]
+  },
+  "bottom": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "lines": [
+    "ESPOSITO 12'",
+    "THURAM 19'"
+   ],
+   "sub": "SEVEN MINUTES, GAME DONE."
+  },
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "2",
+   "lines_a": [
+    "GOALS IN",
+    "SEVEN MINUTES."
+   ],
+   "pill": "INTER 2-0 COMO",
+   "pill_register": "CONFIRMED"
+  }
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 32.44
+ }
+}
