@@ -1,8 +1,8 @@
 {
  "n": 68,
- "built_at_utc": "2026-11-08T11:00:49+00:00",
- "run_id": "42473776239",
- "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/42473776239",
+ "built_at_utc": "2026-11-08T11:05:01+00:00",
+ "run_id": "42474108029",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/42474108029",
  "passed": true,
  "steps": {
   "mast": "success",
@@ -10,10 +10,10 @@
   "checks": "success"
  },
  "files_md5": {
-  "p/edition-68/index.html": "ae02529489611f2cac4ebdb8d36de11b",
+  "p/edition-68/index.html": "51904414632c74829fb2b50571d06fa8",
   "assets/mast/edition-68.png": "c04423ad3cc394577b0f4d3651f11d1b",
-  "data/edition-68.json": "b18a1f95750f7451be90bd2af31bb4bf",
-  "index.html": "72fa6d1fd4bff9f3f4eda96c3b3ae00a",
+  "data/edition-68.json": "0b99fe8c8af976e87205fe428d37952e",
+  "index.html": "a6553c51cff917fe213095ac1fcb3be0",
   "subscribe/index.html": "3889ed361bf74f1132f064fda357c609",
   "fixtures/index.html": "424995a68715a3090c1470c908f39552",
   "feed.xml": "05deb37b516b85a726b64d60ceea6de0",
@@ -151,7 +151,7 @@
   }
  },
  "email": {
-  "md5": "92053b49bbc29c217f44a32770f72c16",
+  "md5": "dcbcc4fd7bc21211a3628f336e9fe779",
   "chars": 25831,
   "bytes": 25949
  }
