@@ -4,9 +4,10 @@
   "youtube": {
     "post_id": "cmw81hl8u016vrp07n34j55a4",
     "posted_at_utc": "2026-11-08T16:21:30Z",
-    "state": "SUBMITTED",
-    "video_id": null,
-    "url": null
+    "state": "PUBLISHED",
+    "video_id": "rpH0BVzPb10",
+    "url": "https://www.youtube.com/watch?v=rpH0BVzPb10",
+    "privacy_status": "public"
   },
-  "updated_at_utc": "2026-11-08T16:22:00Z"
+  "updated_at_utc": "2026-11-08T16:24:30Z"
 }
