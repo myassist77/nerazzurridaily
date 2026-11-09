@@ -1,0 +1,155 @@
+{
+ "n": 69,
+ "built_at_utc": "2026-11-09T10:58:38+00:00",
+ "run_id": "42605146524",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/42605146524",
+ "passed": true,
+ "steps": {
+  "mast": "success",
+  "controls": "success",
+  "checks": "success"
+ },
+ "files_md5": {
+  "p/edition-69/index.html": "ba89c07263c0b48dd9628cd133444e1c",
+  "assets/mast/edition-69.png": "d1ef627a3c8224bc34254dfc5bce11c8",
+  "data/edition-69.json": "c955762701600ca86da505feaf7beb87",
+  "index.html": "83153a6823d4d80bbd3c1b58e48201d7",
+  "subscribe/index.html": "3d0f01cc9bb1f41400e493272aac8c7f",
+  "fixtures/index.html": "93b603051e5b0222cedd67b051fd41fa",
+  "feed.xml": "4ad14dc759ec3013ec271461a0996a4b",
+  "sitemap.xml": "43bcce636e85e6d5c805dae771ef71ce"
+ },
+ "title": "Esposito and Thuram sink Como 2–0 at San Siro",
+ "date": "2026-11-09",
+ "masthead": {
+  "bytes": 6114,
+  "lines": 2,
+  "colors": 7,
+  "fonts": {
+   "anton": true,
+   "mono": true
+  }
+ },
+ "controls": {
+  "n": 69,
+  "fails": [],
+  "warns": [],
+  "page-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 700,
+    "h": 382.8125,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "page-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "email-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 644,
+    "h": 352.1875,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  },
+  "email-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  }
+ },
+ "checks": {
+  "fails": [],
+  "warns": [],
+  "info": {
+   "prose_words": 497,
+   "read_seconds": 125,
+   "avg_sentence_words": 16.8,
+   "flesch_reading_ease": 61.2,
+   "edition_from_masthead": null,
+   "dates": {
+    "today": "November 9"
+   },
+   "external_to_fetch": [
+    "https://football-italia.net/serie-a-inter-2-0-como-fabregas-crack-chivu/",
+    "https://www.fcinter1908.it/calciomercato/mercato-inter/romano-inter-thuram-incontro/",
+    "https://www.fcinternews.it/in-primo-piano/rinnovo-carlos-augusto-ultime-dimarco-calhanoglu-thuram-1022764",
+    "https://www.inter.it/en/matches",
+    "https://www.inter.it/en/news/standings-league-phase-inter-fixtures-champions-league-26-27",
+    "https://www.inter.it/en/news/womens-champions-league-tickets-inter-arsenal-manchester-city",
+    "https://www.inter.it/it/notizie/chivu-intervista-post-inter-como-serie-a-2026-27",
+    "https://www.inter.it/it/notizie/dimarco-250-presenze-inter-como-2026-27",
+    "https://www.inter.it/it/notizie/inter-como-serie-a-2026-27",
+    "https://www.inter.it/it/notizie/uefa-womens-champions-league-classifica-e-calendario",
+    "https://www.tiktok.com/@nerazzurridaily",
+    "https://www.youtube.com/@nerazzurridaily"
+   ],
+   "site_links": [
+    "https://www.nerazzurridaily.com/go/email/?ed=69",
+    "https://www.nerazzurridaily.com/go/email/?ed=69&to=/subscribe/",
+    "https://www.nerazzurridaily.com/go/forward/?ed=69",
+    "https://www.nerazzurridaily.com/p/edition-69/"
+   ]
+  }
+ },
+ "email": {
+  "md5": "4fbf316068699683505124ebb3f27236",
+  "chars": 24757,
+  "bytes": 24907
+ }
+}
