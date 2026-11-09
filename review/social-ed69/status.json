@@ -2,39 +2,95 @@
  "job": "ed69",
  "kind": "daily",
  "name": "ND-2026-11-09-ed69-built-for-march",
- "passed": false,
+ "passed": true,
  "steps": {
   "voice": "success",
   "render": "success",
   "mix": "success",
-  "verify": "failure"
+  "verify": "success"
  },
- "built_at_utc": "2026-11-09T11:36:43+00:00",
- "run_id": "42610260507",
- "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/42610260507",
+ "built_at_utc": "2026-11-09T11:44:39+00:00",
+ "run_id": "42611185261",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/42611185261",
  "files": {
-  "assets/video/ed69.mp4": null,
-  "assets/video/ed69-thumb.png": null,
-  "assets/video/ed69-thumb-9x16.png": null,
-  "data/tiktok-ed69.json": null,
-  "data/youtube-ed69.json": null,
+  "assets/video/ed69.mp4": {
+   "bytes": 1403612,
+   "md5": "993c766702e47612beec007dfa34a62c",
+   "sha256": "9c59ddc155d62d2fe4df204a7cfa07682739abf47da45170983763fa65bf3358"
+  },
+  "assets/video/ed69-thumb.png": {
+   "bytes": 53640,
+   "md5": "6e8ea422023daa40333fd47ace689a51",
+   "sha256": "ff7b51831db0eea248c456957724b23082e5bebac9a98957e2ed291c80f5a328"
+  },
+  "assets/video/ed69-thumb-9x16.png": {
+   "bytes": 74527,
+   "md5": "5ab49ddcc0eb63642f467ef6638cf5da",
+   "sha256": "b48a8af0dd135ec24ef76b9a982fcf7bbfebcb132c12ca1b1ed31bb5e6967aa5"
+  },
+  "data/tiktok-ed69.json": {
+   "bytes": 626,
+   "md5": "ae97fb950c243fa2b2742214613c7d05",
+   "sha256": "f3bb9b3b10f4d0bac922a6d4f12caba6687586c5cbcce3291db99b1307292202"
+  },
+  "data/youtube-ed69.json": {
+   "bytes": 1366,
+   "md5": "076f27acbfe59b63ac8dda953d0783a3",
+   "sha256": "d7206b78d8cf721bbe3dc58c863c1286a1291ecb128826eb5d04e26f65e638a8"
+  },
   "assets/qc/latest-contact.jpg": {
-   "bytes": 145045,
-   "md5": "2776001f595cd4fd8a01e378eb022254",
-   "sha256": "6d9e8a3e68471ba96f851906b0008f1995cfd393b566c297d2d82a6ccb334e00"
+   "bytes": 121027,
+   "md5": "7edc7838aa054fd06b53c146f2e081d4",
+   "sha256": "c8fb1bf38f0f7f168d3ee4bd47317459ffebb22baf42540252f42db145eac356"
   },
   "assets/qc/latest-thumb-9x16.png": {
-   "bytes": 61931,
-   "md5": "7c767c2119d93203bde06ce05633ef95",
-   "sha256": "b4dd759ce29b47c042a2ca47f2aaf7920de0fc1bc5bdb3b418ebb57cf35eb2e3"
+   "bytes": 74527,
+   "md5": "5ab49ddcc0eb63642f467ef6638cf5da",
+   "sha256": "b48a8af0dd135ec24ef76b9a982fcf7bbfebcb132c12ca1b1ed31bb5e6967aa5"
   },
   "assets/qc/latest-thumb-16x9.png": {
-   "bytes": 42866,
-   "md5": "7e5e183a31a161925f5251f97d831dd9",
-   "sha256": "d522a87f3e2d2e6f12093ea6af1f24085c1e24925aa755c7d647dd2e888a7862"
+   "bytes": 53640,
+   "md5": "6e8ea422023daa40333fd47ace689a51",
+   "sha256": "ff7b51831db0eea248c456957724b23082e5bebac9a98957e2ed291c80f5a328"
   }
  },
- "voice_log_tail": "",
- "render_log_tail": "",
- "mix_log_tail": ""
+ "seconds": 35.7,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "35.700000"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "35.660000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-11-09-ed69-built-for-march-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-11-09-ed69-built-for-march-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-11-09-ed69-built-for-march-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 912725,
+  "md5": "1617003c1524eec99203860618d32593",
+  "sha256": "920e0aa0c08d06c522c920076f45d7842feadccbc8df38bdfc714dced145170d"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 34.66
+ },
+ "voice_log_tail": "stance: voice 4.84s → beat 5.52s\nclaim: voice 5.61s → beat 6.56s\ntake: voice 3.39s → beat 4.43s\nturn: voice 5.82s → beat 6.84s\nfixture: voice 3.24s → beat 4.26s\nend: voice 6.06s → beat 7.05s\nPLAN OK build/beats.voiced.json — 6 beats, 34.66s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-11-09-ed69-built-for-march.mp4 — 34.70s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-11-09-ed69-built-for-march-thumb-9x16.png, ND-2026-11-09-ed69-built-for-march-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-11-09-ed69-built-for-march-voiced.mp4 — 35.70s, AAC 48 kHz stereo, I: -16.2 LUFS Peak: -4.3 dBFS\n"
 }

@@ -1,0 +1,116 @@
+{
+ "n": 69,
+ "date": "2026-11-09",
+ "slug": "built-for-march",
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "19",
+   "lines_a": [
+    "BOTH GOALS IN",
+    "BY THE 19TH"
+   ],
+   "lines_b": [
+    "INTER 2-0 COMO"
+   ],
+   "pill": "REPORTED: THURAM TALKS",
+   "pill_register": "REPORTED"
+  }
+ },
+ "beats": [
+  {
+   "id": "stance",
+   "kind": "cover",
+   "duration": 5.52,
+   "eyebrow": "EDITION NO. 69 · NOVEMBER 9",
+   "lines": [
+    "INTER ARE BUILT",
+    "FOR MARCH,",
+    "NOT NOVEMBER"
+   ],
+   "vo": "[Inter] are built for March, not November. Here is why that matters today."
+  },
+  {
+   "id": "claim",
+   "kind": "quote",
+   "duration": 6.56,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · NOV 8",
+   "lines": [
+    "L'importante è come",
+    "si arriva a marzo"
+   ],
+   "sub": [
+    "— WHAT MATTERS IS HOW YOU ARRIVE IN MARCH",
+    "CRISTIAN CHIVU · AFTER INTER 2–0 COMO"
+   ],
+   "vo": "After [Como], [Chivu] said it on [Inter] dot it: what matters is how you arrive in March."
+  },
+  {
+   "id": "take",
+   "kind": "item",
+   "duration": 4.43,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "EASY TO SAY",
+    "IN NOVEMBER.",
+    "PROVE IT IN MARCH"
+   ],
+   "vo": "Easy to say in November. We will hold him to it in March."
+  },
+  {
+   "id": "turn",
+   "kind": "item",
+   "duration": 6.84,
+   "register": "REPORTED",
+   "kicker": "REPORTED · ROMANO VIA FCINTERNEWS",
+   "lines": [
+    "INTER WANT",
+    "TALKS WITH",
+    "THURAM'S AGENT"
+   ],
+   "sub": [
+    "GROUNDWORK ON A RENEWAL, NOT A DEAL",
+    "NO FIGURES GIVEN · NOV 8"
+   ],
+   "vo": "[Fabrizio Romano] says [Inter] want to open talks with [Thuram]'s agent. Nothing signed yet."
+  },
+  {
+   "id": "fixture",
+   "kind": "fixture",
+   "duration": 4.26,
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP · AFTER THE BREAK",
+   "lines": [
+    "ATALANTA",
+    "AWAY"
+   ],
+   "sub_top": "SUN, NOV 22 · SERIE A",
+   "big": "2:45 PM ET",
+   "sub": [
+    "20:45 CET · US TV: PARAMOUNT+"
+   ],
+   "vo": "Next up, [Atalanta] away on November twenty second."
+  },
+  {
+   "id": "end",
+   "kind": "end",
+   "duration": 7.05,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Who was [Inter]'s best against [Como]? Name him in the comments. At [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 34.66
+ }
+}

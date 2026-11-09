@@ -1,0 +1,130 @@
+{
+ "edition": 69,
+ "date": "2026-11-09",
+ "slug": "built-for-march",
+ "format": "daily six-beat short",
+ "hook": "Inter are built for March, not November.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-69/",
+ "edition_json_sha256": "fb94aa77d61ddae1c5257887bd797a3b82186f20b86b5c8bd4b169e60c94586a",
+ "brevo": {
+  "campaign_id": 58,
+  "status": "sent",
+  "sent_at_et": "2026-11-09T06:17:33-05:00"
+ },
+ "local_render": {
+  "filename": "ND-2026-11-09-ed69-built-for-march-voiced.mp4",
+  "seconds": 35.7,
+  "beats": 6,
+  "bytes": 1415485,
+  "md5": "9059e241b7bf4f978ce06120e26c6391",
+  "sha256": "2d2548f7dbd6e7b7249fcd947c5f1563811e066b82541a80a4ca5655c7d1e73d"
+ },
+ "audio": {
+  "note": "voiceover only — no music",
+  "codec": "aac",
+  "sample_rate": "48000",
+  "channels": 2,
+  "duration": 35.7,
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 34.66
+  }
+ },
+ "stories": [
+  {
+   "h": "Inter 2-0 Como — Esposito 12', Thuram 19'",
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Nov 8"
+  },
+  {
+   "h": "Chivu: what matters is how you arrive in March",
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Nov 8"
+  },
+  {
+   "h": "Dimarco reaches 250 appearances",
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Nov 8"
+  },
+  {
+   "h": "Inter want talks with Thuram's agent",
+   "register": "REPORTED",
+   "source": "Fabrizio Romano via FCInterNews",
+   "date": "Nov 8"
+  }
+ ],
+ "youtube_title": "Inter 2-0 Como: both goals by the 19th, and Chivu is already talking about March",
+ "pinned_question": "Who was Inter's best player against Como? One name.",
+ "next_fixture": "Atalanta (away) · Sun, Nov 22 · Serie A · 2:45 PM ET / 20:45 CET · Paramount+",
+ "optional_drafts": {
+  "reddit": true,
+  "facebook": true
+ },
+ "thumbnail_style": "number",
+ "thumbnail_figure": "19",
+ "note_timing": "Beat durations carry 0.5s headroom over the locally measured voice lines, because the runner's kokoro synthesis runs slightly slower than this session's (run 42610260507 failed on a 0.05s overrun).",
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/42611185261",
+  "built_at_utc": "2026-11-09T11:44:39+00:00",
+  "seconds": 35.7,
+  "beats": 6,
+  "files": {
+   "assets/video/ed69.mp4": {
+    "bytes": 1403612,
+    "md5": "993c766702e47612beec007dfa34a62c",
+    "sha256": "9c59ddc155d62d2fe4df204a7cfa07682739abf47da45170983763fa65bf3358"
+   },
+   "assets/video/ed69-thumb.png": {
+    "bytes": 53640,
+    "md5": "6e8ea422023daa40333fd47ace689a51",
+    "sha256": "ff7b51831db0eea248c456957724b23082e5bebac9a98957e2ed291c80f5a328"
+   },
+   "assets/video/ed69-thumb-9x16.png": {
+    "bytes": 74527,
+    "md5": "5ab49ddcc0eb63642f467ef6638cf5da",
+    "sha256": "b48a8af0dd135ec24ef76b9a982fcf7bbfebcb132c12ca1b1ed31bb5e6967aa5"
+   },
+   "data/tiktok-ed69.json": {
+    "bytes": 626,
+    "md5": "ae97fb950c243fa2b2742214613c7d05",
+    "sha256": "f3bb9b3b10f4d0bac922a6d4f12caba6687586c5cbcce3291db99b1307292202"
+   },
+   "data/youtube-ed69.json": {
+    "bytes": 1366,
+    "md5": "076f27acbfe59b63ac8dda953d0783a3",
+    "sha256": "d7206b78d8cf721bbe3dc58c863c1286a1291ecb128826eb5d04e26f65e638a8"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 121027,
+    "md5": "7edc7838aa054fd06b53c146f2e081d4",
+    "sha256": "c8fb1bf38f0f7f168d3ee4bd47317459ffebb22baf42540252f42db145eac356"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 74527,
+    "md5": "5ab49ddcc0eb63642f467ef6638cf5da",
+    "sha256": "b48a8af0dd135ec24ef76b9a982fcf7bbfebcb132c12ca1b1ed31bb5e6967aa5"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 53640,
+    "md5": "6e8ea422023daa40333fd47ace689a51",
+    "sha256": "ff7b51831db0eea248c456957724b23082e5bebac9a98957e2ed291c80f5a328"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 34.66
+  },
+  "passed": true
+ }
+}
