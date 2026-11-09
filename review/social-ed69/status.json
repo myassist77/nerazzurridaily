@@ -1,0 +1,40 @@
+{
+ "job": "ed69",
+ "kind": "daily",
+ "name": "ND-2026-11-09-ed69-built-for-march",
+ "passed": false,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "failure"
+ },
+ "built_at_utc": "2026-11-09T11:36:43+00:00",
+ "run_id": "42610260507",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/42610260507",
+ "files": {
+  "assets/video/ed69.mp4": null,
+  "assets/video/ed69-thumb.png": null,
+  "assets/video/ed69-thumb-9x16.png": null,
+  "data/tiktok-ed69.json": null,
+  "data/youtube-ed69.json": null,
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 145045,
+   "md5": "2776001f595cd4fd8a01e378eb022254",
+   "sha256": "6d9e8a3e68471ba96f851906b0008f1995cfd393b566c297d2d82a6ccb334e00"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 61931,
+   "md5": "7c767c2119d93203bde06ce05633ef95",
+   "sha256": "b4dd759ce29b47c042a2ca47f2aaf7920de0fc1bc5bdb3b418ebb57cf35eb2e3"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 42866,
+   "md5": "7e5e183a31a161925f5251f97d831dd9",
+   "sha256": "d522a87f3e2d2e6f12093ea6af1f24085c1e24925aa755c7d647dd2e888a7862"
+  }
+ },
+ "voice_log_tail": "",
+ "render_log_tail": "",
+ "mix_log_tail": ""
+}
