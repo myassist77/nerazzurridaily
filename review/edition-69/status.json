@@ -1,8 +1,8 @@
 {
  "n": 69,
- "built_at_utc": "2026-11-09T10:58:38+00:00",
- "run_id": "42605146524",
- "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/42605146524",
+ "built_at_utc": "2026-11-09T11:03:42+00:00",
+ "run_id": "42605828699",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/42605828699",
  "passed": true,
  "steps": {
   "mast": "success",
@@ -10,9 +10,9 @@
   "checks": "success"
  },
  "files_md5": {
-  "p/edition-69/index.html": "ba89c07263c0b48dd9628cd133444e1c",
+  "p/edition-69/index.html": "0c8d41725f8ee2f2af743b7d35f16d26",
   "assets/mast/edition-69.png": "d1ef627a3c8224bc34254dfc5bce11c8",
-  "data/edition-69.json": "c955762701600ca86da505feaf7beb87",
+  "data/edition-69.json": "7571a0d8722b22424e1481e28366e3a2",
   "index.html": "83153a6823d4d80bbd3c1b58e48201d7",
   "subscribe/index.html": "3d0f01cc9bb1f41400e493272aac8c7f",
   "fixtures/index.html": "93b603051e5b0222cedd67b051fd41fa",
@@ -148,8 +148,8 @@
   }
  },
  "email": {
-  "md5": "4fbf316068699683505124ebb3f27236",
-  "chars": 24757,
-  "bytes": 24907
+  "md5": "d8eabc3b1aedc36d32f1ffecfad77788",
+  "chars": 24778,
+  "bytes": 24933
  }
 }
