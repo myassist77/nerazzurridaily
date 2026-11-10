@@ -1,0 +1,96 @@
+{
+ "job": "ed70",
+ "kind": "daily",
+ "name": "ND-2026-11-10-ed70-women-host-city",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-10T10:31:01+00:00",
+ "run_id": "42799070362",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/42799070362",
+ "files": {
+  "assets/video/ed70.mp4": {
+   "bytes": 1352004,
+   "md5": "6ea062037d4d70da2db12a05a5a62c6b",
+   "sha256": "1bf01f8df0db5574e90bc766b69766e76036bf30d93a52e29b04e179e3d94998"
+  },
+  "assets/video/ed70-thumb.png": {
+   "bytes": 46298,
+   "md5": "f48714a8e8e94cc50dfe2ca810abd8fe",
+   "sha256": "9fd5ccaef58a1a8d702f4bd9f2764013c068afd671c71a02d2eccf74c21b7873"
+  },
+  "assets/video/ed70-thumb-9x16.png": {
+   "bytes": 66475,
+   "md5": "df4bd9733c2dae34b6389e33bbaa29c7",
+   "sha256": "3ca017a777a5c31024f17a32b4e7c7134b38ea6460e3ceb91b136ba39d6b9770"
+  },
+  "data/tiktok-ed70.json": {
+   "bytes": 487,
+   "md5": "eba7fd7469414e80dfd38708a4c7ee6a",
+   "sha256": "015eaa90386575024e39424edee0ec2bf5d3d5d1e255e74c9db4f351da8835fa"
+  },
+  "data/youtube-ed70.json": {
+   "bytes": 1539,
+   "md5": "42e87ebd697a0d9f9a4b25ede2aaa0d2",
+   "sha256": "fd2274db91a98c3a474bb5db57d14c15d5b1f8767f4123f20021b4e27c009a8d"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 131215,
+   "md5": "335a1bbb6d54a4fd6541fe620ec4c908",
+   "sha256": "0a503e573b944e5528166de5671bc86113e1bbe98add97f835f2ec3759e9e32d"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 66475,
+   "md5": "df4bd9733c2dae34b6389e33bbaa29c7",
+   "sha256": "3ca017a777a5c31024f17a32b4e7c7134b38ea6460e3ceb91b136ba39d6b9770"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 46298,
+   "md5": "f48714a8e8e94cc50dfe2ca810abd8fe",
+   "sha256": "9fd5ccaef58a1a8d702f4bd9f2764013c068afd671c71a02d2eccf74c21b7873"
+  }
+ },
+ "seconds": 32.25,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "32.233333"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "32.250000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-11-10-ed70-women-host-city-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-11-10-ed70-women-host-city-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-11-10-ed70-women-host-city-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 877443,
+  "md5": "b93376c241c3d7720799a1c269fdf984",
+  "sha256": "a97df0688591b6c7e8c5c3db686eb3ea85ffa7ee6f04032f3531b5705f01f1be"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 31.25
+ },
+ "voice_log_tail": "stance: voice 5.12s → beat 5.55s\nclaim: voice 5.29s → beat 5.72s\ntake: voice 3.84s → beat 4.31s\nturn: voice 5.53s → beat 6.02s\nfixture: voice 3.50s → beat 3.97s\nend: voice 5.21s → beat 5.68s\nPLAN OK build/beats.voiced.json — 6 beats, 31.25s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-11-10-ed70-women-host-city.mp4 — 31.23s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-11-10-ed70-women-host-city-thumb-9x16.png, ND-2026-11-10-ed70-women-host-city-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-11-10-ed70-women-host-city-voiced.mp4 — 32.25s, AAC 48 kHz stereo, I: -16.3 LUFS Peak: -4.4 dBFS\n"
+}

@@ -1,0 +1,130 @@
+{
+ "edition": 70,
+ "date": "2026-11-10",
+ "slug": "women-host-city",
+ "hook": "Inter can beat this City side.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-70/",
+ "edition_json_sha256": "9157ae08f5bb02bd17f7347639f1b826b155552060a8841f7f9bb84f13b4a608",
+ "brevo": {
+  "campaign_id": 59,
+  "status": "sent",
+  "sent_at_et": "2026-11-10T05:23:04-05:00"
+ },
+ "local_render": {
+  "file": "ND-2026-11-10-ed70-women-host-city-voiced.mp4",
+  "seconds": 32.25,
+  "beats": 6,
+  "bytes": 1340604,
+  "md5": "56fae2b385ffb73850c48fa6599c75d0",
+  "sha256": "ace9f1ffdad2fb57dedee333309b4d125fa94230c8eead706d16ddcf09b7414c"
+ },
+ "audio": {
+  "note": "voiceover only — no music",
+  "codec": "aac",
+  "sample_rate": 48000,
+  "channels": 2,
+  "duration": 32.25,
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 31.25
+  }
+ },
+ "stories": [
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "2026-11-09",
+   "text": "Inter go in on four points from three matchdays, eighth of eighteen; Manchester City have drawn all three."
+  },
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it / UEFA.com",
+   "date": "2026-11-09",
+   "text": "Kickoff 3:00 PM ET / 21:00 CET at the Stadio Brianteo in Monza, Women's Champions League matchday 4; Paramount+ and ESPN Deportes in the US."
+  },
+  {
+   "register": "REPORTED",
+   "source": "Gazzetta dello Sport via Football Italia",
+   "date": "2026-11-10",
+   "text": "Inter want Hakan Calhanoglu signed before the end of the year; contract runs out June 2027."
+  }
+ ],
+ "youtube_title": "Inter Women vs Man City: four points against three draws | Nerazzurri Daily No. 70",
+ "pinned_comment_question": "Who scores first for Inter against Manchester City today? One name.",
+ "next_fixture": {
+  "opponent": "Manchester City",
+  "venue": "HOME",
+  "when": "TODAY · Women's Champions League matchday 4",
+  "et": "3:00 PM ET",
+  "cet": "21:00 CET",
+  "us_tv": "Paramount+ / ESPN Deportes"
+ },
+ "optional_drafts": {
+  "reddit": false,
+  "facebook": true
+ },
+ "format": "daily six-beat",
+ "thumbnail_style": "number",
+ "page_check": "200 (p/edition-70/index.html committed)",
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/42799070362",
+  "built_at_utc": "2026-11-10T10:31:01+00:00",
+  "seconds": 32.25,
+  "beats": 6,
+  "files": {
+   "assets/video/ed70.mp4": {
+    "bytes": 1352004,
+    "md5": "6ea062037d4d70da2db12a05a5a62c6b",
+    "sha256": "1bf01f8df0db5574e90bc766b69766e76036bf30d93a52e29b04e179e3d94998"
+   },
+   "assets/video/ed70-thumb.png": {
+    "bytes": 46298,
+    "md5": "f48714a8e8e94cc50dfe2ca810abd8fe",
+    "sha256": "9fd5ccaef58a1a8d702f4bd9f2764013c068afd671c71a02d2eccf74c21b7873"
+   },
+   "assets/video/ed70-thumb-9x16.png": {
+    "bytes": 66475,
+    "md5": "df4bd9733c2dae34b6389e33bbaa29c7",
+    "sha256": "3ca017a777a5c31024f17a32b4e7c7134b38ea6460e3ceb91b136ba39d6b9770"
+   },
+   "data/tiktok-ed70.json": {
+    "bytes": 487,
+    "md5": "eba7fd7469414e80dfd38708a4c7ee6a",
+    "sha256": "015eaa90386575024e39424edee0ec2bf5d3d5d1e255e74c9db4f351da8835fa"
+   },
+   "data/youtube-ed70.json": {
+    "bytes": 1539,
+    "md5": "42e87ebd697a0d9f9a4b25ede2aaa0d2",
+    "sha256": "fd2274db91a98c3a474bb5db57d14c15d5b1f8767f4123f20021b4e27c009a8d"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 131215,
+    "md5": "335a1bbb6d54a4fd6541fe620ec4c908",
+    "sha256": "0a503e573b944e5528166de5671bc86113e1bbe98add97f835f2ec3759e9e32d"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 66475,
+    "md5": "df4bd9733c2dae34b6389e33bbaa29c7",
+    "sha256": "3ca017a777a5c31024f17a32b4e7c7134b38ea6460e3ceb91b136ba39d6b9770"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 46298,
+    "md5": "f48714a8e8e94cc50dfe2ca810abd8fe",
+    "sha256": "9fd5ccaef58a1a8d702f4bd9f2764013c068afd671c71a02d2eccf74c21b7873"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 31.25
+  },
+  "passed": true
+ }
+}

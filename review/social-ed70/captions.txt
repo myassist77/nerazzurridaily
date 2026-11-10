@@ -1,0 +1,76 @@
+NERAZZURRI DAILY — SOCIAL PACK
+Edition No. 70 · Tuesday, November 10, 2026
+Video: ND-2026-11-10-ed70-women-host-city-voiced.mp4 · 32.25s · 6 beats · 1080x1920
+Audio: the voiceover only, no music — the owner's choice of Sept 26, 2026.
+Hook: "Inter can beat this City side."
+
+====================================================================
+(a) TIKTOK — @nerazzurridaily
+====================================================================
+Posted automatically at 9:05 AM ET via Postiz. The MP4 carries the voiceover only, no music — the owner's choice of Sept 26, 2026.
+
+TITLE (<=90 characters):
+Inter Women vs Manchester City: four points against three draws
+
+CAPTION:
+Inter Women host Manchester City in Monza today — Inter go in on four points, City have drawn all three, per Inter.it. Kickoff 3:00 PM ET.
+#Inter #InterManchesterCity #InterWomen
+https://www.nerazzurridaily.com/go/tt/?ed=70
+
+SUGGESTED POSTING WINDOW: 8–10 AM ET.
+Matchday note: Inter Women play today at 3:00 PM ET. A full-time card (within 30 minutes of the whistle) is built by a separate one-shot task, not by this pack.
+
+====================================================================
+(b) YOUTUBE SHORTS — @nerazzurridaily
+====================================================================
+Posted automatically at 9:05 AM ET via Postiz. The MP4 carries the voiceover only, no music — the owner's choice of Sept 26, 2026.
+The 9:16 thumbnail is sent to YouTube with the post (the 16:9 file is the fallback); the same 9:16 image opens the video for 1 second, which makes it the TikTok cover.
+
+TITLE (<=100 characters):
+Inter Women vs Man City: four points against three draws | Nerazzurri Daily No. 70
+
+DESCRIPTION:
+Inter can beat this City side — four points against three draws, and City have drawn every game.
+https://www.nerazzurridaily.com/go/yt/?ed=70
+
+Blue means the club said it. Pink means only the papers did.
+
+CONFIRMED · Inter.it (Nov 9): Inter go in on four points from three matchdays, eighth of eighteen; Manchester City have drawn all three of theirs.
+CONFIRMED · Inter.it (Nov 9): kickoff is 3:00 PM ET / 21:00 CET at the Stadio Brianteo in Monza, matchday 4 of the Women's Champions League; UEFA lists Paramount+ and ESPN Deportes in the United States.
+REPORTED · Gazzetta dello Sport (Nov 10): Inter want Hakan Calhanoglu signed before the end of the year; his contract runs out in June 2027, and Corriere dello Sport reported on Monday that talks are at an early stage.
+
+Read today's edition: https://www.nerazzurridaily.com/p/edition-70/
+
+Fan-made — not affiliated with FC Internazionale Milano.
+
+PINNED COMMENT:
+Who scores first for Inter against Manchester City today? One name. Reply in the comments.
+https://www.nerazzurridaily.com/go/yt/?ed=70&v=pinned
+
+HASHTAGS (first three show above the title):
+#Inter #ChampionsLeague #InterManchesterCity #InterWomen #ForzaInter
+
+====================================================================
+(c) REDDIT — not included today
+====================================================================
+The r/FCInterMilan fixtures draft is a Monday item. Today is Tuesday, so no Reddit draft is in this pack.
+
+====================================================================
+(d) FACEBOOK — for JohnnyMac's own profile
+====================================================================
+Paste these two sentences on your own profile. Plain, first person, no hashtags.
+
+Today's edition leads with Inter Women hosting Manchester City in Monza at 3:00 PM ET — Inter go in on four points from three matchdays, and City have drawn all three of theirs.
+If you know one Inter fan, send them nerazzurridaily.com/go/fb/?ed=70
+
+====================================================================
+SOURCES BEHIND EVERY CLAIM (from edition No. 70)
+====================================================================
+Inter.it — Inter Women-Manchester City al Brianteo: la guida completa (Nov 9)
+Inter.it — UEFA Women's Champions League, classifica e calendario (Nov 9)
+UEFA.com — Where to watch the UEFA Women's Champions League (Nov 9)
+Gazzetta dello Sport via Football Italia — Today's Papers: Inter call Calhanoglu (Nov 10)
+Corriere dello Sport via Football Italia — talks at an early stage (Nov 9)
+
+This pack publishes nothing. TikTok and YouTube are posted at 9:05 AM ET by the Postiz task,
+each behind its own kill switch in data/social-switch.json. Facebook stays a draft.

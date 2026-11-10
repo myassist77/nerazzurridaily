@@ -1,0 +1,115 @@
+{
+ "n": 70,
+ "date": "2026-11-10",
+ "slug": "women-host-city",
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "4",
+   "lines_a": [
+    "POINTS FROM THREE",
+    "IN THE GROUP"
+   ],
+   "lines_b": [
+    "CITY: THREE DRAWS"
+   ],
+   "pill": "REPORTED: CALHANOGLU DEAL",
+   "pill_register": "REPORTED"
+  }
+ },
+ "beats": [
+  {
+   "id": "stance",
+   "kind": "cover",
+   "duration": 5.55,
+   "eyebrow": "EDITION NO. 70 · NOVEMBER 10",
+   "lines": [
+    "INTER CAN BEAT",
+    "THIS CITY SIDE"
+   ],
+   "vo": "[Inter] Women host Manchester City in [Monza] today. This City side can be beaten."
+  },
+  {
+   "id": "claim",
+   "kind": "item",
+   "duration": 5.72,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · NOV 9",
+   "lines": [
+    "INTER: FOUR POINTS",
+    "CITY: THREE DRAWS"
+   ],
+   "sub": [
+    "AFTER THREE MATCHDAYS · WOMEN'S CHAMPIONS LEAGUE",
+    "INTER 8TH OF 18"
+   ],
+   "vo": "The club says [Inter] go in on four points. Manchester City have drawn all three."
+  },
+  {
+   "id": "take",
+   "kind": "item",
+   "duration": 4.31,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "THREE DRAWS IS",
+    "NOT A WALL.",
+    "GO AT THEM"
+   ],
+   "vo": "A team that draws everything can be broken. Go at them early."
+  },
+  {
+   "id": "turn",
+   "kind": "item",
+   "duration": 6.02,
+   "register": "REPORTED",
+   "kicker": "REPORTED · GAZZETTA DELLO SPORT · NOV 10",
+   "lines": [
+    "INTER WANT",
+    "CALHANOGLU SIGNED",
+    "BEFORE THE NEW YEAR"
+   ],
+   "sub": [
+    "CONTRACT RUNS OUT IN JUNE 2027",
+    "MONEY NOT SETTLED · CORRIERE DELLO SPORT"
+   ],
+   "vo": "[La Gazzetta dello Sport] says [Inter] want [Hakan Calhanoglu] signed before the new year."
+  },
+  {
+   "id": "fixture",
+   "kind": "fixture",
+   "duration": 3.97,
+   "register": "NEUTRAL",
+   "kicker": "TODAY · MATCHDAY 4",
+   "lines": [
+    "MANCHESTER CITY",
+    "IN MONZA"
+   ],
+   "sub_top": "TODAY · WOMEN'S CHAMPIONS LEAGUE",
+   "big": "3:00 PM ET",
+   "sub": [
+    "21:00 CET · US TV: PARAMOUNT+ / ESPN DEPORTES"
+   ],
+   "vo": "Kickoff is three in the afternoon Eastern, at the [Brianteo]."
+  },
+  {
+   "id": "end",
+   "kind": "end",
+   "duration": 5.68,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Who scores first today? One name in the comments. At [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 31.25
+ }
+}
