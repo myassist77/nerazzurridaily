@@ -1,0 +1,130 @@
+{
+ "edition": 71,
+ "date": "2026-11-11",
+ "slug": "women-city-gap",
+ "hook": "Inter Women are not close to City.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-71/",
+ "edition_json_sha256": "2d45b4dd57035e4129cb6e084634c4fc3c53e10c41214846bc58d6b459ae6f96",
+ "brevo": {
+  "campaign_id": 60,
+  "status": "sent",
+  "sent_at_et": "2026-11-11 06:39 ET"
+ },
+ "local_render": {
+  "file": "ND-2026-11-11-ed71-women-city-gap-voiced.mp4",
+  "seconds": 31.2,
+  "beats": 6,
+  "bytes": 1280197,
+  "md5": "a2e8f5931c751acdee0198cca5a0f586",
+  "sha256": "b984005b2f55323ea8827663acc39e426fb419faa57ad7fd8fcae88beaa8d914"
+ },
+ "audio": {
+  "note": "voiceover only — no music",
+  "codec": "aac",
+  "sample_rate": "48000",
+  "channels": 2,
+  "duration": "31.200000",
+  "engine": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 30.2
+  }
+ },
+ "stories": [
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Nov 10",
+   "what": "Inter Women 1-4 Manchester City in Monza; Bartoli 24', Fujino 33' and 44', Casparij 56', Clinton 70'"
+  },
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Nov 10",
+   "what": "Tests found a muscle strain in Ange-Yoan Bonny's right hamstring"
+  },
+  {
+   "register": "REPORTED",
+   "source": "French and Serbian federations via Football Italia",
+   "date": "Nov 10",
+   "what": "Marcus Thuram and Aleksandar Stankovic both left their national teams with muscle injuries"
+  },
+  {
+   "register": "REPORTED",
+   "source": "FCInter1908",
+   "date": "Nov 10",
+   "what": "Bonny expected out about four weeks; the club has published no date"
+  }
+ ],
+ "youtube_title": "Inter Women 1-4 Man City — and two more Inter men are hurt | Nerazzurri Daily No. 71",
+ "pinned_comment_question": "Who was Inter Women's best player in Monza? One name.",
+ "next_fixture": "Atalanta (away) · Sun, Nov 22 · Serie A · 2:45 PM ET · 20:45 CET · Paramount+",
+ "thumbnail_style": "number",
+ "thumbnail_figure": "1-4",
+ "optional_drafts": {
+  "reddit": false,
+  "reddit_reason": "Mondays only; today is Wednesday",
+  "facebook": true
+ },
+ "sunday_scorecard": false,
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43016098717",
+  "built_at_utc": "2026-11-11T11:59:21+00:00",
+  "seconds": 31.2,
+  "beats": 6,
+  "files": {
+   "assets/video/ed71.mp4": {
+    "bytes": 1259120,
+    "md5": "5d29274a892942aac29bfb240ac6d20a",
+    "sha256": "cee749f727a6a74a2f93807d98f8265c35a19bc36fb5f17f0d1411031fb1c0b0"
+   },
+   "assets/video/ed71-thumb.png": {
+    "bytes": 48106,
+    "md5": "c3ba86effe05a1f125ec45944b25adfe",
+    "sha256": "f23e98ec406ab1b9b96eb35f7fb8d5fb8a0ddadf7f21f445d90291277f338061"
+   },
+   "assets/video/ed71-thumb-9x16.png": {
+    "bytes": 70953,
+    "md5": "76773e76c919d29d36eec8dc08abfd7b",
+    "sha256": "11d27ea88fd532b1afd3d107d8b15f505452d301ba9f83ec05476ba06a9fb6f2"
+   },
+   "data/tiktok-ed71.json": {
+    "bytes": 571,
+    "md5": "4f7c8bb41e3b5581604f676747bd9489",
+    "sha256": "25607129467895d44c0df7fc2fd54931168f2cc707d87b8b33345f714bc88d2c"
+   },
+   "data/youtube-ed71.json": {
+    "bytes": 1462,
+    "md5": "76959ef9fd1020374d916e8f5cb40d57",
+    "sha256": "904b780686c2e8fa94df4f9d1003a8e4a3681c58887e561b2d411772ff14df7b"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 114878,
+    "md5": "c5a57227e040e2cc25a3405cbf5bb593",
+    "sha256": "f1d5a1f6889417ca0ce5d0ee915e91f947561022a2c1a99863ba079c7a6a0f52"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 70953,
+    "md5": "76773e76c919d29d36eec8dc08abfd7b",
+    "sha256": "11d27ea88fd532b1afd3d107d8b15f505452d301ba9f83ec05476ba06a9fb6f2"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 48106,
+    "md5": "c3ba86effe05a1f125ec45944b25adfe",
+    "sha256": "f23e98ec406ab1b9b96eb35f7fb8d5fb8a0ddadf7f21f445d90291277f338061"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 30.2
+  },
+  "passed": true
+ }
+}

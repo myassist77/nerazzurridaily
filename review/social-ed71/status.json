@@ -1,0 +1,96 @@
+{
+ "job": "ed71",
+ "kind": "daily",
+ "name": "ND-2026-11-11-ed71-women-city-gap",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-11T11:59:21+00:00",
+ "run_id": "43016098717",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43016098717",
+ "files": {
+  "assets/video/ed71.mp4": {
+   "bytes": 1259120,
+   "md5": "5d29274a892942aac29bfb240ac6d20a",
+   "sha256": "cee749f727a6a74a2f93807d98f8265c35a19bc36fb5f17f0d1411031fb1c0b0"
+  },
+  "assets/video/ed71-thumb.png": {
+   "bytes": 48106,
+   "md5": "c3ba86effe05a1f125ec45944b25adfe",
+   "sha256": "f23e98ec406ab1b9b96eb35f7fb8d5fb8a0ddadf7f21f445d90291277f338061"
+  },
+  "assets/video/ed71-thumb-9x16.png": {
+   "bytes": 70953,
+   "md5": "76773e76c919d29d36eec8dc08abfd7b",
+   "sha256": "11d27ea88fd532b1afd3d107d8b15f505452d301ba9f83ec05476ba06a9fb6f2"
+  },
+  "data/tiktok-ed71.json": {
+   "bytes": 571,
+   "md5": "4f7c8bb41e3b5581604f676747bd9489",
+   "sha256": "25607129467895d44c0df7fc2fd54931168f2cc707d87b8b33345f714bc88d2c"
+  },
+  "data/youtube-ed71.json": {
+   "bytes": 1462,
+   "md5": "76959ef9fd1020374d916e8f5cb40d57",
+   "sha256": "904b780686c2e8fa94df4f9d1003a8e4a3681c58887e561b2d411772ff14df7b"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 114878,
+   "md5": "c5a57227e040e2cc25a3405cbf5bb593",
+   "sha256": "f1d5a1f6889417ca0ce5d0ee915e91f947561022a2c1a99863ba079c7a6a0f52"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 70953,
+   "md5": "76773e76c919d29d36eec8dc08abfd7b",
+   "sha256": "11d27ea88fd532b1afd3d107d8b15f505452d301ba9f83ec05476ba06a9fb6f2"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 48106,
+   "md5": "c3ba86effe05a1f125ec45944b25adfe",
+   "sha256": "f23e98ec406ab1b9b96eb35f7fb8d5fb8a0ddadf7f21f445d90291277f338061"
+  }
+ },
+ "seconds": 31.2,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "31.200000"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "31.200000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-11-11-ed71-women-city-gap-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-11-11-ed71-women-city-gap-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-11-11-ed71-women-city-gap-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 796433,
+  "md5": "8b58106bdcd4dbd9e4624fc8c949b9d4",
+  "sha256": "d3fc45dc6d619b4d77d17e0136620f4b4df2896bb482f67dc9fc9ccb9fc76783"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 30.2
+ },
+ "voice_log_tail": "b1-stance: voice 4.20s → beat 4.65s\nb2-claim: voice 4.82s → beat 5.34s\nb3-take: voice 3.39s → beat 3.86s\nb4-turn: voice 6.02s → beat 6.51s\nb5-fixture: voice 3.39s → beat 3.84s\nb6-end: voice 5.59s → beat 6.0s\nPLAN OK build/beats.voiced.json — 6 beats, 30.2s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-11-11-ed71-women-city-gap.mp4 — 30.20s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-11-11-ed71-women-city-gap-thumb-9x16.png, ND-2026-11-11-ed71-women-city-gap-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-11-11-ed71-women-city-gap-voiced.mp4 — 31.20s, AAC 48 kHz stereo, I: -16.3 LUFS Peak: -4.1 dBFS\n"
+}

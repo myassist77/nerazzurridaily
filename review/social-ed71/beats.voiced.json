@@ -1,0 +1,116 @@
+{
+ "date_iso": "2026-11-11",
+ "slug": "women-city-gap",
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "1-4",
+   "lines_a": [
+    "INTER WOMEN",
+    "BEATEN IN MONZA"
+   ],
+   "lines_b": [
+    "BARTOLI SCORED"
+   ],
+   "pill": "TWO MORE HURT ON DUTY",
+   "pill_register": "REPORTED"
+  }
+ },
+ "beats": [
+  {
+   "id": "b1-stance",
+   "kind": "cover",
+   "duration": 4.65,
+   "eyebrow": "EDITION NO. 71 · NOVEMBER 11",
+   "lines": [
+    "INTER WOMEN",
+    "ARE NOT CLOSE",
+    "TO CITY"
+   ],
+   "vo": "[Inter] Women are not close to Manchester City. Their coach said so."
+  },
+  {
+   "id": "b2-claim",
+   "kind": "result",
+   "duration": 5.34,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · NOV 10",
+   "home": "INTER WOMEN",
+   "away": "MAN CITY",
+   "score_home": 1,
+   "score_away": 4,
+   "inter": "home",
+   "sub": [
+    "BARTOLI 24' · FUJINO 33', 44'",
+    "CASPARIJ 56' · CLINTON 70'"
+   ],
+   "vo": "The club says [Bartoli] headed [Inter] ahead. Then Manchester City scored four."
+  },
+  {
+   "id": "b3-take",
+   "kind": "item",
+   "duration": 3.86,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "A GOOD START",
+    "IS NOT",
+    "A GAP CLOSED"
+   ],
+   "vo": "A lead after twenty-four minutes is not a gap closed."
+  },
+  {
+   "id": "b4-turn",
+   "kind": "item",
+   "duration": 6.51,
+   "register": "REPORTED",
+   "kicker": "REPORTED · FOOTBALL ITALIA · NOV 10",
+   "lines": [
+    "THURAM AND",
+    "STANKOVIC",
+    "LEFT HURT"
+   ],
+   "sub": [
+    "THURAM MISSES FRANCE V ITALY",
+    "AT SAN SIRO ON THURSDAY"
+   ],
+   "vo": "The French and Serbian federations say [Thuram] and [Stanković] both left with muscle injuries."
+  },
+  {
+   "id": "b5-fixture",
+   "kind": "fixture",
+   "duration": 3.84,
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP · SERIE A · AWAY",
+   "lines": [
+    "ATALANTA",
+    "AWAY"
+   ],
+   "sub_top": "SUN, NOV 22 · SERIE A",
+   "big": "2:45 PM ET",
+   "sub": [
+    "20:45 CET · US TV: PARAMOUNT+"
+   ],
+   "vo": "[Atalanta] away, Sunday, two forty-five Eastern."
+  },
+  {
+   "id": "b6-end",
+   "kind": "end",
+   "duration": 6.0,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Who was [Inter] Women's best player in [Monza]? Tell me, at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 30.2
+ }
+}
