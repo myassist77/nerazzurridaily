@@ -65,6 +65,8 @@ FIX = {
     "Sneijder": "ˈsnɛidər", "Wesley Sneijder": "wˈɛsli ˈsnɛidər",
     "Thuram": "tyrˈam", "Marcus Thuram": "mˈarkus tyrˈam",
     "Javier Zanetti": "havjˈɛr dzanˈetːi",
+    # French: the Italian G2P stressed BAL-lon (THE DEBATE D08, Nov 11, 2026)
+    "Ballon d'Or": "balˈɔn dˈɔr",
 }
 
 ONES = "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen".split()
