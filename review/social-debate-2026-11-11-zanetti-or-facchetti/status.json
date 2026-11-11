@@ -1,0 +1,86 @@
+{
+ "job": "debate-2026-11-11-zanetti-or-facchetti",
+ "kind": "debate",
+ "name": "debate-2026-11-11-zanetti-or-facchetti",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-11T17:35:13+00:00",
+ "run_id": "43069169826",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43069169826",
+ "files": {
+  "assets/video/debate-2026-11-11-zanetti-or-facchetti.mp4": {
+   "bytes": 2590967,
+   "md5": "cbffb6f093ee680a7230b78e83efd412",
+   "sha256": "e66ebe291904a652cbd90d53b6a67f54ba648f402506f8c4dec7f0498bf78d35"
+  },
+  "assets/video/debate-2026-11-11-zanetti-or-facchetti-thumb.png": {
+   "bytes": 307668,
+   "md5": "cc0c56c77d8baf0ed809616fc5ff1b7d",
+   "sha256": "c82204b290824e0785580a219aeffa1eaca80ff8c8aa8efb2e69edf9853fda55"
+  },
+  "assets/video/debate-2026-11-11-zanetti-or-facchetti-thumb-9x16.png": {
+   "bytes": 615879,
+   "md5": "1ff40659f1c14051a0588fc917211f8e",
+   "sha256": "c3a5cb5cca51171483026335379aba32e82a93ec112923f59214e6c155ced181"
+  },
+  "data/tiktok-debate-2026-11-11-zanetti-or-facchetti.json": {
+   "bytes": 701,
+   "md5": "63f0f5f6c3d46cfd8e9fe1b787ee64c4",
+   "sha256": "824aeb059e17d60997e4fb9d59e0a7cff708119d73524a96cdbfcd2571d7af76"
+  },
+  "data/youtube-debate-2026-11-11-zanetti-or-facchetti.json": {
+   "bytes": 1542,
+   "md5": "0997468d1418faafbd778a3c8b662fcc",
+   "sha256": "733e1c38f1eccfd90a81608a7562cd0f2fba500110893093f8ca3988de5c5749"
+  },
+  "assets/qc/debate-contact.jpg": {
+   "bytes": 158526,
+   "md5": "be431450a30b091428c188672313e599",
+   "sha256": "c0b8269a45e65d7ce9e6303e8a068ad90c6a6002a299ce1f4ac8f5f1f93a311a"
+  }
+ },
+ "seconds": 37.4,
+ "beats": 7,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "37.400000"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "37.380000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/debate-2026-11-11-zanetti-or-facchetti-voiced.mp4",
+  "thumb16": "build/pack/debate-2026-11-11-zanetti-or-facchetti-thumb-16x9.png",
+  "thumb9": "build/pack/debate-2026-11-11-zanetti-or-facchetti-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 1976846,
+  "md5": "0c44102c96f36a751846f4036f6ac88e",
+  "sha256": "0291fe78136f668bec443f6eb73a3d420e33c477095670990c9cab51a8f6ed0d"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 36.38
+ },
+ "voice_log_tail": "b1: voice 3.39s → beat 3.78s\nb2: voice 3.20s → beat 3.67s\nb3: voice 6.55s → beat 7.0s\nb4: voice 5.35s → beat 5.85s\nb5: voice 4.52s → beat 4.99s\nb6: voice 4.46s → beat 4.97s\nb7: voice 5.65s → beat 6.12s\nPLAN OK build/beats.voiced.json — 7 beats, 36.38s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/debate-2026-11-11-zanetti-or-facchetti.mp4 — 36.40s, 7 beats, silent (voice is mixed on by nd_voice.py); stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: debate-2026-11-11-zanetti-or-facchetti-thumb-9x16.png, debate-2026-11-11-zanetti-or-facchetti-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/debate-2026-11-11-zanetti-or-facchetti-voiced.mp4 — 37.40s, AAC 48 kHz stereo, I: -16.3 LUFS Peak: -3.8 dBFS\n"
+}

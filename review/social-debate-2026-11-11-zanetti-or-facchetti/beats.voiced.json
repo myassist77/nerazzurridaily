@@ -1,0 +1,150 @@
+{
+ "thumbnail": {
+  "lines": [
+   "ZANETTI OR FACCHETTI?"
+  ],
+  "left": {
+   "name": "FACCHETTI",
+   "era": "1961–78 · 2 European Cups"
+  },
+  "right": {
+   "name": "ZANETTI",
+   "era": "1995–2014 · 858 games"
+  }
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "kind": "hook",
+   "eyebrow": "THE DEBATE · NO. 8",
+   "lines": [
+    "ZANETTI OR",
+    "FACCHETTI?"
+   ],
+   "sub": "The club's greatest ever",
+   "duration": 3.78,
+   "vo": "[Zanetti] or [Facchetti]: the greatest ever at [Inter]?"
+  },
+  {
+   "id": "b2",
+   "kind": "text",
+   "kicker": "TWO RETIRED SHIRTS",
+   "lines": [
+    "THE NO. 3",
+    "OR",
+    "THE NO. 4?"
+   ],
+   "sub": [
+    "Facchetti · 1961–78 · Herrera's Inter",
+    "Zanetti · 1995–2014 · treble captain"
+   ],
+   "duration": 3.67,
+   "vo": "The retired three, or the retired four? One pick."
+  },
+  {
+   "id": "b3",
+   "kind": "card",
+   "kicker": "THE CASE · FACCHETTI",
+   "number": 75,
+   "suffix": "",
+   "label": "goals from left-back",
+   "name": "Giacinto Facchetti",
+   "facts": [
+    "2 European Cups · 1964, 1965",
+    "4 Scudetti · 1 Coppa Italia",
+    "Ballon d'Or runner-up · 1965"
+   ],
+   "source": "inter.it · uefa.com",
+   "duration": 7.0,
+   "vo": "The case: [Facchetti]. Seventy-five goals from left-back, two European Cups, and a [Ballon d'Or] runner-up."
+  },
+  {
+   "id": "b4",
+   "kind": "card",
+   "kicker": "THE COUNTER · ZANETTI",
+   "number": 858,
+   "suffix": "",
+   "label": "games for Inter · the record",
+   "name": "Javier Zanetti",
+   "facts": [
+    "16 trophies · 5 Scudetti",
+    "Treble captain · 2010",
+    "47 derbies · 160 in Europe"
+   ],
+   "source": "inter.it",
+   "duration": 5.85,
+   "vo": "The counter: [Zanetti]. Eight hundred fifty-eight games, sixteen trophies, treble captain."
+  },
+  {
+   "id": "b5",
+   "kind": "versus",
+   "left": {
+    "name": "FACCHETTI",
+    "era": "1961–78 · NO. 3"
+   },
+   "right": {
+    "name": "ZANETTI",
+    "era": "1995–2014 · NO. 4"
+   },
+   "rows": [
+    {
+     "label": "Games for Inter",
+     "l": 634,
+     "r": 858,
+     "win": "r"
+    },
+    {
+     "label": "Trophies",
+     "l": 9,
+     "r": 16,
+     "win": "r"
+    },
+    {
+     "label": "European Cups",
+     "l": 2,
+     "r": 1,
+     "win": "l"
+    },
+    {
+     "label": "Goals",
+     "l": 75,
+     "r": 21,
+     "win": "l"
+    }
+   ],
+   "duration": 4.99,
+   "vo": "[Zanetti] has the games and medals. [Facchetti] has the goals and the Cups."
+  },
+  {
+   "id": "b6",
+   "kind": "verdict",
+   "stamp": "OUR PICK",
+   "name": "Facchetti",
+   "lines": [
+    "Two European Cups, 75 goals,",
+    "and he reinvented the full-back"
+   ],
+   "duration": 4.97,
+   "vo": "Our pick: [Facchetti]. He reinvented the full-back and won Europe twice."
+  },
+  {
+   "id": "b7",
+   "kind": "end",
+   "lines": [
+    "YOUR",
+    "PICK?"
+   ],
+   "ask": "reply in the comments",
+   "duration": 6.12,
+   "vo": "Your pick? Reply below. The [Inter] press in English at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 36.38
+ }
+}
