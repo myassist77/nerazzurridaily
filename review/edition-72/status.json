@@ -1,0 +1,158 @@
+{
+ "n": 72,
+ "built_at_utc": "2026-11-12T10:56:54+00:00",
+ "run_id": "43204713905",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43204713905",
+ "passed": false,
+ "steps": {
+  "mast": "success",
+  "controls": "success",
+  "checks": "failure"
+ },
+ "files_md5": {
+  "p/edition-72/index.html": "ea2f82bc489e85d9bd7983c6965c42ef",
+  "assets/mast/edition-72.png": "e951737d058b493ef3b14ee04b9cca24",
+  "data/edition-72.json": "b48a22885e5199e6c19d13fff02d9bef",
+  "index.html": "104d0dd859ca0d2ba5a7920140ad9999",
+  "subscribe/index.html": "ba506605f61e75b976083636ace01be1",
+  "fixtures/index.html": "1a67b16c5f877453a5a39ca0bbde439b",
+  "feed.xml": "cfe3b445056a21ee28123b72ae94867f",
+  "sitemap.xml": "ce5933aa103c6ca87bc9414f292b1868"
+ },
+ "title": "Italy meet France at San Siro with five Inter men involved",
+ "date": "2026-11-12",
+ "masthead": {
+  "bytes": 6229,
+  "lines": 2,
+  "colors": 7,
+  "fonts": {
+   "anton": true,
+   "mono": true
+  }
+ },
+ "controls": {
+  "n": 72,
+  "fails": [],
+  "warns": [],
+  "page-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 700,
+    "h": 382.8125,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "page-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "email-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 644,
+    "h": 352.1875,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  },
+  "email-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  }
+ },
+ "checks": {
+  "fails": [
+   "dates: dates disagree: {'subtitle': 'November 22', 'today': 'November 12'}"
+  ],
+  "warns": [
+   "sentences: 39 words: “NICOLÒ SCHIRA VIA FCINTERNEWS · NOV 10 ESPOSITO 12′ · THURAM 19′ Atalanta  AWAY VfB Stuttgart  HOME Genoa  HOM…”"
+  ],
+  "info": {
+   "prose_words": 491,
+   "read_seconds": 124,
+   "avg_sentence_words": 15.1,
+   "flesch_reading_ease": 58.0,
+   "edition_from_masthead": null,
+   "dates": {
+    "subtitle": "November 22",
+    "today": "November 12"
+   },
+   "external_to_fetch": [
+    "https://football-italia.net/inter-relief-thuram-injury-muscular-issues/",
+    "https://football-italia.net/italy-vs-france-kick-off-time-line-ups-news-tv/",
+    "https://football-italia.net/official-mbappe-out-of-italy-vs-france-zidane/",
+    "https://www.fcinternews.it/in-primo-piano/rinnovo-carlos-augusto-mossa-agenti-chiesto-aumento-5-mln-1022934",
+    "https://www.figc.it/en/national-teams/news/uefa-nations-league-italy-to-face-france-in-milan-on-12-november-as-the-azzurri-return-to-the-meazza-lw3kmp7p",
+    "https://www.inter.it/en/matches",
+    "https://www.inter.it/it/notizie/convocati-inter-sosta-nazionali-novembre-2026",
+    "https://www.inter.it/it/notizie/guida-inter-juventus-women-dove-vedere-tv",
+    "https://www.tiktok.com/@nerazzurridaily",
+    "https://www.youtube.com/@nerazzurridaily"
+   ],
+   "site_links": [
+    "https://www.nerazzurridaily.com/go/email/?ed=72",
+    "https://www.nerazzurridaily.com/go/email/?ed=72&to=/subscribe/",
+    "https://www.nerazzurridaily.com/go/forward/?ed=72",
+    "https://www.nerazzurridaily.com/p/edition-72/"
+   ]
+  }
+ },
+ "email": {
+  "md5": "79210c516702b70e8e412240aa286797",
+  "chars": 24269,
+  "bytes": 24401
+ }
+}
