@@ -1,22 +1,22 @@
 {
  "n": 72,
- "built_at_utc": "2026-11-12T10:56:54+00:00",
- "run_id": "43204713905",
- "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43204713905",
- "passed": false,
+ "built_at_utc": "2026-11-12T10:59:31+00:00",
+ "run_id": "43205080764",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43205080764",
+ "passed": true,
  "steps": {
   "mast": "success",
   "controls": "success",
-  "checks": "failure"
+  "checks": "success"
  },
  "files_md5": {
-  "p/edition-72/index.html": "ea2f82bc489e85d9bd7983c6965c42ef",
+  "p/edition-72/index.html": "c8f39bc506573d7f48070d2660426af1",
   "assets/mast/edition-72.png": "e951737d058b493ef3b14ee04b9cca24",
-  "data/edition-72.json": "b48a22885e5199e6c19d13fff02d9bef",
+  "data/edition-72.json": "72335121661ccc30cd7af8c4448f4424",
   "index.html": "104d0dd859ca0d2ba5a7920140ad9999",
   "subscribe/index.html": "ba506605f61e75b976083636ace01be1",
   "fixtures/index.html": "1a67b16c5f877453a5a39ca0bbde439b",
-  "feed.xml": "cfe3b445056a21ee28123b72ae94867f",
+  "feed.xml": "0afc685c4562526c444cf67fdf84d00e",
   "sitemap.xml": "ce5933aa103c6ca87bc9414f292b1868"
  },
  "title": "Italy meet France at San Siro with five Inter men involved",
@@ -114,9 +114,7 @@
   }
  },
  "checks": {
-  "fails": [
-   "dates: dates disagree: {'subtitle': 'November 22', 'today': 'November 12'}"
-  ],
+  "fails": [],
   "warns": [
    "sentences: 39 words: “NICOLÒ SCHIRA VIA FCINTERNEWS · NOV 10 ESPOSITO 12′ · THURAM 19′ Atalanta  AWAY VfB Stuttgart  HOME Genoa  HOM…”"
   ],
@@ -127,7 +125,6 @@
    "flesch_reading_ease": 58.0,
    "edition_from_masthead": null,
    "dates": {
-    "subtitle": "November 22",
     "today": "November 12"
    },
    "external_to_fetch": [
@@ -151,8 +148,8 @@
   }
  },
  "email": {
-  "md5": "79210c516702b70e8e412240aa286797",
-  "chars": 24269,
-  "bytes": 24401
+  "md5": "6e8163c039fe3cf13d78e346a83a9a54",
+  "chars": 24268,
+  "bytes": 24400
  }
 }
