@@ -1,0 +1,117 @@
+{
+ "n": 72,
+ "date_iso": "2026-11-12",
+ "slug": "five-inter-men",
+ "beats": [
+  {
+   "id": "stance",
+   "kind": "cover",
+   "register": "NEUTRAL",
+   "eyebrow": "EDITION NO. 72 · NOVEMBER 12",
+   "lines": [
+    "INTER SHOULDN’T",
+    "LEND SAN SIRO",
+    "TO ITALY."
+   ],
+   "duration": 4.35,
+   "vo": "[Inter] should not be lending [San Siro] to [Italy]. Tonight they do."
+  },
+  {
+   "id": "claim",
+   "kind": "item",
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · NOV 11",
+   "lines": [
+    "FOUR WITH ITALY",
+    "ONE WITH FRANCE"
+   ],
+   "sub": [
+    "BARELLA · BASTONI · DIMARCO",
+    "ESPOSITO · AND DIOUF FOR FRANCE"
+   ],
+   "duration": 4.82,
+   "vo": "[Inter] say four of their players are with [Italy] tonight, and one with [France]."
+  },
+  {
+   "id": "ourtake",
+   "kind": "item",
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "ALL THE RISK,",
+    "NONE OF THE",
+    "GLORY."
+   ],
+   "duration": 3.65,
+   "vo": "The club carries the risk. The country gets the night."
+  },
+  {
+   "id": "turn",
+   "kind": "item",
+   "register": "REPORTED",
+   "kicker": "REPORTED · GAZZETTA DELLO SPORT · NOV 11",
+   "lines": [
+    "THURAM’S TESTS:",
+    "NO TEAR."
+   ],
+   "sub": [
+    "HE HOPES TO FACE ATALANTA ON NOV 22"
+   ],
+   "duration": 7.02,
+   "vo": "[La Gazzetta dello Sport] says the tests on [Marcus Thuram] found no tear. He hopes to face [Atalanta]."
+  },
+  {
+   "id": "fixture",
+   "kind": "fixture",
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP",
+   "lines": [
+    "ATALANTA",
+    "AWAY"
+   ],
+   "sub_top": "SUN, NOV 22 · SERIE A",
+   "big": "2:45 PM ET",
+   "sub": [
+    "20:45 CET · US TV: PARAMOUNT+"
+   ],
+   "duration": 4.06,
+   "vo": "[Inter] are back at [Atalanta] on November twenty-second."
+  },
+  {
+   "id": "end",
+   "kind": "end",
+   "register": "NEUTRAL",
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "duration": 6.21,
+   "vo": "Which [Inter] man wins tonight? Tell us in the comments, at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "5",
+   "lines_a": [
+    "INTER MEN",
+    "AT SAN SIRO"
+   ],
+   "lines_b": [
+    "FOUR FOR ITALY",
+    "ONE FOR FRANCE"
+   ],
+   "pill": "THURAM: NO TEAR",
+   "pill_register": "REPORTED"
+  }
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 30.11
+ }
+}

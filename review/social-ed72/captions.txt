@@ -1,0 +1,76 @@
+NERAZZURRI DAILY — SOCIAL PACK
+Edition No. 72 · Thursday, November 12, 2026
+Video: ND-2026-11-12-ed72-five-inter-men-voiced.mp4 — 31.13 s, 6 beats, 1080x1920
+Hook: "Inter shouldn't lend San Siro to Italy."
+Printed pink (REPORTED): Thuram's tests reportedly show no tear — Gazzetta dello Sport via Football Italia, Nov 11.
+
+
+================================================================
+(a) TIKTOK — @nerazzurridaily
+================================================================
+Posted automatically at 9:05 AM ET via Postiz. The MP4 carries the voiceover only, no music — the owner's choice of Sept 26, 2026.
+
+TITLE (<=90 chars)
+Inter at San Siro tonight — four with Italy, one with France
+
+CAPTION
+Inter shouldn't lend San Siro to Italy — but tonight they do. Four Inter men are in the Italy squad to face France and one, Andy Diouf, is with France, per Inter.it. And per Gazzetta dello Sport via Football Italia, Marcus Thuram's tests showed no tear.
+https://www.nerazzurridaily.com/go/tt/?ed=72
+#Inter #ItaliaFrancia #NationsLeague #Thuram
+
+SUGGESTED POSTING WINDOW
+8–10 AM ET. Inter are not playing tonight, so there is no full-time window today; Italy–France kicks off 2:45 PM ET.
+
+
+================================================================
+(b) YOUTUBE SHORTS — @nerazzurridaily
+================================================================
+Posted automatically at 9:05 AM ET via Postiz. The MP4 carries the voiceover only, no music — the owner's choice of Sept 26, 2026.
+The 9:16 thumbnail is sent to YouTube with the post (the 16:9 file is the fallback); the same 9:16 image opens the video for 1 second, which makes it the TikTok cover.
+
+TITLE (<=100 chars)
+Inter at San Siro: Four With Italy, One With France — Thuram's Tests Show No Tear
+
+DESCRIPTION
+Inter shouldn't lend San Siro to Italy — but tonight they do, with five Inter men in the two squads.
+https://www.nerazzurridaily.com/go/yt/?ed=72
+
+Blue means the club said it. Pink means only the papers did.
+
+CONFIRMED — Four Inter men are with Italy for tonight (Barella, Bastoni, Dimarco, Esposito) and Andy Diouf is with France. Source: Inter.it, Nov 11.
+CONFIRMED — Inter Women host Juventus on Sunday at the Stadio Ernesto Breda, and entry is free. Source: Inter.it, Nov 11.
+REPORTED — Marcus Thuram's tests showed a minor hamstring problem and no tear; he hopes to be back at Atalanta on Nov 22. Source: Gazzetta dello Sport via Football Italia, Nov 11.
+REPORTED — Carlos Augusto's renewal is said to be stuck on money, with his agents asking up to EUR 5m a year. Source: Nicolo Schira via FCInterNews, Nov 10.
+
+Read today's edition: https://www.nerazzurridaily.com/p/edition-72/
+
+Fan-made — not affiliated with FC Internazionale Milano.
+
+PINNED COMMENT
+Which Inter man has the best night at San Siro tonight — Barella, Bastoni, Dimarco, Esposito or Diouf? Reply in the comments.
+https://www.nerazzurridaily.com/go/yt/?ed=72&v=pinned
+
+HASHTAGS (first three show above the title)
+#Inter #NationsLeague #ItaliaFrancia #Thuram #ForzaInter
+
+
+================================================================
+(c) REDDIT — r/FCInterMilan
+================================================================
+Not included today. The value post for r/FCInterMilan is a Monday draft; today is Thursday.
+
+
+================================================================
+(d) FACEBOOK — the owner's personal profile
+================================================================
+Paste on your own profile, first person, no hashtags:
+
+Italy play France at San Siro tonight and five Inter men are in the two squads — four with Italy, one with France — while Thuram's tests reportedly came back with no tear.
+If you know one Inter fan, send them nerazzurridaily.com/go/fb/?ed=72
+
+
+================================================================
+NOTES
+================================================================
+Every claim above comes from data/edition-72.json, verified by the edition's own controls this morning. Nothing new was researched for this pack.
+This task publishes nothing. TikTok and YouTube are posted by the 9:05 AM ET task through Postiz, each behind its own kill switch in data/social-switch.json. Facebook and Reddit stay drafts for the owner.

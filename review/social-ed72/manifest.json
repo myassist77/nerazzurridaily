@@ -1,0 +1,137 @@
+{
+ "edition": 72,
+ "date": "2026-11-12",
+ "slug": "five-inter-men",
+ "hook": "Inter shouldn't lend San Siro to Italy.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-72/",
+ "edition_json_sha256": "f203f31a66e525453328427671e7fff0d1a36db96c97dd9c3705ef11ed2c38f2",
+ "brevo": {
+  "campaign_id": 61,
+  "status": "sent",
+  "sent_at_et": "2026-11-12 06:43:03"
+ },
+ "local_render": {
+  "filename": "ND-2026-11-12-ed72-five-inter-men-voiced.mp4",
+  "seconds": 31.13,
+  "beats": 6,
+  "bytes": 1260647,
+  "md5": "4f20eb5f8062221e7d69bb085a327e79",
+  "sha256": "af3982d3d12a4c21834265043d331d2aa810fe538adb5f58cab8b7277d76821d"
+ },
+ "audio": {
+  "note": "voiceover only — no music",
+  "codec": "aac",
+  "sample_rate": "48000",
+  "channels": 2,
+  "duration": 31.13,
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 30.11
+  }
+ },
+ "stories": [
+  {
+   "register": "CONFIRMED",
+   "headline": "Four Inter men with Italy, one with France",
+   "source": "Inter.it",
+   "date": "Nov 11"
+  },
+  {
+   "register": "CONFIRMED",
+   "headline": "Inter Women host Juventus on Sunday, and entry is free",
+   "source": "Inter.it",
+   "date": "Nov 11"
+  },
+  {
+   "register": "REPORTED",
+   "headline": "Thuram's tests reportedly show no tear",
+   "source": "Gazzetta dello Sport via Football Italia",
+   "date": "Nov 11"
+  },
+  {
+   "register": "REPORTED",
+   "headline": "Carlos Augusto's renewal is said to be stuck on money",
+   "source": "Nicolo Schira via FCInterNews",
+   "date": "Nov 10"
+  }
+ ],
+ "youtube_title": "Inter at San Siro: Four With Italy, One With France — Thuram's Tests Show No Tear",
+ "pinned_comment_question": "Which Inter man has the best night at San Siro tonight — Barella, Bastoni, Dimarco, Esposito or Diouf?",
+ "next_fixture": {
+  "opponent": "Atalanta",
+  "venue": "AWAY",
+  "when": "Sun, Nov 22 · Serie A",
+  "et": "2:45 PM ET",
+  "cet": "20:45 CET",
+  "us_tv": "Paramount+"
+ },
+ "optional_drafts": {
+  "reddit": false,
+  "reddit_reason": "Monday only; today is Thursday",
+  "facebook": true
+ },
+ "thumbnail_style": "number",
+ "publishes_nothing": true,
+ "posted_by": "the 9:05 AM ET Postiz task (trig_01374Hz1sUctq8hgbD6UAhXh)",
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43213304564",
+  "built_at_utc": "2026-11-12T11:57:55+00:00",
+  "seconds": 31.13,
+  "beats": 6,
+  "files": {
+   "assets/video/ed72.mp4": {
+    "bytes": 1250180,
+    "md5": "de922dbbfd8257710df31f1fe2c08168",
+    "sha256": "bc042cdc0355d18be0b47aca8213725433c97b3d88cb067eacb5087cff43830a"
+   },
+   "assets/video/ed72-thumb.png": {
+    "bytes": 52733,
+    "md5": "d3136b010bad63007e565aa0a2862310",
+    "sha256": "cad8f3bf04637cf52d0fdeff34e2e073126c9469e7b2e83fd2c8755824803b19"
+   },
+   "assets/video/ed72-thumb-9x16.png": {
+    "bytes": 73906,
+    "md5": "d37155a91c6a684754903dd1b36a1aff",
+    "sha256": "70585a535d56a5c88f80ffe520219642cd6973089f531204e210b5f9335582a1"
+   },
+   "data/tiktok-ed72.json": {
+    "bytes": 605,
+    "md5": "01a22490ba04c6c5f091478840368122",
+    "sha256": "ef9a7760b2c34efe66a12286fda3ce7e1d593c5539415fbca7aa7064fd519c08"
+   },
+   "data/youtube-ed72.json": {
+    "bytes": 1613,
+    "md5": "fa3da0ceaeacb84b0984e97484c6aa83",
+    "sha256": "23db0a9946046567965c305bc5936689bcacf8df068cb4c86b752a02a5c9ddc7"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 117447,
+    "md5": "12f15552e3e20c8d45271cef72cce67f",
+    "sha256": "30aa9802450a54b0dc329649dd63ff7cb57423c3c38308fb86f7950be6c198e6"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 73906,
+    "md5": "d37155a91c6a684754903dd1b36a1aff",
+    "sha256": "70585a535d56a5c88f80ffe520219642cd6973089f531204e210b5f9335582a1"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 52733,
+    "md5": "d3136b010bad63007e565aa0a2862310",
+    "sha256": "cad8f3bf04637cf52d0fdeff34e2e073126c9469e7b2e83fd2c8755824803b19"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 30.11
+  },
+  "passed": true
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "job": "ed72",
+ "kind": "daily",
+ "name": "ND-2026-11-12-ed72-five-inter-men",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-12T11:57:55+00:00",
+ "run_id": "43213304564",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43213304564",
+ "files": {
+  "assets/video/ed72.mp4": {
+   "bytes": 1250180,
+   "md5": "de922dbbfd8257710df31f1fe2c08168",
+   "sha256": "bc042cdc0355d18be0b47aca8213725433c97b3d88cb067eacb5087cff43830a"
+  },
+  "assets/video/ed72-thumb.png": {
+   "bytes": 52733,
+   "md5": "d3136b010bad63007e565aa0a2862310",
+   "sha256": "cad8f3bf04637cf52d0fdeff34e2e073126c9469e7b2e83fd2c8755824803b19"
+  },
+  "assets/video/ed72-thumb-9x16.png": {
+   "bytes": 73906,
+   "md5": "d37155a91c6a684754903dd1b36a1aff",
+   "sha256": "70585a535d56a5c88f80ffe520219642cd6973089f531204e210b5f9335582a1"
+  },
+  "data/tiktok-ed72.json": {
+   "bytes": 605,
+   "md5": "01a22490ba04c6c5f091478840368122",
+   "sha256": "ef9a7760b2c34efe66a12286fda3ce7e1d593c5539415fbca7aa7064fd519c08"
+  },
+  "data/youtube-ed72.json": {
+   "bytes": 1613,
+   "md5": "fa3da0ceaeacb84b0984e97484c6aa83",
+   "sha256": "23db0a9946046567965c305bc5936689bcacf8df068cb4c86b752a02a5c9ddc7"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 117447,
+   "md5": "12f15552e3e20c8d45271cef72cce67f",
+   "sha256": "30aa9802450a54b0dc329649dd63ff7cb57423c3c38308fb86f7950be6c198e6"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 73906,
+   "md5": "d37155a91c6a684754903dd1b36a1aff",
+   "sha256": "70585a535d56a5c88f80ffe520219642cd6973089f531204e210b5f9335582a1"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 52733,
+   "md5": "d3136b010bad63007e565aa0a2862310",
+   "sha256": "cad8f3bf04637cf52d0fdeff34e2e073126c9469e7b2e83fd2c8755824803b19"
+  }
+ },
+ "seconds": 31.13,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "31.133333"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "31.110000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-11-12-ed72-five-inter-men-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-11-12-ed72-five-inter-men-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-11-12-ed72-five-inter-men-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 787240,
+  "md5": "41315067d3096ec8bd37a583535ed18c",
+  "sha256": "d6ee7f9a77d2ff190840e26a82ba8821cd05efd18de5a5c041ca6c9ee0ea2c5e"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 30.11
+ },
+ "voice_log_tail": "stance: voice 3.90s → beat 4.35s\nclaim: voice 4.35s → beat 4.82s\nourtake: voice 3.20s → beat 3.65s\nturn: voice 6.53s → beat 7.02s\nfixture: voice 3.58s → beat 4.06s\nend: voice 5.72s → beat 6.21s\nPLAN OK build/beats.voiced.json — 6 beats, 30.11s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-11-12-ed72-five-inter-men.mp4 — 30.13s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-11-12-ed72-five-inter-men-thumb-9x16.png, ND-2026-11-12-ed72-five-inter-men-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-11-12-ed72-five-inter-men-voiced.mp4 — 31.13s, AAC 48 kHz stereo, I: -16.3 LUFS Peak: -4.2 dBFS\n"
+}
