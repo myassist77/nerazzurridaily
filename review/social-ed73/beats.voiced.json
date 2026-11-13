@@ -1,0 +1,118 @@
+{
+ "n": 73,
+ "date_iso": "2026-11-13",
+ "slug": "esposito-double",
+ "beats": [
+  {
+   "id": "stance",
+   "kind": "cover",
+   "register": "NEUTRAL",
+   "duration": 4.89,
+   "eyebrow": "EDITION NO. 73 · NOVEMBER 13",
+   "lines": [
+    "INTER CAN'T BENCH",
+    "PIO ESPOSITO NOW"
+   ],
+   "vo": "[Inter] cannot bench [Pio Esposito] any more. Not after Thursday night."
+  },
+  {
+   "id": "claim",
+   "kind": "item",
+   "register": "CONFIRMED",
+   "duration": 6.1,
+   "kicker": "CONFIRMED · INTER.IT · NOV 12",
+   "lines": [
+    "HIS FIRST DOUBLE",
+    "FOR ITALY"
+   ],
+   "sub": [
+    "ITALY 3–1 FRANCE · SAN SIRO",
+    "ESPOSITO 26′ AND 75′ (PEN)"
+   ],
+   "vo": "[Inter] dot it says [Pio Esposito] scored twice as Italy beat France, three goals to one."
+  },
+  {
+   "id": "take",
+   "kind": "item",
+   "register": "NEUTRAL",
+   "duration": 4.55,
+   "kicker": "OUR TAKE",
+   "lines": [
+    "A FORWARD WHO",
+    "DOES THAT ISN'T",
+    "A SUBSTITUTE"
+   ],
+   "vo": "A forward who does that at [San Siro] is not a substitute any more."
+  },
+  {
+   "id": "turn",
+   "kind": "item",
+   "register": "CONFIRMED",
+   "duration": 7.08,
+   "kicker": "CONFIRMED · INTER.IT · NOV 13",
+   "lines": [
+    "NINE MATCHES",
+    "BEFORE CHRISTMAS"
+   ],
+   "sub": [
+    "ENDING WITH THE SUPERCOPPA",
+    "VS LAZIO · SAN SIRO · DEC 22"
+   ],
+   "vo": "The club published nine matches before Christmas. The last is the [Supercoppa] against [Lazio] at [San Siro]."
+  },
+  {
+   "id": "fixture",
+   "kind": "fixture",
+   "register": "NEUTRAL",
+   "duration": 4.31,
+   "kicker": "NEXT UP",
+   "lines": [
+    "ATALANTA",
+    "AWAY"
+   ],
+   "sub_top": "SUN, NOV 22 · SERIE A · MD 12",
+   "big": "2:45 PM ET",
+   "sub": [
+    "20:45 CET · US TV: PARAMOUNT+"
+   ],
+   "vo": "Next up, [Atalanta] away on Sunday, November twenty-second."
+  },
+  {
+   "id": "end",
+   "kind": "end",
+   "register": "NEUTRAL",
+   "duration": 6.64,
+   "sub": [
+    "SUBSCRIBE TO THE",
+    "FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Should [Pio Esposito] start against [Atalanta]? Tell me below. At [Nerazzurri] Daily dot com."
+  }
+ ],
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "3-1",
+   "lines_a": [
+    "ITALY BEAT",
+    "FRANCE"
+   ],
+   "lines_b": [
+    "ESPOSITO",
+    "SCORED TWICE"
+   ],
+   "pill": "REPORTED: BASTONI CLEAR FOR SUNDAY",
+   "pill_register": "REPORTED"
+  }
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 33.57
+ }
+}

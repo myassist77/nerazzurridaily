@@ -1,0 +1,96 @@
+{
+ "job": "ed73",
+ "kind": "daily",
+ "name": "ND-2026-11-13-ed73-esposito-double",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-13T10:38:06+00:00",
+ "run_id": "43410301354",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43410301354",
+ "files": {
+  "assets/video/ed73.mp4": {
+   "bytes": 1378490,
+   "md5": "748a676979ab7dc6cf10d13553bfa03a",
+   "sha256": "1e42dfd846c33fcbdd676ced83dcae735439e6dbefe39b540d032e649c980250"
+  },
+  "assets/video/ed73-thumb.png": {
+   "bytes": 61710,
+   "md5": "bcbea52494f53da32d63222f4189a3e1",
+   "sha256": "de399458a550d7a2ee52671a8ee02cebfe503102c82b09d6629d96bd823ab2eb"
+  },
+  "assets/video/ed73-thumb-9x16.png": {
+   "bytes": 82365,
+   "md5": "9652e27c516d8dd89dcfbbe740fd29dc",
+   "sha256": "b4097de309d35c4d73553aea7847154bda71887c898a65de397abf2869ecc42f"
+  },
+  "data/tiktok-ed73.json": {
+   "bytes": 628,
+   "md5": "380920d3a9b77d2b1370edfb901b7b09",
+   "sha256": "fa55721487049fc733b1760b82fda2c3ef3fa1f73b1b3808103f7d47fd51b000"
+  },
+  "data/youtube-ed73.json": {
+   "bytes": 1711,
+   "md5": "c4a7cd07b574dd01f87d36c4858bdce2",
+   "sha256": "6ca7f30d59cbe03658707231261a6c39684e78b65a5499077d5e4ec5100cfb3f"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 125371,
+   "md5": "924e6ed64122c728ae2771bd690674b8",
+   "sha256": "9a249d1f73e6cadff269aba87fc107b70231a3db12f2e9f83f49e2855b9bb7fb"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 82365,
+   "md5": "9652e27c516d8dd89dcfbbe740fd29dc",
+   "sha256": "b4097de309d35c4d73553aea7847154bda71887c898a65de397abf2869ecc42f"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 61710,
+   "md5": "bcbea52494f53da32d63222f4189a3e1",
+   "sha256": "de399458a550d7a2ee52671a8ee02cebfe503102c82b09d6629d96bd823ab2eb"
+  }
+ },
+ "seconds": 34.57,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "34.533333"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "34.570000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-11-13-ed73-esposito-double-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-11-13-ed73-esposito-double-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-11-13-ed73-esposito-double-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 859661,
+  "md5": "ef484fa909a6843bf6f75b6b0756ef1e",
+  "sha256": "283ede38fe231f89acb820fcd546cb692c232824258ed00b06a0e30d7ee37c33"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 33.57
+ },
+ "voice_log_tail": "stance: voice 4.42s → beat 4.89s\nclaim: voice 5.70s → beat 6.1s\ntake: voice 4.12s → beat 4.55s\nturn: voice 6.63s → beat 7.08s\nfixture: voice 3.82s → beat 4.31s\nend: voice 6.10s → beat 6.64s\nPLAN OK build/beats.voiced.json — 6 beats, 33.57s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-11-13-ed73-esposito-double.mp4 — 33.53s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-11-13-ed73-esposito-double-thumb-9x16.png, ND-2026-11-13-ed73-esposito-double-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-11-13-ed73-esposito-double-voiced.mp4 — 34.57s, AAC 48 kHz stereo, I: -16.3 LUFS Peak: -3.3 dBFS\n"
+}
