@@ -8,7 +8,7 @@ import sys, os, re, json, html, glob, datetime
 
 SITE = "https://www.nerazzurridaily.com"
 MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"]
-FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&amp;family=Fragment+Mono&amp;display=swap" rel="stylesheet">'
+FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=IBM+Plex+Mono:wght@500&amp;family=Oswald:wght@400;700&amp;family=Fragment+Mono&amp;display=swap" rel="stylesheet">'
 BEACON = '<!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{"token": "fd1d42426a934b7e94ed7cfe7afc9ccc"}\'></script><!-- End Cloudflare Web Analytics -->'
 FONTS = FONTS + "\n" + BEACON
 BEACON_TOKEN = 'fd1d42426a934b7e94ed7cfe7afc9ccc'
@@ -380,10 +380,47 @@ CSS += """
 .nav a[aria-current]{color:#0B1020;border-bottom-color:#2B5BB8}
 @media(max-width:520px){.nav{padding-left:16px;padding-right:16px;column-gap:16px}.nav a{font-size:14px}}
 """
+NAV_SHORT = {'/how-to-watch-inter-milan-in-the-usa/': 'US TV'}   # the phone label, so the five links stay on one line
 def nav(here=''):
     """The strip under the top bar. `here` is the current page's path: that link is marked as the current page."""
+    def label(p, t):
+        return f'<span class="nl">{t}</span><span class="ns">{NAV_SHORT[p]}</span>' if p in NAV_SHORT else t
     return ('<nav class="nav" aria-label="Site">' + ''.join(
-        f'<a href="{p}"' + (' aria-current="page"' if p == here else '') + f'>{t}</a>' for p, t in NAV_ITEMS) + '</nav>\n')
+        f'<a href="{p}"' + (' aria-current="page"' if p == here else '') + f'>{label(p, t)}</a>' for p, t in NAV_ITEMS) + '</nav>\n')
+
+# --- header (Nov 14, 2026): the site's bar was the one place the brand's two devices were missing - the masthead's heavy
+# wordmark face (Anton) and the kit stripes. Every bar now carries both. The home page and the reference pages get the
+# tall block (.mh, built like the social card, with the navigation inside it); edition pages keep the slim bar, because
+# the masthead image under it already says the name at full size. Text sizes stay at 11px or more.
+CSS += """
+.top{position:relative;overflow:hidden;padding:15px 88px 15px 28px}
+.top::after,.mh::after{content:"";position:absolute;top:0;right:0;bottom:0;width:60px;background:linear-gradient(90deg,#0F1526 0 10px,#4A7BE0 10px 18px,#0F1526 18px 28px,#4A7BE0 28px 36px,#0F1526 36px 46px,#4A7BE0 46px 54px,#0F1526 54px 60px)}
+.top a.wm{font-family:Anton,Oswald,sans-serif;font-weight:400;font-size:28px;line-height:1;letter-spacing:0}
+.top a.wm b{font-weight:400}
+.mh{position:relative;overflow:hidden;background:#06080F;padding:22px 28px 0}
+.mh::after{width:68px;background:linear-gradient(90deg,#0F1526 0 12px,#4A7BE0 12px 21px,#0F1526 21px 33px,#4A7BE0 33px 42px,#0F1526 42px 54px,#4A7BE0 54px 63px,#0F1526 63px 68px)}
+.mh-row{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;padding-right:76px}
+.mh-eye{margin:0 0 8px;font-family:'IBM Plex Mono','Fragment Mono',monospace;font-weight:500;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#A9B3C9}
+.mh-wm{display:block;font-family:Anton,Oswald,sans-serif;font-size:46px;line-height:.95;color:#fff;text-decoration:none}
+.mh-wm b{font-weight:400;color:#8FB2F0}
+.mh-cta{font-family:Oswald,sans-serif;font-weight:700;font-size:15px;letter-spacing:.05em;text-transform:uppercase;color:#fff;background:#2B5BB8;border-radius:3px;padding:13px 18px;text-decoration:none;white-space:nowrap}
+.mh-cta:hover{background:#234A9A}
+.mh .nav{background:none;border-bottom:0;border-top:1px solid #1B2236;margin-top:16px;padding:0 76px 0 0}
+.mh .nav a{color:#B9C7E6;letter-spacing:.06em;padding:12px 0 9px}
+.mh .nav a:hover{border-bottom-color:#4A7BE0}
+.mh .nav a[aria-current]{color:#fff;border-bottom-color:#8FB2F0}
+.nav .ns{display:none}
+@media(max-width:520px){.top{padding:15px 58px 15px 16px}.top a.wm{font-size:25px}.top .ux{display:none}
+.top::after,.mh::after{width:46px;background:linear-gradient(90deg,#0F1526 0 8px,#4A7BE0 8px 14px,#0F1526 14px 22px,#4A7BE0 22px 28px,#0F1526 28px 36px,#4A7BE0 36px 42px,#0F1526 42px 46px)}
+.mh{padding:18px 0 0 16px}.mh-row{padding-right:52px}.mh-eye{font-size:11px;letter-spacing:.08em;margin-bottom:7px}.mh-wm{font-size:36px}.mh-cta{display:none}
+.mh .nav{margin-top:14px;padding:0 52px 0 0;column-gap:13px}.mh .nav a{font-size:13px;padding:14px 0 11px}
+.nav .nl{display:none}.nav .ns{display:inline}}
+"""
+def masthead(here=''):
+    """The header of the home page and the reference pages: the social card's block, with the navigation inside it."""
+    return ('<header class="mh"><div class="mh-row"><div><p class="mh-eye">Inter Milan · in English · every morning</p>'
+            '<a class="mh-wm" href="/">NERAZZURRI <b>DAILY</b></a></div><a class="mh-cta" href="#subscribe">Get it free</a></div>\n'
+            + nav(here).rstrip('\n') + '</header>\n')
 
 def esc(x): return html.escape(str(x), quote=True)
 def longdate(iso):
@@ -456,7 +493,7 @@ def render_page(d):
             + meta(title, desc, f'{SITE}/p/edition-{n}/', f'{SITE}/assets/mast/edition-{n:02d}.png', 'article', d['date'])
             + jsonld_article(n, title, desc, d['date'], f'{SITE}/assets/mast/edition-{n:02d}.png')
             + f'{FONTS}\n{SIB_CSS}\n<style>{CSS}{FORM_CSS}</style></head>')
-    body = (f'<body><div class="sheet">\n<div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a><span class="util">Edition No. {n} · {shortdate(d["date"])} · <a href="#subscribe">Subscribe</a></span></div>' + nav() +
+    body = (f'<body><div class="sheet">\n<div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a><span class="util"><span class="ux">Edition No. {n} · {shortdate(d["date"])} · </span><a href="#subscribe">Subscribe</a></span></div>' + nav() +
             f'<h1 class="sr">{esc(title)}</h1><img class="mast" src="/assets/mast/edition-{n:02d}.png" alt="{esc(alt)}">'
             + page_blocks(d) +
             '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="/">All editions</a> &middot; <a href="/fixtures/">Fixtures</a> &middot; <a href="/results/">Results</a> &middot; <a href="/injuries/">Injuries</a> &middot; <a href="/how-to-watch-inter-milan-in-the-usa/">Watch in the US</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div>\n'
@@ -676,7 +713,7 @@ def build_index():
             f'<title>Inter Milan news in English, every morning \u2014 Nerazzurri Daily</title>'
             + meta('Inter Milan news in English, every morning \u2014 Nerazzurri Daily', home_desc, f'{SITE}/', OG_BRAND)
             + f'{FONTS}\n{SIB_CSS}\n<style>{CSS}{FORM_CSS}{HOME_CSS}</style></head>'
-            f'<body><div class="sheet">\n<div class="top"><a class="wm" href="./">NERAZZURRI <b>DAILY</b></a><span class="util">{len(eds)} editions · <a href="#subscribe">Subscribe</a></span></div>\n' + nav('/') +
+            f'<body><div class="sheet">\n' + masthead('/') +
             f'<div class="hero2"><div><h1 class="hero-h">{esc(HEADLINE)}</h1><p class="hero-p">{esc(SUBLINE)}</p>'
             + form_block(head='Get it every morning', sub='Subscribe and the Kickoff Card \u2014 all 38 Serie A dates as a phone wallpaper \u2014 comes with your welcome email.') + proof_line(len(eds), first) + '</div>'
             + today_card() + '</div>\n'
