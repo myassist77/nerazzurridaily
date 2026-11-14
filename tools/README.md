@@ -31,11 +31,11 @@ The beacon is part of the shared `FONTS` head constant in `nd_render.py`, so eve
    `assets/video/ed{N}.mp4`, `assets/video/ed{N}-thumb-9x16.png` (9:16, the YouTube thumbnail since Sept 29, 2026),
    `assets/video/ed{N}-thumb.png` (16:9 fallback), `data/tiktok-ed{N}.json`
    (title, caption) and `data/youtube-ed{N}.json` (title, description, tags, comment). It posts nothing.
-2. **9:05 AM ET** Postiz task (`CRON_TZ=America/New_York`) uploads the MP4 to Postiz by URL from the
+2. **7:30 AM ET** Postiz task (`CRON_TZ=America/New_York`; moved from 9:05 on Nov 14, 2026 — if the post files are not committed yet it re-checks every 15 minutes until 9:15 AM ET) uploads the MP4 to Postiz by URL from the
    live site and posts it — TikTok (DIRECT_POST, public, voiced) and YouTube (public, title,
-   description, tags, 9:16 thumbnail — 16:9 if the 9:16 is missing — comment). 6:45 → 9:05 is the owner's veto window.
-   The owner can end the window early by running the 9:05 task by hand (Run now) any time after the 6:45
-   task has committed; the scheduled 9:05 run then finds the post record and stops silently.
+   description, tags, 9:16 thumbnail — 16:9 if the 9:16 is missing — comment). 6:45 → 7:30 is the owner's veto window.
+   The owner can end the window early by running the 7:30 task by hand (Run now) any time after the 6:45
+   task has committed; the scheduled 7:30 run then finds the post record and stops silently.
 3. It records what it posted in `data/posted-ed{N}.json` **before** verifying (the primary
    never-post-twice guard — Postiz's post list has come back empty while posts existed), then
    fills in the real states and the YouTube video id. The Monday numbers task reads these files.
@@ -49,7 +49,7 @@ Facts that still hold:
 
 - Pinning a comment has no API on any platform. A 16:9 custom thumbnail sent through the API is applied
   (checked Sept 29, 2026 on No. 28), but the Shorts shelf showed a YouTube-picked frame; since Sept 29 the
-  9:05 task sends the 9:16 image and reports whether the Shorts shelf (oar2.jpg) actually shows it.
+  post task (9:05, now 7:30) sends the 9:16 image and reports whether the Shorts shelf (oar2.jpg) actually shows it.
 - Postiz posts cannot be deleted through its tools, and its "draft" type is unreliable for TikTok —
   never create drafts.
 - No API attaches a trending sound; the only sound is the voiceover baked into the MP4 (no music — the generated soundtrack was rejected Sept 26, 2026).
