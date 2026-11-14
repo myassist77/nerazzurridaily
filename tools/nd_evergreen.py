@@ -48,7 +48,7 @@ EV_CSS = """
 .ev-meta{font-family:'Fragment Mono',monospace;font-size:.82rem;color:#5A647E;letter-spacing:.02em;margin:12px 0 0}
 .ev-item h3{margin-top:4px}
 .ev-item .go{font-family:'Fragment Mono',monospace;font-size:.84rem}
-.ev-lbl{display:inline-block;font-family:'Fragment Mono',monospace;font-size:.72rem;letter-spacing:.08em;color:#fff;background:#2B5BB8;padding:2px 6px 1px;border-radius:3px;margin-right:8px}
+.ev-lbl{display:inline-block;font-family:'Fragment Mono',monospace;font-size:.82rem;letter-spacing:.08em;color:#fff;background:#2B5BB8;padding:2px 6px 1px;border-radius:3px;margin-right:8px}
 .ev-lbl.r{background:#8C4034}
 .ev-faq h3{font-family:Oswald,sans-serif;font-size:19px;line-height:1.25;color:#0B1020;margin:18px 28px 4px}
 .ev-more{margin-top:14px}

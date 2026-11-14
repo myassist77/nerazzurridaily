@@ -391,7 +391,7 @@ def nav(here=''):
 # --- header (Nov 14, 2026): the site's bar was the one place the brand's two devices were missing - the masthead's heavy
 # wordmark face (Anton) and the kit stripes. Every bar now carries both. The home page and the reference pages get the
 # tall block (.mh, built like the social card, with the navigation inside it); edition pages keep the slim bar, because
-# the masthead image under it already says the name at full size. Text sizes stay at 11px or more.
+# the masthead image under it already says the name at full size. Text keeps the 13px floor (the phone eyebrow drops its last phrase to fit).
 CSS += """
 .top{position:relative;overflow:hidden;padding:15px 88px 15px 28px}
 .top::after,.mh::after{content:"";position:absolute;top:0;right:0;bottom:0;width:60px;background:linear-gradient(90deg,#0F1526 0 10px,#4A7BE0 10px 18px,#0F1526 18px 28px,#4A7BE0 28px 36px,#0F1526 36px 46px,#4A7BE0 46px 54px,#0F1526 54px 60px)}
@@ -400,7 +400,7 @@ CSS += """
 .mh{position:relative;overflow:hidden;background:#06080F;padding:22px 28px 0}
 .mh::after{width:68px;background:linear-gradient(90deg,#0F1526 0 12px,#4A7BE0 12px 21px,#0F1526 21px 33px,#4A7BE0 33px 42px,#0F1526 42px 54px,#4A7BE0 54px 63px,#0F1526 63px 68px)}
 .mh-row{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;padding-right:76px}
-.mh-eye{margin:0 0 8px;font-family:'IBM Plex Mono','Fragment Mono',monospace;font-weight:500;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#A9B3C9}
+.mh-eye{margin:0 0 8px;font-family:'IBM Plex Mono','Fragment Mono',monospace;font-weight:500;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#A9B3C9}
 .mh-wm{display:block;font-family:Anton,Oswald,sans-serif;font-size:46px;line-height:.95;color:#fff;text-decoration:none}
 .mh-wm b{font-weight:400;color:#8FB2F0}
 .mh-cta{font-family:Oswald,sans-serif;font-weight:700;font-size:15px;letter-spacing:.05em;text-transform:uppercase;color:#fff;background:#2B5BB8;border-radius:3px;padding:13px 18px;text-decoration:none;white-space:nowrap}
@@ -412,13 +412,13 @@ CSS += """
 .nav .ns{display:none}
 @media(max-width:520px){.top{padding:15px 58px 15px 16px}.top a.wm{font-size:25px}.top .ux{display:none}
 .top::after,.mh::after{width:46px;background:linear-gradient(90deg,#0F1526 0 8px,#4A7BE0 8px 14px,#0F1526 14px 22px,#4A7BE0 22px 28px,#0F1526 28px 36px,#4A7BE0 36px 42px,#0F1526 42px 46px)}
-.mh{padding:18px 0 0 16px}.mh-row{padding-right:52px}.mh-eye{font-size:11px;letter-spacing:.08em;margin-bottom:7px}.mh-wm{font-size:36px}.mh-cta{display:none}
+.mh{padding:18px 0 0 16px}.mh-row{padding-right:52px}.mh-eye{letter-spacing:.08em;margin-bottom:7px}.mh-eye .x3{display:none}.mh-wm{font-size:36px}.mh-cta{display:none}
 .mh .nav{margin-top:14px;padding:0 52px 0 0;column-gap:13px}.mh .nav a{font-size:13px;padding:14px 0 11px}
 .nav .nl{display:none}.nav .ns{display:inline}}
 """
 def masthead(here=''):
     """The header of the home page and the reference pages: the social card's block, with the navigation inside it."""
-    return ('<header class="mh"><div class="mh-row"><div><p class="mh-eye">Inter Milan · in English · every morning</p>'
+    return ('<header class="mh"><div class="mh-row"><div><p class="mh-eye">Inter Milan · in English<span class="x3"> · every morning</span></p>'
             '<a class="mh-wm" href="/">NERAZZURRI <b>DAILY</b></a></div><a class="mh-cta" href="#subscribe">Get it free</a></div>\n'
             + nav(here).rstrip('\n') + '</header>\n')
 

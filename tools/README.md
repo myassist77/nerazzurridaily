@@ -65,3 +65,14 @@ Every fact on them is read from `data/edition-*.json`; nothing is written by han
 morning build: `nd_render.py` calls it inside `try/except` and keeps its own `/fixtures/` page if anything fails, and
 `edition.yml` commits the three pages only when they exist. The sitemap lists them, the footers link to them, and
 `check_signup_form.py` tests the form on each. Run it alone from the repo root with `python3 tools/nd_evergreen.py`.
+
+## Site header and navigation (added Nov 14, 2026)
+
+`nd_render.py` has two headers. `masthead(here)` is the tall block on the home page and the four reference pages
+(`/fixtures/`, `/results/`, `/injuries/`, `/how-to-watch-inter-milan-in-the-usa/`): the eyebrow line, the wordmark in
+Anton (the masthead image's own face), the kit stripes on the right edge, a "Get it free" link to the page's form, and
+`nav(here)` inside it. Edition pages, `/subscribe/` and the `/go/` doors keep the slim `.top` bar, now with the Anton
+wordmark and a stripe end-cap; edition pages also carry the light `nav()` strip under it, while `/subscribe/` and the
+doors stay bare on purpose (landing pages with one job). On phones the last nav link reads "US TV" so the five links
+fit one line. Page text keeps the 13px floor. Editions before No. 74 keep the header they were built with: an edition
+page is rendered once, on its morning.
