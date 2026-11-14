@@ -202,6 +202,9 @@ def _more(skip):
              (WATCH, 'How to watch in the US')]
     return ('<p class="fx-note ev-more">' + ' &middot; '.join(f'<a href="/{p}/">{t}</a>' for p, t in links if p != skip) + '</p>')
 
+def _nav(R, here):
+    return R.nav(here) if hasattr(R, 'nav') else ''
+
 def _checked(R, page, where):
     """nd_render's own two hard stops, turned into an exception so one bad page is skipped instead of ending the build."""
     try:
@@ -215,7 +218,7 @@ def _page(R, path, title, desc, h1, lede, first, rest, count, form_head, form_fi
             f'<title>{R.esc(title)} — Nerazzurri Daily</title>'
             + R.meta(title, desc, url, R.OG_BRAND) + ''.join(_ld(x) for x in lds)
             + f'{R.FONTS}\n{R.SIB_CSS}\n<style>{R.CSS}{R.FORM_CSS}{R.FIX_CSS}{EV_CSS}</style></head><body><div class="sheet">\n'
-            f'<div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a><span class="util">{count} editions · <a href="#subscribe">Subscribe</a></span></div>\n'
+            f'<div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a><span class="util">{count} editions · <a href="#subscribe">Subscribe</a></span></div>\n' + _nav(R, f'/{path}/') +
             f'<div class="hero"><h1>{R.esc(h1)}</h1><p>{lede}</p></div>\n'
             + first + R.form_block(head=form_head, fine=form_fine) + rest + _more(path)
             + R.cta_band().replace('class="ctaband"', 'class="ctaband end"') + _foot()
@@ -280,7 +283,7 @@ def render_fixtures(R, count, first_iso):
             f'<title>{title} — Nerazzurri Daily</title>'
             + R.meta(title, desc, f'{R.SITE}/fixtures/', R.OG_BRAND) + ''.join(_ld(x) for x in lds)
             + f'{R.FONTS}\n{R.SIB_CSS}\n<style>{R.CSS}{R.FORM_CSS}{R.FIX_CSS}{EV_CSS}</style></head><body><div class="sheet">\n'
-            f'<div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a><span class="util">{count} editions · <a href="#subscribe">Subscribe</a></span></div>\n'
+            f'<div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a><span class="util">{count} editions · <a href="#subscribe">Subscribe</a></span></div>\n' + _nav(R, '/fixtures/') +
             f'<div class="hero"><h1>Inter fixtures in Eastern time.</h1><p>Every kickoff in ET first, Milan time second, and the US broadcaster once it is published. '
             f'Kept current every morning from <a href="/p/edition-{latest.get("n", "")}/">the latest edition</a>.</p></div>\n'
             + R.form_block(head='Every kickoff in your inbox', fine='Free · one email a morning with the next match at the top · unsubscribe any time')

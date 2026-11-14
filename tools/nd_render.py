@@ -368,6 +368,23 @@ a{color:#0A2A66}
 .idx .t{font-family:Oswald,sans-serif;font-size:1.12rem;font-weight:700;color:#0B1020;text-decoration:none;display:block;margin-top:3px}
 @media(max-width:520px){.in,.dek,.bar,.top,.foot,.idx,.signoff,.sources{padding-left:16px;padding-right:16px}.sec{margin-left:16px;margin-right:16px}.sources .sec{margin-left:0;margin-right:0}}"""
 
+# --- site navigation (Nov 14, 2026): one strip under the top bar on the home page, every new edition and the evergreen
+# pages, so a reader finds Fixtures, Results, Injuries and the US TV guide without scrolling to the footer. /subscribe/
+# and the /go/ doors stay bare on purpose: they are landing pages with one job.
+NAV_ITEMS = [('/', 'Editions'), ('/fixtures/', 'Fixtures'), ('/results/', 'Results'), ('/injuries/', 'Injuries'),
+             ('/how-to-watch-inter-milan-in-the-usa/', 'Watch in the US')]
+CSS += """
+.nav{background:#EEF1F6;border-bottom:1px solid #D8DFEC;padding:0 28px;display:flex;flex-wrap:wrap;column-gap:20px}
+.nav a{font-family:Oswald,sans-serif;font-weight:700;font-size:15px;letter-spacing:.05em;text-transform:uppercase;color:#0A2A66;text-decoration:none;padding:11px 0 9px;border-bottom:3px solid transparent}
+.nav a:hover{border-bottom-color:#8FB2F0}
+.nav a[aria-current]{color:#0B1020;border-bottom-color:#2B5BB8}
+@media(max-width:520px){.nav{padding-left:16px;padding-right:16px;column-gap:16px}.nav a{font-size:14px}}
+"""
+def nav(here=''):
+    """The strip under the top bar. `here` is the current page's path: that link is marked as the current page."""
+    return ('<nav class="nav" aria-label="Site">' + ''.join(
+        f'<a href="{p}"' + (' aria-current="page"' if p == here else '') + f'>{t}</a>' for p, t in NAV_ITEMS) + '</nav>\n')
+
 def esc(x): return html.escape(str(x), quote=True)
 def longdate(iso):
     d = datetime.date.fromisoformat(iso); return f"{d.strftime('%A')}, {MONTHS[d.month-1]} {d.day}, {d.year}"
@@ -439,7 +456,7 @@ def render_page(d):
             + meta(title, desc, f'{SITE}/p/edition-{n}/', f'{SITE}/assets/mast/edition-{n:02d}.png', 'article', d['date'])
             + jsonld_article(n, title, desc, d['date'], f'{SITE}/assets/mast/edition-{n:02d}.png')
             + f'{FONTS}\n{SIB_CSS}\n<style>{CSS}{FORM_CSS}</style></head>')
-    body = (f'<body><div class="sheet">\n<div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a><span class="util">Edition No. {n} · {shortdate(d["date"])} · <a href="#subscribe">Subscribe</a></span></div>'
+    body = (f'<body><div class="sheet">\n<div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a><span class="util">Edition No. {n} · {shortdate(d["date"])} · <a href="#subscribe">Subscribe</a></span></div>' + nav() +
             f'<h1 class="sr">{esc(title)}</h1><img class="mast" src="/assets/mast/edition-{n:02d}.png" alt="{esc(alt)}">'
             + page_blocks(d) +
             '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="/">All editions</a> &middot; <a href="/fixtures/">Fixtures</a> &middot; <a href="/results/">Results</a> &middot; <a href="/injuries/">Injuries</a> &middot; <a href="/how-to-watch-inter-milan-in-the-usa/">Watch in the US</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div>\n'
@@ -659,7 +676,7 @@ def build_index():
             f'<title>Inter Milan news in English, every morning \u2014 Nerazzurri Daily</title>'
             + meta('Inter Milan news in English, every morning \u2014 Nerazzurri Daily', home_desc, f'{SITE}/', OG_BRAND)
             + f'{FONTS}\n{SIB_CSS}\n<style>{CSS}{FORM_CSS}{HOME_CSS}</style></head>'
-            f'<body><div class="sheet">\n<div class="top"><a class="wm" href="./">NERAZZURRI <b>DAILY</b></a><span class="util">{len(eds)} editions · <a href="/fixtures/">Fixtures (ET)</a> · <a href="#subscribe">Subscribe</a></span></div>\n'
+            f'<body><div class="sheet">\n<div class="top"><a class="wm" href="./">NERAZZURRI <b>DAILY</b></a><span class="util">{len(eds)} editions · <a href="#subscribe">Subscribe</a></span></div>\n' + nav('/') +
             f'<div class="hero2"><div><h1 class="hero-h">{esc(HEADLINE)}</h1><p class="hero-p">{esc(SUBLINE)}</p>'
             + form_block(head='Get it every morning', sub='Subscribe and the Kickoff Card \u2014 all 38 Serie A dates as a phone wallpaper \u2014 comes with your welcome email.') + proof_line(len(eds), first) + '</div>'
             + today_card() + '</div>\n'
