@@ -1,0 +1,42 @@
+{
+ "score": "real_subscribers",
+ "baseline": {
+  "week_ending": "2026-11-14",
+  "real_subscribers": 4,
+  "raw_list": 7,
+  "real_visits_week": 12,
+  "real_visits_by_source": {
+   "direct": 7,
+   "newsletter": 3,
+   "youtube": 1,
+   "google": 1,
+   "tiktok": 0
+  },
+  "youtube_views_week": 227,
+  "youtube_subscribers": 5,
+  "emails_delivered": 49,
+  "unique_opens": 23,
+  "editions_published": 74,
+  "source": "Monday numbers catch-up run of Nov 14, 2026"
+ },
+ "checkpoints": [
+  {
+   "date": "2026-12-14",
+   "real_visits_week": 300,
+   "real_subscribers": 25,
+   "note": "targets re-based here on measured conversion, then held"
+  },
+  {
+   "date": "2027-01-13",
+   "real_visits_week": 700,
+   "real_subscribers": 100
+  },
+  {
+   "date": "2027-02-12",
+   "real_visits_week": 1500,
+   "real_subscribers": 250
+  }
+ ],
+ "status": "proposal by the Lead, not a forecast; no conversion history exists yet",
+ "ceiling": "Brevo free plan sends 300 emails a day; owner decision due before about 290 subscribers"
+}
