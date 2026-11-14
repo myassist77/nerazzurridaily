@@ -2,6 +2,18 @@
  "n": 74,
  "date": "2026-11-14",
  "channels": {
-  "bluesky": {"state": "PUBLISHED", "postiz_post_id": "cmwh1j1ik01w4qr0763wt68g3", "uri": "at://did:plc:cqmhtmzyxdkm64ijvdddywbg/app.bsky.feed.post/3n2cnv2x6732q", "posted_at_utc": "2026-11-14T23:33:00Z", "note": "first post, sent by hand from a session"}
+  "bluesky": {
+   "state": "PUBLISHED",
+   "postiz_post_id": "cmwh1j1ik01w4qr0763wt68g3",
+   "uri": "at://did:plc:cqmhtmzyxdkm64ijvdddywbg/app.bsky.feed.post/3n2cnv2x6732q",
+   "posted_at_utc": "2026-11-14T23:33:00Z",
+   "note": "first post, sent by hand from a session"
+  },
+  "facebook": {
+   "state": "PUBLISHED",
+   "postiz_post_id": "cmwh24jj8021hqr07c8xoc2mw",
+   "posted_at_utc": "2026-11-15T00:02:00Z",
+   "note": "first post, sent by hand from a session; text post with a link card to the edition page"
+  }
  }
 }
