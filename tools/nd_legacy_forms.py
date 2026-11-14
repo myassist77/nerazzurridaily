@@ -129,12 +129,27 @@ def inject_header(path):
     open(path, 'w', encoding='utf-8').write(s)
     return 'done'
 
+JS_RE = re.compile(r"\(function\(\)\{var M=.*?new MutationObserver\(fix\)\.observe\(p,\{.*?\}\);\}\)\(\);", re.S)
+
+def inject_count(path):
+    """Sixth idempotent step (Nov 14, 2026): the renderer's current success-panel script, which also counts the signup
+    by loading /subscribe/sent/ in a hidden frame. Only that one script block is swapped."""
+    s = open(path, encoding='utf-8').read()
+    if '/subscribe/sent/' in s:
+        return 'already'
+    new = JS_RE.search(R.HOME_FORM_JS).group(0)
+    s, k = JS_RE.subn(lambda m: new, s, count=1)
+    assert k == 1, path
+    R.require_signup_form(s, path); R.require_beacon(s, path)
+    open(path, 'w', encoding='utf-8').write(s)
+    return 'done'
+
 if __name__ == '__main__':
     done = 0
     for p in sorted(glob.glob('p/edition-*/index.html'), key=lambda x: int(re.search(r'edition-(\d+)', x).group(1))):
         n = int(re.search(r'edition-(\d+)', p).group(1))
         if os.path.exists(f'data/edition-{n}.json'):
             continue
-        r = inject(p); r2 = inject_nav(p); r3 = inject_share(p); r4 = inject_doors(p); r5 = inject_header(p)
-        print(f'{p}: form {r}, nav {r2}, share {r3}, doors {r4}, header {r5}'); done += 'done' in (r, r2, r3, r4, r5)
+        r = inject(p); r2 = inject_nav(p); r3 = inject_share(p); r4 = inject_doors(p); r5 = inject_header(p); r6 = inject_count(p)
+        print(f'{p}: form {r}, nav {r2}, share {r3}, doors {r4}, header {r5}, count {r6}'); done += 'done' in (r, r2, r3, r4, r5, r6)
     print(f'{done} legacy pages updated')

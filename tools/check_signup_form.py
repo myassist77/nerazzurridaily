@@ -24,6 +24,8 @@ def _evergreen():
     import os
     pages = [p for p in ("fixtures/index.html", "results/index.html", "injuries/index.html",
                          "how-to-watch-inter-milan-in-the-usa/index.html") if os.path.exists(p)]
+    import glob
+    pages += sorted(glob.glob("match/*/index.html"))[-1:]   # one match page (tools/nd_evergreen.py build_matches)
     # 404.html carries the form since Nov 14, 2026 (tools/nd_evergreen.py --404); an older copy without one is skipped
     if os.path.exists("404.html") and 'id="sib-form"' in open("404.html", encoding="utf-8").read(): pages.append("404.html")
     return pages
@@ -44,9 +46,11 @@ def serve(root, port):
 
 def check(page_path, base, browser):
     from playwright.sync_api import Error as PWError
-    errors, posted = [], []
+    errors, posted, counted = [], [], []
     page = browser.new_page(viewport={"width": 390, "height": 844})
     page.on("pageerror", lambda e: errors.append(str(e)))
+    # the signup is counted by a hidden frame that loads /subscribe/sent/ once the success panel shows (Nov 14, 2026)
+    page.on("request", lambda r: counted.append(r.url) if "/subscribe/sent/" in r.url else None)
 
     def route(r):
         posted.append(r.request.method)
@@ -85,6 +89,10 @@ def check(page_path, base, browser):
         problems.append(f"expected POST to Brevo, saw {posted[0]}")
     if errors:
         problems.append("JavaScript error on submit: " + errors[0][:160])
+    if not problems:
+        page.wait_for_timeout(800)
+        if len(counted) != 1:
+            problems.append(f"the signup was not counted exactly once (/subscribe/sent/ requested {len(counted)} times)")
     page.close()
     return problems
 
@@ -117,7 +125,7 @@ def main():
                 for pr in problems:
                     print(f"        - {pr}")
             else:
-                print(f"ok    {page_path}  (POST attempted, success panel shown, no JS errors)")
+                print(f"ok    {page_path}  (POST attempted, success panel shown, signup counted once, no JS errors)")
         browser.close()
     if httpd:
         httpd.shutdown()

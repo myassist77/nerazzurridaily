@@ -291,7 +291,7 @@ def render_fixtures(R, count, first_iso):
             f'Kept current every morning from <a href="/p/edition-{latest.get("n", "")}/">the latest edition</a>.</p></div>\n'
             + R.form_block(head='Every kickoff in your inbox', fine='Free · one email a morning with the next match at the top · unsubscribe any time')
             + _sec(R, 'Next up', 'EASTERN TIME FIRST, MILAN SECOND') + f'<div class="in"><table class="sb"><tbody>{"".join(_row(R, r, True) for r in rows)}</tbody></table></div>'
-            + (f'<p class="fx-note">{note}</p>' if note else '')
+            + (f'<p class="fx-note">{note}</p>' if note else '') + match_links(R, rows)
             + (_sec(R, 'Where to watch in the US', 'FROM THE LISTINGS ABOVE') + f'<p class="fx-note">{R.esc(tv)} <a href="/{WATCH}/">How to watch Inter in the USA, match by match →</a></p>' if tv else '')
             + _sec(R, 'Serie A 2026-27 · all 38', 'WEEKEND WINDOWS FROM INTER.IT')
             + f'<table class="season"><tbody>{srows}</tbody></table>'
@@ -415,7 +415,7 @@ def render_watch(R, count, first_iso):
            {'@context': 'https://schema.org', '@type': 'FAQPage',
             'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in faq]}]
     first = (_sec(R, 'Next up', 'EASTERN TIME FIRST, WITH THE US LISTING')
-             + f'<div class="in"><table class="sb"><tbody>{"".join(_row(R, r) for r in upcoming[:4])}</tbody></table></div>' if upcoming else '')
+             + f'<div class="in"><table class="sb"><tbody>{"".join(_row(R, r) for r in upcoming[:4])}</tbody></table></div>' + match_links(R, upcoming[:4]) if upcoming else '')
     note = next((b['html'] for b in latest['blocks'] if b.get('t') == 'note'), '')
     rest = (_sec(R, 'By competition', 'COUNTED FROM THE DAILY LISTINGS') + ''.join(f'<p class="ev-p">{R.esc(comp_sentence(k))}</p>' for k in order)
             + (f'<p class="fx-note">From the latest edition, <a href="/p/edition-{latest["n"]}/">No. {latest["n"]}</a>: {note}</p>' if note else '')
@@ -427,6 +427,119 @@ def render_watch(R, count, first_iso):
             f'Taken from the listings in each morning’s edition, last updated {R.longdate(latest["date"])}.')
     return _page(R, WATCH, title, desc, 'How to watch Inter Milan in the USA.', lede, first, rest, count,
                  'Kickoff time and US TV, every morning', 'Free · one email a morning with the next match and where to watch it · unsubscribe any time', lds)
+
+
+# ------------------------------------------------------------------ /match/<slug>/ (one page per men's match, Nov 14, 2026)
+def match_path(r):
+    """'match/atalanta-vs-inter-2026-11-22'. Home side first, as people type it."""
+    opp = re.sub(r'[^a-z0-9]+', '-', _clean(r['name']).lower()).strip('-')
+    pair = f'inter-vs-{opp}' if r.get('venue') == 'HOME' else f'{opp}-vs-inter'
+    return f"match/{pair}-{r['date'].isoformat()}"
+
+def _matchable(r):
+    return bool(r.get('date') and r.get('name') and not r.get('women') and r.get('venue') in ('HOME', 'AWAY'))
+
+def match_rows(eds):
+    """Upcoming men's matches from the latest edition (the listing that stands today) plus every earlier dated match
+    the editions printed. A future match that only an old edition listed is left out: it may have been moved."""
+    if not eds: return []
+    latest = eds[-1]; today = datetime.date.fromisoformat(latest['date'])
+    up = [dict(r, n=latest['n']) for r in fixture_rows(latest) if _matchable(r) and r['date'] >= today]
+    past = [r for (d, w), r in match_log(eds).items() if _matchable(r) and d < today]
+    return sorted(past, key=lambda r: r['date']) + sorted(up, key=lambda r: r['date'])
+
+def _clock(h, m):
+    return f"{(h - 1) % 12 + 1}:{m:02d} {'AM' if h % 24 < 12 else 'PM'}"
+
+def _zones(et):
+    """The Eastern kickoff in the other three mainland US zones. All four change clocks on the same dates."""
+    h, m = et
+    return [('Eastern', _clock(h, m)), ('Central', _clock((h - 1) % 24, m)), ('Mountain', _clock((h - 2) % 24, m)), ('Pacific', _clock((h - 3) % 24, m))]
+
+def _result_for(r, res):
+    """The printed result of a played match: the opponent's name in the score line, printed within four days after it."""
+    opp = _norm(r['name'])
+    for x in res:
+        gap = (datetime.date.fromisoformat(x['date']) - r['date']).days
+        if 0 <= gap <= 4 and score(x['h3']) and opp in _norm(re.sub(r'<[^>]+>', '', x['h3'])): return x
+    return None
+
+def render_match(R, r, eds, res, inj, count, nxt=None):
+    latest = eds[-1]; today = datetime.date.fromisoformat(latest['date']); played = r['date'] < today
+    home, away = ('Inter', r['name']) if r['venue'] == 'HOME' else (r['name'], 'Inter')
+    pair = f'{home} vs {away}'; comp = comp_name(r['comp']) if r['comp'] else ''; day = _day(r['date'])
+    path = match_path(r); et = _clean(r['et_text']); cet = _clean(r['cet'])
+    tv = ', '.join(r['tv'])
+    title = f'{pair}: kickoff time in Eastern and US TV channel ({day})'
+    when = (f'{day}' + (f' in {_the(comp)}' if comp else '') + (f', kickoff {et}' if et else '') + (f' ({cet} in Milan)' if cet else ''))
+    tv_s = (f'US listing: {tv}.' if tv else ('No US listing was printed for it.' if played else 'No US listing has been published yet.'))
+    desc = f'{pair}, {when}. {tv_s} Kickoff times for every US time zone, from Nerazzurri Daily.'
+    where = 'at San Siro' if (r['venue'] == 'HOME' and r['comp'] in ('SERIE A', 'CHAMPIONS LEAGUE', 'COPPA ITALIA')) else ('at home' if r['venue'] == 'HOME' else f'away at {r["name"]}')
+    lede = (f'Inter {"played" if played else "play"} {where} on {when}. {tv_s} '
+            f'Taken from <a href="/p/edition-{r["n"]}/">edition No. {r["n"]}</a>, the last morning this match was listed.')
+    first = _sec(R, 'Kickoff', 'EASTERN TIME FIRST, MILAN SECOND') + f'<div class="in"><table class="sb"><tbody>{_row(R, r)}</tbody></table></div>'
+    faq = []
+    if r['et']:
+        zs = _zones(r['et']); line = ' · '.join(f'{t} {z}' for z, t in zs) + (f' · {cet} in Milan' if cet else '')
+        first += f'<p class="ev-p">{R.esc(line)}.</p>'
+        faq.append((f'What time is {pair} in Eastern time?', f'{pair} {"kicked" if played else "kicks"} off at {et} on {day}' + (f', which is {cet} in Milan' if cet else '')
+                    + '. In the other US zones: ' + ', '.join(f'{t} {z}' for z, t in zs[1:]) + '.'))
+    faq.append((f'What channel is {pair} on in the USA?',
+                (f'The US listing printed for {pair} is {tv}.' if tv else f'No US listing for {pair} has been published in the daily listings' + ('.' if played else ' yet; this page updates the morning one is.'))
+                + ' A broadcaster can move a match late, so check your provider on the day.'))
+    rest = ''
+    if played:
+        x = _result_for(r, res)
+        rest += _sec(R, 'Result', day.upper())
+        rest += (f'<div class="item ev-item"><div class="in"><h3>{x["h3"]}</h3>' + ''.join(f'<p>{p}</p>' for p in x['paras']) + (f'<p class="kick">{x["kicker"]}</p>' if x['kicker'] else '')
+                 + f'<p class="go"><a href="/p/edition-{x["n"]}/">Read the edition that carried it, No. {x["n"]} →</a></p></div></div>' if x else
+                 '<p class="ev-p">This match has been played. <a href="/results/">Every Inter result, with the scorers, is on the results page.</a></p>')
+    else:
+        rest += _sec(R, 'Where to watch in the US') + f'<p class="ev-p">{R.esc(tv_s)} <a href="/{WATCH}/">How to watch Inter in the USA, match by match →</a></p>'
+    form = [(x, score(x['h3'])) for x in res if score(x['h3']) and (played is False or datetime.date.fromisoformat(x['date']) <= r['date'])][:5]
+    if form and not played:
+        rest += (_sec(R, 'Inter’s recent results', 'NEWEST FIRST') + '<p class="ev-p">'
+                 + '<br>'.join(f'<b>{o}</b> · {re.sub(r"<[^>]+>", "", x["h3"])} · <a href="/p/edition-{x["n"]}/">No. {x["n"]}</a>' for x, o in form) + '</p>')
+    if inj and not played:
+        rest += (_sec(R, 'Injury news', 'FROM THE DAILY LOG') + '<p class="ev-p">'
+                 + '<br>'.join(('REPORTED' if it['rep'] else 'CONFIRMED') + f' · {re.sub(r"<[^>]+>", "", it["h3"])} · <a href="/p/edition-{it["n"]}/">{R.esc(R.shortdate(it["date"]))}</a>' for it in inj[:3])
+                 + ' · <a href="/injuries/">The full injury log →</a></p>')
+    if nxt:
+        nh, na = ('Inter', nxt['name']) if nxt['venue'] == 'HOME' else (nxt['name'], 'Inter')
+        rest += _sec(R, 'After this') + f'<p class="ev-p"><a href="/{match_path(nxt)}/">{R.esc(nh)} vs {R.esc(na)}, {_day(nxt["date"])} →</a></p>'
+    rest += (_sec(R, 'Quick answers') + '<div class="ev-faq">' + ''.join(f'<h3>{R.esc(q)}</h3><p class="ev-p">{R.esc(a)}</p>' for q, a in faq) + '</div>'
+             + '<p class="fx-note">Where this comes from: the kickoff and the US listing are the ones printed in Nerazzurri Daily, which takes them from the club and the league. '
+               'Nothing here is a price or a subscription offer.</p>')
+    lds = [_webpage(R, path, title, desc, latest['date']),
+           {'@context': 'https://schema.org', '@type': 'FAQPage',
+            'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in faq]}]
+    ev = None if played else _event(R, r)
+    if ev:
+        ev = dict(ev, url=f'{R.SITE}/{path}/'); ev['@context'] = 'https://schema.org'; lds.append(ev)
+    return _page(R, path, title, desc, f'{pair}: kickoff time and US TV.', lede, first, rest, count,
+                 'Every kickoff in your inbox', 'Free · one email a morning with the next match and where to watch it · unsubscribe any time', lds)
+
+def match_links(R, rows):
+    """A line of links to the match pages of the given rows (for /fixtures/ and the US TV guide)."""
+    rows = [r for r in rows if _matchable(r)]
+    if not rows: return ''
+    def nm(r): return f'Inter vs {r["name"]}' if r['venue'] == 'HOME' else f'{r["name"]} vs Inter'
+    return ('<p class="fx-note">Match pages, with the kickoff in every US time zone: '
+            + ' &middot; '.join(f'<a href="/{match_path(r)}/">{R.esc(nm(r))}</a>' for r in rows) + '</p>')
+
+def build_matches(R, count):
+    """Write one page per match. Returns the paths written. One bad page is skipped, never the build."""
+    eds = editions(); rows = match_rows(eds); res = results(eds); inj = injury_items(eds, cap=6); made = []
+    today = datetime.date.fromisoformat(eds[-1]['date'])
+    for i, r in enumerate(rows):
+        try:
+            nxt = next((x for x in rows[i + 1:] if x['date'] >= today and x['date'] > r['date']), None)
+            page = render_match(R, r, eds, res, inj, count, nxt)
+            path = match_path(r); os.makedirs(path, exist_ok=True)
+            open(f'{path}/index.html', 'w', encoding='utf-8').write(page); made.append(path)
+        except Exception as e:
+            print(f'nd_evergreen: match page skipped — {e!r}')
+    return made
 
 
 # ------------------------------------------------------------------ entry points
@@ -458,7 +571,10 @@ def build_pages(R, count, first_iso):
             open(f'{path}/index.html', 'w', encoding='utf-8').write(page)
         except Exception as e:
             print(f'nd_evergreen: /{path}/ skipped — {e!r}')
-    return [p for p in PATHS if os.path.exists(f'{p}/index.html')]
+    made = []
+    try: made = build_matches(R, count)
+    except Exception as e: print(f'nd_evergreen: match pages skipped — {e!r}')
+    return [p for p in PATHS if os.path.exists(f'{p}/index.html')] + made
 
 if __name__ == '__main__':
     import sys
