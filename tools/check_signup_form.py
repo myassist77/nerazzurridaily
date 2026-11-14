@@ -19,7 +19,13 @@ def _editions():
     ns = sorted(int(re.search(r"edition-(\d+)", p).group(1)) for p in glob.glob("p/edition-*/index.html"))
     return [f"p/edition-{ns[-1]}/index.html", f"p/edition-{ns[0]}/index.html"] if ns else []
 
-PAGES = ["index.html", "subscribe/index.html"] + _editions()
+def _evergreen():
+    """The evergreen search pages (tools/nd_evergreen.py) carry the same form: check every one that exists."""
+    import os
+    return [p for p in ("fixtures/index.html", "results/index.html", "injuries/index.html",
+                        "how-to-watch-inter-milan-in-the-usa/index.html") if os.path.exists(p)]
+
+PAGES = ["index.html", "subscribe/index.html"] + _editions() + _evergreen()
 STUB = ('{"success":true,"message":"Almost there. Check your inbox for an email from '
         'Nerazzurri Daily and tap the confirm link."}')
 TEST_EMAIL = "ci-check@example.invalid"   # never reaches Brevo: the POST is stubbed

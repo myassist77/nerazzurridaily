@@ -55,3 +55,13 @@ Facts that still hold:
 - No API attaches a trending sound; the only sound is the voiceover baked into the MP4 (no music — the generated soundtrack was rejected Sept 26, 2026).
 - Postiz has no TikTok cover setting; TikTok uses the opening frame, which `nd_voice.py mix --cover` makes the designed 9:16 thumbnail (held 1.0 s).
 - Neither TikTok's API nor Postiz can post a TikTok Story (checked Sept 29, 2026); the owner dropped the idea.
+
+## Evergreen search pages (`nd_evergreen.py`, added Nov 14, 2026)
+
+`nd_render.py --index` now also calls `tools/nd_evergreen.py`, which writes three pages and rebuilds `/fixtures/` with
+structured data: `/results/` (every result the editions have carried), `/injuries/` (every edition item about an injury,
+confirmed kept apart from reported) and `/how-to-watch-inter-milan-in-the-usa/` (the US listing for every match).
+Every fact on them is read from `data/edition-*.json`; nothing is written by hand. The layer is fenced off from the
+morning build: `nd_render.py` calls it inside `try/except` and keeps its own `/fixtures/` page if anything fails, and
+`edition.yml` commits the three pages only when they exist. The sitemap lists them, the footers link to them, and
+`check_signup_form.py` tests the form on each. Run it alone from the repo root with `python3 tools/nd_evergreen.py`.

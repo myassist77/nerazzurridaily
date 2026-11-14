@@ -442,7 +442,7 @@ def render_page(d):
     body = (f'<body><div class="sheet">\n<div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a><span class="util">Edition No. {n} · {shortdate(d["date"])} · <a href="#subscribe">Subscribe</a></span></div>'
             f'<h1 class="sr">{esc(title)}</h1><img class="mast" src="/assets/mast/edition-{n:02d}.png" alt="{esc(alt)}">'
             + page_blocks(d) +
-            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="/">All editions</a> &middot; <a href="/fixtures/">Fixtures</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div>\n'
+            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="/">All editions</a> &middot; <a href="/fixtures/">Fixtures</a> &middot; <a href="/results/">Results</a> &middot; <a href="/injuries/">Injuries</a> &middot; <a href="/how-to-watch-inter-milan-in-the-usa/">Watch in the US</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div>\n'
             + STICK + HOME_FORM_JS + PN_JS + SHARE_JS + '\n</body></html>\n')
     return require_signup_form(head + body, f'p/edition-{n}/index.html')
 
@@ -624,7 +624,7 @@ def render_fixtures(count, first_iso):
             f'<p class="fx-note">Dates are the league\u2019s weekend windows ({esc(season["source"])}); the exact day and the Eastern kickoff appear above once Serie A sets them. '
             f'The pink dot marks the derby, Juventus and Napoli. HOME is San Siro.</p>'
             + cta_band().replace('class="ctaband"', 'class="ctaband end"') +
-            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="/">All editions</a> &middot; <a href="/fixtures/">Fixtures</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n'
+            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="/">All editions</a> &middot; <a href="/fixtures/">Fixtures</a> &middot; <a href="/results/">Results</a> &middot; <a href="/injuries/">Injuries</a> &middot; <a href="/how-to-watch-inter-milan-in-the-usa/">Watch in the US</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n'
             '</div>\n' + STICK + HOME_FORM_JS + '\n</body></html>\n')
     return require_signup_form(require_beacon(page, 'fixtures/index.html'), 'fixtures/index.html')
 
@@ -670,18 +670,25 @@ def build_index():
             f'<div class="who"><div class="mk">ND</div><div><b>{esc(WHO_HEAD)}</b><p>{esc(WHO)}</p></div></div>\n'
             f'<div class="idx compact"><h2>Every edition</h2><p class="sub">Every morning since No. 1 \u2014 sorted into what is confirmed and what is only reported.</p><ul>{lis}</ul></div>'
             + cta_band().replace('class="ctaband"', 'class="ctaband end"') +
-            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="./">All editions</a> &middot; <a href="/fixtures/">Fixtures</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div>\n' + HOME_FORM_JS + '\n</body></html>\n')
+            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="./">All editions</a> &middot; <a href="/fixtures/">Fixtures</a> &middot; <a href="/results/">Results</a> &middot; <a href="/injuries/">Injuries</a> &middot; <a href="/how-to-watch-inter-milan-in-the-usa/">Watch in the US</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div>\n' + HOME_FORM_JS + '\n</body></html>\n')
     require_beacon(page, 'index.html')  # checked BEFORE open(): open('w') truncates the live file
     require_signup_form(page, 'index.html')
     open('index.html', 'w', encoding='utf-8').write(page)
     sub = render_subscribe(len(eds), first)
     os.makedirs('subscribe', exist_ok=True); open('subscribe/index.html', 'w', encoding='utf-8').write(sub)
     fx = render_fixtures(len(eds), first)
+    extra = []
+    try:   # evergreen search pages (Nov 14, 2026): this layer may never break the morning build
+        import nd_evergreen
+        fx = nd_evergreen.render_fixtures(sys.modules[__name__], len(eds), first)
+        extra = nd_evergreen.build_pages(sys.modules[__name__], len(eds), first)
+    except (Exception, SystemExit) as e:
+        print('nd_evergreen skipped, plain /fixtures/ kept:', repr(e))
     os.makedirs('fixtures', exist_ok=True); open('fixtures/index.html', 'w', encoding='utf-8').write(fx)
     open('feed.xml', 'w', encoding='utf-8').write(render_feed(eds))
     for ch in DOORS:
         os.makedirs(f'go/{ch}', exist_ok=True); open(f'go/{ch}/index.html', 'w', encoding='utf-8').write(render_door(ch))
-    urls = [(f'{SITE}/', eds[0][1]), (f'{SITE}/subscribe/', eds[0][1]), (f'{SITE}/fixtures/', eds[0][1])] + [(f'{SITE}/p/edition-{n}/', dt) for n, dt, _ in eds]
+    urls = [(f'{SITE}/', eds[0][1]), (f'{SITE}/subscribe/', eds[0][1]), (f'{SITE}/fixtures/', eds[0][1])] + [(f'{SITE}/{p}/', eds[0][1]) for p in extra] + [(f'{SITE}/p/edition-{n}/', dt) for n, dt, _ in eds]
     open('sitemap.xml', 'w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(f'  <url><loc>{u}</loc><lastmod>{dt}</lastmod></url>\n' for u, dt in urls) + '</urlset>\n')
     return len(eds)
 
