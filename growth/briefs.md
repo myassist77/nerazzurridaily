@@ -30,8 +30,8 @@ Edited only by the Growth Lead. Status: running | building | waiting.
 
 ## Distribution
 - Owns: real visits per channel.
-- Does: daily video (running, do not re-engineer); daily link post on each tappable channel; matchday posts.
-- Status: waiting on the owner creating Bluesky, Threads and Facebook Page accounts and signing each in to Postiz; and on the TikTok Business switch.
+- Running: the daily video on TikTok and YouTube (do not re-engineer). Since Nov 14, 2026 a daily link post on Bluesky (@nerazzurridaily.bsky.social) through Postiz: the edition's title, one line and the door link /go/bsky/?ed=N, with the masthead image. The same task posts to Threads (door /go/th/) and the Facebook Page (door /go/fb/) as soon as those channels appear in Postiz. Record per edition: data/links/posted-edN.json. Switch: "links_autopost" in data/social-switch.json (missing = on).
+- Status: Bluesky running. Threads and the Facebook Page waiting on the owner's sign-ins. TikTok tappable link waiting on the Business switch.
 
 ## Partnerships
 - Owns: placements won per week.
