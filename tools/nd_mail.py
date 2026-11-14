@@ -8,9 +8,9 @@ the sent record and the replies are kept ENCRYPTED (Fernet, secret OUTREACH_KEY)
   growth/outreach/status.json written here, counts only, no addresses
 Never print an address, a subject or a body: the run log is public.
 
-Modes: selftest | send | check | all (send then check).
+Modes: selftest | send | check | all (send then check; the first "all" run with a password proves the route with a selftest before any send).
 Rules enforced here, whatever the queue says:
-  - at most 2 messages ever to one address (one pitch, one follow-up)
+  - one pitch and one follow-up per address; kind "reply" only answers something they wrote after our last message (6 messages per address at most)
   - a follow-up only 5+ days after its pitch and only if that address has not written back
   - at most MAX_PER_RUN sends a run and MAX_PER_DAY a day
   - the body must be signed "Nerazzurri Daily Support Team" and must not name the owner
@@ -58,19 +58,26 @@ def allowed(item, state):
     """Return (ok, reason). Reasons are generic words, safe for the public log."""
     to = norm(item.get("to")); body = item.get("body") or ""; kind = item.get("kind")
     if not item.get("id") or not to or "@" not in to or not item.get("subject") or not body: return False, "incomplete"
-    if kind not in ("pitch", "followup"): return False, "bad-kind"
+    if kind not in ("pitch", "followup", "reply"): return False, "bad-kind"
     if item["id"] in state["sent"]: return False, "already-sent"
     if SIGN not in body: return False, "unsigned"
     low = (body + " " + item["subject"]).lower()
     if any(b in low for b in BANNED): return False, "names-owner"
     if to == ADDR.lower(): return False, "self"
-    prior = [s for s in state["sent"].values() if s["to"] == to]
+    every = sorted((s for s in state["sent"].values() if s["to"] == to), key=lambda s: s["date"])
+    prior = [s for s in every if s["kind"] in ("pitch", "followup")]
+    inbound = [r for r in state["replies"] if r.get("from") == to and not r.get("auto")]
+    if kind == "reply":
+        # a reply answers something they wrote after our last message; never opens a conversation
+        if not every: return False, "no-pitch"
+        if len(every) >= 6: return False, "limit-six"
+        if not any((r.get("seen_utc") or "") > every[-1]["date"] for r in inbound): return False, "nothing-to-answer"
+        return True, "ok"
     if len(prior) >= 2: return False, "limit-two"
-    replied = any(r.get("from") == to for r in state["replies"])
-    if kind == "pitch" and prior: return False, "already-pitched"
+    if kind == "pitch" and (prior or to in state.get("mailbox_sent_to", [])): return False, "already-pitched"
     if kind == "followup":
         if not prior: return False, "no-pitch"
-        if replied: return False, "they-replied"
+        if inbound: return False, "they-replied"
         age = (now() - dt.datetime.fromisoformat(prior[0]["date"])).days
         if age < FOLLOWUP_DAYS: return False, "too-soon"
     nb = item.get("not_before")
@@ -84,8 +91,8 @@ def build(item, state):
     m["Subject"] = item["subject"]
     m["Date"] = email.utils.formatdate(localtime=False)
     m["Message-ID"] = email.utils.make_msgid(domain=ADDR.split("@")[1])
-    if item["kind"] == "followup":
-        prior = [s for s in state["sent"].values() if s["to"] == norm(item["to"])]
+    if item["kind"] in ("followup", "reply"):
+        prior = sorted((s for s in state["sent"].values() if s["to"] == norm(item["to"])), key=lambda s: s["date"])
         if prior and prior[0].get("message_id"):
             m["In-Reply-To"] = prior[0]["message_id"]; m["References"] = prior[0]["message_id"]
     m.set_content(item["body"])
@@ -127,6 +134,23 @@ def do_send(state):
     print("sent", done, "skipped", json.dumps(skipped))
     return done, skipped
 
+def scan_sent(state):
+    """Addresses the mailbox itself has already written to (by hand or by this tool), so nobody is pitched twice."""
+    c = imap(); found = set(state.get("mailbox_sent_to", []))
+    for box in ("INBOX.Sent", "Sent", "Sent Items", "Sent Messages"):
+        try:
+            typ, _ = c.select(box, readonly=True)
+            if typ != "OK": continue
+            typ, d = c.search(None, "SINCE", "01-Sep-2026")
+            for n in (d[0] or b"").split()[-500:]:
+                typ, h = c.fetch(n, "(BODY.PEEK[HEADER.FIELDS (TO CC)])")
+                if typ == "OK" and h and h[0]:
+                    m = email.message_from_bytes(h[0][1])
+                    for _, a in email.utils.getaddresses(m.get_all("To", []) + m.get_all("Cc", [])):
+                        if a and a.lower() != ADDR.lower(): found.add(a.lower())
+        except Exception: pass
+    c.logout(); state["mailbox_sent_to"] = sorted(found)
+
 def text_of(m):
     part = m.get_body(preferencelist=("plain", "html")) if hasattr(m, "get_body") else None
     try: return (part.get_content() if part else "")[:3000]
@@ -149,7 +173,7 @@ def do_check(state):
         refs = (m.get("In-Reply-To") or "") + " " + (m.get("References") or "")
         match = next((k for mid, k in sent_ids.items() if mid in refs), None) or sent_to.get(frm)
         state["replies"].append({"uid": u, "date": m.get("Date"), "from": frm, "from_name": email.utils.parseaddr(m.get("From") or "")[0],
-            "subject": str(make_header(decode_header(m.get("Subject") or ""))), "matched_id": match,
+            "subject": str(make_header(decode_header(m.get("Subject") or ""))), "matched_id": match, "seen_utc": now().isoformat(),
             "auto": bool(m.get("Auto-Submitted") and m.get("Auto-Submitted") != "no"), "text": text_of(m)})
         new += 1
     if uids: state["last_uid"] = max(uids)
@@ -185,6 +209,13 @@ def main():
     st = {"mode": mode, "waiting_for_password": False, "error": None}
     try:
         if mode == "selftest": st["selftest_ok"] = selftest(); st["selftest_utc"] = now().strftime("%Y-%m-%dT%H:%M:%SZ")
+        if mode == "all" and not DRY:
+            sp = os.path.join(DIR, "status.json")
+            proven = os.path.exists(sp) and json.load(open(sp)).get("selftest_ok") is True
+            if not proven:
+                st["selftest_ok"] = selftest(); st["selftest_utc"] = now().strftime("%Y-%m-%dT%H:%M:%SZ")
+                if not st["selftest_ok"]: raise RuntimeError("selftest")
+        if mode in ("send", "all") and not DRY: scan_sent(state)
         if mode in ("send", "all"): st["sent_this_run"], st["skipped_this_run"] = do_send(state)
         if mode in ("check", "all") and not DRY: st["new_inbound_this_run"] = do_check(state)
     except Exception as ex:
