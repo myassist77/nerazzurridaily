@@ -90,5 +90,8 @@ or a `workflow_dispatch` on `rebuild-pages.yml`) brings them all up to date in o
 3. it checks every edition page (one top bar, one navigation strip, one signup form, the current fonts, the beacon) and runs
    `check_beacon.py` and `check_signup_form.py`; it commits only when all of that passes, and commits nothing otherwise.
 
+It also rewrites `404.html` (`python3 tools/nd_evergreen.py --404`): the "Page not found" page carries the same header,
+navigation, signup form and footer as the reference pages since Nov 14, 2026, and is no longer edited by hand.
+
 It shares the `edition` workflow's concurrency group, so it never runs alongside a morning build. A push by a workflow does
 not start the other workflows: dispatch `signup-form.yml` afterwards if you want its run on the new commit.

@@ -1,8 +1,8 @@
 name: rebuild-pages
 # Re-renders every published edition page with the current renderer, so a change to the header, the navigation,
 # the footer or the page CSS reaches the editions that are already out (added Nov 14, 2026 with the striped header
-# and the navigation strip). Run by hand only. It commits p/edition-*/index.html and nothing else, and only when
-# every check below passes. It never builds a masthead, an email, an index page, the feed or the sitemap.
+# and the navigation strip). Run by hand only. It commits p/edition-*/index.html and 404.html and nothing else, and
+# only when every check below passes. It never builds a masthead, an email, an index page, the feed or the sitemap.
 on:
   workflow_dispatch:
     inputs:
@@ -36,6 +36,8 @@ jobs:
           git status --short p | wc -l
       - name: Legacy editions (HTML only) - the same header, navigation and footer links
         run: python3 tools/nd_legacy_forms.py
+      - name: The "Page not found" page - the same header, navigation, form and footer
+        run: python3 tools/nd_evergreen.py --404
       - name: Every edition page carries one top bar, one navigation strip, one form and the current fonts
         run: |
           python3 - <<'PY'
@@ -58,7 +60,7 @@ jobs:
         run: |
           pip install --quiet playwright
           python -m playwright install --with-deps chromium
-      - name: The signup form still submits (home, subscribe, newest and oldest edition, the reference pages)
+      - name: The signup form still submits (home, subscribe, newest and oldest edition, the reference pages, 404)
         run: python tools/check_signup_form.py
       - name: Commit the rebuilt pages
         env:
@@ -66,10 +68,10 @@ jobs:
         run: |
           git config user.name "nerazzurri-daily[bot]"
           git config user.email "mail@nerazzurridaily.com"
-          git add p/edition-*/index.html
+          git add p/edition-*/index.html 404.html
           if git diff --cached --quiet; then echo "nothing to commit - every page is already current"; exit 0; fi
           git diff --cached --stat | tail -1
           if [ "$PUBLISH" = "false" ]; then echo "publish=false - built and checked only"; exit 0; fi
-          git commit -q -m "Rebuild every edition page with the current header and navigation" -m "Built by the rebuild-pages workflow, run $GITHUB_RUN_ID."
+          git commit -q -m "Rebuild the published pages with the current header and navigation" -m "Built by the rebuild-pages workflow, run $GITHUB_RUN_ID."
           for i in 1 2 3; do git push origin HEAD:main && break; echo "push rejected (try $i) - rebasing onto origin/main"; git fetch -q origin main && git rebase -q FETCH_HEAD || exit 1; done
           echo "committed $(git rev-parse HEAD)"

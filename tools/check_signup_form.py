@@ -22,8 +22,11 @@ def _editions():
 def _evergreen():
     """The evergreen search pages (tools/nd_evergreen.py) carry the same form: check every one that exists."""
     import os
-    return [p for p in ("fixtures/index.html", "results/index.html", "injuries/index.html",
-                        "how-to-watch-inter-milan-in-the-usa/index.html") if os.path.exists(p)]
+    pages = [p for p in ("fixtures/index.html", "results/index.html", "injuries/index.html",
+                         "how-to-watch-inter-milan-in-the-usa/index.html") if os.path.exists(p)]
+    # 404.html carries the form since Nov 14, 2026 (tools/nd_evergreen.py --404); an older copy without one is skipped
+    if os.path.exists("404.html") and 'id="sib-form"' in open("404.html", encoding="utf-8").read(): pages.append("404.html")
+    return pages
 
 PAGES = ["index.html", "subscribe/index.html"] + _editions() + _evergreen()
 STUB = ('{"success":true,"message":"Almost there. Check your inbox for an email from '

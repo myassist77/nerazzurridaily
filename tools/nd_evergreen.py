@@ -432,6 +432,23 @@ def render_watch(R, count, first_iso):
 # ------------------------------------------------------------------ entry points
 RENDERERS = {'results': render_results, 'injuries': render_injuries, WATCH: render_watch}
 
+def render_404(R):
+    """404.html - the "Page not found" page, with the header, navigation, signup form and footer of the reference pages
+    (Nov 14, 2026). It is not part of the morning build: `python3 tools/nd_evergreen.py --404` writes it and the
+    rebuild-pages workflow runs that, so a later change to the header or the footer reaches it too. Every link is
+    root-relative, because the page is served at whatever address was not found; no canonical and no indexing."""
+    desc = 'Inter Milan in English, every morning: what the club confirmed, and what the Italian press only reported.'
+    page = ('<!doctype html><html lang="en"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n'
+            '<title>Page not found — Nerazzurri Daily</title><meta name="robots" content="noindex"><link rel="icon" href="/favicon.svg" type="image/svg+xml">'
+            f'<meta name="description" content="{R.esc(desc)}">\n'
+            f'{R.FONTS}\n{R.SIB_CSS}\n<style>{R.CSS}{R.FORM_CSS}{R.FIX_CSS}{EV_CSS}</style></head><body><div class="sheet">\n'
+            + _head(R, '', 0) +
+            '<div class="hero"><h1>Page not found</h1><p>That page isn’t here. <a href="/">Every edition is on the front page</a>, newest first.</p></div>\n'
+            + _more('')
+            + R.form_block(head='Get it every morning', sub='Inter Milan in English, in 90 seconds: what the club has confirmed, kept apart from what the papers are only reporting.')
+            + _foot() + '</div>\n' + R.STICK + R.HOME_FORM_JS + '\n</body></html>\n')
+    return _checked(R, page, '404.html')
+
 def build_pages(R, count, first_iso):
     """Write the three pages. Returns the paths that exist on disk afterwards (so the sitemap never lists a page that is not there)."""
     for path, fn in RENDERERS.items():
@@ -447,6 +464,8 @@ if __name__ == '__main__':
     import sys
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     import nd_render as R
+    if '--404' in sys.argv:   # the error page only (the rebuild-pages workflow runs this)
+        page = render_404(R); open('404.html', 'w', encoding='utf-8').write(page); print('nd_evergreen: 404.html', len(page), 'chars'); sys.exit()
     eds = editions(); first_iso = min(d['date'] for d in eds)
     n_all = len(re.findall(r'<loc>[^<]*/p/edition-\d+/</loc>', open('sitemap.xml', encoding='utf-8').read())) if os.path.exists('sitemap.xml') else len(eds)
     open('fixtures/index.html', 'w', encoding='utf-8').write(render_fixtures(R, n_all, first_iso))
