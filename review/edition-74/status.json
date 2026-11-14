@@ -1,0 +1,159 @@
+{
+ "n": 74,
+ "built_at_utc": "2026-11-14T10:55:39+00:00",
+ "run_id": "43587504310",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43587504310",
+ "passed": true,
+ "steps": {
+  "mast": "success",
+  "controls": "success",
+  "checks": "success"
+ },
+ "files_md5": {
+  "p/edition-74/index.html": "ea361404cea2d2d924aff6fadaa24192",
+  "assets/mast/edition-74.png": "ab979764e6bb612d8e7854c42b04a353",
+  "data/edition-74.json": "efee5226afd31790c2cd0e17d494c4bd",
+  "index.html": "ccf61688e56a4c85847a8487c4a7c456",
+  "subscribe/index.html": "63270855a15635c126712bebe9f29bf4",
+  "fixtures/index.html": "e5ebddcb92e6822ae1d0c93a497cd138",
+  "feed.xml": "d8ecf39ba81e05e8b79d39305e68520a",
+  "sitemap.xml": "ca03f348da816296a8f6dbf175d8a36e"
+ },
+ "title": "Italy need only a draw in Brussels on Sunday",
+ "date": "2026-11-14",
+ "masthead": {
+  "bytes": 6158,
+  "lines": 2,
+  "colors": 7,
+  "fonts": {
+   "anton": true,
+   "mono": true
+  }
+ },
+ "controls": {
+  "n": 74,
+  "fails": [],
+  "warns": [],
+  "page-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 700,
+    "h": 382.8125,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "page-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "email-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 644,
+    "h": 352.1875,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  },
+  "email-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  }
+ },
+ "checks": {
+  "fails": [],
+  "warns": [
+   "sentences: 33 words: “PIO ESPOSITO 12′ · THURAM 19′ Atalanta  AWAY VfB Stuttgart  HOME Genoa  HOME Genoa  HOME Frosinone  AWAY Borus…”",
+   "flesch: reading ease 52 (target ≥ 55)"
+  ],
+  "info": {
+   "prose_words": 500,
+   "read_seconds": 126,
+   "avg_sentence_words": 15.8,
+   "flesch_reading_ease": 52.4,
+   "edition_from_masthead": null,
+   "dates": {
+    "today": "November 14"
+   },
+   "external_to_fetch": [
+    "https://sport.sky.it/calcio/nations-league/2026/11/12/italia-nations-league-qualificazione-quarti-se",
+    "https://www.fcinternews.it/focus/calhanoglu-promessa-inter-juve-sondaggi-1023171",
+    "https://www.fcinternews.it/in-primo-piano/fcin-domani-pinetina-aperta-infortunati-thuram-punta-atalanta-1023003",
+    "https://www.figc.it/it/serie-a-women/news/domenica-15-novembre-inter-juventus-in-diretta-su-rai-2-il-big-match-si-giochera-al-breda-di-sesto-san-giovanni-snw1rd3a",
+    "https://www.inter.it/en/inter-women",
+    "https://www.inter.it/en/news/inter-players-international-duty-november-2026",
+    "https://www.inter.it/en/news/inter-vs-como-serie-a-2026-27",
+    "https://www.inter.it/en/news/nations-league-akanji-slovenia-switzerland-2026",
+    "https://www.inter.it/en/news/tickets-inter-liverpool-champions-league-2026-27",
+    "https://www.inter.it/it/notizie/guida-inter-juventus-women-dove-vedere-tv",
+    "https://www.passioneinter.com/calciomercato-inter/di-marzio-calhanoglu-juventus-rinnovo-inter/",
+    "https://www.tiktok.com/@nerazzurridaily",
+    "https://www.youtube.com/@nerazzurridaily"
+   ],
+   "site_links": [
+    "https://www.nerazzurridaily.com/go/email/?ed=74",
+    "https://www.nerazzurridaily.com/go/email/?ed=74&to=/subscribe/",
+    "https://www.nerazzurridaily.com/go/forward/?ed=74",
+    "https://www.nerazzurridaily.com/p/edition-74/"
+   ]
+  }
+ },
+ "email": {
+  "md5": "8660e8e35fef73024c876a31d98b2bb1",
+  "chars": 26307,
+  "bytes": 26432
+ }
+}
