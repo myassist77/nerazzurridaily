@@ -268,9 +268,11 @@ HOME_FORM_JS = """<script>
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 <script>
 /* Brevo's script overwrites the success text with a generic line; keep ours, which tells people to confirm. */
-(function(){var M=%s;var p=document.getElementById('success-message');if(!p)return;
-function fix(){var s=p.querySelector('.sib-form-message-panel__inner-text');if(s&&s.textContent!==M){s.textContent=M;}}
-new MutationObserver(fix).observe(p,{childList:true,subtree:true,characterData:true});})();
+(function(){var M=%s;var p=document.getElementById('success-message');if(!p)return;var sent=false;
+function fix(){var s=p.querySelector('.sib-form-message-panel__inner-text');if(s&&s.textContent!==M){s.textContent=M;}
+/* Count the signup (Nov 14, 2026): once the success panel shows, load /subscribe/sent/ in a hidden frame, so Web Analytics records one view of it with this page as the referrer. */
+if(!sent&&p.offsetParent!==null){sent=true;try{var f=document.createElement('iframe');f.src='/subscribe/sent/';f.title='';f.setAttribute('aria-hidden','true');f.tabIndex=-1;f.style.cssText='position:absolute;width:0;height:0;border:0;visibility:hidden';document.body.appendChild(f);}catch(e){}}}
+new MutationObserver(fix).observe(p,{childList:true,subtree:true,characterData:true,attributes:true,attributeFilter:['class','style']});})();
 /* Every "Subscribe" link on the page goes to the one form and puts the cursor in it. */
 (function(){var f=document.getElementById('subscribe');if(!f)return;
 document.querySelectorAll('a[href="#subscribe"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();
@@ -438,6 +440,19 @@ def head_case(s):  # LATEST RESULT -> Latest result (CSS uppercases on the page;
     return s
 
 # ------------------------------------------------------------------ page
+def mentions_for(d):
+    """Partner mentions owed for this edition's date, from data/mentions.json (added Nov 14, 2026; written by the
+    Partnerships agent when a partner agrees to a mention swap). Each entry: {"date": "YYYY-MM-DD", "name", "url", "text"}.
+    Any problem with the file means no mention: this may never break the morning build."""
+    try:
+        out = []
+        for m in json.load(open('data/mentions.json', encoding='utf-8')):
+            if m.get('date') == d.get('date') and m.get('name') and str(m.get('url', '')).startswith('https://') and m.get('text'):
+                out.append({'name': str(m['name'])[:80], 'url': str(m['url']), 'text': str(m['text'])[:240]})
+        return out[:2]
+    except Exception:
+        return []
+
 def page_blocks(d):
     out = []; in_signoff = False; signed = False
     def close():
@@ -474,6 +489,8 @@ def page_blocks(d):
         elif t == 'sources':
             if not signed:   # editions without an 'ask' block (10-12) still get the byline + share line
                 out.append(f'<div class="signoff"><p class="byline">{esc(BYLINE)}</p>' + share_block(d['n'], d['title']) + '</div>'); signed = True
+            for m in mentions_for(d):
+                out.append(f'<div class="in"><p><b>From our friends.</b> {esc(m["text"])} <a href="{esc(m["url"])}" rel="noopener">{esc(m["name"])}</a></p></div>')
             out.append(prev_next(d['n']))
             out.append(cta_band())
             links = '<br>\n'.join(f'<a href="{esc(l["url"])}" rel="noopener">' + (f'<b>{esc(l["outlet"])}</b> · ' if l.get('outlet') else '') + f'{esc(l["title"])}</a>' for l in b['links'])
@@ -557,6 +574,8 @@ def render_email(d, absolute_links=True):
                 links = ' · '.join(f'<a href="{esc(l["url"])}" style="color:#0A2A66;">{esc(l["label"])}</a>' for l in b['links'])
                 rows.append(P('FOLLOW ' + links, 13, '#5A647E', 16, 0, MONO))
         elif t == 'sources':
+            for m in mentions_for(d):
+                R(P(f'<b style="color:#0B1020;">From our friends.</b> {esc(m["text"])} <a href="{esc(m["url"])}" style="color:#0A2A66;">{esc(m["name"])}</a>', mt=14), '#ffffff', '2px 28px')
             links = '<br>\n'.join(f'<a href="{esc(l["url"])}" style="color:#0A2A66;text-decoration:none;border-bottom:1px solid #C4CDDE;">' + (f'<b style="color:#0B1020;">{esc(l["outlet"])}</b> · ' if l.get('outlet') else '') + f'{esc(l["title"])}</a>' for l in b['links'])
             rows.append(f'<tr><td style="background:#EEF1F6;padding:2px 28px 18px;margin-top:22px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:16px 0 8px;border-bottom:1px solid #D8DFEC;"><span style="font-family:{SANS};font-weight:bold;font-size:14px;letter-spacing:1px;color:#0B1020;">SOURCES</span></td></tr>'
                         f'<tr><td style="padding:0;font-size:0;line-height:0;height:3px;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td width="36" height="3" style="background:#2B5BB8;font-size:0;line-height:0;">&nbsp;</td></tr></table></td></tr></table>'
@@ -586,7 +605,7 @@ def render_text(d):
         elif t in ('note','ask','p'): lines += [BeautifulSoup(b['html'],'html.parser').get_text(), '']
         elif t == 'next': lines += ['NEXT EDITION: ' + b['text']]
         elif t == 'follow': lines += ['FOLLOW · ' + ' · '.join(l['label'] for l in b['links']), '']
-        elif t == 'sources': lines += ['SOURCES:'] + [(l['outlet'] + ' · ' if l.get('outlet') else '') + l['title'] for l in b['links']]
+        elif t == 'sources': lines += [f"From our friends. {m['text']} {m['name']}" for m in mentions_for(d)] + ['SOURCES:'] + [(l['outlet'] + ' · ' if l.get('outlet') else '') + l['title'] for l in b['links']]
     lines += ['', 'Fan-made. Not affiliated with FC Internazionale Milano.']
     return '\n'.join(lines).replace('\xa0', ' ')
 

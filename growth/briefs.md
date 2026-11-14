@@ -18,14 +18,15 @@ Edited only by the Growth Lead. Status: running | building | waiting.
 
 ## Search
 - Owns: Google clicks per week.
-- Does: a page per fixture, player and transfer-tracker pages, pages for queries Search Console already shows, internal links, index watch.
-- Status: building. Started Nov 14 (/results/, /injuries/, US TV guide, /fixtures/ upgrade; index watch task running).
-- Priority 1.
+- Running: /fixtures/, /results/, /injuries/, the US TV guide, and since Nov 14, 2026 one page per men's match under /match/ (kickoff in every US time zone, US TV, form, injuries, result once played). All rebuilt by the edition workflow every morning from the edition data; nothing is written by hand.
+- Weekly review task (Thursdays): reads Search Console, logs which pages and queries moved, proposes the next page type. It does not change code.
+- Status: running. Priority 1.
 
 ## Conversion
 - Owns: signups per 100 real visits.
-- Does: a signup form on every landing page, one test a week, welcome emails, double opt-in loss check.
-- Status: building. Priority 1.
+- Running since Nov 14, 2026: every page already carries the signup form; each signup is now counted (one view of /subscribe/sent/ = one signup sent, its referrer = the page it came from; /subscribe/confirmed/ = one confirmation).
+- Weekly headline or offer tests are NOT running: at about 12 real visits a week a test cannot show anything. The Lead starts them when real visits pass 200 a week for two weeks.
+- Status: measuring. Tests waiting on traffic.
 
 ## Distribution
 - Owns: real visits per channel.
@@ -37,6 +38,7 @@ Edited only by the Growth Lead. Status: running | building | waiting.
 - Does: Inter Clubs abroad, English-language creators, podcasts, newsletter swaps. One pitch, one follow-up.
 - Status: waiting on one thing: the MAIL_PASSWORD repository secret (owner enters it once). Route chosen Nov 14, 2026: the outreach workflow sends through the Hostinger mailbox and reads replies.
 - How: write the full message list to growth/outreach/queue.enc (Fernet, key in the private Drive file nerazzurri-outreach-key.txt), each item {id, to, to_name, subject, body, kind: pitch|followup, not_before?}. The workflow enforces: two messages per address at most, follow-up 5+ days after the pitch and only without a reply, 10 a run, 20 a day, signed Support Team. Read growth/outreach/state.enc for what was sent and who replied; status.json has counts.
+- Owed mentions: add {"date", "name", "url", "text"} to data/mentions.json (public). The renderer prints it in that date's edition, page and email, as "From our friends."
 
 ## Community
 - Owns: replies and referral signups.

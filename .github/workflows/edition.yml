@@ -158,6 +158,8 @@ jobs:
             git add "p/edition-$N/index.html" "assets/mast/edition-$NN.png" "data/edition-$N.json" index.html subscribe/index.html fixtures/index.html feed.xml sitemap.xml "review/edition-$N/"
             # evergreen search pages (tools/nd_evergreen.py, Nov 14, 2026): added only when the build wrote them
             for f in results/index.html injuries/index.html how-to-watch-inter-milan-in-the-usa/index.html; do if [ -f "$f" ]; then git add "$f"; fi; done
+            # one page per match (tools/nd_evergreen.py build_matches, Nov 14, 2026): the whole folder, when the build wrote it
+            if [ -d match ]; then git add match; fi
             MSG="Edition No. $N — $TITLE"
           else
             MSG="Edition No. $N — build status (controls $PASSED, publish $PUBLISH)"
@@ -179,6 +181,10 @@ jobs:
           HOST = "www.nerazzurridaily.com"; KEY = "6853e0b381f80722f7022dc7cfe8c2c9"
           urls = [f"https://{HOST}/", f"https://{HOST}/p/edition-{n}/", f"https://{HOST}/fixtures/", f"https://{HOST}/subscribe/",
                   f"https://{HOST}/results/", f"https://{HOST}/injuries/", f"https://{HOST}/how-to-watch-inter-milan-in-the-usa/"]
+          try:
+              import re
+              urls += [u for u in re.findall(r"<loc>(.*?)</loc>", open("sitemap.xml", encoding="utf-8").read()) if "/match/" in u]
+          except Exception as e: print("match pages not added to IndexNow:", repr(e))
           body = json.dumps({"host": HOST, "key": KEY, "keyLocation": f"https://{HOST}/{KEY}.txt", "urlList": urls}).encode()
           req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body, headers={"Content-Type": "application/json; charset=utf-8"})
           try:

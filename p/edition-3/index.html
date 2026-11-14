@@ -297,9 +297,11 @@ a{color:#0A2A66}
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 <script>
 /* Brevo's script overwrites the success text with a generic line; keep ours, which tells people to confirm. */
-(function(){var M="Almost there. Check your inbox for an email from Nerazzurri Daily and tap the confirm link. Nothing arrives until you do. Not there in a minute? Look in spam or Promotions.";var p=document.getElementById('success-message');if(!p)return;
-function fix(){var s=p.querySelector('.sib-form-message-panel__inner-text');if(s&&s.textContent!==M){s.textContent=M;}}
-new MutationObserver(fix).observe(p,{childList:true,subtree:true,characterData:true});})();
+(function(){var M="Almost there. Check your inbox for an email from Nerazzurri Daily and tap the confirm link. Nothing arrives until you do. Not there in a minute? Look in spam or Promotions.";var p=document.getElementById('success-message');if(!p)return;var sent=false;
+function fix(){var s=p.querySelector('.sib-form-message-panel__inner-text');if(s&&s.textContent!==M){s.textContent=M;}
+/* Count the signup (Nov 14, 2026): once the success panel shows, load /subscribe/sent/ in a hidden frame, so Web Analytics records one view of it with this page as the referrer. */
+if(!sent&&p.offsetParent!==null){sent=true;try{var f=document.createElement('iframe');f.src='/subscribe/sent/';f.title='';f.setAttribute('aria-hidden','true');f.tabIndex=-1;f.style.cssText='position:absolute;width:0;height:0;border:0;visibility:hidden';document.body.appendChild(f);}catch(e){}}}
+new MutationObserver(fix).observe(p,{childList:true,subtree:true,characterData:true,attributes:true,attributeFilter:['class','style']});})();
 /* Every "Subscribe" link on the page goes to the one form and puts the cursor in it. */
 (function(){var f=document.getElementById('subscribe');if(!f)return;
 document.querySelectorAll('a[href="#subscribe"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();
