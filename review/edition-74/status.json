@@ -1,8 +1,8 @@
 {
  "n": 74,
- "built_at_utc": "2026-11-14T14:31:34+00:00",
- "run_id": "43605241529",
- "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43605241529",
+ "built_at_utc": "2026-11-14T14:42:42+00:00",
+ "run_id": "43606195021",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43606195021",
  "passed": true,
  "steps": {
   "mast": "success",
@@ -10,12 +10,12 @@
   "checks": "success"
  },
  "files_md5": {
-  "p/edition-74/index.html": "5aa30d221efb3c5cb09262bf881062ed",
+  "p/edition-74/index.html": "73c26a922230868da2eb54674d40b690",
   "assets/mast/edition-74.png": "ab979764e6bb612d8e7854c42b04a353",
   "data/edition-74.json": "efee5226afd31790c2cd0e17d494c4bd",
-  "index.html": "42cae7db0b03f77ecbf050d87477520c",
-  "subscribe/index.html": "63270855a15635c126712bebe9f29bf4",
-  "fixtures/index.html": "9d6e25a7bdd149b51eff1bb2daffc9db",
+  "index.html": "1f5701f9b855f0b4abcdb65a2b58b683",
+  "subscribe/index.html": "223ee77775ebb2c3c270055bd9f252df",
+  "fixtures/index.html": "d0b11700598e5933e17c58dfa1acc48a",
   "feed.xml": "d8ecf39ba81e05e8b79d39305e68520a",
   "sitemap.xml": "c03753c4f61219502bedc36d8eb016c4"
  },
