@@ -1,0 +1,96 @@
+{
+ "job": "ed74",
+ "kind": "daily",
+ "name": "ND-2026-11-14-ed74-calha-renewal",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-14T12:04:17+00:00",
+ "run_id": "43592779815",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43592779815",
+ "files": {
+  "assets/video/ed74.mp4": {
+   "bytes": 1426663,
+   "md5": "d415ba88faa6f47761ac35fdc57b56d3",
+   "sha256": "64f0b7195897695db5f1b4e6e44eb68212b2f687f8d1f3414dab3c633332d058"
+  },
+  "assets/video/ed74-thumb.png": {
+   "bytes": 56646,
+   "md5": "f471e2438baae3d836b70122e9a12e4a",
+   "sha256": "96b66cd9413f18645b60e108399060ce0f8942e20a098fedd7368f9683e55e5c"
+  },
+  "assets/video/ed74-thumb-9x16.png": {
+   "bytes": 80179,
+   "md5": "9d3b6e5610ca11c850481ed49209f7cf",
+   "sha256": "cd2ac9ea4e3949e7a86a27842823481c1e06ef4e964b1a96bcffe35d84e68783"
+  },
+  "data/tiktok-ed74.json": {
+   "bytes": 469,
+   "md5": "e6af1e809c2f7c53593161200e62e135",
+   "sha256": "11784ce07b0934953aa82e9e0e216740cef8ea58965d73827bb049660583a18d"
+  },
+  "data/youtube-ed74.json": {
+   "bytes": 1496,
+   "md5": "a7a285185ed1b0fbb6f8ce577f261bc1",
+   "sha256": "2e0c91df55490fc04d354343f9cca22d20c7dab004b26347c1ccb411ac3c692d"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 121893,
+   "md5": "262d1d5d17e3c3cfd1ab5f756f3a2835",
+   "sha256": "85152b0736bc387119c8064e343ea4ec857d5439f14003eac082827abe2b559c"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 80179,
+   "md5": "9d3b6e5610ca11c850481ed49209f7cf",
+   "sha256": "cd2ac9ea4e3949e7a86a27842823481c1e06ef4e964b1a96bcffe35d84e68783"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 56646,
+   "md5": "f471e2438baae3d836b70122e9a12e4a",
+   "sha256": "96b66cd9413f18645b60e108399060ce0f8942e20a098fedd7368f9683e55e5c"
+  }
+ },
+ "seconds": 36.2,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "36.200000"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "36.160000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-11-14-ed74-calha-renewal-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-11-14-ed74-calha-renewal-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-11-14-ed74-calha-renewal-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 881450,
+  "md5": "1bec5bfe12fc5cac7172006f71f53c3f",
+  "sha256": "5c867370297fe54e90d957c3cde80f8bcfcaa19cddc3a78a3bde2ddaa508533a"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 35.16
+ },
+ "voice_log_tail": "01-stance: voice 4.29s → beat 4.72s\n02-claim: voice 5.55s → beat 5.98s\n03-our-take: voice 4.57s → beat 4.93s\n04-turn: voice 8.06s → beat 8.39s\n05-fixture: voice 4.27s → beat 4.72s\n06-end: voice 5.99s → beat 6.42s\nPLAN OK build/beats.voiced.json — 6 beats, 35.16s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-11-14-ed74-calha-renewal.mp4 — 35.20s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-11-14-ed74-calha-renewal-thumb-9x16.png, ND-2026-11-14-ed74-calha-renewal-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-11-14-ed74-calha-renewal-voiced.mp4 — 36.20s, AAC 48 kHz stereo, I: -16.3 LUFS Peak: -4.2 dBFS\n"
+}

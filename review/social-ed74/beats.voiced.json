@@ -1,0 +1,134 @@
+{
+ "name": "ND-2026-11-14-ed74-calha-renewal",
+ "thumbnail": {
+  "style": "number",
+  "top": {
+   "register": "REPORTED",
+   "kicker": "REPORTED · SKY SPORT ITALIA",
+   "lines": [
+    "JUVE WANT",
+    "CALHA FREE"
+   ]
+  },
+  "bottom": {
+   "register": "REPORTED",
+   "kicker": "REPORTED · FCINTERNEWS",
+   "lines": [
+    "NEVER AN",
+    "OFFER."
+   ],
+   "sub": "INTER HAVE PROMISED HIM ANOTHER MEETING"
+  },
+  "number": {
+   "register": "REPORTED",
+   "kicker": "REPORTED · SKY SPORT ITALIA · NOV 13",
+   "big": "2",
+   "lines_a": [
+    "ÇALHANOĞLU",
+    "STORIES."
+   ],
+   "lines_b": [
+    "THEY DON'T",
+    "AGREE."
+   ],
+   "pill": "REPORTED: THURAM BACK FOR ATALANTA",
+   "pill_register": "REPORTED"
+  }
+ },
+ "beats": [
+  {
+   "id": "01-stance",
+   "kind": "cover",
+   "duration": 4.72,
+   "eyebrow": "EDITION NO. 74 · NOVEMBER 14",
+   "lines": [
+    "INTER WON'T LOSE",
+    "ÇALHANOĞLU FOR FREE."
+   ],
+   "vo": "[Inter] will not lose [Çalhanoğlu] to [Juventus] for nothing. Here's why."
+  },
+  {
+   "id": "02-claim",
+   "kind": "item",
+   "duration": 5.98,
+   "register": "REPORTED",
+   "kicker": "REPORTED · SKY SPORT ITALIA · NOV 13",
+   "lines": [
+    "HIS CONTRACT",
+    "ENDS IN JUNE."
+   ],
+   "sub": [
+    "JUVENTUS ARE READY TO SIGN HIM",
+    "ON A FREE TRANSFER."
+   ],
+   "vo": "[Di Marzio] says his contract ends in June, and [Juventus] are ready to sign him on a free."
+  },
+  {
+   "id": "03-our-take",
+   "kind": "item",
+   "duration": 4.93,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "LETTING HIM WALK",
+    "TO JUVENTUS WOULD",
+    "BE UNFORGIVABLE."
+   ],
+   "sub": [
+    "THE MIDFIELD IS BUILT AROUND HIM."
+   ],
+   "vo": "Losing him to [Juventus] for nothing would be the worst outcome of this season."
+  },
+  {
+   "id": "04-turn",
+   "kind": "item",
+   "duration": 8.39,
+   "register": "REPORTED",
+   "kicker": "REPORTED · FCINTERNEWS · NOV 13",
+   "lines": [
+    "JUVE ONLY CALLED.",
+    "NEVER AN OFFER",
+    "IN WRITING."
+   ],
+   "sub": [
+    "INTER HAVE PROMISED HIM ANOTHER MEETING.",
+    "HE GIVES INTER PRIORITY."
+   ],
+   "vo": "[FCInterNews] says [Juventus] only made phone calls, never a written offer, and [Inter] promised him another meeting."
+  },
+  {
+   "id": "05-fixture",
+   "kind": "fixture",
+   "duration": 4.72,
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP · SERIE A · MATCHDAY 12",
+   "lines": [
+    "ATALANTA"
+   ],
+   "sub_top": "AWAY · SUNDAY, NOVEMBER 22",
+   "big": "2:45 PM ET",
+   "sub": [
+    "20:45 CET",
+    "US TV: PARAMOUNT+"
+   ],
+   "vo": "[Inter] play [Atalanta] away on Sunday, two forty-five Eastern."
+  },
+  {
+   "id": "06-end",
+   "kind": "end",
+   "duration": 6.42,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Does [Çalhanoğlu] sign? Tell me in the comments. Read it first at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 35.16
+ }
+}

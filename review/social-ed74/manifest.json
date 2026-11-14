@@ -1,0 +1,135 @@
+{
+ "edition": 74,
+ "date": "2026-11-14",
+ "slug": "calha-renewal",
+ "name": "ND-2026-11-14-ed74-calha-renewal",
+ "hook": "Inter won't lose Çalhanoğlu for free.",
+ "page_url": "https://www.nerazzurridaily.com/p/edition-74/",
+ "edition_json_sha256": "109b4d3442899f011022a7461811eb9f3d742de9c0985709820a41097fb877cb",
+ "brevo": {
+  "campaign_id": 63,
+  "status": "sent",
+  "sent_at_et": "2026-11-14T06:08:05-05:00"
+ },
+ "local_render": {
+  "file": "ND-2026-11-14-ed74-calha-renewal-voiced.mp4",
+  "seconds": 36.2,
+  "beats": 6,
+  "bytes": 1427047,
+  "md5": "e52f50a8a02dd27855e436e366ffa0b8",
+  "sha256": "db7a2559557cdc8cace202c1095d8fa106e5e53e537b5fd322eadf469a73f517",
+  "audio": {
+   "content": "voiceover only — no music",
+   "codec": "aac",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": 36.16
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 35.16
+  }
+ },
+ "stories": [
+  {
+   "h3": "Two readings of where Çalhanoğlu's renewal stands",
+   "register": "REPORTED",
+   "source": "Sky Sport Italia (Gianluca Di Marzio)",
+   "date": "2026-11-13",
+   "on_beat": 2
+  },
+  {
+   "h3": "Two readings of where Çalhanoğlu's renewal stands",
+   "register": "REPORTED",
+   "source": "FCInterNews",
+   "date": "2026-11-13",
+   "on_beat": 4
+  },
+  {
+   "h3": "Thuram is said to be aiming at Bergamo",
+   "register": "REPORTED",
+   "source": "FCInterNews",
+   "date": "2026-11-13",
+   "on_beat": "thumbnail pill"
+  }
+ ],
+ "youtube_title": "Inter won't lose Çalhanoğlu for free — two reports, two different stories #Shorts",
+ "pinned_question": "Does Çalhanoğlu sign a new Inter contract — yes or no?",
+ "next_fixture": {
+  "opponent": "Atalanta",
+  "venue": "AWAY",
+  "date": "2026-11-22",
+  "competition": "Serie A · Matchday 12",
+  "kickoff_et": "2:45 PM ET",
+  "kickoff_cet": "20:45 CET",
+  "us_tv": "Paramount+"
+ },
+ "thumbnail_style": "number",
+ "optional_drafts": {
+  "reddit": false,
+  "facebook": true
+ },
+ "format": "daily six-beat",
+ "static_fallback_used": false,
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43592779815",
+  "built_at_utc": "2026-11-14T12:04:17+00:00",
+  "seconds": 36.2,
+  "beats": 6,
+  "files": {
+   "assets/video/ed74.mp4": {
+    "bytes": 1426663,
+    "md5": "d415ba88faa6f47761ac35fdc57b56d3",
+    "sha256": "64f0b7195897695db5f1b4e6e44eb68212b2f687f8d1f3414dab3c633332d058"
+   },
+   "assets/video/ed74-thumb.png": {
+    "bytes": 56646,
+    "md5": "f471e2438baae3d836b70122e9a12e4a",
+    "sha256": "96b66cd9413f18645b60e108399060ce0f8942e20a098fedd7368f9683e55e5c"
+   },
+   "assets/video/ed74-thumb-9x16.png": {
+    "bytes": 80179,
+    "md5": "9d3b6e5610ca11c850481ed49209f7cf",
+    "sha256": "cd2ac9ea4e3949e7a86a27842823481c1e06ef4e964b1a96bcffe35d84e68783"
+   },
+   "data/tiktok-ed74.json": {
+    "bytes": 469,
+    "md5": "e6af1e809c2f7c53593161200e62e135",
+    "sha256": "11784ce07b0934953aa82e9e0e216740cef8ea58965d73827bb049660583a18d"
+   },
+   "data/youtube-ed74.json": {
+    "bytes": 1496,
+    "md5": "a7a285185ed1b0fbb6f8ce577f261bc1",
+    "sha256": "2e0c91df55490fc04d354343f9cca22d20c7dab004b26347c1ccb411ac3c692d"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 121893,
+    "md5": "262d1d5d17e3c3cfd1ab5f756f3a2835",
+    "sha256": "85152b0736bc387119c8064e343ea4ec857d5439f14003eac082827abe2b559c"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 80179,
+    "md5": "9d3b6e5610ca11c850481ed49209f7cf",
+    "sha256": "cd2ac9ea4e3949e7a86a27842823481c1e06ef4e964b1a96bcffe35d84e68783"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 56646,
+    "md5": "f471e2438baae3d836b70122e9a12e4a",
+    "sha256": "96b66cd9413f18645b60e108399060ce0f8942e20a098fedd7368f9683e55e5c"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 35.16
+  },
+  "passed": true
+ }
+}

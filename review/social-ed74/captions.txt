@@ -1,0 +1,142 @@
+NERAZZURRI DAILY — SOCIAL PACK
+Date: November 14, 2026 (Saturday)
+Edition: ed74 — https://www.nerazzurridaily.com/p/edition-74/
+Slug: calha-renewal
+Video: ND-2026-11-14-ed74-calha-renewal-voiced.mp4 — 36.20 s, 6 beats, 1080x1920
+Suggested posting window: 8–10 AM ET, after the morning email (it went out at 6:08 AM ET).
+Audio: the MP4 carries the VOICEOVER ONLY — no music, and no platform music is ever added
+(the owner's choice of Sept 26, 2026). AAC, 48 kHz, stereo, 36.16 s.
+Thumbnail style: number ("2 ÇALHANOĞLU STORIES. THEY DON'T AGREE.").
+
+------------------------------------------------------------------
+YOUTUBE SHORTS
+Posted automatically at 9:05 AM ET via Postiz. The MP4 carries the voiceover only, no music —
+the owner's choice of Sept 26, 2026.
+The 9:16 thumbnail is sent to YouTube with the post (the 16:9 file is the fallback); the same
+9:16 image opens the video for 1 second, which makes it the TikTok cover.
+
+TITLE
+Inter won't lose Çalhanoğlu for free — two reports, two different stories #Shorts
+
+DESCRIPTION
+Inter won't lose Çalhanoğlu for free — and the two papers reporting it don't agree.
+https://www.nerazzurridaily.com/go/yt/?ed=74
+Blue means the club said it. Pink means only the papers did.
+REPORTED · Sky Sport Italia (Gianluca Di Marzio), Nov 13: Çalhanoğlu's contract runs out in June, renewing him is Inter's priority, and Juventus are ready to sign him on a free transfer.
+REPORTED · FCInterNews, Nov 13: Inter have promised Çalhanoğlu and his agents another meeting, he gives Inter priority, and Juventus only made a few phone calls early this year — never an offer in writing.
+REPORTED · FCInterNews, Nov 13: Marcus Thuram is expected back with the group next week and available at Atalanta.
+Read today's edition: https://www.nerazzurridaily.com/p/edition-74/
+Fan-made — not affiliated with FC Internazionale Milano.
+#Inter #SerieA #Calhanoglu #AtalantaInter #ForzaInter
+
+PINNED COMMENT
+Does Çalhanoğlu sign a new Inter contract — yes or no? Reply in the comments.
+https://www.nerazzurridaily.com/go/yt/?ed=74&v=pinned
+
+TAGS
+Inter, SerieA, Calhanoglu, AtalantaInter, ForzaInter
+
+------------------------------------------------------------------
+TIKTOK
+Posted automatically at 9:05 AM ET via Postiz. The MP4 carries the voiceover only, no music —
+the owner's choice of Sept 26, 2026.
+Suggested posting window: 8–10 AM ET. (No Inter fixture today — international break — so there
+is no full-time window to work around.)
+
+TITLE
+Inter won't lose Çalhanoğlu for free — two reports, two stories
+
+CAPTION
+Inter won't lose Çalhanoğlu for free. Per Sky Sport Italia his deal ends in June; per FCInterNews Juve never put an offer in writing. #Inter #Calhanoglu #SerieA
+https://www.nerazzurridaily.com/go/tt/?ed=74
+
+------------------------------------------------------------------
+FACEBOOK (draft for JohnnyMac's own profile — never posted by this task)
+
+Today's Nerazzurri Daily leads on Hakan Çalhanoğlu: his contract runs out in June, and the two
+Italian outlets covering it tell completely different stories about how close Juventus really are.
+If you know one Inter fan, send them nerazzurridaily.com/go/fb/?ed=74
+
+------------------------------------------------------------------
+REDDIT
+None today — the r/FCInterMilan fixtures post is a Monday item.
+
+------------------------------------------------------------------
+BEAT TABLE
+
+1. 00.0–04.7  cover / NEUTRAL (nero)
+   ON SCREEN: EDITION NO. 74 · NOVEMBER 14 — "INTER WON'T LOSE / ÇALHANOĞLU FOR FREE."
+   VOICE: "Inter will not lose Çalhanoğlu to Juventus for nothing. Here's why."
+   SOURCE: stance — opinion, no new fact.
+
+2. 04.7–10.7  item / REPORTED (pink)
+   ON SCREEN: REPORTED · SKY SPORT ITALIA · NOV 13 — "HIS CONTRACT / ENDS IN JUNE."
+              sub: JUVENTUS ARE READY TO SIGN HIM ON A FREE TRANSFER.
+   VOICE: "Di Marzio says his contract ends in June, and Juventus are ready to sign him on a free."
+   SOURCE: Sky Sport Italia / Gianluca Di Marzio, Nov 13 (edition No. 74, pink bar).
+
+3. 10.7–15.6  item / NEUTRAL (nero)
+   ON SCREEN: OUR TAKE — "LETTING HIM WALK / TO JUVENTUS WOULD / BE UNFORGIVABLE."
+              sub: THE MIDFIELD IS BUILT AROUND HIM.
+   VOICE: "Losing him to Juventus for nothing would be the worst outcome of this season."
+   SOURCE: opinion only — introduces no fact that is not on beat 2 or 4.
+
+4. 15.6–24.0  item / REPORTED (pink)
+   ON SCREEN: REPORTED · FCINTERNEWS · NOV 13 — "JUVE ONLY CALLED. / NEVER AN OFFER / IN WRITING."
+              sub: INTER HAVE PROMISED HIM ANOTHER MEETING. HE GIVES INTER PRIORITY.
+   VOICE: "FCInterNews says Juventus only made phone calls, never a written offer, and Inter
+           promised him another meeting."
+   SOURCE: FCInterNews, Nov 13 (edition No. 74, pink bar).
+
+5. 24.0–28.7  fixture / NEUTRAL (nero)
+   ON SCREEN: NEXT UP · SERIE A · MATCHDAY 12 — ATALANTA — AWAY · SUNDAY, NOVEMBER 22 —
+              2:45 PM ET — 20:45 CET — US TV: PARAMOUNT+
+   VOICE: "Inter play Atalanta away on Sunday, two forty-five Eastern."
+   SOURCE: edition No. 74, NEXT UP.
+
+6. 28.7–35.2  end / NEUTRAL (nero)
+   ON SCREEN: NERAZZURRI DAILY — SUBSCRIBE TO THE FREE DAILY NEWSLETTER — NERAZZURRIDAILY.COM
+   VOICE: "Does Çalhanoğlu sign? Tell me in the comments. Read it first at Nerazzurri Daily dot com."
+
+(Plus the 1.0 s cover frame at the head of the file, which is the 9:16 thumbnail.)
+
+------------------------------------------------------------------
+VERIFIED
+
+Every claim in this pack comes from data/edition-74.json in the repo, fetched this run from
+raw.githubusercontent.com and verified by the edition's own controls at 5:30 AM ET.
+  sha256 of edition.json as fetched: 109b4d3442899f011022a7461811eb9f3d742de9c0985709820a41097fb877cb
+  date field: 2026-11-14 (matches today, Eastern)
+No new research was done and no claim enters here that the edition does not carry.
+
+  - Çalhanoğlu renewal, both readings — edition No. 74, REPORTED bar, kicker
+    "SKY SPORT ITALIA · FCINTERNEWS · NOV 13".
+  - Thuram back for Atalanta — edition No. 74, REPORTED bar, kicker "FCINTERNEWS · NOV 13".
+  - Next fixture Atalanta away, Nov 22, 2:45 PM ET / 20:45 CET, Paramount+ — edition No. 74, NEXT UP.
+
+Checks run this morning:
+  - Edition page committed: p/edition-74/index.html returns 200 from the repo.
+  - Brevo campaign 63 "Nerazzurri Daily No. 74 — Italy need only a draw in Brussels on Sunday":
+    status "sent", 6:08:05 AM ET.
+  - data/posted-ed74.json absent, data/tiktok-ed74.json and data/youtube-ed74.json absent before
+    this run — nothing had been posted or built for No. 74 yet.
+  - Kill switches in data/social-switch.json: tiktok_autopost true, youtube_autopost true.
+
+Links were NOT fetched: a scheduled run's shell cannot reach the live site, so a failed fetch would
+not be evidence of anything. The three URLs used here are the fixed tracking doors and the edition's
+own page URL, pasted verbatim with N = 74.
+
+------------------------------------------------------------------
+ALTERNATIVES (not used today)
+
+  - "Italy need only a draw in Brussels" — the edition's own headline. CONFIRMED (inter.it, Nov 11),
+    four Inter players in the squad. Strong and blue, but it is an Italy story on an Inter channel,
+    and the stance would have been about the national team.
+  - Inter Women vs Juventus at the Breda, free entry, Rai 2. CONFIRMED (inter.it / FIGC, Nov 14).
+    Genuinely shareable; held back because the renewal story is the one fans argue about.
+  - Thuram back for Bergamo, Bonny and Stanković out about a month. REPORTED (FCInterNews, Nov 13) —
+    used as the thumbnail pill instead.
+
+NOTE ON REGISTERS TODAY: both fact beats are pink. The Çalhanoğlu story is press-only on both sides
+— nobody at the club has said anything — so there is no honest blue beat in it, and the video says so
+twice rather than borrowing a confirmed fact from an unrelated story.
