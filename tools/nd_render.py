@@ -373,13 +373,14 @@ a{color:#0A2A66}
 # and the /go/ doors stay bare on purpose: they are landing pages with one job.
 NAV_ITEMS = [('/', 'Editions'), ('/fixtures/', 'Fixtures'), ('/results/', 'Results'), ('/injuries/', 'Injuries'),
              ('/how-to-watch-inter-milan-in-the-usa/', 'Watch in the US')]
-CSS += """
+NAV_CSS = """
 .nav{background:#EEF1F6;border-bottom:1px solid #D8DFEC;padding:0 28px;display:flex;flex-wrap:wrap;column-gap:20px}
 .nav a{font-family:Oswald,sans-serif;font-weight:700;font-size:15px;letter-spacing:.05em;text-transform:uppercase;color:#0A2A66;text-decoration:none;padding:11px 0 9px;border-bottom:3px solid transparent}
 .nav a:hover{border-bottom-color:#8FB2F0}
 .nav a[aria-current]{color:#0B1020;border-bottom-color:#2B5BB8}
 @media(max-width:520px){.nav{padding-left:16px;padding-right:16px;column-gap:16px}.nav a{font-size:14px}}
 """
+CSS += NAV_CSS   # named so tools/nd_legacy_forms.py can give the legacy pages the same rules
 NAV_SHORT = {'/how-to-watch-inter-milan-in-the-usa/': 'US TV'}   # the phone label, so the five links stay on one line
 def nav(here=''):
     """The strip under the top bar. `here` is the current page's path: that link is marked as the current page."""
@@ -392,7 +393,7 @@ def nav(here=''):
 # wordmark face (Anton) and the kit stripes. Every bar now carries both. The home page and the reference pages get the
 # tall block (.mh, built like the social card, with the navigation inside it); edition pages keep the slim bar, because
 # the masthead image under it already says the name at full size. Text keeps the 13px floor (the phone eyebrow drops its last phrase to fit).
-CSS += """
+HEAD_CSS = """
 .top{position:relative;overflow:hidden;padding:15px 88px 15px 28px}
 .top::after,.mh::after{content:"";position:absolute;top:0;right:0;bottom:0;width:60px;background:linear-gradient(90deg,#0F1526 0 10px,#4A7BE0 10px 18px,#0F1526 18px 28px,#4A7BE0 28px 36px,#0F1526 36px 46px,#4A7BE0 46px 54px,#0F1526 54px 60px)}
 .top a.wm{font-family:Anton,Oswald,sans-serif;font-weight:400;font-size:28px;line-height:1;letter-spacing:0}
@@ -416,6 +417,7 @@ CSS += """
 .mh .nav{margin-top:14px;padding:0 52px 0 0;column-gap:13px}.mh .nav a{font-size:13px;padding:14px 0 11px}
 .nav .nl{display:none}.nav .ns{display:inline}}
 """
+CSS += HEAD_CSS
 def masthead(here=''):
     """The header of the home page and the reference pages: the social card's block, with the navigation inside it."""
     return ('<header class="mh"><div class="mh-row"><div><p class="mh-eye">Inter Milan · in English<span class="x3"> · every morning</span></p>'

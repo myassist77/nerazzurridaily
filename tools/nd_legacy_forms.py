@@ -4,7 +4,9 @@ the renderer puts on every JSON edition: the Brevo form under the dek, the closi
 the phone sticky bar, the "Subscribe" top-bar link and the social/Twitter meta.
 
   python3 tools/nd_legacy_forms.py            # every p/edition-N/ without data/edition-N.json
-Idempotent: the form step skips a page that carries id="sib-form", the nav step one that carries class="pn". Run from the repo root.
+Idempotent: the form step skips a page that carries id="sib-form", the nav step one that carries class="pn",
+the header step (Nov 14, 2026: the striped top bar, the navigation strip, the footer links) one that carries class="nav".
+Run from the repo root. The rebuild-pages workflow runs it after re-rendering every JSON edition.
 """
 import glob, html, json, os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
@@ -105,11 +107,34 @@ def inject_doors(path):
     open(path, 'w', encoding='utf-8').write(s)
     return 'done'
 
+def inject_header(path):
+    """Fifth idempotent step (Nov 14, 2026): the header and navigation the renderer gives every JSON edition - the heavy
+    wordmark and the kit stripes on the top bar, the navigation strip under it, and the page links in the footer."""
+    s = open(path, encoding='utf-8').read()
+    if 'class="nav"' in s:
+        return 'already'
+    fonts = re.search(r'https://fonts\.googleapis\.com/css2\?[^"]+', R.FONTS).group(0)
+    s, k = re.subn(r'https://fonts\.googleapis\.com/css2\?[^"]+', lambda m: fonts, s, count=1)
+    assert k == 1, path
+    assert s.count('.top{') == 1 and '</style>' in s, path   # the page's own bar rule comes first, so the new rules override it
+    s = s.replace('</style>', R.NAV_CSS + R.HEAD_CSS + '</style>', 1)
+    s, k = re.subn(r'(<div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a><span class="util">)(Edition No\. \d+ · [^<]*)(<a href="#subscribe">Subscribe</a></span></div>)',
+                   lambda m: m.group(1) + '<span class="ux">' + m.group(2) + '</span>' + m.group(3) + R.nav().rstrip('\n'), s, count=1)
+    assert k == 1, path
+    old = '<a href="/">All editions</a> · <a href="https://www.youtube.com/@nerazzurridaily"'
+    assert s.count(old) == 1, path
+    s = s.replace(old, '<a href="/">All editions</a> · <a href="/fixtures/">Fixtures</a> · <a href="/results/">Results</a> · <a href="/injuries/">Injuries</a>'
+                       ' · <a href="/how-to-watch-inter-milan-in-the-usa/">Watch in the US</a> · <a href="https://www.youtube.com/@nerazzurridaily"', 1)
+    R.require_signup_form(s, path); R.require_beacon(s, path)
+    open(path, 'w', encoding='utf-8').write(s)
+    return 'done'
+
 if __name__ == '__main__':
     done = 0
     for p in sorted(glob.glob('p/edition-*/index.html'), key=lambda x: int(re.search(r'edition-(\d+)', x).group(1))):
         n = int(re.search(r'edition-(\d+)', p).group(1))
         if os.path.exists(f'data/edition-{n}.json'):
             continue
-        r = inject(p); r2 = inject_nav(p); r3 = inject_share(p); r4 = inject_doors(p); print(f'{p}: form {r}, nav {r2}, share {r3}, doors {r4}'); done += 'done' in (r, r2, r3, r4)
+        r = inject(p); r2 = inject_nav(p); r3 = inject_share(p); r4 = inject_doors(p); r5 = inject_header(p)
+        print(f'{p}: form {r}, nav {r2}, share {r3}, doors {r4}, header {r5}'); done += 'done' in (r, r2, r3, r4, r5)
     print(f'{done} legacy pages updated')

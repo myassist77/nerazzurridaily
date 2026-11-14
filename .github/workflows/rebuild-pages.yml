@@ -1,0 +1,73 @@
+name: rebuild-pages
+# Re-renders every published edition page with the current renderer, so a change to the header, the navigation,
+# the footer or the page CSS reaches the editions that are already out (added Nov 14, 2026 with the striped header
+# and the navigation strip). Run by hand only. It commits p/edition-*/index.html and nothing else, and only when
+# every check below passes. It never builds a masthead, an email, an index page, the feed or the sitemap.
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: 'Commit the rebuilt pages when every check passes (false = build and check only)'
+        required: false
+        default: 'true'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: edition-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Re-render every JSON edition (the page only; build/ is scratch)
+        run: |
+          for f in $(ls data/edition-*.json | sort -V); do python3 tools/nd_render.py "$f" > /dev/null; done
+          git status --short p | wc -l
+      - name: Legacy editions (HTML only) - the same header, navigation and footer links
+        run: python3 tools/nd_legacy_forms.py
+      - name: Every edition page carries one top bar, one navigation strip, one form and the current fonts
+        run: |
+          python3 - <<'PY'
+          import glob, re, sys
+          bad = []; pages = sorted(glob.glob('p/edition-*/index.html'), key=lambda p: int(re.search(r'edition-(\d+)', p).group(1)))
+          for p in pages:
+              s = open(p, encoding='utf-8').read()
+              checks = {'top bar': s.count('<div class="top">') == 1, 'navigation': s.count('<nav class="nav"') == 1,
+                        'form': s.count('id="sib-form"') == 1, 'fonts': 'family=Anton' in s, 'stripes': '.top::after' in s,
+                        'results link': s.count('href="/results/"') >= 2, 'beacon': 'static.cloudflareinsights.com/beacon.min.js' in s}
+              miss = [k for k, v in checks.items() if not v]
+              if miss: bad.append((p, miss))
+          print(len(pages), 'edition pages checked;', len(bad), 'failed')
+          for b in bad: print(' ', b)
+          sys.exit(1 if bad or not pages else 0)
+          PY
+      - name: Every HTML page carries the analytics beacon
+        run: python3 tools/check_beacon.py
+      - name: Install headless Chromium
+        run: |
+          pip install --quiet playwright
+          python -m playwright install --with-deps chromium
+      - name: The signup form still submits (home, subscribe, newest and oldest edition, the reference pages)
+        run: python tools/check_signup_form.py
+      - name: Commit the rebuilt pages
+        env:
+          PUBLISH: ${{ github.event.inputs.publish }}
+        run: |
+          git config user.name "nerazzurri-daily[bot]"
+          git config user.email "mail@nerazzurridaily.com"
+          git add p/edition-*/index.html
+          if git diff --cached --quiet; then echo "nothing to commit - every page is already current"; exit 0; fi
+          git diff --cached --stat | tail -1
+          if [ "$PUBLISH" = "false" ]; then echo "publish=false - built and checked only"; exit 0; fi
+          git commit -q -m "Rebuild every edition page with the current header and navigation" -m "Built by the rebuild-pages workflow, run $GITHUB_RUN_ID."
+          for i in 1 2 3; do git push origin HEAD:main && break; echo "push rejected (try $i) - rebasing onto origin/main"; git fetch -q origin main && git rebase -q FETCH_HEAD || exit 1; done
+          echo "committed $(git rev-parse HEAD)"

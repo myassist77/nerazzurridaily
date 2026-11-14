@@ -76,3 +76,19 @@ wordmark and a stripe end-cap; edition pages also carry the light `nav()` strip 
 doors stay bare on purpose (landing pages with one job). On phones the last nav link reads "US TV" so the five links
 fit one line. Page text keeps the 13px floor. Editions before No. 74 keep the header they were built with: an edition
 page is rendered once, on its morning.
+
+## Rebuilding every edition page (Nov 14, 2026)
+
+A change to the header, the navigation, the footer or the page CSS reaches a new edition on its own, but an edition that is
+already published keeps the page it was built with. `.github/workflows/rebuild-pages.yml` (run by hand: Actions → rebuild-pages,
+or a `workflow_dispatch` on `rebuild-pages.yml`) brings them all up to date in one commit:
+
+1. it re-renders every `data/edition-N.json` with `nd_render.py` (only `p/edition-N/index.html` is kept; `build/` is scratch,
+   and no masthead, email, index page, feed or sitemap is touched);
+2. it runs `nd_legacy_forms.py`, whose header step gives editions No. 1–9 (HTML only) the same top bar, navigation strip
+   and footer links from the renderer's own `NAV_CSS`, `HEAD_CSS` and `nav()`;
+3. it checks every edition page (one top bar, one navigation strip, one signup form, the current fonts, the beacon) and runs
+   `check_beacon.py` and `check_signup_form.py`; it commits only when all of that passes, and commits nothing otherwise.
+
+It shares the `edition` workflow's concurrency group, so it never runs alongside a morning build. A push by a workflow does
+not start the other workflows: dispatch `signup-form.yml` afterwards if you want its run on the new commit.
