@@ -28,6 +28,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install what the renderer imports (the edition workflow installs the same parsers)
+        run: pip install --quiet beautifulsoup4 lxml html5lib
       - name: Re-render every JSON edition (the page only; build/ is scratch)
         run: |
           for f in $(ls data/edition-*.json | sort -V); do python3 tools/nd_render.py "$f" > /dev/null; done
