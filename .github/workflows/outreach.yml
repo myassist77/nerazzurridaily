@@ -1,0 +1,42 @@
+name: outreach
+# Sends queued partner emails through the Hostinger mailbox and reads replies.
+# Everything personal is encrypted in growth/outreach/*.enc; logs carry counts only.
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "selftest | send | check | all"
+        default: "all"
+  schedule:
+    - cron: "23 14 * * *"
+    - cron: "23 21 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: outreach
+  cancel-in-progress: false
+jobs:
+  mail:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q cryptography
+      - name: run
+        env:
+          OUTREACH_KEY: ${{ secrets.OUTREACH_KEY }}
+          MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
+        run: python tools/nd_mail.py "${{ github.event.inputs.mode || 'all' }}"
+      - name: commit
+        if: always()
+        run: |
+          git config user.name "nerazzurri-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add growth/outreach
+          git diff --cached --quiet && exit 0
+          git commit -q -m "outreach: state"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
+          exit 1

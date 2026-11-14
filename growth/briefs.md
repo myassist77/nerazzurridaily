@@ -35,7 +35,8 @@ Edited only by the Growth Lead. Status: running | building | waiting.
 ## Partnerships
 - Owns: placements won per week.
 - Does: Inter Clubs abroad, English-language creators, podcasts, newsletter swaps. One pitch, one follow-up.
-- Status: waiting. Template family approved Nov 14, 2026, but the Hostinger connection has no mailbox tool, so there is no automated send route from the site's own mailbox yet. Owner decision pending on the route.
+- Status: waiting on one thing: the MAIL_PASSWORD repository secret (owner enters it once). Route chosen Nov 14, 2026: the outreach workflow sends through the Hostinger mailbox and reads replies.
+- How: write the full message list to growth/outreach/queue.enc (Fernet, key in the private Drive file nerazzurri-outreach-key.txt), each item {id, to, to_name, subject, body, kind: pitch|followup, not_before?}. The workflow enforces: two messages per address at most, follow-up 5+ days after the pitch and only without a reply, 10 a run, 20 a day, signed Support Team. Read growth/outreach/state.enc for what was sent and who replied; status.json has counts.
 
 ## Community
 - Owns: replies and referral signups.

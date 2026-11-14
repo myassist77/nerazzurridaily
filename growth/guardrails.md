@@ -10,3 +10,4 @@ Written into every brief. The Lead may not relax them.
 - Confirmed and reported stay separate in the edition; every item sourced. No growth test changes what the edition says.
 - No match footage, club crests or commercial music. No "AI-generated" label on TikTok unless the owner says so.
 - Growth agents never edit, create or delete scheduled tasks from a run, and never edit the 5:30, 6:45 or 7:30 task prompts.
+- Partner addresses, message text and replies exist in the repo only inside the encrypted files growth/outreach/*.enc. Never in plain text, never in a log, a commit message or a ledger line.
