@@ -1,8 +1,8 @@
 {
  "n": 74,
- "built_at_utc": "2026-11-14T15:21:03+00:00",
- "run_id": "43609613043",
- "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43609613043",
+ "built_at_utc": "2026-11-14T23:00:51+00:00",
+ "run_id": "43650977945",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43650977945",
  "passed": true,
  "steps": {
   "mast": "success",
@@ -10,14 +10,14 @@
   "checks": "success"
  },
  "files_md5": {
-  "p/edition-74/index.html": "d3748269b42879099ff6a6521ac8ed13",
+  "p/edition-74/index.html": "1c56925f13b3ab11467939187e85ae8c",
   "assets/mast/edition-74.png": "ab979764e6bb612d8e7854c42b04a353",
   "data/edition-74.json": "efee5226afd31790c2cd0e17d494c4bd",
-  "index.html": "6487e6bd2aba4efdee9a159c1cf5d4e2",
-  "subscribe/index.html": "4d75b8ff976ca412422e12bada53053f",
-  "fixtures/index.html": "7b42fe0f330eed33af9e340464ee7023",
+  "index.html": "653e1d10cfa862757dbf0c3e3e1a0e59",
+  "subscribe/index.html": "7dc53da5db4369d4db5f597f951d22c2",
+  "fixtures/index.html": "65ae22b2119c917a0b60880580aa4b26",
   "feed.xml": "d8ecf39ba81e05e8b79d39305e68520a",
-  "sitemap.xml": "c03753c4f61219502bedc36d8eb016c4"
+  "sitemap.xml": "f71c9e034f9f6570c8c0ef54a49f74d5"
  },
  "title": "Italy need only a draw in Brussels on Sunday",
  "date": "2026-11-14",
