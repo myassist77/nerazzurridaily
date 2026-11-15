@@ -13,6 +13,7 @@ The Scorekeeper (the Monday numbers task) is the only source of the score. No ag
 - briefs.md: each agent's one number, what it may do alone, current priority. Only the Growth Lead edits it.
 - guardrails.md: rules no agent may break and the Lead may not relax.
 - decisions.md: what the owner decided, with dates. Only the owner's own decisions go here.
+- build-queue.md: what gets built next, in order. The Builder takes the first ready item; the Reviewer puts it live.
 - ledger.jsonl: one JSON object per line, append only. Every run that changes something logs it BEFORE the change takes effect:
   {"date","agent","action","expected","check_by","result"} - result stays null until the Lead fills it at check_by.
 
