@@ -1,0 +1,44 @@
+name: bluesky
+# Answers the people who reply to or mention us on Bluesky - nobody else (tools/nd_bsky.py holds the rules).
+# Everything personal is encrypted in growth/community/bsky-*.enc; logs carry counts only.
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "selftest | read | send | all"
+        default: "all"
+  push:
+    branches: [main]
+    paths: ["growth/community/bsky-queue.enc"]
+  schedule:
+    - cron: "40 */3 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: bluesky
+  cancel-in-progress: false
+jobs:
+  replies:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q cryptography
+      - name: run
+        env:
+          OUTREACH_KEY: ${{ secrets.OUTREACH_KEY }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+        run: python tools/nd_bsky.py "${{ github.event.inputs.mode || 'all' }}"
+      - name: commit
+        if: always()
+        run: |
+          git config user.name "nerazzurri-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add growth/community
+          git diff --cached --quiet && exit 0
+          git commit -q -m "bluesky: state"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
+          exit 1
