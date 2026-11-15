@@ -95,3 +95,13 @@ navigation, signup form and footer as the reference pages since Nov 14, 2026, an
 
 It shares the `edition` workflow's concurrency group, so it never runs alongside a morning build. A push by a workflow does
 not start the other workflows: dispatch `signup-form.yml` afterwards if you want its run on the new commit.
+
+## Growth team tools (added Nov 14-15, 2026)
+
+- `nd_mail.py` with `.github/workflows/outreach.yml`: sends the partner outreach queue through the site mailbox and reads replies (14:23 and 21:23 UTC). Partner data lives only in the encrypted `growth/outreach/*.enc` files. Rules are in the file's docstring.
+- `nd_social_brand.py`: draws the profile picture and the Bluesky and Facebook covers into `assets/brand/`.
+- `nd_evergreen.py` also builds one page per match under `/match/`.
+- `data/mentions.json`: partner mentions printed as "From our friends." in that date's edition. An empty list changes nothing.
+- `/subscribe/sent/`: loaded in a hidden frame when a signup goes through, so signups can be counted. `check_signup_form.py` fails unless it is requested exactly once.
+- `.well-known/atproto-did` and `_config.yml`: prove the domain for the Bluesky handle @nerazzurridaily.com. Never delete either.
+- Team memory and rules: `growth/README.md`.
