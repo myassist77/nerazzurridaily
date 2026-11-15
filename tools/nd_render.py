@@ -35,6 +35,11 @@ SUBLINE = ('What the club has confirmed, what the papers are only reporting — 
 BUTTON = 'Send me tomorrow’s edition'
 FINE = 'Free · one email a morning · unsubscribe any time'
 SOURCES_LINE = 'built from Gazzetta dello Sport, Corriere dello Sport, Sky Sport Italia and Inter.it'
+# The footer's social links, one place for every page (Nov 15, 2026: Bluesky and the Facebook Page added; every social
+# link and every link under Sources opens in a new tab, so the reader keeps the Nerazzurri Daily page open).
+SOCIALS = [('YouTube', 'https://www.youtube.com/@nerazzurridaily'), ('TikTok', 'https://www.tiktok.com/@nerazzurridaily'),
+           ('Bluesky', 'https://bsky.app/profile/nerazzurridaily.com'), ('Facebook', 'https://www.facebook.com/nerazzurridaily')]
+SOCIAL_FOOT = ' &middot; '.join(f'<a href="{u}" rel="noopener" target="_blank">{n}</a>' for n, u in SOCIALS)
 OG_BRAND = f'{SITE}/assets/og/nerazzurri-daily-1200x630.png'
 BYLINE = 'Written every morning by an Inter fan in New Jersey who reads the Italian press so you don\u2019t have to.'
 WHO_HEAD = 'Who writes this'
@@ -486,16 +491,16 @@ def page_blocks(d):
             elif t == 'ask': out.append(f'<p class="ask">{b["html"]}</p><p class="byline">{esc(BYLINE)}</p>' + share_block(d['n'], d['title'])); signed = True
             elif t == 'next': out.append(f'<div class="next"><b>Next edition</b><span>{esc(b["text"])}</span></div>')
             elif t == 'follow':
-                links = ' · '.join(f'<a href="{esc(l["url"])}" rel="noopener">{esc(l["label"])}</a>' for l in b['links'])
+                links = ' · '.join(f'<a href="{esc(l["url"])}" rel="noopener" target="_blank">{esc(l["label"])}</a>' for l in b['links'])
                 out.append(f'<p class="follow">FOLLOW {links}</p>')
         elif t == 'sources':
             if not signed:   # editions without an 'ask' block (10-12) still get the byline + share line
                 out.append(f'<div class="signoff"><p class="byline">{esc(BYLINE)}</p>' + share_block(d['n'], d['title']) + '</div>'); signed = True
             for m in mentions_for(d):
-                out.append(f'<div class="in"><p><b>From our friends.</b> {esc(m["text"])} <a href="{esc(m["url"])}" rel="noopener">{esc(m["name"])}</a></p></div>')
+                out.append(f'<div class="in"><p><b>From our friends.</b> {esc(m["text"])} <a href="{esc(m["url"])}" rel="noopener" target="_blank">{esc(m["name"])}</a></p></div>')
             out.append(prev_next(d['n']))
             out.append(cta_band())
-            links = '<br>\n'.join(f'<a href="{esc(l["url"])}" rel="noopener">' + (f'<b>{esc(l["outlet"])}</b> · ' if l.get('outlet') else '') + f'{esc(l["title"])}</a>' for l in b['links'])
+            links = '<br>\n'.join(f'<a href="{esc(l["url"])}" rel="noopener" target="_blank">' + (f'<b>{esc(l["outlet"])}</b> · ' if l.get('outlet') else '') + f'{esc(l["title"])}</a>' for l in b['links'])
             out.append(f'<div class="sources"><div class="sec"><b>Sources</b></div><p>{links}</p></div>')
         elif t == 'p': out.append(f'<div class="in"><p>{b["html"]}</p></div>')
         elif t == 'poll': pass   # dropped from the design on Sept 19, 2026; kept in the JSON as history
@@ -517,7 +522,7 @@ def render_page(d):
     body = (f'<body><div class="sheet">\n<div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a><span class="util"><span class="ux">Edition No. {n} · {shortdate(d["date"])} · </span><a href="#subscribe">Subscribe</a></span></div>' + nav() +
             f'<h1 class="sr">{esc(title)}</h1><img class="mast" src="/assets/mast/edition-{n:02d}.png" alt="{esc(alt)}">'
             + page_blocks(d) +
-            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="/">All editions</a> &middot; <a href="/fixtures/">Fixtures</a> &middot; <a href="/results/">Results</a> &middot; <a href="/injuries/">Injuries</a> &middot; <a href="/how-to-watch-inter-milan-in-the-usa/">Watch in the US</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div>\n'
+            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="/">All editions</a> &middot; <a href="/fixtures/">Fixtures</a> &middot; <a href="/results/">Results</a> &middot; <a href="/injuries/">Injuries</a> &middot; <a href="/how-to-watch-inter-milan-in-the-usa/">Watch in the US</a> &middot; ' + SOCIAL_FOOT + '</div>\n</div>\n'
             + STICK + HOME_FORM_JS + PN_JS + SHARE_JS + '\n</body></html>\n')
     return require_signup_form(head + body, f'p/edition-{n}/index.html')
 
@@ -639,7 +644,7 @@ def render_subscribe(count, first_iso):
             '</ul>\n'
             + form_block(head='Subscribe', sub='The Kickoff Card \u2014 all 38 Serie A dates as a phone wallpaper \u2014 comes with your welcome email.') + proof_line(count, first_iso) +
             '<div class="sub-hero"><p class="fine">Not sure yet? <a href="/">Read any past edition</a> first.</p></div>\n'
-            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="/">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n'
+            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="/">All editions</a> &middot; ' + SOCIAL_FOOT + '</div>\n'
             '</div>\n' + HOME_FORM_JS + '\n</body></html>\n')
     return require_signup_form(require_beacon(page, 'subscribe/index.html'), 'subscribe/index.html')
 
@@ -659,7 +664,7 @@ def render_thanks():
             f'<p>Know an Interista who would read it? Send them the free signup: <a href="{wa}" rel="noopener" target="_blank">WhatsApp</a> \u00b7 '
             f'<a href="{door_url("copy", to="/subscribe/")}" id="copy-link">Copy link</a></p>'
             '<p class="fine">Were you forwarded this? <a href="/subscribe/">Get it free every morning</a>.</p></div>\n'
-            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="/">All editions</a> &middot; <a href="/fixtures/">Fixtures</a></div>\n'
+            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="/">All editions</a> &middot; <a href="/fixtures/">Fixtures</a> &middot; ' + SOCIAL_FOOT + '</div>\n'
             '</div>\n' + SHARE_JS + '\n</body></html>\n')
     return require_beacon(page, 'thanks/index.html')
 
@@ -723,7 +728,7 @@ def render_fixtures(count, first_iso):
             f'<p class="fx-note">Dates are the league\u2019s weekend windows ({esc(season["source"])}); the exact day and the Eastern kickoff appear above once Serie A sets them. '
             f'The pink dot marks the derby, Juventus and Napoli. HOME is San Siro.</p>'
             + cta_band().replace('class="ctaband"', 'class="ctaband end"') +
-            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="/">All editions</a> &middot; <a href="/fixtures/">Fixtures</a> &middot; <a href="/results/">Results</a> &middot; <a href="/injuries/">Injuries</a> &middot; <a href="/how-to-watch-inter-milan-in-the-usa/">Watch in the US</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n'
+            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="/">All editions</a> &middot; <a href="/fixtures/">Fixtures</a> &middot; <a href="/results/">Results</a> &middot; <a href="/injuries/">Injuries</a> &middot; <a href="/how-to-watch-inter-milan-in-the-usa/">Watch in the US</a> &middot; ' + SOCIAL_FOOT + '</div>\n'
             '</div>\n' + STICK + HOME_FORM_JS + '\n</body></html>\n')
     return require_signup_form(require_beacon(page, 'fixtures/index.html'), 'fixtures/index.html')
 
@@ -769,7 +774,7 @@ def build_index():
             f'<div class="who"><div class="mk">ND</div><div><b>{esc(WHO_HEAD)}</b><p>{esc(WHO)}</p></div></div>\n'
             f'<div class="idx compact"><h2>Every edition</h2><p class="sub">Every morning since No. 1 \u2014 sorted into what is confirmed and what is only reported.</p><ul>{lis}</ul></div>'
             + cta_band().replace('class="ctaband"', 'class="ctaband end"') +
-            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="./">All editions</a> &middot; <a href="/fixtures/">Fixtures</a> &middot; <a href="/results/">Results</a> &middot; <a href="/injuries/">Injuries</a> &middot; <a href="/how-to-watch-inter-milan-in-the-usa/">Watch in the US</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n</div>\n' + HOME_FORM_JS + '\n</body></html>\n')
+            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; <a href="./">All editions</a> &middot; <a href="/fixtures/">Fixtures</a> &middot; <a href="/results/">Results</a> &middot; <a href="/injuries/">Injuries</a> &middot; <a href="/how-to-watch-inter-milan-in-the-usa/">Watch in the US</a> &middot; ' + SOCIAL_FOOT + '</div>\n</div>\n' + HOME_FORM_JS + '\n</body></html>\n')
     require_beacon(page, 'index.html')  # checked BEFORE open(): open('w') truncates the live file
     require_signup_form(page, 'index.html')
     open('index.html', 'w', encoding='utf-8').write(page)
