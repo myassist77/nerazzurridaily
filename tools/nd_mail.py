@@ -14,6 +14,9 @@ Rules enforced here, whatever the queue says:
   - a follow-up only 5+ days after its pitch and only if that address has not written back
   - at most MAX_PER_RUN sends a run and MAX_PER_DAY a day
   - the body must be signed "Nerazzurri Daily Support Team" and must not name the owner
+  - kind "reader" (Nov 14, 2026; written by the Community agent) only ever ANSWERS a reader who wrote to us first: there must be
+    a message from that address, not an automatic one, newer than our last message to it; never to an address that was
+    pitched as a partner; four messages per address at most
 """
 import os, sys, json, ssl, time, smtplib, imaplib, email, email.utils, email.policy, datetime as dt
 from email.message import EmailMessage
@@ -58,7 +61,7 @@ def allowed(item, state):
     """Return (ok, reason). Reasons are generic words, safe for the public log."""
     to = norm(item.get("to")); body = item.get("body") or ""; kind = item.get("kind")
     if not item.get("id") or not to or "@" not in to or not item.get("subject") or not body: return False, "incomplete"
-    if kind not in ("pitch", "followup", "reply"): return False, "bad-kind"
+    if kind not in ("pitch", "followup", "reply", "reader"): return False, "bad-kind"
     if item["id"] in state["sent"]: return False, "already-sent"
     if SIGN not in body: return False, "unsigned"
     low = (body + " " + item["subject"]).lower()
@@ -67,6 +70,13 @@ def allowed(item, state):
     every = sorted((s for s in state["sent"].values() if s["to"] == to), key=lambda s: s["date"])
     prior = [s for s in every if s["kind"] in ("pitch", "followup")]
     inbound = [r for r in state["replies"] if r.get("from") == to and not r.get("auto")]
+    if kind == "reader":
+        # an answer to a reader who wrote first; never opens a conversation, never touches a partner thread
+        if prior: return False, "partner-address"
+        if len(every) >= 4: return False, "limit-four"
+        last = every[-1]["date"] if every else ""
+        if not any((r.get("seen_utc") or "") > last for r in inbound): return False, "nothing-to-answer"
+        return True, "ok"
     if kind == "reply":
         # a reply answers something they wrote after our last message; never opens a conversation
         if not every: return False, "no-pitch"
@@ -95,6 +105,9 @@ def build(item, state):
         prior = sorted((s for s in state["sent"].values() if s["to"] == norm(item["to"])), key=lambda s: s["date"])
         if prior and prior[0].get("message_id"):
             m["In-Reply-To"] = prior[0]["message_id"]; m["References"] = prior[0]["message_id"]
+    if item["kind"] == "reader":   # thread under the reader's own latest message
+        theirs = [r for r in state["replies"] if r.get("from") == norm(item["to"]) and r.get("message_id")]
+        if theirs: m["In-Reply-To"] = theirs[-1]["message_id"]; m["References"] = theirs[-1]["message_id"]
     m.set_content(item["body"])
     return m
 
@@ -174,7 +187,7 @@ def do_check(state):
         match = next((k for mid, k in sent_ids.items() if mid in refs), None) or sent_to.get(frm)
         state["replies"].append({"uid": u, "date": m.get("Date"), "from": frm, "from_name": email.utils.parseaddr(m.get("From") or "")[0],
             "subject": str(make_header(decode_header(m.get("Subject") or ""))), "matched_id": match, "seen_utc": now().isoformat(),
-            "auto": bool(m.get("Auto-Submitted") and m.get("Auto-Submitted") != "no"), "text": text_of(m)})
+            "auto": bool(m.get("Auto-Submitted") and m.get("Auto-Submitted") != "no"), "text": text_of(m), "message_id": m.get("Message-ID")})
         new += 1
     if uids: state["last_uid"] = max(uids)
     state["replies"] = state["replies"][-400:]

@@ -1,5 +1,5 @@
 name: outreach
-# Sends queued partner emails through the Hostinger mailbox and reads replies.
+# Sends queued partner emails and answers to readers through the Hostinger mailbox and reads replies.
 # Everything personal is encrypted in growth/outreach/*.enc; logs carry counts only.
 on:
   workflow_dispatch:
@@ -7,6 +7,9 @@ on:
       mode:
         description: "selftest | send | check | all"
         default: "all"
+  push:   # an answer or a pitch leaves as soon as an agent commits the queue (Nov 14, 2026)
+    branches: [main]
+    paths: ["growth/outreach/queue.enc"]
   schedule:
     - cron: "23 14 * * *"
     - cron: "23 21 * * *"

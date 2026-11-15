@@ -27,3 +27,9 @@ The Scorekeeper (the Monday numbers task) is the only source of the score. No ag
 ## The signup funnel (since Nov 14, 2026, about 23:00 UTC)
 One view of /subscribe/sent/ = one signup sent (the form loads it in a hidden frame; its referrer path is the page the person signed up on). One view of /subscribe/confirmed/ = one confirmation click. Drop rows with bot = 1 or a "Headless" browser.
 Test rows to ignore: Nov 14, 2026, 22:53 and 22:55 UTC, referrer /match/atalanta-vs-inter-2026-11-22/ (two test signups with a stubbed form; no address reached the mailing list).
+
+## The reader question (since Nov 15, 2026)
+Each email ends with "Was today worth your 90 seconds? Yes · Not today". A tap is one view of /go/vote/ed<N>/yes/ or /go/vote/ed<N>/no/ (then the reader lands on /thanks/). The Lead reads them for the week with the same Cloudflare query as the signup funnel, with requestPath_like "/go/vote/%", drops bot and Headless rows, and reports yes and no counts and the share of delivered emails that tapped, under "What moved". Two No answers for every Yes for two weeks running is a finding for the memo's first line.
+
+## Reader mail (since Nov 15, 2026)
+Readers answer the edition and the welcome email by reply. The Community agent reads those messages (encrypted, in growth/outreach/state.enc) and answers each person once through the outreach workflow, kind "reader". What readers ask for, with no names, is kept in growth/community/reader-notes.md; the Lead names the most-asked topic in the memo.
