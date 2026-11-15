@@ -57,6 +57,7 @@ Edited only by the Growth Lead. Status: running | building | waiting.
 - Own: one useful build a week, live without the owner. Queue: growth/build-queue.md, first `ready` item first.
 - Builder (Fridays 3:41 PM ET): builds one item on a branch named build/..., opens a pull request, never merges. May change only tools/nd_evergreen.py and new tools/nd_growth_*.py; at most 250 lines; facts from the edition data only.
 - Reviewer (Saturdays and Tuesdays 1:19 PM ET): a separate agent that did not write it. Checks the files, the size, the automatic checks, the whole diff, rebuilds the site to confirm the edition pages are byte-identical, reads the new page; then merges or rejects. Never edits code.
+- Every workflow's push retry uses rebase --autostash (Nov 15, 2026), so an agent's commit landing during a build no longer stops the edition from publishing.
 - A merged build goes live with the next morning's edition (the edition workflow commits any page folder listed in build/evergreen-paths.txt). Undo = revert the one commit.
 - Not theirs: the edition, the email, the videos, workflows, the navigation bar, scheduled tasks, money, passwords, accounts.
 - Status: running. First build Fri Nov 20, 2026 (transfer news page); first review Sat Nov 21.
