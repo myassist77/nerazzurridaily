@@ -36,7 +36,7 @@ Edited only by the Growth Lead. Status: running | building | waiting.
 ## Partnerships
 - Owns: placements won per week.
 - Does: Inter Clubs abroad, English-language creators, podcasts, newsletter swaps. One pitch, one follow-up.
-- Status: waiting on one thing: the MAIL_PASSWORD repository secret (owner enters it once). Route chosen Nov 14, 2026: the outreach workflow sends through the Hostinger mailbox and reads replies.
+- Status: ready. The mailbox password secret is in place and the workflow's self-test passed on Nov 14, 2026 (23:10 UTC). No blocker. Nothing has been sent yet: the first pitches are queued by the Tuesday Nov 17 run and leave at the workflow's next run after that. Route: the outreach workflow sends through the Hostinger mailbox and reads replies.
 - How: write the full message list to growth/outreach/queue.enc (Fernet, key in the private Drive file nerazzurri-outreach-key.txt), each item {id, to, to_name, subject, body, kind: pitch|followup, not_before?}. The workflow enforces: two messages per address at most, follow-up 5+ days after the pitch and only without a reply, 10 a run, 20 a day, signed Support Team. Read growth/outreach/state.enc for what was sent and who replied; status.json has counts.
 - Owed mentions: add {"date", "name", "url", "text"} to data/mentions.json (public). The renderer prints it in that date's edition, page and email, as "From our friends."
 
