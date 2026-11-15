@@ -10,9 +10,11 @@ tools/nd_bsky.py uses) and nothing has to be reconnected by hand.
 Runs only inside .github/workflows/bluesky-post.yml. Nothing here is personal: the requests and
 the results are plain files.
   data/links/bsky/ed<N>-<kind>.json  a REQUEST, committed by a task:
-        {"n": 75, "kind": "link" | "question" | "video" | "pin", "text": "...",
+        {"n": 75, "kind": "link" | "question" | "video" | "ft" | "pin", "text": "...",
          "image": "assets/mast/edition-75.png" (optional, a path in this repo), "alt": "...",
-         "video": "assets/video/ed75.mp4" (optional, instead of an image; kind "video" needs it)}
+         "video": "assets/video/ed75.mp4" (optional, instead of an image; kinds "video" and "ft" need it)}
+        Kind "ft" (since Nov 15, 2026) is the full-time card of a match played today: file
+        ed<N>-ft.json, N = today's edition, "video": "assets/video/ft-<date>.mp4".
         A post carries a video OR an image, never both (Bluesky allows one kind of media a post).
         The video goes through Bluesky's video service (docs.bsky.app/docs/tutorials/video): a
         service token, upload to video.bsky.app, wait for the processing job, then the post. If
@@ -45,7 +47,7 @@ PASSWORD = os.environ.get("BLUESKY_APP_PASSWORD", "")
 DIR = os.environ.get("BSKY_POST_DIR", "data/links/bsky")
 DRY = os.environ.get("DRY_RUN") == "1"
 HANDLE = "nerazzurridaily.com"
-KINDS = ("link", "question", "video", "pin")
+KINDS = ("link", "question", "video", "ft", "pin")
 MAX_PER_DAY, MAX_ATTEMPTS, MAX_IMAGE, MAX_VIDEO = 5, 3, 950_000, 50_000_000
 VIDEO_HOST = os.environ.get("BSKY_VIDEO_HOST", "https://video.bsky.app")
 TAG_RE = re.compile(r"(?<![\w&/#])#([^\W\d_]\w{1,63})")
@@ -127,7 +129,8 @@ def check(name, req, results, edition_date):
         if img.startswith("/") or ".." in img or not img.startswith("assets/") or not os.path.isfile(img): return False, "bad-image-path"
         if os.path.getsize(img) > MAX_IMAGE: return False, "image-too-large"
     vid = req.get("video")
-    if req["kind"] == "video" and not vid: return False, "no-video"
+    if req["kind"] in ("video", "ft") and not vid: return False, "no-video"
+    if req["kind"] == "ft" and not re.match(r"^assets/video/ft-\d{4}-\d{2}-\d{2}\.mp4$", vid): return False, "not-a-full-time-video"
     if vid:
         if img: return False, "video-and-image"
         if vid.startswith("/") or ".." in vid or not vid.startswith("assets/video/") or not vid.endswith(".mp4") or not os.path.isfile(vid): return False, "bad-video-path"

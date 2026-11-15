@@ -66,6 +66,7 @@ GROUNDS = {
 }
 REGISTER_GROUND = {"CONFIRMED": "azzurro", "REPORTED": "pink", "NEUTRAL": "nero"}
 SITE = "nerazzurridaily.com"
+FOOT = "FREE DAILY EMAIL · " + SITE   # the foot of every beat says what the address is for (owner's decision, Nov 15, 2026)
 FORMATIONS = {  # x (0-100 across), y (0-100, 0 = own goal) — GK first, then lines back to front
     "3-5-2":   [(50, 8), (22, 28), (50, 24), (78, 28), (10, 52), (32, 46), (50, 42), (68, 46), (90, 52), (36, 74), (64, 74)],
     "4-3-3":   [(50, 8), (14, 28), (38, 24), (62, 24), (86, 28), (28, 48), (50, 42), (72, 48), (18, 74), (50, 78), (82, 74)],
@@ -200,7 +201,7 @@ def build_html(idx, b):
         sys.exit(f"BUILD FAILED: unknown beat kind {kind!r}")
 
     if kind != "end":
-        p.append(f'<div class="footer"><div class="bar" style="background:{g["bar"]}"></div><div class="mono url" style="color:{g["url"]}">{esc(SITE)}</div></div>')
+        p.append(f'<div class="footer"><div class="bar" style="background:{g["bar"]}"></div><div class="mono url" style="color:{g["url"]}">{esc(FOOT)}</div></div>')
     p.append(f'<div class="prog" style="background:{g["acc"]};opacity:.9"></div>')
     if prev:
         p.append(f'<div class="wipe" style="background:{prev}"></div>')
