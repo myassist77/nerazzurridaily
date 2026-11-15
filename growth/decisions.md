@@ -7,3 +7,4 @@
   4. Paid test: one capped test of 50 to 100 US dollars in the third week, after the signup pages are tuned.
 - 2026-11-14: Outreach send route: option 1, through the Hostinger mailbox (a workflow using the mailbox's own SMTP and IMAP). Not Brevo.
 - 2026-11-14: New channels as decided in practice: Bluesky and a Facebook Page are live and connected. Threads and Instagram skipped.
+- 2026-11-14: TikTok Business account switch: skipped for now.

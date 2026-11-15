@@ -31,7 +31,7 @@ Edited only by the Growth Lead. Status: running | building | waiting.
 ## Distribution
 - Owns: real visits per channel.
 - Running: the daily video on TikTok and YouTube (do not re-engineer). Since Nov 14, 2026 a daily link post on Bluesky (@nerazzurridaily.bsky.social) through Postiz: the edition's title, one line and the door link /go/bsky/?ed=N, with the masthead image. The same task posts to Threads (door /go/th/) and the Facebook Page (door /go/fb/) as soon as those channels appear in Postiz. Record per edition: data/links/posted-edN.json. Switch: "links_autopost" in data/social-switch.json (missing = on).
-- Status: Bluesky and the Facebook Page (facebook.com/profile.php?id=61596281233324) running. Threads and Instagram: skipped by the owner on Nov 14, 2026 (Threads only signs in through Instagram, and the Instagram username was already taken and not publicly visible). Do not list them as a blocker. The task would still post to Threads if the channel ever appears in Postiz. TikTok tappable link waiting on the Business switch.
+- Status: Bluesky and the Facebook Page (facebook.com/profile.php?id=61596281233324) running. Threads and Instagram: skipped by the owner on Nov 14, 2026 (Threads only signs in through Instagram, and the Instagram username was already taken and not publicly visible). Do not list them as a blocker. The task would still post to Threads if the channel ever appears in Postiz. TikTok Business switch (the tappable bio link): the owner chose on Nov 14, 2026 to skip it for now; the bio keeps the typed address. Do not list it as a blocker; mention it again only if TikTok door visits become the best source. TikTok tappable link waiting on the Business switch.
 
 ## Partnerships
 - Owns: placements won per week.
