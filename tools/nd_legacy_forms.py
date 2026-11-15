@@ -161,12 +161,29 @@ def inject_newtab(path):
     open(path, 'w', encoding='utf-8').write(s)
     return 'done'
 
+def inject_one_line(path):
+    """Eighth idempotent step (Nov 15, 2026): each source stays on one line, cut with an ellipsis; the full text is the
+    link's title, so it shows on hover."""
+    s = open(path, encoding='utf-8').read()
+    if R.SOURCES_ONE_LINE in s:
+        return 'already'
+    assert '</style>' in s, path
+    s = s.replace('</style>', '.sources a{' + R.SOURCES_ONE_LINE + '}</style>', 1)
+    a = s.index('<div class="sources">'); b = s.index('</div>', s.index('<p>', a))
+    block, k = re.subn(r'<a href="([^"]+)" rel="noopener" target="_blank">(.*?)</a>',
+                       lambda m: f'<a href="{m.group(1)}" rel="noopener" target="_blank" title="' + re.sub(r'<[^>]+>', '', m.group(2)).replace('"', '&quot;').strip() + f'">{m.group(2)}</a>', s[a:b], flags=re.S)
+    assert k >= 1, path
+    s = s[:a] + block + s[b:]
+    R.require_signup_form(s, path); R.require_beacon(s, path)
+    open(path, 'w', encoding='utf-8').write(s)
+    return 'done'
+
 if __name__ == '__main__':
     done = 0
     for p in sorted(glob.glob('p/edition-*/index.html'), key=lambda x: int(re.search(r'edition-(\d+)', x).group(1))):
         n = int(re.search(r'edition-(\d+)', p).group(1))
         if os.path.exists(f'data/edition-{n}.json'):
             continue
-        r = inject(p); r2 = inject_nav(p); r3 = inject_share(p); r4 = inject_doors(p); r5 = inject_header(p); r6 = inject_count(p); r7 = inject_newtab(p)
-        print(f'{p}: form {r}, nav {r2}, share {r3}, doors {r4}, header {r5}, count {r6}, new tab {r7}'); done += 'done' in (r, r2, r3, r4, r5, r6, r7)
+        r = inject(p); r2 = inject_nav(p); r3 = inject_share(p); r4 = inject_doors(p); r5 = inject_header(p); r6 = inject_count(p); r7 = inject_newtab(p); r8 = inject_one_line(p)
+        print(f'{p}: form {r}, nav {r2}, share {r3}, doors {r4}, header {r5}, count {r6}, new tab {r7}, one line {r8}'); done += 'done' in (r, r2, r3, r4, r5, r6, r7, r8)
     print(f'{done} legacy pages updated')

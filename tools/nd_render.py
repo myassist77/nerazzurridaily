@@ -37,6 +37,8 @@ FINE = 'Free · one email a morning · unsubscribe any time'
 SOURCES_LINE = 'built from Gazzetta dello Sport, Corriere dello Sport, Sky Sport Italia and Inter.it'
 # The footer's social links, one place for every page (Nov 15, 2026: Bluesky and the Facebook Page added; every social
 # link and every link under Sources opens in a new tab, so the reader keeps the Nerazzurri Daily page open).
+# One source per line, never wrapped (Nov 15, 2026): a long title is cut with an ellipsis and the full title shows on hover.
+SOURCES_ONE_LINE = "display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;vertical-align:top"
 SOCIALS = [('YouTube', 'https://www.youtube.com/@nerazzurridaily'), ('TikTok', 'https://www.tiktok.com/@nerazzurridaily'),
            ('Bluesky', 'https://bsky.app/profile/nerazzurridaily.com'), ('Facebook', 'https://www.facebook.com/nerazzurridaily')]
 SOCIAL_FOOT = ' &middot; '.join(f'<a href="{u}" rel="noopener" target="_blank">{n}</a>' for n, u in SOCIALS)
@@ -364,7 +366,7 @@ a{color:#0A2A66}
 .sources{background:#EEF1F6;margin-top:22px;padding:2px 28px 18px}
 .sources .sec{margin-left:0;margin-right:0;margin-top:16px}
 .sources p{font-family:'Fragment Mono',monospace;font-size:.82rem;line-height:1.8;margin:6px 0 0;color:#3D465C}
-.sources a{color:#0A2A66;text-decoration:none;border-bottom:1px solid #C4CDDE}
+.sources a{color:#0A2A66;text-decoration:none;border-bottom:1px solid #C4CDDE;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;vertical-align:top}
 .sources a b{color:#0B1020;font-weight:700}
 .foot{background:#DCE3EF;padding:18px 28px;font-family:'Fragment Mono',monospace;font-size:.84rem;color:#5A647E;line-height:1.9}
 .foot a{display:inline-block}
@@ -500,7 +502,7 @@ def page_blocks(d):
                 out.append(f'<div class="in"><p><b>From our friends.</b> {esc(m["text"])} <a href="{esc(m["url"])}" rel="noopener" target="_blank">{esc(m["name"])}</a></p></div>')
             out.append(prev_next(d['n']))
             out.append(cta_band())
-            links = '<br>\n'.join(f'<a href="{esc(l["url"])}" rel="noopener" target="_blank">' + (f'<b>{esc(l["outlet"])}</b> · ' if l.get('outlet') else '') + f'{esc(l["title"])}</a>' for l in b['links'])
+            links = '<br>\n'.join(f'<a href="{esc(l["url"])}" rel="noopener" target="_blank" title="{esc(l["title"])}">' + (f'<b>{esc(l["outlet"])}</b> · ' if l.get('outlet') else '') + f'{esc(l["title"])}</a>' for l in b['links'])
             out.append(f'<div class="sources"><div class="sec"><b>Sources</b></div><p>{links}</p></div>')
         elif t == 'p': out.append(f'<div class="in"><p>{b["html"]}</p></div>')
         elif t == 'poll': pass   # dropped from the design on Sept 19, 2026; kept in the JSON as history
