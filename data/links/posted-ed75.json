@@ -3,14 +3,16 @@
  "date": "2026-11-15",
  "channels": {
   "bluesky": {
-   "state": "PUBLISHED",
+   "state": "ERROR",
    "postiz_post_id": "cmwhttomc085yqr071pnh2ftt",
-   "posted_at_utc": "2026-11-15T12:44:30Z"
+   "posted_at_utc": "2026-11-15T12:44:30Z",
+   "error": "Postiz: could not refresh the bluesky channel, connect it again. Checked 13:00 UTC: the post is not on the Bluesky profile."
   },
   "facebook": {
    "state": "PUBLISHED",
    "postiz_post_id": "cmwhttoq3085zqr07n36walk1",
-   "posted_at_utc": "2026-11-15T12:44:30Z"
+   "posted_at_utc": "2026-11-15T12:44:30Z",
+   "url": "https://www.facebook.com/122107585149542707/posts/122108163873542707"
   }
  }
 }
