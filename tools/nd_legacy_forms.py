@@ -144,12 +144,29 @@ def inject_count(path):
     open(path, 'w', encoding='utf-8').write(s)
     return 'done'
 
+def inject_newtab(path):
+    """Seventh idempotent step (Nov 15, 2026): every link under Sources opens in a new tab, and the footer carries the
+    renderer's social links (YouTube, TikTok, Bluesky, Facebook), each opening in a new tab too."""
+    s = open(path, encoding='utf-8').read()
+    if 'bsky.app/profile/nerazzurridaily.com' in s:
+        return 'already'
+    a = s.index('<div class="sources">'); b = s.index('</div>', s.index('<p>', a))
+    block = re.sub(r'<a href="([^"]+)" rel="noopener">', r'<a href="\1" rel="noopener" target="_blank">', s[a:b])
+    assert 'target="_blank"' in block and block.count('<a ') == block.count('target="_blank"'), path
+    s = s[:a] + block + s[b:]
+    s, k = re.subn(r'<a href="https://www\.youtube\.com/@nerazzurridaily"[^>]*>YouTube</a> (·|&middot;) <a href="https://www\.tiktok\.com/@nerazzurridaily"[^>]*>TikTok</a>',
+                   lambda m: R.SOCIAL_FOOT.replace('&middot;', m.group(1)), s)
+    assert k == 1, path
+    R.require_signup_form(s, path); R.require_beacon(s, path)
+    open(path, 'w', encoding='utf-8').write(s)
+    return 'done'
+
 if __name__ == '__main__':
     done = 0
     for p in sorted(glob.glob('p/edition-*/index.html'), key=lambda x: int(re.search(r'edition-(\d+)', x).group(1))):
         n = int(re.search(r'edition-(\d+)', p).group(1))
         if os.path.exists(f'data/edition-{n}.json'):
             continue
-        r = inject(p); r2 = inject_nav(p); r3 = inject_share(p); r4 = inject_doors(p); r5 = inject_header(p); r6 = inject_count(p)
-        print(f'{p}: form {r}, nav {r2}, share {r3}, doors {r4}, header {r5}, count {r6}'); done += 'done' in (r, r2, r3, r4, r5, r6)
+        r = inject(p); r2 = inject_nav(p); r3 = inject_share(p); r4 = inject_doors(p); r5 = inject_header(p); r6 = inject_count(p); r7 = inject_newtab(p)
+        print(f'{p}: form {r}, nav {r2}, share {r3}, doors {r4}, header {r5}, count {r6}, new tab {r7}'); done += 'done' in (r, r2, r3, r4, r5, r6, r7)
     print(f'{done} legacy pages updated')

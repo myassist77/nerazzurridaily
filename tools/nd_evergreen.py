@@ -192,10 +192,9 @@ def _row(R, r, anchor=False):
     return (f'<tr{aid}><td><div class="nm">{R.chip(r["name"], r.get("venue"))}</div><div class="meta">{R.nbsp(r["line2"])}</div>'
             f'<div class="tm">{R.et_bold(R.nbsp(r["line3"]))}</div></td></tr>')
 
-def _foot():
+def _foot(R):
     return ('<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="#subscribe">Subscribe</a> &middot; '
-            f'<a href="/">All editions</a> &middot; {FOOT_LINKS} &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; '
-            '<a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n')
+            f'<a href="/">All editions</a> &middot; {FOOT_LINKS} &middot; {R.SOCIAL_FOOT}</div>\n')
 
 def _more(skip):
     links = [('fixtures', 'Every kickoff in Eastern time'), ('results', 'Every result this season'), ('injuries', 'The injury log'),
@@ -224,7 +223,7 @@ def _page(R, path, title, desc, h1, lede, first, rest, count, form_head, form_fi
             + _head(R, f'/{path}/', count) +
             f'<div class="hero"><h1>{R.esc(h1)}</h1><p>{lede}</p></div>\n'
             + first + R.form_block(head=form_head, fine=form_fine) + rest + _more(path)
-            + R.cta_band().replace('class="ctaband"', 'class="ctaband end"') + _foot()
+            + R.cta_band().replace('class="ctaband"', 'class="ctaband end"') + _foot(R)
             + '</div>\n' + R.STICK + R.HOME_FORM_JS + '\n</body></html>\n')
     return _checked(R, page, f'{path}/index.html')
 
@@ -298,7 +297,7 @@ def render_fixtures(R, count, first_iso):
             f'<p class="fx-note">Dates are the league’s weekend windows ({R.esc(season["source"])}); the exact day and the Eastern kickoff appear above once Serie A sets them. '
             f'The pink dot marks the derby, Juventus and Napoli. HOME is San Siro.</p>'
             + _more('fixtures')
-            + R.cta_band().replace('class="ctaband"', 'class="ctaband end"') + _foot()
+            + R.cta_band().replace('class="ctaband"', 'class="ctaband end"') + _foot(R)
             + '</div>\n' + R.STICK + R.HOME_FORM_JS + '\n</body></html>\n')
     return _checked(R, page, 'fixtures/index.html')
 
@@ -559,7 +558,7 @@ def render_404(R):
             '<div class="hero"><h1>Page not found</h1><p>That page isn’t here. <a href="/">Every edition is on the front page</a>, newest first.</p></div>\n'
             + _more('')
             + R.form_block(head='Get it every morning', sub='Inter Milan in English, in 90 seconds: what the club has confirmed, kept apart from what the papers are only reporting.')
-            + _foot() + '</div>\n' + R.STICK + R.HOME_FORM_JS + '\n</body></html>\n')
+            + _foot(R) + '</div>\n' + R.STICK + R.HOME_FORM_JS + '\n</body></html>\n')
     return _checked(R, page, '404.html')
 
 def build_pages(R, count, first_iso):
