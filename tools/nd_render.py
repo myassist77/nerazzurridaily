@@ -195,7 +195,8 @@ def jsonld_article(n, title, desc, iso, image):
 # (history.replaceState, before the beacon loads) and then redirects to the target — so the channel AND the edition
 # show up as a requestPath, and the landing page's refererPath, with no dependence on utm_* or third-party referrers.
 DOORS = {'yt': '/subscribe/', 'tt': '/', 'wa': '/', 'copy': '/', 'x': '/', 'forward': '/subscribe/', 'welcome': '/', 'email': '/', 'fb': '/',
-         'bsky': '/', 'th': '/'}   # Bluesky and Threads (Nov 14, 2026)
+         'bsky': '/', 'th': '/',   # Bluesky and Threads (Nov 14, 2026)
+         'vote': '/thanks/'}       # the one-tap reader question in each email (Nov 14, 2026): /go/vote/?ed=N&v=yes|no
 
 def door_url(channel, n=None, to=None, variant=None):
     q = []
@@ -570,6 +571,8 @@ def render_email(d, absolute_links=True):
             elif t == 'ask':
                 rows.append(P(b['html'], 17, '#3D465C', 18, 0)); rows.append(P(esc(BYLINE), 13, '#5A647E', 14, 0, MONO))
                 rows.append(P(f'Know an Interista? Forward this email \u2014 they can subscribe at <a href="{door_url("forward", n)}" style="color:#0A2A66;">nerazzurridaily.com/subscribe</a>.', 13, '#5A647E', 10, 0, MONO))
+                # one-tap reader question (Nov 14, 2026): each tap is one view of /go/vote/edN/yes/ or /no/ in Web Analytics
+                rows.append(P(f'Was today worth your 90 seconds? <a href="{door_url("vote", n, variant="yes")}" style="color:#0A2A66;font-weight:bold;">Yes</a> &middot; <a href="{door_url("vote", n, variant="no")}" style="color:#0A2A66;font-weight:bold;">Not today</a>', 13, '#5A647E', 10, 0, MONO))
             elif t == 'next': rows.append(f'<div style="margin-top:18px;"><div style="font-family:{SANS};font-size:13px;font-weight:bold;letter-spacing:1.5px;color:#2B5BB8;margin-bottom:2px;">NEXT EDITION</div><div style="font-family:{SANS};font-weight:bold;font-size:18px;color:#0B1020;line-height:1.25;">{esc(b["text"])}</div></div>')
             elif t == 'follow':
                 links = ' · '.join(f'<a href="{esc(l["url"])}" style="color:#0A2A66;">{esc(l["label"])}</a>' for l in b['links'])
@@ -639,6 +642,26 @@ def render_subscribe(count, first_iso):
             '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="/">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" rel="noopener">TikTok</a></div>\n'
             '</div>\n' + HOME_FORM_JS + '\n</body></html>\n')
     return require_signup_form(require_beacon(page, 'subscribe/index.html'), 'subscribe/index.html')
+
+def render_thanks():
+    """Where a reader lands after tapping Yes or Not today in the email (door /go/vote/). No form here on purpose:
+    the reader is already a subscriber; the page asks for the one thing a happy reader can do, pass it on."""
+    from urllib.parse import quote
+    desc = 'Thanks for telling us. Nerazzurri Daily is Inter Milan in English, every morning, in 90 seconds. Free.'
+    wa = 'https://wa.me/?text=' + quote('Inter Milan in English, every morning, in 90 seconds. Free: ' + door_url('wa', to='/subscribe/'))
+    page = (f'<!doctype html><html lang="en"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n'
+            f'<title>Thanks \u2014 Nerazzurri Daily</title><meta name="robots" content="noindex,nofollow">'
+            + meta('Thanks \u2014 Nerazzurri Daily', desc, f'{SITE}/thanks/', OG_BRAND)
+            + f'{FONTS}\n<style>{CSS}{SUB_CSS}</style></head><body><div class="sheet">\n'
+            f'<div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a><span class="util"><a href="/">All editions</a></span></div>\n'
+            '<div class="sub-hero"><h1>Thanks. Your answer is counted.</h1>'
+            '<p>One tap a morning tells us whether the edition earned its 90 seconds. That is all we collect.</p>'
+            f'<p>Know an Interista who would read it? Send them the free signup: <a href="{wa}" rel="noopener" target="_blank">WhatsApp</a> \u00b7 '
+            f'<a href="{door_url("copy", to="/subscribe/")}" id="copy-link">Copy link</a></p>'
+            '<p class="fine">Were you forwarded this? <a href="/subscribe/">Get it free every morning</a>.</p></div>\n'
+            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="/">All editions</a> &middot; <a href="/fixtures/">Fixtures</a></div>\n'
+            '</div>\n' + SHARE_JS + '\n</body></html>\n')
+    return require_beacon(page, 'thanks/index.html')
 
 # ------------------------------------------------------------------ today's edition card (home hero)
 def strip_tags(h):
@@ -764,6 +787,7 @@ def build_index():
     open('feed.xml', 'w', encoding='utf-8').write(render_feed(eds))
     for ch in DOORS:
         os.makedirs(f'go/{ch}', exist_ok=True); open(f'go/{ch}/index.html', 'w', encoding='utf-8').write(render_door(ch))
+    os.makedirs('thanks', exist_ok=True); open('thanks/index.html', 'w', encoding='utf-8').write(render_thanks())
     urls = [(f'{SITE}/', eds[0][1]), (f'{SITE}/subscribe/', eds[0][1]), (f'{SITE}/fixtures/', eds[0][1])] + [(f'{SITE}/{p}/', eds[0][1]) for p in extra] + [(f'{SITE}/p/edition-{n}/', dt) for n, dt, _ in eds]
     open('sitemap.xml', 'w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(f'  <url><loc>{u}</loc><lastmod>{dt}</lastmod></url>\n' for u, dt in urls) + '</urlset>\n')
     return len(eds)
