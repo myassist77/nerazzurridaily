@@ -16,7 +16,8 @@ Rules enforced here, whatever the queue says:
   - the body must be signed "Nerazzurri Daily Support Team" and must not name the owner
   - kind "reader" (Nov 14, 2026; written by the Community agent) only ever ANSWERS a reader who wrote to us first: there must be
     a message from that address, not an automatic one, newer than our last message to it; never to an address that was
-    pitched as a partner; four messages per address at most
+    pitched as a partner; four messages per address at most; and never to a message older than READER_MAX_AGE_DAYS
+    (the Community agent marks an older message handled without answering it)
 """
 import os, sys, json, ssl, time, smtplib, imaplib, email, email.utils, email.policy, datetime as dt
 from email.message import EmailMessage
@@ -31,6 +32,7 @@ KEY = os.environ.get("OUTREACH_KEY", "")
 DRY = os.environ.get("DRY_RUN") == "1"
 DIR = os.environ.get("OUTREACH_DIR", "growth/outreach")
 MAX_PER_RUN, MAX_PER_DAY, FOLLOWUP_DAYS = 10, 20, 5
+READER_MAX_AGE_DAYS = 14
 SIGN = "Nerazzurri Daily Support Team"
 BANNED = ("macrina",)
 
@@ -75,7 +77,12 @@ def allowed(item, state):
         if prior: return False, "partner-address"
         if len(every) >= 4: return False, "limit-four"
         last = every[-1]["date"] if every else ""
-        if not any((r.get("seen_utc") or "") > last for r in inbound): return False, "nothing-to-answer"
+        fresh = [r for r in inbound if (r.get("seen_utc") or "") > last]
+        if not fresh: return False, "nothing-to-answer"
+        def age_days(r):
+            try: return (now() - email.utils.parsedate_to_datetime(r.get("date"))).days
+            except Exception: return 0
+        if all(age_days(r) > READER_MAX_AGE_DAYS for r in fresh): return False, "too-old"
         return True, "ok"
     if kind == "reply":
         # a reply answers something they wrote after our last message; never opens a conversation

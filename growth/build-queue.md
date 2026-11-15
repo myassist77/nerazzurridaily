@@ -10,7 +10,8 @@ Order is priority. Only a chat session with the owner reorders or adds items by 
 
 ## Items
 
-1. `waiting on owner` — Reader question: a one-tap "Was today worth your 90 seconds? Yes / Not today" line in each email, with a vote door and a thanks page. Built on branch `reader-question` (touches the edition renderer, so it is not the Builder's to merge).
+1. `live 2026-11-15` — Reader question: a one-tap "Was today worth your 90 seconds? Yes / Not today" line in each email, with a vote door (/go/vote/) and a thanks page. Built and merged in a chat session with the owner.
 2. `ready` — Transfer news page at /inter-milan-transfer-news/: the REPORTED items of the last 21 days that are about transfers or contracts (signing, renewal, fee, loan, clause, bid, offer, agent), newest first, each with the outlet and date exactly as the edition printed them and a link to its edition, under a line that says these are press reports, not confirmed. Plus the CONFIRMED transfer or contract items of the same window in their own section above. Why: "Inter Milan transfer news" is the most searched English query about the club and no page of ours answers it.
 3. `ready` — Competition pages at /inter-milan-champions-league/ and /inter-milan-coppa-italia/: this season's results and remaining fixtures in that competition (kickoff in Eastern time first, US TV), each row linking to its match page. One build, two pages, same renderer.
 4. `ready` — Match pages: add a "Last five" form line and the previous meeting this season, from the results log, where the data has them.
+5. `needs a chat session` — Let the morning edition read growth/community/reader-notes.md, so what readers ask for shapes what is chased next (touches the 5:30 task prompt).

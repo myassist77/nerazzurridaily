@@ -15,7 +15,8 @@ Edited only by the Growth Lead. Status: running | building | waiting.
 ## Editor desk (5:30 edition task)
 - Owns: open rate and click rate among real subscribers.
 - Already in every edition (checked Nov 14, 2026): a "reply with one word" ask that says every reply is read, and a forward-to-a-friend line with its own door (/go/forward/). The welcome email (sent by Brevo on the confirm click) asks where the reader is from, also by reply.
-- OPEN GAP: nobody reads those replies. They arrive in the site mailbox; the outreach workflow stores them encrypted but no agent answers a reader. Waiting on the owner's choice (see build-queue item 1 and decisions).
+- Since Nov 15, 2026 each email also ends with a one-tap question: "Was today worth your 90 seconds? Yes · Not today" (door /go/vote/, landing on /thanks/). Counting is described in growth/README.md.
+- Reader replies are now read and answered by the Community agent (see Community).
 - Status: running. To add: subject-line test, reader survey.
 
 ## Search
@@ -48,7 +49,8 @@ Edited only by the Growth Lead. Status: running | building | waiting.
 - Since Nov 15, 2026 it also starts one conversation a day: at 12:07 PM ET a task posts the day's question (the same one the YouTube Short asks, copied word for word from data/youtube-edN.json) on our own Bluesky account and Facebook Page. Record: data/links/question-edN.json. Switch: "question_autopost" in data/social-switch.json (missing = on). Replies on Bluesky reach the answers task; comments on the Facebook Page are NOT read by any agent yet.
 - Also running: the daily question comment on YouTube and the Wednesday debate (other tasks).
 - Bluesky (owner's choice Nov 14, 2026: answer only people who reply to, mention or quote us): running. The workflow bluesky.yml (every three hours, and at once when the queue is committed) reads who wrote to us into the encrypted growth/community/bsky-state.enc and sends the answers the Community task queues in bsky-queue.enc. tools/nd_bsky.py refuses any reply to a post that was not addressed to us, a second answer to the same post, more than three answers to one person in a thread, a link to another site, and never likes, reposts, follows or messages. Counts only in growth/community/bsky-status.json. Replying to strangers' posts stays off: Bluesky asks automated accounts not to.
-- Later: reader replies by email, a refer-a-friend link.
+- Reader mail (since Nov 15, 2026): a task at 9:47 AM and 4:47 PM ET reads what readers wrote to the site mailbox (encrypted in growth/outreach/state.enc) and answers each person once, through the outreach workflow, kind "reader". The mail tool refuses a reader message to anyone who did not write first, to a partner address, or to a message older than 14 days. A claimed mistake, a business request or a legal complaint is flagged to the owner; an unsubscribe request is carried out in Brevo. What readers ask for, without names: growth/community/reader-notes.md.
+- Later: a refer-a-friend link.
 - Status: YouTube running (first run Nov 15, 2026; its read and reply calls were not testable the evening it was built, the YouTube quota was spent). Bluesky: running since Nov 15, 2026. The app password secret is in place, the self-test passed (login and notification read) and the first real read found nobody waiting. A real send has not happened yet; the first answer is the test.
 
 ## Builder and Reviewer (the weekly build, since Nov 15, 2026)

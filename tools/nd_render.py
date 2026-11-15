@@ -572,7 +572,7 @@ def render_email(d, absolute_links=True):
                 rows.append(P(b['html'], 17, '#3D465C', 18, 0)); rows.append(P(esc(BYLINE), 13, '#5A647E', 14, 0, MONO))
                 rows.append(P(f'Know an Interista? Forward this email \u2014 they can subscribe at <a href="{door_url("forward", n)}" style="color:#0A2A66;">nerazzurridaily.com/subscribe</a>.', 13, '#5A647E', 10, 0, MONO))
                 # one-tap reader question (Nov 14, 2026): each tap is one view of /go/vote/edN/yes/ or /no/ in Web Analytics
-                rows.append(P(f'Was today worth your 90 seconds? <a href="{door_url("vote", n, variant="yes")}" style="color:#0A2A66;font-weight:bold;">Yes</a> &middot; <a href="{door_url("vote", n, variant="no")}" style="color:#0A2A66;font-weight:bold;">Not today</a>', 13, '#5A647E', 10, 0, MONO))
+                rows.append(P(f'Was today worth your 90 seconds? <a href="{door_url("vote", n, variant="yes")}" style="color:#0A2A66;font-weight:bold;">Yes</a> &middot; <a href="{door_url("vote", n, variant="no")}" style="color:#0A2A66;font-weight:bold;">Not&nbsp;today</a>', 13, '#5A647E', 10, 0, MONO))
             elif t == 'next': rows.append(f'<div style="margin-top:18px;"><div style="font-family:{SANS};font-size:13px;font-weight:bold;letter-spacing:1.5px;color:#2B5BB8;margin-bottom:2px;">NEXT EDITION</div><div style="font-family:{SANS};font-weight:bold;font-size:18px;color:#0B1020;line-height:1.25;">{esc(b["text"])}</div></div>')
             elif t == 'follow':
                 links = ' · '.join(f'<a href="{esc(l["url"])}" style="color:#0A2A66;">{esc(l["label"])}</a>' for l in b['links'])

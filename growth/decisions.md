@@ -11,3 +11,4 @@
 - 2026-11-14: Community agent approved for YouTube and Bluesky. YouTube replies under our own videos are running. The Bluesky half is on hold: it cannot be done as proposed (see the Community brief) and waits for his choice.
 - 2026-11-14: Bluesky replies: option A. Answer only people who reply to, mention or quote us. No replies to strangers.
 - 2026-11-14: Approved three additions: (1) a weekly build run, (2) the subscriber engagement pieces, (3) Community starting conversations on our own pages. (1) and (3) are running. (2) is on hold: the edition and the welcome email already carry the reply ask and the forward line; what is missing is that nobody reads the replies. His choice is pending.
+- 2026-11-14: Reader replies: options A and B together. The Community agent reads and answers reader mail, and each email carries a one-tap question.
