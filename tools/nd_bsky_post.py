@@ -10,8 +10,14 @@ tools/nd_bsky.py uses) and nothing has to be reconnected by hand.
 Runs only inside .github/workflows/bluesky-post.yml. Nothing here is personal: the requests and
 the results are plain files.
   data/links/bsky/ed<N>-<kind>.json  a REQUEST, committed by a task:
-        {"n": 75, "kind": "link" | "question" | "pin", "text": "...",
-         "image": "assets/mast/edition-75.png" (optional, a path in this repo), "alt": "..."}
+        {"n": 75, "kind": "link" | "question" | "video" | "pin", "text": "...",
+         "image": "assets/mast/edition-75.png" (optional, a path in this repo), "alt": "...",
+         "video": "assets/video/ed75.mp4" (optional, instead of an image; kind "video" needs it)}
+        A post carries a video OR an image, never both (Bluesky allows one kind of media a post).
+        The video goes through Bluesky's video service (docs.bsky.app/docs/tutorials/video): a
+        service token, upload to video.bsky.app, wait for the processing job, then the post. If
+        that service fails, the file is uploaded as a plain blob instead and Bluesky processes it
+        after the post exists. Hashtags in the text (#Inter) become tappable tags.
   data/links/bsky/sent.json          the RESULTS, written here, one entry per request file name:
         {"ed75-link": {"state": "PUBLISHED" | "ERROR", "uri", "url", "posted_at_utc",
                        "attempts", "error"}}
@@ -39,8 +45,10 @@ PASSWORD = os.environ.get("BLUESKY_APP_PASSWORD", "")
 DIR = os.environ.get("BSKY_POST_DIR", "data/links/bsky")
 DRY = os.environ.get("DRY_RUN") == "1"
 HANDLE = "nerazzurridaily.com"
-KINDS = ("link", "question", "pin")
-MAX_PER_DAY, MAX_ATTEMPTS, MAX_IMAGE = 4, 3, 950_000
+KINDS = ("link", "question", "video", "pin")
+MAX_PER_DAY, MAX_ATTEMPTS, MAX_IMAGE, MAX_VIDEO = 5, 3, 950_000, 50_000_000
+VIDEO_HOST = os.environ.get("BSKY_VIDEO_HOST", "https://video.bsky.app")
+TAG_RE = re.compile(r"(?<![\w&/#])#([^\W\d_]\w{1,63})")
 BANNED = ("macrina",)
 OUR_SITE = "nerazzurridaily.com"
 URL_RE = re.compile(r"https?://[^\s<>\"')\]]+")
@@ -51,20 +59,29 @@ def iso(t=None): return (t or now()).strftime("%Y-%m-%dT%H:%M:%SZ")
 def ny_today(): return dt.datetime.now(ZoneInfo("America/New_York")).date()
 
 class Api:
-    def __init__(self): self.jwt = None; self.did = None
-    def call(self, method, nsid, params=None, body=None, raw=None, ctype=None):
-        url = f"{PDS}/xrpc/{nsid}"
+    def __init__(self): self.jwt = None; self.did = None; self.pds = None
+    def call(self, method, nsid, params=None, body=None, raw=None, ctype=None, base=None, token=None, timeout=40):
+        url = f"{base or PDS}/xrpc/{nsid}"
         if params: url += "?" + urllib.parse.urlencode(params, doseq=True)
         data = raw if raw is not None else (json.dumps(body).encode() if body is not None else None)
         req = urllib.request.Request(url, data=data, method=method)
         if data is not None: req.add_header("Content-Type", ctype or "application/json")
-        if self.jwt: req.add_header("Authorization", "Bearer " + self.jwt)
-        with urllib.request.urlopen(req, timeout=40) as r:
+        if token or self.jwt: req.add_header("Authorization", "Bearer " + (token or self.jwt))
+        with urllib.request.urlopen(req, timeout=timeout) as r:
             out = r.read()
         return json.loads(out) if out else {}
     def login(self):
         s = self.call("POST", "com.atproto.server.createSession", body={"identifier": IDENT, "password": PASSWORD})
         self.jwt, self.did = s["accessJwt"], s["did"]
+        self.pds = None                                      # where the account's data lives
+        for svc in (s.get("didDoc") or {}).get("service", []):
+            if str(svc.get("id", "")).endswith("atproto_pds"): self.pds = (svc.get("serviceEndpoint") or "").rstrip("/") or None
+        if not self.pds and self.did.startswith("did:plc:"):  # the session did not say: ask the directory
+            try:
+                with urllib.request.urlopen("https://plc.directory/" + self.did, timeout=20) as r: doc = json.loads(r.read())
+                for svc in doc.get("service", []):
+                    if str(svc.get("id", "")).endswith("atproto_pds"): self.pds = (svc.get("serviceEndpoint") or "").rstrip("/") or None
+            except Exception: pass
         return s
 
 def facets(text):
@@ -75,7 +92,13 @@ def facets(text):
         start = len(text[:m.start()].encode("utf-8"))
         out.append({"index": {"byteStart": start, "byteEnd": start + len(url.encode("utf-8"))},
                     "features": [{"$type": "app.bsky.richtext.facet#link", "uri": url}]})
-    return out
+    spans = [(m.start(), m.end()) for m in URL_RE.finditer(text)]
+    for m in TAG_RE.finditer(text):                          # #Inter -> a tappable tag, never inside a link
+        if any(a <= m.start() < b for a, b in spans): continue
+        start = len(text[:m.start()].encode("utf-8"))
+        out.append({"index": {"byteStart": start, "byteEnd": start + len(m.group(0).encode("utf-8"))},
+                    "features": [{"$type": "app.bsky.richtext.facet#tag", "tag": m.group(1)}]})
+    return sorted(out, key=lambda f: f["index"]["byteStart"])
 
 def png_size(b):
     if b[:8] == b"\x89PNG\r\n\x1a\n": return struct.unpack(">II", b[16:24])
@@ -103,6 +126,12 @@ def check(name, req, results, edition_date):
     if img:
         if img.startswith("/") or ".." in img or not img.startswith("assets/") or not os.path.isfile(img): return False, "bad-image-path"
         if os.path.getsize(img) > MAX_IMAGE: return False, "image-too-large"
+    vid = req.get("video")
+    if req["kind"] == "video" and not vid: return False, "no-video"
+    if vid:
+        if img: return False, "video-and-image"
+        if vid.startswith("/") or ".." in vid or not vid.startswith("assets/video/") or not vid.endswith(".mp4") or not os.path.isfile(vid): return False, "bad-video-path"
+        if os.path.getsize(vid) > MAX_VIDEO: return False, "video-too-large"
     day = iso()[:10]
     if sum(1 for r in results.values() if r.get("state") == "PUBLISHED" and (r.get("posted_at_utc") or "")[:10] == day) >= MAX_PER_DAY:
         return False, "day-limit"
@@ -119,6 +148,41 @@ def find_existing(api, text):
     for r in got.get("records", []):
         if ((r.get("value") or {}).get("text") or "").strip() == text: return r.get("uri")
     return None
+
+def video_size(req):
+    """Width and height: from the request, else the social build record, else our 9:16 default."""
+    if req.get("width") and req.get("height"): return int(req["width"]), int(req["height"])
+    try:
+        for st in json.load(open(f"review/social-ed{req['n']}/status.json")).get("streams", []):
+            if st.get("codec_type") == "video": return int(st["width"]), int(st["height"])
+    except Exception: pass
+    return 1080, 1920
+
+def upload_video(api, path):
+    """Returns (blob, how). First the video service; if it fails, a plain blob on the account's server."""
+    b = open(path, "rb").read()
+    try:
+        if not api.pds: raise RuntimeError("no-pds-in-session")
+        aud = "did:web:" + urllib.parse.urlparse(api.pds).netloc
+        tok = api.call("GET", "com.atproto.server.getServiceAuth", base=api.pds,
+                       params={"aud": aud, "lxm": "com.atproto.repo.uploadBlob", "exp": int(time.time()) + 1800})["token"]
+        try:
+            job = api.call("POST", "app.bsky.video.uploadVideo", base=VIDEO_HOST, token=tok, raw=b, ctype="video/mp4",
+                           params={"did": api.did, "name": os.path.basename(path)}, timeout=180)
+        except urllib.error.HTTPError as e:                  # the same file again: the service answers 409 with the job
+            if e.code != 409: raise
+            job = json.loads(e.read().decode())
+        job = job.get("jobStatus") or job
+        if job.get("blob"): return job["blob"], "video-service"
+        for _ in range(60):                                  # up to five minutes
+            time.sleep(5)
+            st = api.call("GET", "app.bsky.video.getJobStatus", base=VIDEO_HOST, token=tok, params={"jobId": job["jobId"]}).get("jobStatus", {})
+            if st.get("blob"): return st["blob"], "video-service"
+            if st.get("state") == "JOB_STATE_FAILED": raise RuntimeError("video-job-failed " + str(st.get("error") or st.get("message") or "")[:60])
+        raise RuntimeError("video-job-timeout")
+    except Exception as e:
+        print("video service failed:", err_word(e), "- uploading as a plain blob")
+        return api.call("POST", "com.atproto.repo.uploadBlob", base=api.pds, raw=b, ctype="video/mp4", timeout=180)["blob"], "plain-blob"
 
 def post_url(uri): return f"https://bsky.app/profile/{HANDLE}/post/{uri.rsplit('/', 1)[-1]}"
 
@@ -138,6 +202,12 @@ def send(api, req):
         wh = png_size(b)
         if wh: im["aspectRatio"] = {"width": wh[0], "height": wh[1]}
         rec["embed"] = {"$type": "app.bsky.embed.images", "images": [im]}
+    if req.get("video"):
+        blob, how = upload_video(api, req["video"])
+        w, h = video_size(req)
+        rec["embed"] = {"$type": "app.bsky.embed.video", "video": blob, "aspectRatio": {"width": w, "height": h},
+                        "alt": (req.get("alt") or "")[:900]}
+        print("video uploaded through the", how)
     if DRY: return "at://dry/app.bsky.feed.post/dry", False
     res = api.call("POST", "com.atproto.repo.createRecord", body={"repo": api.did, "collection": "app.bsky.feed.post", "record": rec})
     uri = res["uri"]
