@@ -160,6 +160,16 @@ jobs:
             for f in results/index.html injuries/index.html how-to-watch-inter-milan-in-the-usa/index.html; do if [ -f "$f" ]; then git add "$f"; fi; done
             # one page per match (tools/nd_evergreen.py build_matches, Nov 14, 2026): the whole folder, when the build wrote it
             if [ -d match ]; then git add match; fi
+            # any further page folder a growth build added (Nov 14, 2026): tools/nd_evergreen.py lists what it wrote in build/evergreen-paths.txt;
+            # only <folder>/index.html is added, and never inside the edition's own folders
+            if [ -f build/evergreen-paths.txt ]; then
+              while IFS= read -r q; do
+                case "$q" in
+                  ''|/*|.*|*..*|p|p/*|go|go/*|subscribe*|assets*|data*|tools*|review*|growth*|templates*|archive*|yt*|thanks*) ;;
+                  *) if [ -f "$q/index.html" ]; then git add "$q/index.html"; fi ;;
+                esac
+              done < build/evergreen-paths.txt
+            fi
             MSG="Edition No. $N — $TITLE"
           else
             MSG="Edition No. $N — build status (controls $PASSED, publish $PUBLISH)"

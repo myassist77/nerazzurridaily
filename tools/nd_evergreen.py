@@ -574,7 +574,11 @@ def build_pages(R, count, first_iso):
     made = []
     try: made = build_matches(R, count)
     except Exception as e: print(f'nd_evergreen: match pages skipped — {e!r}')
-    return [p for p in PATHS if os.path.exists(f'{p}/index.html')] + made
+    out = [p for p in PATHS if os.path.exists(f'{p}/index.html')] + made
+    try:   # the edition workflow commits <path>/index.html for every line of this file (Nov 14, 2026), so a new page type needs no workflow change
+        os.makedirs('build', exist_ok=True); open('build/evergreen-paths.txt', 'w', encoding='utf-8').write('\n'.join(out) + '\n')
+    except Exception as e: print(f'nd_evergreen: paths list not written — {e!r}')
+    return out
 
 if __name__ == '__main__':
     import sys
