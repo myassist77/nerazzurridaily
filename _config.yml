@@ -1,0 +1,2 @@
+# Serve the hidden .well-known folder (Bluesky handle check). Nothing else changes.
+include: [".well-known"]
