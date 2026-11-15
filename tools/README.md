@@ -104,4 +104,5 @@ not start the other workflows: dispatch `signup-form.yml` afterwards if you want
 - `data/mentions.json`: partner mentions printed as "From our friends." in that date's edition. An empty list changes nothing.
 - `/subscribe/sent/`: loaded in a hidden frame when a signup goes through, so signups can be counted. `check_signup_form.py` fails unless it is requested exactly once.
 - `.well-known/atproto-did` and `_config.yml`: prove the domain for the Bluesky handle @nerazzurridaily.com. Never delete either.
+- `nd_bsky.py` with `.github/workflows/bluesky.yml`: answers people who reply to, mention or quote us on Bluesky, and nobody else (every three hours, and when `growth/community/bsky-queue.enc` is committed). Needs the repo secret `BLUESKY_APP_PASSWORD`. Rules are in the file's docstring; who wrote and what was said live only in the encrypted `growth/community/bsky-*.enc` files.
 - Team memory and rules: `growth/README.md`.
