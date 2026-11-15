@@ -8,3 +8,4 @@
 - 2026-11-14: Outreach send route: option 1, through the Hostinger mailbox (a workflow using the mailbox's own SMTP and IMAP). Not Brevo.
 - 2026-11-14: New channels as decided in practice: Bluesky and a Facebook Page are live and connected. Threads and Instagram skipped.
 - 2026-11-14: TikTok Business account switch: skipped for now.
+- 2026-11-14: Community agent approved for YouTube and Bluesky. YouTube replies under our own videos are running. The Bluesky half is on hold: it cannot be done as proposed (see the Community brief) and waits for his choice.

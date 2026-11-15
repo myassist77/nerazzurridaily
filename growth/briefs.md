@@ -42,5 +42,8 @@ Edited only by the Growth Lead. Status: running | building | waiting.
 
 ## Community
 - Owns: replies and referral signups.
-- Does: answers YouTube comments, reader replies, polls, Wednesday debate; later a refer-a-friend link.
-- Status: building. Debate and comment tasks running.
+- Running since Nov 15, 2026: a task (11:23 AM and 5:23 PM ET) answers every viewer who comments under our own YouTube videos, as the channel. Facts only from the edition data, with the edition's confirmed or reported label; an opinion gets an answer and a question back; the newsletter is named only when it answers what the viewer asked. At most 8 replies a run, three of ours per thread. A claimed mistake, a business or press request or a legal complaint is flagged to the owner, not answered. Record: growth/community/replies.jsonl (ids only, no text, no names). On Mondays it adds one ledger line with the week's counts.
+- Also running: the daily question comment and the Wednesday debate (other tasks).
+- Bluesky: NOT running. Replying to strangers' posts by automation is against Bluesky's own guidance for automated accounts (reply only to people who tagged the account) and against the spirit of our guardrail on communities we do not own; and no connected tool can reply on Bluesky at all (Postiz only publishes our own posts). Waiting on the owner's choice.
+- Later: reader replies by email, a refer-a-friend link.
+- Status: YouTube running (first run Nov 15, 2026; the read and reply calls could not be tested the evening it was built because the YouTube quota was spent). Bluesky waiting.
