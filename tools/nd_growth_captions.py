@@ -15,7 +15,8 @@ agent rewriting them each morning could add a fact; this cannot.
 
 Facebook (owner's decision, Nov 15, 2026: the video goes to Facebook as its own post): the
 caption has NO link - Facebook shows link posts to fewer people and asks pages to put the
-link in a comment - so the link is the first comment, and the caption says so.
+link in a comment - so the link is the first comment, and the caption's first line says so
+(seen live on Nov 15, 2026: a Reel's caption is folded after about two lines).
 Bluesky: one post = the video + a tappable link + two hashtags, 300 characters at most.
 """
 import json, re, sys
@@ -23,7 +24,8 @@ import json, re, sys
 SITE = "https://www.nerazzurridaily.com"
 URL_RE = re.compile(r"https?://\S+")
 TAG_RE = re.compile(r"(?<![\w&/])#[^\W\d_]\w*")
-FB_ASK = "Follow for tomorrow's edition. Free by email every morning: link in the comments."
+FB_TOP = "Full edition, free: link in the comments."
+FB_ASK = "Follow for tomorrow's edition. Free by email every morning."
 FB_COMMENT = "Today's full edition, free: {link}"
 BSKY_LINE = "Free every morning, in English: {link}"
 
@@ -61,11 +63,12 @@ def build(n, root="."):
     hook, tags = split_caption(tt["caption"])
 
     fb_link = f"{SITE}/go/fb/?ed={n}&v=reel&to=/p/edition-{n}/"
-    fb_caption = "\n\n".join([hook, FB_ASK] + ([" ".join(tags)] if tags else []))
+    head = title if title[-1] in ".!?" else title + "."
+    # Facebook folds a Reel's caption after about two lines: the title and where the link is come first.
+    fb_caption = "\n\n".join([head + " " + FB_TOP, hook, FB_ASK] + ([" ".join(tags)] if tags else []))
     assert not URL_RE.search(fb_caption)
 
     bs_link = f"{SITE}/go/bsky/?ed={n}&v=video&to=/p/edition-{n}/"
-    head = title if title[-1] in ".!?" else title + "."
     link_line = BSKY_LINE.format(link=bs_link)
     tag_line = " ".join(tags[:2])
     lead = first_sentence(hook)
