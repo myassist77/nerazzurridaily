@@ -1,0 +1,41 @@
+name: bluesky-post
+# Publishes OUR OWN Bluesky posts (daily link post, daily question) from request files in data/links/bsky/.
+# Rules and file shapes: tools/nd_bsky_post.py. Results: data/links/bsky/sent.json (written even when a post fails).
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "selftest | post"
+        default: "post"
+  push:
+    branches: [main]
+    paths: ["data/links/bsky/ed*.json"]
+permissions:
+  contents: write
+concurrency:
+  group: bluesky-post
+  cancel-in-progress: false
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: run
+        id: run
+        env:
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+        run: python tools/nd_bsky_post.py "${{ github.event.inputs.mode || 'post' }}"
+      - name: commit
+        if: always()
+        run: |
+          git config user.name "nerazzurri-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/links/bsky/sent.json 2>/dev/null || exit 0
+          git diff --cached --quiet && exit 0
+          git commit -q -m "bluesky-post: results"
+          for i in 1 2 3; do git pull -q --rebase --autostash origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
+          exit 1
