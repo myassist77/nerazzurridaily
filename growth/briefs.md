@@ -17,6 +17,8 @@ Edited only by the Growth Lead. Status: running | building | waiting.
 - Already in every edition (checked Nov 14, 2026): a "reply with one word" ask that says every reply is read, and a forward-to-a-friend line with its own door (/go/forward/). The welcome email (sent by Brevo on the confirm click) asks where the reader is from, also by reply.
 - Since Nov 15, 2026 each email also ends with a one-tap question: "Was today worth your 90 seconds? Yes · Not today" (door /go/vote/, landing on /thanks/). Counting is described in growth/README.md.
 - Reader replies are now read and answered by the Community agent (see Community).
+- Since Nov 15, 2026 the edition task reads growth/community/reader-notes.md before it closes its research (what readers asked for in the last 7 days).
+- The edition task's prompt was at the size limit for scheduled tasks (65,536 bytes) and could not be edited; the full-time card's instructions now live in tools/prompts/fulltime-card.txt, checked by hash before use. First matchday on the new route: Atalanta, Sun Nov 22, 2026.
 - Status: running. To add: subject-line test, reader survey.
 
 ## Search
