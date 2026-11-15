@@ -24,6 +24,11 @@ with the day's tags: three when they fit, else two (owner's decision, Nov 15, 20
   python3 tools/nd_growth_captions.py --ft 2026-11-22     the same for the FULL-TIME card of that
   match date, made from data/tiktok-ft-<date>.json: {"n", "date", "video", "facebook", "bluesky"}.
   Its links land on /subscribe/ (the match is in tomorrow morning's edition, not today's).
+  python3 tools/nd_growth_captions.py --debate 2026-11-18  the same for THE DEBATE short posted on
+  that date (owner's decision, Nov 15, 2026: the debate goes to Facebook and Bluesky too), made from
+  data/tiktok-debate-<date>-<slug>.json: {"k", "n", "date", "video", "status", "facebook", "bluesky"}.
+  "k" is the debate's number, "n" the edition of that date, "status" the build record to check.
+  A debate belongs to no edition, so its links land on /subscribe/ (doors v=debate<k>).
   python3 tools/nd_growth_captions.py --question 75       the Bluesky text of the day's question:
   {"n", "question", "bluesky": {"text"}} - the question the YouTube Short asks, copied from
   data/youtube-ed<N>.json, the edition link and the day's tags.
@@ -41,6 +46,11 @@ FT_FB_TOP = "The morning after, in English, free by email: link in the comments.
 FT_FB_ASK = "Follow for every Inter full-time card."
 FT_FB_COMMENT = "Inter Milan in English, free by email every morning: {link}"
 FT_BSKY_LINE = "The morning after, in English, free by email: {link}"
+DB_FB_TOP = "Name your pick in the comments. The free daily email is linked there too."
+DB_FB_ASK = "Follow for a new Inter debate every week."
+DB_FB_COMMENT = "Inter Milan in English, free by email every morning: {link}"
+DB_BSKY_ASK = "Reply with your pick."
+DB_BSKY_LINE = "Inter in English, free by email every morning: {link}"
 Q_BSKY_LINE = "Today's edition: {link}"
 DEFAULT_TAGS = ["#Inter", "#SerieA"]
 
@@ -125,6 +135,37 @@ def build_ft(date, root="."):
             "facebook": {"title": title, "caption": fb_caption, "comment": FT_FB_COMMENT.format(link=fb_link)},
             "bluesky": {"text": text, "alt": f"Nerazzurri Daily full-time card, a short video with voiceover: {title}"}}
 
+def build_debate(date, root="."):
+    """THE DEBATE short posted on <date> (YYYY-MM-DD), for Facebook and Bluesky."""
+    import glob
+    assert re.match(r"^\d{4}-\d{2}-\d{2}$", date), "the date is YYYY-MM-DD"
+    files = sorted(glob.glob(f"{root}/data/tiktok-debate-{date}-*.json"))
+    assert len(files) == 1, "there is not exactly one debate for that date"
+    tt = json.load(open(files[0]))
+    assert tt["date"] == date, "tiktok file is for another date"
+    k = int(tt["n"]); slug = tt["slug"]; title = tt["title"].strip()
+    assert re.match(r"^[a-z0-9-]+$", slug) and tt["mp4"] == f"assets/video/debate-{date}-{slug}.mp4", "unexpected video path"
+    n = None                                                 # the edition of that date: Bluesky requests are named after it
+    for f in glob.glob(f"{root}/data/edition-*.json"):
+        e = json.load(open(f))
+        if e.get("date") == date: n = int(e["n"])
+    assert n, "no edition is dated that day"
+    hook, tags = split_caption(tt["caption"])
+    assert f"debate{k}" in tt["caption"], "the caption's door is not this debate's"
+    head = title if title[-1] in ".!?" else title + "."
+
+    fb_link = f"{SITE}/go/fb/?v=debate{k}&to=/subscribe/"
+    fb_caption = "\n\n".join([head + " " + DB_FB_TOP, hook, DB_FB_ASK] + ([" ".join(tags)] if tags else []))
+    assert not URL_RE.search(fb_caption)
+
+    bs_link = f"{SITE}/go/bsky/?v=debate{k}&to=/subscribe/"
+    link_line = DB_BSKY_LINE.format(link=bs_link)
+    text = fit(([head, DB_BSKY_ASK, link_line, " ".join(tags[:3])], [head, DB_BSKY_ASK, link_line, " ".join(tags[:2])],
+                [head, DB_BSKY_ASK, link_line], [head, link_line], [link_line]), bs_link)
+    return {"k": k, "n": n, "date": date, "video": tt["mp4"], "status": f"review/social-debate-{date}-{slug}/status.json",
+            "facebook": {"title": title, "caption": fb_caption, "comment": DB_FB_COMMENT.format(link=fb_link)},
+            "bluesky": {"text": text, "alt": f"Nerazzurri Daily, THE DEBATE No. {k}, a short video with voiceover: {title}"}}
+
 def build_question(n, root="."):
     """The day's question for Bluesky: the one the YouTube Short asks, the edition link, the day's tags."""
     yt = json.load(open(f"{root}/data/youtube-ed{n}.json"))
@@ -143,6 +184,7 @@ def build_question(n, root="."):
 
 if __name__ == "__main__":
     if sys.argv[1] == "--ft": out = build_ft(sys.argv[2])
+    elif sys.argv[1] == "--debate": out = build_debate(sys.argv[2])
     elif sys.argv[1] == "--question": out = build_question(int(sys.argv[2]))
     else: out = build(int(sys.argv[1]))
     print(json.dumps(out, indent=1, ensure_ascii=False))
