@@ -3,16 +3,20 @@
  "date": "2026-11-15",
  "channels": {
   "bluesky": {
-   "state": "ERROR",
-   "postiz_post_id": "cmwhttomc085yqr071pnh2ftt",
-   "posted_at_utc": "2026-11-15T12:44:30Z",
-   "error": "Postiz: could not refresh the bluesky channel, connect it again. Checked 13:00 UTC: the post is not on the Bluesky profile."
+   "state": "PUBLISHED",
+   "route": "repo",
+   "post_id": "at://did:plc:cqmhtmzyxdkm64ijvdddywbg/app.bsky.feed.post/3n2e3gkrxya2i",
+   "url": "https://bsky.app/profile/nerazzurridaily.com/post/3n2e3gkrxya2i",
+   "posted_at_utc": "2026-11-15T13:07:51Z",
+   "checked_at_utc": "2026-11-15T13:07:51Z",
+   "note": "the 12:44 UTC attempt through Postiz (post cmwhttomc085yqr071pnh2ftt) failed: Postiz could not refresh its Bluesky channel; re-posted through the repo"
   },
   "facebook": {
    "state": "PUBLISHED",
    "postiz_post_id": "cmwhttoq3085zqr07n36walk1",
    "posted_at_utc": "2026-11-15T12:44:30Z",
-   "url": "https://www.facebook.com/122107585149542707/posts/122108163873542707"
+   "url": "https://www.facebook.com/122107585149542707/posts/122108163873542707",
+   "route": "postiz"
   }
  }
 }
