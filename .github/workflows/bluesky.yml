@@ -40,5 +40,5 @@ jobs:
           git add growth/community
           git diff --cached --quiet && exit 0
           git commit -q -m "bluesky: state"
-          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
+          for i in 1 2 3; do git pull -q --rebase --autostash origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
           exit 1

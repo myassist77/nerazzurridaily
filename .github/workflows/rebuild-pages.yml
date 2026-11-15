@@ -73,5 +73,5 @@ jobs:
           git diff --cached --stat | tail -1
           if [ "$PUBLISH" = "false" ]; then echo "publish=false - built and checked only"; exit 0; fi
           git commit -q -m "Rebuild the published pages with the current header and navigation" -m "Built by the rebuild-pages workflow, run $GITHUB_RUN_ID."
-          for i in 1 2 3; do git push origin HEAD:main && break; echo "push rejected (try $i) - rebasing onto origin/main"; git fetch -q origin main && git rebase -q FETCH_HEAD || exit 1; done
+          for i in 1 2 3; do git push origin HEAD:main && break; echo "push rejected (try $i) - rebasing onto origin/main"; git fetch -q origin main && git rebase -q --autostash FETCH_HEAD || exit 1; done
           echo "committed $(git rev-parse HEAD)"
