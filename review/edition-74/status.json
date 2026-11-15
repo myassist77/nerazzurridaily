@@ -1,8 +1,8 @@
 {
  "n": 74,
- "built_at_utc": "2026-11-15T02:09:31+00:00",
- "run_id": "43666372519",
- "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43666372519",
+ "built_at_utc": "2026-11-15T02:17:52+00:00",
+ "run_id": "43667057809",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43667057809",
  "passed": true,
  "steps": {
   "mast": "success",
@@ -147,13 +147,15 @@
     "https://www.nerazzurridaily.com/go/email/?ed=74",
     "https://www.nerazzurridaily.com/go/email/?ed=74&to=/subscribe/",
     "https://www.nerazzurridaily.com/go/forward/?ed=74",
+    "https://www.nerazzurridaily.com/go/vote/?ed=74&v=no",
+    "https://www.nerazzurridaily.com/go/vote/?ed=74&v=yes",
     "https://www.nerazzurridaily.com/p/edition-74/"
    ]
   }
  },
  "email": {
-  "md5": "8660e8e35fef73024c876a31d98b2bb1",
-  "chars": 26307,
-  "bytes": 26432
+  "md5": "2b9b9b113390356f526241b2e87dcd19",
+  "chars": 26717,
+  "bytes": 26842
  }
 }
