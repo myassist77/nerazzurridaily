@@ -1,0 +1,58 @@
+{
+ "job": "weekly-ed75",
+ "kind": "weekly",
+ "name": "weekly-ed75",
+ "passed": true,
+ "steps": {
+  "weekly": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-15T16:19:50+00:00",
+ "run_id": "43734552389",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43734552389",
+ "files": {
+  "assets/video/weekly-ed75.mp4": {
+   "bytes": 8890906,
+   "md5": "5e4fb907b552d88d84248ffda76788e3",
+   "sha256": "a5c7d8137d6e772aab14854ad6bf47e29b59a6654cdb2ec21493f602746f3146"
+  },
+  "assets/video/weekly-ed75-thumb.png": {
+   "bytes": 37150,
+   "md5": "80f2d18fe8ea3d180fc1159539476249",
+   "sha256": "d3569985bf6925276a62f730402f98acae67328153f0616c6d5b8672b85d97a7"
+  },
+  "data/youtube-weekly-ed75.json": {
+   "bytes": 2977,
+   "md5": "ca9f773d56cd8c1d499c73b3723b0b96",
+   "sha256": "6b8004d6991a86caba4fb5ae61ac4a63305172b07ec655b6e8d5c0d68bd588c0"
+  }
+ },
+ "seconds": 246.17,
+ "beats": null,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1920,
+   "height": 1080,
+   "duration": "246.133333"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "246.170333"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/weekly-ed75.mp4",
+  "thumb16": "build/pack/weekly-ed75-thumb.png"
+ },
+ "silent_render": {
+  "bytes": 8890906,
+  "md5": "5e4fb907b552d88d84248ffda76788e3",
+  "sha256": "a5c7d8137d6e772aab14854ad6bf47e29b59a6654cdb2ec21493f602746f3146"
+ },
+ "render_log_tail": "{\"title\": \"Inter this week in English: Nov 9–15 | Nerazzurri Daily\", \"seconds\": 246.17, \"editions\": [69, 70, 71, 72, 73, 74, 75], \"door\": \"https://www.nerazzurridaily.com/go/yt/?ed=75&v=weekly\"}\n"
+}
