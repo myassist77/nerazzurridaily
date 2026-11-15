@@ -1,0 +1,143 @@
+{
+ "n": 75,
+ "date": "2026-11-15",
+ "slug": "papers-scorecard",
+ "sunday_scorecard": true,
+ "beats": [
+  {
+   "id": "cover",
+   "kind": "cover",
+   "duration": 4.44,
+   "eyebrow": "EDITION NO. 75 · NOVEMBER 15",
+   "lines": [
+    "THIRTEEN INTER CLAIMS.",
+    "THREE HELD UP."
+   ],
+   "vo": "The papers made thirteen [Inter] claims this week. Three held up."
+  },
+  {
+   "id": "calha",
+   "kind": "item",
+   "register": "REPORTED",
+   "duration": 6.36,
+   "kicker": "REPORTED · GAZZETTA · NOV 10",
+   "lines": [
+    "THREE PAPERS.",
+    "THREE ENDINGS.",
+    "STILL OPEN."
+   ],
+   "sub": [
+    "GAZZETTA: SIGN HIM BY NEW YEAR",
+    "SKY: JUVENTUS ON A FREE",
+    "SABAH: FENERBAHÇE, 10M EUROS"
+   ],
+   "vo": "Three papers, three endings for [Çalhanoğlu]. [Gazzetta], then [Juventus], now a Turkish bid."
+  },
+  {
+   "id": "augusto",
+   "kind": "item",
+   "register": "REPORTED",
+   "duration": 4.65,
+   "kicker": "REPORTED · SCHIRA · NOV 10",
+   "lines": [
+    "STUCK ON MONEY.",
+    "THEN CLOSE.",
+    "ONE DAY APART."
+   ],
+   "sub": [
+    "SCHIRA, NOV 10: PAY IS THE HOLD-UP",
+    "SKY, NOV 12: IN ITS CLOSING STAGES",
+    "INTER HAVE ANNOUNCED NOTHING"
+   ],
+   "vo": "[Schira] said the [Carlos Augusto] deal was stuck. [Sky] called it close."
+  },
+  {
+   "id": "bastoni",
+   "kind": "item",
+   "register": "CONFIRMED",
+   "duration": 4.99,
+   "kicker": "CONFIRMED · SKY SPORT ITALIA · NOV 12",
+   "lines": [
+    "THE SCREEN",
+    "BOOKED BASTONI.",
+    "IT WAS WRONG."
+   ],
+   "sub": [
+    "SKY: THE BOOKED MAN WAS FRATTESI",
+    "INTER.IT NAMED HIM IN THE SQUAD",
+    "HE IS IN BRUSSELS TODAY"
+   ],
+   "vo": "The [San Siro] screen booked [Bastoni] by mistake. He is in today's squad."
+  },
+  {
+   "id": "tally",
+   "kind": "stat",
+   "register": "NEUTRAL",
+   "duration": 5.48,
+   "kicker": "THE WEEK IN REPORTS",
+   "number": 3,
+   "suffix": "/13",
+   "lines": [
+    "PRESS CLAIMS",
+    "CONFIRMED"
+   ],
+   "sub": [
+    "TEN STILL OPEN · NONE DENIED",
+    "EDITIONS NO. 69 TO NO. 75"
+   ],
+   "vo": "Thirteen claims. Three confirmed, ten still open. No denials this week."
+  },
+  {
+   "id": "next",
+   "kind": "fixture",
+   "register": "NEUTRAL",
+   "duration": 4.29,
+   "kicker": "NEXT UP",
+   "lines": [
+    "ATALANTA",
+    "AWAY"
+   ],
+   "sub_top": "SUN, NOV 22 · SERIE A · MATCHDAY 12",
+   "big": "2:45 PM ET",
+   "sub": [
+    "20:45 CET · US TV: PARAMOUNT+"
+   ],
+   "vo": "[Inter] visit [Atalanta] Sunday, a quarter to three Eastern."
+  },
+  {
+   "id": "end",
+   "kind": "end",
+   "duration": 4.87,
+   "sub": [
+    "SUBSCRIBE TO THE FREE",
+    "DAILY NEWSLETTER"
+   ],
+   "vo": "Which one holds? Tell me in the comments, at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "3",
+   "lines_a": [
+    "OF 13 PRESS",
+    "CLAIMS HELD UP"
+   ],
+   "lines_b": [
+    "TEN STILL OPEN"
+   ],
+   "pill": "REPORTED · ÇALHANOĞLU",
+   "pill_register": "REPORTED"
+  }
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 35.08
+ }
+}

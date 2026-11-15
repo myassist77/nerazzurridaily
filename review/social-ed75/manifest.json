@@ -1,0 +1,176 @@
+{
+ "edition": 75,
+ "date": "2026-11-15",
+ "slug": "papers-scorecard",
+ "format": "sunday_scorecard",
+ "hook": "Thirteen Inter claims. Three held up.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-75/",
+ "edition_json_sha256": "47338fa243fef14e6064bae318bbd801d7384d36c5db1878c8f8d8cfe0d9ec1e",
+ "brevo": {
+  "campaign_id": 64,
+  "status": "sent",
+  "sent_at": "2026-11-15T06:14:24-05:00"
+ },
+ "local_render": {
+  "file": "ND-2026-11-15-ed75-papers-scorecard-voiced.mp4",
+  "seconds": 36.1,
+  "beats": 7,
+  "bytes": 1567592,
+  "md5": "abf7489a1d66a878e954c37a2818e07b",
+  "sha256": "2319bbfe097407319888a68396f2911b5feaa2a257ebb6de149d150dd7d4c67f",
+  "audio": "voiceover only — no music",
+  "streams": [
+   {
+    "codec_name": "h264",
+    "codec_type": "video",
+    "width": 1080,
+    "height": 1920
+   },
+   {
+    "codec_name": "aac",
+    "codec_type": "audio",
+    "sample_rate": "48000",
+    "channels": 2
+   }
+  ],
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 35.08
+  }
+ },
+ "scorecard": {
+  "window": "editions No. 69 to No. 75",
+  "reported_claims": 13,
+  "confirmed": 3,
+  "denied": 0,
+  "still_open": 10,
+  "confirmed_items": [
+   {
+    "claim": "Bonny dropped out of the Ivory Coast squad",
+    "register": "REPORTED",
+    "source": "Ivory Coast national team via Football Italia",
+    "date": "Nov 9",
+    "confirmed_by": "Inter.it named the hamstring strain, Nov 10 (ed 71, blue)"
+   },
+   {
+    "claim": "Thuram withdrew from the France squad",
+    "register": "REPORTED",
+    "source": "French federation via Football Italia",
+    "date": "Nov 10",
+    "confirmed_by": "Inter.it squad list named Diouf, not Thuram, with France, Nov 11 (ed 72, blue)"
+   },
+   {
+    "claim": "Bastoni was not the booked player and is clear for Sunday",
+    "register": "REPORTED",
+    "source": "Sky Sport Italia via FCInter1908",
+    "date": "Nov 12",
+    "confirmed_by": "Inter.it named Bastoni in Italy's Brussels squad, Nov 15 (ed 75, blue)"
+   }
+  ],
+  "on_screen_items": [
+   {
+    "beat": "calha",
+    "status": "STILL OPEN",
+    "register": "REPORTED",
+    "source": "Gazzetta dello Sport",
+    "date": "Nov 10"
+   },
+   {
+    "beat": "augusto",
+    "status": "STILL OPEN",
+    "register": "REPORTED",
+    "source": "Nicolò Schira via FCInterNews",
+    "date": "Nov 10"
+   },
+   {
+    "beat": "bastoni",
+    "status": "CONFIRMED",
+    "register": "CONFIRMED",
+    "source": "Sky Sport Italia via FCInter1908",
+    "date": "Nov 12"
+   }
+  ]
+ },
+ "youtube_title": "Inter: 13 Press Claims This Week, Only 3 Held Up | Nerazzurri Daily",
+ "pinned_comment_question": "Of this week's reported claims, which one do you think ends up true?",
+ "next_fixture": {
+  "opponent": "Atalanta",
+  "venue": "AWAY",
+  "date": "Sun, Nov 22",
+  "competition": "Serie A · Matchday 12",
+  "kickoff_et": "2:45 PM ET",
+  "kickoff_cet": "20:45 CET",
+  "us_tv": "Paramount+"
+ },
+ "drafts_included": {
+  "tiktok": true,
+  "youtube": true,
+  "reddit": false,
+  "facebook": true
+ },
+ "reddit_note": "Monday-only format; today is Sunday",
+ "thumbnail_style": "number",
+ "built_by": "6:45 AM ET social task trig_01MeVHkh2EKkB4kBvvAqMvge",
+ "publishes": "nothing — the 7:30 AM ET Postiz task posts TikTok and YouTube from the committed files",
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43710266946",
+  "built_at_utc": "2026-11-15T11:45:31+00:00",
+  "seconds": 36.1,
+  "beats": 7,
+  "files": {
+   "assets/video/ed75.mp4": {
+    "bytes": 1564953,
+    "md5": "194e8b0e00afb6731be13b525e239d5a",
+    "sha256": "f2935c3ffc8a8c30e1639f8c460ae9363e22ebdebe8b0b568cbbc1e2663e0fab"
+   },
+   "assets/video/ed75-thumb.png": {
+    "bytes": 53506,
+    "md5": "29293e402cf7ebc8c50096ff094991fc",
+    "sha256": "7769643af8aa38fc33ec372361a51d55e7f18db1a66847dcfefd2df38acb214f"
+   },
+   "assets/video/ed75-thumb-9x16.png": {
+    "bytes": 74633,
+    "md5": "00b205da9c9d51892acda605834d7906",
+    "sha256": "971fd35862f8edda996c245555e1f33d3032ad1ab84dec4fe7326459770ce39a"
+   },
+   "data/tiktok-ed75.json": {
+    "bytes": 627,
+    "md5": "b13e34c4dd167395de8c85dae23ea484",
+    "sha256": "bc5dcad5c3c359a4ba9e7c0b729b09de86284305399f019138e77cd22317d234"
+   },
+   "data/youtube-ed75.json": {
+    "bytes": 1658,
+    "md5": "5481245a42b732ead02937f477bb528e",
+    "sha256": "87121e5828b105949a678c85c644eaffb173f9673aaf91b45bfa060611c90b74"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 157177,
+    "md5": "7ea38ace7cc061539000ec8252662513",
+    "sha256": "972343b37b162e2defc534122b7e9db08b1ad1f77de580395079341d48dbc21d"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 74633,
+    "md5": "00b205da9c9d51892acda605834d7906",
+    "sha256": "971fd35862f8edda996c245555e1f33d3032ad1ab84dec4fe7326459770ce39a"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 53506,
+    "md5": "29293e402cf7ebc8c50096ff094991fc",
+    "sha256": "7769643af8aa38fc33ec372361a51d55e7f18db1a66847dcfefd2df38acb214f"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 35.08
+  },
+  "passed": true
+ }
+}
