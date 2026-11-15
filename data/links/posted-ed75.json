@@ -18,5 +18,24 @@
    "url": "https://www.facebook.com/122107585149542707/posts/122108163873542707",
    "route": "postiz"
   }
+ },
+ "video_posts": {
+  "note": "first video posts, sent by hand from a session on the day the format changed; the link posts above went out earlier the same morning",
+  "bluesky": {
+   "state": "PUBLISHED",
+   "format": "video",
+   "route": "repo",
+   "post_id": "at://did:plc:cqmhtmzyxdkm64ijvdddywbg/app.bsky.feed.post/3n2e4jlu2sn2n",
+   "url": "https://bsky.app/profile/nerazzurridaily.com/post/3n2e4jlu2sn2n",
+   "posted_at_utc": "2026-11-15T13:27:27Z"
+  },
+  "facebook": {
+   "state": "PUBLISHED",
+   "format": "video",
+   "route": "postiz",
+   "post_id": "cmwhve92h08m9qr07ptpj5uam",
+   "url": "https://www.facebook.com/reel/1960865301985806",
+   "posted_at_utc": "2026-11-15T13:28:29Z"
+  }
  }
 }
