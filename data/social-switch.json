@@ -6,5 +6,5 @@
   "debate_autopost": true,
   "weekly_autopost": true,
   "video_on_facebook_bluesky": true,
-  "note_links": "'links_autopost' (missing = on) stops the 7:43 AM Facebook + Bluesky post altogether. 'video_on_facebook_bluesky' (missing = on): false sends the plain link post there, not the day's video. 'question_autopost' (missing = on) stops the 12:07 PM question."
+  "note_links": "'links_autopost' (missing = on) stops the 7:43 AM Facebook + Bluesky post altogether. 'video_on_facebook_bluesky' (missing = on): false sends the plain link post there, not the day's video. 'question_autopost' (missing = on) stops the 12:07 PM question. 'fulltime_on_facebook_bluesky' (missing = on): false keeps the matchday full-time card off Facebook and Bluesky (TikTok and YouTube are not affected)."
 }
