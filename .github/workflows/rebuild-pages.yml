@@ -38,6 +38,8 @@ jobs:
         run: python3 tools/nd_legacy_forms.py
       - name: The "Page not found" page - the same header, navigation, form and footer
         run: python3 tools/nd_evergreen.py --404
+      - name: The "You're in" page a reader lands on after the confirm link - the same header, navigation and footer
+        run: python3 tools/nd_evergreen.py --confirmed
       - name: Every edition page carries one top bar, one navigation strip, one form and the current fonts
         run: |
           python3 - <<'PY'
@@ -68,7 +70,7 @@ jobs:
         run: |
           git config user.name "nerazzurri-daily[bot]"
           git config user.email "mail@nerazzurridaily.com"
-          git add p/edition-*/index.html 404.html
+          git add p/edition-*/index.html 404.html subscribe/confirmed/index.html
           if git diff --cached --quiet; then echo "nothing to commit - every page is already current"; exit 0; fi
           git diff --cached --stat | tail -1
           if [ "$PUBLISH" = "false" ]; then echo "publish=false - built and checked only"; exit 0; fi

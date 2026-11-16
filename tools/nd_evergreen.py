@@ -561,6 +561,37 @@ def render_404(R):
             + _foot(R) + '</div>\n' + R.STICK + R.HOME_FORM_JS + '\n</body></html>\n')
     return _checked(R, page, '404.html')
 
+CONF_CSS = ('.nxt{display:flex;flex-wrap:wrap;gap:10px;margin:0}.nxt a{display:inline-block;background:#2B5BB8;color:#fff;font-family:Oswald,sans-serif;'
+            'font-weight:700;font-size:15px;letter-spacing:.03em;padding:11px 14px;border-radius:3px;text-decoration:none}.nxt a:hover{background:#234A9A}'
+            '.nxt a.alt{background:#0B1020}.nxt a.alt:hover{background:#1B2236}.conf-end{padding-bottom:26px}')
+
+def render_confirmed(R):
+    """subscribe/confirmed/index.html - where Brevo sends a reader after the confirm link (Nov 16, 2026: generated, no
+    longer hand-kept, so it carries the same header, navigation and footer as the reference pages). No form: the reader
+    has just subscribed, so the header's "Get it free" button is left out. `python3 tools/nd_evergreen.py --confirmed`."""
+    desc = 'Your subscription to Nerazzurri Daily is confirmed. Inter Milan in English, every morning, in 90 seconds.'
+    head = R.masthead('', cta=False)
+    socials = ''.join(f'<a class="alt" href="{u}" rel="noopener" target="_blank">{n}</a> ' for n, u in R.SOCIALS)
+    page = ('<!doctype html><html lang="en"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n'
+            '<title>You’re in — Nerazzurri Daily</title><meta name="robots" content="noindex">'
+            + R.meta('You’re in — Nerazzurri Daily', desc, f'{R.SITE}/subscribe/confirmed/', R.OG_BRAND)
+            + f'{R.FONTS}\n<style>{R.CSS}{R.SUB_CSS}{CONF_CSS}</style></head><body><div class="sheet">\n' + head +
+            '<div class="sub-hero"><h1>You’re in. Forza Inter.</h1>\n'
+            '<p>Your subscription is confirmed. Your welcome email is on its way with the Kickoff Card, and the next edition lands '
+            'in your inbox tomorrow morning: what the club has confirmed, what the papers are only reporting, and when Inter play next, in Eastern time first.</p>\n'
+            '<p>To keep it out of spam, add <b>mail@nerazzurridaily.com</b> to your contacts.</p></div>\n'
+            '<ul class="promise">\n'
+            '<li><b>Confirmed</b>What the club, the league or UEFA has actually said, with the source and the date on every item.</li>\n'
+            '<li class="r"><b>Reported</b>What the Italian papers are saying, kept apart from the facts.</li>\n'
+            '</ul>\n'
+            '<div class="sub-hero"><p class="fine" style="margin:0 0 8px">While you wait for tomorrow’s:</p><p class="nxt">'
+            '<a href="/assets/kickoff-card-2026-27.png">Save the Kickoff Card (all 38 dates)</a> <a href="/">Read today’s edition</a> '
+            '<a href="/fixtures/">Kickoffs in Eastern time</a></p></div>\n'
+            f'<div class="sub-hero conf-end"><p class="fine" style="margin:0 0 8px">Follow along between editions:</p><p class="nxt">{socials}</p></div>\n'
+            '<div class="foot">Fan-made. Not affiliated with FC Internazionale Milano.<br>\n<a href="/">All editions</a> &middot; '
+            f'{FOOT_LINKS} &middot; {R.SOCIAL_FOOT}</div>\n</div>\n</body></html>\n')
+    return R.require_beacon(page, 'subscribe/confirmed/index.html')
+
 def build_pages(R, count, first_iso):
     """Write the three pages. Returns the paths that exist on disk afterwards (so the sitemap never lists a page that is not there)."""
     for path, fn in RENDERERS.items():
@@ -585,6 +616,8 @@ if __name__ == '__main__':
     import nd_render as R
     if '--404' in sys.argv:   # the error page only (the rebuild-pages workflow runs this)
         page = render_404(R); open('404.html', 'w', encoding='utf-8').write(page); print('nd_evergreen: 404.html', len(page), 'chars'); sys.exit()
+    if '--confirmed' in sys.argv:   # the page a reader lands on after the confirm link
+        page = render_confirmed(R); open('subscribe/confirmed/index.html', 'w', encoding='utf-8').write(page); print('nd_evergreen: subscribe/confirmed/index.html', len(page), 'chars'); sys.exit()
     eds = editions(); first_iso = min(d['date'] for d in eds)
     n_all = len(re.findall(r'<loc>[^<]*/p/edition-\d+/</loc>', open('sitemap.xml', encoding='utf-8').read())) if os.path.exists('sitemap.xml') else len(eds)
     open('fixtures/index.html', 'w', encoding='utf-8').write(render_fixtures(R, n_all, first_iso))

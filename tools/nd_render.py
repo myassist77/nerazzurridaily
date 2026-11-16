@@ -43,6 +43,7 @@ SOCIALS = [('YouTube', 'https://www.youtube.com/@nerazzurridaily'), ('TikTok', '
            ('Bluesky', 'https://bsky.app/profile/nerazzurridaily.com'), ('Facebook', 'https://www.facebook.com/nerazzurridaily')]
 SOCIAL_FOOT = ' &middot; '.join(f'<a href="{u}" rel="noopener" target="_blank">{n}</a>' for n, u in SOCIALS)
 OG_BRAND = f'{SITE}/assets/og/nerazzurri-daily-1200x630.png'
+EMAIL_SOCIALS = ' &middot; '.join(f'<a href="{u}" style="color:#0A2A66;">{n}</a>' for n, u in SOCIALS)   # the email footers list the same four as the site (Nov 16, 2026)
 BYLINE = 'Written every morning by an Inter fan in New Jersey who reads the Italian press so you don\u2019t have to.'
 WHO_HEAD = 'Who writes this'
 WHO = ('An Inter fan in New Jersey who reads the Italian press so you don\u2019t have to. Every morning I go through Gazzetta, Corriere, '
@@ -393,7 +394,7 @@ a{color:#0A2A66}
 
 # --- site navigation (Nov 14, 2026): one strip under the top bar on the home page, every new edition and the evergreen
 # pages, so a reader finds Fixtures, Results, Injuries and the US TV guide without scrolling to the footer. /subscribe/
-# and the /go/ doors stay bare on purpose: they are landing pages with one job.
+# and the /go/ doors stay bare on purpose: they are landing pages with one job (/subscribe/ carries the masthead block without the strip).
 NAV_ITEMS = [('/', 'Editions'), ('/fixtures/', 'Fixtures'), ('/results/', 'Results'), ('/injuries/', 'Injuries'),
              ('/how-to-watch-inter-milan-in-the-usa/', 'Watch in the US')]
 NAV_CSS = """
@@ -433,19 +434,22 @@ HEAD_CSS = """
 .mh .nav a{color:#B9C7E6;letter-spacing:.06em;padding:12px 0 9px}
 .mh .nav a:hover{border-bottom-color:#4A7BE0}
 .mh .nav a[aria-current]{color:#fff;border-bottom-color:#8FB2F0}
+.mh.bare{padding-bottom:20px}
 .nav .ns{display:none}
 @media(max-width:520px){.top{padding:15px 58px 15px 16px}.top a.wm{font-size:25px}.top .ux{display:none}
 .top::after,.mh::after{width:46px;background:linear-gradient(90deg,#0F1526 0 8px,#4A7BE0 8px 14px,#0F1526 14px 22px,#4A7BE0 22px 28px,#0F1526 28px 36px,#4A7BE0 36px 42px,#0F1526 42px 46px)}
-.mh{padding:18px 0 0 16px}.mh-row{padding-right:52px}.mh-eye{letter-spacing:.08em;margin-bottom:7px}.mh-eye .x3{display:none}.mh-wm{font-size:36px}.mh-cta{display:none}
+.mh{padding:18px 0 0 16px}.mh.bare{padding-bottom:16px}.mh-row{padding-right:52px}.mh-eye{letter-spacing:.08em;margin-bottom:7px}.mh-eye .x3{display:none}.mh-wm{font-size:36px}.mh-cta{display:none}
 .mh .nav{margin-top:14px;padding:0 52px 0 0;column-gap:13px}.mh .nav a{font-size:13px;padding:14px 0 11px}
 .nav .nl{display:none}.nav .ns{display:inline}}
 """
 CSS += HEAD_CSS
-def masthead(here=''):
-    """The header of the home page and the reference pages: the social card's block, with the navigation inside it."""
-    return ('<header class="mh"><div class="mh-row"><div><p class="mh-eye">Inter Milan · in English<span class="x3"> · every morning</span></p>'
-            '<a class="mh-wm" href="/">NERAZZURRI <b>DAILY</b></a></div><a class="mh-cta" href="#subscribe">Get it free</a></div>\n'
-            + nav(here).rstrip('\n') + '</header>\n')
+def masthead(here='', cta=True, strip=True):
+    """The header of the home page and the reference pages: the social card's block, with the navigation inside it.
+    cta=False leaves out "Get it free" (pages a subscriber lands on: /subscribe/confirmed/, /thanks/); strip=False leaves
+    out the navigation (/subscribe/, the landing page with one job) - Nov 16, 2026, so every page opens on the same block."""
+    return ('<header class="mh' + ('' if strip else ' bare') + '"><div class="mh-row"><div><p class="mh-eye">Inter Milan · in English<span class="x3"> · every morning</span></p>'
+            '<a class="mh-wm" href="/">NERAZZURRI <b>DAILY</b></a></div>' + ('<a class="mh-cta" href="#subscribe">Get it free</a>' if cta else '') + '</div>\n'
+            + (nav(here).rstrip('\n') if strip else '') + '</header>\n')
 
 def esc(x): return html.escape(str(x), quote=True)
 def longdate(iso):
@@ -605,7 +609,7 @@ def render_email(d, absolute_links=True):
                         + P(links, 13, '#3D465C', 8, 0, MONO, 'normal', '1.8') + '</td></tr>')
         elif t == 'p': R(P(b['html']), '#ffffff', '2px 28px')
     if in_signoff: rows.append('</td></tr>')
-    R(f'<div style="font-family:{MONO};font-size:13px;color:#5A647E;line-height:1.9;">Fan-made. Not affiliated with FC Internazionale Milano.<br><a href="{door_url('email', n, '/subscribe/')}" style="color:#0A2A66;">Subscribe</a> &middot; <a href="{door_url('email', n)}" style="color:#0A2A66;">All editions</a> &middot; <a href="https://www.youtube.com/@nerazzurridaily" style="color:#0A2A66;">YouTube</a> &middot; <a href="https://www.tiktok.com/@nerazzurridaily" style="color:#0A2A66;">TikTok</a></div>', '#DCE3EF', '18px 28px')
+    R(f'<div style="font-family:{MONO};font-size:13px;color:#5A647E;line-height:1.9;">Fan-made. Not affiliated with FC Internazionale Milano.<br><a href="{door_url('email', n, '/subscribe/')}" style="color:#0A2A66;">Subscribe</a> &middot; <a href="{door_url('email', n)}" style="color:#0A2A66;">All editions</a> &middot; {EMAIL_SOCIALS}</div>', '#DCE3EF', '18px 28px')
     R(f'<div style="font-family:{MONO};font-size:13px;color:#4A5470;line-height:1.8;text-align:center;">You are receiving this because you subscribed to Nerazzurri Daily.<br><a href="{{{{ unsubscribe }}}}" style="color:#4A5470;text-decoration:underline;">Unsubscribe</a> &middot; <a href="{SITE}/p/edition-{n}/" style="color:#4A5470;text-decoration:underline;">Read online</a></div>', '#DCE3EF', '0 28px 24px')
     return (f'<!doctype html>\n<html lang="en"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n<title>{esc(d["title"])}</title></head>\n'
             f'<body style="margin:0;padding:0;background:#DCE3EF;">\n<div style="display:none;max-height:0;overflow:hidden;opacity:0;">{esc(d["description"])}</div>\n'
@@ -649,7 +653,7 @@ def render_subscribe(count, first_iso):
             f'<title>Subscribe \u2014 Nerazzurri Daily</title>'
             + meta('Subscribe to Nerazzurri Daily', desc, f'{SITE}/subscribe/', OG_BRAND)
             + f'{FONTS}\n{SIB_CSS}\n<style>{CSS}{FORM_CSS}{SUB_CSS}</style></head><body><div class="sheet">\n'
-            f'<div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a><span class="util">{count} editions · <a href="/">All editions</a></span></div>\n'
+            + masthead('', strip=False) +
             f'<div class="sub-hero"><h1>{esc(HEADLINE)}</h1><p>{esc(SUBLINE)}</p></div>\n'
             '<ul class="promise">\n'
             '<li><b>Confirmed</b>What the club, the league or UEFA has actually said \u2014 with the source and the date on every item.</li>\n'
@@ -672,7 +676,7 @@ def render_thanks():
             f'<title>Thanks \u2014 Nerazzurri Daily</title><meta name="robots" content="noindex,nofollow">'
             + meta('Thanks \u2014 Nerazzurri Daily', desc, f'{SITE}/thanks/', OG_BRAND)
             + f'{FONTS}\n<style>{CSS}{SUB_CSS}</style></head><body><div class="sheet">\n'
-            f'<div class="top"><a class="wm" href="/">NERAZZURRI <b>DAILY</b></a><span class="util"><a href="/">All editions</a></span></div>\n'
+            + masthead('', cta=False) +
             '<div class="sub-hero"><h1>Thanks. Your answer is counted.</h1>'
             '<p>One tap a morning tells us whether the edition earned its 90 seconds. That is all we collect.</p>'
             f'<p>Know an Interista who would read it? Send them the free signup: <a href="{wa}" rel="noopener" target="_blank">WhatsApp</a> \u00b7 '
