@@ -178,12 +178,26 @@ def inject_one_line(path):
     open(path, 'w', encoding='utf-8').write(s)
     return 'done'
 
+def inject_source(path):
+    """Ninth idempotent step (Nov 16, 2026): the form sends SOURCE - the door or referrer the reader arrived through -
+    exactly as R.form_block() writes it on every other page."""
+    s = open(path, encoding='utf-8').read()
+    if 'name="SOURCE"' in s:
+        return 'already'
+    tail = '      <input type="hidden" name="locale" value="en">\n    </form>\n  </div>\n</div></div>\n'
+    assert s.count(tail) == 1, path
+    s = s.replace(tail, '      <input type="hidden" name="locale" value="en">\n      <input type="hidden" id="SOURCE" name="SOURCE" value="direct">\n'
+                        '    </form>\n  </div>\n</div></div>\n' + R.SOURCE_JS, 1)
+    R.require_signup_form(s, path); R.require_beacon(s, path)
+    open(path, 'w', encoding='utf-8').write(s)
+    return 'done'
+
 if __name__ == '__main__':
     done = 0
     for p in sorted(glob.glob('p/edition-*/index.html'), key=lambda x: int(re.search(r'edition-(\d+)', x).group(1))):
         n = int(re.search(r'edition-(\d+)', p).group(1))
         if os.path.exists(f'data/edition-{n}.json'):
             continue
-        r = inject(p); r2 = inject_nav(p); r3 = inject_share(p); r4 = inject_doors(p); r5 = inject_header(p); r6 = inject_count(p); r7 = inject_newtab(p); r8 = inject_one_line(p)
-        print(f'{p}: form {r}, nav {r2}, share {r3}, doors {r4}, header {r5}, count {r6}, new tab {r7}, one line {r8}'); done += 'done' in (r, r2, r3, r4, r5, r6, r7, r8)
+        r = inject(p); r2 = inject_nav(p); r3 = inject_share(p); r4 = inject_doors(p); r5 = inject_header(p); r6 = inject_count(p); r7 = inject_newtab(p); r8 = inject_one_line(p); r9 = inject_source(p)
+        print(f'{p}: form {r}, nav {r2}, share {r3}, doors {r4}, header {r5}, count {r6}, new tab {r7}, one line {r8}, source {r9}'); done += 'done' in (r, r2, r3, r4, r5, r6, r7, r8, r9)
     print(f'{done} legacy pages updated')
