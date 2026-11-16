@@ -132,6 +132,16 @@ HOME_CSS = """
 """
 HOME_FORM_CSS = FORM_CSS   # older name, kept for callers
 
+# Signup source (Nov 16, 2026): Brevo's form carries a SOURCE attribute, so the Monday report can say which channel a
+# subscriber came from. A door (/go/<channel>/ed<N>/<variant>/) is the referrer of the page it redirects to, so the page that
+# carries the form reads it there, remembers it (the last door wins), and falls back to the first outside referrer's host, then "direct".
+SOURCE_JS = ("<script>(function(){var K='nd_src',s='';try{s=localStorage.getItem(K)||'';}catch(e){}"
+             "var r=document.referrer||'',o=location.origin+'/go/';"
+             "if(r.indexOf(o)===0){var d=r.slice(o.length).split(/[?#]/)[0].split('/').filter(function(x){return /^[a-z0-9-]+$/i.test(x);}).slice(0,3).join('-');if(d)s=d;}"
+             "else if(!s&&r){var h=r.replace(/^https?:\\/\\//,'').split('/')[0].replace(/^www\\./,'');if(h&&h!==location.host.replace(/^www\\./,''))s='ref-'+h;}"
+             "if(s){s=s.slice(0,60);try{localStorage.setItem(K,s);}catch(e){}}"
+             "var f=document.getElementById('SOURCE');if(f)f.value=s||'direct';})();</script>\n")
+
 def form_block(head=None, kick=None, sub=None, extra_class='', fine=FINE):
     """The one Brevo form a page may carry (Brevo's main.js binds to id="sib-form", so never two per page).
     Functional markup (action, ids, loader svg, hidden fields, message panels) is fixed; only the words around it vary."""
@@ -157,9 +167,11 @@ def form_block(head=None, kick=None, sub=None, extra_class='', fine=FINE):
             '      </div></div>\n'
             '      <input type="text" name="email_address_check" value="" class="input--hidden" tabindex="-1" autocomplete="off" aria-hidden="true">\n'
             '      <input type="hidden" name="locale" value="en">\n'
+            '      <input type="hidden" id="SOURCE" name="SOURCE" value="direct">\n'
             '    </form>\n'
             '  </div>\n'
             '</div></div>\n'
+            + SOURCE_JS
             + (f'<p class="fine" style="margin:10px 0 0">{esc(fine)}</p>' if fine else '') + '</div>\n')
 
 def edition_index():
