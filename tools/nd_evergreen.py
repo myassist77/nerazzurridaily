@@ -570,7 +570,7 @@ def render_confirmed(R):
     longer hand-kept, so it carries the same header, navigation and footer as the reference pages). No form: the reader
     has just subscribed, so the header's "Get it free" button is left out. `python3 tools/nd_evergreen.py --confirmed`."""
     desc = 'Your subscription to Nerazzurri Daily is confirmed. Inter Milan in English, every morning, in 90 seconds.'
-    head = re.sub(r'<a class="mh-cta"[^>]*>.*?</a>', '', R.masthead(''))
+    head = R.masthead('', cta=False)
     socials = ''.join(f'<a class="alt" href="{u}" rel="noopener" target="_blank">{n}</a> ' for n, u in R.SOCIALS)
     page = ('<!doctype html><html lang="en"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n'
             '<title>You’re in — Nerazzurri Daily</title><meta name="robots" content="noindex">'
