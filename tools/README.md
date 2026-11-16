@@ -112,3 +112,13 @@ not start the other workflows: dispatch `signup-form.yml` afterwards if you want
 - Weekly builds: `growth/build-queue.md`. A page type added to `PATHS` and `RENDERERS` in `nd_evergreen.py` is built inside a try and listed in `build/evergreen-paths.txt`; the edition workflow commits `<folder>/index.html` for every line of that file, so a new page type needs no workflow change.
 - `prompts/fulltime-card.txt`: the full-time card's instructions, moved out of the 5:30 edition prompt on Nov 14, 2026 (that prompt had passed the 65,536-byte limit for scheduled tasks). The edition task copies it into the matchday one-shot it schedules and first checks the file's sha256 against the value written in its own prompt. NEVER edit this file without updating that value in the 5:30 prompt in the same session: on a mismatch the full-time card is not scheduled.
 - Team memory and rules: `growth/README.md`.
+
+## Signup emails (Brevo templates, Nov 16, 2026)
+The files in `templates/` are the source; Brevo holds a copy. After changing one, merge it and push it to Brevo with
+`BREVO_CREATE_OR_UPDATE_EMAIL_TEMPLATE` (`templateId` + `htmlUrl` = the raw GitHub address of the file on main).
+- 3 `confirm-email.html` - the double opt-in email. Kept PLAIN on purpose (no image, no button, one link, subject
+  "Confirm your email for Nerazzurri Daily"): the designed version landed in Gmail's Promotions tab, the plain one in Updates.
+- 5 and 10 `welcome-email.html` - opens on `assets/brand/email-header-1288x232.png` (`tools/nd_email_header.py`).
+- 6 `unsubscribe-email.html` - branded, but Brevo does not send it for an unsubscribe from the welcome email.
+An unsubscribe tapped in the welcome email (a transactional email) does not take the reader off the list; the scheduled
+task "5:07am ET unsubscribe sweep" blocks those contacts before the edition is sent.
