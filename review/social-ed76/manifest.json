@@ -1,0 +1,128 @@
+{
+ "edition": 76,
+ "date": "2026-11-16",
+ "slug": "esposito-ten",
+ "name": "ND-2026-11-16-ed76-esposito-ten",
+ "hook": "Esposito is ready. Lautaro can wait.",
+ "page_url": "https://www.nerazzurridaily.com/p/edition-76/",
+ "edition_json_sha256": "e38a94066e1f05a5c4613b980f82913b8ded4fe8bcfcb27f3a13e5691d0a7c3e",
+ "brevo": {
+  "campaign_id": 65,
+  "status": "sent",
+  "sent_at_et": "2026-11-16T06:03:54-05:00"
+ },
+ "local_render": {
+  "file": "ND-2026-11-16-ed76-esposito-ten-voiced.mp4",
+  "seconds": 34.1,
+  "beats": 6,
+  "bytes": 1403326,
+  "md5": "b0dcd7b55b9b3ba0736f71808478b002",
+  "sha256": "cf02b6c37ed82e10cf1008a35d3f66de9636f9cbc0dd30660dedca26002e4236",
+  "audio": {
+   "content": "voiceover only — no music",
+   "codec": "aac",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": 34.09
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 33.09
+  }
+ },
+ "stories": [
+  {
+   "h3": "Italy lose 4–1 in Brussels and miss the quarter-finals",
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "2026-11-15",
+   "on_beat": 2
+  },
+  {
+   "h3": "Lautaro could get half an hour at Atalanta",
+   "register": "REPORTED",
+   "source": "Gazzetta dello Sport · QS via FCInterNews",
+   "date": "2026-11-16",
+   "on_beat": "4 + thumbnail pill"
+  }
+ ],
+ "youtube_title": "Inter's Pio Esposito: 10 Goals for Italy at 21. Start Him Over Lautaro? #Shorts",
+ "pinned_question": "Who should lead the line in Bergamo on Sunday: Esposito or Lautaro?",
+ "next_fixture": {
+  "opponent": "Atalanta",
+  "venue": "AWAY",
+  "date": "2026-11-22",
+  "competition": "Serie A · Matchday 12",
+  "kickoff_et": "2:45 PM ET",
+  "kickoff_cet": "20:45 CET",
+  "us_tv": "Paramount+"
+ },
+ "thumbnail_style": "number",
+ "optional_drafts": {
+  "reddit": true,
+  "facebook": true
+ },
+ "format": "daily six-beat",
+ "static_fallback_used": false,
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/43861361784",
+  "built_at_utc": "2026-11-16T11:53:40+00:00",
+  "seconds": 34.1,
+  "beats": 6,
+  "files": {
+   "assets/video/ed76.mp4": {
+    "bytes": 1412116,
+    "md5": "7fba8b2e8106c90b36ab8eaf04ed9c79",
+    "sha256": "69a4a1ca9194b30f05048c3bf5aea0567c224977b7d8df222583ce846c32c3da"
+   },
+   "assets/video/ed76-thumb.png": {
+    "bytes": 64838,
+    "md5": "f84be235ff92659a26659cbaccaee11b",
+    "sha256": "46a62b07d338e3a98c0f9aa9529840c02e0369edf8158cc2fdf26d5e0229b049"
+   },
+   "assets/video/ed76-thumb-9x16.png": {
+    "bytes": 89261,
+    "md5": "69867e9bd6e6c875c2ad820948c7dffb",
+    "sha256": "12799f1c2f8ca2b9fd37252f23f07d1b258fd9bdc7fbfc2b16a76af63d7e5725"
+   },
+   "data/tiktok-ed76.json": {
+    "bytes": 708,
+    "md5": "ea47694259b2ae0be5f71b4fbf0ec328",
+    "sha256": "0596c75c49381f0278ed3bc299b11152ce1c6e9df6e81c45b889653e2c09d86a"
+   },
+   "data/youtube-ed76.json": {
+    "bytes": 1465,
+    "md5": "c78b252c808aa207bb16fe7c5f8b8618",
+    "sha256": "3b697932826d183bf3a3a3602165592fb177eab3dda22200cd96235fd515303b"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 127618,
+    "md5": "d37a1f9c5a5809ba7eb69ac4ce1b8285",
+    "sha256": "b4729b12492fc5e3b7fcf886f5e0276b190eb8bd11ab1af5c996f0fa615cb3a6"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 89261,
+    "md5": "69867e9bd6e6c875c2ad820948c7dffb",
+    "sha256": "12799f1c2f8ca2b9fd37252f23f07d1b258fd9bdc7fbfc2b16a76af63d7e5725"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 64838,
+    "md5": "f84be235ff92659a26659cbaccaee11b",
+    "sha256": "46a62b07d338e3a98c0f9aa9529840c02e0369edf8158cc2fdf26d5e0229b049"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 33.09
+  },
+  "passed": true
+ }
+}

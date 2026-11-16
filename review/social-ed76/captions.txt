@@ -1,0 +1,81 @@
+NERAZZURRI DAILY — SOCIAL PACK
+Edition No. 76 · Monday, November 16, 2026
+Video: ND-2026-11-16-ed76-esposito-ten-voiced.mp4 — 34.1s, 6 beats, 9:16 1080x1920, voiceover only (no music)
+Hook: Esposito is ready. Lautaro can wait.
+
+================================================================
+(a) TIKTOK — @nerazzurridaily
+================================================================
+Posted automatically at 7:30 AM ET via Postiz. The MP4 carries the voiceover only, no music — the owner's choice of Sept 26, 2026.
+No match today (international break), so no full-time card.
+
+TITLE (<=90 characters):
+Inter's Esposito hits 10 Italy goals at 21. Start him over Lautaro?
+
+CAPTION:
+Inter's Francesco Pio Esposito scored his 10th goal for Italy in Sunday's 4–1 loss in Brussels, per Inter.it — 10 in 15 games, and only Giuseppe Meazza got to ten younger. Meanwhile Lautaro Martínez rejoins group training this week, per Gazzetta dello Sport. Blue means the club said it. Pink means only the papers did.
+
+Free daily digest in English: https://www.nerazzurridaily.com/go/tt/?ed=76
+
+#Inter #SerieA #AtalantaInter #PioEsposito
+
+================================================================
+(b) YOUTUBE SHORTS — @nerazzurridaily
+================================================================
+Posted automatically at 7:30 AM ET via Postiz. The MP4 carries the voiceover only, no music — the owner's choice of Sept 26, 2026.
+The 9:16 thumbnail is sent to YouTube with the post (the 16:9 file is the fallback); the same 9:16 image opens the video for 1 second, which makes it the TikTok cover.
+
+TITLE (<=100 characters):
+Inter's Pio Esposito: 10 Goals for Italy at 21. Start Him Over Lautaro? #Shorts
+
+DESCRIPTION:
+Pio Esposito has 10 goals for Italy at 21. We say he starts for Inter in Bergamo, Lautaro or not.
+Free daily digest in English: https://www.nerazzurridaily.com/go/yt/?ed=76
+
+Blue means the club said it. Pink means only the papers did.
+
+CONFIRMED — Esposito scored in the 11th minute of Italy's 4–1 loss to Belgium, his 10th goal in 15 games for Italy; only Giuseppe Meazza reached ten younger. Source: Inter.it, Nov 15.
+REPORTED — Lautaro Martínez rejoins group training this week, and QS expects about half an hour from him at Atalanta on Sunday. Source: Gazzetta dello Sport and QS via FCInterNews, Nov 16.
+NEXT UP — Atalanta vs Inter, Sunday, Nov 22, 2:45 PM ET (20:45 CET), Serie A Matchday 12. US TV: Paramount+.
+
+Read today's edition: https://www.nerazzurridaily.com/p/edition-76/
+
+Fan-made — not affiliated with FC Internazionale Milano.
+
+PINNED COMMENT:
+Who should lead the line in Bergamo on Sunday: Esposito or Lautaro? Reply in the comments. https://www.nerazzurridaily.com/go/yt/?ed=76&v=pinned
+
+HASHTAGS (first three show above the title):
+#Inter #SerieA #AtalantaInter #PioEsposito #ForzaInter
+
+================================================================
+(c) REDDIT — r/FCInterMilan (Monday draft, NOT posted)
+================================================================
+CHECK THE SUB'S RULES BEFORE POSTING — include the last line only if self-promotion is allowed this week.
+
+Title: Inter fixtures for the next two weeks, in US Eastern time (with Milan time and US TV)
+
+Date        | Opponent          | H/A  | Competition              | ET       | CET   | US TV
+Sun, Nov 22 | Atalanta          | Away | Serie A, Matchday 12     | 2:45 PM  | 20:45 | Paramount+
+Wed, Nov 25 | VfB Stuttgart     | Home | Champions League, MD 5   | 3:00 PM  | 21:00 | Paramount+
+Sat, Nov 28 | Genoa             | Home | Serie A, Matchday 13     | 2:45 PM  | 20:45 | Paramount+
+Tue, Dec 1  | Genoa             | Home | Coppa Italia, Round of 16| 3:00 PM  | 21:00 | not yet published
+Sat, Dec 5  | Frosinone         | Away | Serie A, Matchday 14     | 12:00 PM | 18:00 | Paramount+
+
+Kickoff times are the club's, converted from Milan time.
+
+I write a free daily digest of the Italian Inter press, in English — happy to share the link if anyone wants it.
+
+================================================================
+(d) FACEBOOK — for your own profile (draft, NOT posted)
+================================================================
+Today's Nerazzurri Daily leads with Pio Esposito: Italy lost 4–1 in Brussels, but he scored his tenth goal for his country at 21, and only Meazza got there younger. If you know one Inter fan, send them nerazzurridaily.com/go/fb/?ed=76
+
+================================================================
+VERIFIED
+================================================================
+Every claim comes from data/edition-76.json in the repo (date 2026-11-16, sha256 e38a94066e1f05a5c4613b980f82913b8ded4fe8bcfcb27f3a13e5691d0a7c3e).
+  - Esposito 10 goals in 15, Meazza, 4–1, 11th minute — CONFIRMED bar, kicker "INTER.IT · NOV 15".
+  - Lautaro rejoins training, about half an hour in Bergamo — REPORTED bar, kicker "GAZZETTA DELLO SPORT · QS VIA FCINTERNEWS · NOV 16".
+  - Fixtures — NEXT UP block.
+OUR TAKE ("Ten at 21 is a starter, even with the captain back") is opinion and is labeled as such.
