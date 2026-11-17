@@ -33,5 +33,12 @@
   "url": "https://bsky.app/profile/nerazzurridaily.com/post/3n2gzgzbsj426",
   "posted_at_utc": "2026-11-16T17:10:18Z",
   "attempts": 1
+ },
+ "ed77-video": {
+  "state": "PUBLISHED",
+  "uri": "at://did:plc:cqmhtmzyxdkm64ijvdddywbg/app.bsky.feed.post/3n2j33zgcb323",
+  "url": "https://bsky.app/profile/nerazzurridaily.com/post/3n2j33zgcb323",
+  "posted_at_utc": "2026-11-17T12:45:16Z",
+  "attempts": 1
  }
 }
