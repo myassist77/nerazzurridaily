@@ -1,0 +1,67 @@
+NERAZZURRI DAILY — SOCIAL PACK
+Edition No. 77 · Tuesday, November 17, 2026
+Video: ND-2026-11-17-ed77-chivu-golden-bench-voiced.mp4 — 34.1s, 6 beats, 9:16 1080x1920, voiceover only (no music)
+Hook: Chivu is Italy's best coach.
+
+================================================================
+(a) TIKTOK — @nerazzurridaily
+================================================================
+Posted automatically at 7:30 AM ET via Postiz. The MP4 carries the voiceover only, no music — the owner's choice of Sept 26, 2026.
+No match today (international break), so no full-time card.
+
+TITLE (<=90 characters):
+Inter's Chivu wins the Golden Bench. Is he Italy's best coach?
+
+CAPTION:
+Inter coach Cristian Chivu won the Panchina d’Oro, the Golden Bench voted by Italy’s coaches, per Inter.it — the award for the best coach of 2025/26, his first season, when Inter won the Double. And Lautaro Martínez should rejoin group training from Tuesday, per Sky Sport Italia. Blue means the club said it. Pink means only the papers did.
+
+Free daily digest in English: https://www.nerazzurridaily.com/go/tt/?ed=77
+
+#Inter #SerieA #AtalantaInter #Chivu
+
+================================================================
+(b) YOUTUBE SHORTS — @nerazzurridaily
+================================================================
+Posted automatically at 7:30 AM ET via Postiz. The MP4 carries the voiceover only, no music — the owner's choice of Sept 26, 2026.
+The 9:16 thumbnail is sent to YouTube with the post (the 16:9 file is the fallback); the same 9:16 image opens the video for 1 second, which makes it the TikTok cover.
+
+TITLE (<=100 characters):
+Inter's Cristian Chivu Wins the Panchina d'Oro: Italy's Best Coach? #Shorts
+
+DESCRIPTION:
+Cristian Chivu won the Panchina d’Oro. We say he is the best coach in Italy, and his peers agree.
+Free daily digest in English: https://www.nerazzurridaily.com/go/yt/?ed=77
+
+Blue means the club said it. Pink means only the papers did.
+
+CONFIRMED — Chivu won the Panchina d’Oro, voted by Italy’s coaches, as the best coach of 2025/26, his first season, when Inter won the league and the Italian Cup. Source: Inter.it, Nov 16.
+REPORTED — Lautaro Martínez, out for a month, should rejoin group training from Tuesday; the next sessions decide between Bergamo on Sunday and Stuttgart. Source: Sky Sport Italia via FCInterNews, Nov 17.
+NEXT UP — Atalanta vs Inter, Sunday, Nov 22, 2:45 PM ET (20:45 CET), Serie A Matchday 12. US TV: Paramount+.
+
+Read today's edition: https://www.nerazzurridaily.com/p/edition-77/
+
+Fan-made — not affiliated with FC Internazionale Milano.
+
+PINNED COMMENT:
+Who is the best coach in Italy right now? One name. Reply in the comments. https://www.nerazzurridaily.com/go/yt/?ed=77&v=pinned
+
+HASHTAGS (first three show above the title):
+#Inter #SerieA #AtalantaInter #Chivu #ForzaInter
+
+================================================================
+(c) REDDIT — Monday only; not included today (Tuesday).
+================================================================
+
+================================================================
+(d) FACEBOOK — for your own profile (draft, NOT posted)
+================================================================
+Today's Nerazzurri Daily leads with Cristian Chivu winning the Panchina d’Oro — Italy’s coaches voted him the best of last season, the Double in his first year at Inter. If you know one Inter fan, send them nerazzurridaily.com/go/fb/?ed=77
+
+================================================================
+VERIFIED
+================================================================
+Every claim comes from data/edition-77.json in the repo (date 2026-11-17, sha256 02ca3ae049c14a440b45625a49531b5b78cf6c7c80eb9f32d8c253e4b8a46253).
+  - Chivu, Panchina d’Oro, voted by coaches, best coach of 2025/26, the Double in his first year — CONFIRMED bar, kicker "INTER.IT · NOV 16".
+  - Lautaro should rejoin the group from Tuesday; Bergamo or Stuttgart — REPORTED bar, kicker "UPDATE · SKY SPORT ITALIA · … · NOV 17".
+  - Fixtures — NEXT UP block.
+OUR TAKE ("A Double in year one. Easy vote. The coaches got it right.") is opinion and is labeled as such.

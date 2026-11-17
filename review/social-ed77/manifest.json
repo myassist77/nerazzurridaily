@@ -1,0 +1,128 @@
+{
+ "edition": 77,
+ "date": "2026-11-17",
+ "slug": "chivu-golden-bench",
+ "name": "ND-2026-11-17-ed77-chivu-golden-bench",
+ "hook": "Chivu is Italy's best coach.",
+ "page_url": "https://www.nerazzurridaily.com/p/edition-77/",
+ "edition_json_sha256": "02ca3ae049c14a440b45625a49531b5b78cf6c7c80eb9f32d8c253e4b8a46253",
+ "brevo": {
+  "campaign_id": 66,
+  "status": "sent",
+  "sent_at_et": "2026-11-17T05:58:07-05:00"
+ },
+ "local_render": {
+  "file": "ND-2026-11-17-ed77-chivu-golden-bench-voiced.mp4",
+  "seconds": 34.1,
+  "beats": 6,
+  "bytes": 1384140,
+  "md5": "0b1b57d0e77a242ad2da08f0f9ce6f16",
+  "sha256": "74ec6cc53103520352b624e34d5d096d639e62129f49cbb87dacb3d8b483f6f2",
+  "audio": {
+   "content": "voiceover only — no music",
+   "codec": "aac",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": 34.08
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 33.08
+  }
+ },
+ "stories": [
+  {
+   "h3": "Chivu wins the Panchina d’Oro",
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "2026-11-16",
+   "on_beat": "2 + thumbnail"
+  },
+  {
+   "h3": "Lautaro should rejoin the group this week",
+   "register": "REPORTED",
+   "source": "Sky Sport Italia via FCInterNews",
+   "date": "2026-11-17",
+   "on_beat": "4 + thumbnail pill"
+  }
+ ],
+ "youtube_title": "Inter's Cristian Chivu Wins the Panchina d'Oro: Italy's Best Coach? #Shorts",
+ "pinned_question": "Who is the best coach in Italy right now? One name.",
+ "next_fixture": {
+  "opponent": "Atalanta",
+  "venue": "AWAY",
+  "date": "2026-11-22",
+  "competition": "Serie A · Matchday 12",
+  "kickoff_et": "2:45 PM ET",
+  "kickoff_cet": "20:45 CET",
+  "us_tv": "Paramount+"
+ },
+ "thumbnail_style": "number",
+ "optional_drafts": {
+  "reddit": false,
+  "facebook": true
+ },
+ "format": "daily six-beat",
+ "static_fallback_used": false,
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/44078047834",
+  "built_at_utc": "2026-11-17T11:55:33+00:00",
+  "seconds": 34.1,
+  "beats": 6,
+  "files": {
+   "assets/video/ed77.mp4": {
+    "bytes": 1359109,
+    "md5": "376f5f0c4497c4923834ba76dfe13fc6",
+    "sha256": "45af3630a6704a392c6e98f7fbebf2b85feada899e8efa752ff3fd32948a391b"
+   },
+   "assets/video/ed77-thumb.png": {
+    "bytes": 53495,
+    "md5": "ea388ed7bdfa2be4fdfe75beeb2bce71",
+    "sha256": "dda0598274d28b1b271ce4b0ad19e9a2e0b40ed65b778059b6ef93cecb7085b0"
+   },
+   "assets/video/ed77-thumb-9x16.png": {
+    "bytes": 72840,
+    "md5": "1e44024c4b8fb1cf37a8a73a55965e32",
+    "sha256": "c0d847b54d7a3058ed1315750398dc64816679ff7487a8a580b193ab3fa62cd7"
+   },
+   "data/tiktok-ed77.json": {
+    "bytes": 727,
+    "md5": "fa3d024dda8e30dac3ab644dcef6cf25",
+    "sha256": "088bbe51ad2b5158ac5f6da6e094db115ae5249223c6833455192ac181543f9e"
+   },
+   "data/youtube-ed77.json": {
+    "bytes": 1470,
+    "md5": "a8a25b7859870fa04e16c305cd59ff3c",
+    "sha256": "8e573bd6f0faae0fa0c693390c54d041822d68034512879d0a6b0b1fb3d83a99"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 121102,
+    "md5": "5f523a231b9b3b16cd13f8167e645bb9",
+    "sha256": "f68350129e42319f811e9712754d8a17a17ae8081d8f1f004d09f840fef1c1be"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 72840,
+    "md5": "1e44024c4b8fb1cf37a8a73a55965e32",
+    "sha256": "c0d847b54d7a3058ed1315750398dc64816679ff7487a8a580b193ab3fa62cd7"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 53495,
+    "md5": "ea388ed7bdfa2be4fdfe75beeb2bce71",
+    "sha256": "dda0598274d28b1b271ce4b0ad19e9a2e0b40ed65b778059b6ef93cecb7085b0"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 33.08
+  },
+  "passed": true
+ }
+}
