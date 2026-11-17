@@ -1,0 +1,20 @@
+{
+ "n": 77,
+ "date": "2026-11-17",
+ "question": "Who is the best coach in Italy right now? One name.",
+ "channels": {
+  "bluesky": {
+   "state": "PUBLISHED",
+   "route": "repo",
+   "post_id": "at://did:plc:cqmhtmzyxdkm64ijvdddywbg/app.bsky.feed.post/3n2jjw3itpz2k",
+   "url": "https://bsky.app/profile/nerazzurridaily.com/post/3n2jjw3itpz2k",
+   "posted_at_utc": "2026-11-17T17:10:23Z"
+  },
+  "facebook": {
+   "state": "PUBLISHED",
+   "route": "postiz",
+   "post_id": "cmwky77t206ftqe07ekk5nitn",
+   "posted_at_utc": "2026-11-17T17:10:00Z"
+  }
+ }
+}
