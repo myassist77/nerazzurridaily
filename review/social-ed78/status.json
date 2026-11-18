@@ -1,0 +1,96 @@
+{
+ "job": "ed78",
+ "kind": "daily",
+ "name": "ND-2026-11-18-ed78-lautaro-thuram-back",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-18T11:54:03+00:00",
+ "run_id": "44298514558",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/44298514558",
+ "files": {
+  "assets/video/ed78.mp4": {
+   "bytes": 1337849,
+   "md5": "c5d82cc0bf2a76bfc0d18ca7c9d200a8",
+   "sha256": "78e4e685ffc60a5ffa30d40a49cb6fde5c5db4e5e4d54ffe25b44cfae76d3000"
+  },
+  "assets/video/ed78-thumb.png": {
+   "bytes": 61581,
+   "md5": "34c02d47702e85fe4c4cf2ac831d8370",
+   "sha256": "1951fa2d342a9a697780fbd8c65fecf9ce92dbba9e1382565735e0fe8a2d9b0c"
+  },
+  "assets/video/ed78-thumb-9x16.png": {
+   "bytes": 87322,
+   "md5": "2aa6d46703584ed49e5574388d530410",
+   "sha256": "46b34eadbd773ebe9624284d9a038c38dab3fa85eee64bdf1920ce3c9c3ac624"
+  },
+  "data/tiktok-ed78.json": {
+   "bytes": 732,
+   "md5": "2004fbff0bf061261dac4934bc525061",
+   "sha256": "e77ef528fbe7bff790ceb5fcdac83e4a5544ac4c0116deda3d1425f9b39dd422"
+  },
+  "data/youtube-ed78.json": {
+   "bytes": 1758,
+   "md5": "4f5f5ecabbde30e01a42c9c49a45f3d5",
+   "sha256": "9f0e7217c0680290004c9e4f26007448d0c3b2ee32063917728c391ad815099f"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 117595,
+   "md5": "a7265434bbf9aef850ea7f8e0de3b1fa",
+   "sha256": "f8aefa9dac9328b02433576bbd9d6974c4d5b744eb190458202234fb8e1d2eac"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 87322,
+   "md5": "2aa6d46703584ed49e5574388d530410",
+   "sha256": "46b34eadbd773ebe9624284d9a038c38dab3fa85eee64bdf1920ce3c9c3ac624"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 61581,
+   "md5": "34c02d47702e85fe4c4cf2ac831d8370",
+   "sha256": "1951fa2d342a9a697780fbd8c65fecf9ce92dbba9e1382565735e0fe8a2d9b0c"
+  }
+ },
+ "seconds": 33.36,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "33.333333"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "33.360000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-11-18-ed78-lautaro-thuram-back-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-11-18-ed78-lautaro-thuram-back-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-11-18-ed78-lautaro-thuram-back-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 830629,
+  "md5": "8015163fd79416172926b67d0fa4ac93",
+  "sha256": "011e3fc7ee6ec18cf1b3601eec58d3648d4a5b91434470884f1c4be6278deecf"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 32.36
+ },
+ "voice_log_tail": "01-stance: voice 4.63s → beat 5.14s\n02-claim: voice 6.21s → beat 6.64s\n03-our-take: voice 3.52s → beat 3.97s\n04-turn: voice 5.72s → beat 6.15s\n05-fixture: voice 3.95s → beat 4.4s\n06-end: voice 5.67s → beat 6.06s\nPLAN OK build/beats.voiced.json — 6 beats, 32.36s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-11-18-ed78-lautaro-thuram-back.mp4 — 32.33s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-11-18-ed78-lautaro-thuram-back-thumb-9x16.png, ND-2026-11-18-ed78-lautaro-thuram-back-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-11-18-ed78-lautaro-thuram-back-voiced.mp4 — 33.36s, AAC 48 kHz stereo, I: -16.2 LUFS Peak: -3.8 dBFS\n"
+}

@@ -1,0 +1,69 @@
+NERAZZURRI DAILY — SOCIAL PACK
+Edition No. 78 · Wednesday, November 18, 2026
+Video: ND-2026-11-18-ed78-lautaro-thuram-back-voiced.mp4 — 33.36s, 6 beats, 9:16 1080x1920, voiceover only (no music)
+Hook: Inter need Lautaro from the start.
+
+================================================================
+(a) TIKTOK — @nerazzurridaily
+================================================================
+Posted automatically at 7:30 AM ET via Postiz. The MP4 carries the voiceover only, no music — the owner's choice of Sept 26, 2026.
+No men's match today (Inter Women play Real Madrid), so no full-time card.
+
+TITLE (<=90 characters):
+Inter: Lautaro and Thuram are back. Should Lautaro start at Atalanta?
+
+CAPTION:
+Inter's Lautaro Martínez and Marcus Thuram trained with the group on Tuesday, per Sky Sport Italia — Lautaro's first session with the group since his injury. Tuttosport says Chivu won't rush him, and Thuram could start next to Pio Esposito. We say the captain starts in Bergamo. Blue means the club said it. Pink means only the papers did.
+
+Free daily digest in English: https://www.nerazzurridaily.com/go/tt/?ed=78
+
+#Inter #SerieA #AtalantaInter #Lautaro
+
+================================================================
+(b) YOUTUBE SHORTS — @nerazzurridaily
+================================================================
+Posted automatically at 7:30 AM ET via Postiz. The MP4 carries the voiceover only, no music — the owner's choice of Sept 26, 2026.
+The 9:16 thumbnail is sent to YouTube with the post (the 16:9 file is the fallback); the same 9:16 image opens the video for 1 second, which makes it the TikTok cover.
+
+TITLE (<=100 characters):
+Inter: Lautaro and Thuram Back in Training. Should Lautaro Start vs Atalanta? #Shorts
+
+DESCRIPTION:
+Lautaro Martínez and Marcus Thuram are back with the group. We say Inter need Lautaro from the start in Bergamo.
+Free daily digest in English: https://www.nerazzurridaily.com/go/yt/?ed=78
+
+Blue means the club said it. Pink means only the papers did.
+
+REPORTED — Lautaro Martínez and Marcus Thuram trained with the group on Tuesday at Appiano Gentile; it was Lautaro's first session with the group since his injury, and both should be in the squad in Bergamo on Sunday. Source: Sky Sport Italia via FCInterNews, Nov 17.
+REPORTED — Chivu will not rush Lautaro, and Thuram is further along and could start next to Francesco Pio Esposito. Source: Tuttosport via FCInter1908, Nov 18; Corriere dello Sport also expects one of the two to start on the bench.
+CONFIRMED — Tickets are on sale for the Supercoppa against Lazio at San Siro on Tuesday, Dec 22, 3:00 PM ET (21:00 CET). Source: Inter.it, Nov 17.
+NEXT UP — Atalanta vs Inter, Sunday, Nov 22, 2:45 PM ET (20:45 CET), Serie A Matchday 12. US TV: Paramount+.
+
+Read today's edition: https://www.nerazzurridaily.com/p/edition-78/
+
+Fan-made — not affiliated with FC Internazionale Milano.
+
+PINNED COMMENT:
+Should Lautaro start against Atalanta on Sunday? Yes or no. Reply in the comments. https://www.nerazzurridaily.com/go/yt/?ed=78&v=pinned
+
+HASHTAGS (first three show above the title):
+#Inter #SerieA #AtalantaInter #Lautaro #ForzaInter
+
+================================================================
+(c) REDDIT — Monday only; not included today (Wednesday).
+================================================================
+
+================================================================
+(d) FACEBOOK — for your own profile (draft, NOT posted)
+================================================================
+Today's Nerazzurri Daily leads with Lautaro Martínez and Marcus Thuram back in training with the group, five days before Atalanta. If you know one Inter fan, send them nerazzurridaily.com/go/fb/?ed=78
+
+================================================================
+VERIFIED
+================================================================
+Every claim comes from data/edition-78.json in the repo (date 2026-11-18, sha256 254b258c56b26f73e6258d51930bead9c5bba010508f064d28fc654e300c3215).
+  - Lautaro and Thuram trained with the group Tuesday; Lautaro's first session since injury — REPORTED bar, kicker "UPDATE · SKY SPORT ITALIA VIA FCINTERNEWS · NOV 17".
+  - Chivu won't rush Lautaro; Thuram could start next to Pio Esposito — REPORTED bar, kicker "TUTTOSPORT VIA FCINTER1908 · CORRIERE DELLO SPORT · NOV 18".
+  - Supercoppa tickets on sale (thumbnail pill) — CONFIRMED bar, kicker "INTER.IT · NOV 17 · NOV 18".
+  - Fixtures — NEXT UP block.
+OUR TAKE ("He is the captain. He starts. No bench for the captain.") is opinion and is labeled as such.
