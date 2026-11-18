@@ -1,0 +1,86 @@
+{
+ "job": "debate-2026-11-18-sneijder-or-calhanoglu",
+ "kind": "debate",
+ "name": "debate-2026-11-18-sneijder-or-calhanoglu",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-18T17:29:38+00:00",
+ "run_id": "44358834916",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/44358834916",
+ "files": {
+  "assets/video/debate-2026-11-18-sneijder-or-calhanoglu.mp4": {
+   "bytes": 2605381,
+   "md5": "77258aaea872edc966c2115a1b9bf7ab",
+   "sha256": "4ab9c48dee1b1d0c6f0660b1161f98c97f069a94d29d8f0404d5b519a76171c4"
+  },
+  "assets/video/debate-2026-11-18-sneijder-or-calhanoglu-thumb.png": {
+   "bytes": 315597,
+   "md5": "3e6902c4828bc7583160685cefb83935",
+   "sha256": "611f80acebbd214f0d7bcd0726fe91efe671cf317680f6af42bfddd350a08ed7"
+  },
+  "assets/video/debate-2026-11-18-sneijder-or-calhanoglu-thumb-9x16.png": {
+   "bytes": 624303,
+   "md5": "d1423aed661328b11b64c6de4a8f799e",
+   "sha256": "78477b05a53902026e84d2426c71d322d267814289e6927d9330c6fb89d291d1"
+  },
+  "data/tiktok-debate-2026-11-18-sneijder-or-calhanoglu.json": {
+   "bytes": 850,
+   "md5": "5c3ec12d7a2a8775a07ff9b203f71a08",
+   "sha256": "f6c57419cb49ab0193fd539b22d82fed82b99a0f5afb32ab27a25c58da5ffcf3"
+  },
+  "data/youtube-debate-2026-11-18-sneijder-or-calhanoglu.json": {
+   "bytes": 1872,
+   "md5": "4eccbe42c930a87ce7454311344ffa0b",
+   "sha256": "e76e4d377d3d7d2c3aecfc80c1ec0e1e0da200a819fc61669154691cddec3104"
+  },
+  "assets/qc/debate-contact.jpg": {
+   "bytes": 161752,
+   "md5": "a92fbc4afd5e75e2468022b612ec85b2",
+   "sha256": "71671bbea3064ab151094693f9649ed99852026445f18abc09a47cc87453c692"
+  }
+ },
+ "seconds": 38.33,
+ "beats": 7,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "38.333333"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "38.310000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/debate-2026-11-18-sneijder-or-calhanoglu-voiced.mp4",
+  "thumb16": "build/pack/debate-2026-11-18-sneijder-or-calhanoglu-thumb-16x9.png",
+  "thumb9": "build/pack/debate-2026-11-18-sneijder-or-calhanoglu-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 1972377,
+  "md5": "a161fd8385816a9a833f718483c7eb32",
+  "sha256": "9d87fadc7d4eec51e87bd3ae438fe5c79acea7d90a78849cb42210b038a2910e"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 37.31
+ },
+ "voice_log_tail": "b1: voice 5.70s → beat 6.19s\nb2: voice 3.29s → beat 3.69s\nb3: voice 5.38s → beat 5.85s\nb4: voice 4.46s → beat 4.93s\nb5: voice 4.05s → beat 4.52s\nb6: voice 5.74s → beat 6.15s\nb7: voice 5.50s → beat 5.98s\nPLAN OK build/beats.voiced.json — 7 beats, 37.31s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/debate-2026-11-18-sneijder-or-calhanoglu.mp4 — 37.33s, 7 beats, silent (voice is mixed on by nd_voice.py); stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: debate-2026-11-18-sneijder-or-calhanoglu-thumb-9x16.png, debate-2026-11-18-sneijder-or-calhanoglu-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/debate-2026-11-18-sneijder-or-calhanoglu-voiced.mp4 — 38.33s, AAC 48 kHz stereo, I: -16.3 LUFS Peak: -3.8 dBFS\n"
+}
