@@ -47,5 +47,12 @@
   "url": "https://bsky.app/profile/nerazzurridaily.com/post/3n2jjw3itpz2k",
   "posted_at_utc": "2026-11-17T17:10:23Z",
   "attempts": 1
+ },
+ "ed78-video": {
+  "state": "PUBLISHED",
+  "uri": "at://did:plc:cqmhtmzyxdkm64ijvdddywbg/app.bsky.feed.post/3n2llkontyk2p",
+  "url": "https://bsky.app/profile/nerazzurridaily.com/post/3n2llkontyk2p",
+  "posted_at_utc": "2026-11-18T12:45:08Z",
+  "attempts": 1
  }
 }
