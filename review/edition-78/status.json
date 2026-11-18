@@ -1,0 +1,163 @@
+{
+ "n": 78,
+ "built_at_utc": "2026-11-18T10:46:09+00:00",
+ "run_id": "44288397886",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/44288397886",
+ "passed": true,
+ "steps": {
+  "mast": "success",
+  "controls": "success",
+  "checks": "success"
+ },
+ "files_md5": {
+  "p/edition-78/index.html": "f236c139edc221e631bd9cc49678e498",
+  "assets/mast/edition-78.png": "e12eb841c975feefa3a0d233e8773a69",
+  "data/edition-78.json": "423f883c0ad4efb8dd321532dda21200",
+  "index.html": "58338770c9d4dfc86a1713c00ec7382a",
+  "subscribe/index.html": "470ab40a1da0cdd9f2aa3bf060f00cbe",
+  "fixtures/index.html": "03a3b9618e431ef11eea3dfd9f9bce48",
+  "feed.xml": "19be86e008bc08fe6f11b568047efb89",
+  "sitemap.xml": "e452dda712e69d8528a64a1f562cb60e"
+ },
+ "title": "Lautaro and Thuram train with the group before Atalanta",
+ "date": "2026-11-18",
+ "masthead": {
+  "bytes": 6148,
+  "lines": 2,
+  "colors": 7,
+  "fonts": {
+   "anton": true,
+   "mono": true
+  }
+ },
+ "controls": {
+  "n": 78,
+  "fails": [],
+  "warns": [],
+  "page-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 700,
+    "h": 382.8125,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "page-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "email-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 644,
+    "h": 352.1875,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  },
+  "email-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  }
+ },
+ "checks": {
+  "fails": [],
+  "warns": [
+   "sentences: 31 words: “No match Inter 2–0 Como Atalanta  AWAY Inter Women play Real Madrid in Madrid today at 12:45 PM ET, 18:45 CET,…”",
+   "sentences: 32 words: “PIO ESPOSITO 12′ · THURAM 19′ Atalanta  AWAY VfB Stuttgart  HOME Genoa  HOME Genoa  HOME Frosinone  AWAY Borus…”"
+  ],
+  "info": {
+   "prose_words": 378,
+   "read_seconds": 95,
+   "avg_sentence_words": 16.6,
+   "flesch_reading_ease": 55.4,
+   "edition_from_masthead": null,
+   "dates": {
+    "today": "November 18"
+   },
+   "external_to_fetch": [
+    "https://bsky.app/profile/nerazzurridaily.com",
+    "https://www.facebook.com/nerazzurridaily",
+    "https://www.fcinter1908.it/news/rassegna-stampa/atalanta-inter-riecco-lautaro-idea-chivu-attacco-akanji-zielinski/",
+    "https://www.fcinternews.it/in-primo-piano/sky-inter-news-lautaro-thuram-allenamento-gruppo-1023434",
+    "https://www.inter.it/en/news/champions-league-women-eve-of-real-madrid-vs-inter-training-guide",
+    "https://www.inter.it/en/news/inter-back-in-training-17-november-2026",
+    "https://www.inter.it/en/news/inter-schedule-tickets-matches-november-december-san-siro",
+    "https://www.inter.it/en/news/internationals-inter-zielinski-poland-sweden-nations-league",
+    "https://www.inter.it/en/news/tickets-inter-liverpool-champions-league-2026-27",
+    "https://www.inter.it/en/news/tickets-supercoppa-inter-lazio-san-siro-2026-27",
+    "https://www.inter.it/it/notizie/atalanta-inter-dove-vederla-in-tv-seriea-2026-27",
+    "https://www.inter.it/it/notizie/sassarini-andres-intervista-vigilia-real-madrid-inter-uefa-womens-champions-league-2026-27",
+    "https://www.linterista.it/primo-piano/inter-riabbraccia-lautaro-atalanta-recuperato-thuram-corriere-sport-pagina-204137",
+    "https://www.tiktok.com/@nerazzurridaily",
+    "https://www.youtube.com/@nerazzurridaily"
+   ],
+   "site_links": [
+    "https://www.nerazzurridaily.com/go/email/?ed=78",
+    "https://www.nerazzurridaily.com/go/email/?ed=78&to=/subscribe/",
+    "https://www.nerazzurridaily.com/go/forward/?ed=78",
+    "https://www.nerazzurridaily.com/go/vote/?ed=78&v=no",
+    "https://www.nerazzurridaily.com/go/vote/?ed=78&v=yes",
+    "https://www.nerazzurridaily.com/p/edition-78/"
+   ]
+  }
+ },
+ "email": {
+  "md5": "c2a138f083854dcc8a26a1a2375957fd",
+  "chars": 25676,
+  "bytes": 25825
+ }
+}
