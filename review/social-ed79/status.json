@@ -1,0 +1,96 @@
+{
+ "job": "ed79",
+ "kind": "daily",
+ "name": "ND-2026-11-19-ed79-inter-women-madrid",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-19T12:01:12+00:00",
+ "run_id": "44518613989",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/44518613989",
+ "files": {
+  "assets/video/ed79.mp4": {
+   "bytes": 1392313,
+   "md5": "63a03df8d002396652ae3db744bab5d2",
+   "sha256": "be538e35db07367fcfbcc266dfeaffca13394c2a4e9c6f5264b4e5b75c877933"
+  },
+  "assets/video/ed79-thumb.png": {
+   "bytes": 62241,
+   "md5": "d30f27b83687f5734749c39052a3d1d8",
+   "sha256": "c2a76bdb4f746b4a37e378914b493ae8d0d7b4bfb3de79a5a887d8cb72c86081"
+  },
+  "assets/video/ed79-thumb-9x16.png": {
+   "bytes": 87341,
+   "md5": "2fe14587392d282a4057ed2e737bfc91",
+   "sha256": "f252da268a2aed79639c06bc9fa8bf52dccec9e6be4c5cfeba54cdb9707cda62"
+  },
+  "data/tiktok-ed79.json": {
+   "bytes": 773,
+   "md5": "4520cee1462a7b67471745c4e6d6a45c",
+   "sha256": "99d611173c5e6ea3284b7d83f53b42b284f1a8966bcd09207a6bc311ec647504"
+  },
+  "data/youtube-ed79.json": {
+   "bytes": 2042,
+   "md5": "33870ce6934785419b8417c7f4ac4515",
+   "sha256": "417cdc858c34873735076ba85279fa99956c0decfcaa0941c77e2c08add041de"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 122305,
+   "md5": "b59dc8c3785c366dae29b18f0a0982f7",
+   "sha256": "5f283590aba4346767ddccd5399a7ce4f5fbe2a18916c0edc3e77086573766d2"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 87341,
+   "md5": "2fe14587392d282a4057ed2e737bfc91",
+   "sha256": "f252da268a2aed79639c06bc9fa8bf52dccec9e6be4c5cfeba54cdb9707cda62"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 62241,
+   "md5": "d30f27b83687f5734749c39052a3d1d8",
+   "sha256": "c2a76bdb4f746b4a37e378914b493ae8d0d7b4bfb3de79a5a887d8cb72c86081"
+  }
+ },
+ "seconds": 33.83,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "33.833333"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "33.800000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-11-19-ed79-inter-women-madrid-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-11-19-ed79-inter-women-madrid-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-11-19-ed79-inter-women-madrid-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 877006,
+  "md5": "10b8f527854941e5f10f4d6f22cb5738",
+  "sha256": "2179d4dfe00e5743f566fade9cce710052890b5a63811393c23c86ecfc091d73"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 32.8
+ },
+ "voice_log_tail": "01-stance: voice 3.69s → beat 4.1s\n02-claim: voice 5.70s → beat 6.12s\n03-our-take: voice 4.74s → beat 5.16s\n04-turn: voice 6.27s → beat 6.72s\n05-fixture: voice 4.44s → beat 4.87s\n06-end: voice 5.33s → beat 5.83s\nPLAN OK build/beats.voiced.json — 6 beats, 32.8s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-11-19-ed79-inter-women-madrid.mp4 — 32.83s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-11-19-ed79-inter-women-madrid-thumb-9x16.png, ND-2026-11-19-ed79-inter-women-madrid-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-11-19-ed79-inter-women-madrid-voiced.mp4 — 33.83s, AAC 48 kHz stereo, I: -16.3 LUFS Peak: -3.8 dBFS\n"
+}

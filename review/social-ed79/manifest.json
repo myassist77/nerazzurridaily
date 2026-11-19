@@ -1,0 +1,135 @@
+{
+ "edition": 79,
+ "date": "2026-11-19",
+ "slug": "inter-women-madrid",
+ "name": "ND-2026-11-19-ed79-inter-women-madrid",
+ "hook": "Inter Women lost to the red card.",
+ "page_url": "https://www.nerazzurridaily.com/p/edition-79/",
+ "edition_json_sha256": "e8da4024a842a7cf86422239bec6dac845cda555c5c7329eb823b0441e07635f",
+ "brevo": {
+  "campaign_id": 68,
+  "status": "sent",
+  "sent_at_et": "2026-11-19T06:08:19-05:00"
+ },
+ "local_render": {
+  "file": "ND-2026-11-19-ed79-inter-women-madrid-voiced.mp4",
+  "seconds": 33.83,
+  "beats": 6,
+  "bytes": 1516304,
+  "md5": "b08240e125ad2dbf10c38297cfe29487",
+  "sha256": "8898df137f8ab97f839939848b75688a64cb347869224c0523e865d9c06bc888",
+  "audio": {
+   "content": "voiceover only — no music",
+   "codec": "aac",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": 33.83
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 32.8
+  }
+ },
+ "stories": [
+  {
+   "h3": "Inter Women lose in Madrid",
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "2026-11-18",
+   "on_beat": "2 + 4 + thumbnail"
+  },
+  {
+   "h3": "Pio Esposito scores three for Italy",
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "2026-11-18",
+   "on_beat": "description only"
+  },
+  {
+   "h3": "Inter open renewal talks with Çalhanoğlu",
+   "register": "REPORTED",
+   "source": "Corriere dello Sport via FCInter1908",
+   "date": "2026-11-19",
+   "on_beat": "thumbnail pill"
+  }
+ ],
+ "youtube_title": "Inter Women Lose 3–1 at Real Madrid After a Red Card. Did the Red Decide It? #Shorts",
+ "pinned_question": "Did the red card decide Real Madrid vs Inter Women? Yes or no.",
+ "next_fixture": {
+  "opponent": "Atalanta",
+  "venue": "AWAY",
+  "date": "2026-11-22",
+  "competition": "Serie A · Matchday 12",
+  "kickoff_et": "2:45 PM ET",
+  "kickoff_cet": "20:45 CET",
+  "us_tv": "Paramount+"
+ },
+ "thumbnail_style": "number",
+ "optional_drafts": {
+  "reddit": false,
+  "facebook": true
+ },
+ "format": "daily six-beat",
+ "static_fallback_used": false,
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/44518613989",
+  "built_at_utc": "2026-11-19T12:01:12+00:00",
+  "seconds": 33.83,
+  "beats": 6,
+  "files": {
+   "assets/video/ed79.mp4": {
+    "bytes": 1392313,
+    "md5": "63a03df8d002396652ae3db744bab5d2",
+    "sha256": "be538e35db07367fcfbcc266dfeaffca13394c2a4e9c6f5264b4e5b75c877933"
+   },
+   "assets/video/ed79-thumb.png": {
+    "bytes": 62241,
+    "md5": "d30f27b83687f5734749c39052a3d1d8",
+    "sha256": "c2a76bdb4f746b4a37e378914b493ae8d0d7b4bfb3de79a5a887d8cb72c86081"
+   },
+   "assets/video/ed79-thumb-9x16.png": {
+    "bytes": 87341,
+    "md5": "2fe14587392d282a4057ed2e737bfc91",
+    "sha256": "f252da268a2aed79639c06bc9fa8bf52dccec9e6be4c5cfeba54cdb9707cda62"
+   },
+   "data/tiktok-ed79.json": {
+    "bytes": 773,
+    "md5": "4520cee1462a7b67471745c4e6d6a45c",
+    "sha256": "99d611173c5e6ea3284b7d83f53b42b284f1a8966bcd09207a6bc311ec647504"
+   },
+   "data/youtube-ed79.json": {
+    "bytes": 2042,
+    "md5": "33870ce6934785419b8417c7f4ac4515",
+    "sha256": "417cdc858c34873735076ba85279fa99956c0decfcaa0941c77e2c08add041de"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 122305,
+    "md5": "b59dc8c3785c366dae29b18f0a0982f7",
+    "sha256": "5f283590aba4346767ddccd5399a7ce4f5fbe2a18916c0edc3e77086573766d2"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 87341,
+    "md5": "2fe14587392d282a4057ed2e737bfc91",
+    "sha256": "f252da268a2aed79639c06bc9fa8bf52dccec9e6be4c5cfeba54cdb9707cda62"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 62241,
+    "md5": "d30f27b83687f5734749c39052a3d1d8",
+    "sha256": "c2a76bdb4f746b4a37e378914b493ae8d0d7b4bfb3de79a5a887d8cb72c86081"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 32.8
+  },
+  "passed": true
+ }
+}

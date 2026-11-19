@@ -1,0 +1,71 @@
+NERAZZURRI DAILY — SOCIAL PACK
+Edition No. 79 · Thursday, November 19, 2026
+Video: ND-2026-11-19-ed79-inter-women-madrid-voiced.mp4 — 33.83s, 6 beats, 9:16 1080x1920, voiceover only (no music)
+Hook: Inter Women lost to the red card.
+
+================================================================
+(a) TIKTOK — @nerazzurridaily
+================================================================
+Posted automatically at 7:30 AM ET via Postiz. The MP4 carries the voiceover only, no music — the owner's choice of Sept 26, 2026.
+No men's match today (Atalanta on Sunday), so no full-time card.
+
+TITLE (<=90 characters):
+Inter Women lose 3–1 at Real Madrid after a red card. Did the red decide it?
+
+CAPTION:
+Inter Women lost 3–1 at Real Madrid in the Women's Champions League after a red card in the 41st minute, per Inter.it. Michela Cambiaghi tied it before halftime with ten players, and Inter still host Arsenal on December 16 with a knockout place possible. We say the red card decided it, not Madrid. Blue means the club said it. Pink means only the papers did.
+
+Free daily digest in English: https://www.nerazzurridaily.com/go/tt/?ed=79
+
+#Inter #ChampionsLeague #RealMadridInter #InterWomen
+
+================================================================
+(b) YOUTUBE SHORTS — @nerazzurridaily
+================================================================
+Posted automatically at 7:30 AM ET via Postiz. The MP4 carries the voiceover only, no music — the owner's choice of Sept 26, 2026.
+The 9:16 thumbnail is sent to YouTube with the post (the 16:9 file is the fallback); the same 9:16 image opens the video for 1 second, which makes it the TikTok cover.
+
+TITLE (<=100 characters):
+Inter Women Lose 3–1 at Real Madrid After a Red Card. Did the Red Decide It? #Shorts
+
+DESCRIPTION:
+Inter Women played most of the game in Madrid with ten players. We say they lost to the red card, not to Real Madrid.
+Free daily digest in English: https://www.nerazzurridaily.com/go/yt/?ed=79
+
+Blue means the club said it. Pink means only the papers did.
+
+CONFIRMED — Inter Women lost 3–1 to Real Madrid in round five of the Women's Champions League league phase. Real Madrid led when Karolina Vilhjalmsdottir was sent off after a video review in the 41st minute; Michela Cambiaghi tied it in first-half stoppage time, and Real Madrid scored twice late. Source: Inter.it, Nov 18.
+CONFIRMED — Inter stay on four points and host Arsenal on December 16 in their last league-phase game, with a place in the knockout rounds still possible. Source: Inter.it, Nov 18.
+CONFIRMED — Francesco Pio Esposito scored three goals for Italy during the international break and now has ten in 15 games. Source: Inter.it, Nov 18.
+REPORTED — Inter are willing to offer Hakan Çalhanoğlu, whose contract runs to 2027, a new deal not far from his current salary, with a lower fixed part and richer bonuses; talks are still open. Source: Corriere dello Sport via FCInter1908, Nov 19.
+NEXT UP — Atalanta vs Inter, Sunday, Nov 22, 2:45 PM ET (20:45 CET), Serie A Matchday 12. US TV: Paramount+.
+
+Read today's edition: https://www.nerazzurridaily.com/p/edition-79/
+
+Fan-made — not affiliated with FC Internazionale Milano.
+
+PINNED COMMENT:
+Did the red card decide Real Madrid vs Inter Women? Yes or no. Reply in the comments. https://www.nerazzurridaily.com/go/yt/?ed=79&v=pinned
+
+HASHTAGS (first three show above the title):
+#Inter #ChampionsLeague #RealMadridInter #InterWomen #ForzaInter
+
+================================================================
+(c) REDDIT — Monday only; not included today (Thursday).
+================================================================
+
+================================================================
+(d) FACEBOOK — for your own profile (draft, NOT posted)
+================================================================
+Today's Nerazzurri Daily leads with Inter Women's 3–1 loss at Real Madrid, after playing most of the game with ten players. If you know one Inter fan, send them nerazzurridaily.com/go/fb/?ed=79
+
+================================================================
+VERIFIED
+================================================================
+Every claim comes from data/edition-79.json in the repo (date 2026-11-19, sha256 e8da4024a842a7cf86422239bec6dac845cda555c5c7329eb823b0441e07635f).
+  - Real Madrid 3–1 Inter Women, red card after video review 41', Cambiaghi tied it in first-half stoppage time — CONFIRMED bar, kicker "INTER.IT · NOV 18".
+  - Four points, Arsenal at home Dec 16, knockout place still possible — same CONFIRMED item.
+  - Çalhanoğlu renewal talks (thumbnail pill, description) — REPORTED bar, kicker "CORRIERE DELLO SPORT VIA FCINTER1908 · NOV 19".
+  - Pio Esposito three goals for Italy, ten in 15 (description) — CONFIRMED bar, kicker "INTER.IT · NOV 18".
+  - Fixture — NEXT UP block.
+OUR TAKE ("Down to ten, they still tied it. That team can beat Arsenal.") and the hook are opinion and are labeled as such.

@@ -1,0 +1,121 @@
+{
+ "n": 79,
+ "date": "2026-11-19",
+ "slug": "inter-women-madrid",
+ "name": "ND-2026-11-19-ed79-inter-women-madrid",
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "3-1",
+   "lines_a": [
+    "INTER WOMEN",
+    "LOSE IN MADRID"
+   ],
+   "lines_b": [
+    "TEN PLAYERS FROM",
+    "THE 41ST MINUTE"
+   ],
+   "pill": "REPORTED · ÇALHANOĞLU RENEWAL TALKS",
+   "pill_register": "REPORTED"
+  }
+ },
+ "beats": [
+  {
+   "id": "01-stance",
+   "kind": "cover",
+   "duration": 4.1,
+   "eyebrow": "EDITION NO. 79 · NOVEMBER 19",
+   "lines": [
+    "INTER WOMEN",
+    "LOST TO THE",
+    "RED CARD."
+   ],
+   "vo": "[Inter] Women lost to a red card, not to [Real Madrid]."
+  },
+  {
+   "id": "02-claim",
+   "kind": "result",
+   "duration": 6.12,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · NOV 18",
+   "home": "REAL MADRID",
+   "away": "INTER WOMEN",
+   "score_home": 3,
+   "score_away": 1,
+   "inter": "away",
+   "sub": [
+    "RED CARD AFTER VIDEO REVIEW, 41′",
+    "CAMBIAGHI TIED IT BEFORE HALFTIME"
+   ],
+   "vo": "[Inter] says its women lost three to one in [Madrid], with ten players from the forty-first minute."
+  },
+  {
+   "id": "03-our-take",
+   "kind": "item",
+   "duration": 5.16,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "DOWN TO TEN,",
+    "THEY STILL",
+    "TIED IT."
+   ],
+   "sub": [
+    "THAT TEAM CAN BEAT ARSENAL."
+   ],
+   "vo": "Down to ten, they still tied it before halftime. That team can beat [Arsenal]."
+  },
+  {
+   "id": "04-turn",
+   "kind": "item",
+   "duration": 6.72,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · NOV 18",
+   "lines": [
+    "STILL ALIVE",
+    "IN EUROPE."
+   ],
+   "sub": [
+    "FOUR POINTS · ARSENAL AT HOME DEC 16",
+    "A KNOCKOUT PLACE STILL POSSIBLE"
+   ],
+   "vo": "[Inter] stay on four points, and host [Arsenal] on December sixteenth with the knockouts still possible."
+  },
+  {
+   "id": "05-fixture",
+   "kind": "fixture",
+   "duration": 4.87,
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP · SERIE A · MATCHDAY 12",
+   "lines": [
+    "ATALANTA"
+   ],
+   "sub_top": "AWAY · SUNDAY, NOVEMBER 22",
+   "big": "2:45 PM ET",
+   "sub": [
+    "20:45 CET",
+    "US TV: PARAMOUNT+"
+   ],
+   "vo": "The men's team visits [Atalanta] on Sunday, two forty-five Eastern."
+  },
+  {
+   "id": "06-end",
+   "kind": "end",
+   "duration": 5.83,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Did the red card decide it? Tell me in the comments, at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 32.8
+ }
+}
