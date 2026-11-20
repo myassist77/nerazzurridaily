@@ -89,5 +89,12 @@
   "url": "https://bsky.app/profile/nerazzurridaily.com/post/3n2qmijkwo32h",
   "posted_at_utc": "2026-11-20T12:45:08Z",
   "attempts": 1
+ },
+ "ed80-question": {
+  "state": "PUBLISHED",
+  "uri": "at://did:plc:cqmhtmzyxdkm64ijvdddywbg/app.bsky.feed.post/3n2r3czmvuf2g",
+  "url": "https://bsky.app/profile/nerazzurridaily.com/post/3n2r3czmvuf2g",
+  "posted_at_utc": "2026-11-20T17:10:29Z",
+  "attempts": 1
  }
 }
