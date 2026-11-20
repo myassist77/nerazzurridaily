@@ -1,0 +1,158 @@
+{
+ "n": 80,
+ "built_at_utc": "2026-11-20T10:47:44+00:00",
+ "run_id": "44722119478",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/44722119478",
+ "passed": true,
+ "steps": {
+  "mast": "success",
+  "controls": "success",
+  "checks": "success"
+ },
+ "files_md5": {
+  "p/edition-80/index.html": "1ee955092ef9c6183a917fe21c238067",
+  "assets/mast/edition-80.png": "48ce3f84d8305b6038e3573e01cf9435",
+  "data/edition-80.json": "e1345d4b57f195368b46fa7dc1f2278a",
+  "index.html": "858626d364b51081546628f6f3c2409f",
+  "subscribe/index.html": "003438dcc08d3fdf66aaa1f52a4363fe",
+  "fixtures/index.html": "0361a6c8b02057f8674449a1aa6dc5b2",
+  "feed.xml": "dc4a68d2721b3c377e2f8b79ffda3fbe",
+  "sitemap.xml": "d46d5e9a3f944b3bda6ba7b15576deee"
+ },
+ "title": "Inter get ready for Sarri’s Atalanta in Bergamo",
+ "date": "2026-11-20",
+ "masthead": {
+  "bytes": 6411,
+  "lines": 2,
+  "colors": 7,
+  "fonts": {
+   "anton": true,
+   "mono": true
+  }
+ },
+ "controls": {
+  "n": 80,
+  "fails": [],
+  "warns": [],
+  "page-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 700,
+    "h": 382.8125,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "page-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "email-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 644,
+    "h": 352.1875,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  },
+  "email-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  }
+ },
+ "checks": {
+  "fails": [],
+  "warns": [
+   "sentences: 32 words: “PIO ESPOSITO 12′ · THURAM 19′ Atalanta  AWAY VfB Stuttgart  HOME Genoa  HOME Genoa  HOME Frosinone  AWAY Borus…”"
+  ],
+  "info": {
+   "prose_words": 453,
+   "read_seconds": 114,
+   "avg_sentence_words": 17.3,
+   "flesch_reading_ease": 58.0,
+   "edition_from_masthead": null,
+   "dates": {
+    "today": "November 20"
+   },
+   "external_to_fetch": [
+    "https://bsky.app/profile/nerazzurridaily.com",
+    "https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/20-152697005/inter_ritorna_il_turn_over_thuram-esposito_con_l_atalanta_ma_lautaro_pronto",
+    "https://www.facebook.com/nerazzurridaily",
+    "https://www.fcinter1908.it/partite/probabili-formazioni/atalanta-inter-lultima-possibile-scelta-di-chivu-a-sorpresa-puo-arrivare-il-rilancio-di/",
+    "https://www.inter.it/en/matches",
+    "https://www.inter.it/en/news/inter-fiorentina-serie-a-2026-27",
+    "https://www.inter.it/it/notizie/analisi-avversario-atalanta-inter-serie-a-2026-27",
+    "https://www.inter.it/it/notizie/inter-u23-potenza-guida-biglietti-serie-c-2026-27",
+    "https://www.inter.it/it/notizie/thuram-efootball-goal-of-the-month-ottobre-2026",
+    "https://www.tiktok.com/@nerazzurridaily",
+    "https://www.youtube.com/@nerazzurridaily"
+   ],
+   "site_links": [
+    "https://www.nerazzurridaily.com/go/email/?ed=80",
+    "https://www.nerazzurridaily.com/go/email/?ed=80&to=/subscribe/",
+    "https://www.nerazzurridaily.com/go/forward/?ed=80",
+    "https://www.nerazzurridaily.com/go/vote/?ed=80&v=no",
+    "https://www.nerazzurridaily.com/go/vote/?ed=80&v=yes",
+    "https://www.nerazzurridaily.com/p/edition-80/"
+   ]
+  }
+ },
+ "email": {
+  "md5": "81542c0b2f544dd1fb29a77ac159d1ca",
+  "chars": 24302,
+  "bytes": 24435
+ }
+}
