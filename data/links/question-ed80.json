@@ -1,0 +1,20 @@
+{
+ "n": 80,
+ "date": "2026-11-20",
+ "question": "Should Lautaro start at Atalanta on Sunday? Yes or no.",
+ "channels": {
+  "bluesky": {
+   "state": "PUBLISHED",
+   "route": "repo",
+   "post_id": "at://did:plc:cqmhtmzyxdkm64ijvdddywbg/app.bsky.feed.post/3n2r3czmvuf2g",
+   "url": "https://bsky.app/profile/nerazzurridaily.com/post/3n2r3czmvuf2g",
+   "posted_at_utc": "2026-11-20T17:10:29Z"
+  },
+  "facebook": {
+   "state": "PUBLISHED",
+   "route": "postiz",
+   "post_id": "cmwp8iyru05w1p107ipkd1o7l",
+   "posted_at_utc": "2026-11-20T17:10:00Z"
+  }
+ }
+}
