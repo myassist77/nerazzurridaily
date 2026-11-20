@@ -1,0 +1,142 @@
+{
+ "edition": 80,
+ "date": "2026-11-20",
+ "slug": "lautaro-bench-atalanta",
+ "name": "ND-2026-11-20-ed80-lautaro-bench-atalanta",
+ "hook": "Inter don't need Lautaro in Bergamo.",
+ "page_url": "https://www.nerazzurridaily.com/p/edition-80/",
+ "edition_json_sha256": "27a7e9f5dca92f32d0efe812ed188a4e711c96ed2c70eaeaeb3f489793025b04",
+ "brevo": {
+  "campaign_id": 69,
+  "status": "sent",
+  "sent_at_et": "2026-11-20T06:04:40-05:00"
+ },
+ "local_render": {
+  "file": "ND-2026-11-20-ed80-lautaro-bench-atalanta-voiced.mp4",
+  "seconds": 34.0,
+  "beats": 6,
+  "bytes": 1485036,
+  "md5": "f77f1067e6721964208e303a428cdbc7",
+  "sha256": "495de6632181542a6e168d410cc28d5c1ccd51cc9db398105a4216e66c1beb3d",
+  "audio": {
+   "content": "voiceover only — no music",
+   "codec": "aac",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": 34.0
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 32.97
+  }
+ },
+ "stories": [
+  {
+   "h3": "Lautaro set for the bench in Bergamo",
+   "register": "REPORTED",
+   "source": "Corriere dello Sport; La Gazzetta dello Sport via FCInter1908",
+   "date": "2026-11-20",
+   "on_beat": "2 + thumbnail pill"
+  },
+  {
+   "h3": "Atalanta wait for Inter in Bergamo",
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "2026-11-19",
+   "on_beat": "4 + thumbnail"
+  },
+  {
+   "h3": "Inter U23 host the Serie C leaders",
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "2026-11-19",
+   "on_beat": "description only"
+  },
+  {
+   "h3": "Thuram wins Goal of the Month",
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "2026-11-19",
+   "on_beat": "description only"
+  }
+ ],
+ "youtube_title": "Lautaro on the Bench at Atalanta? Inter Don't Need Him in Bergamo #Shorts",
+ "pinned_question": "Should Lautaro start at Atalanta on Sunday? Yes or no.",
+ "next_fixture": {
+  "opponent": "Atalanta",
+  "venue": "AWAY",
+  "date": "2026-11-22",
+  "competition": "Serie A · Matchday 12",
+  "kickoff_et": "2:45 PM ET",
+  "kickoff_cet": "20:45 CET",
+  "us_tv": "Paramount+"
+ },
+ "thumbnail_style": "number",
+ "optional_drafts": {
+  "reddit": false,
+  "facebook": true
+ },
+ "format": "daily six-beat",
+ "static_fallback_used": false,
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/44730887176",
+  "built_at_utc": "2026-11-20T11:53:14+00:00",
+  "seconds": 34.0,
+  "beats": 6,
+  "files": {
+   "assets/video/ed80.mp4": {
+    "bytes": 1353173,
+    "md5": "003a60e610a13d43507d58f4926b3034",
+    "sha256": "1a62fbab408b9e90fda8b52eef3e20351e8ee9cffdd78193613af98eda95d836"
+   },
+   "assets/video/ed80-thumb.png": {
+    "bytes": 61368,
+    "md5": "a37495af3978220fe8c877039599818c",
+    "sha256": "e25c62695233e1baf809368c823c7162d60a7a08f8162ac007ab5a9994a0f654"
+   },
+   "assets/video/ed80-thumb-9x16.png": {
+    "bytes": 89107,
+    "md5": "149b2d07d4a5b5c2ec9493532c015253",
+    "sha256": "bba4ca73c3744cfcaa607f434145079e4f2372ce8ede4b392439f3cee6bf81e0"
+   },
+   "data/tiktok-ed80.json": {
+    "bytes": 736,
+    "md5": "1a4b6fd64af99f590bea33e3ba264f71",
+    "sha256": "7cc28456a3110131a92a763cbe2d448134c02d71b782137219e04bc29bdc25cc"
+   },
+   "data/youtube-ed80.json": {
+    "bytes": 1820,
+    "md5": "101762d6520e2dbd3ba410708ec139ae",
+    "sha256": "7b552cb5b58828f57dc950b460607156beb1532eca2996b71aa688b06513e3bd"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 121537,
+    "md5": "13d6945df3f887a3223b7ba6e1876879",
+    "sha256": "e8edd9e8c58ef09cd595049c9205150b1fe1b53b56a831178d6546f7b34bd126"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 89107,
+    "md5": "149b2d07d4a5b5c2ec9493532c015253",
+    "sha256": "bba4ca73c3744cfcaa607f434145079e4f2372ce8ede4b392439f3cee6bf81e0"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 61368,
+    "md5": "a37495af3978220fe8c877039599818c",
+    "sha256": "e25c62695233e1baf809368c823c7162d60a7a08f8162ac007ab5a9994a0f654"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 32.97
+  },
+  "passed": true
+ }
+}

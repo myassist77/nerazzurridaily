@@ -1,0 +1,96 @@
+{
+ "job": "ed80",
+ "kind": "daily",
+ "name": "ND-2026-11-20-ed80-lautaro-bench-atalanta",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-20T11:53:14+00:00",
+ "run_id": "44730887176",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/44730887176",
+ "files": {
+  "assets/video/ed80.mp4": {
+   "bytes": 1353173,
+   "md5": "003a60e610a13d43507d58f4926b3034",
+   "sha256": "1a62fbab408b9e90fda8b52eef3e20351e8ee9cffdd78193613af98eda95d836"
+  },
+  "assets/video/ed80-thumb.png": {
+   "bytes": 61368,
+   "md5": "a37495af3978220fe8c877039599818c",
+   "sha256": "e25c62695233e1baf809368c823c7162d60a7a08f8162ac007ab5a9994a0f654"
+  },
+  "assets/video/ed80-thumb-9x16.png": {
+   "bytes": 89107,
+   "md5": "149b2d07d4a5b5c2ec9493532c015253",
+   "sha256": "bba4ca73c3744cfcaa607f434145079e4f2372ce8ede4b392439f3cee6bf81e0"
+  },
+  "data/tiktok-ed80.json": {
+   "bytes": 736,
+   "md5": "1a4b6fd64af99f590bea33e3ba264f71",
+   "sha256": "7cc28456a3110131a92a763cbe2d448134c02d71b782137219e04bc29bdc25cc"
+  },
+  "data/youtube-ed80.json": {
+   "bytes": 1820,
+   "md5": "101762d6520e2dbd3ba410708ec139ae",
+   "sha256": "7b552cb5b58828f57dc950b460607156beb1532eca2996b71aa688b06513e3bd"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 121537,
+   "md5": "13d6945df3f887a3223b7ba6e1876879",
+   "sha256": "e8edd9e8c58ef09cd595049c9205150b1fe1b53b56a831178d6546f7b34bd126"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 89107,
+   "md5": "149b2d07d4a5b5c2ec9493532c015253",
+   "sha256": "bba4ca73c3744cfcaa607f434145079e4f2372ce8ede4b392439f3cee6bf81e0"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 61368,
+   "md5": "a37495af3978220fe8c877039599818c",
+   "sha256": "e25c62695233e1baf809368c823c7162d60a7a08f8162ac007ab5a9994a0f654"
+  }
+ },
+ "seconds": 34.0,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "34.000000"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "33.970000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-11-20-ed80-lautaro-bench-atalanta-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-11-20-ed80-lautaro-bench-atalanta-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-11-20-ed80-lautaro-bench-atalanta-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 834547,
+  "md5": "bcea325364655b2b2d9ae59b9d369550",
+  "sha256": "321ca6ba3c8c39f1168192bec2d3217c201f4b9acf46764ac6cde02031bd0f2d"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 32.97
+ },
+ "voice_log_tail": "01-stance: voice 3.56s → beat 3.97s\n02-claim: voice 5.42s → beat 5.83s\n03-our-take: voice 4.05s → beat 4.52s\n04-turn: voice 7.70s → beat 8.19s\n05-fixture: voice 3.97s → beat 4.4s\n06-end: voice 5.65s → beat 6.06s\nPLAN OK build/beats.voiced.json — 6 beats, 32.97s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-11-20-ed80-lautaro-bench-atalanta.mp4 — 33.00s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-11-20-ed80-lautaro-bench-atalanta-thumb-9x16.png, ND-2026-11-20-ed80-lautaro-bench-atalanta-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-11-20-ed80-lautaro-bench-atalanta-voiced.mp4 — 34.00s, AAC 48 kHz stereo, I: -16.1 LUFS Peak: -4.0 dBFS\n"
+}
