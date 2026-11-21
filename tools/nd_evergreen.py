@@ -27,7 +27,8 @@ Standalone (from the repo root):       python3 tools/nd_evergreen.py      -> rew
 import datetime, glob, json, os, re
 
 WATCH = 'how-to-watch-inter-milan-in-the-usa'
-PATHS = ['results', 'injuries', WATCH]
+TRANSFERS = 'inter-milan-transfer-news'
+PATHS = ['results', 'injuries', WATCH, TRANSFERS]
 MON = {'JAN': 1, 'FEB': 2, 'MAR': 3, 'APR': 4, 'MAY': 5, 'JUN': 6, 'JUL': 7, 'AUG': 8, 'SEP': 9, 'OCT': 10, 'NOV': 11, 'DEC': 12}
 MONTH3 = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 DAY3 = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
@@ -40,6 +41,8 @@ SAN_SIRO = {'@type': 'StadiumOrArena', 'name': 'Stadio Giuseppe Meazza (San Siro
 # An edition item is injury news when its headline uses one of these words, or its text uses two different ones.
 INJ = re.compile(r"\b(injur\w*|hurt|sidelined|out for|muscle|muscular|strain\w*|sprain\w*|tear|torn|hamstring|thigh|calf|knee|ankle|"
                  r"adductors?|surgery|ligament|fracture\w*|lesione|affaticamento)\b", re.I)
+# An edition item is transfer or contract news when its headline uses one of these words, or its text uses two different ones.
+TRF = re.compile(r"\b(transfers?|sign(?:s|ed|ing|ings)?|renew\w*|contracts?|extensions?|fees?|loan\w*|clauses?|bids?|offers?|agents?)\b", re.I)
 FOOT_LINKS = ('<a href="/fixtures/">Fixtures</a> &middot; <a href="/results/">Results</a> &middot; <a href="/injuries/">Injuries</a> &middot; '
               f'<a href="/{WATCH}/">Watch in the US</a>')
 EV_CSS = """
@@ -198,7 +201,7 @@ def _foot(R):
 
 def _more(skip):
     links = [('fixtures', 'Every kickoff in Eastern time'), ('results', 'Every result this season'), ('injuries', 'The injury log'),
-             (WATCH, 'How to watch in the US')]
+             (WATCH, 'How to watch in the US'), (TRANSFERS, 'Transfer news')]
     return ('<p class="fx-note ev-more">' + ' &middot; '.join(f'<a href="/{p}/">{t}</a>' for p, t in links if p != skip) + '</p>')
 
 def _head(R, here, count):
@@ -361,6 +364,50 @@ def render_injuries(R, count, first_iso):
     return _page(R, 'injuries', title, desc, 'Inter Milan injury news.', lede, first, rest, count,
                  'Injury news, sorted, every morning', 'Free · one email a morning, confirmed kept apart from reported · unsubscribe any time',
                  [_webpage(R, 'injuries', title, desc, latest['date'])])
+
+
+# ------------------------------------------------------------------ /inter-milan-transfer-news/ (growth build, Nov 20, 2026)
+def transfer_items(eds, days=21):
+    """Every item of the last `days` days of editions about a transfer or a contract, newest first. Picked by wording only."""
+    if not eds: return []
+    today = datetime.date.fromisoformat(eds[-1]['date']); out = []
+    for d in reversed(eds):
+        if (today - datetime.date.fromisoformat(d['date'])).days >= days: break
+        for b in d['blocks']:
+            if b.get('t') != 'item': continue
+            h3 = re.sub(r'<[^>]+>', '', b.get('h3') or ''); body = re.sub(r'<[^>]+>', '', ' '.join(b.get('paras') or []))
+            if re.match(r'^.+ \d+\s*[‐-―−-]\s*\d+ .+$', _clean(h3)): continue          # a result line, not news
+            if TRF.search(h3) or len({w.lower() for w in TRF.findall(body)}) >= 2:
+                out.append({'h3': b.get('h3') or '', 'paras': b.get('paras') or [], 'kicker': b.get('kicker') or '',
+                            'rep': bool(b.get('rep')), 'n': d['n'], 'date': d['date']})
+    return out
+
+def render_transfers(R, count, first_iso):
+    eds = editions(); items = transfer_items(eds)
+    conf = [it for it in items if not it['rep']]; rep = [it for it in items if it['rep']]
+    if len(items) < 3: raise ValueError('fewer than three transfer or contract items in the last 21 days of editions')
+    latest = eds[-1]
+    title = 'Inter Milan transfer news and contracts'
+    desc = ('Inter Milan transfer and contract news in English from the last 21 days: what the club has confirmed, kept apart from what the press '
+            'has only reported, each with its outlet and date. Updated every morning by Nerazzurri Daily.')
+    def block(it):
+        lbl = '<span class="ev-lbl r">REPORTED</span>' if it['rep'] else '<span class="ev-lbl">CONFIRMED</span>'
+        return (f'<div class="item ev-item{" rep" if it["rep"] else ""}"><div class="in"><p class="ev-meta">{lbl}{R.esc(R.shortdate(it["date"]).upper())} · NO. {it["n"]}</p>'
+                f'<h3>{it["h3"]}</h3>' + ''.join(f'<p>{p}</p>' for p in it['paras']) + (f'<p class="kick">{it["kicker"]}</p>' if it['kicker'] else '')
+                + f'<p class="go"><a href="/p/edition-{it["n"]}/">Read it in edition No. {it["n"]} →</a></p></div></div>')
+    first = (_sec(R, 'Confirmed', 'CLUB · LEAGUE · UEFA')
+             + (''.join(block(it) for it in conf) if conf else '<p class="ev-p">No transfer or contract item in the last 21 days of editions was confirmed '
+                'by the club, the league or UEFA. Everything below is a press report.</p>'))
+    rest = ((_sec(R, 'Reported', 'PRESS ONLY · NOT CONFIRMED') + '<p class="ev-p">These are press reports, not confirmed. Each one names the outlet that reported it '
+             'and the date, as the edition printed them, and a later report can overtake an earlier one.</p>' + ''.join(block(it) for it in rep) if rep else '')
+            + '<p class="fx-note">How to read this page: it covers the last 21 days of editions and nothing older. Blue items are things the club, the league or UEFA '
+              'said on the record; pink items are reported by the press and had not been confirmed that morning. Items are picked automatically from the editions '
+              'by their wording, so the page can miss one or include a near miss.</p>')
+    lede = (f'Transfers, renewals and contracts at Inter: {len(conf)} confirmed and {len(rep)} reported in the last 21 days of editions, newest first. '
+            f'Last updated {R.longdate(latest["date"])}.')
+    return _page(R, TRANSFERS, title, desc, 'Inter Milan transfer news.', lede, first, rest, count,
+                 'Transfer news, sorted, every morning', 'Free · one email a morning, confirmed kept apart from reported · unsubscribe any time',
+                 [_webpage(R, TRANSFERS, title, desc, latest['date'])])
 
 
 # ------------------------------------------------------------------ /how-to-watch-inter-milan-in-the-usa/
@@ -542,7 +589,7 @@ def build_matches(R, count):
 
 
 # ------------------------------------------------------------------ entry points
-RENDERERS = {'results': render_results, 'injuries': render_injuries, WATCH: render_watch}
+RENDERERS = {'results': render_results, 'injuries': render_injuries, WATCH: render_watch, TRANSFERS: render_transfers}
 
 def render_404(R):
     """404.html - the "Page not found" page, with the header, navigation, signup form and footer of the reference pages
