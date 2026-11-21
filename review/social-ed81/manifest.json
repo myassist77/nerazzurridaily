@@ -1,0 +1,142 @@
+{
+ "edition": 81,
+ "date": "2026-11-21",
+ "slug": "four-wins-bergamo",
+ "name": "ND-2026-11-21-ed81-four-wins-bergamo",
+ "hook": "Inter make it five straight in Bergamo.",
+ "page_url": "https://www.nerazzurridaily.com/p/edition-81/",
+ "edition_json_sha256": "ac0c9a9a9f0730e54ffc71eb197cfbd49ef524c0bfa0458fd47c668bf7d00706",
+ "brevo": {
+  "campaign_id": 70,
+  "status": "sent",
+  "sent_at_et": "2026-11-21T05:58:08-05:00"
+ },
+ "local_render": {
+  "file": "ND-2026-11-21-ed81-four-wins-bergamo-voiced.mp4",
+  "seconds": 32.13,
+  "beats": 6,
+  "bytes": 1420149,
+  "md5": "b6e1fcb496bde2a2aa885ed39dd8b8e8",
+  "sha256": "03b3d2fca831acf29a36048f9b706ffbdc0d49bf95e9937b6124cee3724e3be7",
+  "audio": {
+   "content": "voiceover only — no music",
+   "codec": "aac",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": 32.13
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 31.13
+  }
+ },
+ "stories": [
+  {
+   "h3": "Maresca will referee in Bergamo",
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "2026-11-20",
+   "on_beat": "2 + thumbnail"
+  },
+  {
+   "h3": "Inter to travel on the day of the game",
+   "register": "REPORTED",
+   "source": "Sky Sport Italia via FCInterNews",
+   "date": "2026-11-20",
+   "on_beat": "4 + thumbnail pill"
+  },
+  {
+   "h3": "Inter named team of the year in Lombardy",
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "2026-11-20",
+   "on_beat": "description only"
+  },
+  {
+   "h3": "Inter Women visit Ternana on Sunday",
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "2026-11-21",
+   "on_beat": "description only"
+  }
+ ],
+ "youtube_title": "Inter Make It Five Straight in Bergamo? Four Wins From Four at Atalanta #Shorts",
+ "pinned_question": "Sučić or Mkhitaryan in midfield at Atalanta? Reply with a name.",
+ "next_fixture": {
+  "opponent": "Atalanta",
+  "venue": "AWAY",
+  "date": "2026-11-22",
+  "competition": "Serie A · Matchday 12",
+  "kickoff_et": "2:45 PM ET",
+  "kickoff_cet": "20:45 CET",
+  "us_tv": "Paramount+"
+ },
+ "thumbnail_style": "number",
+ "optional_drafts": {
+  "reddit": false,
+  "facebook": true
+ },
+ "format": "daily six-beat",
+ "static_fallback_used": false,
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/44900972420",
+  "built_at_utc": "2026-11-21T11:52:17+00:00",
+  "seconds": 32.13,
+  "beats": 6,
+  "files": {
+   "assets/video/ed81.mp4": {
+    "bytes": 1297178,
+    "md5": "782a75e54e63274080992cbde09fdb07",
+    "sha256": "8fc80a3e2b9b15d1ffce00e8e34427a4968c84dabf1040b91375f0d20027fde0"
+   },
+   "assets/video/ed81-thumb.png": {
+    "bytes": 59926,
+    "md5": "3ce231e11aa0698e23011e9583c38b96",
+    "sha256": "29a452ce9f8a18e4683c7e1c14e041f1bb72974c6bff8c476099b36b2ef8c1d0"
+   },
+   "assets/video/ed81-thumb-9x16.png": {
+    "bytes": 83729,
+    "md5": "3e8fd49bf19a0a501c78ea98d1798961",
+    "sha256": "37fc5f61973f3962cacfbdc446987289d58e6fa2ee945281fc758a9b250e4dc6"
+   },
+   "data/tiktok-ed81.json": {
+    "bytes": 809,
+    "md5": "a142d0e5325f7801bdce2d3caaa473e1",
+    "sha256": "2abb9a335c4a39b35cdc16da8c870de906a9aa5d2ffd87fa0b74fd096fcdc41c"
+   },
+   "data/youtube-ed81.json": {
+    "bytes": 1950,
+    "md5": "de20f1f66a47db35f95060cb80854512",
+    "sha256": "c6a49e9770682a73baa2f5f396b1ff823ac7bceef401edc64a49075fd4668889"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 118865,
+    "md5": "ff6f442b71490b820fcf7e187df3f912",
+    "sha256": "a00029aedb1f46140202149fc0db44bdef597a0a6fad5c39e0f7a05283cd3333"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 83729,
+    "md5": "3e8fd49bf19a0a501c78ea98d1798961",
+    "sha256": "37fc5f61973f3962cacfbdc446987289d58e6fa2ee945281fc758a9b250e4dc6"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 59926,
+    "md5": "3ce231e11aa0698e23011e9583c38b96",
+    "sha256": "29a452ce9f8a18e4683c7e1c14e041f1bb72974c6bff8c476099b36b2ef8c1d0"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 31.13
+  },
+  "passed": true
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "job": "ed81",
+ "kind": "daily",
+ "name": "ND-2026-11-21-ed81-four-wins-bergamo",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-21T11:52:17+00:00",
+ "run_id": "44900972420",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/44900972420",
+ "files": {
+  "assets/video/ed81.mp4": {
+   "bytes": 1297178,
+   "md5": "782a75e54e63274080992cbde09fdb07",
+   "sha256": "8fc80a3e2b9b15d1ffce00e8e34427a4968c84dabf1040b91375f0d20027fde0"
+  },
+  "assets/video/ed81-thumb.png": {
+   "bytes": 59926,
+   "md5": "3ce231e11aa0698e23011e9583c38b96",
+   "sha256": "29a452ce9f8a18e4683c7e1c14e041f1bb72974c6bff8c476099b36b2ef8c1d0"
+  },
+  "assets/video/ed81-thumb-9x16.png": {
+   "bytes": 83729,
+   "md5": "3e8fd49bf19a0a501c78ea98d1798961",
+   "sha256": "37fc5f61973f3962cacfbdc446987289d58e6fa2ee945281fc758a9b250e4dc6"
+  },
+  "data/tiktok-ed81.json": {
+   "bytes": 809,
+   "md5": "a142d0e5325f7801bdce2d3caaa473e1",
+   "sha256": "2abb9a335c4a39b35cdc16da8c870de906a9aa5d2ffd87fa0b74fd096fcdc41c"
+  },
+  "data/youtube-ed81.json": {
+   "bytes": 1950,
+   "md5": "de20f1f66a47db35f95060cb80854512",
+   "sha256": "c6a49e9770682a73baa2f5f396b1ff823ac7bceef401edc64a49075fd4668889"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 118865,
+   "md5": "ff6f442b71490b820fcf7e187df3f912",
+   "sha256": "a00029aedb1f46140202149fc0db44bdef597a0a6fad5c39e0f7a05283cd3333"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 83729,
+   "md5": "3e8fd49bf19a0a501c78ea98d1798961",
+   "sha256": "37fc5f61973f3962cacfbdc446987289d58e6fa2ee945281fc758a9b250e4dc6"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 59926,
+   "md5": "3ce231e11aa0698e23011e9583c38b96",
+   "sha256": "29a452ce9f8a18e4683c7e1c14e041f1bb72974c6bff8c476099b36b2ef8c1d0"
+  }
+ },
+ "seconds": 32.13,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "32.133333"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "32.130000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-11-21-ed81-four-wins-bergamo-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-11-21-ed81-four-wins-bergamo-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-11-21-ed81-four-wins-bergamo-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 811520,
+  "md5": "7dd3eb236bb06395d95dd52584dde68a",
+  "sha256": "6f1709bc21a32260c21d873a920fdf790591ca0453c2b9abb7921c223583f3b3"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 31.13
+ },
+ "voice_log_tail": "01-stance: voice 3.18s → beat 3.65s\n02-claim: voice 5.31s → beat 5.74s\n03-our-take: voice 4.50s → beat 4.89s\n04-turn: voice 6.46s → beat 6.94s\n05-fixture: voice 3.95s → beat 4.4s\n06-end: voice 5.06s → beat 5.51s\nPLAN OK build/beats.voiced.json — 6 beats, 31.13s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-11-21-ed81-four-wins-bergamo.mp4 — 31.13s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-11-21-ed81-four-wins-bergamo-thumb-9x16.png, ND-2026-11-21-ed81-four-wins-bergamo-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-11-21-ed81-four-wins-bergamo-voiced.mp4 — 32.13s, AAC 48 kHz stereo, I: -16.2 LUFS Peak: -3.5 dBFS\n"
+}
