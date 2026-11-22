@@ -1,0 +1,136 @@
+{
+ "edition": 82,
+ "date": "2026-11-22",
+ "slug": "papers-scorecard",
+ "format": "sunday_scorecard",
+ "hook": "Ten Inter reports. One held up.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-82/",
+ "edition_json_sha256": "606719a99cb9388696d57906af0b3b4cfd686d548bdf6abe09cc6f70649d09b1",
+ "week_editions": [
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82
+ ],
+ "brevo": {
+  "campaign_id": 71,
+  "status": "sent",
+  "sent": "2026-11-22T05:59:53-05:00"
+ },
+ "local_render": {
+  "file": "ND-2026-11-22-ed82-papers-scorecard-voiced.mp4",
+  "seconds": 39.01,
+  "beats": 7,
+  "bytes": 1741720,
+  "md5": "f73a17128bcfa27f183cb7648cfb112f",
+  "sha256": "0c9237503a367ed3b16f256f336fea3fb8ac2478eb223d0e8c9b1c57fa212af9",
+  "audio": {
+   "content": "voiceover only — no music",
+   "codec": "aac",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "39.010000"
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 38.01
+  }
+ },
+ "stories": [
+  {
+   "story": "Zieliński stays with Poland",
+   "final_status": "CONFIRMED",
+   "origin": "Gazzetta dello Sport · Nov 16",
+   "confirmed_by": "Inter.it · Nov 17"
+  },
+  {
+   "story": "Lautaro on the bench at Atalanta",
+   "final_status": "STILL OPEN",
+   "origin": "Tuttosport · Nov 18",
+   "also": "Corriere dello Sport · Nov 20, Nov 22"
+  },
+  {
+   "story": "Çalhanoğlu renewal talks",
+   "final_status": "STILL OPEN",
+   "origin": "Corriere dello Sport · Nov 19"
+  }
+ ],
+ "tally": {
+  "reported_items": 10,
+  "confirmed": 1,
+  "denied": 0,
+  "still_open": 9
+ },
+ "youtube_title": "Inter: 10 Press Reports This Week, Only 1 Held Up | Nerazzurri Daily",
+ "pinned_question": "Of this week's open reports, which one comes true next?",
+ "next_fixture": "Atalanta (away) · Sun, Nov 22 · Serie A matchday 12 · 2:45 PM ET · 20:45 CET · US TV: Paramount+",
+ "drafts": {
+  "facebook": true,
+  "reddit": false
+ },
+ "thumbnail_style": "number",
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/45019405408",
+  "built_at_utc": "2026-11-22T11:54:37+00:00",
+  "seconds": 39.01,
+  "beats": 7,
+  "files": {
+   "assets/video/ed82.mp4": {
+    "bytes": 1639739,
+    "md5": "f9c5b3357d5e2bf45d42a63908675cf6",
+    "sha256": "6b56f1db99d0655717ff6da07a47bda7a80222543857a485bd5be56ed13acd57"
+   },
+   "assets/video/ed82-thumb.png": {
+    "bytes": 43637,
+    "md5": "e19c01322a8206f08d3ae805f92730b7",
+    "sha256": "95f740e33bf45bdcd16f484861e25a5daca59fa41ec0e902a3a76f14bd4fc534"
+   },
+   "assets/video/ed82-thumb-9x16.png": {
+    "bytes": 60462,
+    "md5": "ab8f2ac6948e700bbcafd6a676298720",
+    "sha256": "85b1b3241b5468096591e4e453a4a5b40319141dc988db16b8b95240b726d352"
+   },
+   "data/tiktok-ed82.json": {
+    "bytes": 728,
+    "md5": "1a07fcf431949ccdbd02440538b426fd",
+    "sha256": "cc3e76b746451d07bdcae5d3f4d5d83f67fae2087c0d3e2dd12b55c114e715a4"
+   },
+   "data/youtube-ed82.json": {
+    "bytes": 1651,
+    "md5": "72f8403d11139d27174aa524c8d9e29e",
+    "sha256": "df225ae006715ab08a156987a47f41a39c23404f7e0a39ae614cb4f15b240f73"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 158278,
+    "md5": "b14199ff030cbfaefcb9941dbc424515",
+    "sha256": "b2e2c31a0ec10decef360b14382346a5040f0fb1669e3c11699a821b7ef74fc0"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 60462,
+    "md5": "ab8f2ac6948e700bbcafd6a676298720",
+    "sha256": "85b1b3241b5468096591e4e453a4a5b40319141dc988db16b8b95240b726d352"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 43637,
+    "md5": "e19c01322a8206f08d3ae805f92730b7",
+    "sha256": "95f740e33bf45bdcd16f484861e25a5daca59fa41ec0e902a3a76f14bd4fc534"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 38.01
+  },
+  "passed": true
+ }
+}
