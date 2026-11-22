@@ -8,7 +8,7 @@
  "mp4": "assets/video/ft-2026-11-22.mp4",
  "workflow_run": "https://github.com/myassist77/nerazzurridaily/actions/runs/45075943279",
  "platforms": {
-  "tiktok": {"post_id": "cmwse60o60ibmpk07rbr49y3v", "integration": "cmuhswq0g0eblo80yfmlzgyuw", "posted_at_utc": "2026-11-22T22:11:40Z", "state": "SUBMITTED"},
-  "youtube": {"post_id": "cmwse68rt0ibnpk07h0ee84cq", "integration": "cmuhsyyb70eiupr0yso0kqltb", "posted_at_utc": "2026-11-22T22:12:05Z", "state": "SUBMITTED", "thumbnail": "9x16"}
+  "tiktok": {"post_id": "cmwse60o60ibmpk07rbr49y3v", "integration": "cmuhswq0g0eblo80yfmlzgyuw", "posted_at_utc": "2026-11-22T22:11:40Z", "state": "PUBLISHED", "checked_at_utc": "2026-11-22T22:15:00Z"},
+  "youtube": {"post_id": "cmwse68rt0ibnpk07h0ee84cq", "integration": "cmuhsyyb70eiupr0yso0kqltb", "posted_at_utc": "2026-11-22T22:12:05Z", "state": "ERROR", "error": "YouTube's daily upload quota is exhausted for today, please reschedule this post for a later time.", "video_id": null, "privacy_status": null, "thumbnail": "9x16", "checked_at_utc": "2026-11-22T22:15:00Z", "note": "Not in the uploads playlist UUn2IfD6wnrqCNx9PefPFmkQ at 22:15 UTC. Not re-posted; left for the owner."}
  }
 }
