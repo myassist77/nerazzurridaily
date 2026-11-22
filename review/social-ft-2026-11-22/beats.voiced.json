@@ -1,0 +1,130 @@
+{
+ "name": "ND-2026-11-22-ft",
+ "beats": [
+  {
+   "id": "01-stance",
+   "kind": "cover",
+   "duration": 3.39,
+   "eyebrow": "EDITION NO. 82 · FULL TIME",
+   "lines": [
+    "INTER THREW",
+    "TWO POINTS AWAY."
+   ],
+   "vo": "[Inter] threw away two points in [Bergamo] tonight."
+  },
+  {
+   "id": "02-result",
+   "kind": "result",
+   "register": "CONFIRMED",
+   "duration": 6.08,
+   "kicker": "CONFIRMED · INTER.IT MATCH REPORT",
+   "home": "ATALANTA",
+   "away": "INTER",
+   "score_home": 4,
+   "score_away": 4,
+   "inter": "away",
+   "sub": [
+    "INTER: ESPOSITO 16' 32' 52'",
+    "SUCIC 76' PEN"
+   ],
+   "vo": "Four all, says the club's report. [Pio Esposito] scored a hat-trick, and [Sucic] a penalty."
+  },
+  {
+   "id": "03-take",
+   "kind": "item",
+   "register": "NEUTRAL",
+   "duration": 4.27,
+   "kicker": "OUR TAKE",
+   "lines": [
+    "A HAT-TRICK",
+    "SHOULD WIN",
+    "THIS GAME."
+   ],
+   "vo": "A hat-trick away from home should win you the game. This one didn't."
+  },
+  {
+   "id": "04-turn",
+   "kind": "item",
+   "register": "CONFIRMED",
+   "duration": 6.68,
+   "kicker": "CONFIRMED · INTER.IT · NOV 22",
+   "lines": [
+    "LED 4-2.",
+    "KESSIE PEN",
+    "AT 90+1'."
+   ],
+   "sub": [
+    "BASTONI PENALIZED FOR HANDBALL"
+   ],
+   "vo": "[Inter] led four two. Then [Bastoni] was called for handball, and [Kessie] scored in stoppage time."
+  },
+  {
+   "id": "05-fixture",
+   "kind": "fixture",
+   "register": "NEUTRAL",
+   "duration": 4.16,
+   "kicker": "NEXT · CHAMPIONS LEAGUE",
+   "lines": [
+    "STUTTGART"
+   ],
+   "sub_top": "WED NOV 25 · SAN SIRO",
+   "big": "3:00 PM ET",
+   "sub": [
+    "9:00 PM CET"
+   ],
+   "vo": "Next, [Stuttgart] at [San Siro], Wednesday, three PM Eastern."
+  },
+  {
+   "id": "06-end",
+   "kind": "end",
+   "duration": 5.16,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Who's to blame for the late collapse? Tell us at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "thumbnail": {
+  "style": "number",
+  "top": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "lines": [
+    "ESPOSITO",
+    "HAT-TRICK."
+   ]
+  },
+  "bottom": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "lines": [
+    "KESSIE",
+    "90+1' PEN."
+   ],
+   "sub": "ATALANTA 4-4 INTER"
+  },
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "4-4",
+   "lines_a": [
+    "INTER",
+    "LED 4-2."
+   ],
+   "lines_b": [
+    "KESSIE PEN",
+    "AT 90+1'."
+   ],
+   "pill": "ESPOSITO HAT-TRICK",
+   "pill_register": "CONFIRMED"
+  }
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 29.74
+ }
+}
