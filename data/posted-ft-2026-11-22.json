@@ -1,0 +1,14 @@
+{
+ "date": "2026-11-22",
+ "n": 82,
+ "opponent": "Atalanta",
+ "venue": "away",
+ "competition": "Serie A",
+ "score": "Atalanta 4-4 Inter",
+ "mp4": "assets/video/ft-2026-11-22.mp4",
+ "workflow_run": "https://github.com/myassist77/nerazzurridaily/actions/runs/45075943279",
+ "platforms": {
+  "tiktok": {"post_id": "cmwse60o60ibmpk07rbr49y3v", "integration": "cmuhswq0g0eblo80yfmlzgyuw", "posted_at_utc": "2026-11-22T22:11:40Z", "state": "SUBMITTED"},
+  "youtube": {"post_id": "cmwse68rt0ibnpk07h0ee84cq", "integration": "cmuhsyyb70eiupr0yso0kqltb", "posted_at_utc": "2026-11-22T22:12:05Z", "state": "SUBMITTED", "thumbnail": "9x16"}
+ }
+}
