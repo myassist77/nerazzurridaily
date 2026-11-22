@@ -117,5 +117,12 @@
   "url": "https://bsky.app/profile/nerazzurridaily.com/post/3n2vngtwrd52q",
   "posted_at_utc": "2026-11-22T12:45:24Z",
   "attempts": 1
+ },
+ "ed82-question": {
+  "state": "PUBLISHED",
+  "uri": "at://did:plc:cqmhtmzyxdkm64ijvdddywbg/app.bsky.feed.post/3n2w47lb4dq24",
+  "url": "https://bsky.app/profile/nerazzurridaily.com/post/3n2w47lb4dq24",
+  "posted_at_utc": "2026-11-22T17:09:45Z",
+  "attempts": 1
  }
 }
