@@ -1,0 +1,96 @@
+{
+ "job": "ed83",
+ "kind": "daily",
+ "name": "ND-2026-11-23-ed83-esposito-hat-trick",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-23T11:55:29+00:00",
+ "run_id": "45169177704",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/45169177704",
+ "files": {
+  "assets/video/ed83.mp4": {
+   "bytes": 1407975,
+   "md5": "439116109e22525c55800a312dee282d",
+   "sha256": "6d5f9b0e75beb16d191d3d5589e4cf65a190b7b43781cd8ed0b60ee55abc0432"
+  },
+  "assets/video/ed83-thumb.png": {
+   "bytes": 65018,
+   "md5": "dcf63a5d34df0c3ddcb2bb4f961aab19",
+   "sha256": "0fe3ce781bce024db91e14031145374d09caa172055575caa40d08df2e306842"
+  },
+  "assets/video/ed83-thumb-9x16.png": {
+   "bytes": 86310,
+   "md5": "0605b632336a9eea3881a0ddaf9988a0",
+   "sha256": "d08ec4622119e44183b517467bf698d6bc052208ce2865b58892135eefe0ca0d"
+  },
+  "data/tiktok-ed83.json": {
+   "bytes": 752,
+   "md5": "df11bb46e87269cc1560072b631063c0",
+   "sha256": "7480a7ce67b5d3b0b8e755a1aebf5681cb967b7c53836fd728679d6c4a470d0c"
+  },
+  "data/youtube-ed83.json": {
+   "bytes": 1544,
+   "md5": "533c100d8759c4b79caeba4d0ab5e323",
+   "sha256": "2191e8d5764cd9fa6b7d2eb5a5ae4368ae968ea0e8e28ac6a3df7260d7a61210"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 125724,
+   "md5": "ea4a899c6c011dcdb09b093efdeb646c",
+   "sha256": "d64d382b1545a687eeda39553a7f9a12f7b3a3a77dfa6f882d13be63f7130453"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 86310,
+   "md5": "0605b632336a9eea3881a0ddaf9988a0",
+   "sha256": "d08ec4622119e44183b517467bf698d6bc052208ce2865b58892135eefe0ca0d"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 65018,
+   "md5": "dcf63a5d34df0c3ddcb2bb4f961aab19",
+   "sha256": "0fe3ce781bce024db91e14031145374d09caa172055575caa40d08df2e306842"
+  }
+ },
+ "seconds": 33.1,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "33.100000"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "33.100000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-11-23-ed83-esposito-hat-trick-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-11-23-ed83-esposito-hat-trick-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-11-23-ed83-esposito-hat-trick-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 904970,
+  "md5": "ab96b507a4fb26b04cf58a44eefa6ba8",
+  "sha256": "b72343aa567c2ae48f29674d2a55fa4439573b94cb1b7a20bc207259c6c755b4"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 32.1
+ },
+ "voice_log_tail": "01-stance: voice 4.52s → beat 5.06s\n02-claim: voice 5.18s → beat 5.61s\n03-our-take: voice 4.50s → beat 4.91s\n04-turn: voice 6.63s → beat 7.0s\n05-fixture: voice 3.20s → beat 3.63s\n06-end: voice 5.48s → beat 5.89s\nPLAN OK build/beats.voiced.json — 6 beats, 32.1s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-11-23-ed83-esposito-hat-trick.mp4 — 32.10s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-11-23-ed83-esposito-hat-trick-thumb-9x16.png, ND-2026-11-23-ed83-esposito-hat-trick-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-11-23-ed83-esposito-hat-trick-voiced.mp4 — 33.10s, AAC 48 kHz stereo, I: -16.3 LUFS Peak: -3.4 dBFS\n"
+}

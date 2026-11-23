@@ -1,0 +1,125 @@
+{
+ "edition": 83,
+ "date": "2026-11-23",
+ "slug": "esposito-hat-trick",
+ "hook": "Inter wasted Esposito’s hat-trick.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-83/",
+ "edition_json_sha256": "962a32aeb672f86f29fa035ad35f4504b3156fb3f7ce9a78801f70cf0e3cb680",
+ "brevo_campaign": {
+  "id": 72,
+  "status": "sent",
+  "sent": "2026-11-23T05:58:26-05:00"
+ },
+ "format": "daily six-beat, voiced",
+ "local_render": {
+  "file": "ND-2026-11-23-ed83-esposito-hat-trick-voiced.mp4",
+  "seconds": 33.1,
+  "beats": 6,
+  "bytes": 1534748,
+  "md5": "07897e77adf6bf8049e47731ee82e75d",
+  "sha256": "9fae06d7a1e796ae50db68b2085bba323c5e80bc1928bb472b0e68c6611ded5b",
+  "audio": {
+   "content": "voiceover only — no music",
+   "codec": "aac",
+   "sample_rate": 48000,
+   "channels": 2,
+   "duration": 33.1
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 32.1
+  }
+ },
+ "thumbnail": {
+  "style": "number",
+  "big": "3"
+ },
+ "stories": [
+  {
+   "story": "Atalanta 4–4 Inter, Esposito hat-trick",
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "2026-11-22"
+  },
+  {
+   "story": "Çalhanoğlu may miss the rest of 2026 (hamstring)",
+   "register": "REPORTED",
+   "source": "Tuttosport · Sportmediaset",
+   "date": "2026-11-22"
+  },
+  {
+   "story": "Chivu: two points thrown away",
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "2026-11-22"
+  }
+ ],
+ "youtube_title": "Inter Wasted Esposito’s Hat-Trick: 4–4 at Atalanta | Nerazzurri Daily",
+ "pinned_question": "Whose fault were the four goals in Bergamo?",
+ "next_fixture": "Inter vs VfB Stuttgart · Wed, Nov 25 · Champions League · 3:00 PM ET · 21:00 CET · US TV: Paramount+",
+ "drafts": {
+  "reddit": true,
+  "facebook": true
+ },
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/45169177704",
+  "built_at_utc": "2026-11-23T11:55:29+00:00",
+  "seconds": 33.1,
+  "beats": 6,
+  "files": {
+   "assets/video/ed83.mp4": {
+    "bytes": 1407975,
+    "md5": "439116109e22525c55800a312dee282d",
+    "sha256": "6d5f9b0e75beb16d191d3d5589e4cf65a190b7b43781cd8ed0b60ee55abc0432"
+   },
+   "assets/video/ed83-thumb.png": {
+    "bytes": 65018,
+    "md5": "dcf63a5d34df0c3ddcb2bb4f961aab19",
+    "sha256": "0fe3ce781bce024db91e14031145374d09caa172055575caa40d08df2e306842"
+   },
+   "assets/video/ed83-thumb-9x16.png": {
+    "bytes": 86310,
+    "md5": "0605b632336a9eea3881a0ddaf9988a0",
+    "sha256": "d08ec4622119e44183b517467bf698d6bc052208ce2865b58892135eefe0ca0d"
+   },
+   "data/tiktok-ed83.json": {
+    "bytes": 752,
+    "md5": "df11bb46e87269cc1560072b631063c0",
+    "sha256": "7480a7ce67b5d3b0b8e755a1aebf5681cb967b7c53836fd728679d6c4a470d0c"
+   },
+   "data/youtube-ed83.json": {
+    "bytes": 1544,
+    "md5": "533c100d8759c4b79caeba4d0ab5e323",
+    "sha256": "2191e8d5764cd9fa6b7d2eb5a5ae4368ae968ea0e8e28ac6a3df7260d7a61210"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 125724,
+    "md5": "ea4a899c6c011dcdb09b093efdeb646c",
+    "sha256": "d64d382b1545a687eeda39553a7f9a12f7b3a3a77dfa6f882d13be63f7130453"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 86310,
+    "md5": "0605b632336a9eea3881a0ddaf9988a0",
+    "sha256": "d08ec4622119e44183b517467bf698d6bc052208ce2865b58892135eefe0ca0d"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 65018,
+    "md5": "dcf63a5d34df0c3ddcb2bb4f961aab19",
+    "sha256": "0fe3ce781bce024db91e14031145374d09caa172055575caa40d08df2e306842"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 32.1
+  },
+  "passed": true
+ }
+}
