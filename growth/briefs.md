@@ -6,11 +6,11 @@ Edited only by the Growth Lead. Status: running | building | waiting.
 - Owns: real subscribers per week.
 - Runs: Mondays 12:17 PM ET, after the Scorekeeper.
 - May alone: edit this folder; apply the five rules; from Dec 14, 2026 set weekly_autopost to false in data/social-switch.json if rule 1 is met for the Sunday long-form video.
-- Status: running since Nov 16, 2026. Week to Nov 16: 4 real subscribers against 5 expected (miss, first scored week); 72 real visits against 31 (hit on the count, but see Scorekeeper).
+- Status: running since Nov 16, 2026. Week to Nov 23: 4 real subscribers against 10 expected (miss, second in a row: rule 4 applied, Conversion is now priority 1); 165 real visits against 98 (hit on the count, most of it from a paid ad). Week to Nov 16: 4 against 5; 72 visits against 31.
 
 ## Scorekeeper (Monday numbers task)
 - Owns: a correct funnel per channel: reach, real visits, signups, confirmations.
-- Takes no growth action. Status: running. To add: per-channel funnel table.
+- Takes no growth action. Status: running. Since Nov 16, 2026 it reports the funnel by channel (reach, engagement, clicks, intent, signups, retention).
 - To add first (its prompt is a scheduled task, so it needs a chat session): leave the owner's own browsing out of real visits (week to Nov 16: one desktop Mac signature made 141 of 202 real page views) and tell Facebook's own link fetching from readers (11 desktop rows, 16 of Facebook's 25 visits, old browser versions among them). Until then the Lead reads real visits as an upper limit.
 
 ## Editor desk (5:30 edition task)
@@ -20,7 +20,7 @@ Edited only by the Growth Lead. Status: running | building | waiting.
 - Reader replies are now read and answered by the Community agent (see Community).
 - Since Nov 15, 2026 the edition task reads growth/community/reader-notes.md before it closes its research (what readers asked for in the last 7 days).
 - The edition task's prompt was at the size limit for scheduled tasks (65,536 bytes) and could not be edited; the full-time card's instructions now live in tools/prompts/fulltime-card.txt, checked by hash before use. First matchday on the new route: Atalanta, Sun Nov 22, 2026.
-- Reader question, first two days (Nov 15 and 16): 0 taps. Reader mail: none yet.
+- Reader question: 0 taps from Nov 15 to Nov 23 (counted as a failed experiment on Nov 23; the line stays in the email, it costs nothing). Reader mail: none yet. Week to Nov 23: 3 of 4 real subscribers opened at least one edition; one opened none.
 - Since Nov 16, 2026 a daily sweep (5:07 AM ET, first run Nov 17) takes anyone who unsubscribed from the welcome email off the list; before it, that link did not remove them.
 - Status: running. To add: subject-line test, reader survey.
 
@@ -28,15 +28,15 @@ Edited only by the Growth Lead. Status: running | building | waiting.
 - Owns: Google clicks per week.
 - Running: /fixtures/, /results/, /injuries/, the US TV guide, and since Nov 14, 2026 one page per men's match under /match/ (kickoff in every US time zone, US TV, form, injuries, result once played). All rebuilt by the edition workflow every morning from the edition data; nothing is written by hand.
 - Weekly review task (Thursdays): reads Search Console, logs which pages and queries moved, proposes the next page type. It does not change code.
-- Week to Nov 16: 18 impressions and 0 clicks in 28 days, all on /fixtures/ (the other pages were two days old); 0 real visits from search. First Thursday review: Nov 19.
-- Status: running. Priority 1.
+- Week to Nov 23: 85 impressions and 1 click in 28 days on the search pages (/injuries/ 65 and the click, /fixtures/ 17, the US TV guide 3, /results/ 0); 1 real visit from search. No /match/ page has been shown yet and two were not indexed on Nov 19. The Nov 19 review proposes a who-is-out list by player at the top of /injuries/.
+- Status: running. Priority 2 since Nov 23, 2026 (Conversion is first).
 
 ## Conversion
 - Owns: signups per 100 real visits.
 - Running since Nov 14, 2026: every page already carries the signup form; each signup is now counted (one view of /subscribe/sent/ = one signup sent, its referrer = the page it came from; /subscribe/confirmed/ = one confirmation).
 - Weekly headline or offer tests are NOT running: at about 12 real visits a week a test cannot show anything. The Lead starts them when real visits pass 200 a week for two weeks.
-- First reading, week to Nov 16: 0 real signups sent, 0 real confirmations, 0 signups per 100 real visits. The confirm email is plain since Nov 16, 2026 (one link, no image), to stay out of Gmail's Promotions tab.
-- Status: measuring. Tests waiting on traffic (72 real visits; the bar is 200 for two straight weeks).
+- Week to Nov 23: 0 signups sent, 0 confirmations, 165 real visits, 0 per 100 (week to Nov 16: 0 from 72). About 139 of the visits came from Facebook and Instagram while a paid ad ran; they landed on the home page and none went further. The confirm email is plain since Nov 16, 2026 (one link, no image). The counter can miss a signup: the Nov 23 diagnosis found one real signup late on Nov 16 in the mailing service's records (never confirmed) with no /subscribe/sent/ view, so the mailing service's confirm-email requests are read beside it.
+- Status: measuring. Priority 1 since Nov 23, 2026 (two missed weeks: the plan moved from more visits to signups from the visits we get). Waiting to be built, in order: a signup test inside the Facebook and Instagram in-app browsers on a phone; an ad door that lands on /subscribe/; one reminder to unconfirmed addresses. Weekly tests still wait on traffic (72 and 165 real visits; the bar is 200 for two straight weeks).
 
 ## Distribution
 - Owns: real visits per channel.
@@ -47,13 +47,13 @@ Edited only by the Growth Lead. Status: running | building | waiting.
 - Wednesdays, since Nov 15, 2026 (owner's decision after a check of which videos reach which channel): THE DEBATE short also goes on the Facebook Page (Reel, link in the first comment) and Bluesky (video + link + tags), after the debate task has put it on TikTok and YouTube. A task at 2:27 PM and 5:27 PM ET does it; words from tools/nd_growth_captions.py --debate. The Sunday long-form stays on YouTube only (owner's choice). First run Wed Nov 18.
 - Video foot, since Nov 15, 2026: every frame of the daily and full-time video reads "FREE DAILY EMAIL · nerazzurridaily.com" at its foot (tools/social_motion.py FOOT). The end card and the spoken line were already there. Checked Nov 15: with those in place YouTube sent 1 visit from 227 views in the baseline week and TikTok 0, because neither has a link a viewer can tap from the video; the TikTok caption link is kept as it is, because the 7:30 task uses it to validate the post file and to never post twice.
 - Bluesky hashtags, since Nov 15, 2026: every Bluesky post of ours ends with the day's tags (three when they fit), the question post included.
-- First two days (week to Nov 16): Facebook 25 real visits (part may be Facebook's own link fetching), Bluesky 10, YouTube 2 from 347 views, TikTok 0. Doors that reached /subscribe/: the Page button 2, the pinned post 1, the YouTube profile 2. No signup yet. Priority stays on Facebook and Bluesky. TikTok has had no real visit in three scorecard rows; a fourth on Nov 23 goes to the owner as his call.
+- Week to Nov 23: Facebook 107 real visits and Instagram 32 (81 through the Page's website link, the path of the owner's paid ad of about Nov 19 to 22; that door had 4 visits before), Bluesky 2 (10 the week before), YouTube 0 by referrer from 104 views (347 the week before), TikTok 0 for a fourth scorecard row: put to the owner on Nov 23 as his call. One reader reached /subscribe/, from the Atalanta full-time card on Facebook. No signup. The Atalanta card never reached YouTube (daily upload quota, the second time after Oct 31) and was left for the owner. No new volume work until a visitor signs up; work that builds on paid traffic is stopped until the owner decides (rule 5, Nov 23).
 - Status: Bluesky and the Facebook Page (facebook.com/nerazzurridaily) running. Threads and Instagram: skipped by the owner on Nov 14, 2026 (Threads only signs in through Instagram, and the Instagram username was already taken and not publicly visible). Do not list them as a blocker. The task would still post to Threads if the channel ever appears in Postiz. TikTok Business switch (the tappable bio link): the owner chose on Nov 14, 2026 to skip it for now; the bio keeps the typed address. Do not list it as a blocker; mention it again only if TikTok door visits become the best source.
 
 ## Partnerships
 - Owns: placements won per week.
 - Does: Inter Clubs abroad, English-language creators, podcasts, newsletter swaps. One pitch, one follow-up.
-- Status: ready. The mailbox password secret is in place and the workflow's self-test passed on Nov 14, 2026 (23:10 UTC). No blocker. Nothing has been sent yet: the first pitches are queued by the Tuesday Nov 17 run and leave at the workflow's next run after that. Route: the outreach workflow sends through the Hostinger mailbox and reads replies.
+- Status: running. Mailbox route proven (self-test Nov 14, 2026); no blocker. 9 of the 10 seeded targets had been written to by hand before the workflow existed; 2 new pitches were sent by Nov 23, 0 replies, 0 placements. Follow-ups are due from Nov 25. Route: the outreach workflow sends through the Hostinger mailbox and reads replies.
 - How: write the full message list to growth/outreach/queue.enc (Fernet, key in the private Drive file nerazzurri-outreach-key.txt), each item {id, to, to_name, subject, body, kind: pitch|followup, not_before?}. The workflow enforces: two messages per address at most, follow-up 5+ days after the pitch and only without a reply, 10 a run, 20 a day, signed Support Team. Read growth/outreach/state.enc for what was sent and who replied; status.json has counts.
 - Owed mentions: add {"date", "name", "url", "text"} to data/mentions.json (public). The renderer prints it in that date's edition, page and email, as "From our friends."
 
@@ -65,7 +65,7 @@ Edited only by the Growth Lead. Status: running | building | waiting.
 - Bluesky (owner's choice Nov 14, 2026: answer only people who reply to, mention or quote us): running. The workflow bluesky.yml (every three hours, and at once when the queue is committed) reads who wrote to us into the encrypted growth/community/bsky-state.enc and sends the answers the Community task queues in bsky-queue.enc. tools/nd_bsky.py refuses any reply to a post that was not addressed to us, a second answer to the same post, more than three answers to one person in a thread, a link to another site, and never likes, reposts, follows or messages. Counts only in growth/community/bsky-status.json. Replying to strangers' posts stays off: Bluesky asks automated accounts not to.
 - Reader mail (since Nov 15, 2026): a task at 9:47 AM and 4:47 PM ET reads what readers wrote to the site mailbox (encrypted in growth/outreach/state.enc) and answers each person once, through the outreach workflow, kind "reader". The mail tool refuses a reader message to anyone who did not write first, to a partner address, or to a message older than 14 days. A claimed mistake, a business request or a legal complaint is flagged to the owner; an unsubscribe request is carried out in Brevo. What readers ask for, without names: growth/community/reader-notes.md.
 - Later: a refer-a-friend link.
-- Status: YouTube running. First run Nov 15, 2026 at 11:24 AM ET succeeded; the YouTube reads work (checked the same hour: 16 comment threads on the channel, all our own, no viewer comment has ever been posted), so there was nothing to answer and nothing was recorded. Sending a YouTube reply is still unexercised: the first viewer comment is the test. Bluesky: running since Nov 15, 2026. The app password secret is in place, the self-test passed (login and notification read) and the first real read found nobody waiting. A real send has not happened yet; the first answer is the test.
+- Status: YouTube running; the first viewer comment arrived in the week to Nov 23 and was answered (1 reply, 0 flags), so sending works. Bluesky: running since Nov 15, 2026, self-test passed, nobody has written to us yet (0 answered); the first answer is the test. Facebook: reading works, no visitor comment yet.
 
 ## Builder and Reviewer (the weekly build, since Nov 15, 2026)
 - Own: one useful build a week, live without the owner. Queue: growth/build-queue.md, first `ready` item first.
@@ -74,4 +74,4 @@ Edited only by the Growth Lead. Status: running | building | waiting.
 - Every workflow's push retry uses rebase --autostash (Nov 15, 2026), so an agent's commit landing during a build no longer stops the edition from publishing.
 - A merged build goes live with the next morning's edition (the edition workflow commits any page folder listed in build/evergreen-paths.txt). Undo = revert the one commit.
 - Not theirs: the edition, the email, the videos, workflows, the navigation bar, scheduled tasks, money, passwords, accounts.
-- Status: running. First build Fri Nov 20, 2026 (transfer news page); first review Sat Nov 21.
+- Status: running. First build merged Nov 21, 2026 (transfer news page, PR #18). Next ready item: the competition pages.
