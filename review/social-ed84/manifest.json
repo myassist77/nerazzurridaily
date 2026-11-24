@@ -1,0 +1,130 @@
+{
+ "edition": 84,
+ "date": "2026-11-24",
+ "slug": "calhanoglu-out-stuttgart",
+ "hook": "Inter don’t need Çalhanoğlu to beat Stuttgart.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-84/",
+ "edition_json_sha256": "932ff2a107e79a3120a60d4e9b975947eedcc229d388de528a1a1ce3e7a0d245",
+ "brevo": {
+  "campaign_id": 73,
+  "status": "sent",
+  "sent": "2026-11-24T05:59:51-05:00"
+ },
+ "local_render": {
+  "file": "ND-2026-11-24-ed84-calhanoglu-out-stuttgart-voiced.mp4",
+  "seconds": 32.17,
+  "beats": 6,
+  "bytes": 1570156,
+  "md5": "1a0fcccc849260498a1f7ecd791a6fd2",
+  "sha256": "eaf23864255d9144714e905721111f744605588f660285e47ee026121674efec",
+  "audio": {
+   "note": "voiceover only — no music",
+   "codec": "aac",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "32.160000"
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 31.16
+  }
+ },
+ "stories": [
+  {
+   "register": "REPORTED",
+   "source": "Sportmediaset",
+   "date": "Nov 24",
+   "story": "Çalhanoğlu to miss Stuttgart and both Genoa games; at least three weeks; Stanković natural replacement",
+   "role": "lead"
+  },
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Nov 23",
+   "story": "Letexier referees; Inter 15th with six points, one behind Stuttgart",
+   "role": "turn"
+  },
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Nov 23",
+   "story": "Chivu press conference 8:30 AM ET"
+  },
+  {
+   "register": "REPORTED",
+   "source": "Tuttosport",
+   "date": "Nov 22",
+   "story": "Çalhanoğlu contract talks"
+  }
+ ],
+ "youtube_title": "Inter Without Çalhanoğlu for Stuttgart, Sportmediaset Reports | Nerazzurri Daily",
+ "pinned_question": "Who should replace Çalhanoğlu against Stuttgart?",
+ "next_fixture": "Inter vs VfB Stuttgart · Wed, Nov 25 · Champions League MD5 · 3:00 PM ET · 21:00 CET · US TV: Paramount+",
+ "thumbnail_style": "number",
+ "drafts": {
+  "facebook": true,
+  "reddit": false
+ },
+ "format": "daily six-beat",
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/45388111837",
+  "built_at_utc": "2026-11-24T11:54:11+00:00",
+  "seconds": 32.17,
+  "beats": 6,
+  "files": {
+   "assets/video/ed84.mp4": {
+    "bytes": 1418454,
+    "md5": "2526d01c27723bddabad778136091c3d",
+    "sha256": "c0345954d7ab770257d40181c153d5156dc0a0685bc0957ab91d0d3c4985f342"
+   },
+   "assets/video/ed84-thumb.png": {
+    "bytes": 65552,
+    "md5": "a0d950ade6d9fd1f045e71f9beca8355",
+    "sha256": "40d27c8a2fb75d17e6a05c69f6e79c0b939ad719b6d35f28226a2f309e598068"
+   },
+   "assets/video/ed84-thumb-9x16.png": {
+    "bytes": 93155,
+    "md5": "235e570b5f0b78d0a3d6b94570248cfe",
+    "sha256": "37086cd1eb9a929463d18d1523abd754ae31964865ba69b3d0a0fb187488c5a5"
+   },
+   "data/tiktok-ed84.json": {
+    "bytes": 774,
+    "md5": "b88087a33fa6ba24604a0468f56ec27f",
+    "sha256": "fd7abf3342f2938c1d191ce07d88e91ad5fa1d7be244e16e67aa286f935d54c8"
+   },
+   "data/youtube-ed84.json": {
+    "bytes": 1831,
+    "md5": "ed143fd71a763112c0f3ef820d110f62",
+    "sha256": "b54776e9e3cebf403a70f6a19395e7e142c9a43eeaf34388310243da2b7e1c68"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 136667,
+    "md5": "1a577cc2af41e8ecd482a98aa4b034c9",
+    "sha256": "d23be5430e3d315d11278aede4ab4c2647f753611aa37156e6bdf1da5a0950a8"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 93155,
+    "md5": "235e570b5f0b78d0a3d6b94570248cfe",
+    "sha256": "37086cd1eb9a929463d18d1523abd754ae31964865ba69b3d0a0fb187488c5a5"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 65552,
+    "md5": "a0d950ade6d9fd1f045e71f9beca8355",
+    "sha256": "40d27c8a2fb75d17e6a05c69f6e79c0b939ad719b6d35f28226a2f309e598068"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 31.16
+  },
+  "passed": true
+ }
+}

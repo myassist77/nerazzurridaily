@@ -1,0 +1,96 @@
+{
+ "job": "ed84",
+ "kind": "daily",
+ "name": "ND-2026-11-24-ed84-calhanoglu-out-stuttgart",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-24T11:54:11+00:00",
+ "run_id": "45388111837",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/45388111837",
+ "files": {
+  "assets/video/ed84.mp4": {
+   "bytes": 1418454,
+   "md5": "2526d01c27723bddabad778136091c3d",
+   "sha256": "c0345954d7ab770257d40181c153d5156dc0a0685bc0957ab91d0d3c4985f342"
+  },
+  "assets/video/ed84-thumb.png": {
+   "bytes": 65552,
+   "md5": "a0d950ade6d9fd1f045e71f9beca8355",
+   "sha256": "40d27c8a2fb75d17e6a05c69f6e79c0b939ad719b6d35f28226a2f309e598068"
+  },
+  "assets/video/ed84-thumb-9x16.png": {
+   "bytes": 93155,
+   "md5": "235e570b5f0b78d0a3d6b94570248cfe",
+   "sha256": "37086cd1eb9a929463d18d1523abd754ae31964865ba69b3d0a0fb187488c5a5"
+  },
+  "data/tiktok-ed84.json": {
+   "bytes": 774,
+   "md5": "b88087a33fa6ba24604a0468f56ec27f",
+   "sha256": "fd7abf3342f2938c1d191ce07d88e91ad5fa1d7be244e16e67aa286f935d54c8"
+  },
+  "data/youtube-ed84.json": {
+   "bytes": 1831,
+   "md5": "ed143fd71a763112c0f3ef820d110f62",
+   "sha256": "b54776e9e3cebf403a70f6a19395e7e142c9a43eeaf34388310243da2b7e1c68"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 136667,
+   "md5": "1a577cc2af41e8ecd482a98aa4b034c9",
+   "sha256": "d23be5430e3d315d11278aede4ab4c2647f753611aa37156e6bdf1da5a0950a8"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 93155,
+   "md5": "235e570b5f0b78d0a3d6b94570248cfe",
+   "sha256": "37086cd1eb9a929463d18d1523abd754ae31964865ba69b3d0a0fb187488c5a5"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 65552,
+   "md5": "a0d950ade6d9fd1f045e71f9beca8355",
+   "sha256": "40d27c8a2fb75d17e6a05c69f6e79c0b939ad719b6d35f28226a2f309e598068"
+  }
+ },
+ "seconds": 32.17,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "32.166667"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "32.160000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-11-24-ed84-calhanoglu-out-stuttgart-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-11-24-ed84-calhanoglu-out-stuttgart-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-11-24-ed84-calhanoglu-out-stuttgart-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 925029,
+  "md5": "25d1370d62a698776d2594d7e3bbcb63",
+  "sha256": "7d9c83e45418412ac8282fc217036192c958c60332d589bc711b5d32492d78c1"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 31.16
+ },
+ "voice_log_tail": "01-stance: voice 3.95s → beat 4.4s\n02-claim: voice 6.61s → beat 7.02s\n03-our-take: voice 3.58s → beat 4.01s\n04-turn: voice 4.12s → beat 4.57s\n05-fixture: voice 3.95s → beat 4.33s\n06-end: voice 6.31s → beat 6.83s\nPLAN OK build/beats.voiced.json — 6 beats, 31.16s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-11-24-ed84-calhanoglu-out-stuttgart.mp4 — 31.17s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-11-24-ed84-calhanoglu-out-stuttgart-thumb-9x16.png, ND-2026-11-24-ed84-calhanoglu-out-stuttgart-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-11-24-ed84-calhanoglu-out-stuttgart-voiced.mp4 — 32.17s, AAC 48 kHz stereo, I: -16.2 LUFS Peak: -4.1 dBFS\n"
+}
