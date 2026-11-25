@@ -1,0 +1,128 @@
+{
+ "beats": [
+  {
+   "id": "01-stance",
+   "kind": "cover",
+   "duration": 3.2,
+   "eyebrow": "EDITION NO. 85 · FULL TIME",
+   "lines": [
+    "INTER'S BENCH",
+    "WON THIS ONE."
+   ],
+   "vo": "[Inter]'s bench won this one at [San Siro]."
+  },
+  {
+   "id": "02-result",
+   "kind": "result",
+   "duration": 7.26,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT MATCH REPORT",
+   "home": "INTER",
+   "away": "STUTTGART",
+   "score_home": 2,
+   "score_away": 0,
+   "inter": "home",
+   "sub": [
+    "SUČIĆ 57' (PEN)",
+    "LAUTARO 74'"
+   ],
+   "vo": "[Inter] beat Stuttgart two nil, per the club's match report. [Sučić] from the spot, then [Lautaro Martínez]."
+  },
+  {
+   "id": "03-take",
+   "kind": "item",
+   "duration": 4.12,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "A CLEAN SHEET.",
+    "AND LAUTARO",
+    "IS BACK."
+   ],
+   "vo": "A clean sheet, and [Lautaro] is back scoring. That's the night."
+  },
+  {
+   "id": "04-turn",
+   "kind": "stat",
+   "duration": 4.84,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · NOV 25",
+   "number": 5,
+   "suffix": " MIN",
+   "lines": [
+    "FROM THE BENCH",
+    "TO THE GOAL."
+   ],
+   "sub": [
+    "LAUTARO · ON 69' · SCORED 74'"
+   ],
+   "vo": "[Lautaro] came off the bench and scored five minutes later, the club says."
+  },
+  {
+   "id": "05-fixture",
+   "kind": "fixture",
+   "duration": 4.4,
+   "register": "NEUTRAL",
+   "kicker": "NEXT UP · SERIE A",
+   "lines": [
+    "GENOA"
+   ],
+   "sub_top": "SAT, NOV 28",
+   "big": "2:45 PM ET",
+   "sub": [
+    "20:45 CET"
+   ],
+   "vo": "Next, [Genoa] in [Serie A]. Saturday, two forty-five Eastern."
+  },
+  {
+   "id": "06-end",
+   "kind": "end",
+   "duration": 5.31,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Should [Lautaro] start against [Genoa]? Tell us at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "thumbnail": {
+  "style": "number",
+  "top": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "lines": [
+    "INTER",
+    "2-0."
+   ]
+  },
+  "bottom": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "lines": [
+    "LAUTARO",
+    "OFF BENCH."
+   ],
+   "sub": "SUČIĆ 57' PEN · LAUTARO 74'"
+  },
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "2-0",
+   "lines_a": [
+    "INTER",
+    "WIN."
+   ],
+   "lines_b": [
+    "BENCH",
+    "DECIDES."
+   ]
+  }
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 29.13
+ }
+}
