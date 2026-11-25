@@ -1,0 +1,23 @@
+{
+ "date": "2026-11-25",
+ "k": 10,
+ "n": 85,
+ "channels": {
+  "bluesky": {
+   "state": "PUBLISHED",
+   "route": "repo",
+   "post_id": "at://did:plc:cqmhtmzyxdkm64ijvdddywbg/app.bsky.feed.post/3n35vfujbqn2u",
+   "url": "https://bsky.app/profile/nerazzurridaily.com/post/3n35vfujbqn2u",
+   "posted_at_utc": "2026-11-25T19:29:19Z",
+   "checked_at_utc": "2026-11-25T19:31:57Z"
+  },
+  "facebook": {
+   "state": "PUBLISHED",
+   "route": "postiz",
+   "post_id": "cmwwiodm90t26p407swrdgupf",
+   "url": "https://platform.postiz.com/p/cmwwiodm90t26p407swrdgupf?share=true",
+   "posted_at_utc": "2026-11-25T19:28:00Z",
+   "checked_at_utc": "2026-11-25T19:32:03Z"
+  }
+ }
+}
