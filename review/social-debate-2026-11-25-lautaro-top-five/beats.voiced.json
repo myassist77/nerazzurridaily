@@ -1,0 +1,168 @@
+{
+ "thumbnail": {
+  "lines": [
+   "LAUTARO: TOP FIVE?"
+  ],
+  "left": {
+   "name": "LAUTARO",
+   "era": "2018– · 181 goals"
+  },
+  "right": {
+   "name": "ALTOBELLI",
+   "era": "1977–88 · 209 goals"
+  }
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "kind": "hook",
+   "eyebrow": "THE DEBATE · NO. 10",
+   "lines": [
+    "LAUTARO",
+    "TOP FIVE",
+    "ALREADY?"
+   ],
+   "sub": "Inter's greatest strikers",
+   "duration": 4.16,
+   "vo": "[Lautaro Martínez]: already a top-five [Inter] striker?"
+  },
+  {
+   "id": "b2",
+   "kind": "lineup",
+   "kicker": "THE CONTENDERS · GOALS FOR INTER",
+   "rows": [
+    {
+     "name": "Meazza",
+     "era": "1927–47 · 284"
+    },
+    {
+     "name": "Altobelli",
+     "era": "1977–88 · 209"
+    },
+    {
+     "name": "Lautaro",
+     "era": "2018– · 181"
+    },
+    {
+     "name": "Boninsegna",
+     "era": "1969–76 · 171"
+    },
+    {
+     "name": "Mazzola",
+     "era": "1960–77 · 161"
+    },
+    {
+     "name": "Vieri",
+     "era": "1999–2005 · 123"
+    }
+   ],
+   "duration": 4.5,
+   "vo": "[Meazza], [Altobelli], then [Lautaro] at one hundred eighty-one."
+  },
+  {
+   "id": "b3",
+   "kind": "card",
+   "kicker": "THE CASE · LAUTARO",
+   "number": 181,
+   "suffix": "",
+   "label": "goals for Inter · No. 3 all-time",
+   "name": "Lautaro Martínez",
+   "facts": [
+    "3 Scudetti · captain since 2023",
+    "Capocannoniere 2024 and 2026",
+    "Inter's top Champions League scorer"
+   ],
+   "source": "inter.it · Oct 13, 2026",
+   "duration": 7.51,
+   "vo": "The case: one hundred eighty-one goals, three [Scudetti], two top-scorer titles, [Inter]'s best in Europe."
+  },
+  {
+   "id": "b4",
+   "kind": "card",
+   "kicker": "THE COUNTER · ALTOBELLI",
+   "number": 209,
+   "suffix": "",
+   "label": "goals for Inter · No. 2 all-time",
+   "name": "Alessandro Altobelli",
+   "facts": [
+    "466 games · 11 seasons",
+    "Scudetto 1980 · 2 Coppa Italia",
+    "World Cup winner 1982"
+   ],
+   "source": "inter.it · Wikipedia",
+   "duration": 5.51,
+   "vo": "The counter: [Altobelli]. Two hundred nine goals, eleven seasons, a World Cup."
+  },
+  {
+   "id": "b5",
+   "kind": "versus",
+   "left": {
+    "name": "LAUTARO",
+    "era": "2018– · NO. 10"
+   },
+   "right": {
+    "name": "ALTOBELLI",
+    "era": "1977–88 · 466 GAMES"
+   },
+   "rows": [
+    {
+     "label": "Goals for Inter",
+     "l": 181,
+     "r": 209,
+     "win": "r"
+    },
+    {
+     "label": "Games for Inter",
+     "l": 384,
+     "r": 466,
+     "win": null
+    },
+    {
+     "label": "Scudetti",
+     "l": 3,
+     "r": 1,
+     "win": "l"
+    },
+    {
+     "label": "Capocannoniere",
+     "l": 2,
+     "r": 0,
+     "win": "l"
+    }
+   ],
+   "duration": 3.74,
+   "vo": "[Altobelli] has the goals. [Lautaro] has the medals."
+  },
+  {
+   "id": "b6",
+   "kind": "verdict",
+   "stamp": "OUR PICK",
+   "name": "Lautaro",
+   "lines": [
+    "Top five? He's already No. 2 —",
+    "only Meazza is ahead"
+   ],
+   "duration": 5.14,
+   "vo": "Our pick: [Lautaro]. Not top five. Number two, behind only [Meazza]."
+  },
+  {
+   "id": "b7",
+   "kind": "end",
+   "lines": [
+    "YOUR",
+    "PICK?"
+   ],
+   "ask": "reply in the comments",
+   "duration": 5.98,
+   "vo": "Your pick? Reply below. [Inter] press in English at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 36.54
+ }
+}

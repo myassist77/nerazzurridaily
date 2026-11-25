@@ -1,0 +1,86 @@
+{
+ "job": "debate-2026-11-25-lautaro-top-five",
+ "kind": "debate",
+ "name": "debate-2026-11-25-lautaro-top-five",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-25T17:29:13+00:00",
+ "run_id": "45664766437",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/45664766437",
+ "files": {
+  "assets/video/debate-2026-11-25-lautaro-top-five.mp4": {
+   "bytes": 2816254,
+   "md5": "c23ffb35b27e0a2b2ed238b0def10577",
+   "sha256": "5423c2938ac884a6868017dbbaba2d8eff4b7f98a18127740c7487670a1b4ef6"
+  },
+  "assets/video/debate-2026-11-25-lautaro-top-five-thumb.png": {
+   "bytes": 306615,
+   "md5": "9e79a7aa2c6ed60fbe03bbf35cf62da3",
+   "sha256": "12e9979273be47c1034fed25321c9f36499d7b739feb3bca9b77e6d9c55e341f"
+  },
+  "assets/video/debate-2026-11-25-lautaro-top-five-thumb-9x16.png": {
+   "bytes": 618010,
+   "md5": "1546672b0721b186110a67b9504d039f",
+   "sha256": "5221e77c0d1917f47dd851a5aa22b88b3634142958e6a5664417b3130b0e3645"
+  },
+  "data/tiktok-debate-2026-11-25-lautaro-top-five.json": {
+   "bytes": 791,
+   "md5": "9691ecacff7a5e4223790925773d3b8e",
+   "sha256": "55e40b058b887ede0daef5bfe1eafc29674534a73e18a1a3cf470b4da526a9ba"
+  },
+  "data/youtube-debate-2026-11-25-lautaro-top-five.json": {
+   "bytes": 1940,
+   "md5": "77ed782ad9c05f5f6210611920b5a4c7",
+   "sha256": "40fe99830e730a34baac2b50a54164a41c2abe80b2499eca138fafa6a3c94d2b"
+  },
+  "assets/qc/debate-contact.jpg": {
+   "bytes": 164057,
+   "md5": "3896e727483c6f0ae501bf948c963ec5",
+   "sha256": "bddad8d390eb9c4f744318d8fc47b6bf73f565d8d4265fa8044c2abe3b50e60e"
+  }
+ },
+ "seconds": 37.54,
+ "beats": 7,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "37.500000"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "37.540000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/debate-2026-11-25-lautaro-top-five-voiced.mp4",
+  "thumb16": "build/pack/debate-2026-11-25-lautaro-top-five-thumb-16x9.png",
+  "thumb9": "build/pack/debate-2026-11-25-lautaro-top-five-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 2202975,
+  "md5": "c223aedce16432694343f7a0c323c739",
+  "sha256": "263cad62ffbe45f4dee1a2b7a19d7a2bea5e34c8248de1e4777455da9e107509"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 36.54
+ },
+ "voice_log_tail": "b1: voice 3.71s → beat 4.16s\nb2: voice 4.10s → beat 4.5s\nb3: voice 6.85s → beat 7.51s\nb4: voice 4.99s → beat 5.51s\nb5: voice 3.26s → beat 3.74s\nb6: voice 4.63s → beat 5.14s\nb7: voice 5.50s → beat 5.98s\nPLAN OK build/beats.voiced.json — 7 beats, 36.54s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/debate-2026-11-25-lautaro-top-five.mp4 — 36.50s, 7 beats, silent (voice is mixed on by nd_voice.py); stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: debate-2026-11-25-lautaro-top-five-thumb-9x16.png, debate-2026-11-25-lautaro-top-five-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/debate-2026-11-25-lautaro-top-five-voiced.mp4 — 37.54s, AAC 48 kHz stereo, I: -16.2 LUFS Peak: -3.7 dBFS\n"
+}
