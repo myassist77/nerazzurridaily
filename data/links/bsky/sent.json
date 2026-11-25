@@ -173,5 +173,12 @@
   "url": "https://bsky.app/profile/nerazzurridaily.com/post/3n35nl6fcfs2n",
   "posted_at_utc": "2026-11-25T17:09:06Z",
   "attempts": 1
+ },
+ "ed85-debate": {
+  "state": "PUBLISHED",
+  "uri": "at://did:plc:cqmhtmzyxdkm64ijvdddywbg/app.bsky.feed.post/3n35vfujbqn2u",
+  "url": "https://bsky.app/profile/nerazzurridaily.com/post/3n35vfujbqn2u",
+  "posted_at_utc": "2026-11-25T19:29:19Z",
+  "attempts": 1
  }
 }
