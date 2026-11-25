@@ -1,0 +1,21 @@
+{
+ "n": 85,
+ "date": "2026-11-25",
+ "question": "Sučić or Mkhitaryan in Çalhanoğlu’s place tonight?",
+ "channels": {
+  "bluesky": {
+   "state": "PUBLISHED",
+   "route": "repo",
+   "post_id": "at://did:plc:cqmhtmzyxdkm64ijvdddywbg/app.bsky.feed.post/3n35nl6fcfs2n",
+   "url": "https://bsky.app/profile/nerazzurridaily.com/post/3n35nl6fcfs2n",
+   "posted_at_utc": "2026-11-25T17:09:06Z"
+  },
+  "facebook": {
+   "state": "UNKNOWN",
+   "route": "postiz",
+   "post_id": "cmwwdodum0pbsp407rbfds9dc",
+   "posted_at_utc": "2026-11-25T17:08:00Z",
+   "error": "Postiz still shows the post in state QUEUE (no error text) at 17:11 and 17:14 UTC"
+  }
+ }
+}
