@@ -1,0 +1,136 @@
+{
+ "edition": 85,
+ "date": "2026-11-25",
+ "slug": "calhanoglu-strain-sucic",
+ "hook": "Inter can cover Çalhanoğlu with Sučić.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-85/",
+ "edition_json_sha256": "cea778f01cb1805c40e6e98c659c65ed52ec01dae432d563c29cd9be5b758c69",
+ "brevo": {
+  "campaign_id": 74,
+  "status": "sent",
+  "sent": "2026-11-25T05:59:15-05:00"
+ },
+ "local_render": {
+  "file": "ND-2026-11-25-ed85-calhanoglu-strain-sucic-voiced.mp4",
+  "seconds": 31.97,
+  "beats": 6,
+  "bytes": 1513057,
+  "md5": "76b657b231d1d17f13a23d82d365d978",
+  "sha256": "a9ecb847f471fd6916c7aa0194c22c36125b48e28a2286e04055ee84b789eb3f",
+  "audio": {
+   "note": "voiceover only — no music",
+   "codec": "aac",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "31.970000"
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 30.97
+  }
+ },
+ "stories": [
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Nov 24",
+   "story": "Çalhanoğlu right-thigh flexor strain; no recovery time",
+   "role": "lead"
+  },
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Nov 24",
+   "story": "Chivu rules out Zieliński; Stones in squad"
+  },
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Nov 24–25",
+   "story": "Inter six points, one behind Stuttgart; tickets on sale"
+  },
+  {
+   "register": "REPORTED",
+   "source": "Sky Sport Italia",
+   "date": "Nov 24",
+   "story": "Sučić replaces Çalhanoğlu; Esposito and Thuram up front",
+   "role": "turn"
+  },
+  {
+   "register": "REPORTED",
+   "source": "Tuttosport",
+   "date": "Nov 25",
+   "story": "Mkhitaryan starts; Bonny unavailable"
+  }
+ ],
+ "youtube_title": "Inter vs Stuttgart: Çalhanoğlu Strain Confirmed, Sučić In per Sky | Nerazzurri Daily",
+ "pinned_question": "Sučić or Mkhitaryan in Çalhanoğlu’s place tonight?",
+ "next_fixture": "Inter vs VfB Stuttgart · Wed, Nov 25 · Champions League MD5 · 3:00 PM ET · 21:00 CET · US TV: Paramount+",
+ "thumbnail_style": "number",
+ "drafts": {
+  "facebook": true,
+  "reddit": false
+ },
+ "format": "daily six-beat",
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/45608517425",
+  "built_at_utc": "2026-11-25T11:55:34+00:00",
+  "seconds": 31.97,
+  "beats": 6,
+  "files": {
+   "assets/video/ed85.mp4": {
+    "bytes": 1364626,
+    "md5": "f735881c220ca7623b4d0e33753e67d6",
+    "sha256": "95cd056b14965c04664b444925ed0fe990c464b07a00387bb4636dbe3b0184b3"
+   },
+   "assets/video/ed85-thumb.png": {
+    "bytes": 51263,
+    "md5": "e4b9bcde90e681db82bbbad75d2fcad5",
+    "sha256": "dbb0d8f6e919a8ddaf9ac9b750d519dcd57e93cdff57040227899b1388e34e84"
+   },
+   "assets/video/ed85-thumb-9x16.png": {
+    "bytes": 67784,
+    "md5": "37d88b3c1422306ca4d0f34ae7e15515",
+    "sha256": "e8ec1f5c6fce453289cc222e2f58e7dcc42cc2eecd028b56befd060cbe64b76b"
+   },
+   "data/tiktok-ed85.json": {
+    "bytes": 727,
+    "md5": "14befc48e86f7e9d1fe095eba963df7a",
+    "sha256": "7c90b9cdd864138b5506f2fe19c901d2d80ce2d4a28b658d849e3ffa95ae8076"
+   },
+   "data/youtube-ed85.json": {
+    "bytes": 1804,
+    "md5": "fe3b39e80ab23b08e56aa83913999faa",
+    "sha256": "80533fd443f9af32a5ea3d91de4cf888b98a188fbf4fe630f6b1344114c31825"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 124528,
+    "md5": "9682afe7ba6f2dd890c74a82b639687f",
+    "sha256": "a8f8a491db44b4470635b0ad4a02ed08700048210b754975ef27e11e991e7161"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 67784,
+    "md5": "37d88b3c1422306ca4d0f34ae7e15515",
+    "sha256": "e8ec1f5c6fce453289cc222e2f58e7dcc42cc2eecd028b56befd060cbe64b76b"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 51263,
+    "md5": "e4b9bcde90e681db82bbbad75d2fcad5",
+    "sha256": "dbb0d8f6e919a8ddaf9ac9b750d519dcd57e93cdff57040227899b1388e34e84"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 30.97
+  },
+  "passed": true
+ }
+}

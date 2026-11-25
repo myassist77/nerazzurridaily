@@ -1,0 +1,119 @@
+{
+ "n": 85,
+ "date": "2026-11-25",
+ "slug": "calhanoglu-strain-sucic",
+ "name": "ND-2026-11-25-ed85-calhanoglu-strain-sucic",
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "1",
+   "lines_a": [
+    "POINT BEHIND",
+    "STUTTGART"
+   ],
+   "lines_b": [
+    "AT SAN SIRO",
+    "TONIGHT"
+   ],
+   "pill": "REPORTED · SKY: SUČIĆ STARTS",
+   "pill_register": "REPORTED"
+  }
+ },
+ "beats": [
+  {
+   "id": "01-stance",
+   "kind": "cover",
+   "duration": 4.42,
+   "eyebrow": "EDITION NO. 85 · NOVEMBER 25",
+   "lines": [
+    "INTER CAN",
+    "COVER ÇALHANOĞLU",
+    "WITH SUČIĆ."
+   ],
+   "vo": "[Inter] can cover for [Hakan Çalhanoğlu] with [Petar Sučić] tonight."
+  },
+  {
+   "id": "02-claim",
+   "kind": "item",
+   "duration": 6.12,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · NOV 24",
+   "lines": [
+    "ÇALHANOĞLU HAS",
+    "A THIGH STRAIN."
+   ],
+   "sub": [
+    "RIGHT THIGH · NO RECOVERY TIME GIVEN",
+    "CHIVU: ZIELIŃSKI IS OUT TOO"
+   ],
+   "vo": "[Inter] confirms [Çalhanoğlu] has a strain in his right thigh, and [Piotr Zieliński] is out too."
+  },
+  {
+   "id": "03-our-take",
+   "kind": "item",
+   "duration": 3.93,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "START SUČIĆ.",
+    "LET HIM RUN IT."
+   ],
+   "sub": [
+    "THIS IS HIS NIGHT."
+   ],
+   "vo": "Start [Sučić] and let him run the middle. This is his night."
+  },
+  {
+   "id": "04-turn",
+   "kind": "item",
+   "duration": 6.47,
+   "register": "REPORTED",
+   "kicker": "REPORTED · SKY SPORT ITALIA · NOV 24",
+   "lines": [
+    "SUČIĆ IN FOR",
+    "ÇALHANOĞLU."
+   ],
+   "sub": [
+    "ESPOSITO AND THURAM UP FRONT",
+    "THURAM FAVORED OVER LAUTARO"
+   ],
+   "vo": "[Sky Sport Italia] expects [Sučić] in his place, with [Thuram] picked ahead of [Lautaro Martínez]."
+  },
+  {
+   "id": "05-fixture",
+   "kind": "fixture",
+   "duration": 3.48,
+   "register": "NEUTRAL",
+   "kicker": "TODAY · CHAMPIONS LEAGUE",
+   "lines": [
+    "VFB STUTTGART"
+   ],
+   "sub_top": "HOME · WEDNESDAY, NOVEMBER 25",
+   "big": "3:00 PM ET",
+   "sub": [
+    "21:00 CET",
+    "US TV: PARAMOUNT+"
+   ],
+   "vo": "Stuttgart at [San Siro], today at three Eastern."
+  },
+  {
+   "id": "06-end",
+   "kind": "end",
+   "duration": 6.55,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "[Sučić] or [Mkhitaryan] for [Çalhanoğlu]? Tell me in the comments, at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 30.97
+ }
+}
