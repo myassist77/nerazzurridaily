@@ -1,0 +1,20 @@
+{
+ "n": 86,
+ "date": "2026-11-26",
+ "question": "Should Bastoni start against Genoa on Saturday?",
+ "channels": {
+  "bluesky": {
+   "state": "PUBLISHED",
+   "route": "repo",
+   "post_id": "at://did:plc:cqmhtmzyxdkm64ijvdddywbg/app.bsky.feed.post/3n3a646gqfl2o",
+   "url": "https://bsky.app/profile/nerazzurridaily.com/post/3n3a646gqfl2o",
+   "posted_at_utc": "2026-11-26T17:10:16Z"
+  },
+  "facebook": {
+   "state": "PUBLISHED",
+   "route": "postiz",
+   "post_id": "cmwxt5l8904aco507kcvyg8jy",
+   "posted_at_utc": "2026-11-26T17:09:00Z"
+  }
+ }
+}
