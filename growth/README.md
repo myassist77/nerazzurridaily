@@ -25,7 +25,7 @@ The Scorekeeper (the Monday numbers task) is the only source of the score. No ag
 5. A finding that undercuts something the owner approved goes in the memo's first line, and work on it stops until he decides.
 
 ## The signup funnel (since Nov 14, 2026, about 23:00 UTC)
-One view of /subscribe/sent/ = one signup sent (the form loads it in a hidden frame; its referrer path is the page the person signed up on). One view of /subscribe/confirmed/ = one confirmation click. Drop rows with bot = 1 or a "Headless" browser.
+One view of any path starting /subscribe/sent/ = one signup sent (the form loads it in a hidden frame; its referrer path is the page the person signed up on). Since Nov 26, 2026 the path also names the source: /subscribe/sent/<source>/, where <source> is the last /go/ door the visitor came through with dashes for slashes (yt-ed86-pinned, fb-ed85-reel, bsky-bio), ref-<host> for an outside site with no door, or direct; the channel is the part before the first dash. A bare /subscribe/sent/ is a signup from before Nov 26: source not recorded. One view of /subscribe/confirmed/ = one confirmation click. Drop rows with bot = 1 or a "Headless" browser.
 Test rows to ignore: Nov 14, 2026, 22:53 and 22:55 UTC, referrer /match/atalanta-vs-inter-2026-11-22/ (two test signups with a stubbed form; no address reached the mailing list).
 Also tests: Nov 16, 2026, 14:47 to 15:49 UTC, one desktop Mac: 3 views of /subscribe/sent/ (referrers / and /subscribe/) and 4 of /subscribe/confirmed/, from that morning's confirm-email tests with test addresses. No reader among them.
 
