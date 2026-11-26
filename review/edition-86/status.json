@@ -1,0 +1,158 @@
+{
+ "n": 86,
+ "built_at_utc": "2026-11-26T10:49:35+00:00",
+ "run_id": "45804795436",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/45804795436",
+ "passed": true,
+ "steps": {
+  "mast": "success",
+  "controls": "success",
+  "checks": "success"
+ },
+ "files_md5": {
+  "p/edition-86/index.html": "c6499fa0345a9061780b056a1b6fa3b8",
+  "assets/mast/edition-86.png": "56ebee87248b0d47c424ba5b2e2d97b3",
+  "data/edition-86.json": "b153d3d1879243c727bf124248c13137",
+  "index.html": "2820794293ed3cfe36835265c052ad8c",
+  "subscribe/index.html": "474d640b5bcac3f1d5f24f58601ed326",
+  "fixtures/index.html": "45c860e68662f800ed7e55a67870ab07",
+  "feed.xml": "a8645b3e147149fd6c7ef7bad354c3aa",
+  "sitemap.xml": "673394cc23ffcf3852320d0c4c3a72f6"
+ },
+ "title": "Sučić and Lautaro sink Stuttgart as Bastoni goes off",
+ "date": "2026-11-26",
+ "masthead": {
+  "bytes": 5957,
+  "lines": 2,
+  "colors": 7,
+  "fonts": {
+   "anton": true,
+   "mono": true
+  }
+ },
+ "controls": {
+  "n": 86,
+  "fails": [],
+  "warns": [],
+  "page-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 700,
+    "h": 382.8125,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "page-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "email-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 644,
+    "h": 352.1875,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  },
+  "email-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  }
+ },
+ "checks": {
+  "fails": [],
+  "warns": [],
+  "info": {
+   "prose_words": 304,
+   "read_seconds": 77,
+   "avg_sentence_words": 14.9,
+   "flesch_reading_ease": 61.3,
+   "edition_from_masthead": null,
+   "dates": {
+    "today": "November 26"
+   },
+   "external_to_fetch": [
+    "https://bsky.app/profile/nerazzurridaily.com",
+    "https://sport.sky.it/calcio/champions-league/2026/11/25/inter-stoccarda-pagelle",
+    "https://www.calciomercato.com/notizie/inter-infortunio-bastoni-cosa-si-e-fatto-quando-torna-e-quante-partite-salta/bltb9bf5d949cba0fc2",
+    "https://www.facebook.com/nerazzurridaily",
+    "https://www.inter.it/en/matches",
+    "https://www.inter.it/en/news/audace-cerignola-vs-inter-u23-serie-c-2026-27",
+    "https://www.inter.it/en/news/chivu-interview-post-inter-stuttgart-champions-league-2026-27",
+    "https://www.inter.it/en/news/inter-stuttgart-champions-league-2026-27",
+    "https://www.inter.it/en/news/interview-barella-inter-stuttgart-champions-league-2026-27",
+    "https://www.inter.it/en/news/interviews-sucic-bisseck-akanji-post-match-inter-stuttgart-champions-league-26-27",
+    "https://www.inter.it/en/news/standings-league-phase-inter-fixtures-champions-league-26-27",
+    "https://www.tiktok.com/@nerazzurridaily",
+    "https://www.youtube.com/@nerazzurridaily"
+   ],
+   "site_links": [
+    "https://www.nerazzurridaily.com/go/email/?ed=86",
+    "https://www.nerazzurridaily.com/go/email/?ed=86&to=/subscribe/",
+    "https://www.nerazzurridaily.com/go/forward/?ed=86",
+    "https://www.nerazzurridaily.com/go/vote/?ed=86&v=no",
+    "https://www.nerazzurridaily.com/go/vote/?ed=86&v=yes",
+    "https://www.nerazzurridaily.com/p/edition-86/"
+   ]
+  }
+ },
+ "email": {
+  "md5": "ee4820e3eeb652948fa4193c0463de96",
+  "chars": 22927,
+  "bytes": 23078
+ }
+}
