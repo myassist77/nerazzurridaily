@@ -33,7 +33,8 @@ def _evergreen():
 PAGES = ["index.html", "subscribe/index.html"] + _editions() + _evergreen()
 STUB = ('{"success":true,"message":"Almost there. Check your inbox for an email from '
         'Nerazzurri Daily and tap the confirm link."}')
-TEST_EMAIL = "ci-check@example.invalid"   # never reaches Brevo: the POST is stubbed
+TEST_EMAIL = "ci-check@example.invalid"
+DOOR = "yt/ed99/ci-check"   # the door the test visitor "arrives" through; recorded as source yt-ed99-ci-check   # never reaches Brevo: the POST is stubbed
 
 
 def serve(root, port):
@@ -63,7 +64,9 @@ def check(page_path, base, browser):
     # pageviews from 127.0.0.1 showed up in Web Analytics in the week of Sep 22, 2026)
     page.route(re.compile(r"cloudflareinsights\.com"), lambda r: r.abort())
     url = f"{base}/{page_path}"
-    page.goto(url, wait_until="networkidle", timeout=60000)
+    # arrive through a tracking door, as a real visitor from a Short would (Nov 26, 2026): the page must remember
+    # the door (nd_src), and the signup counter frame must carry it in its path for Web Analytics
+    page.goto(url, wait_until="networkidle", timeout=60000, referer=f"{base}/go/{DOOR}/")
 
     problems = []
     if not page.is_visible("#EMAIL"):
@@ -93,6 +96,13 @@ def check(page_path, base, browser):
         page.wait_for_timeout(800)
         if len(counted) != 1:
             problems.append(f"the signup was not counted exactly once (/subscribe/sent/ requested {len(counted)} times)")
+        else:
+            want = "/subscribe/sent/" + DOOR.replace("/", "-") + "/"
+            got = [f.evaluate("location.pathname") for f in page.frames if "/subscribe/sent/" in f.url]
+            if got != [want]:
+                problems.append(f"the signup was counted without its source: counter frame path {got}, expected {want}")
+            if page.input_value("#SOURCE") != DOOR.replace("/", "-"):
+                problems.append(f"the form's SOURCE field reads {page.input_value('#SOURCE')!r}, expected {DOOR.replace('/', '-')!r}")
     page.close()
     return problems
 
@@ -125,7 +135,7 @@ def main():
                 for pr in problems:
                     print(f"        - {pr}")
             else:
-                print(f"ok    {page_path}  (POST attempted, success panel shown, signup counted once, no JS errors)")
+                print(f"ok    {page_path}  (POST attempted, success panel shown, signup counted once with its source, no JS errors)")
         browser.close()
     if httpd:
         httpd.shutdown()
