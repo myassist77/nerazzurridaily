@@ -1,0 +1,96 @@
+{
+ "job": "ed86",
+ "kind": "daily",
+ "name": "ND-2026-11-26-ed86-sucic-lautaro-bastoni",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-26T11:55:49+00:00",
+ "run_id": "45814596408",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/45814596408",
+ "files": {
+  "assets/video/ed86.mp4": {
+   "bytes": 1331728,
+   "md5": "9510552aa83b7e7923e164701ba3ecae",
+   "sha256": "07fae8b6483a1363ef98fd15d20e251d612611687f2d091cd99c6ca5cf792cb4"
+  },
+  "assets/video/ed86-thumb.png": {
+   "bytes": 64542,
+   "md5": "097cc9a3a2d53d66ff02ed811d410999",
+   "sha256": "4a546308d3122715661d1b4273c47560b59ca1652d7127bfe371890d57c011b1"
+  },
+  "assets/video/ed86-thumb-9x16.png": {
+   "bytes": 89223,
+   "md5": "1362b102b218526f81fa027e98b46179",
+   "sha256": "d202a036c08b4821450db511eddb79b9634e2482baffecd0abff486797821566"
+  },
+  "data/tiktok-ed86.json": {
+   "bytes": 791,
+   "md5": "979f796dc103f53a3e63896a2a72380e",
+   "sha256": "8d1136b8289a1c0b85ced2c54f539a25d6d650436b298617c0977bdb29da9ea1"
+  },
+  "data/youtube-ed86.json": {
+   "bytes": 1588,
+   "md5": "de3512ec20726aa51740abda0b335db1",
+   "sha256": "d97789d9abd275584d9fcec2afd2f176d12e7b24093b95f56f6bbeb35619605b"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 114490,
+   "md5": "86ebe2f78876f80a34ba02015710a4a5",
+   "sha256": "4c57fe8e5468eb3a035dabfd98016d9f3cea9f67b9d8496b2b4a6f5475986ddc"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 89223,
+   "md5": "1362b102b218526f81fa027e98b46179",
+   "sha256": "d202a036c08b4821450db511eddb79b9634e2482baffecd0abff486797821566"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 64542,
+   "md5": "097cc9a3a2d53d66ff02ed811d410999",
+   "sha256": "4a546308d3122715661d1b4273c47560b59ca1652d7127bfe371890d57c011b1"
+  }
+ },
+ "seconds": 32.65,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "32.633333"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "32.650000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-11-26-ed86-sucic-lautaro-bastoni-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-11-26-ed86-sucic-lautaro-bastoni-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-11-26-ed86-sucic-lautaro-bastoni-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 839730,
+  "md5": "62c1c8808161185ed4e05c26401a37a6",
+  "sha256": "497c4d55dbb38349612bebe59a74710c1ac9ca0156a79050f12c2f4db27cef4c"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 31.65
+ },
+ "voice_log_tail": "01-stance: voice 3.35s → beat 3.88s\n02-claim: voice 5.10s → beat 5.59s\n03-our-take: voice 4.80s → beat 5.23s\n04-turn: voice 5.93s → beat 6.38s\n05-fixture: voice 3.78s → beat 4.23s\n06-end: voice 5.85s → beat 6.34s\nPLAN OK build/beats.voiced.json — 6 beats, 31.65s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-11-26-ed86-sucic-lautaro-bastoni.mp4 — 31.63s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-11-26-ed86-sucic-lautaro-bastoni-thumb-9x16.png, ND-2026-11-26-ed86-sucic-lautaro-bastoni-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-11-26-ed86-sucic-lautaro-bastoni-voiced.mp4 — 32.65s, AAC 48 kHz stereo, I: -16.3 LUFS Peak: -3.6 dBFS\n"
+}

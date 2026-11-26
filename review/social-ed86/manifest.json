@@ -1,0 +1,133 @@
+{
+ "edition": 86,
+ "date": "2026-11-26",
+ "slug": "sucic-lautaro-bastoni",
+ "hook": "Inter can cope without Bastoni.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-86/",
+ "edition_json_sha256": "c818ff8a0450be56b1401417b3043a301fd75cac115892a935ae6133257199ac",
+ "brevo": {
+  "campaign_id": 75,
+  "status": "sent",
+  "sent": "2026-11-26T06:10:52-05:00"
+ },
+ "local_render": {
+  "file": "ND-2026-11-26-ed86-sucic-lautaro-bastoni-voiced.mp4",
+  "seconds": 32.65,
+  "beats": 6,
+  "bytes": 1476933,
+  "md5": "534ca2a9ab0cd89add52cc560cde994d",
+  "sha256": "722e5004ebd4ae51f4f151906e4ea19838e41e47465b805f41e1f5f6c789b61d",
+  "audio": {
+   "note": "voiceover only — no music",
+   "codec": "aac",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "32.650000"
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 31.65
+  }
+ },
+ "stories": [
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Nov 25",
+   "story": "Inter 2–0 VfB Stuttgart; Sučić 57′ pen, Lautaro 74′; 12th, nine points",
+   "role": "lead"
+  },
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Nov 25",
+   "story": "Chivu and Barella reactions; Barella UEFA Player of the Match"
+  },
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Nov 25",
+   "story": "Inter U23 lose 3–0 at Cerignola"
+  },
+  {
+   "register": "REPORTED",
+   "source": "Sky Sport Italia via Calciomercato",
+   "date": "Nov 25",
+   "story": "Bastoni left-thigh soreness, scans due, doubt for Genoa",
+   "role": "turn"
+  }
+ ],
+ "youtube_title": "Inter 2–0 Stuttgart: Sučić, Lautaro Score — Bastoni a Doubt for Genoa | Nerazzurri Daily",
+ "pinned_question": "Should Bastoni start against Genoa on Saturday?",
+ "next_fixture": "Inter vs Genoa · Sat, Nov 28 · Serie A matchday 13 · 2:45 PM ET · 20:45 CET · US TV: Paramount+",
+ "thumbnail": {
+  "style": "number",
+  "big": "9"
+ },
+ "drafts": {
+  "facebook": true,
+  "reddit": false
+ },
+ "format": "daily six-beat",
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/45814596408",
+  "built_at_utc": "2026-11-26T11:55:49+00:00",
+  "seconds": 32.65,
+  "beats": 6,
+  "files": {
+   "assets/video/ed86.mp4": {
+    "bytes": 1331728,
+    "md5": "9510552aa83b7e7923e164701ba3ecae",
+    "sha256": "07fae8b6483a1363ef98fd15d20e251d612611687f2d091cd99c6ca5cf792cb4"
+   },
+   "assets/video/ed86-thumb.png": {
+    "bytes": 64542,
+    "md5": "097cc9a3a2d53d66ff02ed811d410999",
+    "sha256": "4a546308d3122715661d1b4273c47560b59ca1652d7127bfe371890d57c011b1"
+   },
+   "assets/video/ed86-thumb-9x16.png": {
+    "bytes": 89223,
+    "md5": "1362b102b218526f81fa027e98b46179",
+    "sha256": "d202a036c08b4821450db511eddb79b9634e2482baffecd0abff486797821566"
+   },
+   "data/tiktok-ed86.json": {
+    "bytes": 791,
+    "md5": "979f796dc103f53a3e63896a2a72380e",
+    "sha256": "8d1136b8289a1c0b85ced2c54f539a25d6d650436b298617c0977bdb29da9ea1"
+   },
+   "data/youtube-ed86.json": {
+    "bytes": 1588,
+    "md5": "de3512ec20726aa51740abda0b335db1",
+    "sha256": "d97789d9abd275584d9fcec2afd2f176d12e7b24093b95f56f6bbeb35619605b"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 114490,
+    "md5": "86ebe2f78876f80a34ba02015710a4a5",
+    "sha256": "4c57fe8e5468eb3a035dabfd98016d9f3cea9f67b9d8496b2b4a6f5475986ddc"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 89223,
+    "md5": "1362b102b218526f81fa027e98b46179",
+    "sha256": "d202a036c08b4821450db511eddb79b9634e2482baffecd0abff486797821566"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 64542,
+    "md5": "097cc9a3a2d53d66ff02ed811d410999",
+    "sha256": "4a546308d3122715661d1b4273c47560b59ca1652d7127bfe371890d57c011b1"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 31.65
+  },
+  "passed": true
+ }
+}
