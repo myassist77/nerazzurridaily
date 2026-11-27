@@ -28,7 +28,9 @@ import datetime, glob, json, os, re
 
 WATCH = 'how-to-watch-inter-milan-in-the-usa'
 TRANSFERS = 'inter-milan-transfer-news'
-PATHS = ['results', 'injuries', WATCH, TRANSFERS]
+UCL = 'inter-milan-champions-league'
+COPPA = 'inter-milan-coppa-italia'
+PATHS = ['results', 'injuries', WATCH, TRANSFERS, UCL, COPPA]
 MON = {'JAN': 1, 'FEB': 2, 'MAR': 3, 'APR': 4, 'MAY': 5, 'JUN': 6, 'JUL': 7, 'AUG': 8, 'SEP': 9, 'OCT': 10, 'NOV': 11, 'DEC': 12}
 MONTH3 = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 DAY3 = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
@@ -201,7 +203,7 @@ def _foot(R):
 
 def _more(skip):
     links = [('fixtures', 'Every kickoff in Eastern time'), ('results', 'Every result this season'), ('injuries', 'The injury log'),
-             (WATCH, 'How to watch in the US'), (TRANSFERS, 'Transfer news')]
+             (WATCH, 'How to watch in the US'), (TRANSFERS, 'Transfer news'), (UCL, 'Champions League'), (COPPA, 'Coppa Italia')]
     return ('<p class="fx-note ev-more">' + ' &middot; '.join(f'<a href="/{p}/">{t}</a>' for p, t in links if p != skip) + '</p>')
 
 def _head(R, here, count):
@@ -588,8 +590,74 @@ def build_matches(R, count):
     return made
 
 
+# ------------------------------------------------------------------ /inter-milan-champions-league/ and /inter-milan-coppa-italia/ (growth build, Nov 27, 2026)
+def render_comp(R, count, path, key):
+    """One competition's page: the Inter results the editions have printed in it and the matches of it that the latest
+    edition lists, Eastern kickoff first, each linking to its match page. Nothing is said about a round no edition has listed."""
+    eds = editions()
+    if not eds: raise ValueError('no editions')
+    latest = eds[-1]; today = datetime.date.fromisoformat(latest['date']); name = comp_name(key); the = _the(name)
+    res = results(eds); pages = {match_path(r) for r in match_rows(eds)}
+    mine = [x for x in res if score(x['h3']) and _clean(x['meta']).split('·')[0].strip().upper() == key]
+    up = sorted((r for r in fixture_rows(latest) if r['comp'] == key and not r['women'] and r['date'] and r['date'] >= today), key=lambda r: r['date'])
+    if not mine and not up: raise ValueError(f'no {name} result or fixture in the editions')
+    played = [r for (d, w), r in match_log(eds).items() if r['comp'] == key and _matchable(r) and d < today]
+    def page_of(x):   # the match page of a printed result, when the editions also listed that match
+        r = next((r for r in played if _result_for(r, res) is x and match_path(r) in pages), None)
+        return f' · <a href="/{match_path(r)}/">Match page</a>' if r else ''
+    since = R.longdate(eds[0]['date']).split(', ', 1)[1]
+    title = f'Inter Milan {name} fixtures'
+    desc = (f'Inter Milan in {the} this season: every result with the scorers, and the next match with the kickoff in Eastern time and the US broadcaster. '
+            'Updated every morning by Nerazzurri Daily.')
+    faq = []
+    if up:
+        n = up[0]; where = 'at home to' if n.get('venue') == 'HOME' else 'away at'; et = _clean(n['et_text']); cet = _clean(n['cet'])
+        stage = _clean(n['line2']).split('·')[-1].strip().capitalize()
+        a = (f'Inter’s next {name} match is {where} {n["name"]} on {_day(n["date"])}' + (f' ({stage})' if stage and stage.upper() != key else '')
+             + (f', kicking off at {et}' if et else '') + (f' ({cet} in Milan)' if cet else '') + '.')
+        if n['et']: a += ' In the other US zones: ' + ', '.join(f'{t} {z}' for z, t in _zones(n['et'])[1:]) + '.'
+        faq.append((f'When is Inter’s next {name} match?', a))
+        faq.append((f'What channel is Inter’s {name} match on in the USA?',
+                    (f'The US listing printed for {n["name"]} on {_day(n["date"])} is ' + ', '.join(n['tv']) + '.' if n['tv'] else
+                     f'No US listing has been published yet for {n["name"]} on {_day(n["date"])}; this page updates the morning one is.')
+                    + ' A broadcaster can move a match late, so check your provider on the day.'))
+        first = (_sec(R, f'Next in {the}', 'EASTERN TIME FIRST, MILAN SECOND') + f'<div class="in"><table class="sb"><tbody>{"".join(_row(R, r) for r in up)}</tbody></table></div>'
+                 + f'<p class="ev-p">{R.esc(a)} ' + R.esc('US listing: ' + ', '.join(n['tv']) + '.' if n['tv'] else 'No US listing has been published for it yet.')
+                 + f'</p><p class="fx-note"><a href="/{WATCH}/">How to watch Inter in the USA, match by match →</a></p>'
+                 + match_links(R, up))
+    else:
+        first = (_sec(R, f'Next in {the}') + f'<p class="ev-p">The latest edition lists no upcoming Inter match in {the}. '
+                 'One appears here the morning an edition lists it. <a href="/fixtures/">Every upcoming Inter match is on the fixtures page.</a></p>')
+    if mine:
+        t = {'W': 0, 'D': 0, 'L': 0}
+        for x in mine: t[score(x['h3'])] += 1
+        tally = f'{t["W"]} won, {t["D"]} drawn and {t["L"]} lost'
+        faq.append((f'How have Inter done in {the} this season?', f'Of the {len(mine)} Inter results in {the} printed in Nerazzurri Daily since {since}: {tally}. '
+                    'The latest: ' + re.sub(r'<[^>]+>', '', mine[0]['h3']) + '.'))
+        items = ''.join(f'<div class="item ev-item"><div class="in"><p class="ev-meta">{R.esc(_clean(x["meta"]))}</p><h3>{x["h3"]}</h3>' + ''.join(f'<p>{p}</p>' for p in x['paras'])
+                        + f'<p class="go"><a href="/p/edition-{x["n"]}/">No. {x["n"]} · {R.shortdate(x["date"])} →</a>{page_of(x)}</p></div></div>' for x in mine)
+        rest = (_sec(R, f'Results in {the}', 'NEWEST FIRST') + f'<p class="ev-p">{tally.capitalize()}. That counts only the {len(mine)} result{"s" if len(mine) != 1 else ""} below, '
+                f'as printed in the editions, which start on {since}; a match played before that is not here.</p>' + items)
+    else:
+        rest = (_sec(R, f'Results in {the}') + f'<p class="ev-p">No Inter result in {the} has been printed in an edition yet. '
+                'The score and the scorers appear here the morning after the match.</p>')
+    rest += (_sec(R, 'Quick answers') + '<div class="ev-faq">' + ''.join(f'<h3>{R.esc(q)}</h3><p class="ev-p">{R.esc(a)}</p>' for q, a in faq) + '</div>'
+             + '<p class="fx-note">Where this comes from: kickoffs and US listings are the ones printed in the latest edition of Nerazzurri Daily; scores and scorers are the '
+               'club’s own match reports, as printed in the edition linked under each result. A later round or matchday is added the morning an edition lists it. '
+               'This page holds no table or bracket: the editions do not store one.</p>')
+    lede = (f'Inter’s results in {the} this season and the next match, with the kickoff in Eastern time first and the US broadcaster. '
+            f'Built from the editions, last updated {R.longdate(latest["date"])}.')
+    lds = [_webpage(R, path, title, desc, latest['date']),
+           {'@context': 'https://schema.org', '@type': 'FAQPage',
+            'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in faq]}]
+    return _page(R, path, title, desc, f'Inter Milan in {the}.', lede, first, rest, count,
+                 'Every kickoff in your inbox', 'Free · one email a morning with the next match and where to watch it · unsubscribe any time', lds)
+
+
 # ------------------------------------------------------------------ entry points
-RENDERERS = {'results': render_results, 'injuries': render_injuries, WATCH: render_watch, TRANSFERS: render_transfers}
+RENDERERS = {'results': render_results, 'injuries': render_injuries, WATCH: render_watch, TRANSFERS: render_transfers,
+             UCL: lambda R, count, first_iso: render_comp(R, count, UCL, 'CHAMPIONS LEAGUE'),
+             COPPA: lambda R, count, first_iso: render_comp(R, count, COPPA, 'COPPA ITALIA')}
 
 def render_404(R):
     """404.html - the "Page not found" page, with the header, navigation, signup form and footer of the reference pages
