@@ -1,0 +1,133 @@
+{
+ "edition": 87,
+ "date": "2026-11-27",
+ "slug": "carlos-augusto-2031",
+ "hook": "Inter were right to keep Carlos Augusto.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-87/",
+ "edition_json_sha256": "aa325a26ac03372b956f2f0fa42ecb5114a59250a81dfdbcb6a74cb3cae81b20",
+ "brevo": {
+  "campaign_id": 76,
+  "status": "sent",
+  "sent": "2026-11-27T05:59:19-05:00"
+ },
+ "local_render": {
+  "file": "ND-2026-11-27-ed87-carlos-augusto-2031-voiced.mp4",
+  "seconds": 34.27,
+  "beats": 6,
+  "bytes": 1565188,
+  "md5": "7e48e543a527b0b9ca6ca2366c70ee6d",
+  "sha256": "ec943f6e70209d07a398acac56d3977179ab2ce2d28f9d8a80e4f1e5ae4f532c",
+  "audio": {
+   "note": "voiceover only — no music",
+   "codec": "aac",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "34.210000"
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 33.21
+  }
+ },
+ "stories": [
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Nov 26",
+   "story": "Carlos Augusto extends until June 30, 2031",
+   "role": "lead"
+  },
+  {
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Nov 26",
+   "story": "Dortmund away tickets on sale, €18.50 standing"
+  },
+  {
+   "register": "REPORTED",
+   "source": "La Gazzetta dello Sport via FCInterNews",
+   "date": "Nov 26",
+   "story": "Bastoni scans today on sore quadriceps; Genoa place open",
+   "role": "turn"
+  },
+  {
+   "register": "REPORTED",
+   "source": "FCInterNews",
+   "date": "Nov 26",
+   "story": "Zieliński and Bonny train apart; Çalhanoğlu targets Dec 22"
+  }
+ ],
+ "youtube_title": "Inter Extend Carlos Augusto to 2031 — Bastoni Has Scans Before Genoa | Nerazzurri Daily",
+ "pinned_question": "Carlos Augusto: starter or squad player?",
+ "next_fixture": "Inter vs Genoa · Sat, Nov 28 · Serie A matchday 13 · 2:45 PM ET · 20:45 CET · US TV: Paramount+",
+ "thumbnail": {
+  "style": "number",
+  "big": "2"
+ },
+ "drafts": {
+  "facebook": true,
+  "reddit": false
+ },
+ "format": "daily six-beat",
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/45993916038",
+  "built_at_utc": "2026-11-27T11:53:54+00:00",
+  "seconds": 34.27,
+  "beats": 6,
+  "files": {
+   "assets/video/ed87.mp4": {
+    "bytes": 1419270,
+    "md5": "40af1f1993242f0949fe51a73833e168",
+    "sha256": "ca8246ae80f9198129fdfcb35ec0e867de2e8a4914a19ec342b0668626c5a249"
+   },
+   "assets/video/ed87-thumb.png": {
+    "bytes": 62105,
+    "md5": "d49b3fc32950de08acb30fba919a6bcc",
+    "sha256": "cb239a560602a10e2e882f2752d70fd3068fe588380e0f5f2b1d898f40a2d27b"
+   },
+   "assets/video/ed87-thumb-9x16.png": {
+    "bytes": 87595,
+    "md5": "1bff6702f77b6c502d3d6bc16f98d7c0",
+    "sha256": "144889cdf0612092e94a264846fc4fccfd0f2602e0d45e72c247c0b22a2f5c38"
+   },
+   "data/tiktok-ed87.json": {
+    "bytes": 692,
+    "md5": "1b883ce9e678cf3774652e5a1041f889",
+    "sha256": "c4e50c9667c39abc1d0c36a19428986f53c985942dfc8811ff00f6f6f41081c1"
+   },
+   "data/youtube-ed87.json": {
+    "bytes": 1577,
+    "md5": "dd27e71e7e935013b544f4ace23545f7",
+    "sha256": "622d644945e27413b6e7afa04b673b254a9e058336cf68a279aab589fdea2208"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 124609,
+    "md5": "842e111772be5c0e342f46fb0861754e",
+    "sha256": "4ba8e69ac54e23b52cbe459ca9a08fd517c7d716c506e9eb5b37fd76ccd31a59"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 87595,
+    "md5": "1bff6702f77b6c502d3d6bc16f98d7c0",
+    "sha256": "144889cdf0612092e94a264846fc4fccfd0f2602e0d45e72c247c0b22a2f5c38"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 62105,
+    "md5": "d49b3fc32950de08acb30fba919a6bcc",
+    "sha256": "cb239a560602a10e2e882f2752d70fd3068fe588380e0f5f2b1d898f40a2d27b"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 33.21
+  },
+  "passed": true
+ }
+}

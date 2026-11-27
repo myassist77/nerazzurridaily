@@ -1,0 +1,119 @@
+{
+ "n": 87,
+ "date": "2026-11-27",
+ "slug": "carlos-augusto-2031",
+ "name": "ND-2026-11-27-ed87-carlos-augusto-2031",
+ "thumbnail": {
+  "style": "number",
+  "number": {
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT",
+   "big": "2",
+   "lines_a": [
+    "SERIE A TITLES",
+    "FOR CARLOS AUGUSTO"
+   ],
+   "lines_b": [
+    "NOW SIGNED",
+    "UNTIL 2031"
+   ],
+   "pill": "REPORTED · BASTONI SCANS TODAY",
+   "pill_register": "REPORTED"
+  }
+ },
+ "beats": [
+  {
+   "id": "01-stance",
+   "kind": "cover",
+   "duration": 4.52,
+   "eyebrow": "EDITION NO. 87 · NOVEMBER 27",
+   "lines": [
+    "INTER WERE",
+    "RIGHT TO KEEP",
+    "CARLOS AUGUSTO."
+   ],
+   "vo": "[Inter] were right to keep [Carlos Augusto] until twenty thirty-one."
+  },
+  {
+   "id": "02-claim",
+   "kind": "item",
+   "duration": 6.85,
+   "register": "CONFIRMED",
+   "kicker": "CONFIRMED · INTER.IT · NOV 26",
+   "lines": [
+    "CARLOS AUGUSTO",
+    "SIGNS TO 2031."
+   ],
+   "sub": [
+    "UNTIL JUNE 30, 2031",
+    "TWO SERIE A TITLES WON HERE"
+   ],
+   "vo": "[Inter] says [Carlos Augusto] stays until June thirtieth, twenty thirty-one, after two league titles."
+  },
+  {
+   "id": "03-our-take",
+   "kind": "item",
+   "duration": 4.4,
+   "register": "NEUTRAL",
+   "kicker": "OUR TAKE",
+   "lines": [
+    "A SQUAD PLAYER",
+    "WORTH KEEPING."
+   ],
+   "sub": [
+    "TWO TITLES IN, HE STAYS."
+   ],
+   "vo": "Two titles in, he is exactly the kind of squad player you keep."
+  },
+  {
+   "id": "04-turn",
+   "kind": "item",
+   "duration": 6.42,
+   "register": "REPORTED",
+   "kicker": "REPORTED · GAZZETTA DELLO SPORT · NOV 26",
+   "lines": [
+    "BASTONI HAS",
+    "SCANS TODAY."
+   ],
+   "sub": [
+    "SORE THIGH · QUADRICEPS",
+    "GENOA PLACE STILL OPEN"
+   ],
+   "vo": "[La Gazzetta dello Sport] says [Bastoni] has scans today, and his place against [Genoa] is open."
+  },
+  {
+   "id": "05-fixture",
+   "kind": "fixture",
+   "duration": 4.23,
+   "register": "NEUTRAL",
+   "kicker": "NEXT · SERIE A",
+   "lines": [
+    "GENOA"
+   ],
+   "sub_top": "HOME · SATURDAY, NOVEMBER 28",
+   "big": "2:45 PM ET",
+   "sub": [
+    "20:45 CET",
+    "US TV: PARAMOUNT+"
+   ],
+   "vo": "[Genoa] at [San Siro], Saturday at two forty-five Eastern."
+  },
+  {
+   "id": "06-end",
+   "kind": "end",
+   "duration": 6.79,
+   "sub": [
+    "SUBSCRIBE TO THE FREE DAILY NEWSLETTER"
+   ],
+   "vo": "Starter or squad player, [Carlos Augusto]? Tell me in the comments, at [Nerazzurri] Daily dot com."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 33.21
+ }
+}
