@@ -201,5 +201,12 @@
   "url": "https://bsky.app/profile/nerazzurridaily.com/post/3n3a646gqfl2o",
   "posted_at_utc": "2026-11-26T17:10:16Z",
   "attempts": 1
+ },
+ "ed87-video": {
+  "state": "PUBLISHED",
+  "uri": "at://did:plc:cqmhtmzyxdkm64ijvdddywbg/app.bsky.feed.post/3n3c7s2quan2s",
+  "url": "https://bsky.app/profile/nerazzurridaily.com/post/3n3c7s2quan2s",
+  "posted_at_utc": "2026-11-27T12:45:44Z",
+  "attempts": 1
  }
 }
