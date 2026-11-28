@@ -1,0 +1,125 @@
+{
+ "edition": 88,
+ "date": "2026-11-28",
+ "slug": "bastoni-thigh-genoa",
+ "hook": "Inter can beat Genoa without Bastoni.",
+ "source_page": "https://www.nerazzurridaily.com/p/edition-88/",
+ "edition_json_sha256": "97ccc885114086f560f234a3fc8290ba08ca55abf6d5720d1c96b8342b725a47",
+ "brevo": {
+  "campaign_id": 77,
+  "status": "sent",
+  "sentDate": "2026-11-28T06:00:27.000-05:00"
+ },
+ "local_render": {
+  "file": "ND-2026-11-28-ed88-bastoni-thigh-genoa-voiced.mp4",
+  "seconds": 33.43,
+  "beats": 6,
+  "bytes": 1466223,
+  "md5": "338ed4cab238529c79503f905e8e51ee",
+  "sha256": "babbc536aec00e69826479ff14def47cbeb4ce82661bf7cd6f65f374edfd14fa",
+  "audio": {
+   "note": "voiceover only — no music",
+   "codec": "aac",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "33.420000"
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 32.42
+  }
+ },
+ "stories": [
+  {
+   "story": "Bastoni scans: soreness in left quadriceps, no return date",
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Nov 27"
+  },
+  {
+   "story": "Ayroldi referees; unbeaten in 14 Serie A meetings with Genoa",
+   "register": "CONFIRMED",
+   "source": "Inter.it",
+   "date": "Nov 27"
+  },
+  {
+   "story": "Carlos Augusto to the back three, Dimarco on the left",
+   "register": "REPORTED",
+   "source": "Corriere dello Sport",
+   "date": "Nov 27"
+  }
+ ],
+ "youtube_title": "Inter vs Genoa Without Bastoni? Thigh Scans, No Return Date | Nerazzurri Daily",
+ "pinned_question": "Who should replace Bastoni tonight against Genoa?",
+ "next_fixture": "Inter vs Genoa (home), Sat Nov 28, 2:45 PM ET / 20:45 CET, Serie A MD13, US TV Paramount+",
+ "thumbnail": {
+  "style": "number",
+  "big": "14"
+ },
+ "drafts": {
+  "facebook": true,
+  "reddit": false
+ },
+ "format": "daily six-beat",
+ "build": {
+  "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/46141860618",
+  "built_at_utc": "2026-11-28T11:53:56+00:00",
+  "seconds": 33.43,
+  "beats": 6,
+  "files": {
+   "assets/video/ed88.mp4": {
+    "bytes": 1333826,
+    "md5": "b1d4738cd148e8405aea757bfcab5d7f",
+    "sha256": "52c03e686a916d772a9f7abbb0fbf8a73c9630b194fcc0c1f886d3b50572c895"
+   },
+   "assets/video/ed88-thumb.png": {
+    "bytes": 58974,
+    "md5": "72756d1445713a929322232fefd3bb4f",
+    "sha256": "d6562cff7e28d4e566e2ca4f7727e2712c333018ca52036e3df5ff37a84c951a"
+   },
+   "assets/video/ed88-thumb-9x16.png": {
+    "bytes": 81053,
+    "md5": "694459ec47e29b18a3620ce9d3611ed4",
+    "sha256": "e84bdf4a3cca2e60e7f37a6bb217141e225f34fd95070cb97a538796b2be5e9c"
+   },
+   "data/tiktok-ed88.json": {
+    "bytes": 750,
+    "md5": "35f4625647c4c8f898f4b40f5140b3a2",
+    "sha256": "7782c928d554cc0d7df3ba6efb6a00d5e29a9d70997de08a3a247754a692fcc8"
+   },
+   "data/youtube-ed88.json": {
+    "bytes": 1506,
+    "md5": "f943fc50dda871e1a4843bdef510a3e0",
+    "sha256": "027ce929b482b27b1f7cae603a2abb300bd13552d36d8544388d6409b8565873"
+   },
+   "assets/qc/latest-contact.jpg": {
+    "bytes": 122015,
+    "md5": "f0a3758748f97b7a094cd6da3646998a",
+    "sha256": "77d9be5d56c371e2b78cccb76fcef313ee4b01d735b167eb5c8d1b55a67a0b9c"
+   },
+   "assets/qc/latest-thumb-9x16.png": {
+    "bytes": 81053,
+    "md5": "694459ec47e29b18a3620ce9d3611ed4",
+    "sha256": "e84bdf4a3cca2e60e7f37a6bb217141e225f34fd95070cb97a538796b2be5e9c"
+   },
+   "assets/qc/latest-thumb-16x9.png": {
+    "bytes": 58974,
+    "md5": "72756d1445713a929322232fefd3bb4f",
+    "sha256": "d6562cff7e28d4e566e2ca4f7727e2712c333018ca52036e3df5ff37a84c951a"
+   }
+  },
+  "voice": {
+   "engine": "kokoro-v1.0-int8",
+   "voice": "am_michael",
+   "speed": 1.08,
+   "lead": 0.15,
+   "tail": 0.3,
+   "total": 32.42
+  },
+  "passed": true
+ }
+}

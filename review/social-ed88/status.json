@@ -1,0 +1,96 @@
+{
+ "job": "ed88",
+ "kind": "daily",
+ "name": "ND-2026-11-28-ed88-bastoni-thigh-genoa",
+ "passed": true,
+ "steps": {
+  "voice": "success",
+  "render": "success",
+  "mix": "success",
+  "verify": "success"
+ },
+ "built_at_utc": "2026-11-28T11:53:56+00:00",
+ "run_id": "46141860618",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/46141860618",
+ "files": {
+  "assets/video/ed88.mp4": {
+   "bytes": 1333826,
+   "md5": "b1d4738cd148e8405aea757bfcab5d7f",
+   "sha256": "52c03e686a916d772a9f7abbb0fbf8a73c9630b194fcc0c1f886d3b50572c895"
+  },
+  "assets/video/ed88-thumb.png": {
+   "bytes": 58974,
+   "md5": "72756d1445713a929322232fefd3bb4f",
+   "sha256": "d6562cff7e28d4e566e2ca4f7727e2712c333018ca52036e3df5ff37a84c951a"
+  },
+  "assets/video/ed88-thumb-9x16.png": {
+   "bytes": 81053,
+   "md5": "694459ec47e29b18a3620ce9d3611ed4",
+   "sha256": "e84bdf4a3cca2e60e7f37a6bb217141e225f34fd95070cb97a538796b2be5e9c"
+  },
+  "data/tiktok-ed88.json": {
+   "bytes": 750,
+   "md5": "35f4625647c4c8f898f4b40f5140b3a2",
+   "sha256": "7782c928d554cc0d7df3ba6efb6a00d5e29a9d70997de08a3a247754a692fcc8"
+  },
+  "data/youtube-ed88.json": {
+   "bytes": 1506,
+   "md5": "f943fc50dda871e1a4843bdef510a3e0",
+   "sha256": "027ce929b482b27b1f7cae603a2abb300bd13552d36d8544388d6409b8565873"
+  },
+  "assets/qc/latest-contact.jpg": {
+   "bytes": 122015,
+   "md5": "f0a3758748f97b7a094cd6da3646998a",
+   "sha256": "77d9be5d56c371e2b78cccb76fcef313ee4b01d735b167eb5c8d1b55a67a0b9c"
+  },
+  "assets/qc/latest-thumb-9x16.png": {
+   "bytes": 81053,
+   "md5": "694459ec47e29b18a3620ce9d3611ed4",
+   "sha256": "e84bdf4a3cca2e60e7f37a6bb217141e225f34fd95070cb97a538796b2be5e9c"
+  },
+  "assets/qc/latest-thumb-16x9.png": {
+   "bytes": 58974,
+   "md5": "72756d1445713a929322232fefd3bb4f",
+   "sha256": "d6562cff7e28d4e566e2ca4f7727e2712c333018ca52036e3df5ff37a84c951a"
+  }
+ },
+ "seconds": 33.43,
+ "beats": 6,
+ "streams": [
+  {
+   "codec_name": "h264",
+   "codec_type": "video",
+   "width": 1080,
+   "height": 1920,
+   "duration": "33.433333"
+  },
+  {
+   "codec_name": "aac",
+   "codec_type": "audio",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "33.420000"
+  }
+ ],
+ "src": {
+  "mp4": "build/pack/ND-2026-11-28-ed88-bastoni-thigh-genoa-voiced.mp4",
+  "thumb16": "build/pack/ND-2026-11-28-ed88-bastoni-thigh-genoa-thumb-16x9.png",
+  "thumb9": "build/pack/ND-2026-11-28-ed88-bastoni-thigh-genoa-thumb-9x16.png"
+ },
+ "silent_render": {
+  "bytes": 831202,
+  "md5": "bb94668af679d31a1886dbeaaf78ab1b",
+  "sha256": "447182dd408b8a14de68c084bf17a6efe4dee85022a79f54de1bac95f6330f3c"
+ },
+ "voice": {
+  "engine": "kokoro-v1.0-int8",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.15,
+  "tail": 0.3,
+  "total": 32.42
+ },
+ "voice_log_tail": "01-stance: voice 3.67s → beat 4.16s\n02-claim: voice 6.19s → beat 6.66s\n03-our-take: voice 3.93s → beat 4.44s\n04-turn: voice 6.57s → beat 7.04s\n05-fixture: voice 3.69s → beat 4.12s\n06-end: voice 5.53s → beat 6.0s\nPLAN OK build/beats.voiced.json — 6 beats, 32.42s\n",
+ "render_log_tail": "OK /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/ND-2026-11-28-ed88-bastoni-thigh-genoa.mp4 — 32.43s, 6 beats, silent; settled stills in /home/runner/work/nerazzurridaily/nerazzurridaily/build/pack/stills; thumbnails: ND-2026-11-28-ed88-bastoni-thigh-genoa-thumb-9x16.png, ND-2026-11-28-ed88-bastoni-thigh-genoa-thumb-16x9.png\n",
+ "mix_log_tail": "MIX OK build/pack/ND-2026-11-28-ed88-bastoni-thigh-genoa-voiced.mp4 — 33.43s, AAC 48 kHz stereo, I: -16.3 LUFS Peak: -4.1 dBFS\n"
+}
