@@ -1,0 +1,159 @@
+{
+ "n": 88,
+ "built_at_utc": "2026-11-28T10:46:27+00:00",
+ "run_id": "46136682158",
+ "run_url": "https://github.com/myassist77/nerazzurridaily/actions/runs/46136682158",
+ "passed": true,
+ "steps": {
+  "mast": "success",
+  "controls": "success",
+  "checks": "success"
+ },
+ "files_md5": {
+  "p/edition-88/index.html": "9410ebc5c6c030763a5470886a1e4c19",
+  "assets/mast/edition-88.png": "245a53f52f717821339a0d8a5e9cbead",
+  "data/edition-88.json": "e0c6e3ae9a047da32b1a69d08f9a6c33",
+  "index.html": "b5e8b3cb8c50a53913cd809e6d712a84",
+  "subscribe/index.html": "165f701a9d5c2a97ab9cc1589c507d3d",
+  "fixtures/index.html": "9aa0c857e75b0b1707f0b73563a6fa2e",
+  "feed.xml": "a314f4263448667d7467b8f5706ea435",
+  "sitemap.xml": "302d872405a03f18579e8439a1482cb9"
+ },
+ "title": "Bastoni’s scans show a thigh strain before Genoa",
+ "date": "2026-11-28",
+ "masthead": {
+  "bytes": 6584,
+  "lines": 2,
+  "colors": 7,
+  "fonts": {
+   "anton": true,
+   "mono": true
+  }
+ },
+ "controls": {
+  "n": 88,
+  "fails": [],
+  "warns": [],
+  "page-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 700,
+    "h": 382.8125,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "page-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11.52,
+   "A2": {
+    "pairs": 21,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 9.33
+   }
+  },
+  "email-700": {
+   "scrollWidth": 700,
+   "masthead": {
+    "w": 644,
+    "h": 352.1875,
+    "natural": 640,
+    "complete": true
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  },
+  "email-390": {
+   "scrollWidth": 390,
+   "masthead": {
+    "w": 390,
+    "h": 213.28125,
+    "natural": 640,
+    "complete": true
+   },
+   "A3": {
+    "masthead_width": 390,
+    "scale": 0.609,
+    "headline_px": 39.0,
+    "h3_px": 21,
+    "ratio": 1.86
+   },
+   "min_font_px": 11,
+   "A2": {
+    "pairs": 22,
+    "min_ratio": 4.57,
+    "min_pair_example": "Fan-made. Not affiliated with ",
+    "min_link_ratio": 8.3
+   }
+  }
+ },
+ "checks": {
+  "fails": [],
+  "warns": [
+   "sentences: 32 words: “Bastoni’s scans show a thigh strain before Genoa Inter say scans on Alessandro Bastoni, the center back, found…”"
+  ],
+  "info": {
+   "prose_words": 366,
+   "read_seconds": 92,
+   "avg_sentence_words": 17.3,
+   "flesch_reading_ease": 56.3,
+   "edition_from_masthead": null,
+   "dates": {
+    "today": "November 28"
+   },
+   "external_to_fetch": [
+    "https://bsky.app/profile/nerazzurridaily.com",
+    "https://www.corrieredellosport.it/news/calcio/serie-a/inter/2026/11/27-152879668/inter_in_ansia_si_ferma_bastoni_le_condizioni",
+    "https://www.facebook.com/nerazzurridaily",
+    "https://www.inter.it/en/matches",
+    "https://www.inter.it/en/news/inter-stuttgart-champions-league-2026-27",
+    "https://www.inter.it/it/notizie/condizioni-infortunio-alessandro-bastoni-novembre-2026",
+    "https://www.inter.it/it/notizie/cordoglio-inter-scomparsa-juary",
+    "https://www.inter.it/it/notizie/guida-inter-genoa-serie-a-2026-27",
+    "https://www.inter.it/it/notizie/inter-genoa-analisi-avversario-serie-a-2026-27",
+    "https://www.inter.it/it/notizie/inter-genoa-biglietti-info-stadio-biglietti-serie-a-26-27",
+    "https://www.tiktok.com/@nerazzurridaily",
+    "https://www.youtube.com/@nerazzurridaily"
+   ],
+   "site_links": [
+    "https://www.nerazzurridaily.com/go/email/?ed=88",
+    "https://www.nerazzurridaily.com/go/email/?ed=88&to=/subscribe/",
+    "https://www.nerazzurridaily.com/go/forward/?ed=88",
+    "https://www.nerazzurridaily.com/go/vote/?ed=88&v=no",
+    "https://www.nerazzurridaily.com/go/vote/?ed=88&v=yes",
+    "https://www.nerazzurridaily.com/p/edition-88/"
+   ]
+  }
+ },
+ "email": {
+  "md5": "bdcac012179c07385601c81152ad0f94",
+  "chars": 23429,
+  "bytes": 23547
+ }
+}
